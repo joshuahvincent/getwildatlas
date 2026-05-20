@@ -4,7 +4,7 @@
 
 *Desarrollada por el hijo de los célebres documentalistas de conservación de Sudáfrica, Wild Atlas ofrece a los niños contenido animal al estilo documental — y a los padres, tiempo de pantalla que pueden entregar sin preocupación.*
 
-**SEATTLE, WA — [LAUNCH DATE]** — Wild Atlas, una app interactiva de descubrimiento animal para niños a partir de 3 años, está disponible hoy en el App Store para iPhone y iPad. A través de doce packs de animales y cinco idiomas, la app acerca a los niños pequeños datos narrados al estilo documental, juegos, cuestionarios y exploración — sin suscripción, sin publicidad y sin feed algorítmico.
+**SEATTLE, WA — 26 de mayo de 2026** — Wild Atlas, una app interactiva de descubrimiento animal para niños a partir de 3 años, está disponible hoy en el App Store para iPhone y iPad. A través de doce packs de animales y cinco idiomas, la app acerca a los niños pequeños datos narrados al estilo documental, juegos, cuestionarios y exploración — sin suscripción, sin publicidad y sin feed algorítmico.
 
 Wild Atlas es obra de Joshuah Vincent, un desarrollador de producto afincado en Seattle e hijo de Michael y Sharyn Vincent, los fundadores de Jasmin Films — una productora sudafricana que pasó cuatro décadas documentando el celacanto, los grandes tiburones blancos, las águilas negras y los elefantes de Addo. Michael falleció en marzo de 2024. Al año siguiente, Joshuah lideró una expedición de overlanding de tres semanas por las reservas naturales de Botsuana — en parte con dinero que su padre le dejó, en parte en recuerdo de los viajes que nunca pudieron hacer juntos. Wild Atlas fue construida en los meses que siguieron.
 
