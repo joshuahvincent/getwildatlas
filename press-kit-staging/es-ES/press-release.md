@@ -1,0 +1,33 @@
+# PARA PUBLICACIÓN INMEDIATA
+
+## Wild Atlas, una app de descubrimiento animal narrada para niños, llega al mundo en cinco idiomas
+
+*Desarrollada por el hijo de los célebres documentalistas de conservación de Sudáfrica, Wild Atlas ofrece a los niños contenido animal al estilo documental — y a los padres, tiempo de pantalla que pueden entregar sin preocupación.*
+
+**SEATTLE, WA — [LAUNCH DATE]** — Wild Atlas, una app interactiva de descubrimiento animal para niños a partir de 3 años, está disponible hoy en el App Store para iPhone y iPad. A través de doce packs de animales y cinco idiomas, la app acerca a los niños pequeños datos narrados al estilo documental, juegos, cuestionarios y exploración — sin suscripción, sin publicidad y sin feed algorítmico.
+
+Wild Atlas es obra de Joshuah Vincent, un desarrollador de producto afincado en Seattle e hijo de Michael y Sharyn Vincent, los fundadores de Jasmin Films — una productora sudafricana que pasó cuatro décadas documentando el celacanto, los grandes tiburones blancos, las águilas negras y los elefantes de Addo. Michael falleció en marzo de 2024. Al año siguiente, Joshuah lideró una expedición de overlanding de tres semanas por las reservas naturales de Botsuana — en parte con dinero que su padre le dejó, en parte en recuerdo de los viajes que nunca pudieron hacer juntos. Wild Atlas fue construida en los meses que siguieron.
+
+*"Mis padres pasaron su vida en el bush, haciéndolo accesible a la gente a través del cine. Crecí en esos rodajes, en el veld sudafricano, aprendiendo sobre los animales y por qué merece la pena conocerlos. Quería un tiempo de pantalla que mi mujer y yo pudiéramos dar a los niños sin preocupaciones — algo educativo y delicioso, sin anuncios ni vídeo basura. No lo encontramos, y lo buscamos mucho. Así que lo construimos nosotros."*
+— Joshuah Vincent, fundador, Wild Atlas
+
+La app se lanza con doce packs en cinco idiomas — inglés (ediciones US y UK), alemán, español, francés y chino simplificado. Tres packs son gratuitos en el lanzamiento: Happy Hounds, Cool Cats y Cozy Critters. Los packs restantes cuestan 3,99 € cada uno como compras únicas aprobadas por los padres, o los nueve juntos pueden desbloquearse por 22,99 €. Cada pack incluye datos narrados, cuestionarios de doble modo, un mapa del mundo interactivo, comparaciones de tamaño corporal y sonidos de animales. Cuatro juegos — Memory Match, Puppy Puzzle, Who's Who y Habitat Hop — están incluidos en todos los packs. La app funciona completamente sin conexión, ideal para aviones, viajes por carretera o cualquier lugar sin internet estable.
+
+Un pack oculto — la Mythical Menagerie, con dieciocho criaturas del folclore mundial — puede desbloquearse encontrando las estrellas fugaces escondidas a lo largo de la app en múltiples sesiones.
+
+En las pruebas iniciales, una niña de ocho años que "casi no usa dispositivos en general" probó Wild Atlas y tuvo una sola palabra: *"Adictiva."*
+
+Wild Atlas cumple con la COPPA, no recopila datos personales y está desarrollada y financiada de forma independiente.
+
+---
+
+### SOBRE WILD ATLAS
+
+Wild Atlas es una app interactiva de descubrimiento animal para niños a partir de 3 años, con datos narrados al estilo documental, exploración guiada por el niño y contenido multilingüe en cinco idiomas. Con sede en Seattle, Washington. wildatlasapp.com
+
+### CONTACTO DE PRENSA
+
+press@wildatlasapp.com
+Kit de prensa: wildatlasapp.com/press [CONFIRM]
+
+###
