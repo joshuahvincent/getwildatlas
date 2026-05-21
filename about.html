@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="i18n-loading">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FOUC prevention -->
+  <style>.i18n-loading body{opacity:0}</style>
+
+  <title>About Wild Atlas — A letter from Josh</title>
+  <meta name="description" content="Why we built Wild Atlas. A letter from founder Josh Vincent about screen time, curiosity, and raising explorers." data-i18n-content="about.metadesc">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.wildatlasapp.com/about">
+
+  <meta name="theme-color" content="#FFF5E1">
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+
+  <link rel="preload" href="fonts/Fredoka-VariableFont_wdth,wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="fonts/Nunito-Regular.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link rel="stylesheet" href="css/styles.css?v=2">
+</head>
+<body data-page="about">
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/mascot-logo.png" alt="Wild Atlas" class="nav-icon">
+        <span class="nav-title">Wild Atlas</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-lang-picker-item">
+          <div class="lang-picker lang-picker-nav">
+            <button class="lang-picker-btn" aria-expanded="false" aria-haspopup="listbox">
+              <span class="lang-picker-current">English</span>
+              <svg class="lang-picker-chevron" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <ul class="lang-picker-dropdown" role="listbox" hidden></ul>
+          </div>
+        </li>
+        <li><a href="index.html" class="nav-cta" data-i18n="legal.backhome">Back to Wild Atlas</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="about-page">
+    <div class="container about-page-container">
+      <p class="about-eyebrow" data-i18n="about.eyebrow">Behind the app</p>
+      <h1 data-i18n="about.title">Why we built Wild Atlas</h1>
+      <figure class="about-photo">
+        <img src="assets/family.jpg" alt="Angelica, Lurian, Zuzu, and Josh on a rocky shoreline at sunset" loading="lazy">
+      </figure>
+      <div class="about-letter">
+        <div class="about-letter-body" data-i18n-html="about.letter">
+          <p>I come from a conservation documentary filmmaking family. Some of my most indelible memories are out in the veld in South Africa with my mom and dad, learning about animals from the best. My wife Angelica and I have two kids of our own now: Zuzu, who&rsquo;s five, and Lurian, who&rsquo;s two. And they LOVE animals.</p>
+          <p>So on long flights, road trips, or rainy days when we wanted to give them some screen time, we wanted something we could feel good about handing them. Not algorithmic YouTube. Not junk-food cartoons. Not addictive games designed for adult brains. Something they could explore on their own and come out of a little more curious than they went in.</p>
+          <p>I couldn&rsquo;t find it. So I started building it.</p>
+          <p>The first thing I figured out: for kids this age, the app has to talk to them. Many can&rsquo;t read yet, and the ones who can shouldn&rsquo;t have to work for it. So every fact, every quiz, every fun word is read aloud in a warm voice they can control. That worked, so I shaped the content around Zuzu&rsquo;s actual questions &mdash; the where, the how big, the is-it-dangerous &mdash; in a voice and language kids could relate to.</p>
+          <p>Zuzu wanted more, so I added quizzes. She played them over and over, so I added four games &mdash; Memory Match, Puppy Puzzle, Who&rsquo;s Who, and Habitat Hop &mdash; each one a different way to grow. Math and reading games are coming next, because that&rsquo;s what Zuzu&rsquo;s learning now.</p>
+          <p>Languages came in because Zuzu&rsquo;s learning German and Spanish, and our friends&rsquo; kids are learning Spanish, Mandarin, and French. I wanted the animal stories narrated in a language they&rsquo;re learning &mdash; to reinforce what they&rsquo;re already picking up. And to make the app feel like home for kids who are native speakers.</p>
+          <p>Finally, after all that, I felt a little sparkly fairy dust was needed. So I added a soundscape and a fun soundtrack. Little animations across the app. A few hidden treasures kids will find if they look hard enough. And an achievement system, because my kids LOVE collecting things and seeing progress.</p>
+          <p>If you&rsquo;ve got a curious one of your own, I hope Wild Atlas makes the long flights, the rainy days, and the just-need-five-minutes moments a little bit better. And maybe you&rsquo;ll learn something new along the way too. (I do, ALL the time.)</p>
+        </div>
+        <p class="about-signoff" data-i18n-html="about.signoff">&mdash; Josh</p>
+      </div>
+    </div>
+
+    <!-- BRAND: What we stand for (mirrored from home page) -->
+    <section class="brand-section brand-section-about" id="brand" aria-label="What Wild Atlas stands for">
+      <div class="container">
+        <p class="brand-eyebrow" data-i18n="brand.eyebrow">What we stand for</p>
+        <h2 class="brand-title" data-i18n="brand.title">Built on beliefs, not features</h2>
+        <div class="brand-pillars">
+          <div class="brand-pillar">
+            <h3 data-i18n="brand.pillar1.title">Wonder over dopamine</h3>
+            <p data-i18n="brand.pillar1.desc">Built to leave your child more curious than it found them &mdash; not more glued to the screen.</p>
+          </div>
+          <div class="brand-pillar">
+            <h3 data-i18n="brand.pillar2.title">Child-led, not algorithm-fed</h3>
+            <p data-i18n="brand.pillar2.desc">No recommendation engine. No autoplay loop. Just a curious kid choosing what to explore next.</p>
+          </div>
+          <div class="brand-pillar">
+            <h3 data-i18n="brand.pillar3.title">Education without the classroom</h3>
+            <p data-i18n="brand.pillar3.desc">Real facts, narrated like a documentary, organized around the questions kids actually ask. No drills, no grades, no lessons in disguise.</p>
+          </div>
+          <div class="brand-pillar">
+            <h3 data-i18n="brand.pillar4.title">Pride, not guilt</h3>
+            <p data-i18n="brand.pillar4.desc">Most kids&rsquo; apps are built against parents. This one is built with them &mdash; so you can hand it over and feel good about it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="assets/mascot-sitting.png" alt="Wild Atlas" class="footer-mascot" loading="lazy">
+          <span class="footer-title">Wild Atlas</span>
+        </div>
+        <div class="footer-links">
+          <a href="about.html" data-i18n="footer.about">About</a>
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+          <a href="age-suitability.html" data-i18n="footer.agesuitability">Age Suitability</a>
+          <a href="support.html" data-i18n="footer.support">Support</a>
+          <a href="mailto:info@wildatlasapp.com" data-i18n="footer.contact">Contact</a>
+        </div>
+        <p class="footer-copy" data-i18n="footer.copy">&copy; 2026 Wild Atlas. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/i18n.js"></script>
+</body>
+</html>

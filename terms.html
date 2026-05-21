@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="i18n-loading">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FOUC prevention -->
+  <style>.i18n-loading body{opacity:0}</style>
+
+  <title>Terms of Service — Wild Atlas</title>
+  <meta name="description" content="Wild Atlas Terms of Service. Your agreement when using the Wild Atlas app." data-i18n-content="legal.terms.metadesc">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.wildatlasapp.com/terms">
+
+  <meta name="theme-color" content="#FFF5E1">
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+
+  <link rel="preload" href="fonts/Fredoka-VariableFont_wdth,wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="fonts/Nunito-Regular.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link rel="stylesheet" href="css/styles.css?v=2">
+</head>
+<body data-legal-doc="terms">
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/mascot-logo.png" alt="Wild Atlas" class="nav-icon">
+        <span class="nav-title">Wild Atlas</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-lang-picker-item">
+          <div class="lang-picker lang-picker-nav">
+            <button class="lang-picker-btn" aria-expanded="false" aria-haspopup="listbox">
+              <span class="lang-picker-current">English</span>
+              <svg class="lang-picker-chevron" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <ul class="lang-picker-dropdown" role="listbox" hidden></ul>
+          </div>
+        </li>
+        <li><a href="index.html" class="nav-cta" data-i18n="legal.backhome">Back to Wild Atlas</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="legal-page">
+    <div class="container legal-container">
+      <p class="legal-eyebrow" data-i18n="legal.eyebrow">Legal</p>
+      <h1 data-i18n="legal.terms.title">Terms of Service</h1>
+      <p class="legal-disclaimer" data-i18n="legal.disclaimer">English is the authoritative version; non-English translations are provided as a convenience.</p>
+      <article id="legalBody" class="legal-body"></article>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="assets/mascot-sitting.png" alt="Wild Atlas" class="footer-mascot" loading="lazy">
+          <span class="footer-title">Wild Atlas</span>
+        </div>
+        <div class="footer-links">
+          <a href="about.html" data-i18n="footer.about">About</a>
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+          <a href="age-suitability.html" data-i18n="footer.agesuitability">Age Suitability</a>
+          <a href="support.html" data-i18n="footer.support">Support</a>
+          <a href="mailto:info@wildatlasapp.com" data-i18n="footer.contact">Contact</a>
+        </div>
+        <p class="footer-copy" data-i18n="footer.copy">&copy; 2026 Wild Atlas. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/legal-translations.js"></script>
+  <script src="js/legal.js"></script>
+</body>
+</html>

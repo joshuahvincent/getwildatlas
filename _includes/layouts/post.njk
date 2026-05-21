@@ -1,0 +1,24 @@
+---
+layout: layouts/blog-base.njk
+---
+<article class="blog-post">
+  <header class="blog-post-header">
+    <p class="blog-post-meta">
+      <a href="/blog/">← All posts</a>
+    </p>
+    <h1>{{ title }}</h1>
+    <p class="blog-post-byline" style="color: var(--muted); margin-top: 0.25rem;">
+      <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
+      {% if author %} · {{ author }}{% endif %}
+      {% if content %} · {{ content | readingTime }}{% endif %}
+    </p>
+  </header>
+
+  <div class="blog-post-body">
+    {{ content | safe }}
+  </div>
+
+  <hr>
+
+  {% include "partials/newsletter-signup.njk" %}
+</article>

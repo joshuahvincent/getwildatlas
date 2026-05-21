@@ -1,0 +1,36 @@
+{#
+  Newsletter signup — Buttondown.
+  Replace `wildatlas` below with your actual Buttondown username once the
+  account is created at https://buttondown.com.
+  Buttondown's free tier covers up to 100 subscribers. Above that, $9/mo.
+#}
+<section class="newsletter-signup" style="background: rgba(194,90,44,0.06); border: 1px solid var(--rule); border-radius: 12px; padding: 1.5rem; margin: 2rem 0;">
+  <h3 style="margin-top: 0;">Get Wild Atlas updates by email</h3>
+  <p style="color: var(--muted); margin-bottom: 1rem;">
+    Occasional notes from the founder. No spam, no ads. Unsubscribe anytime.
+  </p>
+  <form
+    action="https://buttondown.com/api/emails/embed-subscribe/wildatlas"
+    method="post"
+    target="popupwindow"
+    onsubmit="window.open('https://buttondown.com/wildatlas', 'popupwindow')"
+    class="embeddable-buttondown-form"
+    style="display: flex; gap: 0.5rem; flex-wrap: wrap;"
+  >
+    <label for="bd-email" style="position: absolute; left: -9999px;">Email address</label>
+    <input
+      type="email"
+      name="email"
+      id="bd-email"
+      placeholder="you@example.com"
+      required
+      style="flex: 1 1 240px; padding: 0.75rem 1rem; border: 1px solid var(--rule); border-radius: 8px; font: inherit;"
+    >
+    <button
+      type="submit"
+      style="padding: 0.75rem 1.25rem; border: 0; border-radius: 8px; background: var(--accent); color: white; font: inherit; font-weight: 600; cursor: pointer;"
+    >
+      Subscribe
+    </button>
+  </form>
+</section>

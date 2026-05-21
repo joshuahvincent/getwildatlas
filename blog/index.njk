@@ -1,0 +1,39 @@
+---
+layout: layouts/blog-base.njk
+title: Blog
+permalink: /blog/
+excerpt: "Notes from the Wild Atlas founder and team — on building an animal app for kids, conservation, and what we've learned along the way."
+eleventyExcludeFromCollections: true
+---
+<section class="blog-index">
+  <header>
+    <h1>The Wild Atlas Blog</h1>
+    <p style="color: var(--muted); font-size: 1.1rem;">
+      Notes from the founder and team — on building, conservation, and what we've learned along the way.
+    </p>
+  </header>
+
+  {% if collections.posts.length == 0 %}
+    <p><em>No posts yet — coming soon.</em></p>
+  {% else %}
+    <ul class="blog-list" style="list-style: none; padding: 0; margin: 2rem 0;">
+      {% for post in collections.posts %}
+        <li class="blog-list-item" style="padding: 1.5rem 0; border-bottom: 1px solid var(--rule);">
+          <h2 style="margin: 0 0 0.25rem;">
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+          </h2>
+          <p class="blog-list-meta" style="color: var(--muted); margin: 0 0 0.5rem; font-size: 0.95rem;">
+            <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
+            {% if post.data.author %} · {{ post.data.author }}{% endif %}
+            {% if post.templateContent %} · {{ post.templateContent | readingTime }}{% endif %}
+          </p>
+          {% if post.data.excerpt %}
+            <p style="margin: 0;">{{ post.data.excerpt }}</p>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% include "partials/newsletter-signup.njk" %}
+</section>

@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" class="i18n-loading">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FOUC prevention: hide body until translations are applied -->
+  <style>.i18n-loading body{opacity:0}</style>
+
+  <!-- Primary Meta Tags -->
+  <title>Wild Atlas — Raise Explorers, Not Scrollers</title>
+  <meta name="description" content="Raise explorers, not scrollers. An animal learning app for kids 3–9. No ads, no algorithms, no reading required. 12 packs, 5 languages, 3 free to start." data-i18n-content="meta.description">
+  <meta name="keywords" content="kids animal app, educational app for kids, animal learning, children's app, ages 3-9, animal quizzes, fun facts for kids, wildlife app, iOS kids app, preschool learning, screen time alternative, conscious parenting, Wild Atlas">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Wild Atlas">
+  <link rel="canonical" href="https://wildatlas.edu/">
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#FFF5E1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <!-- Apple Smart Banner (swap XXXXXXXXXX with your App Store ID) -->
+  <meta name="apple-itunes-app" content="app-id=XXXXXXXXXX">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wildatlas.edu/">
+  <meta property="og:title" content="Wild Atlas — Raise Explorers, Not Scrollers" data-i18n-content="meta.title">
+  <meta property="og:description" content="Finally, screen time you'll feel proud of. An interactive animal adventure for curious kids 3–9 — built for wonder, not engagement metrics." data-i18n-content="meta.og.description">
+  <meta property="og:image" content="https://wildatlas.edu/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Wild Atlas">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wild Atlas — Raise Explorers, Not Scrollers" data-i18n-content="meta.title">
+  <meta name="twitter:description" content="Finally, screen time you'll feel proud of. An interactive animal adventure for curious kids 3–9 — built for wonder, not engagement metrics." data-i18n-content="meta.og.description">
+  <meta name="twitter:image" content="https://wildatlas.edu/assets/og-image.png">
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+
+  <!-- Preload Critical Fonts -->
+  <link rel="preload" href="fonts/Fredoka-VariableFont_wdth,wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="fonts/Nunito-Regular.ttf" as="font" type="font/ttf" crossorigin>
+
+  <!-- Preconnect to Formspree -->
+  <link rel="preconnect" href="https://formspree.io">
+
+  <link rel="stylesheet" href="css/styles.css?v=2">
+
+  <!-- Structured Data: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Wild Atlas",
+    "description": "An interactive animal learning app for kids ages 3-9. Explore 12 animal packs with quizzes, fun facts, text-to-speech narration, world maps, discovery badges, and more.",
+    "applicationCategory": "EducationApplication",
+    "operatingSystem": "iOS",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free download with 3 free animal packs. Additional packs $3.99 each, or unlock everything with the Explorer Pass at $19.99."
+    },
+    "audience": {
+      "@type": "EducationalAudience",
+      "educationalRole": "student",
+      "suggestedMinAge": 3,
+      "suggestedMaxAge": 9
+    },
+    "screenshot": "https://wildatlas.edu/assets/og-image.png",
+    "featureList": "Animal Quizzes, Text-to-Speech Narration, Fun Facts, World Map, Size Comparisons, Discovery Badges, Achievements, Wild Watch Narrated Videos, Animal Sounds, 4 Games (Memory Match, Puppy Puzzle, Who's Who, Habitat Hop), 12 Animal Packs, Multi-language Support",
+    "inLanguage": ["en", "de", "es", "fr"]
+  }
+  </script>
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Wild Atlas",
+    "url": "https://wildatlas.edu",
+    "logo": "https://wildatlas.edu/assets/mascot-logo.png"
+  }
+  </script>
+
+  <!-- Structured Data: WebSite (enables sitelinks search box) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Wild Atlas",
+    "url": "https://wildatlas.edu"
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage (boosts rich snippets) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What age range is Wild Atlas designed for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wild Atlas is designed for children ages 3 and up, with two age modes: Little Explorers (ages under 5) featuring picture-based quizzes, and Young Explorers (ages 5 and up) with reading challenges."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Wild Atlas free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wild Atlas is free to download and includes 3 free animal packs (Happy Hounds, Cool Cats, and Cozy Critters). Additional packs are $3.99 each, or you can unlock everything — including future packs — with the Explorer Pass for $19.99."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can my child use Wild Atlas independently without reading?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Wild Atlas features tap-to-read text-to-speech narration. Kids can tap any text and a warm, friendly character reads it aloud, making it perfect for independent exploration without any reading skills required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Wild Atlas safe for children?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Wild Atlas has no ads, no external links, and no social features. It is designed so parents can safely hand over the device knowing their child can navigate everything on their own."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-brand">
+        <img src="assets/mascot-logo.png" alt="Wild Atlas" class="nav-icon">
+        <span class="nav-title">Wild Atlas</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features" data-i18n="nav.features">Features</a></li>
+        <li><a href="#games" data-i18n="nav.games">Games</a></li>
+        <li><a href="#packs" data-i18n="nav.packs">Animal Packs</a></li>
+        <li><a href="#parents" data-i18n="nav.parents">For Parents</a></li>
+        <li class="nav-lang-picker-item">
+          <!-- Language picker (nav) -->
+          <div class="lang-picker lang-picker-nav">
+            <button class="lang-picker-btn" aria-expanded="false" aria-haspopup="listbox">
+              <span class="lang-picker-current">English</span>
+              <svg class="lang-picker-chevron" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <ul class="lang-picker-dropdown" role="listbox" hidden></ul>
+          </div>
+        </li>
+        <li><a href="#signup" class="nav-cta" data-i18n="nav.cta">Get Free Pack</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero" aria-label="Introduction">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-eyebrow" data-i18n="hero.eyebrow">Discover the Animal Kingdom</p>
+        <h1 class="hero-tagline" data-i18n-html="hero.tagline">Raise explorers,<br>not scrollers.</h1>
+        <p class="hero-subtitle" data-i18n-html="hero.subtitle">Finally, screen time you&rsquo;ll feel <strong>proud of</strong>. An interactive animal adventure for curious kids ages 2&ndash;9.</p>
+        <div class="hero-age-badges">
+          <div class="age-badge">
+            <img src="assets/icons/little-explorer.png" alt="Little Explorer pup mascot for ages 3 to 4">
+            <span><span data-i18n="hero.little">Little Explorers</span><br><strong data-i18n="hero.little.ages">Ages Under 5</strong></span>
+          </div>
+          <div class="age-badge">
+            <img src="assets/icons/young-explorer.png" alt="Young Explorer pup mascot for ages 5 and up">
+            <span><span data-i18n="hero.young">Young Explorers</span><br><strong data-i18n="hero.young.ages">Ages 5 and Up</strong></span>
+          </div>
+        </div>
+        <a href="mailto:info@wildatlasapp.com?subject=Wild%20Atlas%20Beta%20Testing%20Request&body=Hi!%20I'd%20love%20to%20join%20the%20Wild%20Atlas%20TestFlight%20beta.%20Please%20add%20me!" class="btn btn-primary beta-btn">Join Beta Testing</a>
+        <p class="hero-platforms" data-i18n="hero.platforms">Available on iPhone and iPad</p>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <div class="hero-rings">
+          <div class="hero-ring hero-ring-1"></div>
+          <div class="hero-ring hero-ring-2"></div>
+          <div class="hero-ring hero-ring-3"></div>
+        </div>
+        <div class="hero-sparkles">
+          <span class="sparkle sparkle-1"></span>
+          <span class="sparkle sparkle-2"></span>
+          <span class="sparkle sparkle-3"></span>
+          <span class="sparkle sparkle-4"></span>
+          <span class="sparkle sparkle-5"></span>
+          <span class="sparkle sparkle-6"></span>
+        </div>
+        <img src="assets/mascot-logo.png" alt="Wild Atlas Mascot" class="hero-mascot">
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust-strip" aria-label="What makes Wild Atlas safe for kids">
+    <div class="container">
+      <ul class="trust-pillars">
+        <li class="trust-pillar">
+          <svg class="trust-icon trust-icon-svg" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <circle cx="32" cy="32" r="26" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+            <line x1="14" y1="14" x2="50" y2="50" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+          <span class="trust-label" data-i18n="trust.noads">No ads</span>
+        </li>
+        <li class="trust-pillar">
+          <img src="assets/icons/map-trail.png" alt="" class="trust-icon" loading="lazy">
+          <span class="trust-label" data-i18n="trust.noalgo">No algorithms</span>
+        </li>
+        <li class="trust-pillar">
+          <img src="assets/icons/speaker.png" alt="" class="trust-icon" loading="lazy">
+          <span class="trust-label" data-i18n="trust.noreading">No reading required</span>
+        </li>
+        <li class="trust-pillar">
+          <img src="assets/icons/safety-guide.png" alt="" class="trust-icon" loading="lazy">
+          <span class="trust-label" data-i18n="trust.privacy">Privacy-first &amp; COPPA-compliant</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- KEY FEATURES: Quizzes & Read-Aloud -->
+  <section class="key-features" id="features" aria-label="Key features">
+    <div class="container">
+      <h2 class="section-title" data-i18n="features.title">What Makes Wild Atlas Special</h2>
+      <div class="key-features-grid">
+
+        <div class="key-feature-card quiz-card">
+          <div class="key-feature-icon-row">
+            <img src="assets/icons/quiz.png" alt="Quiz icon — speech bubble with question mark" class="key-feature-icon" loading="lazy">
+          </div>
+          <h3 data-i18n="features.quiz.title">Quizzes Kids Love</h3>
+          <p data-i18n="features.quiz.desc">Two quiz modes tailored by age &mdash; Little Explorers get picture-based questions, Young Explorers tackle reading challenges. Kids can't get enough!</p>
+          <div class="explorer-pair">
+            <div class="explorer-item">
+              <img src="assets/icons/little-explorer-happy.png" alt="Happy Little Explorer after completing a quiz" loading="lazy">
+              <span data-i18n="features.quiz.little">Ages 2&ndash;4</span>
+            </div>
+            <div class="explorer-item">
+              <img src="assets/icons/young-explorer-happy.png" alt="Happy Young Explorer after completing a quiz" loading="lazy">
+              <span data-i18n="features.quiz.young">Ages 5&ndash;9</span>
+            </div>
+          </div>
+          <div class="badges-row">
+            <img src="assets/icons/badges-little.png" alt="Gold, silver and bronze Little Explorer badges" class="badge-strip" loading="lazy">
+            <img src="assets/icons/badges-young.png" alt="Gold, silver and bronze Young Explorer badges" class="badge-strip" loading="lazy">
+          </div>
+        </div>
+
+        <div class="key-feature-card tts-card">
+          <div class="key-feature-icon-row">
+            <img src="assets/icons/speaker.png" alt="Text-to-speech read aloud icon" class="key-feature-icon" loading="lazy">
+          </div>
+          <h3 data-i18n="features.tts.title">Tap to Hear Anything Read Aloud</h3>
+          <p data-i18n="features.tts.desc">Kids can tap any text and a warm, friendly character reads it aloud. Perfect for independent exploration &mdash; parents can safely hand over the device knowing their child can navigate everything on their own.</p>
+          <div class="tts-highlight">
+            <img src="assets/icons/superpower.png" alt="Wild Atlas superpower pup mascot" class="tts-mascot" loading="lazy">
+            <div class="tts-points">
+              <span data-i18n="features.tts.point1">No reading skills needed</span>
+              <span data-i18n="features.tts.point2">Safe solo exploration</span>
+              <span data-i18n="features.tts.point3">Parent-friendly design</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MORE FEATURES -->
+  <section class="features-grid-section" aria-label="More features">
+    <div class="container">
+      <h2 class="section-title" data-i18n="discover.title">So Much to Discover</h2>
+      <div class="features-grid">
+
+        <div class="feature-item fade-in">
+          <img src="assets/icons/fun-facts.png" alt="Fun Facts — open book with sparkles" loading="lazy">
+          <h4 data-i18n="discover.facts.title">Fun Facts</h4>
+          <p data-i18n="discover.facts.desc">Fascinating facts about every animal, narrated in a warm friendly voice</p>
+        </div>
+
+        <div class="feature-item fade-in">
+          <img src="assets/icons/wild-watch.png" alt="Wild Watch narrated animal videos icon" loading="lazy">
+          <h4 data-i18n="discover.videos.title">Wild Watch</h4>
+          <p data-i18n="discover.videos.desc">Narrated animal videos that play themselves &mdash; wonder, hands-free.</p>
+        </div>
+
+        <div class="feature-item fade-in">
+          <img src="assets/icons/world-traveller.png" alt="Interactive world map globe icon" loading="lazy">
+          <h4 data-i18n="discover.map.title">World Explorer</h4>
+          <p data-i18n="discover.map.desc">See where animals live on a colorful interactive map</p>
+        </div>
+
+        <div class="feature-item fade-in">
+          <img src="assets/icons/size-comparison.png" alt="Size comparison — child standing next to animal" loading="lazy">
+          <h4 data-i18n="discover.size.title">Size Comparison</h4>
+          <p data-i18n="discover.size.desc">How big is a Great White compared to you?</p>
+        </div>
+
+        <div class="feature-item fade-in">
+          <img src="assets/icons/discovery-badge.png" alt="Discovery badge — gold star medal" loading="lazy">
+          <h4 data-i18n="discover.badges.title">Discovery Badges</h4>
+          <p data-i18n="discover.badges.desc">Earn gold, silver, and bronze badges as you explore</p>
+        </div>
+
+        <div class="feature-item fade-in">
+          <img src="assets/icons/achievements.png" alt="Explorer achievements icon — journey tracker badge" loading="lazy">
+          <h4 data-i18n="discover.achievements.title">Achievements</h4>
+          <p data-i18n="discover.achievements.desc">Every animal met, every world visited &mdash; exploration encouraged at every step.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GAMES -->
+  <section class="games-section" id="games" aria-label="Four games shipping at launch">
+    <div class="container">
+      <h2 class="section-title" data-i18n="games.title">Play Built for Curious Minds</h2>
+      <p class="section-subtitle" data-i18n="games.subtitle">Four games, four ways to grow — memory, geography, observation, and spatial smarts. Built into play that doesn&rsquo;t feel like learning.</p>
+
+      <div class="games-grid">
+        <div class="game-card fade-in">
+          <img src="assets/icons/games/memory-match.png" alt="Memory Match game icon — flip cards to find matching animal pairs" loading="lazy">
+          <h4 data-i18n="games.memory.title">Memory Match</h4>
+          <p data-i18n="games.memory.desc">Flip and find the pairs. Pure memory training, dressed up as a game.</p>
+        </div>
+
+        <div class="game-card fade-in">
+          <img src="assets/icons/games/puppy-puzzle.png" alt="Puppy Puzzle game icon — snap-fit jigsaw pieces of animals" loading="lazy">
+          <h4 data-i18n="games.puzzle.title">Puppy Puzzle</h4>
+          <p data-i18n="games.puzzle.desc">Snap the pieces. Spatial reasoning that builds without lessons.</p>
+        </div>
+
+        <div class="game-card fade-in">
+          <img src="assets/icons/games/whos-who.png" alt="Who&rsquo;s Who game icon — spot-the-difference between similar animals" loading="lazy">
+          <h4 data-i18n="games.whos.title">Who&rsquo;s Who</h4>
+          <p data-i18n="games.whos.desc">Spot what makes each animal one of a kind. Observation, gamified.</p>
+        </div>
+
+        <div class="game-card fade-in">
+          <img src="assets/icons/games/habitat-hop.png" alt="Habitat Hop game icon — match animals to their home biome" loading="lazy">
+          <h4 data-i18n="games.habitat.title">Habitat Hop</h4>
+          <p data-i18n="games.habitat.desc">Hop animals home — savannah, arctic, forest, ocean. Geography through play.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEIGHT & SCALE SHOWCASE -->
+  <section class="showcase-section showcase-scale" aria-label="Weight and scale feature">
+    <div class="container">
+      <div class="showcase-layout">
+        <div class="showcase-visual showcase-scale-visual">
+          <div class="scale-gallery">
+            <img src="assets/weight-gorilla.png" alt="Gorilla weight comparison — 1 gorilla weighs as much as 10 five-year-olds" class="scale-gallery-img" loading="lazy">
+            <img src="assets/scale-great-white.png" alt="Great White Shark scale comparison — a shark shown next to a child explorer for size reference" class="scale-gallery-img" loading="lazy">
+          </div>
+        </div>
+        <div class="showcase-text">
+          <img src="assets/icons/size-comparison.png" alt="Weight and scale icon" class="showcase-icon" loading="lazy">
+          <h2 data-i18n="showcase.scale.title">How Big? How Heavy?</h2>
+          <p data-i18n="showcase.scale.desc">Kids discover how animals measure up against themselves! How many five-year-olds does it take to weigh as much as a gorilla? Stand next to a Great White Shark and see just how big it really is!</p>
+          <ul class="showcase-points">
+            <li data-i18n="showcase.scale.point1">Weight and size compared to kids they can relate to</li>
+            <li data-i18n="showcase.scale.point2">Life-size scale with Little Explorer characters</li>
+            <li data-i18n="showcase.scale.point3">Height, length, and weight for every animal</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORLD EXPLORER MAP SHOWCASE -->
+  <section class="showcase-section showcase-map" aria-label="World explorer map feature">
+    <div class="container">
+      <div class="showcase-layout showcase-layout-reverse">
+        <div class="showcase-text">
+          <img src="assets/icons/world-traveller.png" alt="World explorer globe icon" class="showcase-icon" loading="lazy">
+          <h2 data-i18n="showcase.map.title">Explore the Whole World</h2>
+          <p data-i18n="showcase.map.desc">A beautiful, colorful world map shows kids exactly where each animal lives. Tap a continent and discover the incredible creatures that call it home.</p>
+          <ul class="showcase-points">
+            <li data-i18n="showcase.map.point1">Interactive continent-by-continent exploration</li>
+            <li data-i18n="showcase.map.point2">Learn animal habitats and geography together</li>
+            <li data-i18n="showcase.map.point3">Colorful, kid-friendly map design</li>
+          </ul>
+        </div>
+        <div class="showcase-visual showcase-map-visual">
+          <div class="map-demo">
+            <img src="assets/world-map.jpg" alt="Colorful world map showing animal habitats" class="map-demo-img" loading="lazy">
+            <img src="assets/icons/map-pin.png" alt="Map pin" class="map-pin map-pin-1" loading="lazy">
+            <img src="assets/icons/map-pin.png" alt="Map pin" class="map-pin map-pin-2" loading="lazy">
+            <img src="assets/icons/map-pin.png" alt="Map pin" class="map-pin map-pin-3" loading="lazy">
+          </div>
+          <div class="map-explorer-accent">
+            <img src="assets/icons/little-explorer.png" alt="Little Explorer mascot" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCALIZATION -->
+  <section class="showcase-section showcase-languages" aria-label="Available in 5 languages">
+    <div class="container">
+      <div class="showcase-layout">
+        <div class="showcase-visual showcase-lang-visual">
+          <div class="lang-flags">
+            <div class="lang-flag-item">
+              <span class="lang-flag-emoji">&#127468;&#127463;</span>
+              <span class="lang-flag-label">English</span>
+            </div>
+            <div class="lang-flag-item">
+              <span class="lang-flag-emoji">&#127465;&#127466;</span>
+              <span class="lang-flag-label">Deutsch</span>
+            </div>
+            <div class="lang-flag-item">
+              <span class="lang-flag-emoji">&#127466;&#127480;</span>
+              <span class="lang-flag-label">Espa&ntilde;ol</span>
+            </div>
+            <div class="lang-flag-item">
+              <span class="lang-flag-emoji">&#127467;&#127479;</span>
+              <span class="lang-flag-label">Fran&ccedil;ais</span>
+            </div>
+            <div class="lang-flag-item">
+              <span class="lang-flag-emoji">&#127464;&#127475;</span>
+              <span class="lang-flag-label">&#20013;&#25991;</span>
+            </div>
+          </div>
+          <div class="lang-explorer-accent">
+            <img src="assets/icons/speaker.png" alt="Audio narration icon" loading="lazy">
+          </div>
+        </div>
+        <div class="showcase-text">
+          <img src="assets/icons/speaker.png" alt="Languages and audio icon" class="showcase-icon" loading="lazy">
+          <h2 data-i18n="lang.title">Available in 5 Languages</h2>
+          <p data-i18n-html="lang.desc">Wild Atlas is fully localized in English, German, Spanish, French, and Simplified Chinese &mdash; including all text <em>and</em> audio narration. Every animal fact, fun word, and quiz is read aloud in your child&rsquo;s language.</p>
+          <ul class="showcase-points">
+            <li data-i18n="lang.point1">Full audio narration in every supported language</li>
+            <li data-i18n="lang.point2">All text, facts, and quizzes translated</li>
+            <li data-i18n="lang.point3">Perfect for bilingual families</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANIMAL PACKS -->
+  <section class="packs-section" id="packs" aria-label="Animal packs">
+    <div class="container">
+      <h2 class="section-title" data-i18n="packs.title">12 Animal Worlds to Explore</h2>
+      <p class="section-subtitle" data-i18n="packs.subtitle">3 free packs to start, plus 9 more to unlock &mdash; with new packs added regularly!</p>
+
+      <div class="packs-grid">
+
+        <div class="pack-card free" data-color="peach">
+          <span class="pack-badge free-badge" data-i18n="packs.free">Free</span>
+          <img src="assets/mascots/happy-hounds.png" alt="Happy Hounds animal pack mascot" loading="lazy">
+          <h4 data-i18n="packs.happy_hounds">Happy Hounds</h4>
+        </div>
+
+        <div class="pack-card free" data-color="mint">
+          <span class="pack-badge free-badge" data-i18n="packs.free">Free</span>
+          <img src="assets/mascots/cool-cats.png" alt="Cool Cats animal pack mascot" loading="lazy">
+          <h4 data-i18n="packs.cool_cats">Cool Cats</h4>
+        </div>
+
+        <div class="pack-card free" data-color="yellow">
+          <span class="pack-badge free-badge" data-i18n="packs.free">Free</span>
+          <img src="assets/mascots/cozy-critters.png" alt="Cozy Critters animal pack mascot" loading="lazy">
+          <h4 data-i18n="packs.cozy_critters">Cozy Critters</h4>
+        </div>
+
+        <div class="pack-card" data-color="yellow">
+          <img src="assets/mascots/bird-buddies.png" alt="Feathered Friends animal pack mascot" loading="lazy">
+          <h4 data-i18n="packs.feathered_friends">Feathered Friends</h4>
+        </div>
+
+        <div class="pack-card" data-color="yellow">
+          <img src="assets/mascots/safari-stars.png" alt="Safari Stars animal pack mascot" loading="lazy">
+          <h4 data-i18n="packs.safari_stars">Safari Stars</h4>
+        </div>
+
+        <div class="pack-card" data-color="sky">
+          <img src="assets/mascots/ocean-wonders.png" alt="Ocean Creatures animal pack mascot" loading="lazy">
+          <h4 data-i18n="packs.ocean_creatures">Ocean Creatures</h4>
+        </div>
+
+        <div class="pack-card" data-color="purple">
+          <img src="assets/mascots/dino-discoveries.png" alt="Dino Roars! animal pack mascot" loading="lazy">
+          <h4 data-i18n="packs.dino_roars">Dino Roars!</h4>
+        </div>
+
+        <div class="pack-card" data-color="peach">
+          <img src="assets/mascots/forest-friends.png" alt="Wild Americas animal pack mascot" loading="lazy">
+          <h4 data-i18n="packs.wild_americas">Wild Americas</h4>
+        </div>
+
+        <div class="pack-card" data-color="mint">
+          <img src="assets/mascots/hoppy-amphibians.png" alt="Rainforest Explorers animal pack mascot" loading="lazy">
+          <h4 data-i18n="packs.rainforest_explorers">Rainforest Explorers</h4>
+        </div>
+
+        <div class="pack-card" data-color="yellow">
+          <img src="assets/mascots/farm-friends.png" alt="Farm Friends animal pack mascot" loading="lazy">
+          <h4 data-i18n="packs.farm_friends">Farm Friends</h4>
+        </div>
+
+        <div class="pack-card" data-color="mint">
+          <img src="assets/mascots/reptile-realm.png" alt="Reptile World animal pack mascot" loading="lazy">
+          <h4 data-i18n="packs.reptile_world">Reptile World</h4>
+        </div>
+
+        <div class="pack-card" data-color="sky">
+          <img src="assets/mascots/arctic-adventures.png" alt="Planet Pioneers animal pack mascot" loading="lazy">
+          <h4 data-i18n="packs.planet_pioneers">Planet Pioneers</h4>
+        </div>
+
+      </div>
+      <p class="packs-more" data-i18n="packs.more">More packs coming soon!</p>
+    </div>
+  </section>
+
+  <!-- ANIMAL SHOWCASE STRIP -->
+  <section class="animal-strip-section" aria-label="Animal showcase">
+    <div class="container">
+      <h2 class="section-title" data-i18n="animals.title">150+ Beautiful Animals</h2>
+    </div>
+    <div class="animal-strip" id="animalStrip">
+      <div class="animal-strip-track">
+        <div class="animal-strip-card"><img src="assets/animals/golden-retriever.png" alt="Golden Retriever — beautiful hi-fi photo" loading="lazy"><span data-i18n="animals.golden_retriever">Golden Retriever</span></div>
+        <div class="animal-strip-card"><img src="assets/animals/lion.png" alt="Lion" loading="lazy"><span data-i18n="animals.lion">Lion</span></div>
+        <div class="animal-strip-card"><img src="assets/animals/snow-leopard.png" alt="Snow Leopard" loading="lazy"><span data-i18n="animals.snow_leopard">Snow Leopard</span></div>
+        <div class="animal-strip-card"><img src="assets/animals/toucan.png" alt="Toucan" loading="lazy"><span data-i18n="animals.toucan">Toucan</span></div>
+        <div class="animal-strip-card"><img src="assets/animals/great-white.png" alt="Great White Shark" loading="lazy"><span data-i18n="animals.great_white">Great White</span></div>
+        <div class="animal-strip-card"><img src="assets/animals/axolotl.png" alt="Axolotl" loading="lazy"><span data-i18n="animals.axolotl">Axolotl</span></div>
+        <div class="animal-strip-card"><img src="assets/animals/red-eyed-tree-frog.png" alt="Red-Eyed Tree Frog" loading="lazy"><span data-i18n="animals.tree_frog">Tree Frog</span></div>
+        <!-- duplicated for seamless loop -->
+        <div class="animal-strip-card"><img src="assets/animals/golden-retriever.png" alt="Golden Retriever — beautiful hi-fi photo" loading="lazy"><span data-i18n="animals.golden_retriever">Golden Retriever</span></div>
+        <div class="animal-strip-card"><img src="assets/animals/lion.png" alt="Lion" loading="lazy"><span data-i18n="animals.lion">Lion</span></div>
+        <div class="animal-strip-card"><img src="assets/animals/snow-leopard.png" alt="Snow Leopard" loading="lazy"><span data-i18n="animals.snow_leopard">Snow Leopard</span></div>
+        <div class="animal-strip-card"><img src="assets/animals/toucan.png" alt="Toucan" loading="lazy"><span data-i18n="animals.toucan">Toucan</span></div>
+        <div class="animal-strip-card"><img src="assets/animals/great-white.png" alt="Great White Shark" loading="lazy"><span data-i18n="animals.great_white">Great White</span></div>
+        <div class="animal-strip-card"><img src="assets/animals/axolotl.png" alt="Axolotl" loading="lazy"><span data-i18n="animals.axolotl">Axolotl</span></div>
+        <div class="animal-strip-card"><img src="assets/animals/red-eyed-tree-frog.png" alt="Red-Eyed Tree Frog" loading="lazy"><span data-i18n="animals.tree_frog">Tree Frog</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR PARENTS -->
+  <section class="parents-section" id="parents" aria-label="For parents">
+    <div class="container">
+      <div class="parents-content">
+        <div class="parents-text">
+          <h2 data-i18n="parents.title">Designed for Independent Exploration</h2>
+          <ul class="parents-list">
+            <li>
+              <img src="assets/icons/speaker.png" alt="" class="parents-icon">
+              <span data-i18n-html="parents.point1">Tap-to-read narration means <strong>no reading skills needed</strong></span>
+            </li>
+            <li>
+              <img src="assets/icons/little-explorer.png" alt="" class="parents-icon">
+              <span data-i18n-html="parents.point2">Age-appropriate content for <strong>Little Explorers (Under 5)</strong> and <strong>Young Explorers (5 and Up)</strong></span>
+            </li>
+            <li>
+              <img src="assets/icons/discovery-badge.png" alt="" class="parents-icon">
+              <span data-i18n-html="parents.point3">Built so kids can <strong>explore safely on their own</strong></span>
+            </li>
+            <li>
+              <img src="assets/icons/fun-words.png" alt="" class="parents-icon">
+              <span data-i18n-html="parents.point4"><strong>Available in 5 languages</strong> &mdash; learn in your child&rsquo;s native language, or use it to reinforce a language they&rsquo;re studying.</span>
+            </li>
+            <li>
+              <img src="assets/icons/safety-guide.png" alt="" class="parents-icon">
+              <span data-i18n-html="parents.point5"><strong>No ads, no external links, no social features</strong></span>
+            </li>
+          </ul>
+        </div>
+        <div class="parents-visual">
+          <img src="assets/mascot-sitting.png" alt="Wild Atlas mascot pup sitting on a globe" class="parents-mascot" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <div class="parents-map-bg">
+      <img src="assets/world-map.jpg" alt="" loading="lazy">
+    </div>
+  </section>
+
+  <!-- BRAND: WHAT WE STAND FOR -->
+  <section class="brand-section" id="brand" aria-label="What Wild Atlas stands for">
+    <div class="container">
+      <p class="brand-eyebrow" data-i18n="brand.eyebrow">What we stand for</p>
+      <h2 class="brand-title" data-i18n="brand.title">Built on beliefs, not features</h2>
+      <div class="brand-pillars">
+
+        <div class="brand-pillar fade-in">
+          <h3 data-i18n="brand.pillar1.title">Wonder over dopamine</h3>
+          <p data-i18n="brand.pillar1.desc">Built to leave your child more curious than it found them &mdash; not more glued to the screen.</p>
+        </div>
+
+        <div class="brand-pillar fade-in">
+          <h3 data-i18n="brand.pillar2.title">Child-led, not algorithm-fed</h3>
+          <p data-i18n="brand.pillar2.desc">No recommendation engine. No autoplay loop. Just a curious kid choosing what to explore next.</p>
+        </div>
+
+        <div class="brand-pillar fade-in">
+          <h3 data-i18n="brand.pillar3.title">Education without the classroom</h3>
+          <p data-i18n="brand.pillar3.desc">Real facts, narrated like a documentary, organized around the questions kids actually ask. No drills, no grades, no lessons in disguise.</p>
+        </div>
+
+        <div class="brand-pillar fade-in">
+          <h3 data-i18n="brand.pillar4.title">Pride, not guilt</h3>
+          <p data-i18n="brand.pillar4.desc">Most kids&rsquo; apps are built against parents. This one is built with them &mdash; so you can hand it over and feel good about it.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT (teaser — full letter lives at /about) -->
+  <section class="about-section" id="about" aria-label="About Wild Atlas">
+    <div class="container">
+      <div class="about-content about-teaser">
+        <p class="about-eyebrow" data-i18n="about.eyebrow">Behind the app</p>
+        <h2 data-i18n="about.title">Why we built Wild Atlas</h2>
+        <p class="about-body" data-i18n="about.body">Hey &mdash; I&rsquo;m Josh. Wild Atlas began as a thing I was making for my own kids, Zuzu and Lurian. The full story is a letter worth its own page.</p>
+        <a href="about.html" class="about-cta" data-i18n="about.cta">Read the founder letter &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMAIL SIGNUP -->
+  <section class="signup-section" id="signup" aria-label="Email signup">
+    <div class="container">
+      <div class="signup-content">
+        <div class="signup-text">
+          <img src="assets/mascot-logo.png" alt="Wild Atlas mascot — join the explorers" class="signup-unlock-icon" loading="lazy">
+          <h2 data-i18n="signup.title">Be First to the Wild</h2>
+          <p data-i18n-html="signup.desc">Sign up for launch updates, animal discoveries, and an <strong>exclusive welcome offer</strong> for early signups.</p>
+        </div>
+        <div class="signup-form-wrap">
+          <img src="assets/icons/little-explorer-happy.png" alt="Happy Little Explorer mascot" class="signup-mascot" loading="lazy">
+          <form class="signup-form" id="signupForm" action="https://formspree.io/f/mlgppzdy" method="POST" aria-label="Sign up for the Wild Atlas mailing list">
+            <label for="signupEmail" class="sr-only">Email address</label>
+            <input type="email" name="email" id="signupEmail" placeholder="Enter your email" data-i18n-placeholder="signup.placeholder" required autocomplete="email">
+            <button type="submit" class="btn btn-primary" data-i18n="signup.button">Sign Me Up</button>
+          </form>
+          <div class="signup-success" id="signupSuccess" hidden>
+            <img src="assets/icons/young-explorer-happy.png" alt="Signup success — happy Young Explorer" class="success-mascot" loading="lazy">
+            <p data-i18n="signup.success">You&rsquo;re in! Watch your inbox — welcome offer on the way.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="assets/mascot-sitting.png" alt="Wild Atlas" class="footer-mascot" loading="lazy">
+          <span class="footer-title">Wild Atlas</span>
+        </div>
+        <div class="footer-links">
+          <a href="about.html" data-i18n="footer.about">About</a>
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="terms.html" data-i18n="footer.terms">Terms of Service</a>
+          <a href="age-suitability.html" data-i18n="footer.agesuitability">Age Suitability</a>
+          <a href="support.html" data-i18n="footer.support">Support</a>
+          <a href="mailto:info@wildatlasapp.com" data-i18n="footer.contact">Contact</a>
+        </div>
+        <p class="footer-copy" data-i18n="footer.copy">&copy; 2026 Wild Atlas. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
