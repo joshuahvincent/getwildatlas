@@ -15,6 +15,7 @@
 # repo's wrangler.toml but pointed at Eleventy's _site/ output instead of `.`.
 
 name = "wildatlaswebsite"
+pages_build_output_dir = "_site"
 compatibility_date = "2025-09-27"
 compatibility_flags = ["nodejs_compat"]
 
