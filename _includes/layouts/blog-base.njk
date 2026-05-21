@@ -47,17 +47,21 @@
     * { box-sizing: border-box; }
     html, body { margin: 0; padding: 0; }
     body {
-      background: var(--bg);
+      background: #D9BE8A;
       color: var(--ink);
       font-family: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
       font-size: 18px;
       line-height: 1.6;
     }
+    .page-shell {
+      max-width: var(--max);
+      margin: 0 auto;
+      background: var(--bg);
+      min-height: 100vh;
+    }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
     .site-nav, .site-footer {
-      max-width: var(--max);
-      margin: 0 auto;
       padding: 1.25rem 1.5rem;
     }
     .site-nav {
@@ -82,8 +86,6 @@
     }
     .site-nav .nav-links a { margin-left: 1.25rem; color: var(--ink); }
     main {
-      max-width: var(--max);
-      margin: 0 auto;
       padding: 2rem 1.5rem 3rem;
     }
     .site-footer {
@@ -92,6 +94,7 @@
       font-size: 0.9rem;
       text-align: center;
     }
+    p { margin: 0 0 1.25rem; }
     h1, h2, h3 {
       font-family: "Fredoka", system-ui, sans-serif;
       font-weight: 700;
@@ -148,22 +151,24 @@
   </style>
 </head>
 <body class="blog-body">
+  <div class="page-shell">
 
-  <header class="site-nav">
-    <a href="/" class="brand"><img src="/assets/mascot-logo.png" alt="">Wild Atlas</a>
-    <nav class="nav-links">
-      <a href="/">Home</a>
-      <a href="/blog/">Blog</a>
-    </nav>
-  </header>
+    <header class="site-nav">
+      <a href="/" class="brand"><img src="/assets/mascot-logo.png" alt="">Wild Atlas</a>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+      </nav>
+    </header>
 
-  <main>
-    {{ content | safe }}
-  </main>
+    <main>
+      {{ content | safe }}
+    </main>
 
-  <footer class="site-footer">
-    <p>&copy; 2026 Wild Atlas. All rights reserved.</p>
-  </footer>
+    <footer class="site-footer">
+      <p>&copy; 2026 Wild Atlas. All rights reserved.</p>
+    </footer>
 
+  </div>
 </body>
 </html>
