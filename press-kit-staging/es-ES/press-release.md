@@ -28,6 +28,6 @@ Wild Atlas es una app interactiva de descubrimiento animal para niños a partir 
 ### CONTACTO DE PRENSA
 
 press@wildatlasapp.com
-Kit de prensa: wildatlasapp.com/press [CONFIRM]
+Kit de prensa: wildatlasapp.com/press
 
 ###

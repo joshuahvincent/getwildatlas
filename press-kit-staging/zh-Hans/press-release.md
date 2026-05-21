@@ -28,6 +28,6 @@ Wild Atlas 是一款面向 3 岁及以上儿童的互动动物探索应用，提
 ### 媒体联系
 
 press@wildatlasapp.com
-新闻资料包：wildatlasapp.com/press [CONFIRM]
+新闻资料包：wildatlasapp.com/press
 
 ###

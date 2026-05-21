@@ -28,6 +28,6 @@ Wild Atlas ist eine interaktive Tier-Entdeckungs-App für Kinder ab 3 Jahren mit
 ### PRESSEKONTAKT
 
 press@wildatlasapp.com
-Pressekit: wildatlasapp.com/press [CONFIRM]
+Pressekit: wildatlasapp.com/press
 
 ###
