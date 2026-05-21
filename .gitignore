@@ -10,6 +10,9 @@ build/
 .output/
 .cache/
 
+# Eleventy build output
+_site/
+
 # Env / secrets
 .env
 .env.local
@@ -25,3 +28,8 @@ build/
 .claude/scheduled_tasks.lock
 .claude/settings.local.json
 .claude/sweep-queue/
+
+# ~/.gitignore_global has 'Icon?' (intended for Mac Classic Icon\r files)
+# which case-insensitively matches the 'icons' directory on macOS
+# (HFS+/APFS are case-insensitive). Un-ignore so brand icons commit.
+!assets/icons/

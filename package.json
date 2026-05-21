@@ -1,0 +1,14 @@
+{
+  "name": "wildatlas-website",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static site source for wildatlasapp.com. Built with Eleventy.",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve --port=8081",
+    "clean": "rm -rf _site"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

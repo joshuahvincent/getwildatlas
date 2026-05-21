@@ -1,0 +1,14 @@
+node_modules
+_site
+package.json
+package-lock.json
+.eleventy.js
+.eleventyignore
+.git
+.gitignore
+README.md
+CLAUDE.md
+DEPLOY.md
+LAUNCH_CHECKLIST.md
+press-kit-staging
+content/press

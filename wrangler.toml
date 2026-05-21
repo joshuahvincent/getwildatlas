@@ -1,0 +1,22 @@
+# Cloudflare Pages config for wildatlasapp.com.
+#
+# This file matters once the Cloudflare Pages project `wildatlaswebsite` is
+# re-wired to deploy from this repo (getwildatlas#2). Until then, the live
+# deploy still comes from the wildatlas repo's website/ folder and this file
+# is informational.
+#
+# In the Cloudflare Pages dashboard for the rewired project:
+#   - Build command:        npm install && npm run build
+#   - Build output directory: _site
+#   - Root directory:       /          (this repo's root)
+#   - Node version:         20 or 22   (set via NODE_VERSION env var)
+#
+# The `[assets]` block below mirrors what's currently in the wildatlas
+# repo's wrangler.toml but pointed at Eleventy's _site/ output instead of `.`.
+
+name = "wildatlaswebsite"
+compatibility_date = "2025-09-27"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "_site"

@@ -10,8 +10,49 @@ This is the **website** repo. The **iOS app** lives in a separate repo: [`wildat
 
 - **Branch model:** just `main` for now. Will adopt integration → main flow if the repo grows or gains contributors.
 - **Deploy:** the Cloudflare Pages project `wildatlaswebsite` (apex `wildatlasapp.com`) currently still deploys from `wildatlas/website/`. The migration to `getwildatlas` is tracked at [getwildatlas#2](https://github.com/joshuahvincent/getwildatlas/issues/2). Until that cuts over, treat website pages as live-served from the `wildatlas` repo, with this repo as the new home.
-- **Tech stack:** **TBD** — to be decided by the first real PR that lands website code. Update this CLAUDE.md when chosen (static HTML, Astro, Next, Hugo, etc.).
+- **Tech stack:** [Eleventy](https://www.11ty.dev/) v3 (Node-based static site generator). Templating-only — no client-side framework shipped. Existing vanilla HTML/CSS/JS from `wildatlas/website/` lands here as passthrough; new pages (blog, future routes) render from markdown via Nunjucks layouts. See "Build & blog" section below.
 - **Reviewer:** Joshuah Vincent (solo for now).
+
+## Build & blog
+
+### Local build
+
+```bash
+npm install
+npm run build     # one-shot build → _site/
+npm run dev       # local dev server with hot reload on :8081
+```
+
+Eleventy reads everything in this repo, passes most files through unchanged, and renders blog routes from `content/blog/*.md` using the Nunjucks layouts under `_includes/`.
+
+### How the blog works
+
+- **Post source:** `content/blog/<slug>.md` with YAML frontmatter:
+  ```yaml
+  ---
+  layout: layouts/post.njk
+  title: "Post title"
+  date: 2026-05-26
+  author: Joshuah Vincent
+  excerpt: "One-line summary that shows on the index and in OG tags."
+  permalink: /blog/<slug>/
+  tags: [founder]
+  ---
+  ```
+- **Listing:** `/blog/` renders from `blog/index.njk`, sorted newest first.
+- **Layouts:** `_includes/layouts/blog-base.njk` is the HTML shell shared by all blog routes. Once the migration brings over the main site's `css/styles.css`, fonts, and i18n JS, uncomment the asset links in `blog-base.njk` and the blog will adopt the main site's full styling automatically.
+- **Newsletter signup:** `_includes/partials/newsletter-signup.njk` posts to Buttondown. Replace the `wildatlas` username in the form action with the actual Buttondown handle once the account exists.
+
+### Adding a new post
+
+1. Create `content/blog/<slug>.md` with frontmatter (copy from any existing post).
+2. Write the body in markdown.
+3. `npm run dev` to eyeball locally.
+4. Commit, push. Cloudflare Pages rebuilds in ~60s.
+
+### Future: CMS for non-technical authors
+
+When a second writer needs to author posts without git, drop in [Sveltia CMS](https://github.com/sveltia/sveltia-cms) at `/admin/`. It mounts as a static admin route, authenticates via GitHub OAuth (Cloudflare Workers OAuth proxy is free), and writes markdown to `content/blog/` for Eleventy to render. Zero rewrite needed.
 
 ## Branch + PR rules
 

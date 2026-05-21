@@ -1,0 +1,6 @@
+# Wild Atlas — robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://wildatlas.edu/sitemap.xml

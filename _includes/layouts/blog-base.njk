@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ title }} — Wild Atlas</title>
+  <meta name="description" content="{{ excerpt or 'The Wild Atlas blog — notes from the founder and team.' }}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://wildatlasapp.com{{ page.url }}">
+
+  <meta name="theme-color" content="#FFF5E1">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://wildatlasapp.com{{ page.url }}">
+  <meta property="og:title" content="{{ title }} — Wild Atlas">
+  <meta property="og:description" content="{{ excerpt or 'The Wild Atlas blog.' }}">
+  <meta property="og:image" content="https://wildatlasapp.com/assets/og-image.png">
+  <meta property="og:site_name" content="Wild Atlas">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }} — Wild Atlas">
+  <meta name="twitter:description" content="{{ excerpt or 'The Wild Atlas blog.' }}">
+  <meta name="twitter:image" content="https://wildatlasapp.com/assets/og-image.png">
+
+  <!-- Favicon (matches main site once assets are migrated in) -->
+  <link rel="icon" type="image/png" href="/assets/app-icon.png">
+  <link rel="apple-touch-icon" href="/assets/app-icon.png">
+
+  <link rel="preload" href="/fonts/Fredoka-VariableFont_wdth,wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/fonts/Nunito-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- Minimal stylesheet so the blog is presentable before the main site
+       CSS lands. Deliberately small and overridable. -->
+  <style>
+    :root {
+      --bg: #FFF5E1;
+      --ink: #2A2118;
+      --muted: #6B5E4F;
+      --accent: #C25A2C;
+      --rule: #E9DCC2;
+      --max: 720px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .site-nav, .site-footer {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 1.25rem 1.5rem;
+    }
+    .site-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--rule);
+    }
+    .site-nav .brand {
+      font-family: "Fredoka", system-ui, sans-serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--ink);
+    }
+    .site-nav .nav-links a { margin-left: 1.25rem; color: var(--ink); }
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+    }
+    .site-footer {
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    h1, h2, h3 {
+      font-family: "Fredoka", system-ui, sans-serif;
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--ink);
+    }
+    h1 { font-size: 2rem; margin: 0 0 0.5rem; }
+    h2 { font-size: 1.5rem; margin: 2rem 0 0.5rem; }
+    h3 { font-size: 1.15rem; margin: 1.5rem 0 0.5rem; }
+    blockquote {
+      border-left: 3px solid var(--accent);
+      margin: 1.5rem 0;
+      padding: 0.25rem 1rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid var(--rule);
+      margin: 2rem 0;
+    }
+    img { max-width: 100%; height: auto; border-radius: 8px; }
+  </style>
+</head>
+<body class="blog-body">
+
+  <header class="site-nav">
+    <a href="/" class="brand">Wild Atlas</a>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Wild Atlas. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
