@@ -71,7 +71,7 @@ Routing rules: see `docs/content-strategy.md` in the wildatlas repo.
 
 | # | Title | Target date | Status | Notes |
 |---|---|---|---|---|
-| 1 | Wild Atlas Is Live | T-0 (May 26) | ✅ Live | Posted as "Why I Built This" on wildatlasapp.com/blog |
+| 1 | Why I Built This | T-0 (May 26) | 🟡 Blog live / LI pending | Live at wildatlasapp.com/blog/why-i-built-this/ — repost to LinkedIn Article on launch day. |
 | 2 | I Had Never Written Swift. Three Months Later My App Was on TestFlight. | T+7 (Jun 2) | 🔴 Not started | Zero iOS skill → shipped app. AI agents as junior engineers. |
 | 3 | Building the Team That Built Wild Atlas | T+14 (Jun 9) | 🔴 Not started | 9 agents, 5 skills. Multi-agent plan review. Security addressed here. |
 | 4 | Marketing a Kids App with No Marketing Team | T+21 (Jun 16) | 🔴 Not started | AI marketing workforce. App Store pipeline, press kit, brand voice. |
