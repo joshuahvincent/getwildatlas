@@ -11,7 +11,6 @@
 
   <meta name="theme-color" content="#FFF5E1">
 
-  <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://wildatlasapp.com{{ page.url }}">
   <meta property="og:title" content="{{ title }} — Wild Atlas">
@@ -19,13 +18,11 @@
   <meta property="og:image" content="https://wildatlasapp.com/assets/og-image.png">
   <meta property="og:site_name" content="Wild Atlas">
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ title }} — Wild Atlas">
   <meta name="twitter:description" content="{{ excerpt or 'The Wild Atlas blog.' }}">
   <meta name="twitter:image" content="https://wildatlasapp.com/assets/og-image.png">
 
-  <!-- Favicon (matches main site once assets are migrated in) -->
   <link rel="icon" type="image/png" href="/assets/app-icon.png">
   <link rel="apple-touch-icon" href="/assets/app-icon.png">
 
@@ -33,8 +30,6 @@
   <link rel="preload" href="/fonts/Nunito-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="/css/styles.css">
 
-  <!-- Minimal stylesheet so the blog is presentable before the main site
-       CSS lands. Deliberately small and overridable. -->
   <style>
     :root {
       --bg: #FFF5E1;
@@ -59,41 +54,17 @@
       background: var(--bg);
       min-height: 100vh;
     }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .site-nav, .site-footer {
-      padding: 1.25rem 1.5rem;
-    }
-    .site-nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid var(--rule);
-    }
-    .site-nav .brand {
-      font-family: "Fredoka", system-ui, sans-serif;
-      font-weight: 700;
-      font-size: 1.25rem;
-      color: var(--ink);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .site-nav .brand img {
-      width: 32px;
-      height: 32px;
-      border-radius: 0;
-    }
-    .site-nav .nav-links a { margin-left: 1.25rem; color: var(--ink); }
-    main {
-      padding: 2rem 1.5rem 3rem;
-    }
-    .site-footer {
+    main { padding: 2rem 1.5rem 3rem; }
+    .blog-footer {
       border-top: 1px solid var(--rule);
       color: var(--muted);
       font-size: 0.9rem;
       text-align: center;
+      padding: 1.25rem 1.5rem;
     }
+    /* Blog content typography */
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
     p { margin: 0 0 1.25rem; }
     h1, h2, h3 {
       font-family: "Fredoka", system-ui, sans-serif;
@@ -111,11 +82,7 @@
       color: var(--muted);
       font-style: italic;
     }
-    hr {
-      border: 0;
-      border-top: 1px solid var(--rule);
-      margin: 2rem 0;
-    }
+    hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
     img { max-width: 100%; height: auto; border-radius: 8px; }
     .blog-post-label {
       display: inline-block;
@@ -132,15 +99,8 @@
     }
     ul, ol { padding-left: 1.5rem; }
     li { margin-bottom: 0.4rem; }
-    figure {
-      margin: 2rem 0;
-    }
-    figure img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      display: block;
-    }
+    figure { margin: 2rem 0; }
+    figure img { width: 100%; height: auto; border-radius: 8px; display: block; }
     figcaption {
       margin-top: 0.5rem;
       font-size: 0.85rem;
@@ -151,24 +111,58 @@
   </style>
 </head>
 <body class="blog-body">
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-brand">
+        <img src="/assets/mascot-logo.png" alt="Wild Atlas" class="nav-icon">
+        <span class="nav-title">Wild Atlas</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/#features">Features</a></li>
+        <li><a href="/#parents">For Parents</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="https://github.com/joshuahvincent/getwildatlas/releases/download/press-kit-v1.0/wild-atlas-press-kit.zip">Press</a></li>
+        <li><a href="/#signup" class="nav-cta">Get Free Pack</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <div class="page-shell">
-
-    <header class="site-nav">
-      <a href="/" class="brand"><img src="/assets/mascot-logo.png" alt="">Wild Atlas</a>
-      <nav class="nav-links">
-        <a href="/">Home</a>
-        <a href="/blog/">Blog</a>
-      </nav>
-    </header>
-
     <main>
       {{ content | safe }}
     </main>
 
-    <footer class="site-footer">
+    <footer class="blog-footer">
       <p>&copy; 2026 Wild Atlas. All rights reserved.</p>
     </footer>
-
   </div>
+
+  <script>
+    (function () {
+      var navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', function () {
+        if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 10);
+      });
+      var toggle = document.getElementById('navToggle');
+      var links = document.getElementById('navLinks');
+      if (toggle && links) {
+        toggle.addEventListener('click', function () {
+          toggle.classList.toggle('active');
+          links.classList.toggle('open');
+        });
+        links.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', function () {
+            toggle.classList.remove('active');
+            links.classList.remove('open');
+          });
+        });
+      }
+    })();
+  </script>
+
 </body>
 </html>
