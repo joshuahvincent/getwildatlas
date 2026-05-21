@@ -26,9 +26,29 @@ My father — Michael Vincent — spent nearly five decades making wildlife docu
 
 He always wanted to take me to the Kalahari. We never made it. He passed away in March 2024.
 
+<figure>
+  <img src="/assets/blog/botswana-camp-sunset.jpg" alt="Camp at dusk in Botswana — three AVIS Hiluxes with rooftop tents around a campfire">
+  <figcaption>Camp at dusk. Five reserves, nineteen days.</figcaption>
+</figure>
+
 So in January 2026, I loaded three Toyota Hiluxes with friends and drove them overlanding through Botswana's game reserves — nineteen days across five reserves, elephants walking through camp at night, lions close enough to hear from the rooftop tents. I led the trip. I brought my daughter Zuzu, who was five, and my son Lurian, who hadn't yet turned two. I used my dad's camera.
 
+<figure>
+  <img src="/assets/blog/elephant-hilux.jpg" alt="An elephant leaning over a muddy AVIS Safari Rental Hilux in Botswana">
+  <figcaption>Elephants walked through camp. This one was less polite than most.</figcaption>
+</figure>
+
+<figure>
+  <img src="/assets/blog/fairy-game-camp.jpg" alt="Joshuah playing The Fairy Game at a camp table with Zuzu and Lurian, Hiluxes in the background">
+  <figcaption>The Fairy Game, somewhere in Chobe. This was most of the trip, honestly.</figcaption>
+</figure>
+
 We came home.
+
+<figure>
+  <img src="/assets/blog/sleeping-on-plane.jpg" alt="Joshuah asleep on a plane with both children sleeping on top of him">
+  <figcaption>We came home.</figcaption>
+</figure>
 
 ---
 
@@ -49,6 +69,11 @@ The animal app idea came quickly. I didn't push it. I'd spent years building toy
 Zuzu was my first tester. She'd scroll through the animal pages, but she needed me to read them to her. So I added auto-narration. After that she'd scroll through, listen, look at the photos — and drift. I added quizzes. She played them obsessively, until she'd exhausted them. I added games. A beta tester's son couldn't find his collection of badges, so I added a Passport page — achievements, trophies, things to collect.
 
 Every layer of Wild Atlas exists because a kid looked up from the previous one and wanted more.
+
+<figure>
+  <img src="/assets/blog/lion-tracks-croc.jpg" alt="Zuzu's pink Croc next to a lion paw print in the sand">
+  <figcaption>Zuzu's foot next to a lion track. She wanted to know everything about it.</figcaption>
+</figure>
 
 The first stranger to try it was an eight-year-old called Ellis. His father told me Ellis "hardly uses devices in general." His verdict, after playing, was one word: *"Addictive."*
 
