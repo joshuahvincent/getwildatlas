@@ -71,6 +71,14 @@
       font-weight: 700;
       font-size: 1.25rem;
       color: var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .site-nav .brand img {
+      width: 32px;
+      height: 32px;
+      border-radius: 0;
     }
     .site-nav .nav-links a { margin-left: 1.25rem; color: var(--ink); }
     main {
@@ -106,12 +114,14 @@
       margin: 2rem 0;
     }
     img { max-width: 100%; height: auto; border-radius: 8px; }
+    ul, ol { padding-left: 1.5rem; }
+    li { margin-bottom: 0.4rem; }
   </style>
 </head>
 <body class="blog-body">
 
   <header class="site-nav">
-    <a href="/" class="brand">Wild Atlas</a>
+    <a href="/" class="brand"><img src="/assets/mascot-logo.png" alt="">Wild Atlas</a>
     <nav class="nav-links">
       <a href="/">Home</a>
       <a href="/blog/">Blog</a>

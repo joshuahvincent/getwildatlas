@@ -11,11 +11,12 @@ tags: [founder]
 *On conservation filmmakers, the Botswana bush, and building an animal encyclopaedia for a five-year-old who couldn't find one.*
 
 **TL;DR**
-📷 My father spent nearly five decades making wildlife documentaries in South Africa. He died in March 2024.
-🌍 I led a three-week expedition overlanding through Botswana — a trip he'd always wanted to take me on.
-🔥 A week after I got back, Meta let me go. Six years, 24/7. Suddenly: time.
-🐾 I couldn't find screen time I was comfortable handing my kids. So I started building it.
-🦁 Wild Atlas is available on the App Store today.
+
+- 📷 My father spent nearly five decades making wildlife documentaries in South Africa. He died in March 2024.
+- 🌍 I led a three-week expedition overlanding through Botswana — a trip he'd always wanted to take me on.
+- 🔥 A week after I got back, Meta let me go. Six years, 24/7. Suddenly: time.
+- 🐾 I couldn't find screen time I was comfortable handing my kids. So I started building it.
+- 🦁 Wild Atlas is available on the App Store today.
 
 ---
 
