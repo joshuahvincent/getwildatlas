@@ -72,9 +72,9 @@ Routing rules: see `docs/content-strategy.md` in the wildatlas repo.
 | # | Title | Target date | Status | Notes |
 |---|---|---|---|---|
 | 1 | Why I Built This | T-0 (May 26) | 🟡 Blog live / LI pending | Live at wildatlasapp.com/blog/why-i-built-this/ — repost to LinkedIn Article on launch day. |
-| 2 | I Had Never Written Swift. Three Months Later My App Was on TestFlight. | T+7 (Jun 2) | 🔴 Not started | Zero iOS skill → shipped app. AI agents as junior engineers. |
-| 3 | Building the Team That Built Wild Atlas | T+14 (Jun 9) | 🔴 Not started | 9 agents, 5 skills. Multi-agent plan review. Security addressed here. |
-| 4 | Marketing a Kids App with No Marketing Team | T+21 (Jun 16) | 🔴 Not started | AI marketing workforce. App Store pipeline, press kit, brand voice. |
-| 5 | The Kids Caught Bugs the AI Couldn't | T+28 (Jun 23) | 🔴 Not started | Real-kid testing. Jasper, Zuzu, Ellis, Katie. Age-range correction. |
-| 6 | I Wrote Encyclopedic Animal Content Without Being a Biologist | T+35 (Jun 30) | 🔴 Not started | AI as research co-pilot. Fact-check rigour. IUCN. |
-| 7 | Does Size Really Matter? Cutting Wild Atlas From 2GB to 382MB | TBD (after #3) | 🔴 Not started | Bundle size engineering piece. HN cross-post candidate. |
+| 2 | I Had Never Written Swift. Three Months Later My App Was on TestFlight. | T+7 (Jun 2) | 🟡 Draft ready | File: content/linkedin/02-never-written-swift.md. [CONFIRM: n/a — all facts sourced]. |
+| 3 | Building the Team That Built Wild Atlas | T+14 (Jun 9) | 🟡 Draft ready | File: content/linkedin/03-building-the-team.md. Security incidents named explicitly. Arc made text here. |
+| 4 | Marketing a Kids App with No Marketing Team | T+21 (Jun 16) | 🟡 Draft ready | File: content/linkedin/04-marketing-no-team.md. Google Drive marketing source docs not read — flag for Josh review. |
+| 5 | The Kids Caught Bugs the AI Couldn't | T+28 (Jun 23) | 🟡 Draft ready | File: content/linkedin/05-kids-caught-bugs.md. Screen-time contradiction named explicitly. |
+| 6 | I Wrote Encyclopedic Animal Content Without Being a Biologist | T+35 (Jun 30) | 🟡 Draft ready | File: content/linkedin/06-animal-content-biologist.md. [CONFIRM: German reviewer name or acknowledge gap]. |
+| 7 | Does Size Really Matter? Cutting Wild Atlas From 2GB to 382MB | TBD — after #3, ~Jul 7 | 🟡 Draft ready | File: content/linkedin/07-does-size-matter.md. HN cross-post candidate. Floats in cadence. |
