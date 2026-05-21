@@ -19,17 +19,21 @@ eleventyExcludeFromCollections: true
     <ul class="blog-list" style="list-style: none; padding: 0; margin: 2rem 0;">
       {% for post in collections.posts %}
         <li class="blog-list-item" style="padding: 1.5rem 0; border-bottom: 1px solid var(--rule);">
-          <h2 style="margin: 0 0 0.25rem;">
-            <a href="{{ post.url }}">{{ post.data.title }}</a>
-          </h2>
-          <p class="blog-list-meta" style="color: var(--muted); margin: 0 0 0.5rem; font-size: 0.95rem;">
-            <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
-            {% if post.data.author %} · {{ post.data.author }}{% endif %}
-            {% if post.templateContent %} · {{ post.templateContent | readingTime }}{% endif %}
-          </p>
-          {% if post.data.excerpt %}
-            <p style="margin: 0;">{{ post.data.excerpt }}</p>
-          {% endif %}
+          <a href="{{ post.url }}" style="display: flex; gap: 1.25rem; align-items: flex-start; text-decoration: none; color: inherit;">
+            {% if post.data.coverImage %}
+              <img src="{{ post.data.coverImage }}" alt="" style="width: 120px; height: 80px; object-fit: cover; border-radius: 6px; flex-shrink: 0; margin: 0;">
+            {% endif %}
+            <div>
+              <h2 style="margin: 0 0 0.25rem; color: var(--accent);">{{ post.data.title }}</h2>
+              <p class="blog-list-meta" style="color: var(--muted); margin: 0 0 0.4rem; font-size: 0.9rem;">
+                <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
+                {% if post.data.author %} · {{ post.data.author }}{% endif %}
+              </p>
+              {% if post.data.excerpt %}
+                <p style="margin: 0; font-size: 0.95rem;">{{ post.data.excerpt }}</p>
+              {% endif %}
+            </div>
+          </a>
         </li>
       {% endfor %}
     </ul>

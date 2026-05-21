@@ -5,6 +5,7 @@ date: 2026-05-26
 author: Joshuah Vincent
 excerpt: "On conservation filmmakers, the Botswana bush, and building an animal encyclopaedia for a five-year-old who couldn't find one."
 permalink: /blog/why-i-built-this/
+coverImage: /assets/blog/elephant-hilux.jpg
 tags: [founder]
 ---
 
