@@ -145,7 +145,8 @@ window.WILD_ATLAS_I18N = {
       'animals.tree_frog': 'Tree Frog',
 
       // Parents
-      'parents.title': 'Designed for Independent Exploration',
+      'parents.title': 'Designed for Your Family',
+      'parents.point0': 'Two ways to explore — <strong>narration on</strong> for independent play, or <strong>turn it off</strong> to read along together',
       'parents.point1': 'Tap-to-read narration means <strong>no reading skills needed</strong>',
       'parents.point2': 'Age-appropriate content for <strong>Little Explorers (3\u20134)</strong> and <strong>Young Explorers (5\u20139)</strong>',
       'parents.point3': 'Built so kids can <strong>explore safely on their own</strong>',
@@ -336,7 +337,8 @@ window.WILD_ATLAS_I18N = {
       'animals.axolotl': 'Axolotl',
       'animals.tree_frog': 'Laubfrosch',
 
-      'parents.title': 'F\u00fcr eigenst\u00e4ndiges Entdecken gemacht',
+      'parents.title': 'F\u00fcr eure ganze Familie gemacht',
+      'parents.point0': 'Zwei Spielmodi \u2014 <strong>Vorlesen an</strong> f\u00fcrs eigenst\u00e4ndige Entdecken oder <strong>ausschalten</strong> zum gemeinsamen Lesen',
       'parents.point1': 'Vorlesefunktion bedeutet <strong>keine Lesekenntnisse n\u00f6tig</strong>',
       'parents.point2': 'Altersgerechte Inhalte f\u00fcr <strong>Kleine Entdecker (3\u20134)</strong> und <strong>Junge Entdecker (5\u20139)</strong>',
       'parents.point3': 'So gebaut, dass Kinder <strong>sicher alleine entdecken k\u00f6nnen</strong>',
@@ -524,7 +526,8 @@ window.WILD_ATLAS_I18N = {
       'animals.axolotl': 'Ajolote',
       'animals.tree_frog': 'Rana de Árbol',
 
-      'parents.title': 'Dise\u00f1ado para la exploraci\u00f3n independiente',
+      'parents.title': 'Dise\u00f1ado para toda la familia',
+      'parents.point0': 'Dos formas de explorar \u2014 <strong>narraci\u00f3n activada</strong> para juego independiente, o <strong>desact\u00edvala</strong> para leer juntos',
       'parents.point1': 'La narraci\u00f3n en voz alta significa que <strong>no se necesita saber leer</strong>',
       'parents.point2': 'Contenido adecuado para <strong>Peque\u00f1os Exploradores (3\u20134)</strong> y <strong>J\u00f3venes Exploradores (5\u20139)</strong>',
       'parents.point3': 'Creado para que los ni\u00f1os puedan <strong>explorar de forma segura por su cuenta</strong>',
@@ -712,7 +715,8 @@ window.WILD_ATLAS_I18N = {
       'animals.axolotl': 'Axolotl',
       'animals.tree_frog': 'Rainette',
 
-      'parents.title': 'Con\u00e7u pour l\u2019exploration autonome',
+      'parents.title': 'Con\u00e7u pour toute la famille',
+      'parents.point0': 'Deux fa\u00e7ons d\u2019explorer \u2014 <strong>narration activ\u00e9e</strong> pour jouer seul, ou <strong>d\u00e9sactivez-la</strong> pour lire ensemble',
       'parents.point1': 'La lecture \u00e0 voix haute signifie <strong>aucune comp\u00e9tence en lecture n\u00e9cessaire</strong>',
       'parents.point2': 'Contenu adapt\u00e9 pour les <strong>Petits Explorateurs (3\u20134)</strong> et les <strong>Jeunes Explorateurs (5\u20139)</strong>',
       'parents.point3': 'Con\u00e7u pour que les enfants puissent <strong>explorer en toute s\u00e9curit\u00e9</strong>',
@@ -912,7 +916,8 @@ window.WILD_ATLAS_I18N = {
       'animals.tree_frog': '树蛙',
 
       // Parents
-      'parents.title': '\u4e3a\u72ec\u7acb\u63a2\u7d22\u800c\u8bbe\u8ba1',
+      'parents.title': '\u4e3a\u4f60\u7684\u5bb6\u5ead\u800c\u8bbe\u8ba1',
+      'parents.point0': '\u4e24\u79cd\u63a2\u7d22\u65b9\u5f0f \u2014 <strong>\u5f00\u542f\u6717\u8bfb</strong>\u72ec\u7acb\u63a2\u7d22\uff0c\u6216<strong>\u5173\u95ed\u6717\u8bfb</strong>\u4e00\u8d77\u9605\u8bfb',
       'parents.point1': '\u8f7b\u89e6\u6717\u8bfb\uff0c<strong>\u65e0\u9700\u8bc6\u5b57</strong>',
       'parents.point2': '\u9002\u9f84\u5185\u5bb9\uff0c\u9488\u5bf9<strong>\u5c0f\u5c0f\u63a2\u7d22\u5bb6\uff085 \u5c81\u4ee5\u4e0b\uff09</strong>\u548c<strong>\u5e74\u8f7b\u63a2\u7d22\u5bb6\uff085 \u5c81\u53ca\u4ee5\u4e0a\uff09</strong>',
       'parents.point3': '\u5b69\u5b50\u53ef\u4ee5<strong>\u5b89\u5168\u72ec\u7acb\u5730\u63a2\u7d22</strong>',
