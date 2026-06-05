@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Press — Wild Atlas</title>
+  <meta name="description" content="Press resources for Wild Atlas — the narrated animal discovery app for children aged 3–9. Press release, fact sheet, founder bio, and downloadable assets.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.wildatlasapp.com/press">
+
+  <meta name="theme-color" content="#FFF5E1">
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.wildatlasapp.com/press">
+  <meta property="og:title" content="Press — Wild Atlas">
+  <meta property="og:description" content="Press resources for Wild Atlas — the narrated animal discovery app for children. Press release, assets, and contact.">
+  <meta property="og:image" content="https://www.wildatlasapp.com/assets/app-icon.png">
+
+  <link rel="preload" href="fonts/Fredoka-VariableFont_wdth,wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="fonts/Nunito-Regular.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link rel="stylesheet" href="css/styles.css?v=2">
+
+  <style>
+    .press-page {
+      padding: var(--space-2xl) 0 var(--space-3xl);
+    }
+
+    .press-page-container {
+      max-width: 760px;
+    }
+
+    .press-eyebrow {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--peach-pop);
+      margin-bottom: var(--space-xs);
+    }
+
+    .press-page h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 700;
+      color: var(--warm-bark);
+      margin-bottom: var(--space-sm);
+    }
+
+    .press-intro {
+      font-size: 1.05rem;
+      color: var(--warm-bark);
+      opacity: 0.8;
+      margin-bottom: var(--space-2xl);
+      max-width: 560px;
+      line-height: 1.6;
+    }
+
+    /* Kit download card */
+    .press-kit-card {
+      background: #fff;
+      border: 1.5px solid rgba(93, 64, 55, 0.1);
+      border-radius: 16px;
+      padding: var(--space-lg) var(--space-xl);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-lg);
+      margin-bottom: var(--space-2xl);
+    }
+
+    .press-kit-card-text h2 {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--warm-bark);
+      margin-bottom: 4px;
+    }
+
+    .press-kit-card-text p {
+      font-size: 0.9rem;
+      color: var(--warm-bark);
+      opacity: 0.7;
+      margin: 0;
+    }
+
+    /* Individual asset links */
+    .press-assets {
+      margin-bottom: var(--space-2xl);
+    }
+
+    .press-assets h2 {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--warm-bark);
+      margin-bottom: var(--space-md);
+    }
+
+    .press-asset-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: var(--space-sm);
+    }
+
+    .press-asset-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #fff;
+      border: 1.5px solid rgba(93, 64, 55, 0.1);
+      border-radius: 10px;
+      padding: 12px 16px;
+      color: var(--warm-bark);
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+    }
+
+    .press-asset-link:hover {
+      border-color: var(--peach-pop);
+      box-shadow: 0 4px 12px rgba(255, 158, 125, 0.12);
+    }
+
+    .press-asset-link svg {
+      flex-shrink: 0;
+      opacity: 0.5;
+    }
+
+    /* Divider */
+    .press-divider {
+      border: none;
+      border-top: 1.5px solid rgba(93, 64, 55, 0.08);
+      margin: var(--space-2xl) 0;
+    }
+
+    /* Press release body */
+    .press-release {
+      margin-bottom: var(--space-2xl);
+    }
+
+    .press-release-kicker {
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--peach-pop);
+      margin-bottom: var(--space-md);
+    }
+
+    .press-release h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      font-weight: 700;
+      color: var(--warm-bark);
+      line-height: 1.25;
+      margin-bottom: var(--space-sm);
+    }
+
+    .press-release .deck {
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--warm-bark);
+      opacity: 0.75;
+      margin-bottom: var(--space-lg);
+      line-height: 1.55;
+    }
+
+    .press-release p {
+      font-size: 0.97rem;
+      line-height: 1.72;
+      color: var(--warm-bark);
+      margin-bottom: var(--space-md);
+    }
+
+    .press-release blockquote {
+      border-left: 3px solid var(--peach-pop);
+      padding-left: var(--space-md);
+      margin: var(--space-lg) 0;
+    }
+
+    .press-release blockquote p {
+      font-style: italic;
+      margin-bottom: var(--space-xs);
+    }
+
+    .press-release blockquote cite {
+      font-size: 0.85rem;
+      font-style: normal;
+      opacity: 0.7;
+    }
+
+    .press-release hr {
+      border: none;
+      border-top: 1.5px solid rgba(93, 64, 55, 0.08);
+      margin: var(--space-xl) 0;
+    }
+
+    .press-release h3 {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--warm-bark);
+      margin-bottom: var(--space-sm);
+    }
+
+    /* Contact box */
+    .press-contact-box {
+      background: var(--creamy-coat);
+      border: 1.5px solid rgba(93, 64, 55, 0.1);
+      border-radius: 16px;
+      padding: var(--space-lg) var(--space-xl);
+    }
+
+    .press-contact-box h2 {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--warm-bark);
+      margin-bottom: var(--space-sm);
+    }
+
+    .press-contact-box p {
+      font-size: 0.95rem;
+      color: var(--warm-bark);
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+
+    .press-contact-box a {
+      color: var(--peach-pop);
+      font-weight: 600;
+    }
+
+    .press-contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .press-kit-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body data-page="press">
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/mascot-logo.png" alt="Wild Atlas" class="nav-icon">
+        <span class="nav-title">Wild Atlas</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-cta">Back to Wild Atlas</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="press-page">
+    <div class="container press-page-container">
+
+      <p class="press-eyebrow">Press</p>
+      <h1>Wild Atlas Press Room</h1>
+      <p class="press-intro">Everything you need to cover Wild Atlas — press release, fact sheet, founder bio, screenshots, and logo assets. Questions? We're easy to reach.</p>
+
+      <!-- PRESS KIT DOWNLOAD -->
+      <div class="press-kit-card">
+        <div class="press-kit-card-text">
+          <h2>Full Press Kit</h2>
+          <p>Press release, fact sheet, founder bio, app screenshots, and logo assets — all in one ZIP.</p>
+        </div>
+        <a href="https://cdn.wildatlasapp.com/press/wild-atlas-press-kit.zip" class="btn btn-primary" download>
+          Download Press Kit
+        </a>
+      </div>
+
+      <!-- INDIVIDUAL ASSETS -->
+      <div class="press-assets">
+        <h2>Individual files</h2>
+        <div class="press-asset-grid">
+          <a href="https://cdn.wildatlasapp.com/press/en-US/press-release.pdf" class="press-asset-link">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 2h7l3 3v9H3V2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 2v3h3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M5 8h6M5 11h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Press Release
+          </a>
+          <a href="https://cdn.wildatlasapp.com/press/en-US/fact-sheet.pdf" class="press-asset-link">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 2h7l3 3v9H3V2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 2v3h3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M5 8h6M5 11h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Fact Sheet
+          </a>
+          <a href="https://cdn.wildatlasapp.com/press/en-US/founder-bio.pdf" class="press-asset-link">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 2h7l3 3v9H3V2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 2v3h3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M5 8h6M5 11h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Founder Bio
+          </a>
+          <a href="https://cdn.wildatlasapp.com/press/screenshots.zip" class="press-asset-link">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="10" rx="1.5" stroke="currentColor" stroke-width="1.5"/><circle cx="5.5" cy="6.5" r="1" fill="currentColor"/><path d="M2 11l4-4 3 3 2-2 3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            App Screenshots
+          </a>
+          <a href="assets/app-icon.png" class="press-asset-link" download>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="10" rx="1.5" stroke="currentColor" stroke-width="1.5"/><circle cx="5.5" cy="6.5" r="1" fill="currentColor"/><path d="M2 11l4-4 3 3 2-2 3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            App Icon (PNG)
+          </a>
+          <a href="assets/mascot-logo.png" class="press-asset-link" download>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="10" rx="1.5" stroke="currentColor" stroke-width="1.5"/><circle cx="5.5" cy="6.5" r="1" fill="currentColor"/><path d="M2 11l4-4 3 3 2-2 3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Logo (PNG)
+          </a>
+        </div>
+      </div>
+
+      <hr class="press-divider">
+
+      <!-- PRESS RELEASE -->
+      <div class="press-release">
+
+        <p class="press-release-kicker">For Immediate Release</p>
+
+        <h2>Wild Atlas, a Narrated Animal Discovery App for Children, Launches Globally in Six Languages</h2>
+
+        <p class="deck">Built solo over four months by the son of South Africa's celebrated conservation documentary filmmakers, Wild Atlas gives children documentary-style animal content — and parents screen time they can hand over without worry.</p>
+
+        <p><strong>SEATTLE, WA — June 10, 2026</strong> — Wild Atlas, an interactive animal discovery app for children aged 3 and up, is available today on the App Store for iPhone and iPad. Across twelve animal packs and six languages, the app brings narrated, documentary-style facts, games, quizzes, and exploration to young children — with no subscription, no advertising, and no algorithmic feed.</p>
+
+        <p>Wild Atlas is the work of Joshuah Vincent, a Seattle-based product builder and the son of Michael and Sharyn Vincent, the founders of Jasmin Films — a South African production company that spent four decades documenting the coelacanth, great white sharks, black eagles, and the elephants of Addo. Michael passed away in March 2024. In January 2026, Joshuah led a nineteen-day overlanding expedition through five of Botswana's game reserves — partly with money his father left him, partly in memory of trips they never got to take together. Wild Atlas was built in the months that followed.</p>
+
+        <p>Joshuah and his wife had been on the hunt for a while — auditioning children's apps, reading parenting blogs, asking friends for recommendations. On and off, over weeks and months, looking for something they could hand to their kids without reservation. Nothing quite did it.</p>
+
+        <blockquote>
+          <p>"My parents spent their lives in the bush, making it accessible to people through film. I grew up on those shoots, in the South African veld, learning about animals and why they're worth knowing. When I started looking for an app I could hand my own kids — something cinematic and delightful, with no ads and no junk food video — I couldn't find one. So I spent four months building it myself, while my children kept asking when it would be ready."</p>
+          <cite>— Joshuah Vincent, founder, Wild Atlas</cite>
+        </blockquote>
+
+        <p>The app launches with twelve packs across six languages — English (US and UK editions), German, Spanish, French, and Simplified Chinese. Three packs are free forever: Happy Hounds, Cool Cats, and Cozy Critters. New users also choose one additional paid pack to unlock at no charge when they first set up the app. Remaining packs are $3.99 each as one-time, parent-approved purchases, or all nine can be unlocked together for $19.99. Each pack includes narrated facts, dual-mode quizzes, an interactive world map, body-size comparisons, and animal sounds. Four games — Memory Match, Puppy Puzzle, Who's Who, and Habitat Hop — are included across all packs. The app works fully offline — so kids can enjoy it on aeroplanes, road trips, or anywhere without reliable internet.</p>
+
+        <p>Remarkably, the entire app — its architecture, visual library of more than 1,000 illustrations (five for each of its 236 animals), child-focused editorial and fully narrated content across six languages, parent-approved purchase flows, and a content download and update system — was built entirely solo by Joshuah, with AI as a teammate, over four months.</p>
+
+        <p>A hidden pack — the Mythical Menagerie, featuring eighteen creatures from world folklore — can be unlocked by finding the hidden shooting stars triggered throughout the app over multiple sessions.</p>
+
+        <p>In early testing, an eight-year-old who "hardly uses devices in general" tried Wild Atlas and had one word: <em>"Addictive."</em> On TestFlight, users opened the app an average of seven times each — before the app was finished.</p>
+
+        <p>Wild Atlas is COPPA-compliant, collects no personal data, and is independently built and funded.</p>
+
+        <hr>
+
+        <h3>About Wild Atlas</h3>
+        <p>Wild Atlas is an interactive animal discovery app for children aged 3 and up, featuring narrated, documentary-style facts, child-led exploration, and multilingual content across six languages. Based in Seattle, Washington. <a href="https://www.wildatlasapp.com">wildatlasapp.com</a></p>
+
+        <h3>Press Contact</h3>
+        <p><a href="mailto:press@wildatlasapp.com">press@wildatlasapp.com</a></p>
+
+      </div>
+
+      <hr class="press-divider">
+
+      <!-- CONTACT BOX -->
+      <div class="press-contact-box">
+        <h2>Get in touch</h2>
+        <p>For interviews, review copies, or additional assets, reach us at <a href="mailto:press@wildatlasapp.com">press@wildatlasapp.com</a>.</p>
+        <p>Wild Atlas is available now on the <a href="https://apps.apple.com/us/app/wild-atlas/id6761081031">App Store for iPhone and iPad</a>.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="assets/mascot-sitting.png" alt="Wild Atlas" class="footer-mascot" loading="lazy">
+          <span class="footer-title">Wild Atlas</span>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="age-suitability.html">Age Suitability</a>
+          <a href="support.html">Support</a>
+          <a href="press.html">Press</a>
+          <a href="mailto:press@wildatlasapp.com">Press Contact</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Wild Atlas. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
