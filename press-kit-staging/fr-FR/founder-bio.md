@@ -9,7 +9,7 @@ Trois longueurs. Utilisez celle que demande le média.
 
 ## 80 MOTS — pour les rubriques « À propos » de la presse
 
-Joshuah Vincent est le fondateur de Wild Atlas, une app narrée de découverte animalière pour les enfants à partir de 3 ans. Pendant six ans Senior Principal Product Manager chez Meta, il y a lancé des expériences AR dont les lunettes connectées Ray-Ban Meta et Orion, la plateforme AR de nouvelle génération de Meta. Auparavant responsable produit chez Zillow et Xero, il détient plus de 25 brevets en AR, IA et visualisation 3D. Fils de documentaristes sud-africains spécialistes de la conservation, il a grandi dans le veld à apprendre les animaux auprès de ses parents. Il vit à Seattle avec sa femme et leurs deux jeunes enfants.
+Joshuah Vincent est le fondateur de Wild Atlas — une app narrée de découverte animalière pour les enfants, développée de manière indépendante et lancée en juin 2026. Fils des documentaristes sud-africains de la conservation Michael et Sharyn Vincent (Jasmin Films), il a grandi dans le veld à apprendre les animaux auprès de ses parents. Il a passé six ans chez Meta comme Senior Principal Product Manager, lançant des expériences AR dont Ray-Ban Meta et Orion. Il détient plus de 25 brevets en AR, IA et visualisation 3D. Il vit à Seattle avec sa femme et leurs deux jeunes enfants.
 
 ---
 

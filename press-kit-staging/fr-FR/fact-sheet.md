@@ -10,11 +10,12 @@
 |---|---|
 | **Nom de l'app** | Wild Atlas |
 | **Plateforme** | iOS — iPhone et iPad |
-| **Disponibilité** | App Store |
+| **Disponibilité** | App Store — disponible le 10 juin 2026 |
 | **Tranche d'âge** | 3–9 ans |
 | **Développeur** | Joshuah Vincent, Seattle, WA |
 | **Lien App Store** | https://apps.apple.com/app/id6761081031 |
 | **Contact presse** | press@wildatlasapp.com |
+| **Kit presse** | wildatlasapp.com/press |
 
 ---
 
@@ -23,23 +24,25 @@
 | | Prix |
 |---|---|
 | Packs gratuits (3 packs, gratuits à vie) | 0,00 € |
-| Pack payant individuel | 3,99 € EUR |
-| Explorer Pass (les 9 packs payants) | 22,99 € EUR |
+| Pack payant individuel | 3,99 € |
+| Explorer Pass (les 9 packs payants) | 22,99 € |
 
 - Achat unique validé par les parents
 - Pas d'abonnement
 - Pas de publicité
 - Pas de collecte de données
 - Conforme à la COPPA
+- Développé et financé de manière indépendante — sans investisseurs
 
 ---
 
 ## Contenu
 
-- **Plus de 200 animaux** dans **12 packs** de tous les continents et océans
-- **3 packs gratuits au lancement :** Happy Hounds, Cool Cats, Cozy Critters
+- **236 animaux** dans **12 packs** de tous les continents et océans
+- **3 packs gratuits pour toujours :** Happy Hounds, Cool Cats, Cozy Critters
+- **1 pack bonus gratuit :** les nouveaux utilisateurs choisissent un pack payant supplémentaire à débloquer gratuitement lors de la première configuration
 - **9 packs payants** (à l'unité ou via l'Explorer Pass)
-- **Pack bonus caché :** Mythical Menagerie (18 créatures du folklore mondial — à débloquer en trouvant des étoiles filantes cachées dans l'app)
+- **Pack bonus caché :** Mythical Menagerie (18 créatures du folklore mondial — à débloquer en trouvant des étoiles filantes cachées dans l'app au fil de plusieurs sessions)
 
 ### Fonctionnalités
 
@@ -53,10 +56,10 @@
 
 ### Langues
 
-Anglais (US), anglais (UK), allemand, espagnol, français, chinois simplifié — entièrement narré dans chaque langue.
+Six langues au lancement : anglais (US), anglais (UK), allemand, espagnol, français, chinois simplifié — entièrement narré dans chaque langue.
 
 ---
 
 ## À propos du développeur
 
-Joshuah Vincent est un développeur produit basé à Seattle et père de deux enfants, ayant travaillé chez Meta, Zillow et Xero. Wild Atlas est développé et financé de manière indépendante — sans investisseurs.
+Joshuah Vincent est un développeur produit basé à Seattle et père de deux enfants. Il a passé six ans chez Meta comme Senior Principal Product Manager, lançant des expériences AR dont Ray-Ban Meta et Orion, et a auparavant dirigé le produit chez Zillow et Xero. Wild Atlas est développé et financé de manière indépendante — sans investisseurs.

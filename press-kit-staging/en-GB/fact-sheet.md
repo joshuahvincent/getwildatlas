@@ -10,11 +10,12 @@
 |---|---|
 | **App name** | Wild Atlas |
 | **Platform** | iOS — iPhone and iPad |
-| **Availability** | App Store |
+| **Availability** | App Store — available 10 June 2026 |
 | **Age range** | 3–9 |
 | **Developer** | Joshuah Vincent, Seattle, WA |
 | **App Store link** | https://apps.apple.com/app/id6761081031 |
 | **Press contact** | press@wildatlasapp.com |
+| **Press kit** | wildatlasapp.com/press |
 
 ---
 
@@ -23,23 +24,25 @@
 | | Price |
 |---|---|
 | Free packs (3 packs, forever free) | £0.00 |
-| Individual paid pack | £3.99 GBP |
-| Explorer Pass (all 9 paid packs) | £19.99 GBP |
+| Individual paid pack | £3.99 |
+| Explorer Pass (all 9 paid packs) | £19.99 |
 
 - One-time, parent-approved purchase only
 - No subscription
 - No ads
 - No data harvesting
 - COPPA-compliant
+- Independently built and funded — no investors
 
 ---
 
 ## Content
 
-- **200+ animals** across **12 packs** covering every continent and ocean
-- **3 free packs at launch:** Happy Hounds, Cool Cats, Cozy Critters
+- **236 animals** across **12 packs** covering every continent and ocean
+- **3 free packs forever:** Happy Hounds, Cool Cats, Cozy Critters
+- **1 bonus pack free:** new users choose one additional paid pack to unlock at no charge on first setup
 - **9 paid packs** (individual or via Explorer Pass bundle)
-- **Hidden bonus pack:** Mythical Menagerie (18 creatures from world folklore — unlock by finding shooting stars hidden throughout the app)
+- **Hidden bonus pack:** Mythical Menagerie (18 creatures from world folklore — unlock by finding shooting stars hidden throughout the app over multiple sessions)
 
 ### Features
 
@@ -53,10 +56,10 @@
 
 ### Languages
 
-English (US), English (UK), German, Spanish, French, Simplified Chinese — fully narrated in every language.
+Six languages at launch: English (US), English (UK), German, Spanish, French, Simplified Chinese — fully narrated in every language.
 
 ---
 
 ## About the Developer
 
-Joshuah Vincent is a Seattle-based product builder and father of two, formerly at Meta, Zillow, and Xero. Wild Atlas is independently built and funded — no investors.
+Joshuah Vincent is a Seattle-based product builder and father of two. He spent six years at Meta as a Senior Principal Product Manager, shipping AR experiences including Ray-Ban Meta smart glasses and Orion, and previously led product at Zillow and Xero. Wild Atlas is independently built and funded — no investors.
