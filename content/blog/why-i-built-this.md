@@ -1,91 +1,63 @@
 ---
 layout: layouts/post.njk
-title: "Why I Built This"
-date: 2026-05-26
+title: "The Origin of Wild Atlas: Raising Explorers, Not Scrollers"
+date: 2026-06-10
 author: Joshuah Vincent
-excerpt: "On conservation filmmakers, the Botswana bush, and building an animal encyclopaedia for a five-year-old who couldn't find one."
+excerpt: "On conservation filmmaking, a Botswana expedition, and building the screen time we couldn't find."
 permalink: /blog/why-i-built-this/
 coverImage: /assets/blog/elephant-hilux.jpg
 tags: [founder]
 ---
 
-*On conservation filmmakers, the Botswana bush, and building an animal encyclopaedia for a five-year-old who couldn't find one.*
+*On conservation filmmaking, a Botswana expedition, and building the screen time we couldn't find.*
 
-**TL;DR**
+There are two children on every long flight. One has gone somewhere else entirely — eyes fixed on a screen, thumb twitching, not quite present. The other is pressed against the window, pointing at the clouds, asking why they look like that.
 
-- 📷 My father spent nearly five decades making wildlife documentaries in South Africa. He died in March 2024.
-- 🌍 I led a three-week expedition overlanding through Botswana — a trip he'd always wanted to take me on.
-- 🔥 A week after I got back, Meta let me go. Six years, 24/7. Suddenly: time.
-- 🐾 On those long drives through the bush, with my two kids in the back, I couldn't find screen time I was comfortable handing them. So I started building it.
-- 🦁 Wild Atlas hits the App Store this week.
+Most parents have been that first child's parent. You handed over the phone to buy some peace, and at some point you look over and realize your kid isn't watching anymore. They're just scrolling. Tapping. Nowhere. It happens on long flights. It happens in the back seat. It happens in waiting rooms and restaurants and rainy afternoons at home.
 
----
+Wild Atlas was built for both of those parents — the one who wants something better to hand over, and the one who's tired of feeling guilty about what they already have.
 
-## January: The Trip We Never Took
+## The Problem Was Years in the Making
 
-My father — Michael Vincent — spent nearly five decades making wildlife documentaries in South Africa. The coelacanth. Great white sharks off Dyer Island. Black eagles in the Eastern Cape. The elephants of Addo. He and my mother built Jasmin Films together, and I grew up on their shoots — as gaffer, lookout, a teenager building a bird hide on a small island off the Western Cape so he could capture the right frame.
+Our founder, Josh, grew up on documentary film shoots in the South African veld — his parents spent nearly five decades making conservation films, from great white sharks to the elephants of Addo. Wildlife storytelling was the family language.
 
-He always wanted to take me to the Kalahari. We never made it. He passed away in March 2024.
+Josh and his wife had spent years traveling with their kids — long-haul flights, road trips, remote stretches with no Wi-Fi — searching for something worth handing over on a screen. Something calm, genuinely educational, and built for the kind of curiosity a four-year-old actually has. They never quite found it.
+
+Then came Botswana. A 19-day overland expedition through the backcountry — weeks of driving in near-zero connectivity, a 30-hour flight each way. To prepare, Josh bought a Kindle for Kids and spent hours trying to load it with content that matched what the trip would actually demand. The right app would have been everything. It didn't exist.
 
 <figure>
   <img src="/assets/blog/botswana-camp-sunset.jpg" alt="Camp at dusk in Botswana — three AVIS Hiluxes with rooftop tents around a campfire">
   <figcaption>Camp at dusk. Five reserves, nineteen days.</figcaption>
 </figure>
 
-So in January 2026, I loaded three Toyota Hiluxes with friends and drove them overlanding through Botswana's game reserves — nineteen days across five reserves, elephants walking through camp at night, lions close enough to hear from the rooftop tents. I led the trip. I brought my daughter Zuzu, who was five, and my son Lurian, who hadn't yet turned two. I used my dad's camera.
-
 <figure>
   <img src="/assets/blog/elephant-hilux.jpg" alt="An elephant leaning over a muddy AVIS Safari Rental Hilux in Botswana">
   <figcaption>Elephants walked through camp. This one was less polite than most.</figcaption>
 </figure>
 
-<figure>
-  <img src="/assets/blog/fairy-game-camp.jpg" alt="Joshuah playing The Fairy Game at a camp table with Zuzu and Lurian, Hiluxes in the background">
-  <figcaption>The Fairy Game, somewhere in Chobe. This was most of the trip, honestly.</figcaption>
-</figure>
+He came home and built it.
 
-We came home.
+## Built on Beliefs, Not Features
 
-<figure>
-  <img src="/assets/blog/sleeping-on-plane.jpg" alt="Joshuah asleep on a plane with both children sleeping on top of him">
-  <figcaption>We came home.</figcaption>
-</figure>
+The early version wasn't a product roadmap — it was a set of convictions. No ads. No algorithm. No subscriptions. Must work offline. Content that respects how kids actually learn, not how engagement metrics say they behave.
 
----
-
-## February: The Door Opens
-
-One week after getting back, Meta let me go.
-
-Six years at the company. The kind of job that runs at full speed seven days a week with no bandwidth for anything else. Then, suddenly: time.
-
-I knew two things. I wanted to learn the new AI tools properly — not read about them, build with them. And I wanted to make something for Zuzu and Lurian.
-
-The animal app idea came quickly. I didn't push it. I'd spent years building toys and things for my kids — this was just the next one, made with more ambition and different tools. And I couldn't find what I wanted on the App Store: something I could hand a five-year-old on a long flight without worrying about what she'd end up watching. No ads. No algorithmic rabbit holes. No junk food cartoons. Just animals, narrated warmly — something beautifully designed and genuinely engaging. The way David Attenborough does it. The way my father did it.
-
----
-
-## What Zuzu Taught Me
-
-Zuzu was my first tester. She'd scroll through the animal pages, but she needed me to read them to her. So I added auto-narration. After that she'd scroll through, listen, look at the photos — and drift. I added quizzes. She played them obsessively, until she'd exhausted them. I added games. A beta tester's son couldn't find his collection of badges, so I added a Passport page — achievements, trophies, things to collect.
-
-Every layer of Wild Atlas exists because a kid looked up from the previous one and wanted more.
+His daughter was the primary customer. From day one, she played with the earliest versions while Josh took notes and adapted the design to her feedback. When she scrolled through animal photos but couldn't yet read the text, he built the narration engine — calm, documentary-style storytelling that echoed the films he grew up watching. When she wanted to go deeper, he added age-tuned quizzes and vocabulary games.
 
 <figure>
   <img src="/assets/blog/lion-tracks-croc.jpg" alt="Zuzu's pink Croc next to a lion paw print in the sand">
   <figcaption>Zuzu's foot next to a lion track. She wanted to know everything about it.</figcaption>
 </figure>
 
-The first stranger to try it was an eight-year-old called Ellis. His father told me Ellis "hardly uses devices in general." His verdict, after playing, was one word: *"Addictive."*
+The app was also built to answer the questions every curious kid actually asks. Is it dangerous? Does it have venom? How big does it get? Where does it live? What does it look like as a baby? Those aren't curriculum objectives — they're the questions kids shout at the TV during a nature documentary. Wild Atlas was designed to answer them.
 
-That was the only review I needed.
+As development continued, the app moved to TestFlight. Some kids asked for a way to track their progress — that became the digital Passport and achievement system. Some parents asked for Mandarin Chinese with Pinyin support, for kids learning the language alongside the content. Every layer of the app evolved from what real families said they needed, not from feature speculation.
 
----
+The beliefs stayed fixed. The product was built around them.
 
-## Today
+## Where We Are Today
 
-Wild Atlas launches today with twelve animal packs across five languages — English (both imperial and metric editions), German, Spanish, French, and Simplified Chinese. Three packs are free. The rest are $3.99 each, one-time purchases, no subscription — or you can unlock all nine for $19.99, a much deeper discount. It works fully offline, for long flights and long drives, or any-day explorations at home.
+Wild Atlas officially launches June 10, 2026, with twelve animal packs fully localized across six languages — English (US and UK), German, Spanish, French, and Mandarin Chinese.
 
-There's also a hidden pack: the Mythical Menagerie, eighteen creatures from world folklore, waiting for children patient enough to find it.
+No subscription. No ads. No algorithm. Three packs are free, forever — and everything else is a one-time unlock, yours to keep. Fully offline. Built for long flights, road trips, and rainy days.
 
-Zuzu likes it. I think my dad would have too.
+Raise explorers, not scrollers.
