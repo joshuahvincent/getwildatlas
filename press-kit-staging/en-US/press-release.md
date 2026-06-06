@@ -39,3 +39,5 @@ Wild Atlas is an animal discovery app for children aged 3 and up, featuring narr
 
 **Press Contact**
 press@wildatlasapp.com
+
+*Prices shown in USD. Local pricing may vary by region and is set by the Apple App Store.*
