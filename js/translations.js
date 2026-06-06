@@ -154,8 +154,8 @@ window.WILD_ATLAS_I18N = {
       'parents.point5': '<strong>No ads, no external links, no social features</strong>',
 
       // Signup
-      'signup.title': 'Be First to the Wild',
-      'signup.desc': 'Sign up for launch updates, animal discoveries, and an <strong>exclusive welcome offer</strong> for early signups.',
+      'signup.title': 'An Offer for Early Explorers',
+      'signup.desc': 'Sign up and we'll send you an <strong>exclusive welcome offer</strong>. No newsletter — just our thank-you for being early.',
       'signup.placeholder': 'Enter your email',
       'signup.button': 'Sign Me Up',
       'signup.success': 'You\u2019re in! Watch your inbox \u2014 welcome offer on the way.',
@@ -345,8 +345,8 @@ window.WILD_ATLAS_I18N = {
       'parents.point4': '<strong>In 5 Sprachen verf\u00fcgbar</strong> \u2014 lerne in der Muttersprache deines Kindes oder festige eine Sprache, die es gerade lernt.',
       'parents.point5': '<strong>Keine Werbung, keine externen Links, keine sozialen Funktionen</strong>',
 
-      'signup.title': 'Sei zuerst im Wilden',
-      'signup.desc': 'Trage dich ein f\u00fcr Startnews, Tier-Entdeckungen und ein <strong>exklusives Willkommensangebot</strong> f\u00fcr Fr\u00fchentscheider.',
+      'signup.title': 'Ein Angebot für frühe Entdecker',
+      'signup.desc': 'Trage dich ein und erhalte ein <strong>exklusives Willkommensangebot</strong>. Kein Newsletter — nur ein Dankeschön fürs frühe Dabeisein.',
       'signup.placeholder': 'E-Mail eingeben',
       'signup.button': 'Eintragen',
       'signup.success': 'Du bist dabei! Schau in dein Postfach \u2014 dein Willkommensangebot ist unterwegs.',
@@ -534,8 +534,8 @@ window.WILD_ATLAS_I18N = {
       'parents.point4': '<strong>Disponible en 5 idiomas</strong> — aprende en el idioma materno de tu hijo, o úsalo para reforzar un idioma que esté estudiando.',
       'parents.point5': '<strong>Sin anuncios, sin enlaces externos, sin funciones sociales</strong>',
 
-      'signup.title': 'Sé el primero en lo salvaje',
-      'signup.desc': 'Suscríbete para recibir noticias del lanzamiento, descubrimientos animales y una <strong>oferta de bienvenida exclusiva</strong> para los primeros suscriptores.',
+      'signup.title': 'Una oferta para exploradores tempranos',
+      'signup.desc': 'Suscríbete y te enviaremos una <strong>oferta de bienvenida exclusiva</strong>. Sin newsletter — solo nuestro agradecimiento por llegar pronto.',
       'signup.placeholder': 'Ingresa tu email',
       'signup.button': 'Suscribirme',
       'signup.success': '¡Ya estás! Revisa tu correo — la oferta de bienvenida viene en camino.',
@@ -723,8 +723,8 @@ window.WILD_ATLAS_I18N = {
       'parents.point4': '<strong>Disponible en 5 langues</strong> — apprenez dans la langue maternelle de votre enfant, ou utilisez-la pour renforcer une langue qu’il étudie.',
       'parents.point5': '<strong>Pas de publicit\u00e9s, pas de liens externes, pas de fonctions sociales</strong>',
 
-      'signup.title': 'Soyez les premiers dans le sauvage',
-      'signup.desc': 'Inscrivez-vous pour des nouvelles du lancement, des découvertes animales et une <strong>offre de bienvenue exclusive</strong> pour les premiers inscrits.',
+      'signup.title': 'Une offre pour les premiers explorateurs',
+      'signup.desc': 'Inscrivez-vous et nous vous enverrons une <strong>offre de bienvenue exclusive</strong>. Pas de newsletter — juste notre remerciement pour votre soutien précoce.',
       'signup.placeholder': 'Entrez votre email',
       'signup.button': 'M’inscrire',
       'signup.success': 'Vous y êtes ! Surveillez votre boîte — votre offre de bienvenue arrive.',
@@ -925,8 +925,8 @@ window.WILD_ATLAS_I18N = {
       'parents.point5': '<strong>\u65e0\u5e7f\u544a\u3001\u65e0\u5916\u90e8\u94fe\u63a5\u3001\u65e0\u793e\u4ea4\u529f\u80fd</strong>',
 
       // Signup
-      'signup.title': '抢先体验野生世界',
-      'signup.desc': '订阅获取发布更新、动物发现，以及为早期订阅者准备的<strong>专属欢迎优惠</strong>。',
+      'signup.title': '早期探险家专属优惠',
+      'signup.desc': '留下邮箱，我们将发送<strong>专属欢迎优惠</strong>。仅此一封——感谢您的提前支持。',
       'signup.placeholder': '\u8f93\u5165\u7535\u5b50\u90ae\u7bb1',
       'signup.button': '立即订阅',
       'signup.success': '您已加入！请查收邮件——欢迎优惠即将送达。',
