@@ -6,9 +6,6 @@ layout: layouts/blog-base.njk
     <p class="blog-post-meta">
       <a href="/blog/">← All posts</a>
     </p>
-    {% if "founder" in tags %}
-    <p class="blog-post-label">From the Founder</p>
-    {% endif %}
     <h1>{{ title }}</h1>
     <p class="blog-post-byline" style="color: var(--muted); margin-top: 0.25rem;">
       <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
