@@ -106,7 +106,7 @@ window.WILD_ATLAS_I18N = {
 
       // Packs
       'packs.title': '12 Animal Worlds to Explore',
-      'packs.subtitle': '3 free packs to start. Unlock the rest at $3.99 each \u2014 or get everything (including future packs) with the Explorer Pass at $19.99.',
+      'packs.subtitle': '3 always-free packs, plus one premium pack your child picks — free. Unlock more at $3.99 each, or get everything with the Explorer Pass at $19.99.',
       'packs.free': 'Free',
       'packs.more': 'More packs coming soon!',
 
@@ -300,7 +300,7 @@ window.WILD_ATLAS_I18N = {
       'games.habitat.desc': 'Bring Tiere nach Hause \u2014 Savanne, Arktis, Wald, Ozean. Geografie spielerisch lernen.',
 
       'packs.title': '12 Tierwelten zum Entdecken',
-      'packs.subtitle': '3 Pakete gratis zum Start. Schalte den Rest f\u00fcr je 3,99 $ frei \u2014 oder hol dir alles (inklusive zuk\u00fcnftiger Pakete) mit dem Explorer Pass f\u00fcr 19,99 $.',
+      'packs.subtitle': '3 dauerhaft kostenlose Packs, plus ein Premium-Pack nach Wahl — kostenlos. Weitere für je 3,99 €, oder alles mit dem Explorer Pass für 22,99 €.',
       'packs.free': 'Gratis',
       'packs.more': 'Weitere Pakete folgen bald!',
 
@@ -489,7 +489,7 @@ window.WILD_ATLAS_I18N = {
       'games.habitat.desc': 'Lleva a los animales a casa \u2014 sabana, \u00e1rtico, bosque, oc\u00e9ano. Geograf\u00eda a trav\u00e9s del juego.',
 
       'packs.title': '12 Mundos Animales por Explorar',
-      'packs.subtitle': '3 paquetes gratis para empezar. Desbloquea el resto por $3.99 cada uno, o consigue todo (incluyendo paquetes futuros) con el Explorer Pass por $19.99.',
+      'packs.subtitle': '3 packs siempre gratis, más un pack premium que tu hijo elige — gratis. Desbloquea más a 3,99 € cada uno, o consíguelo todo con el Explorer Pass por 22,99 €.',
       'packs.free': 'Gratis',
       'packs.more': '\u00a1M\u00e1s paquetes pr\u00f3ximamente!',
 
@@ -678,7 +678,7 @@ window.WILD_ATLAS_I18N = {
       'games.habitat.desc': 'Ram\u00e8ne les animaux chez eux \u2014 savane, arctique, for\u00eat, oc\u00e9an. La g\u00e9ographie par le jeu.',
 
       'packs.title': '12 Mondes Animaux \u00e0 Explorer',
-      'packs.subtitle': '3 packs gratuits pour commencer. Débloquez les autres à 3,99 $ chacun, ou prenez tout (y compris les packs à venir) avec l’Explorer Pass à 19,99 $.',
+      'packs.subtitle': '3 packs toujours gratuits, plus un pack premium que votre enfant choisit — gratuit. Déverrouillez les autres à 3,99 € chacun, ou obtenez tout avec l’Explorer Pass à 22,99 €.',
       'packs.free': 'Gratuit',
       'packs.more': 'Plus de packs bient\u00f4t\u00a0!',
 
@@ -877,7 +877,7 @@ window.WILD_ATLAS_I18N = {
 
       // Packs
       'packs.title': '12 \u4e2a\u52a8\u7269\u4e16\u754c\u7b49\u4f60\u63a2\u7d22',
-      'packs.subtitle': '3 个免费动物包起步。其他动物包每个 3.99 美元，或购买 Explorer Pass（19.99 美元）解锁全部内容——包括未来新增的动物包。',
+      'packs.subtitle': '3 个永久免费动物包，加上孩子自选一个付费包——免费赠送。其他每个¥­28，或购买 Explorer Pass（¥148）解锁全部。',
       'packs.free': '\u514d\u8d39',
       'packs.more': '\u66f4\u591a\u52a8\u7269\u5305\u5373\u5c06\u63a8\u51fa\uff01',
 
