@@ -175,7 +175,7 @@ window.WILD_ATLAS_I18N = {
       'about.metadesc': 'Why we built Wild Atlas. A letter from founder Josh Vincent about screen time, curiosity, and raising explorers.',
 
       // Hero platform line + brand pillars
-      'hero.platforms': 'Available on iPhone and iPad',
+      'hero.platforms': 'Available on iPhone and iPad starting June 2026',
       'brand.eyebrow': 'What we stand for',
       'brand.title': 'Built on beliefs, not features',
       'brand.pillar1.title': 'Wonder over dopamine',
@@ -365,7 +365,7 @@ window.WILD_ATLAS_I18N = {
       'about.metadesc': 'Warum wir Wild Atlas gemacht haben. Ein Brief von Gründer Josh Vincent über Bildschirmzeit, Neugier und das Erziehen von Entdeckern.',
 
       // Hero platform line + brand pillars
-      'hero.platforms': 'Verfügbar für iPhone und iPad',
+      'hero.platforms': 'Verfügbar für iPhone und iPad ab Juni 2026',
       'brand.eyebrow': 'Wofür wir stehen',
       'brand.title': 'Aus Überzeugungen gebaut, nicht aus Funktionen',
       'brand.pillar1.title': 'Staunen statt Dopamin',
@@ -554,7 +554,7 @@ window.WILD_ATLAS_I18N = {
       'about.metadesc': 'Por qué construimos Wild Atlas. Una carta del fundador Josh Vincent sobre el tiempo de pantalla, la curiosidad y la crianza de exploradores.',
 
       // Hero platform line + brand pillars
-      'hero.platforms': 'Disponible para iPhone y iPad',
+      'hero.platforms': 'Disponible para iPhone y iPad desde junio de 2026',
       'brand.eyebrow': 'Lo que defendemos',
       'brand.title': 'Construido sobre creencias, no funciones',
       'brand.pillar1.title': 'Asombro antes que dopamina',
@@ -743,7 +743,7 @@ window.WILD_ATLAS_I18N = {
       'about.metadesc': 'Pourquoi nous avons créé Wild Atlas. Une lettre du fondateur Josh Vincent sur le temps d\'écran, la curiosité et l\'éducation d\'explorateurs.',
 
       // Hero platform line + brand pillars
-      'hero.platforms': 'Disponible sur iPhone et iPad',
+      'hero.platforms': 'Disponible sur iPhone et iPad à partir de juin 2026',
       'brand.eyebrow': 'Ce que nous défendons',
       'brand.title': 'Construit sur des convictions, pas des fonctionnalités',
       'brand.pillar1.title': 'Émerveillement plutôt que dopamine',
@@ -946,7 +946,7 @@ window.WILD_ATLAS_I18N = {
       'about.metadesc': '我们为什么打造野生地图集。创始人 Josh Vincent 关于屏幕时间、好奇心与培养探险家的一封信。',
 
       // Hero platform line + brand pillars
-      'hero.platforms': '支持 iPhone 与 iPad',
+      'hero.platforms': '2026 年 6 月起支持 iPhone 与 iPad',
       'brand.eyebrow': '我们的立场',
       'brand.title': '用信念打造，而非堆叠功能',
       'brand.pillar1.title': '好奇胜过多巴胺',
