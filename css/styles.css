@@ -273,6 +273,15 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   padding: 16px 36px;
   margin-top: var(--space-md);
 }
+.app-store-badge-link {
+  display: inline-block;
+  margin-top: var(--space-md);
+  transition: opacity 0.2s, transform 0.2s;
+}
+.app-store-badge-link:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
 .hero-platforms {
   margin-top: var(--space-md);
   font-family: var(--font-heading);
