@@ -5,6 +5,8 @@
 
 **SEATTLE, WA — June 10, 2026** — Wild Atlas, an animal discovery app for children aged 3 and up, is available today on the App Store for iPhone and iPad. Across twelve animal packs and six languages, the app brings narrated, documentary-style facts, games, quizzes, and exploration to young children — with no subscription, no advertising, and no algorithmic feed.
 
+Think of it as a hyper-malleable podcast for kids aged 3 to 9 — audio-first, self-directed, completely non-linear. Leave narration on and a child who can't yet read explores entirely on their own; turn it off and read along together.
+
 Wild Atlas is the work of Joshuah Vincent, a Seattle-based product builder. He grew up on his parents' conservation film shoots in the South African veld. As a parent, he spent years looking for an app that could do the same for his own kids — something that made the natural world genuinely fascinating, that a child could explore alone or with a parent beside them. Nothing quite got there. A family expedition through Botswana in early 2026, taken partly in memory of his late father, made the search feel urgent. He came home and built it.
 
 *"My parents spent their lives in the bush, making it accessible to people through film. I grew up on those shoots, in the South African veld, learning about animals and why they're worth knowing. When I started looking for an app I could hand my own kids — something cinematic and delightful, with no ads and no junk food video — I couldn't find one. So I built it, with my kids and other families shaping it at every step."*
