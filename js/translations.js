@@ -155,7 +155,7 @@ window.WILD_ATLAS_I18N = {
 
       // Signup
       'signup.title': 'An Offer for Early Explorers',
-      'signup.desc': 'Sign up and we'll send you an <strong>exclusive welcome offer</strong>. No newsletter — just our thank-you for being early.',
+      'signup.desc': "Sign up and we’ll send you an <strong>exclusive welcome offer</strong>. No newsletter — just our thank-you for being early.",
       'signup.placeholder': 'Enter your email',
       'signup.button': 'Sign Me Up',
       'signup.success': 'You\u2019re in! Watch your inbox \u2014 welcome offer on the way.',
