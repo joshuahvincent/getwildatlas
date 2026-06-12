@@ -1642,3 +1642,63 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   .badges-row { flex-direction: column; align-items: center; }
   .trust-pillar { flex-direction: row; text-align: left; gap: var(--space-sm); }
 }
+
+/* ============================================================
+   Blog — app screenshot layouts
+   ============================================================ */
+.blog-app-screens {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.blog-app-screens--row {
+  justify-content: center;
+}
+
+.blog-app-screens--trio {
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-app-screen {
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* First image: full width */
+.blog-app-screens--trio .blog-app-screen:first-child {
+  width: 100%;
+}
+
+/* Second and third: side by side at half width */
+.blog-app-screens--trio .blog-app-screen:not(:first-child) {
+  width: calc(50% - 8px);
+}
+
+/* Wrap second + third onto one row */
+.blog-app-screens--trio {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.blog-app-screens--trio .blog-app-screen:first-child {
+  flex: 0 0 100%;
+  margin-bottom: 0;
+}
+
+/* Guide screens side by side */
+.blog-app-screens--row .blog-app-screen {
+  width: 44%;
+  max-width: 300px;
+}
+
+@media (max-width: 600px) {
+  .blog-app-screens--trio .blog-app-screen:not(:first-child) { width: 100%; }
+  .blog-app-screens--row .blog-app-screen { width: 80%; }
+}
