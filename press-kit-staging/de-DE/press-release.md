@@ -21,6 +21,19 @@ In frühen Tests hatte ein achtjähriges Kind, das „kaum Geräte benutzt", Wil
 
 Wild Atlas ist COPPA-konform und erfasst keine personenbezogenen Daten.
 
+**Was Familien sagen**
+
+> „Ich kriege sie nicht mehr vom Handy weg. Sie machen abwechselnd die Quizze."
+> — Elternteil von zwei Kindern
+
+> „Er liebte es, die Tiere anzutippen und einen Soundeffekt zu hören – immer und immer wieder."
+> — Elternteil eines kleinen Entdeckers
+
+> „Wir lieben das Spiel, bei dem man über den Fluss springt und Hindernissen ausweicht. Es ist großartig!"
+> — Ein Wild-Atlas-Elternteil
+
+*Alle Stimmen auf Wunsch der Familien anonymisiert.*
+
 ---
 
 **App-Details**

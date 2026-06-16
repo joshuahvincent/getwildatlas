@@ -21,6 +21,19 @@ In early testing, an eight-year-old who "hardly uses devices in general" tried W
 
 Wild Atlas is COPPA-compliant and collects no personal data.
 
+**What families are saying**
+
+> "I can't get them off the phone. They're taking turns doing the quizzes."
+> — Parent of two
+
+> "He loved touching the animals and getting a sound effect — he did it many, many times."
+> — Parent of a young explorer
+
+> "We love the game where you jump over the river and dodge the obstacles. It's great!"
+> — A Wild Atlas parent
+
+*All testimonials anonymised at the families' request.*
+
 ---
 
 **App Details**

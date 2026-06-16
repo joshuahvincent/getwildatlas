@@ -21,6 +21,19 @@ En las pruebas iniciales, una niña de ocho años que "casi no usa dispositivos 
 
 Wild Atlas cumple con la COPPA y no recopila datos personales.
 
+**Lo que dicen las familias**
+
+> «No consigo que suelten el teléfono. Se turnan para hacer los cuestionarios.»
+> — Madre/padre de dos
+
+> «Le encantó tocar los animales y escuchar el efecto de sonido; lo hizo muchísimas veces.»
+> — Madre/padre de un pequeño explorador
+
+> «Nos encanta el juego en el que saltas el río y esquivas los obstáculos. ¡Es genial!»
+> — Una familia de Wild Atlas
+
+*Todos los testimonios anonimizados a petición de las familias.*
+
 ---
 
 **Detalles de la app**

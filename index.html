@@ -652,6 +652,96 @@
     </div>
   </section>
 
+  <!-- LOVED BY FAMILIES + VIDEO -->
+  <style>
+    .home-testimonials { padding: var(--space-2xl) 0; }
+    .home-testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: var(--space-md);
+      margin-top: var(--space-xl);
+    }
+    .home-testimonial-card {
+      background: #fff;
+      border: 1.5px solid rgba(93, 64, 55, 0.1);
+      border-radius: 16px;
+      padding: var(--space-lg);
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+    .home-testimonial-card p {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.4;
+      color: var(--warm-bark);
+      margin: 0;
+    }
+    .home-testimonial-card cite {
+      font-size: 0.85rem;
+      font-style: normal;
+      font-weight: 600;
+      color: var(--peach-pop);
+    }
+    .home-video { padding: 0 0 var(--space-2xl); }
+    .home-video-frame {
+      max-width: 360px;
+      margin: var(--space-xl) auto 0;
+      aspect-ratio: 590 / 1280;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 12px 32px rgba(93, 64, 55, 0.18);
+    }
+    .home-video-frame iframe,
+    .home-video-frame video { width: 100%; height: 100%; border: 0; display: block; object-fit: cover; background: #000; }
+  </style>
+
+  <section class="home-testimonials" aria-label="What families are saying">
+    <div class="container">
+      <h2 class="section-title">Loved by families</h2>
+      <p class="section-subtitle">Real reactions from parents and kids in early access and on launch day.</p>
+      <div class="home-testimonial-grid">
+        <blockquote class="home-testimonial-card">
+          <p>&ldquo;I can&rsquo;t get them off the phone. They&rsquo;re taking turns doing the quizzes.&rdquo;</p>
+          <cite>&mdash; Parent of two</cite>
+        </blockquote>
+        <blockquote class="home-testimonial-card">
+          <p>&ldquo;He loved touching the animals and getting a sound effect &mdash; he did it many, many times.&rdquo;</p>
+          <cite>&mdash; Parent of a young explorer</cite>
+        </blockquote>
+        <blockquote class="home-testimonial-card">
+          <p>&ldquo;We love the game where you jump over the river and dodge the obstacles. It&rsquo;s great!&rdquo;</p>
+          <cite>&mdash; A Wild Atlas parent</cite>
+        </blockquote>
+        <blockquote class="home-testimonial-card">
+          <p>&ldquo;Addictive.&rdquo;</p>
+          <cite>&mdash; Parent of a book-loving 8-year-old</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-video" aria-label="Wild Atlas in action">
+    <div class="container">
+      <h2 class="section-title">See Wild Atlas in action</h2>
+      <div class="home-video-frame">
+        <video controls playsinline preload="metadata" poster="assets/trailer-poster.jpg">
+          <source src="assets/wild-atlas-trailer.mp4" type="video/mp4">
+          Your browser doesn&rsquo;t support embedded video.
+          <a href="https://www.youtube.com/watch?v=le3MLsSQk7U">Watch on YouTube</a>.
+        </video>
+      </div>
+      <p style="text-align:center;margin-top:var(--space-lg);">
+        <a href="https://linktr.ee/wildatlasapp" target="_blank" rel="noopener"
+          style="font-family:var(--font-heading);font-weight:600;color:var(--peach-pop);text-decoration:none;">
+          Follow us &rarr;
+        </a>
+      </p>
+    </div>
+  </section>
+
   <!-- ABOUT (teaser — full letter lives at /about) -->
   <section class="about-section" id="about" aria-label="About Wild Atlas">
     <div class="container">
@@ -684,6 +774,7 @@
           <a href="support.html" data-i18n="footer.support">Support</a>
           <a href="press.html">Press</a>
           <a href="mailto:info@wildatlasapp.com" data-i18n="footer.contact">Contact</a>
+          <a href="https://linktr.ee/wildatlasapp" target="_blank" rel="noopener">Follow Us</a>
         </div>
         <p class="footer-copy" data-i18n="footer.copy">&copy; 2026 Wild Atlas. All rights reserved.</p>
       </div>
