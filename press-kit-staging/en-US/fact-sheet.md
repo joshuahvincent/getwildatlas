@@ -60,3 +60,21 @@ English (US), English (UK), German, Spanish, French, Simplified Chinese — full
 ## About the Developer
 
 Joshuah Vincent is a Seattle-based product builder and father of two, formerly at Meta, Zillow, and Xero. Wild Atlas is independently built and funded — no investors.
+
+---
+
+## What Families Are Saying
+
+> "I can't get them off the phone. They're taking turns doing the quizzes."
+> — Parent of two
+
+> "He loved touching the animals and getting a sound effect — he did it many, many times."
+> — Parent of a young explorer
+
+> "We love the game where you jump over the river and dodge the obstacles. It's great!"
+> — A Wild Atlas parent
+
+> "Addictive."
+> — Parent of a book-loving 8-year-old
+
+*All testimonials anonymized at the families' request.*

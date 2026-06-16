@@ -63,3 +63,21 @@ Six languages at launch: English (US), English (UK), German, Spanish, French, Si
 ## About the Developer
 
 Joshuah Vincent is a Seattle-based product builder and father of two. He spent six years at Meta as a Senior Principal Product Manager, shipping AR experiences including Ray-Ban Meta smart glasses and Orion, and previously led product at Zillow and Xero. Wild Atlas is independently built and funded — no investors.
+
+---
+
+## What Families Are Saying
+
+> "I can't get them off the phone. They're taking turns doing the quizzes."
+> — Parent of two
+
+> "He loved touching the animals and getting a sound effect — he did it many, many times."
+> — Parent of a young explorer
+
+> "We love the game where you jump over the river and dodge the obstacles. It's great!"
+> — A Wild Atlas parent
+
+> "Addictive."
+> — Parent of a book-loving 8-year-old
+
+*All testimonials anonymised at the families' request.*

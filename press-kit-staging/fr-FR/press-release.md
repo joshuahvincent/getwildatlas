@@ -21,6 +21,19 @@ Lors des premiers tests, un enfant de huit ans qui « utilise à peine les appar
 
 Wild Atlas est conforme à la COPPA et ne collecte aucune donnée personnelle.
 
+**Ce que disent les familles**
+
+> « Impossible de les décoller du téléphone. Ils font les quiz chacun leur tour. »
+> — Parent de deux enfants
+
+> « Il adorait toucher les animaux et déclencher un bruitage — encore et encore. »
+> — Parent d'un petit explorateur
+
+> « On adore le jeu où il faut sauter par-dessus la rivière et éviter les obstacles. C'est génial ! »
+> — Un parent Wild Atlas
+
+*Tous les témoignages anonymisés à la demande des familles.*
+
 ---
 
 **Détails de l'app**

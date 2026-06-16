@@ -140,6 +140,51 @@
       margin: var(--space-2xl) 0;
     }
 
+    /* Testimonials */
+    .press-testimonials {
+      margin-bottom: var(--space-2xl);
+    }
+
+    .press-testimonials h2 {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--warm-bark);
+      margin-bottom: var(--space-md);
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: var(--space-md);
+    }
+
+    .testimonial-card {
+      background: #fff;
+      border: 1.5px solid rgba(93, 64, 55, 0.1);
+      border-radius: 16px;
+      padding: var(--space-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    .testimonial-card p {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.4;
+      color: var(--warm-bark);
+      margin: 0;
+    }
+
+    .testimonial-card cite {
+      font-size: 0.85rem;
+      font-style: normal;
+      font-weight: 600;
+      color: var(--peach-pop);
+    }
+
     /* Press release body */
     .press-release {
       margin-bottom: var(--space-2xl);
@@ -319,6 +364,44 @@
 
       <hr class="press-divider">
 
+      <!-- WHAT FAMILIES ARE SAYING -->
+      <div class="press-testimonials">
+        <h2>What families are saying</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <p>&ldquo;I can&rsquo;t get them off the phone. They&rsquo;re taking turns doing the quizzes.&rdquo;</p>
+            <cite>&mdash; Parent of two</cite>
+          </div>
+          <div class="testimonial-card">
+            <p>&ldquo;He loved touching the animals and getting a sound effect &mdash; he did it many, many times.&rdquo;</p>
+            <cite>&mdash; Parent of a young explorer</cite>
+          </div>
+          <div class="testimonial-card">
+            <p>&ldquo;We love the game where you jump over the river and dodge the obstacles. It&rsquo;s great!&rdquo;</p>
+            <cite>&mdash; A Wild Atlas parent</cite>
+          </div>
+          <div class="testimonial-card">
+            <p>&ldquo;Addictive.&rdquo;</p>
+            <cite>&mdash; Parent of a book-loving 8-year-old</cite>
+          </div>
+        </div>
+      </div>
+
+      <!-- TRAILER VIDEO -->
+      <div class="press-testimonials" style="margin-bottom: var(--space-2xl);">
+        <h2>Watch the trailer</h2>
+        <div style="max-width:340px;margin:0 auto;aspect-ratio:590/1280;border-radius:20px;overflow:hidden;box-shadow:0 12px 32px rgba(93,64,55,0.18);">
+          <video controls playsinline preload="metadata" poster="assets/trailer-poster.jpg"
+            style="width:100%;height:100%;display:block;object-fit:cover;background:#000;">
+            <source src="assets/wild-atlas-trailer.mp4" type="video/mp4">
+            Your browser doesn&rsquo;t support embedded video.
+            <a href="https://www.youtube.com/watch?v=le3MLsSQk7U">Watch on YouTube</a>.
+          </video>
+        </div>
+      </div>
+
+      <hr class="press-divider">
+
       <!-- PRESS RELEASE -->
       <div class="press-release">
 
@@ -400,6 +483,7 @@
           <a href="support.html">Support</a>
           <a href="press.html">Press</a>
           <a href="mailto:press@wildatlasapp.com">Press Contact</a>
+          <a href="https://linktr.ee/wildatlasapp" target="_blank" rel="noopener">Follow Us</a>
         </div>
         <p class="footer-copy">&copy; 2026 Wild Atlas. All rights reserved.</p>
       </div>
