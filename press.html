@@ -196,25 +196,29 @@
       margin-bottom: var(--space-md);
     }
 
-    .press-screens-grid { column-count: 3; column-gap: var(--space-sm); }
+    .press-screens-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+      align-items: flex-start;
+    }
 
     .press-screens-grid img {
-      width: 100%;
-      margin-bottom: var(--space-sm);
-      border-radius: 12px;
+      width: 80px;        /* compact portrait thumbnails (~30% of previous size) */
+      height: auto;
+      border-radius: 10px;
       border: 1.5px solid rgba(93, 64, 55, 0.1);
       display: block;
       cursor: zoom-in;
       transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
 
+    /* Landscape shots are short and wide — match the portrait thumbnail height */
+    .press-screens-grid img.is-landscape { width: 168px; }
+
     .press-screens-grid img:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 18px rgba(93, 64, 55, 0.15);
-    }
-
-    @media (max-width: 600px) {
-      .press-screens-grid { column-count: 2; }
     }
 
     /* Lightbox / carousel */
@@ -490,7 +494,7 @@
         <h2>Screenshots</h2>
         <div class="press-screens-grid">
           <img src="assets/press/ss-home.jpg" alt="Wild Atlas home screen" loading="lazy">
-          <img src="assets/press/ss-how-big-trex.jpg" alt="Size comparison — how big is a T. rex" loading="lazy">
+          <img src="assets/press/ss-how-big-trex.jpg" alt="Size comparison — how big is a T. rex" class="is-landscape" loading="lazy">
           <img src="assets/press/ss-dino-pack.jpg" alt="Dinosaur animal pack" loading="lazy">
           <img src="assets/press/ss-orca.jpg" alt="Orca animal page" loading="lazy">
           <img src="assets/press/ss-languages.jpg" alt="Available in six languages" loading="lazy">
