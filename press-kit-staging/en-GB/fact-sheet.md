@@ -68,16 +68,22 @@ Joshuah Vincent is a Seattle-based product builder and father of two. He spent s
 
 ## What Families Are Saying
 
-> "I can't get them off the phone. They're taking turns doing the quizzes."
-> — Parent of two
+> ★★★★★ **Educational excellence**
+>
+> "This app has such a wide variety of features that are both engaging and fun for children! Love the dinosaur pack"
+>
+> — kula131, Apple App Store
 
-> "He loved touching the animals and getting a sound effect — he did it many, many times."
-> — Parent of a young explorer
+> ★★★★★ **Wonderful app**
+>
+> "In a world where apps are meant for mindless scrolling, Wild Atlas stands apart. It is fun, educational, and beautiful. It's not really a game, it's more of an animal encyclopedia for kids."
+>
+> — chu.c.me, Apple App Store
 
-> "We love the game where you jump over the river and dodge the obstacles. It's great!"
-> — A Wild Atlas parent
+> ★★★★★ **Not brain rot!**
+>
+> "This is actually a good game that teaches kids facts about animals without a bunch of addictive tricks many games use to compensate for being otherwise boring."
+>
+> — Happy Campering, Apple App Store
 
-> "Addictive."
-> — Parent of a book-loving 8-year-old
-
-*All testimonials anonymised at the families' request.*
+*Five-star reviews shown verbatim from the Apple App Store.*

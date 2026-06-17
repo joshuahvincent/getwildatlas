@@ -23,16 +23,25 @@ Wild Atlas 符合 COPPA 规定，不采集任何个人数据。
 
 **家长们怎么说**
 
-> "根本没法让他们放下手机。他们正轮流做测验。"
-> — 两个孩子的家长
+> ★★★★★ **Educational excellence**
+>
+> "This app has such a wide variety of features that are both engaging and fun for children! Love the dinosaur pack"
+>
+> — kula131, Apple App Store
 
-> "他特别喜欢点触动物、听音效——一遍又一遍地玩。"
-> — 一位小探险家的家长
+> ★★★★★ **Wonderful app**
+>
+> "In a world where apps are meant for mindless scrolling, Wild Atlas stands apart. It is fun, educational, and beautiful. It's not really a game, it's more of an animal encyclopedia for kids."
+>
+> — chu.c.me, Apple App Store
 
-> "我们很喜欢那个跳过河流、躲避障碍的游戏。太棒了!"
-> — 一位 Wild Atlas 家长
+> ★★★★★ **Not brain rot!**
+>
+> "This is actually a good game that teaches kids facts about animals without a bunch of addictive tricks many games use to compensate for being otherwise boring."
+>
+> — Happy Campering, Apple App Store
 
-*所有评价均应家庭要求匿名处理。*
+*五星评价原文摘自 Apple App Store。*
 
 ---
 

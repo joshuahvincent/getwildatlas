@@ -68,16 +68,22 @@ Joshuah Vincent ist ein in Seattle ansässiger Produktentwickler und Vater von z
 
 ## Was Familien sagen
 
-> „Ich kriege sie nicht mehr vom Handy weg. Sie machen abwechselnd die Quizze."
-> — Elternteil von zwei Kindern
+> ★★★★★ **Educational excellence**
+>
+> "This app has such a wide variety of features that are both engaging and fun for children! Love the dinosaur pack"
+>
+> — kula131, Apple App Store
 
-> „Er liebte es, die Tiere anzutippen und einen Soundeffekt zu hören – immer und immer wieder."
-> — Elternteil eines kleinen Entdeckers
+> ★★★★★ **Wonderful app**
+>
+> "In a world where apps are meant for mindless scrolling, Wild Atlas stands apart. It is fun, educational, and beautiful. It's not really a game, it's more of an animal encyclopedia for kids."
+>
+> — chu.c.me, Apple App Store
 
-> „Wir lieben das Spiel, bei dem man über den Fluss springt und Hindernissen ausweicht. Es ist großartig!"
-> — Ein Wild-Atlas-Elternteil
+> ★★★★★ **Not brain rot!**
+>
+> "This is actually a good game that teaches kids facts about animals without a bunch of addictive tricks many games use to compensate for being otherwise boring."
+>
+> — Happy Campering, Apple App Store
 
-> „Süchtig machend."
-> — Elternteil eines buchbegeisterten 8-Jährigen
-
-*Alle Stimmen auf Wunsch der Familien anonymisiert.*
+*Fünf-Sterne-Rezensionen im Originalwortlaut aus dem Apple App Store.*

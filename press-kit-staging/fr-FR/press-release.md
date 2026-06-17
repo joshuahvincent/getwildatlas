@@ -23,16 +23,25 @@ Wild Atlas est conforme à la COPPA et ne collecte aucune donnée personnelle.
 
 **Ce que disent les familles**
 
-> « Impossible de les décoller du téléphone. Ils font les quiz chacun leur tour. »
-> — Parent de deux enfants
+> ★★★★★ **Educational excellence**
+>
+> "This app has such a wide variety of features that are both engaging and fun for children! Love the dinosaur pack"
+>
+> — kula131, Apple App Store
 
-> « Il adorait toucher les animaux et déclencher un bruitage — encore et encore. »
-> — Parent d'un petit explorateur
+> ★★★★★ **Wonderful app**
+>
+> "In a world where apps are meant for mindless scrolling, Wild Atlas stands apart. It is fun, educational, and beautiful. It's not really a game, it's more of an animal encyclopedia for kids."
+>
+> — chu.c.me, Apple App Store
 
-> « On adore le jeu où il faut sauter par-dessus la rivière et éviter les obstacles. C'est génial ! »
-> — Un parent Wild Atlas
+> ★★★★★ **Not brain rot!**
+>
+> "This is actually a good game that teaches kids facts about animals without a bunch of addictive tricks many games use to compensate for being otherwise boring."
+>
+> — Happy Campering, Apple App Store
 
-*Tous les témoignages anonymisés à la demande des familles.*
+*Avis cinq étoiles reproduits mot pour mot depuis l'App Store d'Apple.*
 
 ---
 
