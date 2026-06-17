@@ -76,7 +76,7 @@ Joshuah Vincent est un développeur produit basé à Seattle et père de deux en
 
 > ★★★★★ **Wonderful app**
 >
-> "In a world where apps are meant for mindless scrolling, Wild Atlas stands apart. It is fun, educational, and beautiful. It's not really a game, it's more of an animal encyclopedia for kids."
+> "In a world where apps are meant for mindless scrolling, Wild Atlas stands apart. It is fun, educational, and beautiful. It's not really a game, it's more of an animal encyclopedia for kids. It's the only app I let my 3 year old play."
 >
 > — chu.c.me, Apple App Store
 
