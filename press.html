@@ -221,6 +221,52 @@
       box-shadow: 0 6px 18px rgba(93, 64, 55, 0.15);
     }
 
+    /* Lifestyle photos */
+    .press-lifestyle { margin-bottom: var(--space-2xl); }
+
+    .press-lifestyle h2 {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--warm-bark);
+      margin-bottom: var(--space-xs);
+    }
+
+    .press-lifestyle .lifestyle-sub {
+      color: var(--warm-bark);
+      opacity: 0.8;
+      font-size: 0.95rem;
+      margin-bottom: var(--space-md);
+    }
+
+    .lifestyle-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md);
+    }
+
+    .lifestyle-grid figure { margin: 0; }
+
+    .lifestyle-grid img {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 1.5px solid rgba(93, 64, 55, 0.1);
+      display: block;
+    }
+
+    .lifestyle-grid figcaption {
+      font-size: 0.8rem;
+      color: var(--warm-bark);
+      opacity: 0.7;
+      margin-top: var(--space-xs);
+    }
+
+    @media (max-width: 600px) {
+      .lifestyle-grid { grid-template-columns: 1fr; }
+    }
+
     /* Lightbox / carousel */
     .lightbox {
       position: fixed;
@@ -526,6 +572,25 @@
           </div>
         </div>
       </div>
+
+      <!-- LIFESTYLE PHOTOS -->
+      <div class="press-lifestyle">
+        <h2>In the wild</h2>
+        <p class="lifestyle-sub">Wild Atlas on the road, in the air, and at home.</p>
+        <div class="lifestyle-grid">
+          <figure>
+            <img src="assets/press/lifestyle-car.jpg" alt="A child exploring a dinosaur on Wild Atlas during a car ride" loading="lazy">
+          </figure>
+          <figure>
+            <img src="assets/press/lifestyle-plane.jpg" alt="A child and parent reading animal facts on Wild Atlas on a flight" loading="lazy">
+          </figure>
+          <figure>
+            <img src="assets/press/lifestyle-home.jpg" alt="A child playing a Wild Atlas matching game at home" loading="lazy">
+          </figure>
+        </div>
+      </div>
+
+      <hr class="press-divider">
 
       <!-- TRAILER VIDEO -->
       <div class="press-testimonials" style="margin-bottom: var(--space-2xl);">
