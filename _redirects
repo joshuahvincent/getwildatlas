@@ -1,0 +1,5 @@
+# Wild Atlas short links — Cloudflare Pages _redirects. One line per link:
+#   /<slug>  <destination-path>  301
+# Add a slug, commit to getwildatlas main, and wildatlasapp.com/<slug> 301-redirects.
+# (Requires eleventyConfig.addPassthroughCopy("_redirects"); in .eleventy.js.)
+/kids  /blog/what-kids-want-to-know-about-animals/  301

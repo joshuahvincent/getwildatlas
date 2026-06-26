@@ -22,6 +22,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("sitemap.xml");
+  eleventyConfig.addPassthroughCopy("_redirects");  // Cloudflare short links
   // Existing top-level HTML pages (index.html, about.html, privacy.html, …)
   // are passthrough until they're converted to use the shared layout. Drop
   // them at the repo root and they'll appear in _site/ unchanged.
