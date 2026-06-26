@@ -21,14 +21,14 @@ In other words: children ask about danger first because their minds are built to
 
 Wild Atlas was built around exactly this. Every animal in the app answers the questions children actually ask — including a distinction that surprises most adults: dangerous and venomous are not the same thing.
 
-Wild Atlas rates every animal across two separate dimensions, each with its own dedicated guide inside the app. *Venomous* is a biological fact — does the animal produce and deliver toxin through fangs, stingers, or spines? *Dangerous* is a behavioural assessment — does this animal pose a genuine risk to humans, accounting for its size, predatory nature, temperament, and documented encounters? An animal can score high on one and low on the other, high on both, or neither. The king cobra, for instance, is extremely venomous and rarely dangerous. The saltwater crocodile is extremely dangerous and not venomous at all. Getting children comfortable with that kind of nuanced thinking — rather than a single binary "scary / not scary" — is one of the things Wild Atlas was built to do.
+Wild Atlas rates every animal across two separate dimensions, each with its own dedicated guide inside the app. *Venomous* is a biological fact — does the animal produce and deliver toxin through fangs, stingers, or spines? *Dangerous* is a behavioural assessment — does this animal pose a genuine risk to humans, accounting for its size, predatory nature, temperament, and documented encounters? An animal can score high on one and low on the other, high on both, or neither. The king cobra, for instance, is extremely venomous and rarely dangerous. The orca is extremely dangerous and not venomous at all. Getting children comfortable with that kind of nuanced thinking — rather than a single binary "scary / not scary" — is one of the things Wild Atlas was built to do.
 
 <div class="blog-app-screens blog-app-screens--row">
   <img src="/assets/blog/animal-questions/WA_adhoc_danger_guide_iphone_en-US_raw.png" alt="Wild Atlas Danger Guide — How danger levels work" class="blog-app-screen">
   <img src="/assets/blog/animal-questions/WA_adhoc_venom_guide_iphone_en-US_raw.png" alt="Wild Atlas Venom Guide — What is venom?" class="blog-app-screen">
 </div>
 
-Here are five animals that show why that distinction matters.
+Here are three animals that show why that distinction matters.
 
 ---
 
@@ -50,26 +50,6 @@ The fact that stops most people: there are no verified records of a wild orca ki
 
 ---
 
-## The T-Rex: The Most Famous Predator That Ever Lived
-
-Tyrannosaurus rex lived approximately 68 to 66 million years ago, stood four metres at the hip, stretched twelve metres from snout to tail, and weighed between eight and nine tonnes — roughly equivalent to two African elephants.
-
-Its bite force has been estimated at up to 57,000 newtons — enough to crush bone as easily as dry wood. Scientists know this because T-Rex teeth marks have been found fossilised inside the bones of its prey. It didn't just bite through flesh. It bit through skeleton.
-
-**Is it dangerous?** Extinct, so not currently. But by every biological measure, yes. **Is it venomous?** No evidence of venom in any tyrannosaur species.
-
-Recent fossil evidence strongly suggests T-Rex had feathers, particularly in younger animals. The massive scaly predator of popular imagination was probably, at least as a juvenile, considerably fuzzier. Growth rate studies based on bone histology suggest adolescent T-Rexes were among the fastest-growing animals ever to exist.
-
-<div class="blog-app-screens blog-app-screens--trio">
-  <img src="/assets/blog/animal-questions/WA_adhoc_scale_tyrannosaurus_rex_iphone_en-US_raw.png" alt="T-Rex size comparison" class="blog-app-screen">
-  <img src="/assets/blog/animal-questions/WA_adhoc_weight_tyrannosaurus_rex_iphone_en-US_raw.png" alt="T-Rex weight comparison" class="blog-app-screen">
-  <img src="/assets/blog/animal-questions/WA_adhoc_baby_tyrannosaurus_rex_iphone_en-US_raw.png" alt="T-Rex baby photo" class="blog-app-screen">
-</div>
-
-**The baby question:** T-Rex hatchlings were roughly turkey-sized, covered in downy feathers. They look, and grew, nothing like the nine-tonne adults they would become.
-
----
-
 ## The King Cobra: Venomous Is Not the Same as Dangerous
 
 This is where the distinction earns its place.
@@ -87,26 +67,6 @@ The venom capacity is extraordinary. The behaviour toward humans is, by default,
 </div>
 
 **The baby question:** King cobras are the only snakes known to build nests for their eggs and guard them until hatching. The female stays with the nest for two to three months — one of the few snakes to exhibit this level of parental behaviour.
-
----
-
-## The Crocodile: An Ancient Line That Survived Everything
-
-The saltwater crocodile is the largest living reptile — up to six metres long, over 1,000 kilograms, with the highest recorded bite force of any living animal: approximately 16,460 newtons. A great white shark, by comparison, bites at around 4,000.
-
-**Is it dangerous?** Yes — saltwater crocodiles are considered one of the genuinely dangerous large predators and are responsible for a significant number of human fatalities each year. **Is it venomous?** No.
-
-The fact that reframes everything: crocodilians as a group have a lineage stretching back more than 200 million years. They were already an ancient group when the non-avian dinosaurs disappeared 66 million years ago — and they survived that extinction. Whatever killed the dinosaurs, the crocodilian line was there before it happened, and was still there after.
-
-Crocodiles cannot chew. Their jaws grip and hold. They roll in the water to tear off sections of large prey — the behaviour researchers call the death roll.
-
-<div class="blog-app-screens blog-app-screens--trio">
-  <img src="/assets/blog/animal-questions/WA_adhoc_scale_crocodile_iphone_en-US_raw.png" alt="Saltwater Crocodile size comparison" class="blog-app-screen">
-  <img src="/assets/blog/animal-questions/WA_adhoc_weight_crocodile_iphone_en-US_raw.png" alt="Saltwater Crocodile weight comparison" class="blog-app-screen">
-  <img src="/assets/blog/animal-questions/WA_adhoc_baby_crocodile_iphone_en-US_raw.png" alt="Saltwater Crocodile baby photo" class="blog-app-screen">
-</div>
-
-**The baby question:** Crocodile mothers guard their nests for around three months. When the eggs begin to hatch, they carry the hatchlings gently to the water in their mouths — the same jaws that produce those 16,000 newtons of force, now carrying something the size of a sausage.
 
 ---
 
