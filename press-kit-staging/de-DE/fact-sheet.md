@@ -62,7 +62,7 @@ Sechs Sprachen beim Start: Englisch (US), Englisch (UK), Deutsch, Spanisch, Fran
 
 ## Über den Entwickler
 
-Joshuah Vincent ist ein in Seattle ansässiger Produktentwickler und Vater von zwei Kindern. Sechs Jahre lang war er Senior Principal Product Manager bei Meta und brachte AR-Erlebnisse heraus, darunter Ray-Ban Meta und Orion. Zuvor leitete er Produkt bei Zillow und Xero. Wild Atlas ist unabhängig entwickelt und finanziert — ohne Investoren.
+Joshuah Vincent ist ein in Seattle ansässiger Produktentwickler und Vater von zwei Kindern. Sechs Jahre lang war er Principal Product Manager bei Meta und brachte AR-Erlebnisse heraus, darunter Ray-Ban Meta und Orion. Zuvor leitete er Produkt bei Zillow und Xero. Wild Atlas ist unabhängig entwickelt und finanziert — ohne Investoren.
 
 ---
 

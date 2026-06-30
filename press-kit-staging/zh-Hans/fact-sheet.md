@@ -62,7 +62,7 @@
 
 ## 关于开发者
 
-Joshuah Vincent 是一位居住在西雅图的产品开发者，两个孩子的父亲。他在 Meta 担任高级首席产品经理六年，主导推出了 Ray-Ban Meta 和 Orion 等 AR 产品，此前在 Zillow 和 Xero 担任产品负责人。Wild Atlas 独立开发并自筹资金，无外部投资人。
+Joshuah Vincent 是一位居住在西雅图的产品开发者，两个孩子的父亲。他在 Meta 担任首席产品经理六年，主导推出了 Ray-Ban Meta 和 Orion 等 AR 产品，此前在 Zillow 和 Xero 担任产品负责人。Wild Atlas 独立开发并自筹资金，无外部投资人。
 
 ---
 
