@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Fact Sheet — Wild Atlas</title>
+  <meta name="description" content="Wild Atlas fact sheet — at a glance, pricing, content, features, and what families are saying. The narrated animal discovery app for children aged 3–9.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.wildatlasapp.com/press-fact-sheet">
+
+  <meta name="theme-color" content="#FFF5E1">
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.wildatlasapp.com/press-fact-sheet">
+  <meta property="og:title" content="Fact Sheet — Wild Atlas">
+  <meta property="og:description" content="Wild Atlas fact sheet — at a glance, pricing, content, features, and reviews.">
+  <meta property="og:image" content="https://www.wildatlasapp.com/assets/app-icon.png">
+
+  <link rel="preload" href="fonts/Fredoka-VariableFont_wdth,wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="fonts/Nunito-Regular.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link rel="stylesheet" href="css/styles.css?v=2">
+
+  <style>
+    .press-page { padding: 120px 0 80px; }
+    .press-page-container { max-width: 760px; }
+
+    .press-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--peach-pop);
+      text-decoration: none;
+      margin-bottom: var(--space-lg);
+    }
+    .press-back:hover { text-decoration: underline; }
+
+    .press-eyebrow {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--peach-pop);
+      margin-bottom: var(--space-xs);
+    }
+
+    .press-page h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 700;
+      color: var(--warm-bark);
+      line-height: 1.2;
+      margin-bottom: var(--space-sm);
+    }
+
+    .press-deck {
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--warm-bark);
+      opacity: 0.8;
+      margin-bottom: var(--space-2xl);
+      line-height: 1.55;
+    }
+
+    .press-doc h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+      font-weight: 700;
+      color: var(--warm-bark);
+      margin: var(--space-2xl) 0 var(--space-sm);
+    }
+    .press-doc h3 {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--warm-bark);
+      margin: var(--space-lg) 0 var(--space-sm);
+    }
+    .press-doc p {
+      font-size: 0.97rem;
+      line-height: 1.72;
+      color: var(--warm-bark);
+      margin-bottom: var(--space-md);
+    }
+    .press-doc ul { margin: 0 0 var(--space-md); padding-left: 1.2rem; }
+    .press-doc li {
+      font-size: 0.97rem;
+      line-height: 1.7;
+      color: var(--warm-bark);
+      margin-bottom: var(--space-xs);
+    }
+    .press-doc a { color: var(--peach-pop); font-weight: 600; }
+    .press-doc hr {
+      border: none;
+      border-top: 1.5px solid rgba(93, 64, 55, 0.08);
+      margin: var(--space-2xl) 0;
+    }
+
+    .press-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: var(--space-sm) 0 var(--space-md);
+      font-size: 0.95rem;
+    }
+    .press-table th, .press-table td {
+      text-align: left;
+      padding: 0.65rem 0.85rem;
+      border-bottom: 1px solid rgba(93, 64, 55, 0.1);
+      color: var(--warm-bark);
+      vertical-align: top;
+      line-height: 1.55;
+    }
+    .press-table thead th {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      background: rgba(255, 162, 109, 0.08);
+    }
+    .press-table tr:last-child td { border-bottom: none; }
+    .press-table td:first-child { width: 42%; }
+
+    /* Review cards */
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: var(--space-md);
+      margin: var(--space-sm) 0 var(--space-md);
+    }
+    .review-card {
+      background: #fff;
+      border: 1.5px solid rgba(93, 64, 55, 0.1);
+      border-radius: 16px;
+      padding: var(--space-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+    .review-card .review-title {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--warm-bark);
+      margin: 0;
+    }
+    .review-card .review-stars {
+      color: #f5a623;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      line-height: 1;
+    }
+    .review-card .review-body {
+      font-family: var(--font-heading);
+      font-size: 0.98rem;
+      font-weight: 500;
+      line-height: 1.5;
+      color: var(--warm-bark);
+      opacity: 0.85;
+      margin: 0;
+    }
+    .review-card cite {
+      font-size: 0.85rem;
+      font-style: normal;
+      font-weight: 600;
+      color: var(--peach-pop);
+    }
+    .review-note {
+      font-size: 0.85rem;
+      font-style: italic;
+      color: var(--warm-bark);
+      opacity: 0.6;
+      margin-top: var(--space-sm);
+    }
+  </style>
+</head>
+<body data-page="press">
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/mascot-logo.png" alt="Wild Atlas" class="nav-icon">
+        <span class="nav-title">Wild Atlas</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-cta">Back to Wild Atlas</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="press-page">
+    <div class="container press-page-container">
+
+      <a href="press.html" class="press-back">&#8249;&nbsp;Press Room</a>
+      <p class="press-eyebrow">Fact Sheet</p>
+      <h1>Wild Atlas &mdash; Fact Sheet</h1>
+      <p class="press-deck">Raise explorers, not scrollers.</p>
+
+      <div class="press-doc">
+
+        <h2>At a Glance</h2>
+        <table class="press-table">
+          <tbody>
+            <tr><td><strong>App name</strong></td><td>Wild Atlas</td></tr>
+            <tr><td><strong>Platform</strong></td><td>iOS &mdash; iPhone and iPad</td></tr>
+            <tr><td><strong>Availability</strong></td><td>App Store</td></tr>
+            <tr><td><strong>Age range</strong></td><td>3&ndash;9</td></tr>
+            <tr><td><strong>Developer</strong></td><td>Joshuah Vincent, Seattle, WA</td></tr>
+            <tr><td><strong>App Store link</strong></td><td><a href="https://apps.apple.com/app/id6761081031">apps.apple.com/app/id6761081031</a></td></tr>
+            <tr><td><strong>Press contact</strong></td><td><a href="mailto:press@wildatlasapp.com">press@wildatlasapp.com</a></td></tr>
+          </tbody>
+        </table>
+
+        <h2>Pricing</h2>
+        <table class="press-table">
+          <thead>
+            <tr><th>&nbsp;</th><th>Price</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Free packs (3 packs, forever free)</td><td>$0.00</td></tr>
+            <tr><td>Individual paid pack</td><td>$3.99 USD</td></tr>
+            <tr><td>Explorer Pass (all 9 paid packs)</td><td>$19.99 USD</td></tr>
+          </tbody>
+        </table>
+        <ul>
+          <li>One-time, parent-approved purchase only</li>
+          <li>No subscription</li>
+          <li>No ads</li>
+          <li>No data harvesting</li>
+          <li>COPPA-compliant</li>
+        </ul>
+
+        <h2>Content</h2>
+        <ul>
+          <li><strong>200+ animals</strong> across <strong>12 packs</strong> covering every continent and ocean</li>
+          <li><strong>3 free packs at launch:</strong> Happy Hounds, Cool Cats, Cozy Critters</li>
+          <li><strong>9 paid packs</strong> (individual or via Explorer Pass bundle)</li>
+          <li><strong>Hidden bonus pack:</strong> Mythical Menagerie (18 creatures from world folklore &mdash; unlock by finding shooting stars hidden throughout the app)</li>
+        </ul>
+
+        <h3>Features</h3>
+        <ul>
+          <li>Fully narrated facts &mdash; no reading required; suitable from age 3</li>
+          <li>Dual-mode quizzes: picture-based (younger children) and reading-based (older children), multiple difficulty levels</li>
+          <li>Interactive world map &mdash; every animal placed in its real habitat</li>
+          <li>Body-size and weight comparisons</li>
+          <li>Wild Watch slideshows: Tiny Tails, Sized Up, Weigh to Go, Wild &amp; Free</li>
+          <li>Games Den: Memory Match, Puppy Puzzle, Who&rsquo;s Who, Habitat Hop (4 mini-games)</li>
+          <li>Full offline support</li>
+        </ul>
+
+        <h3>Languages</h3>
+        <p>English (US), English (UK), German, Spanish, French, Simplified Chinese &mdash; fully narrated in every language.</p>
+
+        <hr>
+
+        <h2>About the Developer</h2>
+        <p>Joshuah Vincent is a Seattle-based product builder and father of two, formerly at Meta, Zillow, and Xero. Wild Atlas is independently built and funded &mdash; no investors.</p>
+
+        <hr>
+
+        <h2>What Families Are Saying</h2>
+        <div class="review-grid">
+          <div class="review-card">
+            <p class="review-title">Educational excellence</p>
+            <div class="review-stars" aria-label="Rated 5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-body">&ldquo;This app has such a wide variety of features that are both engaging and fun for children! Love the dinosaur pack&rdquo;</p>
+            <cite>&mdash; kula131 &middot; App Store</cite>
+          </div>
+          <div class="review-card">
+            <p class="review-title">Wonderful app</p>
+            <div class="review-stars" aria-label="Rated 5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-body">&ldquo;In a world where apps are meant for mindless scrolling, Wild Atlas stands apart. It is fun, educational, and beautiful. It&rsquo;s not really a game, it&rsquo;s more of an animal encyclopedia for kids. It&rsquo;s the only app I let my 3 year old play.&rdquo;</p>
+            <cite>&mdash; chu.c.me &middot; App Store</cite>
+          </div>
+          <div class="review-card">
+            <p class="review-title">Not brain rot!</p>
+            <div class="review-stars" aria-label="Rated 5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-body">&ldquo;This is actually a good game that teaches kids facts about animals without a bunch of addictive tricks many games use to compensate for being otherwise boring.&rdquo;</p>
+            <cite>&mdash; Happy Campering &middot; App Store</cite>
+          </div>
+        </div>
+        <p class="review-note">Five-star reviews shown verbatim from the Apple App Store.</p>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="assets/mascot-sitting.png" alt="Wild Atlas" class="footer-mascot" loading="lazy">
+          <span class="footer-title">Wild Atlas</span>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="age-suitability.html">Age Suitability</a>
+          <a href="support.html">Support</a>
+          <a href="press.html">Press</a>
+          <a href="mailto:press@wildatlasapp.com">Press Contact</a>
+          <a href="https://linktr.ee/wildatlasapp" target="_blank" rel="noopener">Follow Us</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Wild Atlas. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
