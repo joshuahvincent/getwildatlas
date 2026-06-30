@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Press Release — Wild Atlas</title>
+  <meta name="description" content="Wild Atlas, a narrated animal discovery app for children, launches globally in six languages. Official press release.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.wildatlasapp.com/press-release">
+
+  <meta name="theme-color" content="#FFF5E1">
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.wildatlasapp.com/press-release">
+  <meta property="og:title" content="Press Release — Wild Atlas">
+  <meta property="og:description" content="Wild Atlas, a narrated animal discovery app for children, launches globally in six languages.">
+  <meta property="og:image" content="https://www.wildatlasapp.com/assets/app-icon.png">
+
+  <link rel="preload" href="fonts/Fredoka-VariableFont_wdth,wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="fonts/Nunito-Regular.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link rel="stylesheet" href="css/styles.css?v=2">
+
+  <style>
+    .press-page { padding: 120px 0 80px; }
+    .press-page-container { max-width: 760px; }
+
+    .press-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--peach-pop);
+      text-decoration: none;
+      margin-bottom: var(--space-lg);
+    }
+    .press-back:hover { text-decoration: underline; }
+
+    .press-release-kicker {
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--peach-pop);
+      margin-bottom: var(--space-md);
+    }
+
+    .press-page h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.6rem, 3.5vw, 2.3rem);
+      font-weight: 700;
+      color: var(--warm-bark);
+      line-height: 1.22;
+      margin-bottom: var(--space-sm);
+    }
+
+    .press-deck {
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--warm-bark);
+      opacity: 0.8;
+      margin-bottom: var(--space-xl);
+      line-height: 1.55;
+    }
+
+    .press-doc h2 {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--warm-bark);
+      margin: var(--space-lg) 0 var(--space-sm);
+    }
+    .press-doc p {
+      font-size: 0.97rem;
+      line-height: 1.72;
+      color: var(--warm-bark);
+      margin-bottom: var(--space-md);
+    }
+    .press-doc ul { margin: 0 0 var(--space-md); padding-left: 1.2rem; }
+    .press-doc li {
+      font-size: 0.97rem;
+      line-height: 1.7;
+      color: var(--warm-bark);
+      margin-bottom: var(--space-xs);
+    }
+    .press-doc a { color: var(--peach-pop); font-weight: 600; }
+    .press-doc hr {
+      border: none;
+      border-top: 1.5px solid rgba(93, 64, 55, 0.08);
+      margin: var(--space-xl) 0;
+    }
+
+    .press-doc blockquote {
+      border-left: 3px solid var(--peach-pop);
+      padding-left: var(--space-md);
+      margin: var(--space-lg) 0;
+    }
+    .press-doc blockquote p {
+      font-style: italic;
+      margin-bottom: var(--space-xs);
+    }
+    .press-doc blockquote cite {
+      display: block;
+      font-size: 0.85rem;
+      font-style: normal;
+      opacity: 0.7;
+    }
+
+    .press-note {
+      font-size: 0.85rem;
+      font-style: italic;
+      color: var(--warm-bark);
+      opacity: 0.6;
+    }
+
+    /* Review cards */
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: var(--space-md);
+      margin: var(--space-sm) 0 var(--space-md);
+    }
+    .review-card {
+      background: #fff;
+      border: 1.5px solid rgba(93, 64, 55, 0.1);
+      border-radius: 16px;
+      padding: var(--space-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+    .review-card .review-title {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--warm-bark);
+      margin: 0;
+    }
+    .review-card .review-stars {
+      color: #f5a623;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      line-height: 1;
+    }
+    .review-card .review-body {
+      font-family: var(--font-heading);
+      font-size: 0.98rem;
+      font-weight: 500;
+      line-height: 1.5;
+      color: var(--warm-bark);
+      opacity: 0.85;
+      margin: 0;
+    }
+    .review-card cite {
+      font-size: 0.85rem;
+      font-style: normal;
+      font-weight: 600;
+      color: var(--peach-pop);
+    }
+    .review-note {
+      font-size: 0.85rem;
+      font-style: italic;
+      color: var(--warm-bark);
+      opacity: 0.6;
+      margin-top: var(--space-sm);
+    }
+  </style>
+</head>
+<body data-page="press">
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/mascot-logo.png" alt="Wild Atlas" class="nav-icon">
+        <span class="nav-title">Wild Atlas</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-cta">Back to Wild Atlas</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="press-page">
+    <div class="container press-page-container">
+
+      <a href="press.html" class="press-back">&#8249;&nbsp;Press Room</a>
+      <p class="press-release-kicker">For Immediate Release</p>
+      <h1>Wild Atlas, a Narrated Animal Discovery App for Children, Launches Globally in Six Languages</h1>
+      <p class="press-deck">Built solo over four months by the son of South Africa&rsquo;s celebrated conservation documentary filmmakers, Wild Atlas gives children documentary-style animal content &mdash; and parents screen time they can hand over without worry.</p>
+
+      <div class="press-doc">
+
+        <p><strong>SEATTLE, WA &mdash; June 10, 2026</strong> &mdash; Wild Atlas, an animal discovery app for children aged 3 and up, is available today on the App Store for iPhone and iPad. Across twelve animal packs and six languages, the app brings narrated, documentary-style facts, games, quizzes, and exploration to young children &mdash; with no subscription, no advertising, and no algorithmic feed.</p>
+
+        <p>Think of it as a hyper-malleable podcast for kids aged 3 to 9 &mdash; audio-first, self-directed, completely non-linear. Leave narration on and a child who can&rsquo;t yet read explores entirely on their own; turn it off and read along together.</p>
+
+        <p>Wild Atlas is the work of Joshuah Vincent, a Seattle-based product builder. He grew up on his parents&rsquo; conservation film shoots in the South African veld. As a parent, he spent years looking for an app that could do the same for his own kids &mdash; something that made the natural world genuinely fascinating, that a child could explore alone or with a parent beside them. Nothing quite got there. A family expedition through Botswana in early 2026, taken partly in memory of his late father, made the search feel urgent. He came home and built it.</p>
+
+        <blockquote>
+          <p>&ldquo;My parents spent their lives in the bush, making it accessible to people through film. I grew up on those shoots, in the South African veld, learning about animals and why they&rsquo;re worth knowing. When I started looking for an app I could hand my own kids &mdash; something cinematic and delightful, with no ads and no junk food video &mdash; I couldn&rsquo;t find one. So I built it, with my kids and other families shaping it at every step.&rdquo;</p>
+          <cite>&mdash; Joshuah Vincent, founder, Wild Atlas</cite>
+        </blockquote>
+
+        <p>The entire app &mdash; its architecture, a visual library of more than 1,000 illustrations across 236 animals, fully narrated content in six languages, and a complete content download and update system &mdash; was built solo by Joshuah, with AI as a teammate, over four months.</p>
+
+        <p>A hidden pack &mdash; the Mythical Menagerie, featuring eighteen creatures from world folklore &mdash; can be unlocked by finding the hidden shooting stars triggered throughout the app over multiple sessions.</p>
+
+        <p>In early testing, an eight-year-old who &ldquo;hardly uses devices in general&rdquo; tried Wild Atlas and had one word: <em>&ldquo;Addictive.&rdquo;</em> On TestFlight, users opened the app an average of seven times each &mdash; before the app was finished.</p>
+
+        <p>Wild Atlas is COPPA-compliant and collects no personal data.</p>
+
+        <h2>What Families Are Saying</h2>
+        <div class="review-grid">
+          <div class="review-card">
+            <p class="review-title">Educational excellence</p>
+            <div class="review-stars" aria-label="Rated 5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-body">&ldquo;This app has such a wide variety of features that are both engaging and fun for children! Love the dinosaur pack&rdquo;</p>
+            <cite>&mdash; kula131 &middot; App Store</cite>
+          </div>
+          <div class="review-card">
+            <p class="review-title">Wonderful app</p>
+            <div class="review-stars" aria-label="Rated 5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-body">&ldquo;In a world where apps are meant for mindless scrolling, Wild Atlas stands apart. It is fun, educational, and beautiful. It&rsquo;s not really a game, it&rsquo;s more of an animal encyclopedia for kids. It&rsquo;s the only app I let my 3 year old play.&rdquo;</p>
+            <cite>&mdash; chu.c.me &middot; App Store</cite>
+          </div>
+          <div class="review-card">
+            <p class="review-title">Not brain rot!</p>
+            <div class="review-stars" aria-label="Rated 5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-body">&ldquo;This is actually a good game that teaches kids facts about animals without a bunch of addictive tricks many games use to compensate for being otherwise boring.&rdquo;</p>
+            <cite>&mdash; Happy Campering &middot; App Store</cite>
+          </div>
+        </div>
+        <p class="review-note">Five-star reviews shown verbatim from the Apple App Store.</p>
+
+        <hr>
+
+        <h2>App Details</h2>
+        <ul>
+          <li><strong>Languages:</strong> English (US and UK), German, Spanish, French, Simplified Chinese</li>
+          <li><strong>Free forever:</strong> Happy Hounds, Cool Cats, and Cozy Critters</li>
+          <li><strong>New user bonus:</strong> one additional paid pack unlocked at no charge on first setup</li>
+          <li><strong>Individual packs:</strong> $3.99 (one-time, parent-approved purchase)</li>
+          <li><strong>Full unlock:</strong> all nine premium packs for $19.99</li>
+          <li><strong>Each pack includes:</strong> narrated facts, dual-mode quizzes, interactive world map, body-size comparisons, and animal sounds</li>
+          <li><strong>Games:</strong> Memory Match, Puppy Puzzle, Who&rsquo;s Who, and Habitat Hop &mdash; included across all packs</li>
+          <li><strong>Fully offline:</strong> works on airplanes, road trips, or anywhere without reliable internet</li>
+        </ul>
+
+        <hr>
+
+        <h2>About Wild Atlas</h2>
+        <p>Wild Atlas is an animal discovery app for children aged 3 and up, featuring narrated, documentary-style facts, child-led exploration, and multilingual content across six languages. Based in Seattle, Washington. <a href="https://www.wildatlasapp.com">wildatlasapp.com</a></p>
+
+        <h2>Press Contact</h2>
+        <p><a href="mailto:press@wildatlasapp.com">press@wildatlasapp.com</a></p>
+
+        <p class="press-note">Prices shown in USD. Local pricing may vary by region and is set by the Apple App Store.</p>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="assets/mascot-sitting.png" alt="Wild Atlas" class="footer-mascot" loading="lazy">
+          <span class="footer-title">Wild Atlas</span>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="age-suitability.html">Age Suitability</a>
+          <a href="support.html">Support</a>
+          <a href="press.html">Press</a>
+          <a href="mailto:press@wildatlasapp.com">Press Contact</a>
+          <a href="https://linktr.ee/wildatlasapp" target="_blank" rel="noopener">Follow Us</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Wild Atlas. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
