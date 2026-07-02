@@ -6,7 +6,7 @@
 
   <title>{{ title }} — Wild Atlas</title>
   <meta name="description" content="{{ excerpt or 'The Wild Atlas blog — notes from the founder and team.' }}">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="{% if noindex %}noindex, nofollow{% else %}index, follow{% endif %}">
   <link rel="canonical" href="https://wildatlasapp.com{{ page.url }}">
 
   <meta name="theme-color" content="#FFF5E1">
