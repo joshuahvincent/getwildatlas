@@ -24,7 +24,7 @@
 |---|---|
 | Free packs (3 packs, forever free) | $0.00 |
 | Individual paid pack | $3.99 USD |
-| Explorer Pass (all 9 paid packs) | $19.99 USD |
+| Explorer Pass (all 9 paid packs) | $23.99 USD |
 
 - One-time, parent-approved purchase only
 - No subscription

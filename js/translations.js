@@ -106,7 +106,7 @@ window.WILD_ATLAS_I18N = {
 
       // Packs
       'packs.title': '12 Animal Worlds to Explore',
-      'packs.subtitle': '3 always-free packs, plus one premium pack your child picks — free. Unlock more at $3.99 each, or get everything with the Explorer Pass at $19.99.',
+      'packs.subtitle': '3 always-free packs, plus one premium pack your child picks — free. Unlock more at $3.99 each, or get everything with the Explorer Pass at $23.99.',
       'packs.free': 'Free',
       'packs.more': 'More packs coming soon!',
 
@@ -213,7 +213,7 @@ window.WILD_ATLAS_I18N = {
       'faq.q1': 'What age range is Wild Atlas designed for?',
       'faq.a1': 'Wild Atlas is designed for children ages 3 and up, with two age modes: Little Explorers (ages under 5) featuring picture-based quizzes, and Young Explorers (ages 5 and up) with reading challenges.',
       'faq.q2': 'Is Wild Atlas free?',
-      'faq.a2': 'Wild Atlas is free to download and includes 3 free animal packs (Happy Hounds, Cool Cats, and Cozy Critters). Additional packs are $3.99 each, or you can unlock everything — including future packs — with the Explorer Pass for $19.99.',
+      'faq.a2': 'Wild Atlas is free to download and includes 3 free animal packs (Happy Hounds, Cool Cats, and Cozy Critters). Additional packs are $3.99 each, or you can unlock everything — including future packs — with the Explorer Pass for $23.99.',
       'faq.q3': 'Can my child use Wild Atlas independently without reading?',
       'faq.a3': 'Yes! Wild Atlas features tap-to-read text-to-speech narration. Kids can tap any text and a warm, friendly character reads it aloud, making it perfect for independent exploration without any reading skills required.',
       'faq.q4': 'Is Wild Atlas safe for children?',
@@ -300,7 +300,7 @@ window.WILD_ATLAS_I18N = {
       'games.habitat.desc': 'Bring Tiere nach Hause \u2014 Savanne, Arktis, Wald, Ozean. Geografie spielerisch lernen.',
 
       'packs.title': '12 Tierwelten zum Entdecken',
-      'packs.subtitle': '3 dauerhaft kostenlose Packs, plus ein Premium-Pack nach Wahl — kostenlos. Weitere für je 3,99 €, oder alles mit dem Explorer Pass für 22,99 €.',
+      'packs.subtitle': '3 dauerhaft kostenlose Packs, plus ein Premium-Pack nach Wahl — kostenlos. Weitere für je 3,99 €, oder alles mit dem Explorer Pass.',
       'packs.free': 'Gratis',
       'packs.more': 'Weitere Pakete folgen bald!',
 
@@ -402,7 +402,7 @@ window.WILD_ATLAS_I18N = {
       'faq.q1': 'F\u00fcr welche Altersgruppe ist Wild Atlas gedacht?',
       'faq.a1': 'Wild Atlas ist f\u00fcr Kinder von 3\u20139 Jahren entwickelt, mit zwei Altermodi: Kleine Entdecker (3\u20134) mit Bildfragen und Junge Entdecker (5\u20139) mit Leseaufgaben.',
       'faq.q2': 'Ist Wild Atlas kostenlos?',
-      'faq.a2': 'Wild Atlas ist kostenlos herunterladbar und enthält 3 Gratis-Tierpakete (Happy Hounds, Cool Cats und Cozy Critters). Weitere Pakete kosten je 3,99 €, oder schalte alles frei — inklusive zukünftiger Pakete — mit dem Explorer Pass für 22,99 €.',
+      'faq.a2': 'Wild Atlas ist kostenlos herunterladbar und enthält 3 Gratis-Tierpakete (Happy Hounds, Cool Cats und Cozy Critters). Weitere Pakete kosten je 3,99 €, oder schalte alles frei — inklusive zukünftiger Pakete — mit dem Explorer Pass.',
       'faq.q3': 'Kann mein Kind Wild Atlas selbstst\u00e4ndig nutzen, ohne lesen zu k\u00f6nnen?',
       'faq.a3': 'Ja! Wild Atlas hat eine Vorlesefunktion. Kinder tippen auf beliebigen Text und eine warme, freundliche Stimme liest ihn vor \u2014 perfekt zum eigenst\u00e4ndigen Entdecken ohne Lesekenntnisse.',
       'faq.q4': 'Ist Wild Atlas sicher f\u00fcr Kinder?',
@@ -489,7 +489,7 @@ window.WILD_ATLAS_I18N = {
       'games.habitat.desc': 'Lleva a los animales a casa \u2014 sabana, \u00e1rtico, bosque, oc\u00e9ano. Geograf\u00eda a trav\u00e9s del juego.',
 
       'packs.title': '12 Mundos Animales por Explorar',
-      'packs.subtitle': '3 packs siempre gratis, más un pack premium que tu hijo elige — gratis. Desbloquea más a 3,99 € cada uno, o consíguelo todo con el Explorer Pass por 22,99 €.',
+      'packs.subtitle': '3 packs siempre gratis, más un pack premium que tu hijo elige — gratis. Desbloquea más a 3,99 € cada uno, o consíguelo todo con el Explorer Pass.',
       'packs.free': 'Gratis',
       'packs.more': '\u00a1M\u00e1s paquetes pr\u00f3ximamente!',
 
@@ -591,7 +591,7 @@ window.WILD_ATLAS_I18N = {
       'faq.q1': '\u00bfPara qu\u00e9 edades est\u00e1 dise\u00f1ado Wild Atlas?',
       'faq.a1': 'Wild Atlas est\u00e1 dise\u00f1ado para ni\u00f1os de 3 a 9 a\u00f1os, con dos modos: Peque\u00f1os Exploradores (3\u20134) con preguntas basadas en im\u00e1genes y J\u00f3venes Exploradores (5\u20139) con desaf\u00edos de lectura.',
       'faq.q2': '\u00bfEs gratis Wild Atlas?',
-      'faq.a2': 'Wild Atlas es gratis para descargar e incluye 3 paquetes gratis (Happy Hounds, Cool Cats y Cozy Critters). Los paquetes adicionales cuestan 3,99 € cada uno, o desbloquea todo — incluidos los paquetes futuros — con el Explorer Pass por 22,99 €.',
+      'faq.a2': 'Wild Atlas es gratis para descargar e incluye 3 paquetes gratis (Happy Hounds, Cool Cats y Cozy Critters). Los paquetes adicionales cuestan 3,99 € cada uno, o desbloquea todo — incluidos los paquetes futuros — con el Explorer Pass.',
       'faq.q3': '\u00bfPuede mi hijo usar Wild Atlas sin saber leer?',
       'faq.a3': '\u00a1S\u00ed! Wild Atlas tiene narraci\u00f3n en voz alta. Los ni\u00f1os tocan cualquier texto y una voz c\u00e1lida lo lee, perfecto para explorar de forma independiente sin necesitar leer.',
       'faq.q4': '\u00bfEs Wild Atlas seguro para ni\u00f1os?',
@@ -678,7 +678,7 @@ window.WILD_ATLAS_I18N = {
       'games.habitat.desc': 'Ram\u00e8ne les animaux chez eux \u2014 savane, arctique, for\u00eat, oc\u00e9an. La g\u00e9ographie par le jeu.',
 
       'packs.title': '12 Mondes Animaux \u00e0 Explorer',
-      'packs.subtitle': '3 packs toujours gratuits, plus un pack premium que votre enfant choisit — gratuit. Déverrouillez les autres à 3,99 € chacun, ou obtenez tout avec l’Explorer Pass à 22,99 €.',
+      'packs.subtitle': '3 packs toujours gratuits, plus un pack premium que votre enfant choisit — gratuit. Déverrouillez les autres à 3,99 € chacun, ou obtenez tout avec l’Explorer Pass.',
       'packs.free': 'Gratuit',
       'packs.more': 'Plus de packs bient\u00f4t\u00a0!',
 
@@ -780,7 +780,7 @@ window.WILD_ATLAS_I18N = {
       'faq.q1': 'Pour quel \u00e2ge Wild Atlas est-il con\u00e7u\u00a0?',
       'faq.a1': 'Wild Atlas est con\u00e7u pour les enfants de 3 \u00e0 9 ans, avec deux modes : Petits Explorateurs (3\u20134) avec des questions en images et Jeunes Explorateurs (5\u20139) avec des d\u00e9fis de lecture.',
       'faq.q2': 'Wild Atlas est-il gratuit\u00a0?',
-      'faq.a2': 'Wild Atlas est gratuit et comprend 3 packs gratuits (Happy Hounds, Cool Cats et Cozy Critters). Les packs supplémentaires sont à 3,99 € chacun, ou débloquez tout — y compris les packs à venir — avec l\'Explorer Pass à 22,99 €.',
+      'faq.a2': 'Wild Atlas est gratuit et comprend 3 packs gratuits (Happy Hounds, Cool Cats et Cozy Critters). Les packs supplémentaires sont à 3,99 € chacun, ou débloquez tout — y compris les packs à venir — avec l\'Explorer Pass.',
       'faq.q3': 'Mon enfant peut-il utiliser Wild Atlas sans savoir lire\u00a0?',
       'faq.a3': 'Oui\u00a0! Wild Atlas propose une lecture \u00e0 voix haute. Les enfants touchent n\u2019importe quel texte et une voix chaleureuse le lit, parfait pour explorer de fa\u00e7on autonome.',
       'faq.q4': 'Wild Atlas est-il s\u00fbr pour les enfants\u00a0?',
@@ -877,7 +877,7 @@ window.WILD_ATLAS_I18N = {
 
       // Packs
       'packs.title': '12 \u4e2a\u52a8\u7269\u4e16\u754c\u7b49\u4f60\u63a2\u7d22',
-      'packs.subtitle': '3 个永久免费动物包，加上孩子自选一个付费包——免费赠送。其他每个¥28，或购买 Explorer Pass（¥148）解锁全部。',
+      'packs.subtitle': '3 个永久免费动物包，加上孩子自选一个付费包——免费赠送。其他每个¥28，或购买 Explorer Pass 解锁全部。',
       'packs.free': '\u514d\u8d39',
       'packs.more': '\u66f4\u591a\u52a8\u7269\u5305\u5373\u5c06\u63a8\u51fa\uff01',
 
@@ -984,7 +984,7 @@ window.WILD_ATLAS_I18N = {
       'faq.q1': '\u91ce\u751f\u5730\u56fe\u96c6\u9002\u5408\u4ec0\u4e48\u5e74\u9f84\u7684\u5b69\u5b50\uff1f',
       'faq.a1': '\u91ce\u751f\u5730\u56fe\u96c6\u4e13\u4e3a 2 \u5c81\u53ca\u4ee5\u4e0a\u7684\u513f\u7ae5\u8bbe\u8ba1\uff0c\u6709\u4e24\u79cd\u5e74\u9f84\u6a21\u5f0f\uff1a\u5c0f\u5c0f\u63a2\u7d22\u5bb6\uff085 \u5c81\u4ee5\u4e0b\uff09\u6709\u56fe\u7247\u6d4b\u9a8c\uff0c\u5e74\u8f7b\u63a2\u7d22\u5bb6\uff085 \u5c81\u53ca\u4ee5\u4e0a\uff09\u6709\u8bc6\u5b57\u6311\u6218\u3002',
       'faq.q2': '\u91ce\u751f\u5730\u56fe\u96c6\u514d\u8d39\u5417\uff1f',
-      'faq.a2': '野生地图集免费下载，包含 3 个免费动物包（Happy Hounds、Cool Cats 和 Cozy Critters）。其他动物包每个¥28，或购买 Explorer Pass（¥148）解锁全部内容——包括未来新增的动物包。',
+      'faq.a2': '野生地图集免费下载，包含 3 个免费动物包（Happy Hounds、Cool Cats 和 Cozy Critters）。其他动物包每个¥28，或购买 Explorer Pass 解锁全部内容——包括未来新增的动物包。',
       'faq.q3': '\u6211\u7684\u5b69\u5b50\u4e0d\u8bc6\u5b57\u4e5f\u80fd\u72ec\u7acb\u4f7f\u7528\u91ce\u751f\u5730\u56fe\u96c6\u5417\uff1f',
       'faq.a3': '\u53ef\u4ee5\uff01\u91ce\u751f\u5730\u56fe\u96c6\u6709\u8f7b\u89e6\u6717\u8bfb\u529f\u80fd\u3002\u5b69\u5b50\u8f7b\u89e6\u4efb\u4f55\u6587\u5b57\uff0c\u6e29\u6696\u53cb\u597d\u7684\u58f0\u97f3\u5c31\u4f1a\u6717\u8bfb\u51fa\u6765\u2014\u2014\u975e\u5e38\u9002\u5408\u4e0d\u8bc6\u5b57\u7684\u5b69\u5b50\u72ec\u7acb\u63a2\u7d22\u3002',
       'faq.q4': '\u91ce\u751f\u5730\u56fe\u96c6\u5bf9\u5b69\u5b50\u5b89\u5168\u5417\uff1f',

@@ -25,7 +25,7 @@
 |---|---|
 | Packs gratuits (3 packs, gratuits à vie) | 0,00 € |
 | Pack payant individuel | 3,99 € |
-| Explorer Pass (les 9 packs payants) | 22,99 € |
+| Explorer Pass (les 9 packs payants) | Affiché sur l'App Store |
 
 - Achat unique validé par les parents
 - Pas d'abonnement
