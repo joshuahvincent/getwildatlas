@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: "Wild Atlas Just Got a Counting Game"
+title: "Count Safari: A Counting Game Built on How Kids Actually Learn Numbers"
 date: 2026-07-08
 author: Wild Atlas
 excerpt: "Count Safari is the fifth game in Wild Atlas — a counting game built around real animals and the science of how kids actually learn to count."
