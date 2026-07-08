@@ -7,8 +7,6 @@ excerpt: "Count Safari is the fifth game in Wild Atlas — a counting game built
 permalink: /blog/count-safari/
 coverImage: /assets/blog/count-safari-difficulty.png
 tags: [product, games]
-eleventyExcludeFromCollections: true
-noindex: true
 ---
 
 <style>
