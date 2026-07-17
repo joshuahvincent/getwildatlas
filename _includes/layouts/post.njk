@@ -20,5 +20,26 @@ layout: layouts/blog-base.njk
 
   <hr>
 
-  {# newsletter signup hidden until Buttondown account is set up #}
+  <section class="email-signup" aria-labelledby="es-blog-heading">
+    <div class="email-signup-inner">
+      <p class="email-signup-eyebrow">For parents &amp; guardians</p>
+      <h2 id="es-blog-heading" class="email-signup-heading">Raising explorers, not scrollers?</h2>
+      <p class="email-signup-sub">Occasional emails from Wild Atlas — new animal packs, new features, and the odd practical note on curiosity and screen time. No spam. Unsubscribe anytime.</p>
+      <form class="email-signup-form" action="/api/subscribe" method="POST" novalidate>
+        <input type="hidden" name="source" value="blog-footer">
+        <div class="email-signup-row">
+          <label class="sr-only" for="es-blog-email">Email address</label>
+          <input id="es-blog-email" class="email-signup-input" type="email" name="email" required autocomplete="email" placeholder="your@email.com">
+          <button class="email-signup-btn" type="submit">Keep me posted</button>
+        </div>
+        <label class="email-signup-consent">
+          <input type="checkbox" name="consent" required>
+          <span>I'm a parent or guardian and would like occasional email updates from Wild Atlas.</span>
+        </label>
+        <p class="email-signup-fine">We use <a href="https://www.beehiiv.com" target="_blank" rel="noopener">beehiiv</a> to send these emails. See our <a href="/privacy">Privacy Policy</a>.</p>
+        <p class="email-signup-msg" role="status" aria-live="polite" hidden></p>
+      </form>
+    </div>
+  </section>
+  <script src="/js/email-signup.js" defer></script>
 </article>
