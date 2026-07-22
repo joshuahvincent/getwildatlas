@@ -29,7 +29,7 @@ Wild Atlas is COPPA-compliant and collects no personal data.
 - **Free forever:** Happy Hounds, Cool Cats, and Cozy Critters
 - **New user bonus:** one additional paid pack unlocked at no charge on first setup
 - **Individual packs:** $3.99 (one-time, parent-approved purchase)
-- **Full unlock:** all nine premium packs for $19.99
+- **Full unlock:** all nine premium packs for $23.99
 - **Each pack includes:** narrated facts, dual-mode quizzes, interactive world map, body-size comparisons, and animal sounds
 - **Games:** Memory Match, Puppy Puzzle, Who's Who, and Habitat Hop — included across all packs
 - **Fully offline:** works on airplanes, road trips, or anywhere without reliable internet

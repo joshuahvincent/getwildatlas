@@ -25,7 +25,7 @@
 |---|---|
 | Free packs (3 packs, forever free) | £0.00 |
 | Individual paid pack | £3.99 |
-| Explorer Pass (all 9 paid packs) | £19.99 |
+| Explorer Pass (all 9 paid packs) | Shown in the App Store |
 
 - One-time, parent-approved purchase only
 - No subscription

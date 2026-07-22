@@ -888,7 +888,7 @@ A predator's behavior is described in terms a five-year-old can understand. Veno
 6. Purchases and parental controls
 
 - Wild Atlas is free to download with 3 animal packs included
-- Additional packs are $3.99 each; the Explorer Pass unlocks all current and future packs for $19.99
+- Additional packs are $3.99 each; the Explorer Pass unlocks all current and future packs for $23.99
 - All purchases go through Apple's in-app purchase system. Children cannot make purchases without parent approval via Apple's standard confirmation flow
 - We respect Apple's Screen Time, Ask to Buy, and other parental controls fully
 - No subscriptions. No recurring charges. One-time purchases only.
@@ -948,7 +948,7 @@ Das Verhalten eines Raubtiers wird so beschrieben, dass ein Fünfjähriger es ve
 6. Käufe und Kindersicherung
 
 - Wild Atlas ist kostenlos herunterladbar und enthält 3 Tierpakete
-- Weitere Pakete kosten je 3,99 $; der Explorer Pass schaltet alle aktuellen und zukünftigen Pakete für 19,99 $ frei
+- Weitere Pakete kosten je 3,99 $; der Explorer Pass schaltet alle aktuellen und zukünftigen Pakete für 23,99 $ frei
 - Alle Käufe laufen über das In-App-Kaufsystem von Apple. Kinder können keine Käufe tätigen ohne Eltern-Bestätigung über Apples Standardablauf
 - Wir respektieren Apples Bildschirmzeit, Familienfreigabe und andere Kindersicherungen vollständig
 - Keine Abos. Keine wiederkehrenden Gebühren. Nur Einmal-Käufe.
@@ -1008,7 +1008,7 @@ El comportamiento de un depredador se describe en términos que un niño de cinc
 6. Compras y controles parentales
 
 - Wild Atlas es gratis para descargar e incluye 3 paquetes de animales
-- Los paquetes adicionales cuestan $3.99 cada uno; el Explorer Pass desbloquea todos los paquetes actuales y futuros por $19.99
+- Los paquetes adicionales cuestan $3.99 cada uno; el Explorer Pass desbloquea todos los paquetes actuales y futuros por $23.99
 - Todas las compras pasan por el sistema de compras dentro de la aplicación de Apple. Los niños no pueden comprar sin la aprobación de un adulto mediante el flujo estándar de confirmación de Apple
 - Respetamos completamente Tiempo en Pantalla, Pedir permiso de compra y los demás controles parentales de Apple
 - Sin suscripciones. Sin cargos recurrentes. Solo compras únicas.
@@ -1068,7 +1068,7 @@ Le comportement d'un prédateur est décrit dans des termes qu'un enfant de cinq
 6. Achats et contrôles parentaux
 
 - Wild Atlas est gratuit et comprend 3 packs d'animaux
-- Les packs supplémentaires sont à 3,99 $ chacun ; l'Explorer Pass débloque tous les packs actuels et à venir pour 19,99 $
+- Les packs supplémentaires sont à 3,99 $ chacun ; l'Explorer Pass débloque tous les packs actuels et à venir pour 23,99 $
 - Tous les achats passent par le système d'achat intégré d'Apple. Les enfants ne peuvent pas effectuer d'achats sans l'approbation d'un parent via le flux de confirmation standard d'Apple
 - Nous respectons pleinement Temps d'écran, Demander d'acheter et les autres contrôles parentaux d'Apple
 - Pas d'abonnements. Pas de frais récurrents. Achats uniques uniquement.
@@ -1128,7 +1128,7 @@ Si tu as une préoccupation au sujet du contenu, une question sur un pack partic
 6. 购买与家长控制
 
 - 野生地图集免费下载，包含 3 个动物包
-- 其他动物包每个 3.99 美元；Explorer Pass 以 19.99 美元解锁所有当前和未来的动物包
+- 其他动物包每个 3.99 美元；Explorer Pass 以 23.99 美元解锁所有当前和未来的动物包
 - 所有购买均通过 Apple 的应用内购买系统。孩子在未经家长通过 Apple 标准确认流程批准的情况下无法购买
 - 我们完全尊重 Apple 的屏幕使用时间、"购买前请求"以及其他家长控制
 - 没有订阅。没有重复扣费。仅一次性购买。
