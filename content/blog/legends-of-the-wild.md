@@ -40,17 +40,40 @@ noindex: true
     display: block;
   }
 
-  .animal-highlights {
-    background: #fff;
-    border: 1px solid var(--rule);
-    border-radius: 12px;
-    padding: 1.25rem 1.5rem;
-    margin: 1.5rem 0 2rem;
+  .animal-carousel {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding: 0.5rem 0 1rem;
+    margin: 1.5rem -1.5rem 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
-  .animal-highlights ul { margin: 0; padding-left: 1.5rem; }
-  .animal-highlights li { margin-bottom: 0.6rem; font-size: 0.97rem; }
-  .animal-highlights li strong { color: var(--accent); }
-  .animal-highlights li:last-child { margin-bottom: 0; }
+  .animal-carousel::-webkit-scrollbar { display: none; }
+  .animal-card {
+    flex: 0 0 auto;
+    width: 130px;
+    scroll-snap-align: start;
+    text-align: center;
+  }
+  .animal-card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 3px 14px rgba(42, 33, 24, 0.14);
+  }
+  .animal-card-name {
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    font-family: "Fredoka", system-ui, sans-serif;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.2;
+  }
 
   .animal-image {
     margin: 2rem 0;
@@ -161,17 +184,27 @@ These aren't legends in the mythological sense. They're just real animals so rem
 
 ## What's in the Pack
 
-Legends of the Wild spans almost every corner of the planet: rainforests, arctic ice, highland steppes, deep forests, and warm coastal waters. The full roster runs from names a child might already know (Amur tiger, narwhal, snow leopard) to animals they almost certainly haven't encountered yet — the kind that prompt the question "wait, that's a real animal?"
+Legends of the Wild spans almost every corner of the planet: rainforests, arctic ice, highland steppes, deep forests, and warm coastal waters. The full roster runs from names a child might already know (Amur tiger, koala, sea otter) to animals they almost certainly haven't encountered yet — the kind that prompt the question "wait, that's a real animal?"
 
-<div class="animal-highlights">
-  <ul>
-    <li><strong>Axolotl</strong> — the smiling amphibian from one lake in Mexico, famous for regrowing limbs</li>
-    <li><strong>Saola</strong> — discovered in 1992, so rarely seen that researchers call it the Asian unicorn</li>
-    <li><strong>Pangolin</strong> — the only mammal with a full coat of scales, which it curls into a ball to deploy</li>
-    <li><strong>Pallas's cat</strong> — as small as a house cat, but built for the coldest wild places on earth</li>
-    <li><strong>Harp seal</strong> — born with a white coat that moults to spotted grey within weeks</li>
-    <li><strong>Plus</strong> — bonobo, cassowary, spectacled bear, West Indian manatee, fruit bat, tarsier, sea otter, narwhal, okapi, platypus, snow leopard, Amur tiger</li>
-  </ul>
+<div class="animal-carousel">
+  <div class="animal-card"><img src="/assets/blog/legends-animal-axolotl.png" alt="Axolotl"><div class="animal-card-name">Axolotl</div></div>
+  <div class="animal-card"><img src="/assets/blog/legends-animal-saola.png" alt="Saola"><div class="animal-card-name">Saola</div></div>
+  <div class="animal-card"><img src="/assets/blog/legends-animal-pangolin.png" alt="Pangolin"><div class="animal-card-name">Pangolin</div></div>
+  <div class="animal-card"><img src="/assets/blog/legends-animal-tarsier.png" alt="Tarsier"><div class="animal-card-name">Tarsier</div></div>
+  <div class="animal-card"><img src="/assets/blog/legends-animal-harp_seal.png" alt="Harp Seal"><div class="animal-card-name">Harp Seal</div></div>
+  <div class="animal-card"><img src="/assets/blog/legends-animal-pallas_cat.png" alt="Pallas's Cat"><div class="animal-card-name">Pallas's Cat</div></div>
+  <div class="animal-card"><img src="/assets/blog/legends-animal-clouded_leopard.png" alt="Clouded Leopard"><div class="animal-card-name">Clouded Leopard</div></div>
+  <div class="animal-card"><img src="/assets/blog/legends-animal-amur_tiger.png" alt="Amur Tiger"><div class="animal-card-name">Amur Tiger</div></div>
+  <div class="animal-card"><img src="/assets/blog/legends-animal-spectacled_bear.png" alt="Spectacled Bear"><div class="animal-card-name">Spectacled Bear</div></div>
+  <div class="animal-card"><img src="/assets/blog/legends-animal-bonobo.png" alt="Bonobo"><div class="animal-card-name">Bonobo</div></div>
+  <div class="animal-card"><img src="/assets/blog/legends-animal-cassowary.png" alt="Cassowary"><div class="animal-card-name">Cassowary</div></div>
+  <div class="animal-card"><img src="/assets/blog/legends-animal-west_indian_manatee.png" alt="West Indian Manatee"><div class="animal-card-name">West Indian Manatee</div></div>
+  <div class="animal-card"><img src="/assets/blog/legends-animal-sea_otter.png" alt="Sea Otter"><div class="animal-card-name">Sea Otter</div></div>
+  <div class="animal-card"><img src="/assets/blog/legends-animal-fruit_bat.png" alt="Fruit Bat"><div class="animal-card-name">Fruit Bat</div></div>
+  <div class="animal-card"><img src="/assets/blog/legends-animal-gibbon.png" alt="Gibbon"><div class="animal-card-name">Gibbon</div></div>
+  <div class="animal-card"><img src="/assets/blog/legends-animal-koala.png" alt="Koala"><div class="animal-card-name">Koala</div></div>
+  <div class="animal-card"><img src="/assets/blog/legends-animal-numbat.png" alt="Numbat"><div class="animal-card-name">Numbat</div></div>
+  <div class="animal-card"><img src="/assets/blog/legends-animal-wombat.png" alt="Wombat"><div class="animal-card-name">Wombat</div></div>
 </div>
 
 ## Inside the Animal Pages
@@ -221,8 +254,8 @@ A few of the facts waiting in this pack — the ones kids tend to repeat to anyo
 - <strong>Tarsier</strong> — Its eyes are so enormous they're actually heavier than its brain.
 - <strong>Narwhal</strong> — That spiralling tusk can grow up to ten feet long — taller than most ceilings.
 - <strong>Sea otter</strong> — When it wants a snack, it balances a rock on its belly and taps a clam against it until it pops open.
-- <strong>Snow leopard</strong> — It can jump six times its body length — that's like leaping over a school bus.
-- <strong>Okapi</strong> — Unknown to science until 1901. People thought it was made up, like a unicorn.
+- <strong>Cassowary</strong> — It can grow as tall as a grown-up. It can't fly, but it can outrun most people.
+- <strong>Wombat</strong> — It produces cube-shaped droppings. No other animal in the world does this.
 - <strong>Axolotl</strong> — It can regrow a leg, a tail, or even part of its heart. A perfect replacement, not a scar.
 - <strong>Spectacled bear</strong> — The pale rings around its eyes are like a fingerprint. No two bears have the same pattern.
 - <strong>Pangolin</strong> — Its tongue is so long it has to be stored deep inside its body, all the way down near its stomach.
