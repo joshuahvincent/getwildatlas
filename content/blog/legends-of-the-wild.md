@@ -31,10 +31,9 @@ noindex: true
   .tldr p { margin: 0; font-size: 0.95rem; }
 
   .pack-hero {
-    margin: 2rem 0;
-    background: rgba(194, 90, 44, 0.06);
-    border-radius: 16px;
-    overflow: hidden;
+    margin: 2rem auto;
+    max-width: 280px;
+    text-align: center;
   }
   .pack-hero img {
     width: 100%;
