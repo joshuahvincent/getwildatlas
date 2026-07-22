@@ -40,41 +40,27 @@ noindex: true
     display: block;
   }
 
-  .animal-carousel {
-    display: flex;
+  .animal-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     gap: 0.75rem;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    padding: 0.5rem 0 1rem;
-    margin: 1.5rem -1.5rem 2rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    margin: 1.5rem 0 2rem;
   }
-  .animal-carousel::-webkit-scrollbar { display: none; }
-  .animal-carousel { scrollbar-width: none; -ms-overflow-style: none; }
-  .carousel-hint {
-    font-size: 0.78rem;
-    color: var(--muted);
-    text-align: right;
-    margin: -1rem 0 0.25rem;
-    letter-spacing: 0.01em;
+  @media (max-width: 500px) {
+    .animal-grid { grid-template-columns: repeat(3, 1fr); }
   }
-  .animal-card {
-    flex: 0 0 auto;
-    width: 130px;
-    text-align: center;
-  }
+  .animal-card { text-align: center; }
   .animal-card img {
-    width: 130px;
-    height: 130px;
-    border-radius: 20px;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 14px;
     object-fit: cover;
     display: block;
     box-shadow: 0 3px 14px rgba(42, 33, 24, 0.14);
   }
   .animal-card-name {
-    margin-top: 0.4rem;
-    font-size: 0.8rem;
+    margin-top: 0.35rem;
+    font-size: 0.72rem;
     font-family: "Fredoka", system-ui, sans-serif;
     font-weight: 600;
     color: var(--ink);
@@ -188,7 +174,7 @@ These aren't legends in the mythological sense. They're just real animals so rem
 
 Legends of the Wild spans almost every corner of the planet: rainforests, arctic ice, highland steppes, deep forests, and warm coastal waters. The full roster runs from names a child might already know (Amur tiger, koala, sea otter) to animals they almost certainly haven't encountered yet — the kind that prompt the question "wait, that's a real animal?"
 
-<div class="animal-carousel">
+<div class="animal-grid">
   <div class="animal-card"><img src="/assets/blog/legends-animal-axolotl.png" alt="Axolotl"><div class="animal-card-name">Axolotl</div></div>
   <div class="animal-card"><img src="/assets/blog/legends-animal-saola.png" alt="Saola"><div class="animal-card-name">Saola</div></div>
   <div class="animal-card"><img src="/assets/blog/legends-animal-pangolin.png" alt="Pangolin"><div class="animal-card-name">Pangolin</div></div>
@@ -209,52 +195,6 @@ Legends of the Wild spans almost every corner of the planet: rainforests, arctic
   <div class="animal-card"><img src="/assets/blog/legends-animal-wombat.png" alt="Wombat"><div class="animal-card-name">Wombat</div></div>
 </div>
 
-<script>
-setTimeout(function() {
-  var el = document.querySelector('.animal-carousel');
-  if (!el) return;
-
-  // Duplicate cards for seamless loop
-  Array.from(el.children).forEach(function(card) {
-    el.appendChild(card.cloneNode(true));
-  });
-
-  var speed = 0.7;
-  var paused = false;
-
-  function step() {
-    if (!paused) {
-      el.scrollLeft += speed;
-      if (el.scrollLeft >= el.scrollWidth / 2) {
-        el.scrollLeft = 0;
-      }
-    }
-    requestAnimationFrame(step);
-  }
-  requestAnimationFrame(step);
-
-  el.addEventListener('mouseenter', function() { paused = true; });
-  el.addEventListener('mouseleave', function() { paused = false; });
-  el.addEventListener('touchstart', function() { paused = true; }, { passive: true });
-  el.addEventListener('touchend', function() { setTimeout(function() { paused = false; }, 1200); });
-
-  var isDown = false, startX, scrollLeft;
-  el.addEventListener('mousedown', function(e) {
-    isDown = true; paused = true; el.style.cursor = 'grabbing';
-    startX = e.pageX - el.offsetLeft; scrollLeft = el.scrollLeft;
-  });
-  el.addEventListener('mouseup', function() {
-    isDown = false; el.style.cursor = 'grab';
-    setTimeout(function() { paused = false; }, 800);
-  });
-  el.addEventListener('mousemove', function(e) {
-    if (!isDown) return;
-    e.preventDefault();
-    el.scrollLeft = scrollLeft - (e.pageX - el.offsetLeft - startX) * 1.5;
-  });
-  el.style.cursor = 'grab';
-}, 100);
-</script>
 
 ## Inside the Animal Pages
 
