@@ -207,8 +207,8 @@ Every animal in Legends of the Wild gets the full Wild Atlas treatment — and t
     <figcaption>Baby pangolin — scales already forming at birth.</figcaption>
   </figure>
   <figure>
-    <img src="/assets/blog/legends-saola-baby.png" alt="Baby saola — one of the rarest animals on earth, as a calf">
-    <figcaption>Baby saola — first documented in 1992.</figcaption>
+    <img src="/assets/blog/legends-cassowary-chick.png" alt="Cassowary chick — striped and already formidable">
+    <figcaption>Cassowary chick — those stripes fade as they grow.</figcaption>
   </figure>
 </div>
 
