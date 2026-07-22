@@ -1,9 +1,9 @@
 ---
 layout: layouts/post.njk
-title: "Legends of the Wild Is Now in Wild Atlas"
+title: "The Rarest Animals on Earth. Now in Wild Atlas."
 date: 2026-07-22
 author: Wild Atlas
-excerpt: "Eighteen rare and remarkable animals — axolotl, saola, pangolin, Pallas's cat, and more — are live as a new pack in Wild Atlas. Every one of them is so special the world gave it its own day on the calendar."
+excerpt: "Legends of the Wild is a new pack in Wild Atlas — 18 rare and remarkable animals, each so extraordinary the world gave it its own day on the calendar."
 permalink: /blog/legends-of-the-wild/
 coverImage: /assets/blog/legends-of-the-wild-hero.png
 tags: [product, packs]
