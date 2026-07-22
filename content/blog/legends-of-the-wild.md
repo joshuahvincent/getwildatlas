@@ -7,8 +7,6 @@ excerpt: "Legends of the Wild is a new pack in Wild Atlas — 18 rare and remark
 permalink: /blog/legends-of-the-wild/
 coverImage: /assets/blog/legends-of-the-wild-hero.png
 tags: [product, packs]
-eleventyExcludeFromCollections: true
-noindex: true
 ---
 
 <style>
@@ -242,7 +240,7 @@ A child who opens an animal page doesn't just read a fact. They see the animal a
 A few of the facts waiting in this pack — the ones kids tend to repeat to anyone who'll listen:
 
 - <strong>Tarsier</strong> — Its eyes are so enormous they're actually heavier than its brain.
-- <strong>Narwhal</strong> — That spiralling tusk can grow up to ten feet long — taller than most ceilings.
+- <strong>Saola</strong> — Scientists first documented it in 1992. Fewer than a hundred are thought to exist. Virtually no one alive has ever seen one in the wild.
 - <strong>Sea otter</strong> — When it wants a snack, it balances a rock on its belly and taps a clam against it until it pops open.
 - <strong>Cassowary</strong> — It can grow as tall as a grown-up. It can't fly, but it can outrun most people.
 - <strong>Wombat</strong> — It produces cube-shaped droppings. No other animal in the world does this.
