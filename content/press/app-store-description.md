@@ -16,7 +16,7 @@ WHAT'S INSIDE
 • Games Den — four mini-games designed for curiosity, not for engagement metrics
 
 HOW IT WORKS
-Three packs are free, forever. The rest unlock through a single parent-approved in-app purchase. Or unlock all nine packs together for $23.99. No subscription. No ads. No data harvesting. One purchase, one app, your child's for life.
+Three packs are free, forever. The rest unlock through a single parent-approved in-app purchase. Or unlock all ten packs together for $23.99. No subscription. No ads. No data harvesting. One purchase, one app, your child's for life.
 
 DESIGNED FOR REAL CHILDHOODS
 Wild Atlas is built like a nature documentary, not a cartoon — calm, cinematic, warm. Your child leads the way. Their curiosity sets the pace. The app stays out of the way so the animals can do what they do best: amaze.
