@@ -94,7 +94,9 @@ window.WILD_ATLAS_I18N = {
 
       // Games
       'games.title': 'Play Built for Curious Minds',
-      'games.subtitle': 'Four games, four ways to grow \u2014 memory, geography, observation, and spatial smarts. Built into play that doesn\u2019t feel like learning.',
+      'games.subtitle': 'Five games, five ways to grow — memory, geography, observation, spatial smarts, and counting. Built into play that doesn’t feel like learning.',
+      'games.count.title': 'Count Safari',
+      'games.count.desc': 'Tap real animals and count them out loud. Numbers, one tap at a time.',
       'games.memory.title': 'Memory Match',
       'games.memory.desc': 'Flip and find the pairs. Pure memory training, dressed up as a game.',
       'games.puzzle.title': 'Puppy Puzzle',
@@ -291,7 +293,9 @@ window.WILD_ATLAS_I18N = {
 
       // Games
       'games.title': 'Spielen f\u00fcr neugierige K\u00f6pfe',
-      'games.subtitle': 'Vier Spiele, vier Wege zum Wachsen \u2014 Ged\u00e4chtnis, Geografie, Beobachtung und r\u00e4umliches Denken. Spiel, das sich nicht wie Lernen anf\u00fchlt.',
+      'games.subtitle': 'Fünf Spiele, fünf Wege zum Wachsen — Gedächtnis, Geografie, Beobachtung, räumliches Denken und Zählen. Spiel, das sich nicht wie Lernen anfühlt.',
+      'games.count.title': 'Zähl-Safari',
+      'games.count.desc': 'Tippe echte Tiere an und zähle laut mit. Zahlen, Tipp für Tipp.',
       'games.memory.title': 'Memory Match',
       'games.memory.desc': 'Karten umdrehen und Paare finden. Reines Ged\u00e4chtnistraining, als Spiel verpackt.',
       'games.puzzle.title': 'Welpen-Puzzle',
@@ -482,7 +486,9 @@ window.WILD_ATLAS_I18N = {
 
       // Games
       'games.title': 'Juegos para Mentes Curiosas',
-      'games.subtitle': 'Cuatro juegos, cuatro formas de crecer \u2014 memoria, geograf\u00eda, observaci\u00f3n y razonamiento espacial. Juego que no se siente como aprender.',
+      'games.subtitle': 'Cinco juegos, cinco formas de crecer — memoria, geografía, observación, razonamiento espacial y conteo. Juego que no se siente como aprender.',
+      'games.count.title': 'Count Safari',
+      'games.count.desc': 'Toca animales reales y cuéntalos en voz alta. Números, toque a toque.',
       'games.memory.title': 'Memoria Animal',
       'games.memory.desc': 'Voltea y encuentra las parejas. Puro entrenamiento de memoria, disfrazado de juego.',
       'games.puzzle.title': 'Rompecabezas Cachorro',
@@ -673,7 +679,9 @@ window.WILD_ATLAS_I18N = {
 
       // Games
       'games.title': 'Des Jeux pour les Esprits Curieux',
-      'games.subtitle': 'Quatre jeux, quatre fa\u00e7ons de grandir \u2014 m\u00e9moire, g\u00e9ographie, observation et raisonnement spatial. Du jeu qui ne ressemble pas \u00e0 une le\u00e7on.',
+      'games.subtitle': 'Cinq jeux, cinq façons de grandir — mémoire, géographie, observation, raisonnement spatial et comptage. Du jeu qui ne ressemble pas à une leçon.',
+      'games.count.title': 'Count Safari',
+      'games.count.desc': 'Touche de vrais animaux et compte-les à voix haute. Les nombres, un toucher à la fois.',
       'games.memory.title': 'M\u00e9moire Animale',
       'games.memory.desc': 'Retourne et trouve les paires. Pur entra\u00eenement de la m\u00e9moire, d\u00e9guis\u00e9 en jeu.',
       'games.puzzle.title': 'Puzzle Chiot',
@@ -873,7 +881,9 @@ window.WILD_ATLAS_I18N = {
 
       // Games \u2014 DRAFT, needs native review
       'games.title': '\u4e3a\u597d\u5947\u5fc3\u6253\u9020\u7684\u6e38\u620f',
-      'games.subtitle': '\u56db\u6b3e\u6e38\u620f\uff0c\u56db\u79cd\u6210\u957f\u65b9\u5f0f\u2014\u2014\u8bb0\u5fc6\u3001\u5730\u7406\u3001\u89c2\u5bdf\u548c\u7a7a\u95f4\u601d\u7ef4\u3002\u5bd3\u6559\u4e8e\u4e50\uff0c\u4e0d\u50cf\u5728\u5b66\u4e60\u3002',
+      'games.subtitle': '五款游戏，五种成长方式——记忆、地理、观察、空间思维和数数。寓教于乐，不像在学习。',
+      'games.count.title': '数数探险',
+      'games.count.desc': '点触真实的动物，大声数出来。一次一下，轻松学数数。',
       'games.memory.title': '\u8bb0\u5fc6\u914d\u5bf9',
       'games.memory.desc': '\u7ffb\u724c\u627e\u914d\u5bf9\u3002\u7eaf\u7cb9\u7684\u8bb0\u5fc6\u8bad\u7ec3\uff0c\u5305\u88c5\u6210\u4e00\u6b3e\u6e38\u620f\u3002',
       'games.puzzle.title': '\u5c0f\u72d7\u62fc\u56fe',
