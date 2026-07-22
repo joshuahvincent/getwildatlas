@@ -38,7 +38,7 @@
 
 ## Content
 
-- **236 animals** across **12 packs** covering every continent and ocean
+- **236 animals** across **13 packs** covering every continent and ocean
 - **3 free packs forever:** Happy Hounds, Cool Cats, Cozy Critters
 - **1 bonus pack free:** new users choose one additional paid pack to unlock at no charge on first setup
 - **10 paid packs** (individual or via Explorer Pass bundle)

@@ -36,7 +36,7 @@
 
 ## Content
 
-- **200+ animals** across **12 packs** covering every continent and ocean
+- **200+ animals** across **13 packs** covering every continent and ocean
 - **3 free packs at launch:** Happy Hounds, Cool Cats, Cozy Critters
 - **10 paid packs** (individual or via Explorer Pass bundle)
 - **Hidden bonus pack:** Mythical Menagerie (18 creatures from world folklore — unlock by finding shooting stars hidden throughout the app)

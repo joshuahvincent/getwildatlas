@@ -3,7 +3,7 @@
 # Wild Atlas, a Narrated Animal Discovery App for Children, Launches Globally in Six Languages
 *Built solo over four months by the son of South Africa's celebrated conservation documentary filmmakers, Wild Atlas gives children documentary-style animal content — and parents screen time they can hand over without worry.*
 
-**SEATTLE, WA — June 10, 2026** — Wild Atlas, an animal discovery app for children aged 3 and up, is available today on the App Store for iPhone and iPad. Across twelve animal packs and six languages, the app brings narrated, documentary-style facts, games, quizzes, and exploration to young children — with no subscription, no advertising, and no algorithmic feed.
+**SEATTLE, WA — June 10, 2026** — Wild Atlas, an animal discovery app for children aged 3 and up, is available today on the App Store for iPhone and iPad. Across thirteen animal packs and six languages, the app brings narrated, documentary-style facts, games, quizzes, and exploration to young children — with no subscription, no advertising, and no algorithmic feed.
 
 Think of it as a hyper-malleable podcast for kids aged 3 to 9 — audio-first, self-directed, completely non-linear. Leave narration on and a child who can't yet read explores entirely on their own; turn it off and read along together.
 

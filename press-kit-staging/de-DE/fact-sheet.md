@@ -38,7 +38,7 @@
 
 ## Inhalt
 
-- **236 Tiere** in **12 Packs** aus allen Kontinenten und Ozeanen
+- **236 Tiere** in **13 Packs** aus allen Kontinenten und Ozeanen
 - **3 dauerhaft kostenlose Packs:** Happy Hounds, Cool Cats, Cozy Critters
 - **1 kostenloses Bonus-Pack:** Neue Nutzer wählen beim ersten Start ein zusätzliches kostenpflichtiges Pack zum kostenlosen Freischalten
 - **10 bezahlte Packs** (einzeln oder über den Explorer Pass)

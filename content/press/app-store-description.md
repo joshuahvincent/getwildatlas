@@ -7,7 +7,7 @@ Wild Atlas reconnects children to curiosity instead of numbing it — the screen
 Built for ages 3 to 9. No reading required. Every fact is narrated, every screen is child-led, and there is not a single ad, algorithm, or autoplay loop in sight.
 
 WHAT'S INSIDE
-• 12 animal packs, 200+ creatures from every continent and ocean
+• 13 animal packs, 200+ creatures from every continent and ocean
 • Narrated facts written in plain, child-first language
 • Quizzes that grow with your child — multiple difficulty levels
 • An interactive world map so they can meet every animal in its home habitat
