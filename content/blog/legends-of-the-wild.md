@@ -52,6 +52,13 @@ noindex: true
     padding-right: 1.5rem;
   }
   .animal-carousel::-webkit-scrollbar { display: none; }
+  .carousel-hint {
+    font-size: 0.78rem;
+    color: var(--muted);
+    text-align: right;
+    margin: -1rem 0 0.25rem;
+    letter-spacing: 0.01em;
+  }
   .animal-card {
     flex: 0 0 auto;
     width: 130px;
@@ -174,10 +181,6 @@ noindex: true
   <p>Legends of the Wild is a new premium pack in Wild Atlas — 18 rare and remarkable real animals, full narration in all six languages, available for $3.99 or included with the Explorer Pass. It's live now.</p>
 </div>
 
-<figure class="pack-hero">
-  <img src="/assets/blog/legends-of-the-wild-hero.png" alt="Legends of the Wild — Rare, Remarkable, Unforgettable">
-</figure>
-
 There's an axolotl that can grow back a lost leg. There's a saola — a real animal, first documented by scientists in 1992 — that almost no one alive has ever seen in the wild. Scientists who study it call it the Asian unicorn, not because it's mythical, but because it's that rare. There's a pangolin covered in scales made of the same material as your fingernails. A Pallas's cat the size of a house cat, living in the cold steppes of Central Asia. A harp seal that's born pure white and changes its coat completely within a few weeks.
 
 These aren't legends in the mythological sense. They're just real animals so remarkable that the whole world decided each one deserved its own day on the calendar — a little like a birthday for a species. Eighteen of them are now in Wild Atlas.
@@ -186,6 +189,7 @@ These aren't legends in the mythological sense. They're just real animals so rem
 
 Legends of the Wild spans almost every corner of the planet: rainforests, arctic ice, highland steppes, deep forests, and warm coastal waters. The full roster runs from names a child might already know (Amur tiger, koala, sea otter) to animals they almost certainly haven't encountered yet — the kind that prompt the question "wait, that's a real animal?"
 
+<p class="carousel-hint">Scroll or drag to see all 18 →</p>
 <div class="animal-carousel">
   <div class="animal-card"><img src="/assets/blog/legends-animal-axolotl.png" alt="Axolotl"><div class="animal-card-name">Axolotl</div></div>
   <div class="animal-card"><img src="/assets/blog/legends-animal-saola.png" alt="Saola"><div class="animal-card-name">Saola</div></div>
@@ -206,6 +210,26 @@ Legends of the Wild spans almost every corner of the planet: rainforests, arctic
   <div class="animal-card"><img src="/assets/blog/legends-animal-numbat.png" alt="Numbat"><div class="animal-card-name">Numbat</div></div>
   <div class="animal-card"><img src="/assets/blog/legends-animal-wombat.png" alt="Wombat"><div class="animal-card-name">Wombat</div></div>
 </div>
+
+<script>
+(function() {
+  var el = document.querySelector('.animal-carousel');
+  if (!el) return;
+  var isDown = false, startX, scrollLeft;
+  el.addEventListener('mousedown', function(e) {
+    isDown = true; el.style.cursor = 'grabbing';
+    startX = e.pageX - el.offsetLeft; scrollLeft = el.scrollLeft;
+  });
+  el.addEventListener('mouseleave', function() { isDown = false; el.style.cursor = 'grab'; });
+  el.addEventListener('mouseup', function() { isDown = false; el.style.cursor = 'grab'; });
+  el.addEventListener('mousemove', function(e) {
+    if (!isDown) return;
+    e.preventDefault();
+    el.scrollLeft = scrollLeft - (e.pageX - el.offsetLeft - startX) * 1.5;
+  });
+  el.style.cursor = 'grab';
+})();
+</script>
 
 ## Inside the Animal Pages
 
