@@ -43,15 +43,15 @@ noindex: true
   .animal-carousel {
     display: flex;
     gap: 0.75rem;
-    overflow-x: auto;
+    overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
     padding: 0.5rem 0 1rem;
     margin: 1.5rem -1.5rem 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
   .animal-carousel::-webkit-scrollbar { display: none; }
+  .animal-carousel { scrollbar-width: none; -ms-overflow-style: none; }
   .carousel-hint {
     font-size: 0.78rem;
     color: var(--muted);
@@ -62,7 +62,6 @@ noindex: true
   .animal-card {
     flex: 0 0 auto;
     width: 130px;
-    scroll-snap-align: start;
     text-align: center;
   }
   .animal-card img {
@@ -189,7 +188,6 @@ These aren't legends in the mythological sense. They're just real animals so rem
 
 Legends of the Wild spans almost every corner of the planet: rainforests, arctic ice, highland steppes, deep forests, and warm coastal waters. The full roster runs from names a child might already know (Amur tiger, koala, sea otter) to animals they almost certainly haven't encountered yet — the kind that prompt the question "wait, that's a real animal?"
 
-<p class="carousel-hint">All 18 animals · hover to pause</p>
 <div class="animal-carousel">
   <div class="animal-card"><img src="/assets/blog/legends-animal-axolotl.png" alt="Axolotl"><div class="animal-card-name">Axolotl</div></div>
   <div class="animal-card"><img src="/assets/blog/legends-animal-saola.png" alt="Saola"><div class="animal-card-name">Saola</div></div>
@@ -212,54 +210,50 @@ Legends of the Wild spans almost every corner of the planet: rainforests, arctic
 </div>
 
 <script>
-(function() {
+setTimeout(function() {
   var el = document.querySelector('.animal-carousel');
   if (!el) return;
 
-  // Auto-scroll
-  var speed = 0.6; // px per frame
+  // Duplicate cards for seamless loop
+  Array.from(el.children).forEach(function(card) {
+    el.appendChild(card.cloneNode(true));
+  });
+
+  var speed = 0.7;
   var paused = false;
-  var raf;
 
   function step() {
     if (!paused) {
       el.scrollLeft += speed;
-      // Loop: when we've scrolled past halfway (content is duplicated), jump back
       if (el.scrollLeft >= el.scrollWidth / 2) {
         el.scrollLeft = 0;
       }
     }
-    raf = requestAnimationFrame(step);
+    requestAnimationFrame(step);
   }
+  requestAnimationFrame(step);
 
-  // Duplicate cards for seamless loop
-  var cards = Array.from(el.children);
-  cards.forEach(function(card) {
-    el.appendChild(card.cloneNode(true));
-  });
-
-  raf = requestAnimationFrame(step);
-
-  // Pause on hover / touch
   el.addEventListener('mouseenter', function() { paused = true; });
   el.addEventListener('mouseleave', function() { paused = false; });
   el.addEventListener('touchstart', function() { paused = true; }, { passive: true });
-  el.addEventListener('touchend', function() { setTimeout(function() { paused = false; }, 1500); });
+  el.addEventListener('touchend', function() { setTimeout(function() { paused = false; }, 1200); });
 
-  // Drag to scroll
   var isDown = false, startX, scrollLeft;
   el.addEventListener('mousedown', function(e) {
     isDown = true; paused = true; el.style.cursor = 'grabbing';
     startX = e.pageX - el.offsetLeft; scrollLeft = el.scrollLeft;
   });
-  el.addEventListener('mouseup', function() { isDown = false; el.style.cursor = 'grab'; setTimeout(function() { paused = false; }, 1000); });
+  el.addEventListener('mouseup', function() {
+    isDown = false; el.style.cursor = 'grab';
+    setTimeout(function() { paused = false; }, 800);
+  });
   el.addEventListener('mousemove', function(e) {
     if (!isDown) return;
     e.preventDefault();
     el.scrollLeft = scrollLeft - (e.pageX - el.offsetLeft - startX) * 1.5;
   });
   el.style.cursor = 'grab';
-})();
+}, 100);
 </script>
 
 ## Inside the Animal Pages
