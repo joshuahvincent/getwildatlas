@@ -3,7 +3,7 @@
 # Wild Atlas, una app de descubrimiento animal narrada para niños, llega al mundo en seis idiomas
 *Desarrollada en solitario durante cuatro meses por el hijo de los célebres documentalistas de conservación de Sudáfrica, Wild Atlas ofrece a los niños contenido animal al estilo documental — y a los padres, tiempo de pantalla que pueden entregar sin preocupación.*
 
-**SEATTLE, WA — 10 de junio de 2026** — Wild Atlas, una app de descubrimiento animal para niños a partir de 3 años, está disponible hoy en el App Store para iPhone y iPad. A través de doce packs de animales y seis idiomas, la app acerca a los niños pequeños datos narrados al estilo documental, juegos, cuestionarios y exploración — sin suscripción, sin publicidad y sin feed algorítmico.
+**SEATTLE, WA — 10 de junio de 2026** — Wild Atlas, una app de descubrimiento animal para niños a partir de 3 años, está disponible hoy en el App Store para iPhone y iPad. A través de trece packs de animales y seis idiomas, la app acerca a los niños pequeños datos narrados al estilo documental, juegos, cuestionarios y exploración — sin suscripción, sin publicidad y sin feed algorítmico.
 
 Imagínala como un podcast hipervariable para niños de 3 a 9 años — primero el audio, autodirigido, completamente no lineal. Deja la narración activada y un niño que aún no sabe leer explora por su cuenta; desactívala y leed juntos.
 
@@ -51,7 +51,7 @@ Wild Atlas cumple con la COPPA y no recopila datos personales.
 - **Gratis para siempre:** Happy Hounds, Cool Cats y Cozy Critters
 - **Bonus para nuevos usuarios:** un pack de pago adicional desbloqueado sin coste en la primera configuración
 - **Packs individuales:** 3,99 € (compra única aprobada por los padres)
-- **Desbloqueo completo:** los nueve packs premium con el Explorer Pass
+- **Desbloqueo completo:** los diez packs premium con el Explorer Pass
 - **Cada pack incluye:** datos narrados, cuestionarios de doble modo, mapa del mundo interactivo, comparaciones de tamaño y sonidos de animales
 - **Juegos:** Memory Match, Puppy Puzzle, Who's Who y Habitat Hop — incluidos en todos los packs
 - **Totalmente sin conexión:** funciona en aviones, viajes por carretera o en cualquier lugar sin internet estable

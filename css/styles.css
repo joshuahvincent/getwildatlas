@@ -936,6 +936,10 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   background: var(--minty-fresh);
   color: var(--warm-bark);
 }
+.new-badge {
+  background: var(--peach-pop);
+  color: #fff;
+}
 .packs-more {
   text-align: center;
   margin-top: var(--space-xl);

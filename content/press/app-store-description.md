@@ -7,7 +7,7 @@ Wild Atlas reconnects children to curiosity instead of numbing it — the screen
 Built for ages 3 to 9. No reading required. Every fact is narrated, every screen is child-led, and there is not a single ad, algorithm, or autoplay loop in sight.
 
 WHAT'S INSIDE
-• 12 animal packs, 200+ creatures from every continent and ocean
+• 13 animal packs, 200+ creatures from every continent and ocean
 • Narrated facts written in plain, child-first language
 • Quizzes that grow with your child — multiple difficulty levels
 • An interactive world map so they can meet every animal in its home habitat
@@ -16,7 +16,7 @@ WHAT'S INSIDE
 • Games Den — four mini-games designed for curiosity, not for engagement metrics
 
 HOW IT WORKS
-Three packs are free, forever. The rest unlock through a single parent-approved in-app purchase. Or unlock all nine packs together for $23.99. No subscription. No ads. No data harvesting. One purchase, one app, your child's for life.
+Three packs are free, forever. The rest unlock through a single parent-approved in-app purchase. Or unlock all ten packs together for $23.99. No subscription. No ads. No data harvesting. One purchase, one app, your child's for life.
 
 DESIGNED FOR REAL CHILDHOODS
 Wild Atlas is built like a nature documentary, not a cartoon — calm, cinematic, warm. Your child leads the way. Their curiosity sets the pace. The app stays out of the way so the animals can do what they do best: amaze.

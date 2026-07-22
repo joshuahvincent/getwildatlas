@@ -25,7 +25,7 @@ window.WILD_ATLAS_I18N = {
     en: {
       // Meta
       'meta.title': 'Wild Atlas \u2014 Raise Explorers, Not Scrollers',
-      'meta.description': 'Raise explorers, not scrollers. An animal learning app for kids 3\u20139. No ads, no algorithms, no reading required. 12 packs, 5 languages, 3 free to start.',
+      'meta.description': 'Raise explorers, not scrollers. An animal learning app for kids 3\u20139. No ads, no algorithms, no reading required. 13 packs, 5 languages, 3 free to start.',
       'meta.og.description': 'Finally, screen time you\u2019ll feel proud of. An interactive animal adventure for curious kids 3\u20139 \u2014 built for wonder, not engagement metrics.',
 
       // Gate
@@ -105,13 +105,14 @@ window.WILD_ATLAS_I18N = {
       'games.habitat.desc': 'Hop animals home \u2014 savannah, arctic, forest, ocean. Geography through play.',
 
       // Packs
-      'packs.title': '12 Animal Worlds to Explore',
+      'packs.title': '13 Animal Worlds to Explore',
       'packs.subtitle': '3 always-free packs, plus one premium pack your child picks — free. Unlock more at $3.99 each, or get everything with the Explorer Pass at $23.99.',
       'packs.free': 'Free',
+      'packs.new': 'New',
       'packs.more': 'More packs coming soon!',
 
       // Animals
-      'animals.title': '150+ Beautiful Animals',
+      'animals.title': '200+ Beautiful Animals',
 
       // Animal strip names (DRAFT — needs native review for non-EN)
       'showcase.scale.point1': 'Weight and size compared to kids they can relate to',
@@ -136,6 +137,7 @@ window.WILD_ATLAS_I18N = {
       'packs.farm_friends': 'Farm Friends',
       'packs.reptile_world': 'Reptile World',
       'packs.planet_pioneers': 'Planet Pioneers',
+      'packs.legends_of_the_wild': 'Legends of the Wild',
       'animals.golden_retriever': 'Golden Retriever',
       'animals.lion': 'Lion',
       'animals.snow_leopard': 'Snow Leopard',
@@ -225,7 +227,7 @@ window.WILD_ATLAS_I18N = {
     // ────────────────────────────────────────
     de: {
       'meta.title': 'Wild Atlas \u2014 Entdecker erziehen, keine Scroller',
-      'meta.description': 'Entdecker erziehen, keine Scroller. Eine Tier-Lern-App f\u00fcr Kinder von 3 bis 9. Keine Werbung, keine Algorithmen, kein Lesen n\u00f6tig. 12 Pakete, 5 Sprachen, 3 gratis.',
+      'meta.description': 'Entdecker erziehen, keine Scroller. Eine Tier-Lern-App f\u00fcr Kinder von 3 bis 9. Keine Werbung, keine Algorithmen, kein Lesen n\u00f6tig. 13 Pakete, 5 Sprachen, 3 gratis.',
       'meta.og.description': 'Endlich Bildschirmzeit, auf die du stolz sein kannst. Ein interaktives Tierabenteuer f\u00fcr neugierige Kinder von 3 bis 9 Jahren.',
 
       'gate.title': 'Wild Atlas',
@@ -299,12 +301,13 @@ window.WILD_ATLAS_I18N = {
       'games.habitat.title': 'Lebensraum-H\u00fcpfer',
       'games.habitat.desc': 'Bring Tiere nach Hause \u2014 Savanne, Arktis, Wald, Ozean. Geografie spielerisch lernen.',
 
-      'packs.title': '12 Tierwelten zum Entdecken',
+      'packs.title': '13 Tierwelten zum Entdecken',
       'packs.subtitle': '3 dauerhaft kostenlose Packs, plus ein Premium-Pack nach Wahl — kostenlos. Weitere für je 3,99 €, oder alles mit dem Explorer Pass.',
       'packs.free': 'Gratis',
+      'packs.new': 'Neu',
       'packs.more': 'Weitere Pakete folgen bald!',
 
-      'animals.title': '\u00dcber 150 wundersch\u00f6ne Tiere',
+      'animals.title': '\u00dcber 200 wundersch\u00f6ne Tiere',
 
       // Animal strip names (DRAFT — needs native review for non-EN)
       'showcase.scale.point1': 'Gewicht und Größe verglichen mit Kindern, die sie kennen',
@@ -329,6 +332,7 @@ window.WILD_ATLAS_I18N = {
       'packs.farm_friends': 'Bauernhof-Freunde',
       'packs.reptile_world': 'Reptilienwelt',
       'packs.planet_pioneers': 'Planeten-Pioniere',
+      'packs.legends_of_the_wild': 'Legenden der Wildnis',
       'animals.golden_retriever': 'Golden Retriever',
       'animals.lion': 'Löwe',
       'animals.snow_leopard': 'Schneeleopard',
@@ -414,7 +418,7 @@ window.WILD_ATLAS_I18N = {
     // ────────────────────────────────────────
     es: {
       'meta.title': 'Wild Atlas \u2014 Cr\u00eda Exploradores, No Scrollers',
-      'meta.description': 'Cr\u00eda exploradores, no scrollers. Una app de animales para ni\u00f1os de 3 a 9 a\u00f1os. Sin anuncios, sin algoritmos, sin necesidad de leer. 12 paquetes, 5 idiomas, 3 gratis.',
+      'meta.description': 'Cr\u00eda exploradores, no scrollers. Una app de animales para ni\u00f1os de 3 a 9 a\u00f1os. Sin anuncios, sin algoritmos, sin necesidad de leer. 13 paquetes, 5 idiomas, 3 gratis.',
       'meta.og.description': 'Por fin, tiempo de pantalla del que sentirte orgulloso. Una aventura animal interactiva para ni\u00f1os curiosos de 3 a 9 a\u00f1os \u2014 hecha para el asombro, no para m\u00e9tricas de engagement.',
 
       'gate.title': 'Wild Atlas',
@@ -488,12 +492,13 @@ window.WILD_ATLAS_I18N = {
       'games.habitat.title': 'Salto de H\u00e1bitat',
       'games.habitat.desc': 'Lleva a los animales a casa \u2014 sabana, \u00e1rtico, bosque, oc\u00e9ano. Geograf\u00eda a trav\u00e9s del juego.',
 
-      'packs.title': '12 Mundos Animales por Explorar',
+      'packs.title': '13 Mundos Animales por Explorar',
       'packs.subtitle': '3 packs siempre gratis, más un pack premium que tu hijo elige — gratis. Desbloquea más a 3,99 € cada uno, o consíguelo todo con el Explorer Pass.',
       'packs.free': 'Gratis',
+      'packs.new': 'Nuevo',
       'packs.more': '\u00a1M\u00e1s paquetes pr\u00f3ximamente!',
 
-      'animals.title': 'M\u00e1s de 150 hermosos animales',
+      'animals.title': 'M\u00e1s de 200 hermosos animales',
 
       // Animal strip names (DRAFT — needs native review for non-EN)
       'showcase.scale.point1': 'Peso y tamaño comparados con niños que pueden entender',
@@ -518,6 +523,7 @@ window.WILD_ATLAS_I18N = {
       'packs.farm_friends': 'Amigos de la Granja',
       'packs.reptile_world': 'Mundo Reptil',
       'packs.planet_pioneers': 'Pioneros del Planeta',
+      'packs.legends_of_the_wild': 'Leyendas de lo salvaje',
       'animals.golden_retriever': 'Golden Retriever',
       'animals.lion': 'León',
       'animals.snow_leopard': 'Leopardo de las Nieves',
@@ -603,7 +609,7 @@ window.WILD_ATLAS_I18N = {
     // ────────────────────────────────────────
     fr: {
       'meta.title': 'Wild Atlas \u2014 \u00c9l\u00e8ve des Explorateurs, Pas des Scrolleurs',
-      'meta.description': '\u00c9l\u00e8ve des explorateurs, pas des scrolleurs. Une app d\u2019animaux pour enfants de 3 \u00e0 9 ans. Sans publicit\u00e9, sans algorithmes, aucune lecture requise. 12 packs, 5 langues, 3 gratuits.',
+      'meta.description': '\u00c9l\u00e8ve des explorateurs, pas des scrolleurs. Une app d\u2019animaux pour enfants de 3 \u00e0 9 ans. Sans publicit\u00e9, sans algorithmes, aucune lecture requise. 13 packs, 5 langues, 3 gratuits.',
       'meta.og.description': 'Enfin du temps d\u2019\u00e9cran dont vous serez fier. Une aventure animale interactive pour les enfants curieux de 3 \u00e0 9 ans \u2014 con\u00e7ue pour l\u2019\u00e9merveillement, pas pour les m\u00e9triques d\u2019engagement.',
 
       'gate.title': 'Wild Atlas',
@@ -677,12 +683,13 @@ window.WILD_ATLAS_I18N = {
       'games.habitat.title': 'Saut d\u2019Habitat',
       'games.habitat.desc': 'Ram\u00e8ne les animaux chez eux \u2014 savane, arctique, for\u00eat, oc\u00e9an. La g\u00e9ographie par le jeu.',
 
-      'packs.title': '12 Mondes Animaux \u00e0 Explorer',
+      'packs.title': '13 Mondes Animaux \u00e0 Explorer',
       'packs.subtitle': '3 packs toujours gratuits, plus un pack premium que votre enfant choisit — gratuit. Déverrouillez les autres à 3,99 € chacun, ou obtenez tout avec l’Explorer Pass.',
       'packs.free': 'Gratuit',
+      'packs.new': 'Nouveau',
       'packs.more': 'Plus de packs bient\u00f4t\u00a0!',
 
-      'animals.title': 'Plus de 150 magnifiques animaux',
+      'animals.title': 'Plus de 200 magnifiques animaux',
 
       // Animal strip names (DRAFT — needs native review for non-EN)
       'showcase.scale.point1': 'Poids et taille comparés à des enfants auxquels ils peuvent se rapporter',
@@ -707,6 +714,7 @@ window.WILD_ATLAS_I18N = {
       'packs.farm_friends': 'Amis de la Ferme',
       'packs.reptile_world': 'Monde des Reptiles',
       'packs.planet_pioneers': 'Pionniers de la Planète',
+      'packs.legends_of_the_wild': 'Légendes du monde sauvage',
       'animals.golden_retriever': 'Golden Retriever',
       'animals.lion': 'Lion',
       'animals.snow_leopard': 'Léopard des Neiges',
@@ -796,7 +804,7 @@ window.WILD_ATLAS_I18N = {
     zh: {
       // Meta
       'meta.title': '\u91ce\u751f\u5730\u56fe\u96c6 \u2014 \u57f9\u517b\u63a2\u9669\u5bb6\uff0c\u800c\u975e\u4f4e\u5934\u65cf',
-      'meta.description': '\u57f9\u517b\u63a2\u9669\u5bb6\uff0c\u800c\u975e\u4f4e\u5934\u65cf\u3002\u4e13\u4e3a 3\u20139 \u5c81\u5b69\u5b50\u8bbe\u8ba1\u7684\u52a8\u7269\u5b66\u4e60 App\u3002\u65e0\u5e7f\u544a\u3001\u65e0\u7b97\u6cd5\u3001\u65e0\u9700\u8bc6\u5b57\u300212 \u4e2a\u52a8\u7269\u5305\u30015 \u79cd\u8bed\u8a00\u30013 \u4e2a\u514d\u8d39\u8d77\u6b65\u3002',
+      'meta.description': '\u57f9\u517b\u63a2\u9669\u5bb6\uff0c\u800c\u975e\u4f4e\u5934\u65cf\u3002\u4e13\u4e3a 3\u20139 \u5c81\u5b69\u5b50\u8bbe\u8ba1\u7684\u52a8\u7269\u5b66\u4e60 App\u3002\u65e0\u5e7f\u544a\u3001\u65e0\u7b97\u6cd5\u3001\u65e0\u9700\u8bc6\u5b57\u300213 \u4e2a\u52a8\u7269\u5305\u30015 \u79cd\u8bed\u8a00\u30013 \u4e2a\u514d\u8d39\u8d77\u6b65\u3002',
       'meta.og.description': '\u7ec8\u4e8e\u6709\u4e00\u6b3e\u8ba9\u4f60\u5f15\u4ee5\u4e3a\u8c6a\u7684\u5c4f\u5e55\u65f6\u95f4\u3002\u4e00\u573a\u4e92\u52a8\u52a8\u7269\u5192\u9669\uff0c\u4e13\u4e3a 3\u20139 \u5c81\u7684\u597d\u5947\u5b9d\u8d1d\u2014\u2014\u4e3a\u60ca\u5947\u800c\u751f\uff0c\u4e0d\u4e3a\u6d41\u91cf\u6570\u636e\u3002',
 
       // Gate
@@ -876,13 +884,14 @@ window.WILD_ATLAS_I18N = {
       'games.habitat.desc': '\u628a\u52a8\u7269\u9001\u56de\u5bb6\u2014\u2014\u8349\u539f\u3001\u5317\u6781\u3001\u68ee\u6797\u3001\u6d77\u6d0b\u3002\u5728\u73a9\u4e2d\u5b66\u5730\u7406\u3002',
 
       // Packs
-      'packs.title': '12 \u4e2a\u52a8\u7269\u4e16\u754c\u7b49\u4f60\u63a2\u7d22',
+      'packs.title': '13 \u4e2a\u52a8\u7269\u4e16\u754c\u7b49\u4f60\u63a2\u7d22',
       'packs.subtitle': '3 个永久免费动物包，加上孩子自选一个付费包——免费赠送。其他每个¥28，或购买 Explorer Pass 解锁全部。',
       'packs.free': '\u514d\u8d39',
+      'packs.new': '新',
       'packs.more': '\u66f4\u591a\u52a8\u7269\u5305\u5373\u5c06\u63a8\u51fa\uff01',
 
       // Animals
-      'animals.title': '150+ \u79cd\u7f8e\u4e3d\u7684\u52a8\u7269',
+      'animals.title': '200+ \u79cd\u7f8e\u4e3d\u7684\u52a8\u7269',
 
       // Animal strip names (DRAFT — needs native review for non-EN)
       'showcase.scale.point1': '用孩子能理解的方式比较体重和大小',
@@ -907,6 +916,7 @@ window.WILD_ATLAS_I18N = {
       'packs.farm_friends': '农场朋友',
       'packs.reptile_world': '爬行动物世界',
       'packs.planet_pioneers': '星球先锋',
+      'packs.legends_of_the_wild': '荒野传奇',
       'animals.golden_retriever': '金毛犬',
       'animals.lion': '狮子',
       'animals.snow_leopard': '雪豹',

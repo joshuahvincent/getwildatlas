@@ -3,7 +3,7 @@
 # Wild Atlas, une app de découverte animalière narrée pour les enfants, se lance dans le monde entier en six langues
 *Développée en solo en quatre mois par le fils des célèbres réalisateurs de documentaires de conservation sud-africains, Wild Atlas offre aux enfants un contenu animalier façon documentaire — et aux parents, un temps d'écran qu'ils peuvent confier sans inquiétude.*
 
-**SEATTLE, WA — 10 juin 2026** — Wild Atlas, une app de découverte animalière pour les enfants à partir de 3 ans, est disponible aujourd'hui sur l'App Store pour iPhone et iPad. À travers douze packs d'animaux et six langues, l'app apporte aux jeunes enfants des faits narrés style documentaire, des jeux, des quiz et de l'exploration — sans abonnement, sans publicité et sans flux algorithmique.
+**SEATTLE, WA — 10 juin 2026** — Wild Atlas, une app de découverte animalière pour les enfants à partir de 3 ans, est disponible aujourd'hui sur l'App Store pour iPhone et iPad. À travers treize packs d'animaux et six langues, l'app apporte aux jeunes enfants des faits narrés style documentaire, des jeux, des quiz et de l'exploration — sans abonnement, sans publicité et sans flux algorithmique.
 
 Imaginez-la comme un podcast hyper-modulable pour les enfants de 3 à 9 ans — axé sur l'audio, autonome, totalement non linéaire. Laissez la narration activée et un enfant qui ne sait pas encore lire explore entièrement seul ; désactivez-la et lisez ensemble.
 
@@ -51,7 +51,7 @@ Wild Atlas est conforme à la COPPA et ne collecte aucune donnée personnelle.
 - **Gratuits pour toujours :** Happy Hounds, Cool Cats et Cozy Critters
 - **Bonus nouveaux utilisateurs :** un pack payant supplémentaire débloqué gratuitement à la première configuration
 - **Packs individuels :** 3,99 € (achat unique validé par les parents)
-- **Déverrouillage complet :** les neuf packs premium via l'Explorer Pass
+- **Déverrouillage complet :** les dix packs premium via l'Explorer Pass
 - **Chaque pack comprend :** faits narrés, quiz double mode, carte du monde interactive, comparaisons de taille et sons d'animaux
 - **Jeux :** Memory Match, Puppy Puzzle, Who's Who et Habitat Hop — inclus dans tous les packs
 - **Entièrement hors ligne :** fonctionne en avion, en voyage ou partout sans connexion fiable

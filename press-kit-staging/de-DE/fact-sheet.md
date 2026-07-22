@@ -25,7 +25,7 @@
 |---|---|
 | Kostenlose Packs (3 Packs, dauerhaft gratis) | 0,00 € |
 | Einzelnes bezahltes Pack | 3,99 € |
-| Explorer Pass (alle 9 bezahlten Packs) | Im App Store angezeigt |
+| Explorer Pass (alle 10 bezahlten Packs) | Im App Store angezeigt |
 
 - Einmaliger, von den Eltern genehmigter Kauf
 - Kein Abonnement
@@ -38,10 +38,10 @@
 
 ## Inhalt
 
-- **236 Tiere** in **12 Packs** aus allen Kontinenten und Ozeanen
+- **236 Tiere** in **13 Packs** aus allen Kontinenten und Ozeanen
 - **3 dauerhaft kostenlose Packs:** Happy Hounds, Cool Cats, Cozy Critters
 - **1 kostenloses Bonus-Pack:** Neue Nutzer wählen beim ersten Start ein zusätzliches kostenpflichtiges Pack zum kostenlosen Freischalten
-- **9 bezahlte Packs** (einzeln oder über den Explorer Pass)
+- **10 bezahlte Packs** (einzeln oder über den Explorer Pass)
 - **Verstecktes Bonus-Pack:** Mythical Menagerie (18 Wesen aus der Weltfolklore — freischaltbar durch das Finden von Sternschnuppen in der App über mehrere Sitzungen)
 
 ### Funktionen

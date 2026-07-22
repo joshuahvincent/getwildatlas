@@ -3,7 +3,7 @@
 # Wild Atlas, eine vertonte Tier-Entdeckungs-App für Kinder, erscheint weltweit in sechs Sprachen
 *In vier Monaten von einer einzelnen Person entwickelt — dem Sohn südafrikanischer Naturschutz-Dokumentarfilmer — gibt Wild Atlas Kindern Inhalte im Dokumentarfilm-Stil und Eltern Bildschirmzeit, die sie bedenkenlos weitergeben können.*
 
-**SEATTLE, WA — 10. Juni 2026** — Wild Atlas, eine Tier-Entdeckungs-App für Kinder ab 3 Jahren, ist ab heute im App Store für iPhone und iPad erhältlich. Über zwölf Tier-Packs und sechs Sprachen hinweg bringt die App vertonte, dokumentarische Tierfakten, Spiele, Quizfragen und Erkundung zu kleinen Kindern — ohne Abonnement, ohne Werbung und ohne algorithmischen Feed.
+**SEATTLE, WA — 10. Juni 2026** — Wild Atlas, eine Tier-Entdeckungs-App für Kinder ab 3 Jahren, ist ab heute im App Store für iPhone und iPad erhältlich. Über dreizehn Tier-Packs und sechs Sprachen hinweg bringt die App vertonte, dokumentarische Tierfakten, Spiele, Quizfragen und Erkundung zu kleinen Kindern — ohne Abonnement, ohne Werbung und ohne algorithmischen Feed.
 
 Stell es dir wie einen hypervariablen Podcast für Kinder von 3 bis 9 Jahren vor — audiozentriert, selbstgesteuert, völlig nicht-linear. Bei aktivierter Erzählung können Kinder, die noch nicht lesen können, die App völlig selbstständig erkunden; bei deaktivierter Erzählung kann man gemeinsam mitlesen.
 
@@ -51,7 +51,7 @@ Wild Atlas ist COPPA-konform und erfasst keine personenbezogenen Daten.
 - **Dauerhaft kostenlos:** Happy Hounds, Cool Cats und Cozy Critters
 - **Neues Nutzer-Bonus:** ein zusätzliches kostenpflichtiges Pack wird beim ersten Start kostenlos freigeschaltet
 - **Einzelne Packs:** 3,99 € (einmaliger, von den Eltern genehmigter Kauf)
-- **Vollständige Freischaltung:** alle neun Premium-Packs über den Explorer Pass
+- **Vollständige Freischaltung:** alle zehn Premium-Packs über den Explorer Pass
 - **Jedes Pack enthält:** vertonte Tierfakten, Dual-Modus-Quizfragen, interaktive Weltkarte, Körpergrößenvergleiche und Tiergeräusche
 - **Spiele:** Memory Match, Puppy Puzzle, Who's Who und Habitat Hop — in allen Packs enthalten
 - **Vollständig offline:** funktioniert im Flugzeug, auf Roadtrips oder überall ohne zuverlässiges Internet

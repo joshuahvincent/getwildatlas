@@ -3,7 +3,7 @@
 # Wild Atlas, a Narrated Animal Discovery App for Children, Launches Globally in Six Languages
 *Built solo over four months by the son of South Africa's celebrated conservation documentary filmmakers, Wild Atlas gives children documentary-style animal content — and parents screen time they can hand over without worry.*
 
-**SEATTLE, WA — June 10, 2026** — Wild Atlas, an animal discovery app for children aged 3 and up, is available today on the App Store for iPhone and iPad. Across twelve animal packs and six languages, the app brings narrated, documentary-style facts, games, quizzes, and exploration to young children — with no subscription, no advertising, and no algorithmic feed.
+**SEATTLE, WA — June 10, 2026** — Wild Atlas, an animal discovery app for children aged 3 and up, is available today on the App Store for iPhone and iPad. Across thirteen animal packs and six languages, the app brings narrated, documentary-style facts, games, quizzes, and exploration to young children — with no subscription, no advertising, and no algorithmic feed.
 
 Think of it as a hyper-malleable podcast for kids aged 3 to 9 — audio-first, self-directed, completely non-linear. Leave narration on and a child who can't yet read explores entirely on their own; turn it off and read along together.
 
@@ -29,7 +29,7 @@ Wild Atlas is COPPA-compliant and collects no personal data.
 - **Free forever:** Happy Hounds, Cool Cats, and Cozy Critters
 - **New user bonus:** one additional paid pack unlocked at no charge on first setup
 - **Individual packs:** $3.99 (one-time, parent-approved purchase)
-- **Full unlock:** all nine premium packs for $23.99
+- **Full unlock:** all ten premium packs for $23.99
 - **Each pack includes:** narrated facts, dual-mode quizzes, interactive world map, body-size comparisons, and animal sounds
 - **Games:** Memory Match, Puppy Puzzle, Who's Who, and Habitat Hop — included across all packs
 - **Fully offline:** works on airplanes, road trips, or anywhere without reliable internet
