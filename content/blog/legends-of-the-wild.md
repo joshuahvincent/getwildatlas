@@ -29,22 +29,18 @@ noindex: true
     margin-bottom: 0.3rem;
   }
   .tldr p { margin: 0; font-size: 0.95rem; }
+
   .pack-hero {
     margin: 2rem 0;
+    background: rgba(194, 90, 44, 0.06);
+    border-radius: 16px;
+    overflow: hidden;
   }
   .pack-hero img {
     width: 100%;
-    border-radius: 16px;
-    box-shadow: 0 6px 32px rgba(42, 33, 24, 0.15);
     display: block;
   }
-  .pack-hero figcaption {
-    text-align: center;
-    margin-top: 0.5rem;
-    font-size: 0.85rem;
-    color: var(--muted);
-    font-style: italic;
-  }
+
   .animal-highlights {
     background: #fff;
     border: 1px solid var(--rule);
@@ -56,6 +52,72 @@ noindex: true
   .animal-highlights li { margin-bottom: 0.6rem; font-size: 0.97rem; }
   .animal-highlights li strong { color: var(--accent); }
   .animal-highlights li:last-child { margin-bottom: 0; }
+
+  .animal-image {
+    margin: 2rem 0;
+  }
+  .animal-image img {
+    width: 100%;
+    border-radius: 14px;
+    display: block;
+    box-shadow: 0 4px 24px rgba(42, 33, 24, 0.13);
+  }
+  .animal-image figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-style: italic;
+    text-align: center;
+  }
+
+  .image-pair {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  .image-pair figure {
+    flex: 1;
+    margin: 0;
+  }
+  .image-pair figure img {
+    width: 100%;
+    border-radius: 14px;
+    display: block;
+    box-shadow: 0 4px 24px rgba(42, 33, 24, 0.13);
+  }
+  .image-pair figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-style: italic;
+    text-align: center;
+  }
+  @media (max-width: 500px) {
+    .image-pair { flex-direction: column; }
+  }
+
+  .did-you-know {
+    background: rgba(194, 90, 44, 0.07);
+    border-radius: 14px;
+    padding: 1.5rem 1.75rem;
+    margin: 2.5rem 0;
+  }
+  .did-you-know h2 {
+    margin: 0 0 1rem;
+    font-size: 1.35rem;
+  }
+  .did-you-know ul {
+    margin: 0;
+    padding-left: 1.5rem;
+  }
+  .did-you-know li {
+    margin-bottom: 0.75rem;
+    font-size: 0.97rem;
+    line-height: 1.5;
+  }
+  .did-you-know li:last-child { margin-bottom: 0; }
+  .did-you-know li strong { color: var(--accent); }
+
   .cta-block {
     background: linear-gradient(135deg, #C25A2C 0%, #E8834A 100%);
     border-radius: 16px;
@@ -113,7 +175,60 @@ Legends of the Wild spans almost every corner of the planet: rainforests, arctic
   </ul>
 </div>
 
-Every animal comes with the full Wild Atlas treatment: narrated summary, fun facts, a Did You Know, conservation status, and a safety guide. A child who learns that axolotls regrow limbs and that saolas weren't even known to science until 1992 is building the kind of knowledge that compounds — one fact leads to a question, the question leads to another animal.
+## Inside the Animal Pages
+
+Every animal in Legends of the Wild gets the full Wild Atlas treatment — and that means more than a summary. Each page includes a baby photo, an in-action shot, a size comparison, and a weight comparison, all alongside narrated facts. Here's a taste.
+
+<div class="image-pair">
+  <figure>
+    <img src="/assets/blog/legends-pangolin-baby.png" alt="Baby pangolin — tiny scales just starting to form">
+    <figcaption>Baby pangolin — scales already forming at birth.</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/blog/legends-saola-baby.png" alt="Baby saola — one of the rarest animals on earth, as a calf">
+    <figcaption>Baby saola — first documented in 1992.</figcaption>
+  </figure>
+</div>
+
+<figure class="animal-image">
+  <img src="/assets/blog/legends-manatee-scale.png" alt="West Indian manatee size comparison — how big is a manatee?">
+  <figcaption>How big is a West Indian manatee? The size comparison card puts it next to something a child already knows.</figcaption>
+</figure>
+
+<figure class="animal-image">
+  <img src="/assets/blog/legends-snow-leopard-weight.png" alt="Snow leopard weight comparison">
+  <figcaption>Snow leopard weight — a number that becomes real when you compare it to something familiar.</figcaption>
+</figure>
+
+<div class="image-pair">
+  <figure>
+    <img src="/assets/blog/legends-spectacled-bear-action.png" alt="Spectacled bear in action — climbing, foraging, being a spectacled bear">
+    <figcaption>Spectacled bear — in action.</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/blog/legends-tarsier-action.png" alt="Tarsier in action — those enormous eyes doing their thing">
+    <figcaption>Tarsier — eyes heavier than its brain.</figcaption>
+  </figure>
+</div>
+
+A child who opens an animal page doesn't just read a fact. They see the animal as a baby, see how it moves, understand how it compares in size and weight to things they already know. One animal page leads to another, and the facts compound.
+
+<div class="did-you-know">
+
+## Did You Know?
+
+A few of the facts waiting in this pack — the ones kids tend to repeat to anyone who'll listen:
+
+- <strong>Tarsier</strong> — Its eyes are so enormous they're actually heavier than its brain.
+- <strong>Narwhal</strong> — That spiralling tusk can grow up to ten feet long — taller than most ceilings.
+- <strong>Sea otter</strong> — When it wants a snack, it balances a rock on its belly and taps a clam against it until it pops open.
+- <strong>Snow leopard</strong> — It can jump six times its body length — that's like leaping over a school bus.
+- <strong>Okapi</strong> — Unknown to science until 1901. People thought it was made up, like a unicorn.
+- <strong>Axolotl</strong> — It can regrow a leg, a tail, or even part of its heart. A perfect replacement, not a scar.
+- <strong>Spectacled bear</strong> — The pale rings around its eyes are like a fingerprint. No two bears have the same pattern.
+- <strong>Pangolin</strong> — Its tongue is so long it has to be stored deep inside its body, all the way down near its stomach.
+
+</div>
 
 ## How to Get It
 
