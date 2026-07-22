@@ -54,7 +54,8 @@ noindex: true
     width: 100%;
     aspect-ratio: 1;
     border-radius: 14px;
-    object-fit: cover;
+    object-fit: contain;
+    background: #fff;
     display: block;
     box-shadow: 0 3px 14px rgba(42, 33, 24, 0.14);
   }
