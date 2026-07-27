@@ -1713,6 +1713,13 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
 .email-signup {
   padding: var(--space-xl) 0;
 }
+/* Homepage: its own visually separated full-width band */
+.email-signup.email-signup--band {
+  padding: 80px 0;
+  background: #FFEFE7;
+  border-top: var(--stroke) solid rgba(93, 64, 55, 0.06);
+  border-bottom: var(--stroke) solid rgba(93, 64, 55, 0.06);
+}
 .email-signup-inner {
   max-width: 560px;
   margin: 0 auto;

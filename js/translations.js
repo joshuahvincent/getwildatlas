@@ -168,6 +168,7 @@ window.WILD_ATLAS_I18N = {
       // Footer
       'footer.privacy': 'Privacy Policy',
       'footer.contact': 'Contact',
+      'footer.newsletter': 'Newsletter',
       'footer.about': 'About',
       'footer.terms': 'Terms of Service',
       'about.eyebrow': 'Behind the app',
@@ -362,6 +363,7 @@ window.WILD_ATLAS_I18N = {
 
       'footer.privacy': 'Datenschutz',
       'footer.contact': 'Kontakt',
+      'footer.newsletter': 'Newsletter',
       'footer.about': '\u00dcber uns',
       'footer.terms': 'Nutzungsbedingungen',
       'about.eyebrow': 'Hinter der App',
@@ -555,6 +557,7 @@ window.WILD_ATLAS_I18N = {
 
       'footer.privacy': 'Pol\u00edtica de Privacidad',
       'footer.contact': 'Contacto',
+      'footer.newsletter': 'Boletín',
       'footer.about': 'Acerca de',
       'footer.terms': 'Términos de servicio',
       'about.eyebrow': 'Detrás de la app',
@@ -748,6 +751,7 @@ window.WILD_ATLAS_I18N = {
 
       'footer.privacy': 'Politique de Confidentialit\u00e9',
       'footer.contact': 'Contact',
+      'footer.newsletter': 'Newsletter',
       'footer.about': '\u00c0 Propos',
       'footer.terms': 'Conditions d’utilisation',
       'about.eyebrow': 'Dans les coulisses',
@@ -955,6 +959,7 @@ window.WILD_ATLAS_I18N = {
       // Footer
       'footer.privacy': '\u9690\u79c1\u653f\u7b56',
       'footer.contact': '\u8054\u7cfb\u6211\u4eec',
+      'footer.newsletter': '邮件订阅',
       'footer.about': '\u5173\u4e8e',
       'footer.terms': '服务条款',
       'about.eyebrow': 'App 背后',
