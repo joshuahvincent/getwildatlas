@@ -1706,3 +1706,120 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   .blog-app-screens--trio .blog-app-screen:not(:first-child) { width: 100%; }
   .blog-app-screens--row .blog-app-screen { width: 80%; }
 }
+
+/* ============================================================
+   Parent email signup (getwildatlas#18) — blog footer + homepage
+   ============================================================ */
+.email-signup {
+  padding: var(--space-xl) 0;
+}
+.email-signup-inner {
+  max-width: 560px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1.5px solid rgba(93, 64, 55, 0.12);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  text-align: center;
+}
+.email-signup-eyebrow {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--peach-dark);
+  margin: 0 0 var(--space-xs);
+}
+.email-signup-heading {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--warm-bark);
+  margin: 0 0 var(--space-sm);
+  line-height: 1.25;
+}
+.email-signup-sub {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--warm-bark);
+  opacity: 0.85;
+  margin: 0 auto var(--space-lg);
+  max-width: 440px;
+}
+.email-signup-row {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.email-signup-input {
+  flex: 1 1 220px;
+  min-width: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 12px 16px;
+  border: 1.5px solid rgba(93, 64, 55, 0.2);
+  border-radius: var(--radius-full);
+  color: var(--warm-bark);
+  background: var(--creamy-coat);
+}
+.email-signup-input:focus {
+  outline: none;
+  border-color: var(--peach-pop);
+  box-shadow: 0 0 0 3px rgba(255, 158, 125, 0.25);
+}
+.email-signup-btn {
+  flex: 0 0 auto;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+  background: var(--peach-pop);
+  border: none;
+  border-radius: var(--radius-full);
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.email-signup-btn:hover { background: var(--peach-dark); transform: translateY(-1px); }
+.email-signup-btn:disabled { opacity: 0.6; cursor: default; transform: none; }
+.email-signup-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  text-align: left;
+  margin: var(--space-md) auto 0;
+  max-width: 440px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--warm-bark);
+}
+.email-signup-consent input {
+  margin-top: 3px;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--peach-pop);
+}
+.email-signup-fine {
+  font-size: 0.78rem;
+  color: var(--warm-bark);
+  opacity: 0.65;
+  margin: var(--space-md) 0 0;
+}
+.email-signup-fine a { color: var(--peach-dark); font-weight: 600; }
+.email-signup-msg {
+  margin: var(--space-md) 0 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+}
+.email-signup-msg.is-ok { color: #1d6b47; background: var(--mint-light); }
+.email-signup-msg.is-error { color: #9a3b2f; background: #fbe3dd; }
+
+@media (max-width: 600px) {
+  .email-signup-inner { padding: var(--space-lg); }
+  .email-signup-btn { flex: 1 1 100%; }
+}
