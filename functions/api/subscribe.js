@@ -67,10 +67,12 @@ export async function onRequestPost(context) {
     return respond(400, false, 'Please tick the consent box so we know you agree to receive email.');
   }
 
-  const pubId = env.BEEHIIV_PUBLICATION_ID;
+  // Publication ID is not secret (it appears in beehiiv's public embed URLs), so
+  // it's baked in as a default and only the API key needs to be a Cloudflare secret.
+  const pubId = env.BEEHIIV_PUBLICATION_ID || 'pub_3a9cf204-e07b-418b-8157-e1509dcb36c3';
   const apiKey = env.BEEHIIV_API_KEY;
-  if (!pubId || !apiKey) {
-    console.log('subscribe: missing BEEHIIV env vars');
+  if (!apiKey) {
+    console.log('subscribe: missing BEEHIIV_API_KEY');
     return respond(503, false, 'Email signup is temporarily unavailable. Please try again later.');
   }
 
