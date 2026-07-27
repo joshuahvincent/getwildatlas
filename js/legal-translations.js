@@ -5,20 +5,21 @@
 
 window.WILD_ATLAS_LEGAL = {
   privacy: {
-    en: `Effective Date: May 14, 2026
+    en: `Effective Date: July 17, 2026
 
 1. Introduction
 
-Wild Atlas, operated by Wild Atlas LLC ("we," "our," or "us"), is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our iOS application Wild Atlas (the "App"). Please read this policy carefully. If you disagree with its terms, please discontinue use of the App.
+Wild Atlas, operated by Wild Atlas LLC ("we," "our," or "us"), is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our iOS application Wild Atlas (the "App") and our website, wildatlasapp.com (the "Site"). Please read this policy carefully. If you disagree with its terms, please discontinue use of the App and Site.
 
 2. Information We Collect
 
 2.1 Information You Provide
 
-We may collect information you voluntarily provide when using the App, including:
+We may collect information you voluntarily provide when using the App or Site, including:
 
 - Name and contact details (if you create an account)
 - Communications you send us (e.g., support requests or feedback)
+- Email address, if you subscribe to email updates on our Site
 
 2.2 Automatically Collected Information
 
@@ -42,6 +43,7 @@ We use the information we collect to:
 - Respond to your inquiries and provide customer support
 - Monitor and analyze usage trends to improve the App experience
 - Detect, prevent, and address technical issues or fraudulent activity
+- Send email updates about new packs, features, and family resources to parents or guardians who subscribe on our Site
 - Comply with applicable legal obligations
 
 4. Sharing Your Information
@@ -50,10 +52,11 @@ We do not sell, trade, or rent your personal information to third parties. We ma
 
 4.1 Service Providers
 
-Trusted third-party vendors who assist us in operating the App, including:
+Trusted third-party vendors who assist us in operating the App and Site, including:
 
 - Analytics: We use PostHog (hosted on EU servers at eu.posthog.com) to collect anonymous, aggregated technical data and app usage trends. PostHog is configured without persistent user identifiers and does not capture child-specific events, behavioural profiles, or personal information. No data collected via PostHog is linked to identifiable individuals or used for behavioural advertising.
 - Content Delivery: We use Cloudflare to host and deliver audio asset packages; they may process basic technical information (e.g., IP addresses) to ensure secure delivery.
+- Email: We use beehiiv Inc. to manage newsletter subscriptions and send email updates to parents or guardians who sign up on our Site. beehiiv processes your email address as our service provider, under its own Privacy Policy. Subscriptions use double opt-in — you confirm your address by email before receiving anything — and every email includes an unsubscribe link. We do not sell or rent your email address.
 
 4.2 Legal Requirements
 

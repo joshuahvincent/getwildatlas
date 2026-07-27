@@ -220,6 +220,29 @@
     </div>
   </section>
 
+  <!-- PARENT EMAIL SIGNUP -->
+  <section class="email-signup" aria-labelledby="es-home-heading">
+    <div class="email-signup-inner">
+      <p class="email-signup-eyebrow">For parents &amp; guardians</p>
+      <h2 id="es-home-heading" class="email-signup-heading">A few emails a year. Worth opening.</h2>
+      <p class="email-signup-sub">New animal packs, features, and notes for parents &mdash; sent when we have something real to share.</p>
+      <form class="email-signup-form" action="/api/subscribe" method="POST" novalidate>
+        <input type="hidden" name="source" value="homepage">
+        <div class="email-signup-row">
+          <label class="sr-only" for="es-home-email">Email address</label>
+          <input id="es-home-email" class="email-signup-input" type="email" name="email" required autocomplete="email" placeholder="your@email.com">
+          <button class="email-signup-btn" type="submit">Subscribe</button>
+        </div>
+        <label class="email-signup-consent">
+          <input type="checkbox" name="consent" required>
+          <span>I agree to receive occasional emails from Wild Atlas about new packs, app updates, and notes for parents.</span>
+        </label>
+        <p class="email-signup-fine">We send occasionally &mdash; unsubscribe anytime, and we don&rsquo;t share your address. We use <a href="https://www.beehiiv.com" target="_blank" rel="noopener">beehiiv</a> to send these emails. See our <a href="privacy.html">Privacy Policy</a>.</p>
+        <p class="email-signup-msg" role="status" aria-live="polite" hidden></p>
+      </form>
+    </div>
+  </section>
+
   <!-- TRUST STRIP -->
   <section class="trust-strip" aria-label="What makes Wild Atlas safe for kids">
     <div class="container">
@@ -824,5 +847,6 @@
   <script src="js/translations.js?v=3"></script>
   <script src="js/i18n.js?v=3"></script>
   <script src="js/main.js?v=3"></script>
+  <script src="js/email-signup.js" defer></script>
 </body>
 </html>
