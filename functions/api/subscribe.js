@@ -90,7 +90,7 @@ export async function onRequestPost(context) {
           email,
           reactivate_existing: false,
           send_welcome_email: false,
-          double_opt_override: 'on', // force confirmation email regardless of pub default
+          double_opt_override: 'off', // single opt-in — active immediately, no confirmation email (consent = the un-ticked checkbox on the form)
           utm_source: source, // blog-footer | homepage — separable in beehiiv
           utm_medium: 'website',
           utm_campaign: 'parent-email',
@@ -112,8 +112,8 @@ export async function onRequestPost(context) {
   return respond(
     200,
     true,
-    'Almost there — check your inbox and confirm your email to finish subscribing.',
-    'Almost there!'
+    'You’re subscribed — we’ll be in touch when there’s something new. Unsubscribe anytime.',
+    'You’re subscribed!'
   );
 }
 

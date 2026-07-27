@@ -54,7 +54,7 @@
         .then(function (d) {
           if (d && d.ok) {
             form.reset();
-            show('Almost there — check your inbox and confirm your email to finish subscribing.', true);
+            show('You’re subscribed — we’ll be in touch when there’s something new. Unsubscribe anytime.', true);
           } else {
             show((d && d.error) || 'Something went wrong. Please try again.', false);
           }

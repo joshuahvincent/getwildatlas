@@ -56,7 +56,7 @@ Trusted third-party vendors who assist us in operating the App and Site, includi
 
 - Analytics: We use PostHog (hosted on EU servers at eu.posthog.com) to collect anonymous, aggregated technical data and app usage trends. PostHog is configured without persistent user identifiers and does not capture child-specific events, behavioural profiles, or personal information. No data collected via PostHog is linked to identifiable individuals or used for behavioural advertising.
 - Content Delivery: We use Cloudflare to host and deliver audio asset packages; they may process basic technical information (e.g., IP addresses) to ensure secure delivery.
-- Email: We use beehiiv Inc. to manage newsletter subscriptions and send email updates to parents or guardians who sign up on our Site. beehiiv processes your email address as our service provider, under its own Privacy Policy. Subscriptions use double opt-in — you confirm your address by email before receiving anything — and every email includes an unsubscribe link. We do not sell or rent your email address.
+- Email: We use beehiiv Inc. to manage newsletter subscriptions and send email updates to parents or guardians who sign up on our Site. beehiiv processes your email address as our service provider, under its own Privacy Policy. You subscribe by entering your email address and ticking the consent box on our Site; every email includes an unsubscribe link, and you can opt out at any time. We do not sell or rent your email address.
 
 4.2 Legal Requirements
 
