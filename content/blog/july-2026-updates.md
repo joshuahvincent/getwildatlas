@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: "What's New in Wild Atlas This July"
+title: "Wild Atlas July Updates: Four Releases, One Post"
 date: 2026-07-28
 author: Wild Atlas
 excerpt: "Four updates in July: redeem App Store codes inside the app, instant pack downloads, animals that bounce when tapped, and a step-by-step explorer setup. Free update for everyone."
