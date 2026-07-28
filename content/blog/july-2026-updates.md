@@ -5,10 +5,8 @@ date: 2026-07-28
 author: Wild Atlas
 excerpt: "Four updates in July: redeem App Store codes inside the app, instant pack downloads, animals that bounce when tapped, and a step-by-step explorer setup. Free update for everyone."
 permalink: /blog/july-2026-updates/
-coverImage: /assets/blog/v104-home.png
+coverImage: /assets/blog/v104-onboarding-avatar.png
 tags: [product, update]
-eleventyExcludeFromCollections: true
-noindex: true
 ---
 
 <style>
