@@ -102,9 +102,14 @@ When a new pack arrives in Wild Atlas, it now appears first — in the Shop and 
 
 The first-time setup flow — where a child picks their explorer name and avatar — is now a proper step-by-step sequence: name first, then avatar picker. It's a small change that makes a real difference for younger kids, who can focus on one thing at a time rather than taking in a busier screen all at once.
 
+<figure class="portrait-shot">
+  <img src="/assets/blog/v104-onboarding-avatar.png" alt="Wild Atlas avatar picker — choose your explorer's look">
+  <figcaption>Step two: pick an avatar. Each explorer gets their own look.</figcaption>
+</figure>
+
 ## Legends of the Wild polish
 
-Legends of the Wild launched on July 22 as Wild Atlas's first premium animal pack — 18 rare species, $3.99. This update adds a detail that was missing at launch: the shop preview now narrates in all five non-English languages, so families browsing in German, Spanish, French, Chinese, or British English hear it in their language before they buy.
+[Legends of the Wild](/blog/legends-of-the-wild/) launched on July 22 as Wild Atlas's first premium animal pack — 18 rare species, $3.99. This update adds a detail that was missing at launch: the shop preview now narrates in all five non-English languages, so families browsing in German, Spanish, French, Chinese, or British English hear it in their language before they buy.
 
 ---
 
@@ -140,6 +145,8 @@ The updates above are in v1.0.4, which came out today. But if you haven't update
 
 ## Get the update
 
-All of this is free for existing users. Tap Update in the App Store. If you're on any version from July, one update catches you up on everything above.
+All of this is free for existing users. If you're on any version from July, one update catches you up on everything above.
+
+[Update Wild Atlas on the App Store →](https://apps.apple.com/us/app/wild-atlas/id6761081031)
 
 If you haven't tried Wild Atlas yet, start with the three free packs — no purchase needed.
