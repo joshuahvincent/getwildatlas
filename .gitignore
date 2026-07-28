@@ -33,3 +33,4 @@ _site/
 # which case-insensitively matches the 'icons' directory on macOS
 # (HFS+/APFS are case-insensitive). Un-ignore so brand icons commit.
 !assets/icons/
+.wrangler/

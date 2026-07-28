@@ -54,7 +54,21 @@
         .then(function (d) {
           if (d && d.ok) {
             form.reset();
-            show('You’re subscribed — we’ll be in touch when there’s something new. Unsubscribe anytime.', true);
+            if (d.offerCode && msg) {
+              msg.hidden = false;
+              msg.classList.add('is-offer');
+              msg.classList.remove('is-error', 'is-ok');
+              var code = String(d.offerCode);
+              var url = String(d.redeemUrl || '');
+              var pack = String(d.packName || 'free');
+              msg.innerHTML =
+                '<span class="email-signup-offer-line"><strong>You’re in! 🎉</strong> Here’s your free ' + pack + ' pack code:</span>' +
+                '<span class="email-signup-code">' + code + '</span>' +
+                (url ? '<a class="email-signup-redeem" href="' + url + '">Redeem in the App Store</a>' : '') +
+                '<span class="email-signup-howto">On your iPhone or iPad, tap the button to apply the code automatically — or open the App Store app › your profile › <strong>Redeem Gift Card or Code</strong> › enter <strong>' + code + '</strong>. Then open Wild Atlas to find the pack unlocked. It’s yours to keep, even if you unsubscribe.</span>';
+            } else {
+              show('You’re subscribed — we’ll be in touch when there’s something new. Unsubscribe anytime.', true);
+            }
           } else {
             show((d && d.error) || 'Something went wrong. Please try again.', false);
           }
