@@ -1830,3 +1830,100 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   .email-signup-inner { padding: var(--space-lg); }
   .email-signup-btn { flex: 1 1 100%; }
 }
+
+/* ============================================================
+   Newsletter free-pack incentive + site-wide promo bar (#18)
+   ============================================================ */
+/* Form incentive line (under the signup heading) */
+.email-signup-incentive {
+  color: var(--peach-dark);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0 auto var(--space-md);
+  max-width: 440px;
+}
+/* Success state: code chip + redeem button + how-to */
+.email-signup-msg.is-offer {
+  background: #F1FBF4;
+  color: var(--warm-bark);
+  text-align: center;
+}
+.email-signup-offer-line { display: block; margin-bottom: 4px; }
+.email-signup-code {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: var(--creamy-coat);
+  border: 1.5px dashed var(--peach-dark);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 280px;
+  color: var(--warm-bark);
+}
+.email-signup-redeem {
+  display: inline-block;
+  background: var(--peach-pop);
+  color: #fff !important;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  margin: 4px 0 12px;
+}
+.email-signup-redeem:hover { background: var(--peach-dark); }
+.email-signup-howto {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 400;
+  opacity: 0.85;
+  line-height: 1.5;
+}
+
+/* Site-wide promo bar (fixed, above the nav) */
+:root { --promo-h: 40px; }
+body { padding-top: var(--promo-h); }
+.navbar { top: var(--promo-h); }
+.promo-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1100;
+  min-height: var(--promo-h);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--warm-bark);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  padding: 6px 16px;
+  text-align: center;
+}
+.promo-bar a { color: #fff; text-decoration: none; }
+.promo-bar a:hover { text-decoration: underline; }
+@media (max-width: 600px) {
+  :root { --promo-h: 52px; }
+  .promo-bar { font-size: 0.78rem; }
+}
+
+/* Footer promo callout */
+.footer-promo {
+  text-align: center;
+  padding-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+.footer .footer-promo { border-bottom: 1px solid rgba(255, 255, 255, 0.12); }
+.footer-promo a {
+  color: var(--peach-pop);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.98rem;
+}
