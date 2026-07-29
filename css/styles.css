@@ -1844,6 +1844,13 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   margin: 0 auto var(--space-md);
   max-width: 440px;
 }
+.incentive-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  margin: -3px 6px 0 0;
+}
 /* Success state: code chip + redeem button + how-to */
 .email-signup-msg.is-offer {
   background: #F1FBF4;
@@ -1909,6 +1916,13 @@ body { padding-top: var(--promo-h); }
 }
 .promo-bar a { color: #fff; text-decoration: none; }
 .promo-bar a:hover { text-decoration: underline; }
+.promo-bar-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin: -2px 8px 0 0;
+}
 @media (max-width: 600px) {
   :root { --promo-h: 52px; }
   .promo-bar { font-size: 0.78rem; }
