@@ -2,8 +2,6 @@
 layout: layouts/post.njk
 title: "Wild Atlas Shows Kids Which Animals Are at Risk. Here's Why We Don't Soften It."
 date: 2026-08-04
-eleventyExcludeFromCollections: true
-noindex: true
 author: Josh Vincent
 excerpt: "Every animal in Wild Atlas carries its conservation status. The Saola is Critically Endangered. The Mallard is Least Concern. We tell children both — and the research suggests that's the right call."
 permalink: /blog/conservation-status-for-kids/
