@@ -741,12 +741,17 @@
     }
     .home-video { padding: 0 0 var(--space-2xl); }
     .home-video-frame {
-      max-width: 360px;
-      margin: var(--space-xl) auto 0;
       aspect-ratio: 590 / 1280;
+      height: min(88vh, 1000px);
+      width: auto;
+      max-width: 94vw;
+      margin: var(--space-md) auto 0;
       border-radius: 20px;
       overflow: hidden;
       box-shadow: 0 12px 32px rgba(93, 64, 55, 0.18);
+    }
+    @media (max-width: 600px) {
+      .home-video-frame { height: auto; width: 100%; max-width: 100%; }
     }
     .home-video-frame iframe,
     .home-video-frame video { width: 100%; height: 100%; border: 0; display: block; object-fit: cover; background: #000; }
@@ -857,5 +862,20 @@
   <script src="js/i18n.js?v=3"></script>
   <script src="js/main.js?v=3"></script>
   <script src="js/email-signup.js?v=2" defer></script>
+  <script>
+    // Anchor correction: on a fresh visit to /#walkthrough (etc.) the browser
+    // jumps before lazy images + i18n above have laid out, so it lands short.
+    // Re-scroll to the target once everything has settled.
+    (function () {
+      function jumpToHash() {
+        if (!location.hash || location.hash.length < 2) return;
+        var el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+        if (el) el.scrollIntoView();
+      }
+      window.addEventListener('load', function () {
+        requestAnimationFrame(function () { requestAnimationFrame(jumpToHash); });
+      });
+    })();
+  </script>
 </body>
 </html>
