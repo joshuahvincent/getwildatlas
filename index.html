@@ -50,7 +50,7 @@
   <!-- Preconnect to Formspree -->
   <link rel="preconnect" href="https://formspree.io">
 
-  <link rel="stylesheet" href="css/styles.css?v=5">
+  <link rel="stylesheet" href="css/styles.css?v=6">
 
   <!-- Structured Data: SoftwareApplication -->
   <script type="application/ld+json">
@@ -185,16 +185,6 @@
         <p class="hero-eyebrow" data-i18n="hero.eyebrow">Discover the Animal Kingdom</p>
         <h1 class="hero-tagline" data-i18n-html="hero.tagline">Raise explorers,<br>not scrollers.</h1>
         <p class="hero-subtitle" data-i18n-html="hero.subtitle">Finally, screen time you&rsquo;ll feel <strong>proud of</strong>. An interactive animal adventure for curious kids ages 2&ndash;9.</p>
-        <div class="hero-age-badges">
-          <div class="age-badge">
-            <img src="assets/icons/little-explorer.png" alt="Little Explorer pup mascot for ages 3 to 4">
-            <span><span data-i18n="hero.little">Little Explorers</span><br><strong data-i18n="hero.little.ages">Ages Under 5</strong></span>
-          </div>
-          <div class="age-badge">
-            <img src="assets/icons/young-explorer.png" alt="Young Explorer pup mascot for ages 5 and up">
-            <span><span data-i18n="hero.young">Young Explorers</span><br><strong data-i18n="hero.young.ages">Ages 5 and Up</strong></span>
-          </div>
-        </div>
         <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;">
           <a href="https://apps.apple.com/us/app/wild-atlas/id6761081031" class="app-store-badge-link" aria-label="Download Wild Atlas on the App Store">
             <img src="assets/app-store-badge.svg" alt="Download on the App Store" height="54" style="display:block;">
@@ -277,6 +267,25 @@
   <section class="key-features" id="features" aria-label="Key features">
     <div class="container">
       <h2 class="section-title" data-i18n="features.title">What Makes Wild Atlas Special</h2>
+
+      <div class="age-tiers-row">
+        <div class="age-tier-card">
+          <img src="assets/icons/little-explorer.png" alt="Little Explorer pup mascot" class="age-tier-icon" loading="lazy">
+          <h3 class="age-tier-name" data-i18n="hero.little">Little Explorers</h3>
+          <p class="age-tier-ages" data-i18n="hero.little.ages">Ages Under 5</p>
+        </div>
+        <div class="age-tier-card">
+          <img src="assets/icons/young-explorer.png" alt="Young Explorer pup mascot" class="age-tier-icon" loading="lazy">
+          <h3 class="age-tier-name" data-i18n="hero.young">Young Explorers</h3>
+          <p class="age-tier-ages" data-i18n="hero.young.ages">Ages 5 and Up</p>
+        </div>
+        <div class="age-tier-card age-tier-card--accent">
+          <img src="assets/icons/superpower.png" alt="Wild Atlas mascot" class="age-tier-icon" loading="lazy">
+          <h3 class="age-tier-name" data-i18n="tiers.adapt.title">Grows With Your Child</h3>
+          <p class="age-tier-desc" data-i18n="tiers.adapt.desc">Two tiers, one big adventure. Choose Little or Young Explorers at setup, and every quiz, fact, and game adapts to your child&rsquo;s age &mdash; play-based learning that keeps them curious and coming back for more.</p>
+        </div>
+      </div>
+
       <div class="key-features-grid">
 
         <div class="key-feature-card quiz-card">
@@ -789,22 +798,31 @@
     </div>
   </section>
 
-  <section class="home-video" aria-label="Wild Atlas in action">
+  <section class="home-video" id="walkthrough" aria-label="Wild Atlas app walkthrough video">
     <div class="container">
       <h2 class="section-title">See Wild Atlas in action</h2>
+      <p class="home-video-sub" data-i18n="walkthrough.sub">A quick walkthrough &mdash; narrated animals, quizzes, and games, all built for curious kids.</p>
       <div class="home-video-frame">
-        <video controls playsinline preload="metadata" poster="assets/trailer-poster.jpg">
-          <source src="assets/wild-atlas-trailer.mp4" type="video/mp4">
+        <video controls playsinline preload="metadata" poster="/assets/trailer-poster.jpg">
+          <source src="/assets/wild-atlas-trailer.mp4" type="video/mp4">
           Your browser doesn&rsquo;t support embedded video.
           <a href="https://www.youtube.com/watch?v=le3MLsSQk7U">Watch on YouTube</a>.
         </video>
       </div>
-      <p style="text-align:center;margin-top:var(--space-lg);">
-        <a href="https://linktr.ee/wildatlasapp" target="_blank" rel="noopener"
-          style="font-family:var(--font-heading);font-weight:600;color:var(--peach-pop);text-decoration:none;">
-          Follow us &rarr;
-        </a>
-      </p>
+      <div class="social-follow">
+        <span class="social-follow-label" data-i18n="social.follow">Follow the adventure</span>
+        <div class="social-links" aria-label="Wild Atlas on social media">
+          <a href="https://www.instagram.com/wildatlas.app" target="_blank" rel="noopener" class="social-link" aria-label="Wild Atlas on Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.66 1.34 1.07 2.13 1.38.76.3 1.64.5 2.91.56 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38.66-.67 1.07-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.13-.67-.66-1.34-1.07-2.13-1.38-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zM12 16a4 4 0 110-8 4 4 0 010 8zm6.41-10.85a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@wildatlasapp" target="_blank" rel="noopener" class="social-link" aria-label="Wild Atlas on TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82A4.28 4.28 0 0115.6 3h-3.1v12.4a2.59 2.59 0 01-2.58 2.5 2.59 2.59 0 01-2.6-2.59 2.59 2.59 0 012.6-2.59c.26 0 .52.04.76.12V9.68a5.7 5.7 0 00-.76-.05A5.75 5.75 0 004 15.4a5.75 5.75 0 0011.5 0V9.01a7.32 7.32 0 004.28 1.37V7.29a4.28 4.28 0 01-3.18-1.47z"/></svg>
+          </a>
+          <a href="https://linktr.ee/wildatlasapp" target="_blank" rel="noopener" class="social-link social-link--more" aria-label="More Wild Atlas links on Linktree">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 12a2 2 0 11-4 0 2 2 0 014 0zm8 0a2 2 0 11-4 0 2 2 0 014 0zm6 2a2 2 0 100-4 2 2 0 000 4z"/></svg>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -837,6 +855,14 @@
         <div class="footer-brand">
           <img src="assets/mascot-sitting.png" alt="Wild Atlas" class="footer-mascot" loading="lazy">
           <span class="footer-title">Wild Atlas</span>
+        </div>
+        <div class="social-links social-links--footer" aria-label="Wild Atlas on social media">
+          <a href="https://www.instagram.com/wildatlas.app" target="_blank" rel="noopener" class="social-link" aria-label="Wild Atlas on Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.66 1.34 1.07 2.13 1.38.76.3 1.64.5 2.91.56 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38.66-.67 1.07-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.13-.67-.66-1.34-1.07-2.13-1.38-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zM12 16a4 4 0 110-8 4 4 0 010 8zm6.41-10.85a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@wildatlasapp" target="_blank" rel="noopener" class="social-link" aria-label="Wild Atlas on TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82A4.28 4.28 0 0115.6 3h-3.1v12.4a2.59 2.59 0 01-2.58 2.5 2.59 2.59 0 01-2.6-2.59 2.59 2.59 0 012.6-2.59c.26 0 .52.04.76.12V9.68a5.7 5.7 0 00-.76-.05A5.75 5.75 0 004 15.4a5.75 5.75 0 0011.5 0V9.01a7.32 7.32 0 004.28 1.37V7.29a4.28 4.28 0 01-3.18-1.47z"/></svg>
+          </a>
         </div>
         <div class="footer-links">
           <a href="about.html" data-i18n="footer.about">About</a>
