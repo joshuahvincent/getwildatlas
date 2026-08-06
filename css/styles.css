@@ -502,9 +502,10 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
 }
 .key-features-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-xl);
   margin-top: var(--space-xl);
+  align-items: stretch;
 }
 .key-feature-card {
   background: var(--creamy-coat);
@@ -1983,58 +1984,45 @@ body { padding-top: var(--promo-h); }
   .footer-promo-text { font-size: 0.9rem; }
 }
 
-/* ── Age tiers row (What Makes Wild Atlas Special) ── */
-.age-tiers-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-lg);
-  margin-top: var(--space-xl);
-  align-items: stretch;
+/* ── Tiers card: both explorer types inside one feature card ── */
+.tiers-card {
+  display: flex;
+  flex-direction: column;
 }
-.age-tier-card {
-  background: var(--creamy-coat);
-  border: var(--stroke) solid rgba(93, 64, 55, 0.08);
-  border-radius: var(--radius-lg);
-  padding: var(--space-lg);
+.tier-badges {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: auto;
+  padding-top: var(--space-sm);
+}
+.tier-badge {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
+  gap: 2px;
+  background: rgba(255, 255, 255, 0.55);
+  border: var(--stroke) solid rgba(93, 64, 55, 0.06);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
 }
-.age-tier-icon {
-  width: 68px;
-  height: 68px;
+.tier-badge img {
+  width: 58px;
+  height: 58px;
   object-fit: contain;
-  margin-bottom: var(--space-sm);
 }
-.age-tier-name {
+.tier-badge-name {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   color: var(--warm-bark);
-  margin: 0 0 4px;
 }
-.age-tier-ages {
+.tier-badge-ages {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--peach-dark);
-  margin: 0;
-}
-.age-tier-card--accent {
-  background: linear-gradient(160deg, #FFF1E8 0%, #FFE2D1 100%);
-  border-color: rgba(255, 158, 125, 0.4);
-}
-.age-tier-card--accent .age-tier-desc {
-  font-size: 0.97rem;
-  line-height: 1.55;
-  color: var(--warm-bark);
-  opacity: 0.9;
-  margin: 4px 0 0;
-}
-@media (max-width: 768px) {
-  .age-tiers-row { grid-template-columns: 1fr; gap: var(--space-md); }
 }
 
 /* ── Walkthrough video helpers ── */
