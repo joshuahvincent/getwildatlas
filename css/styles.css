@@ -564,11 +564,14 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
 .tts-highlight {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-lg);
   background: #fff;
   border-radius: var(--radius-md);
   padding: var(--space-lg);
+  margin-top: auto;
 }
+.tts-card { display: flex; flex-direction: column; }
 .tts-mascot {
   width: 90px;
   height: 90px;
