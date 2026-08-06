@@ -1982,3 +1982,120 @@ body { padding-top: var(--promo-h); }
   .footer-promo-icon { width: 40px; height: 40px; }
   .footer-promo-text { font-size: 0.9rem; }
 }
+
+/* ── Age tiers row (What Makes Wild Atlas Special) ── */
+.age-tiers-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+  align-items: stretch;
+}
+.age-tier-card {
+  background: var(--creamy-coat);
+  border: var(--stroke) solid rgba(93, 64, 55, 0.08);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.age-tier-icon {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  margin-bottom: var(--space-sm);
+}
+.age-tier-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--warm-bark);
+  margin: 0 0 4px;
+}
+.age-tier-ages {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--peach-dark);
+  margin: 0;
+}
+.age-tier-card--accent {
+  background: linear-gradient(160deg, #FFF1E8 0%, #FFE2D1 100%);
+  border-color: rgba(255, 158, 125, 0.4);
+}
+.age-tier-card--accent .age-tier-desc {
+  font-size: 0.97rem;
+  line-height: 1.55;
+  color: var(--warm-bark);
+  opacity: 0.9;
+  margin: 4px 0 0;
+}
+@media (max-width: 768px) {
+  .age-tiers-row { grid-template-columns: 1fr; gap: var(--space-md); }
+}
+
+/* ── Walkthrough video helpers ── */
+#walkthrough { scroll-margin-top: calc(var(--promo-h) + 84px); }
+.home-video-sub {
+  text-align: center;
+  max-width: 620px;
+  margin: var(--space-sm) auto 0;
+  font-size: 1.05rem;
+  color: var(--warm-bark);
+  opacity: 0.85;
+}
+
+/* ── Social links ── */
+.social-follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+.social-follow-label {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--warm-bark);
+  opacity: 0.75;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  background: var(--creamy-coat);
+  border: var(--stroke) solid rgba(93, 64, 55, 0.1);
+  color: var(--warm-bark);
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.social-link svg { width: 22px; height: 22px; display: block; }
+.social-link:hover {
+  transform: translateY(-2px);
+  background: var(--peach-pop);
+  color: #fff;
+  border-color: var(--peach-pop);
+}
+.social-links--footer { margin: var(--space-md) 0; }
+.social-links--footer .social-link {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.social-links--footer .social-link:hover {
+  background: var(--peach-pop);
+  border-color: var(--peach-pop);
+  color: #fff;
+}
