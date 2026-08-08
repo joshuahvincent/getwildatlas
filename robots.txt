@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://wildatlas.edu/sitemap.xml
+Sitemap: https://wildatlasapp.com/sitemap.xml
