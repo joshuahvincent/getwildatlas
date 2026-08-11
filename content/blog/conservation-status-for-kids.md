@@ -101,10 +101,11 @@ This framing matters. The child is not being told "this animal is about to go ex
 
 The app doesn't assume children already know what these terms mean. Each status links to a brief, narrated explanation — so a child who hears "Critically Endangered" for the first time also hears what that means: that scientists believe the species faces a very high risk of extinction in the wild if nothing changes. The label and the meaning arrive together.
 
-<figure class="portrait-shot">
+<div class="blog-app-screens">
   <img src="/assets/blog/conservation-hammerhead-page.png" alt="Hammerhead Shark in Wild Atlas — Critically Endangered badge in the Safety Guide">
-  <figcaption>The Hammerhead Shark: Critically Endangered. The label sits alongside Dangerous and No Venom — one fact among several, not a headline.</figcaption>
-</figure>
+  <img src="/assets/blog/conservation-status-guide.png" alt="Hammerhead Shark conservation status page — Almost Gone, this animal">
+</div>
+<p style="text-align:center; font-size:0.85rem; color:var(--muted); font-style:italic; margin-top:-1rem;">The Hammerhead Shark: Critically Endangered. Tap the badge and the app explains exactly what that means.</p>
 
 That distinction — between catastrophising and informing — is what the research on children's environmental learning consistently points to. Children who understand what Vulnerable means, and why a particular species is listed there, are processing real information. Children who are shielded from that information and then later discover it are more likely to feel deceived and more likely to feel helpless.
 
