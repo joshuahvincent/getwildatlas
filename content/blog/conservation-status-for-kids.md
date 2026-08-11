@@ -77,10 +77,11 @@ Some parents, when they first encounter this, ask the same question: is this too
 
 The research has a clear answer. And it is probably not the one you expect.
 
-<figure class="portrait-shot">
-  <img src="/assets/blog/conservation-status-guide.png" alt="Wild Atlas Conservation Status guide — what is conservation status?">
-  <figcaption>Wild Atlas explains conservation status in plain language, before a child ever encounters it on an animal page.</figcaption>
-</figure>
+<div class="blog-app-screens">
+  <img src="/assets/blog/conservation-sea-otter-page.png" alt="Sea Otter in Wild Atlas — In Danger badge in the Safety Guide">
+  <img src="/assets/blog/conservation-status-categories.png" alt="Wild Atlas Conservation Status guide — tap any animal's status badge to see what it means">
+</div>
+<p style="text-align:center; font-size:0.85rem; color:var(--muted); font-style:italic; margin-top:-1rem;">Tap the conservation status badge on any animal page and this guide opens — explaining every category in language a child can follow.</p>
 
 ## What children do with difficult information
 
@@ -96,19 +97,14 @@ The key finding, across this literature, is that the problem is not the difficul
 
 Wild Atlas presents conservation status as one fact among many — the same way it presents size, weight, diet, and habitat. It is part of the animal's profile, not a warning or a campaign. The Saola is Critically Endangered. That is a true thing about the Saola, the same way it is a true thing that the Saola was first documented by scientists in 1992 and that fewer than a hundred are thought to exist.
 
-<figure class="portrait-shot">
-  <img src="/assets/blog/conservation-status-categories.png" alt="Wild Atlas Conservation Status categories — from Gone to Safe">
-  <figcaption>The full conservation status scale as it appears in Wild Atlas — each category explained in language a child can follow.</figcaption>
-</figure>
-
 This framing matters. The child is not being told "this animal is about to go extinct and it's very sad." They are being told: here is what scientists think about this species right now. Here is the word that describes its situation. Here is why.
 
 The app doesn't assume children already know what these terms mean. Each status links to a brief, narrated explanation — so a child who hears "Critically Endangered" for the first time also hears what that means: that scientists believe the species faces a very high risk of extinction in the wild if nothing changes. The label and the meaning arrive together.
 
-<div class="blog-app-screens">
+<figure class="portrait-shot">
   <img src="/assets/blog/conservation-hammerhead-page.png" alt="Hammerhead Shark in Wild Atlas — Critically Endangered badge in the Safety Guide">
-  <img src="/assets/blog/conservation-sea-otter-page.png" alt="Sea Otter in Wild Atlas — In Danger badge in the Safety Guide">
-</div>
+  <figcaption>The Hammerhead Shark: Critically Endangered. The label sits alongside Dangerous and No Venom — one fact among several, not a headline.</figcaption>
+</figure>
 
 That distinction — between catastrophising and informing — is what the research on children's environmental learning consistently points to. Children who understand what Vulnerable means, and why a particular species is listed there, are processing real information. Children who are shielded from that information and then later discover it are more likely to feel deceived and more likely to feel helpless.
 
