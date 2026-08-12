@@ -6,12 +6,27 @@ The website for Wild Atlas (the iOS app). Marketing site, source/transparency pa
 
 This is the **website** repo. The **iOS app** lives in a separate repo: [`wildatlas`](https://github.com/joshuahvincent/wildatlas). The two repos are intentionally split — see the `wildatlas` repo's CLAUDE.md "Website Work" section for the rationale.
 
-## Status (as of 2026-05-13)
+## Status (as of 2026-08-11)
 
-- **Branch model:** just `main` for now. Will adopt integration → main flow if the repo grows or gains contributors.
-- **Deploy:** the Cloudflare Pages project `wildatlaswebsite` (apex `wildatlasapp.com`) currently still deploys from `wildatlas/website/`. The migration to `getwildatlas` is tracked at [getwildatlas#2](https://github.com/joshuahvincent/getwildatlas/issues/2). Until that cuts over, treat website pages as live-served from the `wildatlas` repo, with this repo as the new home.
-- **Tech stack:** [Eleventy](https://www.11ty.dev/) v3 (Node-based static site generator). Templating-only — no client-side framework shipped. Existing vanilla HTML/CSS/JS from `wildatlas/website/` lands here as passthrough; new pages (blog, future routes) render from markdown via Nunjucks layouts. See "Build & blog" section below.
-- **Reviewer:** Joshuah Vincent (solo for now).
+- **Branch model:** just `main`. Direct-to-`main` per [DEPLOY.md](DEPLOY.md) — see "Branch + PR rules" below.
+- **Deploy:** **live.** The Cloudflare Pages project `wildatlaswebsite` (apex `wildatlasapp.com`) deploys from **this repo's root**, `main` branch. The migration off `wildatlas/website/` is **complete** — [getwildatlas#2](https://github.com/joshuahvincent/getwildatlas/issues/2) closed 2026-05-21.
+- **Tech stack:** [Eleventy](https://www.11ty.dev/) v3 (Node-based static site generator). Templating-only — no client-side framework shipped. Vanilla HTML/CSS/JS at the repo root passes through; blog routes render from `content/blog/*.md` via Nunjucks layouts under `_includes/`. See "Build & blog" section below.
+- **Analytics:** Google Analytics 4 (`G-3ZQB7WVQJ1`) on every page. Website only — never the app. Two compliance follow-ups deferred by Josh (2026-08-11): privacy-policy disclosure + an EU/UK cookie-consent banner with GA Consent Mode.
+- **Owner:** **Wes** (website developer — everything at `wildatlasapp.com`). Josh is the sole approver for anything public.
+
+## Team / who's who
+
+Wild Atlas is a named team. Wes (this repo's owner) coordinates with:
+
+- **Josh** — sole approver for anything public. Nothing user-facing ships without his sign-off.
+- **Mara** — marketing director. Owns the content calendar and decides what the site publishes; owns the newsletter lists the Beehiiv capture funnels into.
+- **Blake** — blog / founder-voice content. Writes the posts Wes publishes.
+- **Cole** — copywriter. Brings approved site copy. **Wes does not author marketing claims** — Cole/Blake deliver copy that has cleared the advisor/copy gates upstream.
+- **Anna** — design lead. Visual judgment on site changes that carry the brand.
+- **Oskar** — partnerships / outreach. His campaigns land traffic on specific pages; the Beehiiv capture funnels into marketing-owned lists.
+- **Roger** — release manager, **app repo** (`wildatlas`). Cross-repo coordination — e.g. when the app links to a `wildatlasapp.com` URL (see "Cross-repo coordination").
+
+Process rules are set by **this repo's docs** ([DEPLOY.md](DEPLOY.md) is authoritative for deploy/branch flow); do **not** import the app repo's PR-only / integration-branch rules.
 
 ## Build & blog
 
@@ -41,7 +56,7 @@ Eleventy reads everything in this repo, passes most files through unchanged, and
   ```
 - **Listing:** `/blog/` renders from `blog/index.njk`, sorted newest first.
 - **Layouts:** `_includes/layouts/blog-base.njk` is the HTML shell shared by all blog routes. Once the migration brings over the main site's `css/styles.css`, fonts, and i18n JS, uncomment the asset links in `blog-base.njk` and the blog will adopt the main site's full styling automatically.
-- **Newsletter signup:** `_includes/partials/newsletter-signup.njk` posts to Buttondown. Replace the `wildatlas` username in the form action with the actual Buttondown handle once the account exists.
+- **Newsletter signup:** posts to **Beehiiv** (not Buttondown — that was the original plan, never shipped). The form POSTs to `/api/subscribe`, a **Cloudflare Pages Function** (`functions/api/subscribe.js`) that proxies to the Beehiiv API server-side so the API key never reaches the browser. **Single opt-in** (Josh's call — subscribers are active immediately, no confirmation email). Successful signups return the `INFORMED2026` custom offer code (free Farm Friends pack). Shipped under [getwildatlas#18](https://github.com/joshuahvincent/getwildatlas/issues/18). Lists are owned by marketing (Mara).
 
 ### Adding a new post
 
@@ -56,11 +71,12 @@ When a second writer needs to author posts without git, drop in [Sveltia CMS](ht
 
 ## Branch + PR rules
 
-- Default branch is `main`.
-- Direct commits to `main` are fine while it's a single-dev repo and the deploy isn't wired here yet.
-- Once the Cloudflare Pages cutover happens (#2), switch to PR-based review:
-  - Feature branch → PR → review → merge to `main`.
-  - Pages auto-deploys from `main` on merge.
+**[DEPLOY.md](DEPLOY.md) is authoritative for the deploy/branch flow.** In one line: commit to `main`, push, Cloudflare Pages auto-deploys in ~60s. Summary:
+
+- Default branch is `main`. **Direct commits to `main` are the norm** — no mandatory PR, no integration branch.
+- Push **is** publish (auto-deploy). So for **significant public-facing changes**, the approval moment is *before* the commit: build a preview (per-branch `*.wildatlaswebsite.pages.dev` or local), screenshot it, and get **Josh's sign-off first**. Routine/low-risk changes ship directly.
+- Use an optional `preview/<name>` branch when you want to eyeball a real URL before the apex domain; delete it once shipped.
+- **Do not import the `wildatlas` (app) repo's PR-only / `codex/mainline-integration` → `main` rules.** Those exist for iOS App Store safety; the website doesn't have those failure modes. Rollback here is just another commit.
 
 ## Cross-repo coordination — when website work originates from app side
 
