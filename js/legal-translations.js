@@ -5,7 +5,7 @@
 
 window.WILD_ATLAS_LEGAL = {
   privacy: {
-    en: `Effective Date: July 17, 2026
+    en: `Effective Date: August 18, 2026
 
 1. Introduction
 
@@ -17,18 +17,19 @@ Wild Atlas, operated by Wild Atlas LLC ("we," "our," or "us"), is committed to p
 
 We may collect information you voluntarily provide when using the App or Site, including:
 
-- Name and contact details (if you create an account)
 - Communications you send us (e.g., support requests or feedback)
 - Email address, if you subscribe to email updates on our Site
 
 2.2 Automatically Collected Information
 
-When you use the App, we may automatically collect certain technical information, including:
+Wild Atlas does not automatically collect personal information, device identifiers, or location, and does not build behavioural profiles. If a grown-up turns on anonymous usage statistics (see Section 4.1), the only information sent to our own servers is:
 
-- Device type, operating system version, and unique device identifiers
-- App usage data such as features accessed and session duration
-- Crash reports and performance diagnostics
-- IP address and general location (country/region level only)
+- App version and build number
+- Operating system major version
+- App language
+- Day-level counts of in-app activity (for example, which packs were opened, whether a download or audio clip failed, game and shop activity, and crash summaries)
+
+These values contain no names, no identifiers of any kind, and no location, and cannot be linked to any person or device. If usage statistics are turned off, none of this is sent.
 
 2.3 Payment Information
 
@@ -54,7 +55,7 @@ We do not sell, trade, or rent your personal information to third parties. We ma
 
 Trusted third-party vendors who assist us in operating the App and Site, including:
 
-- Analytics: We use PostHog (hosted on EU servers at eu.posthog.com) to collect anonymous, aggregated technical data and app usage trends. PostHog is configured without persistent user identifiers and does not capture child-specific events, behavioural profiles, or personal information. No data collected via PostHog is linked to identifiable individuals or used for behavioural advertising.
+- Analytics: Wild Atlas does not include any third-party analytics or advertising SDKs. With a grown-up's permission, Wild Atlas can send anonymous usage statistics to our own servers — daily counts such as which packs were opened, whether a download or audio clip failed, game and shop activity, and crash summaries. These counts contain no names, no identifiers of any kind, and no location; they cannot be linked to any person or device, and they are never shared with third parties. This can be turned off at any time in the Grown-ups area of Settings. Apple's App Store Connect additionally provides aggregated, anonymous statistics under Apple's privacy policy.
 - Content Delivery: We use Cloudflare to host and deliver audio asset packages; they may process basic technical information (e.g., IP addresses) to ensure secure delivery.
 - Email: We use beehiiv Inc. to manage newsletter subscriptions and send email updates to parents or guardians who sign up on our Site. beehiiv processes your email address as our service provider, under its own Privacy Policy. You subscribe by entering your email address and ticking the consent box on our Site; every email includes an unsubscribe link, and you can opt out at any time. We do not sell or rent your email address.
 
@@ -86,7 +87,7 @@ Seattle, WA 98118
 United States
 Email: info@wildatlasapp.com
 Website: www.wildatlasapp.com`,
-    de: `Inkrafttretensdatum: 14. Mai 2026
+    de: `Inkrafttretensdatum: 18. August 2026
 
 1. Einleitung
 
@@ -98,17 +99,13 @@ Wild Atlas wird von Wild Atlas LLC („wir", „uns" oder „unser") betrieben u
 
 Wir können Informationen erfassen, die Sie bei der Nutzung der App freiwillig bereitstellen, einschließlich:
 
-- Name und Kontaktdaten (wenn Sie ein Konto erstellen)
 - Mitteilungen, die Sie uns senden (z. B. Support-Anfragen oder Feedback)
 
 2.2 Automatisch erfasste Informationen
 
 Wenn Sie die App nutzen, erfassen wir möglicherweise automatisch bestimmte technische Informationen, einschließlich:
 
-- Gerätetyp, Betriebssystemversion und eindeutige Gerätekennungen
-- App-Nutzungsdaten wie aufgerufene Funktionen und Sitzungsdauer
 - Absturzberichte und Leistungsdiagnose
-- IP-Adresse und ungefähre Standortdaten (nur auf Land-/Regionsebene)
 
 2.3 Zahlungsinformationen
 
@@ -131,7 +128,7 @@ Wir verkaufen, vermieten oder tauschen Ihre persönlichen Informationen nicht an
 
 4.1 Dienstleister
 
-- Analytik: Wir verwenden PostHog (gehostet auf EU-Servern unter eu.posthog.com), um anonyme, aggregierte technische Daten und App-Nutzungstrends zu erfassen. PostHog ist ohne dauerhafte Nutzerkennungen konfiguriert und erfasst keine kinderspezifischen Ereignisse, Verhaltensprofile oder personenbezogenen Daten. Über PostHog erfasste Daten werden nicht mit identifizierbaren Personen verknüpft und nicht für verhaltensbasierte Werbung verwendet.
+- Analytik: Wild Atlas enthält keine Analyse- oder Werbe-SDKs von Drittanbietern. Mit Zustimmung einer erwachsenen Person kann Wild Atlas anonyme Nutzungsstatistiken an unsere eigenen Server senden — tägliche Zählwerte, etwa welche Packs geöffnet wurden, ob ein Download oder ein Audio-Clip fehlgeschlagen ist, Spiel- und Shop-Aktivität sowie Absturz-Zusammenfassungen. Diese Zählwerte enthalten keine Namen, keinerlei Kennungen und keinen Standort; sie können keiner Person und keinem Gerät zugeordnet werden und werden niemals an Dritte weitergegeben. Dies lässt sich jederzeit im Bereich „Für Erwachsene" der Einstellungen deaktivieren. Apples App Store Connect stellt zusätzlich aggregierte, anonyme Statistiken gemäß Apples Datenschutzrichtlinie bereit.
 - Content-Auslieferung: Wir verwenden Cloudflare zum Hosten und Ausliefern von Audio-Asset-Paketen; dabei können grundlegende technische Informationen (z. B. IP-Adressen) verarbeitet werden, um eine sichere Auslieferung zu gewährleisten.
 
 4.2 Gesetzliche Anforderungen
@@ -165,7 +162,7 @@ Vereinigte Staaten
 E-Mail: info@wildatlasapp.com
 
 Website: www.wildatlasapp.com`,
-    es: `Fecha de vigencia: 14 de mayo de 2026
+    es: `Fecha de vigencia: 18 de agosto de 2026
 
 1. Introducción
 
@@ -177,17 +174,13 @@ Wild Atlas, operada por Wild Atlas LLC («nosotros», «nuestro» o «nos»), se
 
 Podemos recopilar información que usted proporciona voluntariamente al utilizar la App, incluyendo:
 
-- Nombre y datos de contacto (si crea una cuenta)
 - Comunicaciones que nos envía (p. ej., solicitudes de soporte o comentarios)
 
 2.2 Información recopilada automáticamente
 
 Cuando utiliza la App, podemos recopilar automáticamente cierta información técnica, incluyendo:
 
-- Tipo de dispositivo, versión del sistema operativo e identificadores únicos del dispositivo
-- Datos de uso de la App, como funciones utilizadas y duración de la sesión
 - Informes de fallos y diagnósticos de rendimiento
-- Dirección IP y ubicación general (solo a nivel de país/región)
 
 2.3 Información de pago
 
@@ -210,7 +203,7 @@ No vendemos, intercambiamos ni alquilamos su información personal a terceros. P
 
 4.1 Proveedores de servicios
 
-- Analítica: Utilizamos PostHog (alojado en servidores de la UE en eu.posthog.com) para recopilar datos técnicos anónimos y agregados y tendencias de uso de la App. PostHog está configurado sin identificadores persistentes de usuario y no captura eventos específicos de menores, perfiles de comportamiento ni información personal. Ningún dato recopilado a través de PostHog se vincula a personas identificables ni se utiliza para publicidad comportamental.
+- Analítica: Wild Atlas no incluye SDK de análisis ni de publicidad de terceros. Con el permiso de una persona adulta, Wild Atlas puede enviar estadísticas de uso anónimas a nuestros propios servidores: recuentos diarios como qué packs se abrieron, si falló una descarga o un clip de audio, la actividad de juegos y tienda, y resúmenes de fallos. Estos recuentos no contienen nombres, ningún tipo de identificador ni ubicación; no pueden vincularse a ninguna persona ni dispositivo, y nunca se comparten con terceros. Se puede desactivar en cualquier momento en la sección «Para personas adultas» de la configuración. App Store Connect de Apple proporciona además estadísticas anónimas y agregadas bajo la política de privacidad de Apple.
 - Entrega de contenido: Utilizamos Cloudflare para alojar y entregar paquetes de recursos de audio; pueden procesar información técnica básica (p. ej., direcciones IP) para garantizar una entrega segura.
 
 4.2 Requisitos legales
@@ -244,7 +237,7 @@ Estados Unidos
 Correo electrónico: info@wildatlasapp.com
 
 Sitio web: www.wildatlasapp.com`,
-    fr: `Date d'entrée en vigueur : 14 mai 2026
+    fr: `Date d'entrée en vigueur : 18 août 2026
 
 1. Introduction
 
@@ -256,17 +249,13 @@ Wild Atlas, exploitée par Wild Atlas LLC (« nous », « notre » ou « nos »)
 
 Nous pouvons collecter les informations que vous fournissez volontairement lors de l'utilisation de l'Application, notamment :
 
-- Nom et coordonnées (si vous créez un compte)
 - Communications que vous nous envoyez (par exemple, demandes d'assistance ou commentaires)
 
 2.2 Informations collectées automatiquement
 
 Lorsque vous utilisez l'Application, nous pouvons collecter automatiquement certaines informations techniques, notamment :
 
-- Type d'appareil, version du système d'exploitation et identifiants uniques de l'appareil
-- Données d'utilisation de l'Application, telles que les fonctionnalités consultées et la durée des sessions
 - Rapports d'incidents et diagnostics de performance
-- Adresse IP et localisation générale (au niveau pays/région uniquement)
 
 2.3 Informations de paiement
 
@@ -289,7 +278,7 @@ Nous ne vendons, n'échangeons ni ne louons vos informations personnelles à des
 
 4.1 Prestataires de services
 
-- Analytique : Nous utilisons PostHog (hébergé sur des serveurs de l'UE à eu.posthog.com) pour collecter des données techniques anonymes et agrégées ainsi que des tendances d'utilisation de l'Application. PostHog est configuré sans identifiants persistants d'utilisateur et ne capte aucun événement spécifique aux enfants, profil comportemental ni information personnelle. Aucune donnée collectée via PostHog n'est liée à des personnes identifiables ni utilisée à des fins de publicité comportementale.
+- Analytique : Wild Atlas n'inclut aucun SDK d'analyse ou de publicité tiers. Avec l'accord d'un adulte, Wild Atlas peut envoyer des statistiques d'utilisation anonymes vers nos propres serveurs — des comptages quotidiens comme les packs ouverts, l'échec d'un téléchargement ou d'un clip audio, l'activité des jeux et de la boutique, et des résumés de plantages. Ces comptages ne contiennent aucun nom, aucun identifiant d'aucune sorte ni localisation ; ils ne peuvent être reliés à aucune personne ni à aucun appareil, et ne sont jamais partagés avec des tiers. Cela peut être désactivé à tout moment dans l'« Espace des grands » des réglages. App Store Connect d'Apple fournit en outre des statistiques anonymes et agrégées selon la politique de confidentialité d'Apple.
 - Diffusion de contenu : Nous utilisons Cloudflare pour héberger et diffuser des packs de ressources audio ; ils peuvent traiter des informations techniques de base (par exemple, des adresses IP) pour assurer une diffusion sécurisée.
 
 4.2 Exigences légales
@@ -323,7 +312,7 @@ Seattle, WA 98118
 E-mail : info@wildatlasapp.com
 
 Site web : www.wildatlasapp.com`,
-    zh: `生效日期：2026 年 5 月 14 日
+    zh: `生效日期：2026 年 8 月 18 日
 
 1. 简介
 
@@ -335,17 +324,13 @@ Wild Atlas 由 Wild Atlas LLC（"我们"）运营，致力于保护您的隐私�
 
 在使用本应用时，您可能会主动向我们提供以下信息：
 
-- 姓名和联系方式（如果您创建账户）
 - 您发送给我们的通讯内容（例如支持请求或反馈）
 
 2.2 自动收集的信息
 
 当您使用本应用时，我们可能会自动收集某些技术信息，包括：
 
-- 设备类型、操作系统版本和唯一设备标识符
-- 应用使用数据，例如访问的功能和会话时长
 - 崩溃报告和性能诊断
-- IP 地址和大致位置（仅限国家／地区级别）
 
 2.3 支付信息
 
@@ -368,7 +353,7 @@ Wild Atlas 提供应用内购买。所有支付交易均通过 Apple App Store �
 
 4.1 服务提供商
 
-- 分析：我们使用 PostHog（托管于位于 eu.posthog.com 的欧盟服务器）来收集匿名的、聚合的技术数据和应用使用趋势。PostHog 在配置上不使用持久性用户标识符，也不采集与儿童相关的特定事件、行为画像或个人信息。通过 PostHog 收集的数据不会与可识别的个人相关联，也不会用于行为定向广告。
+- 分析：Wild Atlas 不包含任何第三方分析或广告 SDK。经大人同意后，Wild Atlas 可以向我们自己的服务器发送匿名使用统计——每日计数，例如打开了哪些探索包、下载或音频是否失败、游戏和商店活动，以及崩溃摘要。这些计数不包含姓名、任何标识符或位置信息；无法关联到任何个人或设备，也绝不与第三方共享。您可以随时在设置的"大人专区"中关闭此功能。此外，Apple 的 App Store Connect 会依据 Apple 的隐私政策提供匿名的聚合统计数据。
 - 内容分发：我们使用 Cloudflare 托管并分发音频资源包；他们可能会处理基本的技术信息（例如 IP 地址）以确保安全交付。
 
 4.2 法律要求
