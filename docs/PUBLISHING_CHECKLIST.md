@@ -88,12 +88,25 @@ When a blog post publishes, a Beehiiv issue goes out within 1–2 days. Mara dra
 
 **Cadence:** send when there's something worth sharing — new post, new pack, major update. Target 2–3x/month. Do not send on a fixed schedule if there's nothing meaningful to share.
 
-**Per-post process:**
+**Per-issue process:**
 1. Post merges to main and deploys.
-2. Mara drafts a Beehiiv issue (teaser + link, or condensed version of the full piece).
-3. Mara sends Josh a Telegram with the draft and a one-line rationale ("ready to send — conservation post, solid piece, good for re-engagement").
-4. Josh approves or requests changes.
-5. Issue sends.
+2. Anna creates a new coloring page PDF for the issue (one set per issue — see below).
+3. PDF is added to `assets/downloads/` with an issue-numbered filename (e.g. `wild-atlas-coloring-book-issue-02.pdf`) and merged to main via PR.
+4. Mara drafts a Beehiiv issue (teaser + link, free gift block pointing to the new PDF).
+5. Mara sends Josh a Telegram with the draft and a one-line rationale.
+6. Josh approves or requests changes.
+7. Issue sends.
+
+### Coloring pages — standing deliverable
+
+Every newsletter issue ships with a free printable coloring page PDF. This is a recurring creative asset owned by Anna.
+
+- **Filename convention:** `assets/downloads/wild-atlas-coloring-book-issue-NN.pdf`
+- **Public URL pattern:** `https://wildatlasapp.com/assets/downloads/wild-atlas-coloring-book-issue-NN.pdf`
+- **Format:** 6 pages, one Wild Atlas animal per page, A4/Letter, black and white line art, 300dpi
+- **Brief template:** see GitHub issue #698 for the full brief — reuse it for each issue, swapping the animal list
+
+Anna should be briefed at the start of each issue cycle so the PDF is ready before the email drafts. Lead time: ~1 week.
 
 ---
 
