@@ -22,14 +22,15 @@ We may collect information you voluntarily provide when using the App or Site, i
 
 2.2 Automatically Collected Information
 
-Wild Atlas does not automatically collect personal information, device identifiers, or location, and does not build behavioural profiles. If a grown-up turns on anonymous usage statistics (see Section 4.1), the only information sent to our own servers is:
+The Wild Atlas app does not automatically collect personal information, device identifiers, or location, and does not build behavioural profiles. If a grown-up turns on anonymous usage statistics (see Section 4.1), the only information sent to our own servers is:
 
 - App version and build number
 - Operating system major version
 - App language
+- A coarse band for how long ago the app was installed (for example, 8-14 days)
 - Day-level counts of in-app activity (for example, which packs were opened, whether a download or audio clip failed, game and shop activity, and crash summaries)
 
-These values contain no names, no identifiers of any kind, and no location, and cannot be linked to any person or device. If usage statistics are turned off, none of this is sent.
+These values contain no names and no identifiers of any kind, and we never link them to a person or a device. As with any internet request, our hosting provider processes basic technical information such as an IP address to deliver the request securely; we do not use it to identify anyone and it is not stored alongside these counts. If usage statistics are turned off, none of this is sent. Separately, our website uses Google Analytics — see Section 4.1.
 
 2.3 Payment Information
 
@@ -55,7 +56,8 @@ We do not sell, trade, or rent your personal information to third parties. We ma
 
 Trusted third-party vendors who assist us in operating the App and Site, including:
 
-- Analytics: Wild Atlas does not include any third-party analytics or advertising SDKs. With a grown-up's permission, Wild Atlas can send anonymous usage statistics to our own servers — daily counts such as which packs were opened, whether a download or audio clip failed, game and shop activity, and crash summaries. These counts contain no names, no identifiers of any kind, and no location; they cannot be linked to any person or device, and they are never shared with third parties. This can be turned off at any time in the Grown-ups area of Settings. Apple's App Store Connect additionally provides aggregated, anonymous statistics under Apple's privacy policy.
+- Analytics: The Wild Atlas app does not include any third-party analytics or advertising SDKs. With a grown-up's permission, Wild Atlas can send anonymous usage statistics to our own servers — daily counts such as which packs were opened, whether a download or audio clip failed, game and shop activity, and crash summaries. These counts contain no names and no identifiers of any kind, and we never link them to a person or a device. As with any internet request, our hosting provider processes basic technical information such as an IP address to deliver the request securely; we do not use it to identify anyone and it is not stored alongside these counts. These counts are never shared with third parties. This can be turned off at any time in the Grown-ups area of Settings. Apple's App Store Connect additionally provides aggregated, anonymous statistics under Apple's privacy policy.
+- Site Analytics: Our website (not the App) uses Google Analytics to measure aggregate traffic to wildatlasapp.com. Google may set cookies in your browser and processes technical information such as IP address and browser type under Google's own privacy policy. The Wild Atlas app does not use Google Analytics.
 - Content Delivery: We use Cloudflare to host and deliver audio asset packages; they may process basic technical information (e.g., IP addresses) to ensure secure delivery.
 - Email: We use beehiiv Inc. to manage newsletter subscriptions and send email updates to parents or guardians who sign up on our Site. beehiiv processes your email address as our service provider, under its own Privacy Policy. You subscribe by entering your email address and ticking the consent box on our Site; every email includes an unsubscribe link, and you can opt out at any time. We do not sell or rent your email address.
 
@@ -103,9 +105,15 @@ Wir können Informationen erfassen, die Sie bei der Nutzung der App freiwillig b
 
 2.2 Automatisch erfasste Informationen
 
-Wenn Sie die App nutzen, erfassen wir möglicherweise automatisch bestimmte technische Informationen, einschließlich:
+Die Wild Atlas App erfasst nicht automatisch personenbezogene Daten, Gerätekennungen oder Standortdaten und erstellt keine Verhaltensprofile. Wenn eine erwachsene Person anonyme Nutzungsstatistiken aktiviert (siehe Abschnitt 4.1), werden ausschließlich die folgenden Informationen an unsere eigenen Server gesendet:
 
-- Absturzberichte und Leistungsdiagnose
+- App-Version und Build-Nummer
+- Hauptversion des Betriebssystems
+- App-Sprache
+- Eine grobe Spanne, wie lange die Installation zurückliegt (zum Beispiel 8–14 Tage)
+- Tagesbezogene Zählwerte der App-Nutzung (zum Beispiel welche Packs geöffnet wurden, ob ein Download oder ein Audio-Clip fehlgeschlagen ist, Spiel- und Shop-Aktivität sowie Absturz-Zusammenfassungen)
+
+Diese Werte enthalten keine Namen und keinerlei Kennungen, und wir verknüpfen sie niemals mit einer Person oder einem Gerät. Wie bei jeder Internet-Anfrage verarbeitet unser Hosting-Anbieter grundlegende technische Informationen wie eine IP-Adresse, um die Anfrage sicher auszuliefern; wir verwenden sie nicht zur Identifizierung von Personen, und sie wird nicht zusammen mit diesen Zählwerten gespeichert. Sind die Nutzungsstatistiken deaktiviert, wird nichts davon gesendet. Unabhängig davon verwendet unsere Website Google Analytics — siehe Abschnitt 4.1.
 
 2.3 Zahlungsinformationen
 
@@ -128,8 +136,9 @@ Wir verkaufen, vermieten oder tauschen Ihre persönlichen Informationen nicht an
 
 4.1 Dienstleister
 
-- Analytik: Wild Atlas enthält keine Analyse- oder Werbe-SDKs von Drittanbietern. Mit Zustimmung einer erwachsenen Person kann Wild Atlas anonyme Nutzungsstatistiken an unsere eigenen Server senden — tägliche Zählwerte, etwa welche Packs geöffnet wurden, ob ein Download oder ein Audio-Clip fehlgeschlagen ist, Spiel- und Shop-Aktivität sowie Absturz-Zusammenfassungen. Diese Zählwerte enthalten keine Namen, keinerlei Kennungen und keinen Standort; sie können keiner Person und keinem Gerät zugeordnet werden und werden niemals an Dritte weitergegeben. Dies lässt sich jederzeit im Bereich „Für Erwachsene" der Einstellungen deaktivieren. Apples App Store Connect stellt zusätzlich aggregierte, anonyme Statistiken gemäß Apples Datenschutzrichtlinie bereit.
+- Analytik: Die Wild Atlas App enthält keine Analyse- oder Werbe-SDKs von Drittanbietern. Mit Zustimmung einer erwachsenen Person kann Wild Atlas anonyme Nutzungsstatistiken an unsere eigenen Server senden — tägliche Zählwerte, etwa welche Packs geöffnet wurden, ob ein Download oder ein Audio-Clip fehlgeschlagen ist, Spiel- und Shop-Aktivität sowie Absturz-Zusammenfassungen. Diese Zählwerte enthalten keine Namen und keinerlei Kennungen, und wir verknüpfen sie niemals mit einer Person oder einem Gerät. Wie bei jeder Internet-Anfrage verarbeitet unser Hosting-Anbieter grundlegende technische Informationen wie eine IP-Adresse, um die Anfrage sicher auszuliefern; wir verwenden sie nicht zur Identifizierung von Personen, und sie wird nicht zusammen mit diesen Zählwerten gespeichert. Diese Zählwerte werden niemals an Dritte weitergegeben. Dies lässt sich jederzeit im Bereich „Für Erwachsene" der Einstellungen deaktivieren. Apples App Store Connect stellt zusätzlich aggregierte, anonyme Statistiken gemäß Apples Datenschutzrichtlinie bereit.
 - Content-Auslieferung: Wir verwenden Cloudflare zum Hosten und Ausliefern von Audio-Asset-Paketen; dabei können grundlegende technische Informationen (z. B. IP-Adressen) verarbeitet werden, um eine sichere Auslieferung zu gewährleisten.
+- Website-Analyse: Unsere Website (nicht die App) verwendet Google Analytics, um den aggregierten Website-Verkehr auf wildatlasapp.com zu messen. Google kann dabei Cookies in Ihrem Browser setzen und verarbeitet technische Informationen wie IP-Adresse und Browsertyp gemäß der eigenen Datenschutzerklärung von Google. Die Wild Atlas App verwendet Google Analytics nicht.
 
 4.2 Gesetzliche Anforderungen
 
@@ -178,9 +187,15 @@ Podemos recopilar información que usted proporciona voluntariamente al utilizar
 
 2.2 Información recopilada automáticamente
 
-Cuando utiliza la App, podemos recopilar automáticamente cierta información técnica, incluyendo:
+La app Wild Atlas no recopila automáticamente información personal, identificadores de dispositivo ni ubicación, y no elabora perfiles de comportamiento. Si una persona adulta activa las estadísticas de uso anónimas (véase la Sección 4.1), la única información que se envía a nuestros propios servidores es:
 
-- Informes de fallos y diagnósticos de rendimiento
+- Versión de la app y número de compilación
+- Versión principal del sistema operativo
+- Idioma de la app
+- Un rango aproximado del tiempo transcurrido desde la instalación (por ejemplo, 8–14 días)
+- Recuentos diarios de actividad en la app (por ejemplo, qué packs se abrieron, si falló una descarga o un clip de audio, la actividad de juegos y tienda, y resúmenes de fallos)
+
+Estos valores no contienen nombres ni ningún tipo de identificador, y nunca los vinculamos a una persona ni a un dispositivo. Como en cualquier solicitud de internet, nuestro proveedor de alojamiento procesa información técnica básica, como una dirección IP, para entregar la solicitud de forma segura; no la utilizamos para identificar a nadie y no se almacena junto a estos recuentos. Si las estadísticas de uso están desactivadas, no se envía nada de esto. Por separado, nuestro sitio web utiliza Google Analytics: véase la Sección 4.1.
 
 2.3 Información de pago
 
@@ -203,8 +218,9 @@ No vendemos, intercambiamos ni alquilamos su información personal a terceros. P
 
 4.1 Proveedores de servicios
 
-- Analítica: Wild Atlas no incluye SDK de análisis ni de publicidad de terceros. Con el permiso de una persona adulta, Wild Atlas puede enviar estadísticas de uso anónimas a nuestros propios servidores: recuentos diarios como qué packs se abrieron, si falló una descarga o un clip de audio, la actividad de juegos y tienda, y resúmenes de fallos. Estos recuentos no contienen nombres, ningún tipo de identificador ni ubicación; no pueden vincularse a ninguna persona ni dispositivo, y nunca se comparten con terceros. Se puede desactivar en cualquier momento en la sección «Para personas adultas» de la configuración. App Store Connect de Apple proporciona además estadísticas anónimas y agregadas bajo la política de privacidad de Apple.
+- Analítica: La app Wild Atlas no incluye SDK de análisis ni de publicidad de terceros. Con el permiso de una persona adulta, Wild Atlas puede enviar estadísticas de uso anónimas a nuestros propios servidores: recuentos diarios como qué packs se abrieron, si falló una descarga o un clip de audio, la actividad de juegos y tienda, y resúmenes de fallos. Estos recuentos no contienen nombres ni ningún tipo de identificador, y nunca los vinculamos a una persona ni a un dispositivo. Como en cualquier solicitud de internet, nuestro proveedor de alojamiento procesa información técnica básica, como una dirección IP, para entregar la solicitud de forma segura; no la utilizamos para identificar a nadie y no se almacena junto a estos recuentos. Estos recuentos nunca se comparten con terceros. Se puede desactivar en cualquier momento en la sección «Para personas adultas» de la configuración. App Store Connect de Apple proporciona además estadísticas anónimas y agregadas bajo la política de privacidad de Apple.
 - Entrega de contenido: Utilizamos Cloudflare para alojar y entregar paquetes de recursos de audio; pueden procesar información técnica básica (p. ej., direcciones IP) para garantizar una entrega segura.
+- Analítica del sitio web: Nuestro sitio web (no la App) utiliza Google Analytics para medir el tráfico agregado en wildatlasapp.com. Google puede instalar cookies en su navegador y procesa información técnica como la dirección IP y el tipo de navegador conforme a su propia política de privacidad. La app Wild Atlas no utiliza Google Analytics.
 
 4.2 Requisitos legales
 
@@ -253,9 +269,15 @@ Nous pouvons collecter les informations que vous fournissez volontairement lors 
 
 2.2 Informations collectées automatiquement
 
-Lorsque vous utilisez l'Application, nous pouvons collecter automatiquement certaines informations techniques, notamment :
+L'application Wild Atlas ne collecte pas automatiquement d'informations personnelles, d'identifiants d'appareil ni de localisation, et n'établit aucun profil comportemental. Si un adulte active les statistiques d'utilisation anonymes (voir la Section 4.1), les seules informations envoyées à nos propres serveurs sont :
 
-- Rapports d'incidents et diagnostics de performance
+- La version de l'application et le numéro de build
+- La version majeure du système d'exploitation
+- La langue de l'application
+- Une tranche approximative du temps écoulé depuis l'installation (par exemple, 8–14 jours)
+- Des comptages quotidiens de l'activité dans l'application (par exemple, les packs ouverts, l'échec d'un téléchargement ou d'un clip audio, l'activité des jeux et de la boutique, et des résumés de plantages)
+
+Ces valeurs ne contiennent aucun nom ni aucun identifiant d'aucune sorte, et nous ne les relions jamais à une personne ni à un appareil. Comme pour toute requête internet, notre hébergeur traite des informations techniques de base telles qu'une adresse IP afin de délivrer la requête de manière sécurisée ; nous ne l'utilisons pas pour identifier qui que ce soit et elle n'est pas conservée avec ces comptages. Si les statistiques d'utilisation sont désactivées, rien de tout cela n'est envoyé. Par ailleurs, notre site web utilise Google Analytics — voir la Section 4.1.
 
 2.3 Informations de paiement
 
@@ -278,8 +300,9 @@ Nous ne vendons, n'échangeons ni ne louons vos informations personnelles à des
 
 4.1 Prestataires de services
 
-- Analytique : Wild Atlas n'inclut aucun SDK d'analyse ou de publicité tiers. Avec l'accord d'un adulte, Wild Atlas peut envoyer des statistiques d'utilisation anonymes vers nos propres serveurs — des comptages quotidiens comme les packs ouverts, l'échec d'un téléchargement ou d'un clip audio, l'activité des jeux et de la boutique, et des résumés de plantages. Ces comptages ne contiennent aucun nom, aucun identifiant d'aucune sorte ni localisation ; ils ne peuvent être reliés à aucune personne ni à aucun appareil, et ne sont jamais partagés avec des tiers. Cela peut être désactivé à tout moment dans l'« Espace des grands » des réglages. App Store Connect d'Apple fournit en outre des statistiques anonymes et agrégées selon la politique de confidentialité d'Apple.
+- Analytique : L'application Wild Atlas n'inclut aucun SDK d'analyse ou de publicité tiers. Avec l'accord d'un adulte, Wild Atlas peut envoyer des statistiques d'utilisation anonymes vers nos propres serveurs — des comptages quotidiens comme les packs ouverts, l'échec d'un téléchargement ou d'un clip audio, l'activité des jeux et de la boutique, et des résumés de plantages. Ces comptages ne contiennent aucun nom ni aucun identifiant d'aucune sorte, et nous ne les relions jamais à une personne ni à un appareil. Comme pour toute requête internet, notre hébergeur traite des informations techniques de base telles qu'une adresse IP afin de délivrer la requête de manière sécurisée ; nous ne l'utilisons pas pour identifier qui que ce soit et elle n'est pas conservée avec ces comptages. Ces comptages ne sont jamais partagés avec des tiers. Cela peut être désactivé à tout moment dans l'« Espace des grands » des réglages. App Store Connect d'Apple fournit en outre des statistiques anonymes et agrégées selon la politique de confidentialité d'Apple.
 - Diffusion de contenu : Nous utilisons Cloudflare pour héberger et diffuser des packs de ressources audio ; ils peuvent traiter des informations techniques de base (par exemple, des adresses IP) pour assurer une diffusion sécurisée.
+- Analytique du site : Notre site web (et non l'Application) utilise Google Analytics pour mesurer le trafic agrégé sur wildatlasapp.com. Google peut déposer des cookies dans votre navigateur et traite des informations techniques telles que l'adresse IP et le type de navigateur selon sa propre politique de confidentialité. L'application Wild Atlas n'utilise pas Google Analytics.
 
 4.2 Exigences légales
 
@@ -328,9 +351,15 @@ Wild Atlas 由 Wild Atlas LLC（"我们"）运营，致力于保护您的隐私�
 
 2.2 自动收集的信息
 
-当您使用本应用时，我们可能会自动收集某些技术信息，包括：
+Wild Atlas 应用不会自动收集个人信息、设备标识符或位置信息，也不会建立行为画像。如果大人开启了匿名使用统计（见第 4.1 节），发送到我们自己服务器的信息仅限于：
 
-- 崩溃报告和性能诊断
+- 应用版本和构建号
+- 操作系统主版本号
+- 应用语言
+- 距离安装时间的粗略区间（例如 8–14 天）
+- 应用内活动的按日计数（例如打开了哪些探索包、下载或音频是否失败、游戏和商店活动，以及崩溃摘要）
+
+这些数值不包含姓名，也不包含任何形式的标识符，我们绝不会将其与任何个人或设备相关联。与任何互联网请求一样，我们的托管服务商会处理诸如 IP 地址之类的基本技术信息，以便安全地传送该请求；我们不会用它来识别任何人，它也不会与这些计数一同存储。如果关闭使用统计，则不会发送上述任何内容。此外，我们的网站使用 Google Analytics——见第 4.1 节。
 
 2.3 支付信息
 
@@ -353,8 +382,9 @@ Wild Atlas 提供应用内购买。所有支付交易均通过 Apple App Store �
 
 4.1 服务提供商
 
-- 分析：Wild Atlas 不包含任何第三方分析或广告 SDK。经大人同意后，Wild Atlas 可以向我们自己的服务器发送匿名使用统计——每日计数，例如打开了哪些探索包、下载或音频是否失败、游戏和商店活动，以及崩溃摘要。这些计数不包含姓名、任何标识符或位置信息；无法关联到任何个人或设备，也绝不与第三方共享。您可以随时在设置的"大人专区"中关闭此功能。此外，Apple 的 App Store Connect 会依据 Apple 的隐私政策提供匿名的聚合统计数据。
+- 分析：Wild Atlas 应用不包含任何第三方分析或广告 SDK。经大人同意后，Wild Atlas 可以向我们自己的服务器发送匿名使用统计——每日计数，例如打开了哪些探索包、下载或音频是否失败、游戏和商店活动，以及崩溃摘要。这些计数不包含姓名，也不包含任何形式的标识符，我们绝不会将其与任何个人或设备相关联。与任何互联网请求一样，我们的托管服务商会处理诸如 IP 地址之类的基本技术信息，以便安全地传送该请求；我们不会用它来识别任何人，它也不会与这些计数一同存储。这些计数绝不与第三方共享。您可以随时在设置的"大人专区"中关闭此功能。此外，Apple 的 App Store Connect 会依据 Apple 的隐私政策提供匿名的聚合统计数据。
 - 内容分发：我们使用 Cloudflare 托管并分发音频资源包；他们可能会处理基本的技术信息（例如 IP 地址）以确保安全交付。
+- 网站分析：我们的网站（而非本应用）使用 Google Analytics 衡量 wildatlasapp.com 的汇总访问量。Google 可能会在您的浏览器中设置 Cookie，并依据其自身的隐私政策处理 IP 地址、浏览器类型等技术信息。Wild Atlas 应用不使用 Google Analytics。
 
 4.2 法律要求
 
