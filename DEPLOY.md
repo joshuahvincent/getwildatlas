@@ -6,10 +6,19 @@ This is a website, not an iOS app. No App Store review, no audio pipeline, no mi
 
 ## Where the site deploys from (today)
 
-| When | Source path | Repo | Cloudflare Pages project |
+| Source path | Repo | Branch | Cloudflare Pages project |
 |---|---|---|---|
-| Until [getwildatlas#2](https://github.com/joshuahvincent/getwildatlas/issues/2) cuts over | `wildatlas/website/` | [`wildatlas`](https://github.com/joshuahvincent/wildatlas) | `wildatlaswebsite` |
-| After the migration | `Website/` (this repo, at the root) | [`getwildatlas`](https://github.com/joshuahvincent/getwildatlas) | same project, re-wired |
+| repo root | [`getwildatlas`](https://github.com/joshuahvincent/getwildatlas) | `main` | `wildatlaswebsite` |
+
+The migration off `wildatlas/website/` is **complete** — [getwildatlas#2](https://github.com/joshuahvincent/getwildatlas/issues/2) closed 2026-05-21. This repo is the only source of `wildatlasapp.com`; there is nothing left to cut over.
+
+If you ever need to re-confirm that from scratch, the cheap check is a short link that exists *only* in this repo's `_redirects`:
+
+```bash
+curl -sI https://wildatlasapp.com/kids | head -n1
+```
+
+`301` → this repo is live. `404` → the Pages project has been re-pointed somewhere else, go look at the dashboard.
 
 The Cloudflare Pages project is bound to the apex hostname (`wildatlasapp.com`). It watches `main` and rebuilds on every push.
 
@@ -79,11 +88,38 @@ If a deploy is catastrophically broken and you need it gone *now* rather than in
 - **No release notes.** Commit message is the release note. Keep them descriptive.
 - **No staging environment.** Per-branch previews are the staging environment.
 
-## After the `getwildatlas#2` migration
+## Creator campaign landing pages
 
-When the Cloudflare Pages project is re-wired to deploy from this repo (`getwildatlas`) instead of `wildatlas/website/`:
+Short links an influencer drops in a story sticker — `wildatlasapp.com/<slug>`.
+Each one hands the visitor an App Store link plus an offer code, and reports to GA4.
 
-1. This document moves with the source — already lives in this repo, ready.
-2. Edit `Website/CLAUDE.md` to mark the migration complete.
-3. Edit `WORKSPACE.md` at the workspace root to update "live site source" pointer.
-4. The deploy process itself — commit to main, push, auto-deploy — does not change.
+**Adding a creator is a data edit, not a code change.** Append one entry to the
+`creators` array in [`_data/creators.json`](_data/creators.json); `creator-link.njk`
+generates `/<slug>/` on the next build. Never copy the template.
+
+```json
+{
+  "slug": "somebody",
+  "creator": "somebody_handle",
+  "channel": "instagram",
+  "campaignToken": "somebody-ig-sep26",
+  "code": "SOMEBODYCODE",
+  "packName": "Dino Roars",
+  "headline": "@somebody_handle sent you.",
+  "subhead": "Here's a free dinosaur pack for your explorers."
+}
+```
+
+One slug per **channel**, not per creator — that's what makes Instagram and TikTok
+traffic separable in GA4 and in App Store Connect.
+
+Notes:
+
+- **`providerToken` is set once, at the top of the file**, not per creator. It comes
+  back in the campaign URL Apple generates in App Store Connect (Analytics →
+  Acquisition → Campaigns) and is the same value for every campaign. While it is
+  empty, every page falls back to the plain product URL — deliberately, so we never
+  ship a malformed `?pt=&ct=` link.
+- These pages are `noindex, nofollow` and are excluded from collections. `sitemap.xml`
+  is hand-maintained — **do not add creator slugs to it.**
+- Offer codes are generated in App Store Connect against the non-consumable IAP.

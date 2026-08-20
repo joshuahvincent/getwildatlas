@@ -1,0 +1,215 @@
+---
+# Creator campaign landing pages.
+#
+# One page per entry in _data/creators.json -> creators[]. Adding a creator is a
+# JSON edit; this template never needs to change.
+#
+# Deliberately self-contained (inline CSS/JS, no /css/styles.css link): these are
+# single-screen pages opened from Instagram/TikTok in-app browsers on cellular,
+# where the main site's global shell (fixed promo bar, navbar, i18n boot JS)
+# would both break the layout and cost round-trips. Colours below are copied
+# from the :root block in css/styles.css -- keep them in sync if the brand
+# palette moves.
+pagination:
+  data: creators.creators
+  size: 1
+  alias: c
+permalink: "/{{ c.slug }}/index.html"
+eleventyExcludeFromCollections: true
+sitemap: false
+---
+{#- Campaign-tokenised store URL. Both tokens must be present, else fall back to
+    the plain product URL -- never emit `?pt=&ct=`, which Apple treats as malformed. -#}
+{%- set storeUrl = "https://apps.apple.com/us/app/wild-atlas/id" + creators.appStoreId -%}
+{%- if creators.providerToken and c.campaignToken -%}
+  {%- set storeUrl = storeUrl + "?pt=" + creators.providerToken + "&ct=" + c.campaignToken + "&mt=8" -%}
+{%- endif -%}
+{%- set redeemUrl = "https://apps.apple.com/redeem?ctx=offercodes&id=" + creators.appStoreId + "&code=" + c.code -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Wild Atlas — {{ c.headline }}</title>
+<meta name="theme-color" content="#FFF5E1">
+
+{#- Not indexed, but link previews still render when the URL is pasted into a DM. -#}
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wild Atlas — {{ c.headline }}">
+<meta property="og:description" content="{{ c.subhead }} Free {{ c.packName }} pack inside.">
+<meta property="og:image" content="https://wildatlasapp.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" href="/assets/app-icon-288.png">
+<link rel="apple-touch-icon" href="/assets/app-icon-288.png">
+<link rel="preload" href="/fonts/Fredoka-VariableFont_wdth,wght.ttf" as="font" type="font/ttf" crossorigin>
+
+<!-- Google tag (gtag.js) — marketing site only, never the app. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZQB7WVQJ1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3ZQB7WVQJ1');
+</script>
+
+<style>
+  /* Self-hosted, same files the main site uses — no third-party font CDN. */
+  @font-face{font-family:'Fredoka';src:url('/fonts/Fredoka-VariableFont_wdth,wght.ttf') format('truetype');font-weight:300 700;font-display:swap}
+  @font-face{font-family:'Nunito';src:url('/fonts/Nunito-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+  @font-face{font-family:'Nunito';src:url('/fonts/Nunito-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
+
+  :root{
+    --peach-pop:#FF9E7D; --minty-fresh:#A8E6CF; --creamy-coat:#FFF5E1;
+    --warm-bark:#5D4037; --radius-md:24px; --radius-full:9999px; --stroke:3px;
+    --font-heading:'Fredoka',system-ui,sans-serif;
+    --font-body:'Nunito',system-ui,-apple-system,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; min-height:100dvh; display:flex; align-items:center; justify-content:center;
+    background:var(--creamy-coat); color:var(--warm-bark); font-family:var(--font-body);
+    padding:24px calc(20px + env(safe-area-inset-right)) calc(24px + env(safe-area-inset-bottom)) calc(20px + env(safe-area-inset-left));
+    -webkit-text-size-adjust:100%;
+  }
+  .card{width:100%; max-width:420px; text-align:center}
+  .logo{width:96px; height:96px; border-radius:var(--radius-md); box-shadow:0 6px 0 rgba(93,64,55,.15)}
+  h1{font-family:var(--font-heading); font-size:1.65rem; line-height:1.2; margin:20px 0 6px}
+  p.sub{margin:0 0 24px; font-size:1.05rem; opacity:.85}
+
+  .cta{
+    display:block; width:100%; min-height:56px; padding:18px 20px;
+    border-radius:var(--radius-full); background:var(--peach-pop); color:#fff;
+    text-decoration:none; font-family:var(--font-heading); font-size:1.2rem; font-weight:600;
+    border:var(--stroke) solid var(--warm-bark); box-shadow:0 5px 0 var(--warm-bark);
+  }
+  .cta:active{transform:translateY(3px); box-shadow:0 2px 0 var(--warm-bark)}
+
+  .codebox{margin-top:26px; padding:18px; border:var(--stroke) dashed var(--warm-bark); border-radius:var(--radius-md); background:#fff}
+  .codelabel{font-size:.85rem; text-transform:uppercase; letter-spacing:.08em; opacity:.7; margin:0 0 8px}
+  /* user-select:all means a single tap-and-hold grabs the whole code — the
+     always-available manual path if both programmatic copy routes fail. */
+  .code{font-family:var(--font-heading); font-size:1.6rem; font-weight:600; letter-spacing:.04em; margin:0; user-select:all; -webkit-user-select:all}
+  .copy{
+    margin-top:12px; min-height:44px; padding:10px 20px; border-radius:var(--radius-full);
+    cursor:pointer; background:var(--minty-fresh); border:2px solid var(--warm-bark);
+    font-family:var(--font-body); font-weight:700; color:var(--warm-bark); font-size:1rem;
+  }
+  .copy:active{transform:translateY(1px)}
+  .steps{margin:18px 0 0; font-size:.9rem; line-height:1.5; opacity:.85}
+  .steps a{color:inherit}
+  .foot{margin-top:26px; font-size:.8rem; opacity:.6}
+  .foot a{color:inherit}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+  <main class="card">
+    <img class="logo" src="/assets/app-icon-288.png" width="96" height="96" alt="Wild Atlas" fetchpriority="high">
+    <h1>{{ c.headline }}</h1>
+    <p class="sub">{{ c.subhead }}</p>
+
+    <a class="cta" id="cta" href="{{ storeUrl }}">Get Wild Atlas — free</a>
+
+    <div class="codebox">
+      <p class="codelabel">Your free {{ c.packName }} code</p>
+      <p class="code" id="code">{{ c.code }}</p>
+      <button class="copy" id="copy" type="button">Copy code</button>
+      <p class="status" id="status" role="status" aria-live="polite" hidden></p>
+      <p class="steps">Install the app, open <strong>Shop</strong>, tap <strong>&ldquo;Have a code?&rdquo;</strong> and paste it in.<br>
+      Already have Wild Atlas? <a href="{{ redeemUrl }}" id="redeem">Redeem it here</a>.</p>
+    </div>
+
+    <p class="foot">No ads. No tracking of your kids. Works offline.<br>
+    <a href="https://wildatlasapp.com">wildatlasapp.com</a></p>
+  </main>
+
+{#- Campaign metadata as a JSON island rather than inline JS literals: no way for
+    a stray `</script>` in creator copy to break out of the script block. -#}
+<script type="application/json" id="campaign-meta">
+{{ {"creator": c.creator, "channel": c.channel, "campaign": c.campaignToken, "slug": c.slug} | dump | replace("</", "<\\/") | safe }}
+</script>
+<script>
+(function(){
+  "use strict";
+  var META = JSON.parse(document.getElementById('campaign-meta').textContent);
+
+  // transport_type:'beacon' so the click events survive the page being torn down
+  // by the App Store handoff — in-app browsers kill in-flight XHRs aggressively.
+  function ev(name, extra){
+    var p = {creator: META.creator, channel: META.channel, campaign: META.campaign,
+             slug: META.slug, transport_type: 'beacon'};
+    for (var k in (extra || {})) { if (Object.prototype.hasOwnProperty.call(extra, k)) p[k] = extra[k]; }
+    if (typeof gtag === 'function') gtag('event', name, p);
+  }
+
+  ev('creator_landing');
+
+  document.getElementById('cta').addEventListener('click', function(){ ev('creator_appstore_tap'); });
+  document.getElementById('redeem').addEventListener('click', function(){ ev('creator_redeem_tap'); });
+
+  var codeEl   = document.getElementById('code');
+  var btn      = document.getElementById('copy');
+  var statusEl = document.getElementById('status');
+
+  function say(msg){ statusEl.textContent = msg; statusEl.hidden = false; }
+
+  // Legacy path for in-app browsers without the async clipboard API. iOS WebKit
+  // ignores textarea.select(), so select via a Range and setSelectionRange;
+  // font-size must be >=16px or iOS zooms the viewport on focus.
+  function legacyCopy(text){
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.contentEditable = 'true';
+    ta.style.cssText = 'position:fixed;top:0;left:0;width:1px;height:1px;padding:0;border:0;opacity:0;font-size:16px;';
+    document.body.appendChild(ta);
+    var ok = false;
+    try {
+      var range = document.createRange();
+      range.selectNodeContents(ta);
+      var sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      ta.setSelectionRange(0, text.length);
+      ok = document.execCommand('copy');
+    } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    return ok;
+  }
+
+  function report(ok){
+    if (ok) {
+      btn.textContent = 'Copied!';
+      say('Code copied to your clipboard.');
+      setTimeout(function(){ btn.textContent = 'Copy code'; }, 1800);
+    } else {
+      // Never claim success we didn't get. Select the code so a tap-and-hold works.
+      say('Couldn’t copy automatically — press and hold the code above to copy it.');
+      try {
+        var r = document.createRange();
+        r.selectNodeContents(codeEl);
+        var s = window.getSelection();
+        s.removeAllRanges();
+        s.addRange(r);
+      } catch (e) {}
+    }
+    ev('creator_code_copy', {copy_method: ok ? 'auto' : 'manual'});
+  }
+
+  btn.addEventListener('click', function(){
+    var text = codeEl.textContent.trim();
+    if (navigator.clipboard && navigator.clipboard.writeText && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(
+        function(){ report(true); },
+        function(){ report(legacyCopy(text)); }   // rejection -> synchronous execCommand
+      );
+    } else {
+      report(legacyCopy(text));
+    }
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "_comment": "Creator campaign landing pages. Adding a creator = add one entry to `creators` below; creator-link.njk generates /<slug>/ automatically. No template edits, no route registration.",
+
+  "appStoreId": "6761081031",
+
+  "_providerTokenNote": "Apple provider token from App Store Connect (Analytics > Acquisition > Campaigns). It is the SAME value for every campaign, so it lives here once. While empty, pages emit the plain product URL instead of a malformed ?pt=&ct= link.",
+  "providerToken": "",
+
+  "creators": [
+    {
+      "slug": "taylor",
+      "creator": "taylormade_mama",
+      "channel": "instagram",
+      "campaignToken": "taylormade-ig-aug26",
+      "code": "TAYLORMADEMAMA",
+      "packName": "Dino Roars",
+      "headline": "@taylormade_mama sent you.",
+      "subhead": "Here's a free dinosaur pack for your explorers."
+    },
+    {
+      "slug": "taylor-tok",
+      "creator": "taylormade_mama",
+      "channel": "tiktok",
+      "campaignToken": "taylormade-tt-aug26",
+      "code": "TAYLORMADEMAMA",
+      "packName": "Dino Roars",
+      "headline": "@taylormade_mama sent you.",
+      "subhead": "Here's a free dinosaur pack for your explorers."
+    }
+  ]
+}
