@@ -8,14 +8,13 @@
 //   - Inherit the existing site's CSS, JS, fonts, and i18n shell by sharing
 //     the same _includes/layouts/blog-base.njk wrapper.
 //
-// When the getwildatlas#2 migration moves index.html / css / js / fonts /
-// assets into this repo, they land at the root and are picked up by the
-// passthrough copy rules below — no changes needed here.
+// The getwildatlas#2 migration is complete (closed 2026-05-21): index.html,
+// css/, js/, fonts/ and assets/ live at this repo's root and are picked up by
+// the passthrough rules below. This repo is the sole source of wildatlasapp.com.
 
 module.exports = function (eleventyConfig) {
-  // ---- Passthrough: existing static site -----------------------------------
-  // These directories/files come over verbatim once the migration moves them
-  // into this repo. They're listed here so the build is ready for them.
+  // ---- Passthrough: static site --------------------------------------------
+  // Copied verbatim into _site/. Eleventy must not transform these.
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("fonts");
