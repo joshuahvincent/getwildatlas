@@ -1,12 +1,10 @@
 ---
 layout: layouts/post.njk
 title: "New in Wild Atlas: A Free Coloring Book for Every Pack"
-date: 2026-08-19
+date: 2026-08-20T12:00:00Z
 author: Wild Atlas
 excerpt: "18 animals. 20 pages. A4. Free. Every pack you own now has its own printable coloring book, and Cozy Critters' is ready to download today — no purchase, no account needed."
 permalink: /blog/printable-coloring-books/
-eleventyExcludeFromCollections: true
-noindex: true
 coverImage: /assets/blog/printables-trex.png
 tags: [product, update]
 ---
