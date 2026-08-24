@@ -1,0 +1,252 @@
+---
+layout: layouts/blog-base.njk
+title: "Issue No. 1 — A Coloring Book for Every Pack"
+permalink: /newsletter/issue-01/
+date: 2026-08-24
+excerpt: "Wild Atlas newsletter, Issue No. 1. Printables land in v1.0.5, a free coloring set just for subscribers, and a piece for parents of pre-readers."
+tags: newsletter
+issueNumber: 1
+issueDate: "August 2026"
+---
+
+{#-
+  Web archive of the emailed newsletter. Deliberately NOT a byte copy of the
+  email: the email is Georgia + a forest/parchment palette sized for a 600px
+  inbox column, while this page lives inside the site shell and inherits
+  Fredoka/Nunito and the cream ground. What carries over is the structure and
+  the forest masthead, so a reader who got the email recognises the page.
+
+  Every custom property below is declared on .wa-issue, NOT :root. blog-base.njk
+  already defines --ink and --rule at :root; redeclaring them globally here
+  would repaint the navbar and footer.
+-#}
+
+<style>
+  .wa-issue {
+    --forest:    #1B2B1D;
+    --lichen:    #6B8C52;
+    --ember:     #C25A28;
+    --parchment: #F3EAD8;
+    --issue-ink: #2A2118;
+    --issue-muted: #6B5E4F;
+    --issue-rule: #E4D8BE;
+  }
+
+  .wa-issue { margin: 0 0 3rem; }
+
+  /* ── Masthead ── */
+  .wa-masthead {
+    background: var(--forest);
+    border-radius: 14px;
+    padding: 2rem 1.5rem 1.75rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .wa-masthead-eyebrow {
+    font-family: "Nunito", system-ui, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--lichen);
+    margin: 0 0 0.5rem;
+  }
+  .wa-masthead-logo {
+    font-family: "Fredoka", system-ui, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #F0EBE0;
+    line-height: 1;
+    margin: 0;
+  }
+  .wa-masthead-logo span { color: var(--lichen); }
+  .wa-masthead-meta {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #A8B89A;
+    margin: 1rem 0 0;
+  }
+
+  /* ── Section labels ── */
+  .wa-label {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-family: "Nunito", system-ui, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--lichen);
+    margin: 2.5rem 0 0.75rem;
+  }
+  .wa-label::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--issue-rule);
+  }
+
+  /* ── Founder note ── */
+  .wa-note {
+    border-left: 3px solid var(--lichen);
+    padding: 0.25rem 0 0.25rem 1.25rem;
+    margin: 0 0 1rem;
+  }
+  .wa-note p { margin: 0 0 1rem; }
+  .wa-note p:last-child { margin-bottom: 0; }
+  .wa-note-sig { color: var(--issue-muted); font-size: 0.95rem; }
+
+  /* ── Cards ── */
+  .wa-card {
+    background: var(--parchment);
+    border-radius: 12px;
+    padding: 1.5rem 1.5rem 1.25rem;
+    margin: 0 0 1.5rem;
+  }
+  .wa-card h3 { margin-top: 0; }
+  .wa-card > p:last-child { margin-bottom: 0; }
+
+  .wa-list { margin: 0; padding-left: 1.1rem; }
+  .wa-list li { margin-bottom: 0.75rem; }
+  .wa-list li:last-child { margin-bottom: 0; }
+
+  /* ── Gift / code block ── */
+  .wa-gift {
+    background: var(--forest);
+    border-radius: 12px;
+    padding: 1.75rem 1.5rem;
+    margin: 0 0 1.5rem;
+    color: #DCE4D4;
+  }
+  .wa-gift h3 {
+    color: #F0EBE0;
+    margin: 0 0 0.5rem;
+  }
+  .wa-gift p { margin: 0 0 1rem; font-size: 0.98rem; }
+  .wa-gift-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--lichen);
+    margin: 0 0 0.5rem;
+  }
+  .wa-code {
+    display: inline-block;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: #F0EBE0;
+    background: rgba(240, 235, 224, 0.1);
+    border: 1px dashed var(--lichen);
+    border-radius: 8px;
+    padding: 0.6rem 1.1rem;
+    margin: 0 0 1rem;
+  }
+
+  /* ── Buttons ── */
+  .wa-btn {
+    display: inline-block;
+    background: var(--ember);
+    color: #fff;
+    font-family: "Fredoka", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 8px;
+  }
+  .wa-btn:hover { opacity: 0.88; text-decoration: none; }
+  .wa-btn:focus-visible { outline: 2px solid var(--forest); outline-offset: 3px; }
+
+  .wa-divider {
+    border: none;
+    border-top: 1px solid var(--issue-rule);
+    margin: 2.5rem 0;
+  }
+
+  .wa-back {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 480px) {
+    .wa-masthead-logo { font-size: 1.6rem; }
+    .wa-gift, .wa-card { padding: 1.25rem 1.1rem; }
+  }
+</style>
+
+<article class="wa-issue">
+
+  <header class="wa-masthead">
+    <p class="wa-masthead-eyebrow">From the team at</p>
+    <p class="wa-masthead-logo">Wild <span>Atlas</span></p>
+    <p class="wa-masthead-meta">Issue No. 1 &middot; August 2026</p>
+  </header>
+
+  <p class="wa-label">A note from Josh</p>
+  <div class="wa-note">
+    <p>Hey everyone — thank you for being Wild Atlas supporters. This is the first newsletter, and the plan is simple: keep you in the loop on what we're building, and throw in the occasional free something for the kids along the way.</p>
+    <p>Version 1.0.5 went out this week, and it's the biggest update since launch — every pack you own now comes with its own printable coloring book. Also in this issue: a free printable set just for subscribers, and something for parents of little ones who aren't reading yet.</p>
+    <p class="wa-note-sig">— Josh, Wild Atlas</p>
+  </div>
+
+  <p class="wa-label">What's new in 1.0.5</p>
+
+  <div class="wa-card">
+    <h3>Printables — a coloring book for every pack</h3>
+    <p>Twenty pages per pack: a cover, one page for every animal, and a closing note. Not clip art — each page starts from the same animal reference the app itself uses, redrawn as line art in a real habitat, with three facts around the edge in the voice the app narrates in. Find it at Home → About → Printables, behind the parental gate.</p>
+    <p><a class="wa-btn" href="/blog/printable-coloring-books/">See what a page looks like</a></p>
+  </div>
+
+  <h3>Also in this update</h3>
+  <ul class="wa-list">
+    <li><strong>Packs update themselves.</strong> New content for a pack you own downloads quietly in the background over Wi-Fi — no manual refresh before your kid can play.</li>
+    <li><strong>Setup is a straight line.</strong> First-run is now one step at a time: name, avatar, and an explicit consent step you can't decline by accident.</li>
+    <li><strong>Gift codes tell you where to go.</strong> If someone sends you a code for a pack, the Shop now points you straight at the screen to redeem it.</li>
+    <li><strong>Anonymous usage statistics.</strong> A new off-by-default toggle in the Grown-ups area. Counts only — which packs get opened, whether a download failed. No names, no identifiers, never third parties. If you're willing to turn it on, it genuinely helps us see what's working.</li>
+  </ul>
+
+  <hr class="wa-divider">
+
+  <p class="wa-label">Free for subscribers</p>
+  <div class="wa-gift">
+    <p class="wa-gift-label">Print &amp; hand over</p>
+    <h3>A coloring set you won't find in the app</h3>
+    <p>The books inside Wild Atlas follow the packs you own. This one doesn't — we made it for issue one only. The Saola. The Pangolin. The Axolotl. Download, print, and hand it over — no setup required.</p>
+    <p style="margin-bottom:0;"><a class="wa-btn" href="/assets/downloads/wild-atlas-coloring-book-issue-01.pdf">Download free PDF</a></p>
+  </div>
+
+  <hr class="wa-divider">
+
+  <p class="wa-label">Child development &middot; Learning</p>
+  <h2>Before They Can Read: How Wild Atlas Works for Pre-Readers</h2>
+  <p>Most children's apps designed for young kids still require a grown-up nearby. Wild Atlas was built to make that unnecessary.</p>
+  <p>Every fact is narrated. Every quiz question is read aloud. A three-year-old who cannot identify a single letter can open Wild Atlas, tap an animal, and hear everything — from start to finish, no reading required. Here's why that was the whole point.</p>
+  <p><a class="wa-btn" href="/blog/wild-atlas-for-pre-readers/">Read the full piece</a></p>
+
+  <hr class="wa-divider">
+
+  <p class="wa-label">New pack</p>
+  <h2>Legends of the Wild</h2>
+  <p>Eighteen of the rarest animals on Earth — the Amur Tiger, the West Indian Manatee, and sixteen more — narrated like everything else in the app.</p>
+  <p>And the Saola: first documented by scientists in 1992, so rarely encountered that researchers have never observed one in the wild. Fewer than a hundred are thought to exist, making it one of the rarest large mammals alive.</p>
+  <p><a class="wa-btn" href="/blog/legends-of-the-wild/">Meet the Legends</a></p>
+
+  <hr class="wa-divider">
+
+  <div class="wa-gift">
+    <p class="wa-gift-label">One more thing</p>
+    <h3>Your free pack, if you haven't claimed it</h3>
+    <p>Newsletter subscribers get the Farm Friends pack free. Enter the code in the Wild Atlas app, or tap below to redeem it in the App Store. It's yours to keep.</p>
+    <p class="wa-code">INFORMED2026</p>
+    <p style="margin-bottom:0;"><a class="wa-btn" href="https://apps.apple.com/redeem?ctx=offercodes&amp;id=6761081031&amp;code=INFORMED2026">Redeem your code</a></p>
+  </div>
+
+  <p><a class="wa-back" href="/newsletter/">&larr; All issues</a></p>
+
+</article>
