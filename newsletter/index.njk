@@ -1,0 +1,80 @@
+---
+layout: layouts/blog-base.njk
+title: Newsletter
+permalink: /newsletter/
+excerpt: "The Wild Atlas newsletter — new packs, app updates, and a free printable coloring book in every issue. Subscribe and the Farm Friends pack is free."
+eleventyExcludeFromCollections: true
+---
+
+{#-
+  /newsletter/ is a PRINTED destination, not just a web page: the end-cap of
+  every coloring book PDF carries a QR code to
+  wildatlasapp.com/newsletter?utm_source=coloring_book… (see PetPeeper
+  coloring_pages/scripts/generate_endcap_v1_revised.py). Those PDFs shipped
+  inside the app in v1.0.5 and cannot be recalled, so this path has to keep
+  resolving to something sensible indefinitely — signup first, archive second.
+
+  Do NOT add a /newsletter rule to _redirects. Cloudflare Pages evaluates
+  _redirects before serving static assets, so a redirect there would shadow
+  this page entirely.
+-#}
+
+<section class="newsletter-index">
+  <header>
+    <h1>The Wild Atlas Newsletter</h1>
+    <p style="color: var(--muted); font-size: 1.1rem;">
+      New packs, app updates, and notes on how young kids actually take this stuff in.
+      Every issue comes with a free printable coloring book for the kids. A few times a year — no more.
+    </p>
+  </header>
+
+  <section class="email-signup" aria-labelledby="es-newsletter-heading" style="margin-top: 2rem;">
+    <div class="email-signup-inner">
+      <p class="email-signup-eyebrow">For parents &amp; guardians</p>
+      <h2 id="es-newsletter-heading" class="email-signup-heading">The app is for the kids. This part is for you.</h2>
+      <p class="email-signup-sub">New packs, app features, and an occasional note. Sent a few times a year &mdash; no more.</p>
+      <p class="email-signup-incentive"><img class="incentive-icon" src="/assets/newsletter-gift.png" alt="">Subscribe and the <strong>Farm Friends</strong> pack ($3.99) is <strong>free</strong> &mdash; yours to keep even if you unsubscribe.</p>
+      <form class="email-signup-form" action="/api/subscribe" method="POST" novalidate>
+        <input type="hidden" name="source" value="newsletter-page">
+        <div class="email-signup-row">
+          <label class="sr-only" for="es-newsletter-email">Email address</label>
+          <input id="es-newsletter-email" class="email-signup-input" type="email" name="email" required autocomplete="email" placeholder="your@email.com">
+          <button class="email-signup-btn" type="submit">Subscribe</button>
+        </div>
+        <label class="email-signup-consent">
+          <input type="checkbox" name="consent" required>
+          <span>I agree to receive occasional emails from Wild Atlas about new packs, app updates, and parent notes.</span>
+        </label>
+        <p class="email-signup-fine">We email occasionally &mdash; easy to unsubscribe anytime. We use <a href="https://www.beehiiv.com" target="_blank" rel="noopener">beehiiv</a> to send these emails. See our <a href="/privacy">Privacy Policy</a>.</p>
+        <p class="email-signup-msg" role="status" aria-live="polite" hidden></p>
+      </form>
+    </div>
+  </section>
+
+  <hr style="border: none; border-top: 1.5px solid rgba(93, 64, 55, 0.08); margin: var(--space-2xl) 0 2rem;">
+
+  <h2>Past issues</h2>
+
+  {% set issues = collections.newsletter | reverse %}
+  {% if issues.length == 0 %}
+    <p><em>The first issue is on its way.</em></p>
+  {% else %}
+    <ul style="list-style: none; padding: 0; margin: 1.5rem 0 0;">
+      {% for issue in issues %}
+        <li style="padding: 1.25rem 0; border-bottom: 1px solid var(--rule);">
+          <a href="{{ issue.url }}" style="text-decoration: none; color: inherit;">
+            <p style="color: var(--muted); margin: 0 0 0.25rem; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase;">
+              Issue No. {{ issue.data.issueNumber }} &middot; {{ issue.data.issueDate }}
+            </p>
+            <h3 style="margin: 0 0 0.35rem; color: var(--accent);">{{ issue.data.title }}</h3>
+            {% if issue.data.excerpt %}
+              <p style="margin: 0; font-size: 0.95rem;">{{ issue.data.excerpt }}</p>
+            {% endif %}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <script src="/js/email-signup.js?v=2" defer></script>
+</section>
