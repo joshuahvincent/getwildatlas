@@ -3,3 +3,7 @@
 # Add a slug, commit to getwildatlas main, and wildatlasapp.com/<slug> 301-redirects.
 # (Requires eleventyConfig.addPassthroughCopy("_redirects"); in .eleventy.js.)
 /kids  /blog/what-kids-want-to-know-about-animals/  301
+# Printed on the end-cap QR of every coloring book PDF, and linked from the
+# printables blog post. Without this line /newsletter soft-404s to the homepage
+# top, past the signup band. Anchor target is id="newsletter" in index.html.
+/newsletter  /#newsletter  301
