@@ -151,6 +151,7 @@ tags: [product, packs]
     <li>Catch <strong>seven shooting stars</strong> and the Stargazer opens the gate.</li>
     <li>Stars wander in on their own, or you can summon them at <strong>ten hidden waypoints</strong>. Five are on this map. The rest are yours to find.</li>
     <li>Three waypoints need a grown-up. Nothing expires, and most families get there in a week or two of ordinary play.</li>
+    <li>The Mythical Menagerie is currently available in <strong>English only</strong>.</li>
   </ul>
 </div>
 
