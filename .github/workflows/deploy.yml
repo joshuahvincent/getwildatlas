@@ -3,6 +3,10 @@ name: Deploy to Cloudflare Pages
 on:
   push:
     branches: [main]
+  # Daily rebuild so scheduled (future-dated) blog posts go live on their date.
+  # 13:00 UTC = 6am Pacific during daylight time (5am in winter).
+  schedule:
+    - cron: "0 13 * * *"
   workflow_dispatch:
 
 jobs:
