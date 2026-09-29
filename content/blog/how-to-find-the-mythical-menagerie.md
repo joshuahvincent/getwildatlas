@@ -212,6 +212,10 @@ You never know exactly when a shooting star will cross the real sky. It's the sa
 
 You can catch **one star per visit**. If one flies past before you tap it, don't worry: it may swing back around later in the same visit. And if today's sky stays quiet, try again another day.
 
+It's the **seventh** star that changes everything. The instant you catch it, the world goes to twilight. Snow begins to drift, gold and white stars burst across the screen, and the Stargazer himself appears, spectacles gleaming, to open the gate.
+
+You found the hidden pack no one could buy their way into. That's the whole point: it belongs to the explorers who looked closely.
+
 ## Shooting stars you can find
 
 Wild Atlas hides shooting stars in plain sight, tucked into gestures and small triumphs all over the app. Reach a waypoint and a star streaks down on the spot. Each one gives a star **once**.
@@ -235,18 +239,6 @@ The deepest waypoint. When a grown-up **unlocks a new pack, picks up the Explore
 
 ### The other five? They're yours to find.
 They're hidden in quizzes and games, in far corners of the app, and in places that reward a curious finger. We're not drawing those on the map. Keep your eyes open.
-
-## The catch that opens the gate
-
-It's the **seventh** shard that changes everything.
-
-The instant you catch it, the world goes to twilight. Snow begins to drift, gold and white stars burst across the screen, the music turns to something out of an old, old story, and the Stargazer himself appears, spectacles gleaming:
-
-> *"Well found, stargazer. I've been waiting. There's a place in your library now — a pack of creatures from the old stories. Come, let me show you."*
-
-Tap **"Take me there,"** and the gate swings open. Inside wait eighteen creatures who live in stories instead of the world, each with its own tales and a quiet reminder at the top of every page that *this animal lives in stories, not in the world.*
-
-You found the hidden pack no one could buy their way into. That's the whole point: it belongs to the explorers who looked closely.
 
 ## Meet a resident: the Kitsune
 
