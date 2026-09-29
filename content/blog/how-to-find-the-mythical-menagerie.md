@@ -5,8 +5,153 @@ date: 2026-09-28
 author: Wild Atlas
 excerpt: "Somewhere past the edge of the map, Wild Atlas keeps a reserve that isn't on any list. Here's the expedition that gets you in."
 permalink: /blog/how-to-find-the-mythical-menagerie/
+coverImage: /assets/blog/mythical-menagerie-hero.jpg
 tags: [product, packs]
 ---
+
+<style>
+  .tldr {
+    background: rgba(194, 90, 44, 0.07);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .tldr-label {
+    font-family: "Fredoka", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.3rem;
+  }
+  .tldr-label + p, .tldr-label + ul { margin-top: 0; }
+  .tldr p { margin: 0 0 0.9rem; font-size: 0.95rem; }
+  .tldr ul { margin: 0; padding-left: 1.2rem; font-size: 0.95rem; }
+  .tldr li { margin: 0.25rem 0; }
+
+  .mm-stargazer {
+    float: right;
+    width: 190px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  .mm-stargazer img { width: 100%; height: auto; display: block; }
+  @media (max-width: 600px) {
+    .mm-stargazer { float: none; margin: 0.5rem auto 1rem; width: 170px; }
+  }
+
+  .mm-catch { text-align: center; margin: 2rem 0; clear: both; }
+  .mm-star-btn {
+    background: none;
+    border: 0;
+    padding: 0.5rem;
+    min-width: 48px;
+    min-height: 48px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  .mm-star-btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+  .mm-star-btn img { width: 96px; height: auto; display: block; transition: transform 0.2s ease; }
+  .mm-star-btn:hover img, .mm-star-btn:focus-visible img { transform: rotate(3deg); }
+  .mm-star-btn.is-caught img { animation: mm-fly 500ms ease-out forwards; }
+  @keyframes mm-fly {
+    to { transform: translate(40px, -40px) rotate(8deg); opacity: 0; }
+  }
+  .mm-catch-hint {
+    margin: 0.25rem 0 0;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .mm-catch-msg {
+    display: inline-block;
+    margin-top: 0.6rem;
+    padding: 0.4rem 1rem;
+    border-radius: 9999px;
+    background: #FFE6A0;
+    color: #5D4037;
+    font-family: "Fredoka", system-ui, sans-serif;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .mm-catch-msg.is-shown { opacity: 1; }
+  @media (prefers-reduced-motion: reduce) {
+    .mm-star-btn img { transition: none; }
+    .mm-star-btn:hover img, .mm-star-btn:focus-visible img { transform: none; }
+    .mm-star-btn.is-caught img { animation: none; }
+  }
+
+  .mm-feature { margin: 2rem 0; }
+  .mm-feature img {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+  }
+  .mm-feature figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  .mm-friendly {
+    background: rgba(255, 217, 125, 0.22);
+    border-radius: 16px;
+    padding: 1.1rem 1.35rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .mm-friendly p { margin: 0 0 0.75rem; }
+  .mm-friendly p:last-child { margin-bottom: 0; }
+
+  .mm-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 1.5rem 0 2rem;
+  }
+  .mm-card {
+    margin: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .mm-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+  }
+  .mm-card figcaption {
+    padding: 0.45rem 0.5rem 0.55rem;
+    text-align: center;
+    font-family: "Fredoka", system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--ink);
+  }
+  @media (max-width: 600px) {
+    .mm-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .mm-card:last-child { grid-column: 1 / -1; }
+  }
+</style>
+
+<div class="tldr">
+  <div class="tldr-label">TL;DR</div>
+  <p>Somewhere in Wild Atlas there's a hidden pack of friendly creatures from the world's old stories. It can't be bought. It can only be found. This is the treasure map.</p>
+  <div class="tldr-label">Key takeaways</div>
+  <ul>
+    <li>The <strong>Mythical Menagerie</strong> is a secret pack of 18 gentle, storybook creatures.</li>
+    <li>Catch <strong>seven shooting stars</strong> and the Stargazer opens the gate.</li>
+    <li>Stars wander in on their own, or you can summon them at <strong>ten hidden waypoints</strong> across the app.</li>
+    <li>Two waypoints need a grown-up. Nothing expires, and most families get there in a week or two of ordinary play.</li>
+  </ul>
+</div>
 
 Every explorer who's spent a while in Wild Atlas eventually hears the rumor.
 
@@ -18,9 +163,38 @@ This is the field guide to becoming that explorer.
 
 ## What you're actually hunting
 
+<div class="mm-stargazer"><img src="/assets/blog/mythical-stargazer.png" width="390" height="440" alt="The Stargazer, a snow owl wearing round spectacles and a starry wizard hat."></div>
+
 The gatekeeper of the reserve is an old, kindly creature called **the Stargazer** — a snow-owl with round spectacles, a starry hat, and a wand tipped with a single bright point of light. He doesn't open the gate for just anyone. He opens it for explorers who've been paying attention to the sky.
 
 Here's the secret he keeps: every so often, a **shooting star** streaks across Wild Atlas. Catch one — a real tap, finger right on the star as it flies — and you collect a single **stardust shard**. Collect **seven shards**, and the Stargazer decides you're ready.
+
+<div class="mm-catch">
+  <button type="button" class="mm-star-btn" id="mm-star" aria-label="Catch the shooting star">
+    <img src="/assets/blog/mythical-shooting-star.png" width="360" height="270" alt="">
+  </button>
+  <p class="mm-catch-hint">Go on. Try catching one.</p>
+  <div aria-live="polite"><span class="mm-catch-msg" id="mm-star-msg">You caught a stardust shard! ✦ 1 of 7</span></div>
+</div>
+
+<script>
+  (function () {
+    var btn = document.getElementById("mm-star");
+    var msg = document.getElementById("mm-star-msg");
+    if (!btn || !msg) return;
+    var busy = false;
+    btn.addEventListener("click", function () {
+      if (busy) return;
+      busy = true;
+      btn.classList.add("is-caught");
+      msg.classList.add("is-shown");
+      setTimeout(function () {
+        btn.classList.remove("is-caught");
+        busy = false;
+      }, 1200);
+    });
+  })();
+</script>
 
 So the whole expedition comes down to one question: *how do you find seven shooting stars?*
 
@@ -83,6 +257,41 @@ The instant you catch your seventh shard, the world goes to twilight. Snow begin
 Tap **"Take me there,"** and the gate swings open. Waiting inside: the dragon that hoards gold and breathes fire, the nine-tailed kitsune who lights the forest with foxfire, and sixteen more creatures that live in stories instead of the world — each one with its own tales, its own old-world wisdom, and a quiet reminder at the top of every page that *this animal lives in stories, not in the world.*
 
 You found the reserve no one could buy their way into. That's the whole point of the Mythical Menagerie: it belongs to the explorers who looked closely.
+
+## Meet a resident: the Kitsune
+
+<figure class="mm-feature">
+  <img src="/assets/blog/mythical-kitsune.webp" width="1200" height="670" loading="lazy" alt="A nine-tailed fox walking past a red torii gate in a glowing storybook forest.">
+  <figcaption>The Kitsune, a fox-spirit from the old stories of Japan.</figcaption>
+</figure>
+
+In stories from Japan, the kitsune is a clever fox-spirit who can shape-shift into almost anything. Some kitsune are kind helpers. Others are gentle tricksters who light the forest with floating balls of **foxfire**.
+
+Storytellers say a kitsune grows a new tail every hundred years. When it has nine, its fur turns silver or gold, and it becomes one of the wisest creatures in the world. The one waiting for you in the Menagerie has all nine.
+
+## Friendly by design
+
+<div class="mm-friendly">
+  <p>✦ <strong>Every creature in the Menagerie is a friendly one.</strong></p>
+  <p>While we were building the pack, we tried it out with young explorers. A few of the old legends, like the werewolf and Bigfoot, turned out to be a bit too spooky for small listeners. So we left them in the old stories.</p>
+  <p>What's inside is a reserve of wise, gentle and occasionally mischievous creatures, gathered from folktales across Asia, the Middle East, Africa and Europe. There's a kind Kirin from China, a wise, gentle Simurgh from Persia, a phoenix from ancient Egypt and a selkie from the Scottish shore.</p>
+</div>
+
+## A peek inside the reserve
+
+Nine of the eighteen creatures waiting behind the gate:
+
+<div class="mm-grid">
+  <figure class="mm-card"><img src="/assets/blog/mythical-dragon.webp" width="800" height="446" loading="lazy" alt="A small green dragon on a mountain ledge under a starry sky."><figcaption>Dragon</figcaption></figure>
+  <figure class="mm-card"><img src="/assets/blog/mythical-unicorn.webp" width="800" height="447" loading="lazy" alt="A white unicorn in a misty forest."><figcaption>Unicorn</figcaption></figure>
+  <figure class="mm-card"><img src="/assets/blog/mythical-phoenix.webp" width="800" height="447" loading="lazy" alt="A red and gold phoenix perched on a branch."><figcaption>Phoenix</figcaption></figure>
+  <figure class="mm-card"><img src="/assets/blog/mythical-pegasus.webp" width="800" height="447" loading="lazy" alt="Pegasus, a white winged horse, galloping over the clouds."><figcaption>Pegasus</figcaption></figure>
+  <figure class="mm-card"><img src="/assets/blog/mythical-mermaid.webp" width="800" height="447" loading="lazy" alt="A green-haired mermaid sitting on a rock in a calm sea."><figcaption>Mermaid</figcaption></figure>
+  <figure class="mm-card"><img src="/assets/blog/mythical-kirin.webp" width="800" height="447" loading="lazy" alt="A Kirin, a scaled, deer-like creature with a flame-colored mane, walking on clouds."><figcaption>Kirin</figcaption></figure>
+  <figure class="mm-card"><img src="/assets/blog/mythical-baku.webp" width="800" height="447" loading="lazy" alt="A pastel, elephant-like Baku breathing a swirl of dreams in a forest."><figcaption>Baku</figcaption></figure>
+  <figure class="mm-card"><img src="/assets/blog/mythical-simurgh.webp" width="800" height="447" loading="lazy" alt="A Simurgh, a great bird with brown and green feathers, beside a mountain castle."><figcaption>Simurgh</figcaption></figure>
+  <figure class="mm-card"><img src="/assets/blog/mythical-selkie.webp" width="800" height="447" loading="lazy" alt="A selkie standing in the shallows, holding a seal, beside a folded sealskin."><figcaption>Selkie</figcaption></figure>
+</div>
 
 ## A short dispatch for grown-ups
 
