@@ -1,9 +1,9 @@
 ---
 layout: layouts/post.njk
-title: "The Hidden Reserve: A Field Guide to Finding the Mythical Menagerie"
+title: "The Hidden Pack: A Field Guide to Finding the Mythical Menagerie"
 date: 2026-09-28
 author: Wild Atlas
-excerpt: "Somewhere past the edge of the map, Wild Atlas keeps a reserve that isn't on any list. Here's the expedition that gets you in."
+excerpt: "Somewhere past the edge of the map, Wild Atlas keeps a hidden pack that isn't on any list. Here's the expedition that gets you in."
 permalink: /blog/how-to-find-the-mythical-menagerie/
 coverImage: /assets/blog/mythical-stargazer-tile.jpg
 tags: [product, packs]
@@ -154,19 +154,17 @@ tags: [product, packs]
   </ul>
 </div>
 
-Every explorer who's spent a while in Wild Atlas eventually hears the rumor.
+More than once, a young explorer has asked us about mermaids. About unicorns. About a fox with nine tails. These are real questions, so we built real answers: eighteen friendly creatures from the world's old stories, in a hidden pack called the **Mythical Menagerie**.
 
-It gets passed around base camp half-believed, told in a low voice. *There's another reserve.* Somewhere past the edge of the printed map, there's a place where the animals don't obey the rules of the world. Creatures with too many tails. Creatures that breathe fire and hoard gold. Creatures that, any sensible person will tell you, do not exist at all.
+They're not animals a field guide can pin down as fact, so we didn't put them on the map with the rest. We hid them instead, behind a small magical quest that only a watchful explorer completes. Find your way in, and the Stargazer will tell you each one's tale himself.
 
-It's called the **Mythical Menagerie**, and it's real, as real as anything that lives in a story can be. You can't buy your way in, and there's no button marked *Mythical Menagerie*. The reserve is hidden on purpose. The only way through is to be the kind of explorer who notices things.
-
-This is the field guide to becoming that explorer.
+This is the field guide to finding them.
 
 ## What you're actually hunting
 
 <div class="mm-stargazer"><img src="/assets/blog/mythical-stargazer.png" width="390" height="440" alt="The Stargazer, a snow owl wearing round spectacles and a starry wizard hat."></div>
 
-The gatekeeper of the reserve is a kindly old creature called **the Stargazer**: a snow-owl with round spectacles, a starry hat, and a wand tipped with a single point of light. He opens the gate only for explorers who've been paying attention to the sky.
+The gatekeeper of the hidden pack is a kindly old creature called **the Stargazer**: a snow-owl with round spectacles, a starry hat, and a wand tipped with a single point of light. He opens the gate only for explorers who've been paying attention to the sky.
 
 Here's his secret. Every so often, a **shooting star** streaks across Wild Atlas. Catch one, with a real tap right on the star as it flies, and you collect a **stardust shard**. Collect **seven shards**, and the Stargazer decides you're ready.
 
@@ -207,13 +205,13 @@ Some stars you wait for. Most, if you know where to look, you can **summon**.
   <p>What's inside is wise, gentle and occasionally mischievous, gathered from folktales across Asia, the Middle East, Africa and Europe: a kind Kirin from China, a gentle Simurgh from Persia, a phoenix from ancient Egypt and a selkie from the Scottish shore.</p>
 </div>
 
-## The waiting kind: wandering stars
+## Shooting stars in the sky
 
-If you simply play, the way you'd wander a trail without checking your watch, a shooting star will eventually drift into view on its own. They're shy. They won't appear the moment you open the app, or on every visit. But settle in, explore a pack, listen to a story or two, and sooner or later one will streak across the screen.
+You never know exactly when a shooting star will cross the real sky. It's the same in Wild Atlas. They show up from time to time while you play, never right when you open the app, but somewhere along the way if you stay and explore.
 
-You get **one wandering star per visit**, so when you see one, catch it. Then come back another day and watch the sky again.
+You can catch **one star per visit**. If one flies past before you tap it, don't worry: it may swing back around later in the same visit. And if today's sky stays quiet, try again another day.
 
-## The summoning kind: marked waypoints
+## Shooting stars you can find
 
 Wild Atlas hides shooting stars in plain sight, tucked into gestures and small triumphs all over the app. Reach a waypoint and a star streaks down on the spot. Each one gives a star **once**.
 
@@ -247,7 +245,7 @@ The instant you catch it, the world goes to twilight. Snow begins to drift, gold
 
 Tap **"Take me there,"** and the gate swings open. Inside wait eighteen creatures who live in stories instead of the world, each with its own tales and a quiet reminder at the top of every page that *this animal lives in stories, not in the world.*
 
-You found the reserve no one could buy their way into. That's the whole point: it belongs to the explorers who looked closely.
+You found the hidden pack no one could buy their way into. That's the whole point: it belongs to the explorers who looked closely.
 
 ## Meet a resident: the Kitsune
 
@@ -260,7 +258,7 @@ In stories from Japan, the kitsune is a clever fox-spirit who can shape-shift in
 
 Storytellers say a kitsune grows a new tail every hundred years. When it has nine, its fur turns silver or gold and it becomes one of the wisest creatures in the world. The one waiting in the Menagerie has all nine.
 
-## A peek inside the reserve
+## A peek inside the hidden pack
 
 Nine of the eighteen creatures waiting behind the gate:
 
