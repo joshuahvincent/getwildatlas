@@ -5,7 +5,7 @@ date: 2026-09-28
 author: Wild Atlas
 excerpt: "Somewhere past the edge of the map, Wild Atlas keeps a reserve that isn't on any list. Here's the expedition that gets you in."
 permalink: /blog/how-to-find-the-mythical-menagerie/
-coverImage: /assets/blog/mythical-menagerie-hero.jpg
+coverImage: /assets/blog/mythical-stargazer-tile.jpg
 tags: [product, packs]
 ---
 
@@ -141,6 +141,7 @@ tags: [product, packs]
   }
 </style>
 
+
 <div class="tldr">
   <div class="tldr-label">TL;DR</div>
   <p>Somewhere in Wild Atlas there's a hidden pack of friendly creatures from the world's old stories. It can't be bought. It can only be found. This is the treasure map.</p>
@@ -148,16 +149,16 @@ tags: [product, packs]
   <ul>
     <li>The <strong>Mythical Menagerie</strong> is a secret pack of 18 gentle, storybook creatures.</li>
     <li>Catch <strong>seven shooting stars</strong> and the Stargazer opens the gate.</li>
-    <li>Stars wander in on their own, or you can summon them at <strong>ten hidden waypoints</strong> across the app.</li>
-    <li>Two waypoints need a grown-up. Nothing expires, and most families get there in a week or two of ordinary play.</li>
+    <li>Stars wander in on their own, or you can summon them at <strong>ten hidden waypoints</strong>. Five are on this map. The rest are yours to find.</li>
+    <li>Three waypoints need a grown-up. Nothing expires, and most families get there in a week or two of ordinary play.</li>
   </ul>
 </div>
 
 Every explorer who's spent a while in Wild Atlas eventually hears the rumor.
 
-It gets passed around base camp the way the best rumors do — half-believed, told in a low voice. *There's another reserve.* Not the meadows or the reefs or the savanna. Somewhere further out, past the edge of the printed map, there's a place where the animals don't quite obey the rules of the world. Creatures with too many tails. Creatures that breathe fire and hoard gold. Creatures that, if you ask any sensible person, do not exist at all.
+It gets passed around base camp half-believed, told in a low voice. *There's another reserve.* Somewhere past the edge of the printed map, there's a place where the animals don't obey the rules of the world. Creatures with too many tails. Creatures that breathe fire and hoard gold. Creatures that, any sensible person will tell you, do not exist at all.
 
-It's called the **Mythical Menagerie**, and it's real — as real as anything that lives in a story can be. You can't buy your way in. You can't tap a button marked *Mythical Menagerie* and stroll through the gate, because there isn't one. The reserve is hidden on purpose, and the only way through is to be the kind of explorer who notices things.
+It's called the **Mythical Menagerie**, and it's real, as real as anything that lives in a story can be. You can't buy your way in, and there's no button marked *Mythical Menagerie*. The reserve is hidden on purpose. The only way through is to be the kind of explorer who notices things.
 
 This is the field guide to becoming that explorer.
 
@@ -165,9 +166,9 @@ This is the field guide to becoming that explorer.
 
 <div class="mm-stargazer"><img src="/assets/blog/mythical-stargazer.png" width="390" height="440" alt="The Stargazer, a snow owl wearing round spectacles and a starry wizard hat."></div>
 
-The gatekeeper of the reserve is an old, kindly creature called **the Stargazer** — a snow-owl with round spectacles, a starry hat, and a wand tipped with a single bright point of light. He doesn't open the gate for just anyone. He opens it for explorers who've been paying attention to the sky.
+The gatekeeper of the reserve is a kindly old creature called **the Stargazer**: a snow-owl with round spectacles, a starry hat, and a wand tipped with a single point of light. He opens the gate only for explorers who've been paying attention to the sky.
 
-Here's the secret he keeps: every so often, a **shooting star** streaks across Wild Atlas. Catch one — a real tap, finger right on the star as it flies — and you collect a single **stardust shard**. Collect **seven shards**, and the Stargazer decides you're ready.
+Here's his secret. Every so often, a **shooting star** streaks across Wild Atlas. Catch one, with a real tap right on the star as it flies, and you collect a **stardust shard**. Collect **seven shards**, and the Stargazer decides you're ready.
 
 <div class="mm-catch">
   <button type="button" class="mm-star-btn" id="mm-star" aria-label="Catch the shooting star">
@@ -196,67 +197,57 @@ Here's the secret he keeps: every so often, a **shooting star** streaks across W
   })();
 </script>
 
-So the whole expedition comes down to one question: *how do you find seven shooting stars?*
+Some stars you wait for. Most, if you know where to look, you can **summon**.
 
-Some you wait for. Most, if you know where to look, you can **summon**.
+## Friendly by design
+
+<div class="mm-friendly">
+  <p>✦ <strong>Every creature in the Menagerie is a friendly one.</strong></p>
+  <p>While building the pack, we tried it out with young explorers. A few old legends, like the werewolf and Bigfoot, were a bit too spooky for small listeners, so we left them in the old stories.</p>
+  <p>What's inside is wise, gentle and occasionally mischievous, gathered from folktales across Asia, the Middle East, Africa and Europe: a kind Kirin from China, a gentle Simurgh from Persia, a phoenix from ancient Egypt and a selkie from the Scottish shore.</p>
+</div>
 
 ## The waiting kind: wandering stars
 
-If you simply play — really play, the way you'd wander a trail without checking your watch — a shooting star will eventually wander into view on its own. They're shy. They don't appear the moment you open the app, and they won't appear every single visit. But settle in, explore a pack, listen to a story or two, and sooner or later one will streak across the screen.
+If you simply play, the way you'd wander a trail without checking your watch, a shooting star will eventually drift into view on its own. They're shy. They won't appear the moment you open the app, or on every visit. But settle in, explore a pack, listen to a story or two, and sooner or later one will streak across the screen.
 
-You get **one wandering star per visit**, so when you see one, don't hesitate. Reach out and catch it. Then come back another day, and watch the sky again.
+You get **one wandering star per visit**, so when you see one, catch it. Then come back another day and watch the sky again.
 
-That's the patient explorer's path. But patient explorers are not the only kind, and the map below is for the rest of you.
+## The summoning kind: marked waypoints
 
-## The summoning kind: ten marked waypoints
+Wild Atlas hides shooting stars in plain sight, tucked into gestures and small triumphs all over the app. Reach a waypoint and a star streaks down on the spot. Each one gives a star **once**.
 
-This is the part the rumor never quite gets right. Wild Atlas is hiding shooting stars in plain sight — tucked into gestures and small triumphs all over the app. Reach each waypoint and a star comes streaking down on the spot, ready to be caught.
-
-Each one gives you a star **once**. Find all of them and you're most of the way to seven before you've even waited for a wandering star.
-
-Here's the map.
+There are ten in all. Here are five to get you started.
 
 ### 1. The mascot at the trailhead
-Open the app and look at the friendly face waiting for you on the home screen. Give it a single tap and it wiggles hello — everybody knows that. Almost nobody knows what happens if you tap it **twice, quickly**. A star.
+Look at the friendly face on the home screen. Tap it once and it wiggles hello. Everybody knows that. Almost nobody knows what happens if you tap it **twice, quickly**. A star.
 
 ### 2. Your name in the logbook
-Visit your **Achievements** page — your explorer's logbook, the record of everywhere you've been. Your name sits right at the top. Most people read straight past it. Reach up and **tap your own name**, and the sky answers.
+Open your **Achievements** page, your explorer's logbook. Your name sits right at the top, and most people read straight past it. **Tap your own name**, and the sky answers.
 
-### 3. The keeper of the Cozy Critters
-Wander into the **Cozy Critters** pack and you'll find its own little guide waiting on the pack page. The Cozy Critters keeper is sentimental about visitors who linger. **Double-tap** that mascot — and only that one; the other packs' guides won't do it — and a star falls just for you.
+### 3. A word to the rangers *(grown-up's help)*
+Found a bug? Have an idea, or a creature you wish we'd add? **Send us feedback** through the in-app form, with a grown-up's help to get past the gate. Explorers who leave word for the rangers are thanked the Stargazer's way: with a falling star.
 
-### 4. The Cool Cats trial
-Some stars have to be *earned*. Take the **Young Explorer** quiz in the **Cool Cats** pack and get a **perfect score** — every question, no misses. The cats respect that kind of sharpness. Ace it and a star is your reward.
+### 4. Rate the expedition *(grown-up's help)*
+When Wild Atlas asks how you're enjoying the journey, or any time a grown-up taps **Rate Wild Atlas**, a star follows. It lives behind a grown-up's tap, so it's a lovely one to catch *together*.
 
-### 5. The Habitat Hop summit
-Lace up for **Habitat Hop** and set the difficulty to **Hard**. Then clear the whole campaign, all the way to the finale. Reaching that summit is hard on purpose — and a shooting star is waiting at the top for the explorers who make it.
+### 5. The collector's key *(grown-up's help)*
+The deepest waypoint. When a grown-up **unlocks a new pack, picks up the Explorer Pass, or redeems a code**, the sky throws its biggest welcome: a shooting star, right there in the moment.
 
-### 6. The complete census
-This one is for the true completists. Visit **every single animal in every free pack** — the whole roster, no gaps. The moment your logbook shows you've met them all, the sky rewards the most thorough explorer in the field with a star of their own.
-
-### 7. The old dog at base camp
-Slip into the **About** page, where the app introduces itself. There's a friendly dog at the top — the face of the whole expedition. Give it a tap. Then another. Keep going — **seven taps, quick, before it gets bored** (you've got about two and a half seconds between taps). On the seventh, you'll feel a little thump, and a star comes loose.
-
-### 8. A word to the rangers
-Found a bug? An idea? A creature you wish we'd add? **Send us feedback** through the in-app form. Explorers who take the time to leave word for the rangers get thanked the way the Stargazer thanks everyone: with a falling star.
-
-### 9. Rate the expedition *(grown-up's help)*
-When Wild Atlas asks how you're enjoying the journey — or any time a grown-up taps **Rate Wild Atlas** — a star follows. This one lives behind a grown-up's tap, so it's a lovely one to catch *together*.
-
-### 10. The collector's key *(grown-up's help)*
-The deepest waypoint. When a grown-up **unlocks a new pack, picks up the Explorer Pass, or redeems a code**, the sky throws its biggest welcome — a shooting star, right there in the moment. Like the rating waypoint, it's reached hand-in-hand.
+### The other five? They're yours to find.
+They're hidden in quizzes and games, in far corners of the app, and in places that reward a curious finger. We're not drawing those on the map. Keep your eyes open.
 
 ## The catch that opens the gate
 
-Six stars caught, or nine, doesn't matter — it's the **seventh** that changes everything.
+It's the **seventh** shard that changes everything.
 
-The instant you catch your seventh shard, the world goes to twilight. Snow begins to drift. Gold and white stars burst across the screen, the music turns to something out of an old, old story, and the Stargazer himself appears, spectacles gleaming, and speaks:
+The instant you catch it, the world goes to twilight. Snow begins to drift, gold and white stars burst across the screen, the music turns to something out of an old, old story, and the Stargazer himself appears, spectacles gleaming:
 
 > *"Well found, stargazer. I've been waiting. There's a place in your library now — a pack of creatures from the old stories. Come, let me show you."*
 
-Tap **"Take me there,"** and the gate swings open. Waiting inside: the dragon that hoards gold and breathes fire, the nine-tailed kitsune who lights the forest with foxfire, and sixteen more creatures that live in stories instead of the world — each one with its own tales, its own old-world wisdom, and a quiet reminder at the top of every page that *this animal lives in stories, not in the world.*
+Tap **"Take me there,"** and the gate swings open. Inside wait eighteen creatures who live in stories instead of the world, each with its own tales and a quiet reminder at the top of every page that *this animal lives in stories, not in the world.*
 
-You found the reserve no one could buy their way into. That's the whole point of the Mythical Menagerie: it belongs to the explorers who looked closely.
+You found the reserve no one could buy their way into. That's the whole point: it belongs to the explorers who looked closely.
 
 ## Meet a resident: the Kitsune
 
@@ -265,17 +256,9 @@ You found the reserve no one could buy their way into. That's the whole point of
   <figcaption>The Kitsune, a fox-spirit from the old stories of Japan.</figcaption>
 </figure>
 
-In stories from Japan, the kitsune is a clever fox-spirit who can shape-shift into almost anything. Some kitsune are kind helpers. Others are gentle tricksters who light the forest with floating balls of **foxfire**.
+In stories from Japan, the kitsune is a clever fox-spirit who can shape-shift into almost anything. Some are kind helpers. Others are gentle tricksters who light the forest with floating balls of **foxfire**.
 
-Storytellers say a kitsune grows a new tail every hundred years. When it has nine, its fur turns silver or gold, and it becomes one of the wisest creatures in the world. The one waiting for you in the Menagerie has all nine.
-
-## Friendly by design
-
-<div class="mm-friendly">
-  <p>✦ <strong>Every creature in the Menagerie is a friendly one.</strong></p>
-  <p>While we were building the pack, we tried it out with young explorers. A few of the old legends, like the werewolf and Bigfoot, turned out to be a bit too spooky for small listeners. So we left them in the old stories.</p>
-  <p>What's inside is a reserve of wise, gentle and occasionally mischievous creatures, gathered from folktales across Asia, the Middle East, Africa and Europe. There's a kind Kirin from China, a wise, gentle Simurgh from Persia, a phoenix from ancient Egypt and a selkie from the Scottish shore.</p>
-</div>
+Storytellers say a kitsune grows a new tail every hundred years. When it has nine, its fur turns silver or gold and it becomes one of the wisest creatures in the world. The one waiting in the Menagerie has all nine.
 
 ## A peek inside the reserve
 
@@ -295,15 +278,11 @@ Nine of the eighteen creatures waiting behind the gate:
 
 ## A short dispatch for grown-ups
 
-A few practical notes, since two of the waypoints are yours to help with:
+- **It's a real hunt, not a checklist with a deadline.** Most families reach seven shards over a week or two of ordinary play. Nothing expires, and there's nothing to miss.
+- **Three waypoints need you.** Feedback, rating and unlocking a pack all sit behind the grown-up gate, so those stars are ones you catch together. No child gets nudged toward a store on their own.
+- **Each waypoint gives one star, once.** They can't be farmed. The design rewards *discovering* a place, not hammering it.
+- **It's a good rainy-afternoon quest.** Work through the five waypoints above together, then go looking for the other five.
 
-- **It's a real hunt, not a checklist with a deadline.** Most families reach seven shards over a week or two of ordinary play — a little patience, a little curiosity, no pressure. There's nothing to miss and nothing that expires.
-- **Two waypoints need you.** Rating the app and unlocking a pack both sit behind the grown-up gate, so the stars they summon are ones you and your explorer get to catch together. No child gets nudged toward a store on their own.
-- **Each marked waypoint gives one star, once.** They can't be farmed. The design rewards *discovering* a place, not hammering it — which is exactly the habit we're delighted to encourage.
-- **It's a brilliant rainy-afternoon quest.** If your explorer wants the Menagerie *today*, the marked waypoints above are a genuine treasure map. Work down the list together and the Stargazer won't keep you waiting long.
-
-And one last whisper before you go: the Menagerie isn't the only thing Wild Atlas keeps hidden. Every pack has a **secret treasure** tucked among its animals, waiting for an explorer with a sharp eye and a magnifying glass.
-
-But that's a different expedition. We'll draw you that map another day.
+One last whisper: the Menagerie isn't the only thing Wild Atlas keeps hidden. Every pack has a **secret treasure** tucked among its animals, waiting for an explorer with a sharp eye and a magnifying glass. But that's a different expedition.
 
 *Watch the sky. We'll see you out there.*
