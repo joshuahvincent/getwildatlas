@@ -4,11 +4,11 @@ layout: layouts/blog-base.njk
 <article class="blog-post">
   <header class="blog-post-header">
     <p class="blog-post-meta">
-      <a href="/blog/">← All posts</a>
+      <a href="{{ backLink.url if backLink else '/blog/' }}">← {{ backLink.label if backLink else 'All posts' }}</a>
     </p>
     <h1>{{ title }}</h1>
     <p class="blog-post-byline" style="color: var(--muted); margin-top: 0.25rem;">
-      <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
+      <time datetime="{{ (postDate or page.date) | isoDate }}">{{ (postDate or page.date) | readableDate }}</time>
       {% if author %} · {{ author }}{% endif %}
       {% if content %} · {{ content | readingTime }}{% endif %}
     </p>

@@ -1,0 +1,100 @@
+---
+layout: layouts/blog-base.njk
+title: Conservation Calendar
+excerpt: "A year of animal days with Wild Atlas — one animal for every awareness day, with a read-aloud story, real facts, and where to see it."
+permalink: /calendar/
+eleventyExcludeFromCollections: true
+---
+{#- Each tile links to the animal's page in content/calendar/. Data: collections.calendar (drafts excluded). -#}
+{%- set months = [] -%}
+{%- for e in collections.calendar -%}{%- set k = e.date | monthKey -%}{%- if k not in months -%}{%- set months = (months.push(k), months) -%}{%- endif -%}{%- endfor -%}
+<style>
+  :root { --max: 1040px; --bark: #5D4037; --sunny: #FFD166; --sunny-wash: #FFF4CC; --card: #FFFFFF; }
+  .cal-hero { text-align: center; padding: 1.5rem 0 0.5rem; }
+  .cal-hero h1 { font-family: 'Fredoka', sans-serif; font-size: clamp(2rem, 5vw, 2.8rem); margin: 0 0 0.4rem; color: var(--bark); }
+  .cal-hero p { color: var(--muted); font-size: 1.08rem; max-width: 36rem; margin: 0 auto; }
+  .cal-month { margin: 2.5rem 0 1rem; }
+  .cal-month h2 { font-family: 'Fredoka', sans-serif; color: var(--bark); font-size: 1.6rem; margin: 0 0 0.9rem; }
+  .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; background: var(--card); border: 2px solid var(--bark); border-radius: 14px; padding: 10px; box-shadow: 0 6px 16px rgba(93, 64, 55, 0.12); }
+  .cal-dow { font-family: 'Fredoka', sans-serif; font-size: 0.8rem; text-align: center; color: rgba(93, 64, 55, 0.7); padding: 2px 0 6px; }
+  .cal-cell { aspect-ratio: 1 / 1; border-radius: 10px; position: relative; overflow: hidden; background: rgba(93, 64, 55, 0.04); }
+  .cal-cell.pad { background: transparent; }
+  .cal-num { position: absolute; top: 5px; left: 7px; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.85rem; color: rgba(93, 64, 55, 0.55); z-index: 2; }
+  a.cal-cell.event { display: block; text-decoration: none; outline: 2px solid var(--bark); outline-offset: -2px; }
+  a.cal-cell.event img { width: 100%; height: 100%; object-fit: cover; margin: 0; display: block; transition: transform 0.35s ease; }
+  a.cal-cell.event:hover img, a.cal-cell.event:focus-visible img { transform: scale(1.06); }
+  a.cal-cell.event .cal-num { color: #fff; background: rgba(42, 33, 24, 0.55); border-radius: 999px; padding: 0 7px; top: 4px; left: 4px; }
+  .cal-cell.today { box-shadow: inset 0 0 0 3px var(--sunny); background: var(--sunny-wash); }
+  .cal-label { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 6px 5px; font-family: 'Fredoka', sans-serif; font-size: 0.72rem; line-height: 1.1; color: #fff; background: linear-gradient(transparent, rgba(42, 33, 24, 0.78)); text-align: center; }
+  .cal-body { display: grid; grid-template-columns: 1fr; gap: 1rem; align-items: start; }
+  @media (min-width: 900px) { .cal-body { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 1.5rem; } }
+  .cal-events { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr; gap: 0.8rem; }
+  @media (min-width: 600px) and (max-width: 899px) { .cal-events { grid-template-columns: repeat(2, 1fr); } }
+  .cal-label::first-letter { text-transform: uppercase; }
+  .cal-label { display: none; }
+  @media (min-width: 1400px) { .cal-label { display: block; } }
+  .cal-card { display: flex; gap: 0.9rem; align-items: center; padding: 0.7rem; background: var(--card); border: 2px solid var(--bark); border-radius: 14px; box-shadow: 0 4px 10px rgba(93, 64, 55, 0.1); text-decoration: none; color: var(--ink); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .cal-card:hover, .cal-card:focus-visible { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(93, 64, 55, 0.16); }
+  .cal-card img { width: 84px; height: 84px; object-fit: cover; border-radius: 10px; margin: 0; flex-shrink: 0; }
+  .cal-date { font-family: 'Fredoka', sans-serif; text-align: center; min-width: 3rem; color: var(--bark); }
+  .cal-date b { display: block; font-size: 1.7rem; line-height: 1; }
+  .cal-date span { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.75; }
+  .cal-card h3 { font-family: 'Fredoka', sans-serif; font-size: 1.05rem; margin: 0 0 0.15rem; color: var(--bark); }
+  .cal-card p { margin: 0; font-size: 0.9rem; color: var(--muted); font-weight: 600; }
+  .cal-card.is-today { background: var(--sunny-wash); }
+  .cal-pill { display: inline-block; font-family: 'Fredoka', sans-serif; font-size: 0.7rem; background: var(--sunny); color: var(--bark); border-radius: 999px; padding: 1px 8px; margin-left: 4px; vertical-align: middle; }
+  @media (max-width: 600px) {
+    .cal-grid { gap: 3px; padding: 6px; }
+    .cal-num { font-size: 0.7rem; top: 3px; left: 4px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    a.cal-cell.event img, .cal-card { transition: none; }
+    a.cal-cell.event:hover img, .cal-card:hover { transform: none; }
+  }
+</style>
+
+<section class="cal-hero">
+  <h1>The Wild Atlas Conservation Calendar</h1>
+  <p>A year of animal days. Tap an animal to read its story out loud together, discover how big it is next to you, and find where you can see one for real.</p>
+</section>
+
+{%- for key in months %}
+<section class="cal-month" aria-labelledby="m-{{ key }}">
+  <h2 id="m-{{ key }}">{{ key | monthLabel }}</h2>
+  {%- set monthEvents = [] -%}
+  {%- for e in collections.calendar -%}{%- if (e.date | monthKey) == key -%}{%- set monthEvents = (monthEvents.push(e), monthEvents) -%}{%- endif -%}{%- endfor %}
+  <div class="cal-body">
+  <div class="cal-grid" aria-hidden="true">
+    {%- for d in ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"] %}<div class="cal-dow">{{ d }}</div>{% endfor %}
+    {%- for cell in key | monthGrid %}
+      {%- if not cell %}<div class="cal-cell pad"></div>
+      {%- else %}
+        {%- set ev = null -%}
+        {%- for e in monthEvents -%}{%- if (e.date | isoDay) == cell.iso -%}{%- set ev = e -%}{%- endif -%}{%- endfor -%}
+        {%- if ev %}
+        <a class="cal-cell event{% if ev.date | isToday %} today{% endif %}" href="{{ ev.url }}" tabindex="-1">
+          <span class="cal-num">{{ cell.day }}</span>
+          <img src="{{ ev.data.coverImage }}" alt="" loading="lazy">
+          <span class="cal-label">{{ ev.data.animalDay.animalName }}</span>
+        </a>
+        {%- else %}<div class="cal-cell"><span class="cal-num">{{ cell.day }}</span></div>{% endif %}
+      {%- endif %}
+    {%- endfor %}
+  </div>
+  <ul class="cal-events">
+    {%- for e in monthEvents %}
+    <li>
+      <a class="cal-card{% if e.date | isToday %} is-today{% endif %}" href="{{ e.url }}">
+        <span class="cal-date"><b>{{ e.date | dayNum }}</b><span>{{ e.date | weekday }}</span></span>
+        <img src="{{ e.data.coverImage }}" alt="">
+        <span>
+          <h3>{{ e.data.animalDay.dayName }}{% if e.date | isToday %}<span class="cal-pill">Today</span>{% endif %}</h3>
+          <p>Meet the {{ e.data.animalDay.animalName }}</p>
+        </span>
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+  </div>
+</section>
+{%- endfor %}

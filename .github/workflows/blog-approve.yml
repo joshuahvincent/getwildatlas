@@ -28,10 +28,16 @@ jobs:
           TITLE: ${{ github.event.issue.title }}
         run: |
           slug=$(printf '%s' "$TITLE" | sed -n 's/.*\[\([a-z0-9-]*\)\]$/\1/p')
-          file="content/blog/$slug.md"
-          test -n "$slug" && test -f "$file" || { echo "no post for '$TITLE'"; exit 1; }
-          grep -q '^status: scheduled$' "$file" || { echo "not scheduled"; exit 1; }
-          sed -i 's/^status: scheduled$/status: approved/' "$file"
+          test -n "$slug" || { echo "no slug in '$TITLE'"; exit 1; }
+          if [ -f "content/calendar/$slug.md" ]; then
+            file="content/calendar/$slug.md"; field=blogStatus   # calendar page's blog copy
+          elif [ -f "content/blog/$slug.md" ]; then
+            file="content/blog/$slug.md"; field=status
+          else
+            echo "no post for '$TITLE'"; exit 1
+          fi
+          grep -q "^$field: scheduled$" "$file" || { echo "not scheduled"; exit 1; }
+          sed -i "s/^$field: scheduled$/$field: approved/" "$file"
           git config user.name "wild-atlas-bot"
           git config user.email "actions@users.noreply.github.com"
           git commit -am "blog: approve $slug (issue #${{ github.event.issue.number }})"

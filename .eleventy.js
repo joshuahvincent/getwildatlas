@@ -28,11 +28,54 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("*.html");
 
   // ---- Collections ----------------------------------------------------------
+  // Blog posts = hand-written posts in content/blog/ plus the generated blog
+  // copies of conservation-calendar pages (tag "blogCopy", see
+  // content/calendar-blog-copies.njk). Sorted by their publish date.
+  const postDate = (item) => new Date(item.data.postDate || item.date);
   eleventyConfig.addCollection("posts", (collection) => {
-    return collection
-      .getFilteredByGlob("content/blog/*.md")
-      .sort((a, b) => b.date - a.date);
+    return [
+      ...collection.getFilteredByGlob("content/blog/*.md"),
+      ...collection.getFilteredByTag("blogCopy"),
+    ].sort((a, b) => postDate(b) - postDate(a));
   });
+
+  // ---- Conservation calendar ------------------------------------------------
+  // content/calendar/<slug>.md → /calendar/<slug>/ (live once advisor-gated;
+  // `status: draft` hides). Its blog copy (/blog/<slug>/) is generated on the
+  // day once Josh approves (`blogStatus: approved`) — see calendar.11tydata.js.
+  const showHidden = () => Boolean(process.env.SHOW_HIDDEN_POSTS);
+  const calendarItems = (collection) =>
+    collection
+      .getFilteredByGlob("content/calendar/*.md")
+      .filter((i) => showHidden() || i.data.status !== "draft")
+      .sort((a, b) => a.date - b.date);
+  eleventyConfig.addCollection("calendar", calendarItems);
+  eleventyConfig.addCollection("calendarBlogDue", (collection) =>
+    calendarItems(collection).filter(
+      (i) => showHidden() || (i.data.blogStatus === "approved" && i.date.getTime() <= Date.now())
+    )
+  );
+  eleventyConfig.addFilter("monthKey", (d) => new Date(d).toISOString().slice(0, 7));
+  eleventyConfig.addFilter("monthLabel", (key) =>
+    new Date(key + "-01T00:00:00Z").toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" })
+  );
+  eleventyConfig.addFilter("dayNum", (d) => new Date(d).getUTCDate());
+  eleventyConfig.addFilter("weekday", (d) => new Date(d).toLocaleDateString("en-US", { weekday: "short", timeZone: "UTC" }));
+  eleventyConfig.addFilter("isPast", (d) => new Date(d).getTime() < Date.now() - 86400000);
+  eleventyConfig.addFilter("isToday", (d) => new Date(d).toISOString().slice(0, 10) === new Date().toISOString().slice(0, 10));
+  // Month grid for /calendar/: Monday-first weeks of {day, iso} cells (null = padding).
+  eleventyConfig.addFilter("monthGrid", (key) => {
+    const [y, m] = key.split("-").map(Number);
+    const first = new Date(Date.UTC(y, m - 1, 1));
+    const days = new Date(Date.UTC(y, m, 0)).getUTCDate();
+    const cells = Array((first.getUTCDay() + 6) % 7).fill(null);
+    for (let d = 1; d <= days; d++) cells.push({ day: d, iso: `${key}-${String(d).padStart(2, "0")}` });
+    while (cells.length % 7) cells.push(null);
+    return cells;
+  });
+  eleventyConfig.addFilter("isoDay", (d) => new Date(d).toISOString().slice(0, 10));
+  const { RenderPlugin } = require("@11ty/eleventy");
+  eleventyConfig.addPlugin(RenderPlugin);
 
   // ---- Filters --------------------------------------------------------------
   eleventyConfig.addFilter("readableDate", (dateObj) => {

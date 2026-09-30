@@ -1,13 +1,11 @@
 ---
-layout: layouts/animal-day.njk
 title: "World Hippo Day: Hippo Facts for Kids — Meet the Animal That Makes Its Own Sunscreen"
 date: 2027-02-15
 author: Wild Atlas
 excerpt: "Happy World Hippo Day! Meet the hippo — it doesn't swim, it makes its own sunscreen, and it's related to whales. A read-aloud, plus where to meet a real hippo."
-permalink: /blog/world-hippo-day/
 coverImage: /assets/blog/world-hippo-day/hippo-cover.jpg
 tags: [animals, conservation, family]
-status: scheduled
+blogStatus: scheduled
 animalDay:
   dayName: World Hippo Day
   animalId: hippopotamus

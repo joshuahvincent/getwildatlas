@@ -26,7 +26,7 @@ eleventyExcludeFromCollections: true
             <div>
               <h2 style="margin: 0 0 0.25rem; color: var(--accent);">{{ post.data.title }}</h2>
               <p class="blog-list-meta" style="color: var(--muted); margin: 0 0 0.4rem; font-size: 0.9rem;">
-                <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
+                <time datetime="{{ (post.data.postDate or post.date) | isoDate }}">{{ (post.data.postDate or post.date) | readableDate }}</time>
                 {% if post.data.author %} · {{ post.data.author }}{% endif %}
               </p>
               {% if post.data.excerpt %}
