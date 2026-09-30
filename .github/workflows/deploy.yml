@@ -1,9 +1,23 @@
 name: Deploy to Cloudflare Pages
 
+# main → production (wildatlasapp.com).
+# preview/** → a Cloudflare Pages preview at
+#   https://<branch-alias>.wildatlaswebsite.pages.dev
+# where the alias is the branch name lowercased with every run of
+# non-alphanumerics turned into "-" (preview/my-post → preview-my-post).
+# Previews are served with X-Robots-Tag: noindex by Cloudflare.
+#
+# Only a push to (or manual run on) main may deploy with --branch=main.
+# A manual run on any other branch deploys as that branch's preview.
+
 on:
   push:
-    branches: [main]
+    branches: [main, "preview/**"]
   workflow_dispatch:
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
 
 jobs:
   deploy:
@@ -20,7 +34,32 @@ jobs:
 
       - run: npm run build
 
-      - run: npx wrangler pages deploy _site --project-name=wildatlaswebsite --branch=main
+      - name: Pick Pages branch
+        id: target
         env:
+          REF: ${{ github.ref }}
+          REF_NAME: ${{ github.ref_name }}
+        run: |
+          if [ "$REF" = "refs/heads/main" ]; then
+            branch=main
+          else
+            branch=$(printf '%s' "$REF_NAME" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//')
+            if [ -z "$branch" ] || [ "$branch" = "main" ]; then
+              echo "Refusing to deploy non-main ref '$REF_NAME' as '$branch'" >&2
+              exit 1
+            fi
+          fi
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+
+      - run: npx wrangler pages deploy _site --project-name=wildatlaswebsite --branch="$PAGES_BRANCH"
+        env:
+          PAGES_BRANCH: ${{ steps.target.outputs.branch }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Summary
+        if: steps.target.outputs.branch != 'main'
+        env:
+          PAGES_BRANCH: ${{ steps.target.outputs.branch }}
+        run: |
+          echo "Preview: https://$PAGES_BRANCH.wildatlaswebsite.pages.dev" >> "$GITHUB_STEP_SUMMARY"
