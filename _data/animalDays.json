@@ -1,0 +1,363 @@
+{
+ "_note": "Wild Atlas animal calendar. Source of truth: Notion 'Wild Atlas — Conservation Calendar'. `official` = a real awareness day set by others; false = a Wild Atlas pick week. `slug` links /calendar/<slug>/ once that page exists.",
+ "days": [
+  {
+   "date": "2026-07-09",
+   "animal": "Capybara",
+   "day": "Wild Atlas pick",
+   "official": false
+  },
+  {
+   "date": "2026-07-14",
+   "animal": "Great White Shark",
+   "day": "Shark Awareness Day",
+   "official": true
+  },
+  {
+   "date": "2026-07-23",
+   "animal": "Axolotl",
+   "day": "Wild Atlas pick",
+   "official": false
+  },
+  {
+   "date": "2026-07-29",
+   "animal": "Amur Tiger",
+   "day": "International Tiger Day",
+   "official": true
+  },
+  {
+   "date": "2026-08-04",
+   "animal": "Clouded Leopard",
+   "day": "International Clouded Leopard Day",
+   "official": true
+  },
+  {
+   "date": "2026-08-12",
+   "animal": "African Elephant",
+   "day": "World Elephant Day",
+   "official": true
+  },
+  {
+   "date": "2026-08-19",
+   "animal": "Bornean Orangutan",
+   "day": "International Orangutan Day",
+   "official": true
+  },
+  {
+   "date": "2026-08-26",
+   "animal": "African Painted Dog",
+   "day": "World Painted Dog Day",
+   "official": true
+  },
+  {
+   "date": "2026-09-05",
+   "animal": "White-backed Vulture",
+   "day": "International Vulture Awareness Day",
+   "official": true
+  },
+  {
+   "date": "2026-09-12",
+   "animal": "Bottlenose Dolphin",
+   "day": "World Dolphin Day",
+   "official": true
+  },
+  {
+   "date": "2026-09-19",
+   "animal": "Red Panda",
+   "day": "International Red Panda Day",
+   "official": true
+  },
+  {
+   "date": "2026-09-24",
+   "animal": "Mountain Gorilla",
+   "day": "World Gorilla Day",
+   "official": true
+  },
+  {
+   "date": "2026-10-04",
+   "animal": "Animals around the world",
+   "day": "World Animal Day",
+   "official": true,
+   "blogUrl": "/blog/world-animal-day/"
+  },
+  {
+   "date": "2026-10-08",
+   "animal": "Giant Pacific Octopus",
+   "day": "World Octopus Day",
+   "official": true,
+   "slug": "world-octopus-day-2026"
+  },
+  {
+   "date": "2026-10-18",
+   "animal": "Okapi",
+   "day": "World Okapi Day",
+   "official": true,
+   "slug": "world-okapi-day-2026"
+  },
+  {
+   "date": "2026-10-20",
+   "animal": "Three-toed Sloth",
+   "day": "International Sloth Day",
+   "official": true,
+   "slug": "international-sloth-day-2026"
+  },
+  {
+   "date": "2026-10-30",
+   "animal": "Ring-tailed Lemur",
+   "day": "World Lemur Day",
+   "official": true,
+   "slug": "world-lemur-day-2026"
+  },
+  {
+   "date": "2026-11-07",
+   "animal": "American Bison",
+   "day": "National Bison Day",
+   "official": true,
+   "slug": "national-bison-day-2026"
+  },
+  {
+   "date": "2026-11-12",
+   "animal": "Wombat",
+   "day": "Wild Atlas pick",
+   "official": false,
+   "slug": "wombat-facts-for-kids"
+  },
+  {
+   "date": "2026-11-21",
+   "animal": "Whale Shark",
+   "day": "World Fisheries Day",
+   "official": true,
+   "slug": "whale-shark-world-fisheries-day-2026"
+  },
+  {
+   "date": "2026-11-29",
+   "animal": "Jaguar",
+   "day": "International Jaguar Day",
+   "official": true,
+   "slug": "international-jaguar-day-2026"
+  },
+  {
+   "date": "2026-12-04",
+   "animal": "Cheetah",
+   "day": "International Cheetah Day",
+   "official": true,
+   "slug": "international-cheetah-day-2026"
+  },
+  {
+   "date": "2026-12-10",
+   "animal": "Quokka",
+   "day": "Wild Atlas pick",
+   "official": false,
+   "slug": "quokka-facts-for-kids"
+  },
+  {
+   "date": "2026-12-14",
+   "animal": "Golden Snub-nosed Monkey",
+   "day": "Monkey Day",
+   "official": true,
+   "slug": "monkey-day-2026"
+  },
+  {
+   "date": "2026-12-23",
+   "animal": "Reindeer",
+   "day": "Wild Atlas pick",
+   "official": false,
+   "slug": "reindeer-facts-for-kids"
+  },
+  {
+   "date": "2026-12-30",
+   "animal": "Narwhal",
+   "day": "Wild Atlas pick",
+   "official": false,
+   "slug": "narwhal-facts-for-kids"
+  },
+  {
+   "date": "2027-01-05",
+   "animal": "Hyacinth Macaw",
+   "day": "National Bird Day",
+   "official": true,
+   "slug": "national-bird-day-2027"
+  },
+  {
+   "date": "2027-01-14",
+   "animal": "Snow Leopard",
+   "day": "Wild Atlas pick",
+   "official": false,
+   "slug": "snow-leopard-facts-for-kids"
+  },
+  {
+   "date": "2027-01-20",
+   "animal": "Emperor Penguin",
+   "day": "Penguin Awareness Day",
+   "official": true,
+   "slug": "penguin-awareness-day-2027"
+  },
+  {
+   "date": "2027-01-31",
+   "animal": "Plains Zebra",
+   "day": "International Zebra Day",
+   "official": true,
+   "slug": "international-zebra-day-2027"
+  },
+  {
+   "date": "2027-02-02",
+   "animal": "Ostrich",
+   "day": "World Ostrich Day",
+   "official": true,
+   "slug": "world-ostrich-day-2027"
+  },
+  {
+   "date": "2027-02-14",
+   "animal": "Bonobo",
+   "day": "World Bonobo Day",
+   "official": true,
+   "slug": "world-bonobo-day-2027"
+  },
+  {
+   "date": "2027-02-15",
+   "animal": "Hippopotamus",
+   "day": "World Hippo Day",
+   "official": true,
+   "slug": "world-hippo-day-2027"
+  },
+  {
+   "date": "2027-02-20",
+   "animal": "Pangolin",
+   "day": "World Pangolin Day",
+   "official": true,
+   "slug": "world-pangolin-day-2027"
+  },
+  {
+   "date": "2027-02-27",
+   "animal": "Polar Bear",
+   "day": "International Polar Bear Day",
+   "official": true,
+   "slug": "international-polar-bear-day-2027"
+  },
+  {
+   "date": "2027-03-03",
+   "animal": "African Lion",
+   "day": "World Wildlife Day",
+   "official": true,
+   "slug": "world-wildlife-day-2027"
+  },
+  {
+   "date": "2027-03-11",
+   "animal": "Humpback Whale",
+   "day": "Wild Atlas pick",
+   "official": false,
+   "slug": "humpback-whale-facts-for-kids"
+  },
+  {
+   "date": "2027-03-16",
+   "animal": "Giant Panda",
+   "day": "National Panda Day",
+   "official": true,
+   "slug": "national-panda-day-2027"
+  },
+  {
+   "date": "2027-03-22",
+   "animal": "Harp Seal",
+   "day": "International Seal Day",
+   "official": true,
+   "slug": "international-seal-day-2027"
+  },
+  {
+   "date": "2027-03-31",
+   "animal": "West Indian Manatee",
+   "day": "Manatee Appreciation Day",
+   "official": true,
+   "slug": "manatee-appreciation-day-2027"
+  },
+  {
+   "date": "2027-04-07",
+   "animal": "Eurasian Beaver",
+   "day": "International Beaver Day",
+   "official": true,
+   "slug": "international-beaver-day-2027"
+  },
+  {
+   "date": "2027-04-17",
+   "animal": "Fruit Bat",
+   "day": "Bat Appreciation Day",
+   "official": true,
+   "slug": "bat-appreciation-day-2027"
+  },
+  {
+   "date": "2027-04-23",
+   "animal": "Pallas's Cat",
+   "day": "International Pallas's Cat Day",
+   "official": true,
+   "slug": "international-pallas-cat-day-2027"
+  },
+  {
+   "date": "2027-04-27",
+   "animal": "Malayan Tapir",
+   "day": "World Tapir Day",
+   "official": true,
+   "slug": "world-tapir-day-2027"
+  },
+  {
+   "date": "2027-05-03",
+   "animal": "Koala",
+   "day": "Wild Koala Day",
+   "official": true,
+   "slug": "wild-koala-day-2027"
+  },
+  {
+   "date": "2027-05-12",
+   "animal": "Arctic Tern",
+   "day": "Wild Atlas pick",
+   "official": false,
+   "slug": "arctic-tern-facts-for-kids"
+  },
+  {
+   "date": "2027-05-21",
+   "animal": "Black Rhino",
+   "day": "Endangered Species Day",
+   "official": true,
+   "slug": "endangered-species-day-2027"
+  },
+  {
+   "date": "2027-05-26",
+   "animal": "Sea Otter",
+   "day": "World Otter Day",
+   "official": true,
+   "slug": "world-otter-day-2027"
+  },
+  {
+   "date": "2027-06-05",
+   "animal": "Galapagos Giant Tortoise",
+   "day": "World Environment Day",
+   "official": true,
+   "slug": "world-environment-day-2027"
+  },
+  {
+   "date": "2027-06-08",
+   "animal": "Orca",
+   "day": "World Oceans Day",
+   "official": true,
+   "slug": "world-oceans-day-2027"
+  },
+  {
+   "date": "2027-06-16",
+   "animal": "Green Sea Turtle",
+   "day": "World Sea Turtle Day",
+   "official": true,
+   "slug": "world-sea-turtle-day-2027"
+  },
+  {
+   "date": "2027-06-21",
+   "animal": "Giraffe",
+   "day": "World Giraffe Day",
+   "official": true,
+   "slug": "world-giraffe-day-2027"
+  },
+  {
+   "date": "2027-06-30",
+   "animal": "Explorer's Choice — you vote!",
+   "day": "Explorer's Choice",
+   "official": false
+  }
+ ]
+}

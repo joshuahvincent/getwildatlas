@@ -1,100 +1,134 @@
 ---
 layout: layouts/blog-base.njk
-title: Conservation Calendar
-excerpt: "A year of animal days with Wild Atlas — one animal for every awareness day, with a read-aloud story, real facts, and where to see it."
+title: The Wild Atlas Animal Calendar
+excerpt: "A year of real animal awareness days — World Hippo Day, World Octopus Day and dozens more — each with a read-aloud story, real facts, and where to see the animal."
 permalink: /calendar/
 eleventyExcludeFromCollections: true
 ---
-{#- Each tile links to the animal's page in content/calendar/. Data: collections.calendar (drafts excluded). -#}
-{%- set months = [] -%}
-{%- for e in collections.calendar -%}{%- set k = e.date | monthKey -%}{%- if k not in months -%}{%- set months = (months.push(k), months) -%}{%- endif -%}{%- endfor -%}
+{#- Days: _data/animalDays.json (mirrors the Notion calendar). A day links to its
+    /calendar/<slug>/ page once that page exists (collections.calendar). -#}
+{%- set months = animalDays.days | calendarYear(collections.calendar, collections.posts) -%}
+{%- set officialCount = 0 -%}{%- set pickCount = 0 -%}
+{%- for d in animalDays.days -%}{%- if d.official -%}{%- set officialCount = officialCount + 1 -%}{%- else -%}{%- set pickCount = pickCount + 1 -%}{%- endif -%}{%- endfor -%}
+{%- macro aboutBody(total, official, picks) %}
+  <p class="about-stat"><b>{{ total }}</b> animal days a year<br><span>{{ official }} official awareness days + {{ picks }} Wild Atlas picks</span></p>
+  <h3>Where the dates come from</h3>
+  <p>Every official day on this calendar was set by someone else — conservation groups, zoos and aquariums, the United Nations (like World Wildlife Day and World Oceans Day). Most are celebrated worldwide; a few, like National Bison Day and National Panda Day, are US days. We didn't invent them. We just make sure each one has a story for kids.</p>
+  <h3>How an animal gets on the calendar</h3>
+  <ul>
+    <li><b>One animal a week</b>, matched to a real awareness day.</li>
+    <li>When several days land in the same week, we pick the one we think kids will love most.</li>
+    <li>In the few weeks with no animal day, we choose a favourite and label it a <span class="pick-badge">Wild Atlas pick</span>.</li>
+    <li>The year ends with <b>Explorer's Choice</b>, where families vote for a favourite.</li>
+  </ul>
+  <h3>Every page</h3>
+  <p>Has a short read-aloud story, how big the animal is next to a 5-year-old, and where you can see one for real — fact-checked against trusted sources like the IUCN Red List and the zoos and aquariums themselves.</p>
+  <p class="about-legend"><span class="lg lg-live"></span> Ready to read &nbsp; <span class="lg lg-soon"></span> Coming soon &nbsp; <span class="lg lg-today"></span> Today</p>
+{%- endmacro %}
 <style>
-  :root { --max: 1040px; --bark: #5D4037; --sunny: #FFD166; --sunny-wash: #FFF4CC; --card: #FFFFFF; }
-  .cal-hero { text-align: center; padding: 1.5rem 0 0.5rem; }
-  .cal-hero h1 { font-family: 'Fredoka', sans-serif; font-size: clamp(2rem, 5vw, 2.8rem); margin: 0 0 0.4rem; color: var(--bark); }
-  .cal-hero p { color: var(--muted); font-size: 1.08rem; max-width: 36rem; margin: 0 auto; }
-  .cal-month { margin: 2.5rem 0 1rem; }
-  .cal-month h2 { font-family: 'Fredoka', sans-serif; color: var(--bark); font-size: 1.6rem; margin: 0 0 0.9rem; }
-  .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; background: var(--card); border: 2px solid var(--bark); border-radius: 14px; padding: 10px; box-shadow: 0 6px 16px rgba(93, 64, 55, 0.12); }
-  .cal-dow { font-family: 'Fredoka', sans-serif; font-size: 0.8rem; text-align: center; color: rgba(93, 64, 55, 0.7); padding: 2px 0 6px; }
-  .cal-cell { aspect-ratio: 1 / 1; border-radius: 10px; position: relative; overflow: hidden; background: rgba(93, 64, 55, 0.04); }
-  .cal-cell.pad { background: transparent; }
-  .cal-num { position: absolute; top: 5px; left: 7px; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.85rem; color: rgba(93, 64, 55, 0.55); z-index: 2; }
-  a.cal-cell.event { display: block; text-decoration: none; outline: 2px solid var(--bark); outline-offset: -2px; }
-  a.cal-cell.event img { width: 100%; height: 100%; object-fit: cover; margin: 0; display: block; transition: transform 0.35s ease; }
-  a.cal-cell.event:hover img, a.cal-cell.event:focus-visible img { transform: scale(1.06); }
-  a.cal-cell.event .cal-num { color: #fff; background: rgba(42, 33, 24, 0.55); border-radius: 999px; padding: 0 7px; top: 4px; left: 4px; }
-  .cal-cell.today { box-shadow: inset 0 0 0 3px var(--sunny); background: var(--sunny-wash); }
-  .cal-label { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 6px 5px; font-family: 'Fredoka', sans-serif; font-size: 0.72rem; line-height: 1.1; color: #fff; background: linear-gradient(transparent, rgba(42, 33, 24, 0.78)); text-align: center; }
+  :root { --max: 1120px; --bark: #5D4037; --sunny: #FFD166; --sunny-wash: #FFF4CC; --card: #FFFFFF; }
+  .cal-hero { padding: 1.25rem 0 0.25rem; max-width: 46rem; }
+  .cal-hero .eyebrow { font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin: 0 0 0.3rem; }
+  .cal-hero h1 { font-family: 'Fredoka', sans-serif; font-size: clamp(2rem, 5vw, 2.7rem); line-height: 1.1; margin: 0 0 0.6rem; color: var(--bark); }
+  .cal-hero p { color: var(--muted); font-size: 1.06rem; font-weight: 600; margin: 0; }
+  .cal-layout { display: grid; grid-template-columns: 1fr; gap: 1.5rem; align-items: start; margin-top: 1.25rem; }
+  @media (min-width: 1000px) { .cal-layout { grid-template-columns: minmax(0, 1fr) 300px; gap: 2rem; } }
+  .about-desktop { display: none; }
+  @media (min-width: 1000px) {
+    .about-desktop { display: block; position: sticky; top: 90px; background: var(--card); border: 2px solid var(--bark); border-radius: 14px; padding: 1.1rem 1.2rem; box-shadow: 0 6px 16px rgba(93, 64, 55, 0.12); font-size: 0.9rem; max-height: calc(100vh - 110px); overflow: auto; }
+    .about-mobile { display: none; }
+  }
+  .about-mobile { background: var(--card); border: 2px solid var(--bark); border-radius: 14px; padding: 0.8rem 1rem; font-size: 0.92rem; margin-bottom: 1.5rem; }
+  .about-mobile summary { font-family: 'Fredoka', sans-serif; font-weight: 600; color: var(--bark); cursor: pointer; }
+  .about-title { font-family: 'Fredoka', sans-serif; color: var(--bark); font-size: 1.15rem; margin: 0 0 0.6rem; }
+  .about-desktop h3, .about-mobile h3 { font-family: 'Fredoka', sans-serif; color: var(--bark); font-size: 0.98rem; margin: 1rem 0 0.3rem; }
+  .about-desktop p, .about-mobile p, .about-desktop li, .about-mobile li { line-height: 1.45; font-weight: 600; color: var(--ink); margin: 0 0 0.4rem; }
+  .about-desktop ul, .about-mobile ul { padding-left: 1.1rem; margin: 0; }
+  .about-stat { background: var(--sunny-wash); border-radius: 10px; padding: 0.6rem 0.8rem; }
+  .about-stat b { font-family: 'Fredoka', sans-serif; font-size: 1.6rem; color: var(--bark); }
+  .about-stat span { font-size: 0.85rem; color: var(--muted); }
+  .about-legend { font-size: 0.82rem; color: var(--muted) !important; margin-top: 0.8rem !important; }
+  .lg { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -1px; }
+  .lg-live { background: var(--bark); } .lg-soon { border: 2px dashed rgba(93, 64, 55, 0.5); } .lg-today { background: var(--sunny); }
+  .pick-badge { display: inline-block; font-family: 'Fredoka', sans-serif; font-size: 0.72rem; font-weight: 600; background: #E4F4EC; color: #2F6B4F; border-radius: 999px; padding: 0 8px; white-space: nowrap; }
+  .cal-month { margin: 0 0 2.25rem; scroll-margin-top: 90px; }
+  .cal-month h2 { font-family: 'Fredoka', sans-serif; color: var(--bark); font-size: 1.55rem; margin: 0 0 0.8rem; }
+  .cal-month h2 .now { font-size: 0.75rem; background: var(--sunny); border-radius: 999px; padding: 2px 10px; vertical-align: middle; margin-left: 8px; }
   .cal-body { display: grid; grid-template-columns: 1fr; gap: 1rem; align-items: start; }
-  @media (min-width: 900px) { .cal-body { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 1.5rem; } }
-  .cal-events { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr; gap: 0.8rem; }
-  @media (min-width: 600px) and (max-width: 899px) { .cal-events { grid-template-columns: repeat(2, 1fr); } }
-  .cal-label::first-letter { text-transform: uppercase; }
-  .cal-label { display: none; }
-  @media (min-width: 1400px) { .cal-label { display: block; } }
-  .cal-card { display: flex; gap: 0.9rem; align-items: center; padding: 0.7rem; background: var(--card); border: 2px solid var(--bark); border-radius: 14px; box-shadow: 0 4px 10px rgba(93, 64, 55, 0.1); text-decoration: none; color: var(--ink); transition: transform 0.2s ease, box-shadow 0.2s ease; }
-  .cal-card:hover, .cal-card:focus-visible { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(93, 64, 55, 0.16); }
-  .cal-card img { width: 84px; height: 84px; object-fit: cover; border-radius: 10px; margin: 0; flex-shrink: 0; }
-  .cal-date { font-family: 'Fredoka', sans-serif; text-align: center; min-width: 3rem; color: var(--bark); }
-  .cal-date b { display: block; font-size: 1.7rem; line-height: 1; }
-  .cal-date span { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.75; }
-  .cal-card h3 { font-family: 'Fredoka', sans-serif; font-size: 1.05rem; margin: 0 0 0.15rem; color: var(--bark); }
-  .cal-card p { margin: 0; font-size: 0.9rem; color: var(--muted); font-weight: 600; }
+  @media (min-width: 760px) { .cal-body { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1.25rem; } }
+  .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; background: var(--card); border: 2px solid var(--bark); border-radius: 14px; padding: 8px; box-shadow: 0 6px 16px rgba(93, 64, 55, 0.12); }
+  .cal-dow { font-family: 'Fredoka', sans-serif; font-size: 0.72rem; text-align: center; color: rgba(93, 64, 55, 0.7); padding: 2px 0 4px; }
+  .cal-cell { aspect-ratio: 1 / 1; border-radius: 8px; position: relative; overflow: hidden; background: rgba(93, 64, 55, 0.04); }
+  .cal-cell.pad { background: transparent; }
+  .cal-num { position: absolute; top: 3px; left: 5px; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.72rem; color: rgba(93, 64, 55, 0.55); z-index: 2; }
+  .cal-cell.soon { background: #fff; outline: 2px dashed rgba(93, 64, 55, 0.45); outline-offset: -2px; }
+  .cal-cell.soon::after { content: ""; position: absolute; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); bottom: 6px; left: 50%; transform: translateX(-50%); }
+  a.cal-cell.live { display: block; outline: 2px solid var(--bark); outline-offset: -2px; }
+  a.cal-cell.live img { width: 100%; height: 100%; object-fit: cover; margin: 0; display: block; transition: transform 0.35s ease; }
+  a.cal-cell.live:hover img { transform: scale(1.07); }
+  a.cal-cell.live .cal-num { color: #fff; background: rgba(42, 33, 24, 0.55); border-radius: 999px; padding: 0 6px; top: 3px; left: 3px; }
+  .cal-cell.today { box-shadow: inset 0 0 0 3px var(--sunny); }
+  .cal-cell.today:not(.live):not(.soon) { background: var(--sunny-wash); }
+  .cal-events { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem; }
+  .cal-card { display: flex; gap: 0.75rem; align-items: center; padding: 0.55rem; background: var(--card); border: 2px solid var(--bark); border-radius: 14px; box-shadow: 0 3px 8px rgba(93, 64, 55, 0.08); text-decoration: none; color: var(--ink); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  a.cal-card:hover { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(93, 64, 55, 0.16); }
+  .cal-card.soon { border-style: dashed; border-color: rgba(93, 64, 55, 0.45); box-shadow: none; background: rgba(255, 255, 255, 0.6); }
   .cal-card.is-today { background: var(--sunny-wash); }
-  .cal-pill { display: inline-block; font-family: 'Fredoka', sans-serif; font-size: 0.7rem; background: var(--sunny); color: var(--bark); border-radius: 999px; padding: 1px 8px; margin-left: 4px; vertical-align: middle; }
-  @media (max-width: 600px) {
-    .cal-grid { gap: 3px; padding: 6px; }
-    .cal-num { font-size: 0.7rem; top: 3px; left: 4px; }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    a.cal-cell.event img, .cal-card { transition: none; }
-    a.cal-cell.event:hover img, .cal-card:hover { transform: none; }
-  }
+  .cal-card.past, .cal-cell.past { opacity: 0.55; }
+  .cal-card .thumb { width: 64px; height: 64px; border-radius: 10px; flex-shrink: 0; object-fit: cover; margin: 0; background: rgba(93, 64, 55, 0.06); display: flex; align-items: center; justify-content: center; font-family: 'Fredoka', sans-serif; font-size: 0.7rem; color: var(--muted); text-align: center; }
+  .cal-date { font-family: 'Fredoka', sans-serif; text-align: center; min-width: 2.4rem; color: var(--bark); }
+  .cal-date b { display: block; font-size: 1.45rem; line-height: 1; }
+  .cal-date span { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.75; }
+  .cal-card h3 { font-family: 'Fredoka', sans-serif; font-size: 1rem; margin: 0 0 0.1rem; color: var(--bark); }
+  .cal-card p { margin: 0; font-size: 0.86rem; color: var(--muted); font-weight: 600; }
+  .cal-card .status { font-size: 0.75rem; }
+  .today-pill { font-family: 'Fredoka', sans-serif; font-size: 0.68rem; background: var(--sunny); color: var(--bark); border-radius: 999px; padding: 0 7px; margin-left: 4px; vertical-align: 1px; }
+  @media (prefers-reduced-motion: reduce) { a.cal-cell.live img, .cal-card { transition: none; } a.cal-cell.live:hover img, a.cal-card:hover { transform: none; } }
 </style>
 
-<section class="cal-hero">
-  <h1>The Wild Atlas Conservation Calendar</h1>
-  <p>A year of animal days. Tap an animal to read its story out loud together, discover how big it is next to you, and find where you can see one for real.</p>
-</section>
+<header class="cal-hero">
+  <p class="eyebrow">Wild Atlas Animal Calendar</p>
+  <h1>A year of real animal days</h1>
+  <p>World Hippo Day. World Octopus Day. International Polar Bear Day. Animal lovers around the world already celebrate these days — we didn't make them up. For each one, we've made a short read-aloud story to share with your kids.</p>
+</header>
 
-{%- for key in months %}
-<section class="cal-month" aria-labelledby="m-{{ key }}">
-  <h2 id="m-{{ key }}">{{ key | monthLabel }}</h2>
-  {%- set monthEvents = [] -%}
-  {%- for e in collections.calendar -%}{%- if (e.date | monthKey) == key -%}{%- set monthEvents = (monthEvents.push(e), monthEvents) -%}{%- endif -%}{%- endfor %}
-  <div class="cal-body">
-  <div class="cal-grid" aria-hidden="true">
-    {%- for d in ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"] %}<div class="cal-dow">{{ d }}</div>{% endfor %}
-    {%- for cell in key | monthGrid %}
-      {%- if not cell %}<div class="cal-cell pad"></div>
-      {%- else %}
-        {%- set ev = null -%}
-        {%- for e in monthEvents -%}{%- if (e.date | isoDay) == cell.iso -%}{%- set ev = e -%}{%- endif -%}{%- endfor -%}
-        {%- if ev %}
-        <a class="cal-cell event{% if ev.date | isToday %} today{% endif %}" href="{{ ev.url }}" tabindex="-1">
-          <span class="cal-num">{{ cell.day }}</span>
-          <img src="{{ ev.data.coverImage }}" alt="" loading="lazy">
-          <span class="cal-label">{{ ev.data.animalDay.animalName }}</span>
-        </a>
-        {%- else %}<div class="cal-cell"><span class="cal-num">{{ cell.day }}</span></div>{% endif %}
-      {%- endif %}
+<div class="cal-layout">
+  <div>
+    <details class="about-mobile"><summary>About this calendar</summary>{{ aboutBody(animalDays.days | length, officialCount, pickCount) }}</details>
+    {%- for m in months %}
+    <section class="cal-month" id="m-{{ m.key }}" aria-labelledby="h-{{ m.key }}">
+      <h2 id="h-{{ m.key }}">{{ m.key | monthLabel }}{% if loop.first %}<span class="now">This month</span>{% endif %}</h2>
+      <div class="cal-body">
+        <div class="cal-grid" aria-hidden="true">
+          {%- for d in ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"] %}<div class="cal-dow">{{ d }}</div>{% endfor %}
+          {%- for cell in m.key | monthGrid %}
+            {%- if not cell %}<div class="cal-cell pad"></div>
+            {%- else %}
+              {%- set ev = null -%}{%- for e in m.events -%}{%- if e.iso == cell.iso -%}{%- set ev = e -%}{%- endif -%}{%- endfor -%}
+              {%- if ev and ev.url and ev.image %}<a class="cal-cell live{% if ev.isToday %} today{% endif %}" href="{{ ev.url }}" tabindex="-1"><span class="cal-num">{{ cell.day }}</span><img src="{{ ev.image }}" alt="" loading="lazy"></a>
+              {%- elif ev %}<div class="cal-cell soon{% if ev.isToday %} today{% endif %}{% if ev.isPast %} past{% endif %}"><span class="cal-num">{{ cell.day }}</span></div>
+              {%- else %}<div class="cal-cell{% if cell.iso == todayIso %} today{% endif %}"><span class="cal-num">{{ cell.day }}</span></div>{% endif %}
+            {%- endif %}
+          {%- endfor %}
+        </div>
+        <ul class="cal-events">
+          {%- for e in m.events %}
+          <li>
+            {%- set inner %}
+              <span class="cal-date"><b>{{ e.day_num }}</b><span>{{ e.weekday }}</span></span>
+              {% if e.image %}<img class="thumb" src="{{ e.image }}" alt="" loading="lazy">{% else %}<span class="thumb">{% if e.url %}Read{% elif e.isPast %}Next year{% else %}Soon{% endif %}</span>{% endif %}
+              <span>
+                <h3>{% if e.official %}{{ e.day }}{% else %}{{ e.animal }}{% endif %}{% if e.isToday %}<span class="today-pill">Today</span>{% endif %}</h3>
+                <p>{% if e.official %}{{ e.animal }}{% else %}<span class="pick-badge">{{ e.day }}</span>{% endif %}{% if not e.url %} · <span class="status">{% if e.isPast %}back next year{% else %}coming soon{% endif %}</span>{% endif %}</p>
+              </span>
+            {%- endset %}
+            {% if e.url %}<a class="cal-card{% if e.isToday %} is-today{% endif %}" href="{{ e.url }}">{{ inner | safe }}</a>{% else %}<div class="cal-card soon{% if e.isToday %} is-today{% endif %}{% if e.isPast %} past{% endif %}">{{ inner | safe }}</div>{% endif %}
+          </li>
+          {%- endfor %}
+        </ul>
+      </div>
+    </section>
     {%- endfor %}
   </div>
-  <ul class="cal-events">
-    {%- for e in monthEvents %}
-    <li>
-      <a class="cal-card{% if e.date | isToday %} is-today{% endif %}" href="{{ e.url }}">
-        <span class="cal-date"><b>{{ e.date | dayNum }}</b><span>{{ e.date | weekday }}</span></span>
-        <img src="{{ e.data.coverImage }}" alt="">
-        <span>
-          <h3>{{ e.data.animalDay.dayName }}{% if e.date | isToday %}<span class="cal-pill">Today</span>{% endif %}</h3>
-          <p>Meet the {{ e.data.animalDay.animalName }}</p>
-        </span>
-      </a>
-    </li>
-    {%- endfor %}
-  </ul>
-  </div>
-</section>
-{%- endfor %}
+  <aside class="about-desktop" aria-label="About this calendar"><p class="about-title">About this calendar</p>{{ aboutBody(animalDays.days | length, officialCount, pickCount) }}</aside>
+</div>

@@ -73,6 +73,36 @@ module.exports = function (eleventyConfig) {
     while (cells.length % 7) cells.push(null);
     return cells;
   });
+  // Rolling 12-month animal calendar for /calendar/, current month first.
+  // Awareness days recur yearly, so a day earlier than this month rolls to
+  // next year. Each day links to its calendar page (or blog post) once it exists.
+  eleventyConfig.addFilter("calendarYear", (days, calendarPages, posts) => {
+    const now = new Date();
+    const start = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), 1);
+    const pages = new Map((calendarPages || []).map((p) => [p.page.fileSlug, p]));
+    const postUrls = new Set((posts || []).map((p) => p.url));
+    const todayIso = now.toISOString().slice(0, 10);
+    const months = [];
+    for (let i = 0; i < 12; i++) {
+      const d = new Date(start); d.setUTCMonth(d.getUTCMonth() + i);
+      months.push({ key: d.toISOString().slice(0, 7), events: [] });
+    }
+    for (const day of days) {
+      let occ = new Date(day.date + "T00:00:00Z");
+      while (occ.getTime() < start) occ.setUTCFullYear(occ.getUTCFullYear() + 1);
+      const m = months.find((x) => x.key === occ.toISOString().slice(0, 7));
+      if (!m) continue;
+      const page = day.slug && pages.get(day.slug);
+      const url = page ? page.url : day.blogUrl && postUrls.has(day.blogUrl) ? day.blogUrl : null;
+      const iso = occ.toISOString().slice(0, 10);
+      m.events.push({ ...day, iso, url, day_num: occ.getUTCDate(),
+        weekday: occ.toLocaleDateString("en-US", { weekday: "short", timeZone: "UTC" }),
+        image: page ? page.data.coverImage : null, isToday: iso === todayIso, isPast: iso < todayIso });
+    }
+    for (const m of months) m.events.sort((a, b) => (a.iso < b.iso ? -1 : 1));
+    return months;
+  });
+  eleventyConfig.addGlobalData("todayIso", () => new Date().toISOString().slice(0, 10));
   eleventyConfig.addFilter("isoDay", (d) => new Date(d).toISOString().slice(0, 10));
   const { RenderPlugin } = require("@11ty/eleventy");
   eleventyConfig.addPlugin(RenderPlugin);
