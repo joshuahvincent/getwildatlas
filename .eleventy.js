@@ -120,6 +120,19 @@ module.exports = function (eleventyConfig) {
     for (const m of months) {
       m.events.sort((a, b) => (a.iso < b.iso ? -1 : 1));
       m.also.sort((a, b) => (a.iso < b.iso ? -1 : 1));
+      // Calendar squares (Monday-first) with the featured event + also-celebrated days.
+      const [y, mo] = m.key.split("-").map(Number);
+      const first = new Date(Date.UTC(y, mo - 1, 1));
+      const n = new Date(Date.UTC(y, mo, 0)).getUTCDate();
+      m.cells = Array((first.getUTCDay() + 6) % 7).fill(null);
+      for (let d = 1; d <= n; d++) {
+        const iso = `${m.key}-${String(d).padStart(2, "0")}`;
+        m.cells.push({ day: d, iso, isToday: iso === todayIso,
+          ev: m.events.find((e) => e.iso === iso) || null, also: m.also.filter((a) => a.iso === iso) });
+      }
+      while (m.cells.length % 7) m.cells.push(null);
+      // Agenda (phones): every date with anything on it.
+      m.agenda = m.cells.filter((c) => c && (c.ev || c.also.length));
     }
     return months;
   });

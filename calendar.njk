@@ -75,6 +75,66 @@ eleventyExcludeFromCollections: true
   .cal-card .status { font-size: 0.75rem; }
   .today-pill { font-family: 'Fredoka', sans-serif; font-size: 0.68rem; background: var(--sunny); color: var(--bark); border-radius: 999px; padding: 0 7px; margin-left: 4px; vertical-align: 1px; }
   @media (prefers-reduced-motion: reduce) { a.cal-cell.live img, .cal-card { transition: none; } a.cal-cell.live:hover img, a.cal-card:hover { transform: none; } }
+  .cal-key { font-size: 0.84rem; font-weight: 600; color: var(--muted); margin: 0.9rem 0 1.4rem; line-height: 1.8; }
+  .k-feat { display: inline-block; width: 12px; height: 12px; border-radius: 3px; background: var(--bark); vertical-align: -1px; }
+  .k-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #7FB89A; vertical-align: 0; }
+  .bigcal { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 5px; background: var(--card); border: 2px solid var(--bark); border-radius: 14px; padding: 8px; box-shadow: 0 6px 16px rgba(93, 64, 55, 0.12); }
+  .bc-dow { font-family: 'Fredoka', sans-serif; font-size: 0.75rem; text-align: center; color: rgba(93, 64, 55, 0.7); padding: 2px 0 4px; }
+  .bc { position: relative; min-height: 118px; border-radius: 10px; background: rgba(93, 64, 55, 0.035); padding: 22px 5px 5px; display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+  .bc.pad { background: transparent; }
+  .bc.today { box-shadow: inset 0 0 0 3px var(--sunny); background: var(--sunny-wash); }
+  .bc.past { opacity: 0.6; }
+  .bc-num { position: absolute; top: 4px; left: 7px; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.78rem; color: rgba(93, 64, 55, 0.6); }
+  .bc-feat { display: block; border-radius: 8px; overflow: hidden; background: #fff; border: 2px solid var(--bark); text-decoration: none; color: var(--ink); }
+  .bc-feat img { display: block; width: 100%; height: 58px; object-fit: cover; margin: 0; transition: transform 0.3s ease; }
+  a.bc-feat:hover img { transform: scale(1.06); }
+  .bc-feat.soon { border-style: dashed; border-color: rgba(93, 64, 55, 0.4); background: transparent; padding-top: 4px; }
+  .bc-name { display: block; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.76rem; line-height: 1.15; padding: 3px 5px 0; color: var(--bark); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .bc-day { display: block; font-size: 0.64rem; font-weight: 600; color: var(--muted); padding: 0 5px 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .bc-also, .bc-more { display: block; font-size: 0.68rem; font-weight: 600; line-height: 1.25; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-decoration: none; padding-left: 11px; position: relative; }
+  .bc-also::before { content: ""; position: absolute; left: 2px; top: 0.42em; width: 6px; height: 6px; border-radius: 50%; background: #7FB89A; }
+  a.bc-also { color: var(--bark); }
+  a.bc-also:hover { text-decoration: underline; }
+  .bc-more { color: var(--accent); }
+  .agenda { display: none; list-style: none; padding: 0; margin: 1rem 0 0; }
+  .ag-row { display: flex; gap: 0.7rem; padding: 0.55rem 0; border-bottom: 1px solid var(--rule); }
+  .ag-row.today { background: var(--sunny-wash); border-radius: 10px; padding-left: 0.4rem; }
+  .ag-body { display: flex; flex-direction: column; gap: 0.3rem; min-width: 0; }
+  .ag-feat { display: flex; gap: 0.6rem; align-items: center; text-decoration: none; color: var(--ink); font-size: 0.9rem; }
+  .ag-feat img { width: 56px; height: 56px; border-radius: 10px; object-fit: cover; margin: 0; border: 2px solid var(--bark); }
+  .ag-feat.soon { opacity: 0.7; }
+  .ag-feat strong { font-family: 'Fredoka', sans-serif; color: var(--bark); }
+  .ag-also { font-size: 0.85rem; font-weight: 600; color: var(--muted); padding-left: 12px; position: relative; text-decoration: none; }
+  .ag-also::before { content: ""; position: absolute; left: 1px; top: 0.45em; width: 7px; height: 7px; border-radius: 50%; background: #7FB89A; }
+  a.ag-also { color: var(--bark); }
+  @media (max-width: 760px) {
+    .bc { min-height: 0; aspect-ratio: 1 / 1; padding: 0; overflow: hidden; }
+    .bc-feat { position: absolute; inset: 0; border-radius: 8px; }
+    .bc-feat img { height: 100%; }
+    .bc-feat .bc-name, .bc-feat .bc-day, .bc-also, .bc-more { display: none; }
+    .bc-feat.soon { display: block; }
+    .bc.has-also:not(.has-ev)::after { content: ""; position: absolute; left: 50%; bottom: 6px; width: 7px; height: 7px; margin-left: -3.5px; border-radius: 50%; background: #7FB89A; }
+    .bc-num { z-index: 2; }
+    .bc.has-ev .bc-num { color: #fff; background: rgba(42, 33, 24, 0.55); border-radius: 999px; padding: 0 5px; top: 3px; left: 3px; }
+    .agenda { display: block; }
+  }
+  @media (prefers-reduced-motion: reduce) { .bc-feat img { transition: none; } a.bc-feat:hover img { transform: none; } }
+  .month-strip { display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 10px; margin: 0 0 1rem; scroll-snap-type: x proximity; scrollbar-width: thin; }
+  .ms-tab { flex: 0 0 auto; scroll-snap-align: center; min-width: 74px; text-align: center; padding: 8px 10px; border: 2px solid rgba(93, 64, 55, 0.25); border-radius: 14px; background: var(--card); text-decoration: none; color: var(--bark); line-height: 1.15; }
+  .ms-tab:hover { border-color: var(--bark); }
+  .ms-tab.active { border-color: var(--bark); background: var(--sunny-wash); box-shadow: 0 4px 10px rgba(93, 64, 55, 0.12); }
+  .ms-name { display: block; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 1.05rem; }
+  .ms-year { display: block; font-size: 0.72rem; font-weight: 600; opacity: 0.7; }
+  .ms-count { display: block; font-size: 0.68rem; font-weight: 600; color: var(--muted); margin-top: 2px; }
+  .cm-head { display: flex; align-items: center; gap: 0.6rem; margin: 0 0 0.8rem; }
+  .cm-head h2 { margin: 0 !important; flex: 1; }
+  .cm-nav { font-family: 'Fredoka', sans-serif; font-size: 1.6rem; line-height: 1; width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; border: 2px solid var(--bark); border-radius: 50%; background: var(--card); color: var(--bark); text-decoration: none; }
+  .cm-nav.off { opacity: 0.25; }
+  .cm-head .cm-nav:first-child { order: 0; } .cm-head h2 { order: 1; } .cm-head .cm-nav:last-child { order: 2; }
+  html:not(.cal-js) .month-strip, html:not(.cal-js) .cm-nav { display: none; }
+  html.cal-js .bc { min-height: 150px; }
+  html.cal-js .bc-feat img { height: 84px; }
+  @media (max-width: 760px) { html.cal-js .bc { min-height: 0; } html.cal-js .bc-feat img { height: 100%; } }
 </style>
 
 <header class="cal-hero">
@@ -83,49 +143,81 @@ eleventyExcludeFromCollections: true
   <p>Animal lovers around the world already celebrate these days — we didn't make them up. For each one, we've made a short read-aloud story to share with your kids. <a class="dates-link" href="/calendar/about/">Where these dates come from →</a></p>
 </header>
 
-<div class="cal-layout">
-  <div>
-    {%- for m in months %}
-    <section class="cal-month" id="m-{{ m.key }}" aria-labelledby="h-{{ m.key }}">
-      <h2 id="h-{{ m.key }}">{{ m.key | monthLabel }}{% if loop.first %}<span class="now">This month</span>{% endif %}</h2>
-      <div class="cal-body">
-        <div class="cal-grid" aria-hidden="true">
-          {%- for d in ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"] %}<div class="cal-dow">{{ d }}</div>{% endfor %}
-          {%- for cell in m.key | monthGrid %}
-            {%- if not cell %}<div class="cal-cell pad"></div>
-            {%- else %}
-              {%- set ev = null -%}{%- for e in m.events -%}{%- if e.iso == cell.iso -%}{%- set ev = e -%}{%- endif -%}{%- endfor -%}
-              {%- if ev and ev.url and ev.image %}<a class="cal-cell live{% if ev.isToday %} today{% endif %}" href="{{ ev.url }}" tabindex="-1"><span class="cal-num">{{ cell.day }}</span><img src="{{ ev.image }}" alt="" loading="lazy"></a>
-              {%- elif ev %}<div class="cal-cell soon{% if ev.isToday %} today{% endif %}{% if ev.isPast %} past{% endif %}"><span class="cal-num">{{ cell.day }}</span></div>
-              {%- else %}
-                {%- set al = null -%}{%- for a in m.also -%}{%- if a.iso == cell.iso -%}{%- set al = a -%}{%- endif -%}{%- endfor -%}
-                {%- if al and al.url and al.image %}<a class="cal-cell live also-live{% if cell.iso == todayIso %} today{% endif %}" href="{{ al.url }}" tabindex="-1"><span class="cal-num">{{ cell.day }}</span><img src="{{ al.image }}" alt="" loading="lazy"></a>
-                {%- else %}<div class="cal-cell{% if al %} also{% endif %}{% if cell.iso == todayIso %} today{% endif %}"><span class="cal-num">{{ cell.day }}</span></div>{% endif %}{% endif %}
-            {%- endif %}
-          {%- endfor %}
-        </div>
-        <ul class="cal-events">
-          {%- for e in m.events %}
-          <li>
-            {%- set inner %}
-              <span class="cal-date"><b>{{ e.day_num }}</b><span>{{ e.weekday }}</span></span>
-              {% if e.image %}<img class="thumb" src="{{ e.image }}" alt="" loading="lazy">{% else %}<span class="thumb"></span>{% endif %}
-              <span>
-                <h3>{% if e.official %}{{ e.day }}{% else %}{{ e.animal }}{% endif %}{% if e.isToday %}<span class="today-pill">Today</span>{% endif %}</h3>
-                <p>{% if e.official %}{{ e.animal }}{% else %}<span class="pick-badge">{{ e.day }}</span>{% endif %}</p>
-              </span>
-            {%- endset %}
-            {% if e.url %}<a class="cal-card{% if e.isToday %} is-today{% endif %}" href="{{ e.url }}">{{ inner | safe }}</a>{% else %}<div class="cal-card soon{% if e.isToday %} is-today{% endif %}{% if e.isPast %} past{% endif %}">{{ inner | safe }}</div>{% endif %}
-          </li>
-          {%- endfor %}
-        </ul>
+<p class="cal-key"><span class="k-feat"></span> Featured animal — tap for its page &nbsp;·&nbsp; <span class="k-dot"></span> Also celebrated that day &nbsp;·&nbsp; <span class="pick-badge">Wild Atlas pick</span> a week with no official animal day, so we chose a favourite</p>
+
+<nav class="month-strip" aria-label="Choose a month">
+  {%- for m in months %}
+  <a class="ms-tab{% if loop.first %} active{% endif %}" href="#m-{{ m.key }}" data-month="{{ m.key }}">
+    <span class="ms-name">{{ m.key | monthLabel | truncate(3, true, "") }}</span>
+    <span class="ms-year">{{ m.key | truncate(4, true, "") }}</span>
+    <span class="ms-count">{{ m.events.length + m.also.length }} days</span>
+  </a>
+  {%- endfor %}
+</nav>
+{%- for m in months %}
+<section class="cal-month" id="m-{{ m.key }}" aria-labelledby="h-{{ m.key }}">
+  <div class="cm-head">
+    {% if not loop.first %}<a class="cm-nav" href="#m-{{ months[loop.index0 - 1].key }}" aria-label="Previous month">‹</a>{% else %}<span class="cm-nav off">‹</span>{% endif %}
+    <h2 id="h-{{ m.key }}">{{ m.key | monthLabel }}{% if loop.first %}<span class="now">This month</span>{% endif %}</h2>
+    {% if not loop.last %}<a class="cm-nav" href="#m-{{ months[loop.index0 + 1].key }}" aria-label="Next month">›</a>{% else %}<span class="cm-nav off">›</span>{% endif %}
+  </div>
+  <div class="bigcal">
+    {%- for d in ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"] %}<div class="bc-dow">{{ d }}</div>{% endfor %}
+    {%- for c in m.cells %}
+      {%- if not c %}<div class="bc pad"></div>
+      {%- else %}
+      <div class="bc{% if c.ev %} has-ev{% endif %}{% if c.also.length %} has-also{% endif %}{% if c.isToday %} today{% endif %}{% if c.ev and c.ev.isPast %} past{% endif %}">
+        <span class="bc-num">{{ c.day }}</span>
+        {%- if c.ev %}
+          {%- set evLabel = c.ev.animal if c.ev.official else c.ev.animal %}
+          {%- if c.ev.url %}<a class="bc-feat" href="{{ c.ev.url }}" title="{{ c.ev.day }} — {{ c.ev.animal }}">{% if c.ev.image %}<img src="{{ c.ev.image }}" alt="" loading="lazy">{% endif %}<span class="bc-name">{{ evLabel }}</span><span class="bc-day">{% if c.ev.official %}{{ c.ev.day }}{% else %}Wild Atlas pick{% endif %}</span></a>
+          {%- else %}<div class="bc-feat soon" title="{{ c.ev.day }} — {{ c.ev.animal }}"><span class="bc-name">{{ evLabel }}</span><span class="bc-day">{% if c.ev.official %}{{ c.ev.day }}{% else %}Wild Atlas pick{% endif %}</span></div>{% endif %}
+        {%- endif %}
+        {%- for a in c.also %}{% if loop.index <= (1 if c.ev else 3) %}
+          {%- if a.url %}<a class="bc-also" href="{{ a.url }}" title="{{ a.day }}">{{ a.day }}</a>{% else %}<span class="bc-also" title="{{ a.day }}">{{ a.day }}</span>{% endif %}
+        {%- endif %}{% endfor %}
+        {%- set cap = 1 if c.ev else 3 %}{% if c.also.length > cap %}<span class="bc-more" title="{% for a in c.also %}{{ a.day }}{% if not loop.last %} · {% endif %}{% endfor %}">+{{ c.also.length - cap }} more</span>{% endif %}
       </div>
-      {%- if m.also.length %}
-      <p class="cal-also"><span class="cal-also-label">Also celebrated this month:</span>
-        {%- for a in m.also %} <span class="cal-also-item">{% if a.url %}<a href="{{ a.url }}">{{ a.day }}</a>{% else %}{{ a.day }}{% endif %} <span class="cal-also-date">({{ a.iso | readableDate | replace(", " + (a.iso | truncate(4, true, "")), "") }})</span></span>{% if not loop.last %} ·{% endif %}{%- endfor %}
-      </p>
       {%- endif %}
-    </section>
     {%- endfor %}
   </div>
-</div>
+  <ul class="agenda">
+    {%- for c in m.agenda %}
+    <li class="ag-row{% if c.isToday %} today{% endif %}">
+      <span class="cal-date"><b>{{ c.day }}</b><span>{{ c.iso | weekday }}</span></span>
+      <div class="ag-body">
+        {%- if c.ev %}
+          {%- if c.ev.url %}<a class="ag-feat" href="{{ c.ev.url }}">{% if c.ev.image %}<img src="{{ c.ev.image }}" alt="" loading="lazy">{% endif %}<span><strong>{% if c.ev.official %}{{ c.ev.day }}{% else %}{{ c.ev.animal }}{% endif %}</strong><br>{% if c.ev.official %}{{ c.ev.animal }}{% else %}<span class="pick-badge">Wild Atlas pick</span>{% endif %}</span></a>
+          {%- else %}<div class="ag-feat soon"><span><strong>{% if c.ev.official %}{{ c.ev.day }}{% else %}{{ c.ev.animal }}{% endif %}</strong><br>{% if c.ev.official %}{{ c.ev.animal }}{% else %}<span class="pick-badge">Wild Atlas pick</span>{% endif %}</span></div>{% endif %}
+        {%- endif %}
+        {%- for a in c.also %}{% if a.url %}<a class="ag-also" href="{{ a.url }}">{{ a.day }}</a>{% else %}<span class="ag-also">{{ a.day }}</span>{% endif %}{% endfor %}
+      </div>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endfor %}
+<script>
+// One month at a time: current month by default, #m-YYYY-MM selects another.
+// Without JS every month simply shows in a long list.
+(function () {
+  var sections = [].slice.call(document.querySelectorAll('.cal-month'));
+  var tabs = [].slice.call(document.querySelectorAll('.ms-tab'));
+  if (!sections.length) return;
+  document.documentElement.classList.add('cal-js');
+  function show(key, scroll) {
+    var found = sections.some(function (s) { return s.id === 'm-' + key; });
+    if (!found) key = sections[0].id.slice(2);
+    sections.forEach(function (s) { s.hidden = s.id !== 'm-' + key; });
+    tabs.forEach(function (t) {
+      var on = t.getAttribute('data-month') === key;
+      t.classList.toggle('active', on);
+      if (on) { t.setAttribute('aria-current', 'true'); t.scrollIntoView({ block: 'nearest', inline: 'center' }); } else { t.removeAttribute('aria-current'); }
+    });
+    if (scroll) document.querySelector('.month-strip').scrollIntoView({ block: 'start', behavior: 'smooth' });
+  }
+  function fromHash(scroll) { show((location.hash || '').replace('#m-', ''), scroll); }
+  window.addEventListener('hashchange', function () { fromHash(true); });
+  fromHash(false);
+})();
+</script>
