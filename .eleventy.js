@@ -40,6 +40,7 @@ module.exports = function (eleventyConfig) {
       year: "numeric",
       month: "long",
       day: "numeric",
+      timeZone: "UTC", // front-matter dates are calendar days; don't shift them
     });
   });
 
@@ -53,6 +54,27 @@ module.exports = function (eleventyConfig) {
     const words = String(content).trim().split(/\s+/).length;
     const minutes = Math.max(1, Math.round(words / 220));
     return `${minutes} min read`;
+  });
+
+  // ---- Awareness-day animal posts (layouts/animal-day.njk) -----------------
+  // Markdown for front-matter fields (greeting, grown-ups box, app CTA).
+  const md = require("markdown-it")({ html: true, linkify: false, typographer: false });
+  eleventyConfig.addFilter("md", (s) => (s ? md.render(String(s)) : ""));
+  eleventyConfig.addFilter("mdInline", (s) => (s ? md.renderInline(String(s)) : ""));
+  // Append campaign UTM tags to an outbound link.
+  eleventyConfig.addFilter("utm", (url, campaign, source = "wildatlas_blog", medium = "referral") => {
+    if (!url) return url;
+    const u = new URL(url);
+    u.searchParams.set("utm_source", source);
+    u.searchParams.set("utm_medium", medium);
+    u.searchParams.set("utm_campaign", campaign);
+    return u.toString();
+  });
+  // {% figure "/assets/blog/x.jpg", "Alt text", "Optional caption" %}
+  eleventyConfig.addShortcode("figure", (src, alt, caption) => {
+    const esc = (s) => String(s || "").replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
+    return `<figure class="story-figure"><img src="${esc(src)}" alt="${esc(alt)}" loading="lazy">` +
+      (caption ? `<figcaption>${esc(caption)}</figcaption>` : "") + `</figure>`;
   });
 
   // ---- Config ---------------------------------------------------------------
