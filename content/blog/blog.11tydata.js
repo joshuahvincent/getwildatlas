@@ -1,18 +1,24 @@
 // Scheduled + draft posts for content/blog/.
 //
-// A post is HIDDEN from the build (no page, not in /blog/ listing) when:
-//   - `status: draft` is set in its front-matter, or
-//   - its `date` is in the future at build time.
-// Hidden posts become visible automatically on the first build on/after their
-// date. The deploy workflow runs a scheduled daily build (see
-// .github/workflows/deploy.yml), so a post dated 2027-02-15 goes live on the
-// morning of Feb 15 with no manual step.
+// Front-matter `status`:
+//   (none)     legacy/published post — visible (subject to date)
+//   draft      never built
+//   scheduled  written + advisor-gated, awaiting Josh's approval — never built
+//   approved   Josh approved — goes live on its `date`
 //
-// Local preview of hidden posts:  SHOW_HIDDEN_POSTS=1 npm run dev
+// Any post dated in the future is also hidden. The deploy workflow runs a
+// daily scheduled build (.github/workflows/deploy.yml), so an approved post
+// dated 2027-02-15 goes live the morning of Feb 15 with no manual step.
+// The review loop (.github/workflows/blog-review.yml) emails Josh five days
+// ahead; commenting "approve" flips `scheduled` → `approved`.
+//
+// Show hidden posts (local dev + the preview deploy): SHOW_HIDDEN_POSTS=1
+
+const HIDDEN_STATUSES = new Set(["draft", "scheduled"]);
 
 function isHidden(data) {
   if (process.env.SHOW_HIDDEN_POSTS) return false;
-  if (data.status === "draft") return true;
+  if (HIDDEN_STATUSES.has(data.status)) return true;
   const date = data.page && data.page.date;
   return Boolean(date && new Date(date).getTime() > Date.now());
 }

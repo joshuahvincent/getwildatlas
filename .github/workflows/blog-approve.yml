@@ -1,0 +1,49 @@
+name: Blog approve
+
+# The reviewer replies "approve" on a blog-review issue (email replies become
+# comments). This flips the post's front-matter `status: scheduled` →
+# `status: approved`, commits to main, and triggers a deploy. The post then
+# appears on its date (or immediately, if the date has already arrived).
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+  actions: write
+
+jobs:
+  approve:
+    if: >-
+      contains(github.event.issue.labels.*.name, 'blog-review') &&
+      github.event.comment.user.login == 'joshuahvincent' &&
+      startsWith(toLower(github.event.comment.body), 'approve')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Flip status to approved
+        id: flip
+        env:
+          TITLE: ${{ github.event.issue.title }}
+        run: |
+          slug=$(printf '%s' "$TITLE" | sed -n 's/.*\[\([a-z0-9-]*\)\]$/\1/p')
+          file="content/blog/$slug.md"
+          test -n "$slug" && test -f "$file" || { echo "no post for '$TITLE'"; exit 1; }
+          grep -q '^status: scheduled$' "$file" || { echo "not scheduled"; exit 1; }
+          sed -i 's/^status: scheduled$/status: approved/' "$file"
+          git config user.name "wild-atlas-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git commit -am "blog: approve $slug (issue #${{ github.event.issue.number }})"
+          git push
+          echo "slug=$slug" >> "$GITHUB_OUTPUT"
+      - name: Deploy now (pushes by the Actions token don't trigger deploy.yml)
+        run: gh workflow run deploy.yml
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Confirm and close
+        run: |
+          gh issue comment ${{ github.event.issue.number }} --body "Approved ✓ — \`${{ steps.flip.outputs.slug }}\` will go live at 6am Pacific on its date (or at the next build if the date has passed)."
+          gh issue close ${{ github.event.issue.number }}
+        env:
+          GH_TOKEN: ${{ github.token }}
