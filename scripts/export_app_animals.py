@@ -78,7 +78,7 @@ def main():
                 continue
             target = os.path.join(dest, f"{name}.jpg")
             if not os.path.exists(target) or os.path.getmtime(target) < os.path.getmtime(src):
-                subprocess.run(["sips", "-s", "format", "jpeg", "-s", "formatOptions", "75", "-Z", "1200", src, "--out", target],
+                subprocess.run(["sips", "-s", "format", "jpeg", "-s", "formatOptions", "68", "-Z", "900", src, "--out", target],
                                check=True, stdout=subprocess.DEVNULL)
             imgs[name] = f"/assets/animals/{aid}/{name}.jpg"
         out[aid]["images"] = imgs

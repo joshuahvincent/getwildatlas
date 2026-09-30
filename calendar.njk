@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
 ---
 {#- Days: _data/animalDays.json (mirrors the Notion calendar). A day links to its
     /calendar/<slug>/ page once that page exists (collections.calendar). -#}
-{%- set months = animalDays.days | calendarYear(collections.calendar, collections.posts, animalDays.alsoCelebrated) -%}
+{%- set months = animalDays.days | calendarYear(collections.calendar, collections.posts, animalDays.alsoCelebrated, liteAnimals) -%}
 <style>
   :root { --max: 1120px; --bark: #5D4037; --sunny: #FFD166; --sunny-wash: #FFF4CC; --card: #FFFFFF; }
   .cal-hero { padding: 1.25rem 0 0.25rem; max-width: 46rem; }
@@ -55,6 +55,8 @@ eleventyExcludeFromCollections: true
   .cal-also { margin: 0.8rem 0 0; font-size: 0.86rem; font-weight: 600; color: var(--muted); line-height: 1.6; }
   .cal-also-label { font-family: 'Fredoka', sans-serif; color: var(--bark); }
   .cal-also-item { white-space: nowrap; }
+  .cal-also-item a { color: var(--bark); }
+  a.cal-cell.also-live { outline-width: 1px; opacity: 0.85; }
   .cal-also-date { opacity: 0.75; }
   .cal-cell.today { box-shadow: inset 0 0 0 3px var(--sunny); }
   .cal-cell.today:not(.live):not(.soon) { background: var(--sunny-wash); }
@@ -97,7 +99,8 @@ eleventyExcludeFromCollections: true
               {%- elif ev %}<div class="cal-cell soon{% if ev.isToday %} today{% endif %}{% if ev.isPast %} past{% endif %}"><span class="cal-num">{{ cell.day }}</span></div>
               {%- else %}
                 {%- set al = null -%}{%- for a in m.also -%}{%- if a.iso == cell.iso -%}{%- set al = a -%}{%- endif -%}{%- endfor -%}
-                <div class="cal-cell{% if al %} also{% endif %}{% if cell.iso == todayIso %} today{% endif %}"><span class="cal-num">{{ cell.day }}</span></div>{% endif %}
+                {%- if al and al.url and al.image %}<a class="cal-cell live also-live{% if cell.iso == todayIso %} today{% endif %}" href="{{ al.url }}" tabindex="-1"><span class="cal-num">{{ cell.day }}</span><img src="{{ al.image }}" alt="" loading="lazy"></a>
+                {%- else %}<div class="cal-cell{% if al %} also{% endif %}{% if cell.iso == todayIso %} today{% endif %}"><span class="cal-num">{{ cell.day }}</span></div>{% endif %}{% endif %}
             {%- endif %}
           {%- endfor %}
         </div>
@@ -119,7 +122,7 @@ eleventyExcludeFromCollections: true
       </div>
       {%- if m.also.length %}
       <p class="cal-also"><span class="cal-also-label">Also celebrated this month:</span>
-        {%- for a in m.also %} <span class="cal-also-item">{{ a.day }} <span class="cal-also-date">({{ a.iso | readableDate | replace(", " + (a.iso | truncate(4, true, "")), "") }})</span></span>{% if not loop.last %} ·{% endif %}{%- endfor %}
+        {%- for a in m.also %} <span class="cal-also-item">{% if a.url %}<a href="{{ a.url }}">{{ a.day }}</a>{% else %}{{ a.day }}{% endif %} <span class="cal-also-date">({{ a.iso | readableDate | replace(", " + (a.iso | truncate(4, true, "")), "") }})</span></span>{% if not loop.last %} ·{% endif %}{%- endfor %}
       </p>
       {%- endif %}
     </section>

@@ -76,11 +76,20 @@ module.exports = function (eleventyConfig) {
   // Rolling 12-month animal calendar for /calendar/, current month first.
   // Awareness days recur yearly, so a day earlier than this month rolls to
   // next year. Each day links to its calendar page (or blog post) once it exists.
-  eleventyConfig.addFilter("calendarYear", (days, calendarPages, posts, also) => {
+  eleventyConfig.addFilter("calendarYear", (days, calendarPages, posts, also, liteAnimals) => {
     const now = new Date();
     const start = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), 1);
     const pages = new Map((calendarPages || []).map((p) => [p.page.fileSlug, p]));
     const postUrls = new Set((posts || []).map((p) => p.url));
+    // Animal → page: a full article (calendar day with that appId and a live page) wins, else its animal page.
+    const animalPage = new Map();
+    for (const d of days) {
+      const p = d.slug && d.appId && pages.get(d.slug);
+      if (p && !animalPage.has(d.appId)) animalPage.set(d.appId, { url: p.url, image: p.data.coverImage });
+    }
+    for (const l of liteAnimals || []) {
+      if (!animalPage.has(l.appId)) animalPage.set(l.appId, { url: `/calendar/${l.slug}/`, image: l.animal.images && l.animal.images.cover });
+    }
     const todayIso = now.toISOString().slice(0, 10);
     const months = [];
     for (let i = 0; i < 12; i++) {
@@ -93,18 +102,20 @@ module.exports = function (eleventyConfig) {
       const m = months.find((x) => x.key === occ.toISOString().slice(0, 7));
       if (!m) continue;
       const page = day.slug && pages.get(day.slug);
-      const url = page ? page.url : day.blogUrl && postUrls.has(day.blogUrl) ? day.blogUrl : null;
+      const ap = day.appId && animalPage.get(day.appId);
+      const url = page ? page.url : ap ? ap.url : day.blogUrl && postUrls.has(day.blogUrl) ? day.blogUrl : null;
       const iso = occ.toISOString().slice(0, 10);
       m.events.push({ ...day, iso, url, day_num: occ.getUTCDate(),
         weekday: occ.toLocaleDateString("en-US", { weekday: "short", timeZone: "UTC" }),
-        image: page ? page.data.coverImage : null, isToday: iso === todayIso, isPast: iso < todayIso });
+        image: page ? page.data.coverImage : ap ? ap.image : null, isToday: iso === todayIso, isPast: iso < todayIso });
     }
     // Second-tier days: real awareness days we didn't pick. Dot + list line, no page.
     for (const day of also || []) {
       let occ = new Date(day.date + "T00:00:00Z");
       while (occ.getTime() < start) occ.setUTCFullYear(occ.getUTCFullYear() + 1);
       const m = months.find((x) => x.key === occ.toISOString().slice(0, 7));
-      if (m) m.also.push({ ...day, iso: occ.toISOString().slice(0, 10), day_num: occ.getUTCDate() });
+      const ap = day.appId && animalPage.get(day.appId);
+      if (m) m.also.push({ ...day, iso: occ.toISOString().slice(0, 10), day_num: occ.getUTCDate(), url: ap ? ap.url : null, image: ap ? ap.image : null });
     }
     for (const m of months) {
       m.events.sort((a, b) => (a.iso < b.iso ? -1 : 1));

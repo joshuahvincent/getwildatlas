@@ -1,14 +1,15 @@
 ---
-# Lite calendar pages: one per entry in _data/liteDays.js (animal is in a
-# Wild Atlas pack, no full article yet). Content comes from the app.
+# Calendar animal pages: one per entry in _data/liteAnimals.js (app animal on
+# the calendar with no full article). Content comes from the app.
 pagination:
-  data: liteDays
+  data: liteAnimals
   size: 1
   alias: lite
   addAllPagesToCollections: true
 permalink: "/calendar/{{ lite.slug }}/"
 layout: layouts/animal-day.njk
 tags: [calendarLite]
+hideDate: true
 backLink: { url: "/calendar/", label: "Conservation calendar" }
 ---
 {%- set a = lite.animal -%}{%- set t = a.text -%}

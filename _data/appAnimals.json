@@ -2146,6 +2146,11 @@
     "weight_comparison.young": "They weigh about as much as a loaf of bread — around 1 pound.",
     "map_narration": "Turtles live on every continent except Antarctica — in rivers, ponds, and oceans.",
     "sound_description.young": "They usually don't make much noise, but they can hiss when scared or make quiet chirping sounds."
+   },
+   "images": {
+    "cover": "/assets/animals/turtle/cover.jpg",
+    "scale": "/assets/animals/turtle/scale.jpg",
+    "baby": "/assets/animals/turtle/baby.jpg"
    }
   },
   "tortoise": {
@@ -2191,6 +2196,11 @@
     "weight_comparison.young": "They weigh about as much as three or four grown-ups — around 550 pounds.",
     "map_narration": "Giant tortoises live on the Galapagos Islands and the Seychelles Islands.",
     "sound_description.young": "They sometimes make a quiet hissing sound when they pull their head into their shell."
+   },
+   "images": {
+    "cover": "/assets/animals/tortoise/cover.jpg",
+    "scale": "/assets/animals/tortoise/scale.jpg",
+    "baby": "/assets/animals/tortoise/baby.jpg"
    }
   },
   "leopard_gecko": {
@@ -3239,6 +3249,11 @@
     "weight_comparison.young": "They weigh about as much as a grown-up — around 121 pounds.",
     "map_narration": "Cheetahs live in the grasslands and open plains of Africa and a tiny part of Iran.",
     "sound_description.young": "They chirp like birds, purr like house cats, and make hissing or growling sounds when upset."
+   },
+   "images": {
+    "cover": "/assets/animals/cheetah/cover.jpg",
+    "scale": "/assets/animals/cheetah/scale.jpg",
+    "baby": "/assets/animals/cheetah/baby.jpg"
    }
   },
   "leopard": {
@@ -3283,6 +3298,11 @@
     "weight_comparison.young": "They weigh about as much as a grown-up — around 132 pounds.",
     "map_narration": "Leopards live across Africa and Asia — from forests to mountains to grasslands.",
     "sound_description.young": "They make deep growls and rasping roars, and they purr like giant cats when they're happy."
+   },
+   "images": {
+    "cover": "/assets/animals/leopard/cover.jpg",
+    "scale": "/assets/animals/leopard/scale.jpg",
+    "baby": "/assets/animals/leopard/baby.jpg"
    }
   },
   "giraffe": {
@@ -3326,6 +3346,11 @@
     "weight_comparison.young": "They weigh about as much as a small car — around 2,600 pounds.",
     "map_narration": "Giraffes live across the grasslands and open woodlands of Africa.",
     "sound_description.young": "They are mostly quiet, but they can make low grunts, snorts, and bellowing sounds to talk to each other."
+   },
+   "images": {
+    "cover": "/assets/animals/giraffe/cover.jpg",
+    "scale": "/assets/animals/giraffe/scale.jpg",
+    "baby": "/assets/animals/giraffe/baby.jpg"
    }
   },
   "zebra": {
@@ -3369,6 +3394,11 @@
     "weight_comparison.young": "They weigh about as much as five or six grown-ups — around 772 pounds.",
     "map_narration": "Zebras live in the grasslands and savannas of eastern and southern Africa.",
     "sound_description.young": "They bray like donkeys and also bark to warn the group of danger."
+   },
+   "images": {
+    "cover": "/assets/animals/zebra/cover.jpg",
+    "scale": "/assets/animals/zebra/scale.jpg",
+    "baby": "/assets/animals/zebra/baby.jpg"
    }
   },
   "hippopotamus": {
@@ -3412,6 +3442,11 @@
     "weight_comparison.young": "About 4400 pounds — as heavy as a small car!",
     "map_narration": "Hippopotamuses live in the rivers and lakes of sub-Saharan Africa.",
     "sound_description.young": "Hippos make deep grunting and bellowing sounds that can be heard both above and below the water."
+   },
+   "images": {
+    "cover": "/assets/animals/hippopotamus/cover.jpg",
+    "scale": "/assets/animals/hippopotamus/scale.jpg",
+    "baby": "/assets/animals/hippopotamus/baby.jpg"
    }
   },
   "rhinoceros": {
@@ -3456,6 +3491,11 @@
     "weight_comparison.young": "They weigh about as much as a small car — around 5,000 pounds.",
     "map_narration": "Rhinoceroses live in the grasslands and forests of Africa and southern Asia.",
     "sound_description.young": "Rhinos make loud snorting sounds, deep growls, and trumpet calls to talk to each other."
+   },
+   "images": {
+    "cover": "/assets/animals/rhinoceros/cover.jpg",
+    "scale": "/assets/animals/rhinoceros/scale.jpg",
+    "baby": "/assets/animals/rhinoceros/baby.jpg"
    }
   },
   "african_buffalo": {
@@ -3543,6 +3583,11 @@
     "weight_comparison.young": "They weigh about as much as a grown-up — around 132 pounds.",
     "map_narration": "Hyenas live across the savannas, grasslands, and forests of Africa.",
     "sound_description.young": "They make a famous laughing sound called a giggle, plus whoops and growls to talk to their clan."
+   },
+   "images": {
+    "cover": "/assets/animals/hyena/cover.jpg",
+    "scale": "/assets/animals/hyena/scale.jpg",
+    "baby": "/assets/animals/hyena/baby.jpg"
    }
   },
   "warthog": {
@@ -3672,6 +3717,11 @@
     "weight_comparison.young": "They weigh about as much as two grown-ups — around 265 pounds.",
     "map_narration": "Ostriches live in the open grasslands and deserts of Africa.",
     "sound_description.young": "They make deep booming sounds that rumble like thunder, and they hiss when they're angry or scared."
+   },
+   "images": {
+    "cover": "/assets/animals/ostrich/cover.jpg",
+    "scale": "/assets/animals/ostrich/scale.jpg",
+    "baby": "/assets/animals/ostrich/baby.jpg"
    }
   },
   "baboon": {
@@ -3807,6 +3857,11 @@
     "weight_comparison.young": "They weigh about as much as a big suitcase — around 110 pounds.",
     "map_narration": "Chimpanzees live in the forests and woodlands of central and western Africa.",
     "sound_description.young": "They hoot and scream loudly to talk to each other, and they pant-laugh when they play and have fun."
+   },
+   "images": {
+    "cover": "/assets/animals/chimpanzee/cover.jpg",
+    "scale": "/assets/animals/chimpanzee/scale.jpg",
+    "baby": "/assets/animals/chimpanzee/baby.jpg"
    }
   },
   "african_wild_dog": {
@@ -4079,6 +4134,11 @@
     "weight_comparison.young": "They weigh about as much as 300 kids put together — around 12,000 pounds.",
     "map_narration": "Orcas live in every ocean on Earth, from the Arctic to the Antarctic.",
     "sound_description.young": "They make clicking sounds to find food and whistles to talk to their family."
+   },
+   "images": {
+    "cover": "/assets/animals/orca/cover.jpg",
+    "scale": "/assets/animals/orca/scale.jpg",
+    "baby": "/assets/animals/orca/baby.jpg"
    }
   },
   "blue_whale": {
@@ -4213,6 +4273,11 @@
     "weight_comparison.young": "They weigh about as much as two grown-ups — around 286 pounds.",
     "map_narration": "Sea turtles swim in warm and tropical oceans all around the world.",
     "sound_description.young": "They make soft chirping and grunting sounds, especially when they're baby hatchlings or when they come up to breathe."
+   },
+   "images": {
+    "cover": "/assets/animals/sea_turtle/cover.jpg",
+    "scale": "/assets/animals/sea_turtle/scale.jpg",
+    "baby": "/assets/animals/sea_turtle/baby.jpg"
    }
   },
   "octopus": {
@@ -4256,6 +4321,11 @@
     "weight_comparison.young": "They weigh about as much as a house cat — around 22 pounds.",
     "map_narration": "Octopuses live in oceans all around the world, from shallow reefs to the deep sea.",
     "sound_description.young": "They are usually silent, but you might hear splashing and gurgling as they move through the water."
+   },
+   "images": {
+    "cover": "/assets/animals/octopus/cover.jpg",
+    "scale": "/assets/animals/octopus/scale.jpg",
+    "baby": "/assets/animals/octopus/baby.jpg"
    }
   },
   "giant_squid": {
@@ -4599,6 +4669,11 @@
     "weight_comparison.young": "They weigh about as much as a small car — around 3,300 pounds.",
     "map_narration": "Narwhals live in the freezing Arctic waters near Canada, Greenland, and Russia.",
     "sound_description.young": "They click, whistle, and squeal to talk to each other underwater."
+   },
+   "images": {
+    "cover": "/assets/animals/narwhal/cover.jpg",
+    "scale": "/assets/animals/narwhal/scale.jpg",
+    "baby": "/assets/animals/narwhal/baby.jpg"
    }
   },
   "beluga_whale": {
@@ -4731,6 +4806,11 @@
     "weight_comparison.young": "They weigh about as much as two grown-ups — around 220 pounds.",
     "map_narration": "Jaguars prowl through the dense rainforests and wetlands of Central and South America.",
     "sound_description.young": "They make deep roars and growls, and also make friendly chuffing sounds to say hello to other jaguars."
+   },
+   "images": {
+    "cover": "/assets/animals/jaguar/cover.jpg",
+    "scale": "/assets/animals/jaguar/scale.jpg",
+    "baby": "/assets/animals/jaguar/baby.jpg"
    }
   },
   "sloth": {
@@ -4775,6 +4855,11 @@
     "weight_comparison.young": "They weigh about as much as a couple bags of sugar — around 11 pounds.",
     "map_narration": "Sloths live high up in the trees of Central and South American rainforests.",
     "sound_description.young": "They make soft squeaking and chirping sounds, and sometimes hiss when they feel scared."
+   },
+   "images": {
+    "cover": "/assets/animals/sloth/cover.jpg",
+    "scale": "/assets/animals/sloth/scale.jpg",
+    "baby": "/assets/animals/sloth/baby.jpg"
    }
   },
   "toucan": {
@@ -4863,6 +4948,11 @@
     "weight_comparison.young": "They weigh about as much as a carton of milk — around 3 pounds.",
     "map_narration": "Macaws live in the tropical rainforests of Central and South America.",
     "sound_description.young": "They make loud squawking and screeching sounds that echo through the jungle."
+   },
+   "images": {
+    "cover": "/assets/animals/macaw/cover.jpg",
+    "scale": "/assets/animals/macaw/scale.jpg",
+    "baby": "/assets/animals/macaw/baby.jpg"
    }
   },
   "poison_dart_frog": {
@@ -5183,6 +5273,11 @@
     "weight_comparison.young": "They weigh about as much as three or four grown-ups — around 551 pounds.",
     "map_narration": "Tapirs live in the forests of Central and South America and Southeast Asia.",
     "sound_description.young": "They make high-pitched squeaks and whistles to talk to each other, and snort loudly when alarmed."
+   },
+   "images": {
+    "cover": "/assets/animals/tapir/cover.jpg",
+    "scale": "/assets/animals/tapir/scale.jpg",
+    "baby": "/assets/animals/tapir/baby.jpg"
    }
   },
   "leafcutter_ant": {
@@ -5314,6 +5409,11 @@
     "weight_comparison.young": "They weigh about as much as three or four grown-ups — around 551 pounds.",
     "map_narration": "Okapis live only in the dense rainforests of the Democratic Republic of Congo in Africa.",
     "sound_description.young": "They make quiet coughing and bleating sounds to communicate with each other in the forest."
+   },
+   "images": {
+    "cover": "/assets/animals/okapi/cover.jpg",
+    "scale": "/assets/animals/okapi/scale.jpg",
+    "baby": "/assets/animals/okapi/baby.jpg"
    }
   },
   "tree_frog": {
@@ -5575,6 +5675,11 @@
     "weight_comparison.young": "They weigh about as much as a horse — around 1,100 pounds. Well, they ARE a horse!",
     "map_narration": "Horses were first tamed on the grasslands of Central Asia about six thousand years ago.",
     "sound_description.young": "They neigh and whinny to call to each other, and snort when they're excited or nervous."
+   },
+   "images": {
+    "cover": "/assets/animals/horse/cover.jpg",
+    "scale": "/assets/animals/horse/scale.jpg",
+    "baby": "/assets/animals/horse/baby.jpg"
    }
   },
   "sheep": {
@@ -5876,6 +5981,11 @@
     "weight_comparison.young": "They weigh about as much as three or four grown-ups — around 397 pounds.",
     "map_narration": "Donkeys were first tamed in Africa about five thousand years ago.",
     "sound_description.young": "They make a loud 'hee-haw' bray that can be heard from far away."
+   },
+   "images": {
+    "cover": "/assets/animals/donkey/cover.jpg",
+    "scale": "/assets/animals/donkey/scale.jpg",
+    "baby": "/assets/animals/donkey/baby.jpg"
    }
   },
   "llama": {
@@ -6274,6 +6384,11 @@
     "weight_comparison.young": "They weigh about as much as a loaf of bread — around 1 pound.",
     "map_narration": "Barn owls live on every continent except Antarctica — often in old barns and church towers.",
     "sound_description.young": "They make a harsh screeching or hissing sound, not a hoot like other owls."
+   },
+   "images": {
+    "cover": "/assets/animals/barn_owl/cover.jpg",
+    "scale": "/assets/animals/barn_owl/scale.jpg",
+    "baby": "/assets/animals/barn_owl/baby.jpg"
    }
   },
   "bald_eagle": {
@@ -6317,6 +6432,11 @@
     "weight_comparison.young": "They weigh about as much as a couple bags of sugar — around 13 pounds.",
     "map_narration": "Bald eagles live near lakes, rivers, and coasts across North America.",
     "sound_description.young": "They make high-pitched screeching and chirping calls that sound like squeaky whistles."
+   },
+   "images": {
+    "cover": "/assets/animals/bald_eagle/cover.jpg",
+    "scale": "/assets/animals/bald_eagle/scale.jpg",
+    "baby": "/assets/animals/bald_eagle/baby.jpg"
    }
   },
   "peregrine_falcon": {
@@ -6581,6 +6701,11 @@
     "weight_comparison.young": "They weigh about as much as a big bag of dog food — around 66 pounds.",
     "map_narration": "Emperor penguins live only in Antarctica — the coldest place on Earth.",
     "sound_description.young": "They make loud trumpet calls to find their family in big, noisy crowds."
+   },
+   "images": {
+    "cover": "/assets/animals/emperor_penguin/cover.jpg",
+    "scale": "/assets/animals/emperor_penguin/scale.jpg",
+    "baby": "/assets/animals/emperor_penguin/baby.jpg"
    }
   },
   "atlantic_puffin": {
@@ -6668,6 +6793,11 @@
     "weight_comparison.young": "They weigh less than a coin — lighter than a single paper clip.",
     "map_narration": "Hummingbirds live only in the Americas, from Alaska all the way down to Chile.",
     "sound_description.young": "They make a soft humming sound with their fast-beating wings and chirp or squeak to talk to each other."
+   },
+   "images": {
+    "cover": "/assets/animals/hummingbird/cover.jpg",
+    "scale": "/assets/animals/hummingbird/scale.jpg",
+    "baby": "/assets/animals/hummingbird/baby.jpg"
    }
   },
   "blue_jay": {
@@ -7074,6 +7204,11 @@
     "weight_comparison.young": "They weigh about as much as a small watermelon — around 18 pounds.",
     "map_narration": "Albatrosses soar over the Southern Ocean and the North Pacific, spending years at sea.",
     "sound_description.young": "They make loud honking calls and clack their beaks together when they meet their partners."
+   },
+   "images": {
+    "cover": "/assets/animals/albatross/cover.jpg",
+    "scale": "/assets/animals/albatross/scale.jpg",
+    "baby": "/assets/animals/albatross/baby.jpg"
    }
   },
   "king_cobra": {
@@ -7920,6 +8055,11 @@
     "weight_comparison.young": "They weigh about as much as a horse — around 2,000 pounds.",
     "map_narration": "Bison roam the grasslands and prairies of North America.",
     "sound_description.young": "They make deep grunting and snorting sounds, and bellow loudly when they're warning others."
+   },
+   "images": {
+    "cover": "/assets/animals/bison/cover.jpg",
+    "scale": "/assets/animals/bison/scale.jpg",
+    "baby": "/assets/animals/bison/baby.jpg"
    }
   },
   "grizzly_bear": {
@@ -7964,6 +8104,11 @@
     "weight_comparison.young": "They weigh about as much as three or four grown-ups — around 595 pounds.",
     "map_narration": "Grizzly bears live in the forests, mountains, and rivers of western North America.",
     "sound_description.young": "They make deep roars and growls, and huff or grunt when they're curious or annoyed."
+   },
+   "images": {
+    "cover": "/assets/animals/grizzly_bear/cover.jpg",
+    "scale": "/assets/animals/grizzly_bear/scale.jpg",
+    "baby": "/assets/animals/grizzly_bear/baby.jpg"
    }
   },
   "black_bear": {
@@ -8140,6 +8285,11 @@
     "weight_comparison.young": "They weigh about as much as a grown-up — around 154 pounds.",
     "map_narration": "Cougars live across the Americas, from the Canadian Rockies all the way to Patagonia.",
     "sound_description.young": "They make growling sounds, loud purrs, and high-pitched chirps to communicate."
+   },
+   "images": {
+    "cover": "/assets/animals/cougar/cover.jpg",
+    "scale": "/assets/animals/cougar/scale.jpg",
+    "baby": "/assets/animals/cougar/baby.jpg"
    }
   },
   "bobcat": {
@@ -8319,6 +8469,11 @@
     "weight_comparison.young": "They weigh about as much as a bowling ball — around 18 pounds.",
     "map_narration": "Raccoons live across North America, from forests to cities.",
     "sound_description.young": "They make chittering and purring sounds when they're happy, and growl when they're scared or angry."
+   },
+   "images": {
+    "cover": "/assets/animals/raccoon/cover.jpg",
+    "scale": "/assets/animals/raccoon/scale.jpg",
+    "baby": "/assets/animals/raccoon/baby.jpg"
    }
   },
   "beaver": {
@@ -8363,6 +8518,11 @@
     "weight_comparison.young": "They weigh about as much as a big bag of dog food — around 55 pounds.",
     "map_narration": "Beavers live near rivers, streams, and ponds across North America and Europe.",
     "sound_description.young": "They make soft chattering sounds with their teeth and slap their flat tails loudly on the water to warn others."
+   },
+   "images": {
+    "cover": "/assets/animals/beaver/cover.jpg",
+    "scale": "/assets/animals/beaver/scale.jpg",
+    "baby": "/assets/animals/beaver/baby.jpg"
    }
   },
   "mountain_goat": {
@@ -8711,6 +8871,11 @@
     "weight_comparison.young": "They weigh about as much as five or six grown-ups — around 1100 pounds.",
     "map_narration": "Polar bears live on the sea ice and coastlines of the Arctic.",
     "sound_description.young": "They roar and growl loudly, and make soft chuffing sounds when they're happy or talking to their cubs."
+   },
+   "images": {
+    "cover": "/assets/animals/polar_bear/cover.jpg",
+    "scale": "/assets/animals/polar_bear/scale.jpg",
+    "baby": "/assets/animals/polar_bear/baby.jpg"
    }
   },
   "arctic_wolf": {
@@ -8755,6 +8920,11 @@
     "weight_comparison.young": "They weigh about as much as a big suitcase — around 99 pounds.",
     "map_narration": "Arctic wolves live in the frozen tundra of northern Canada and Greenland.",
     "sound_description.young": "Arctic Wolves howl long and loud to talk to their pack across the frozen wilderness."
+   },
+   "images": {
+    "cover": "/assets/animals/arctic_wolf/cover.jpg",
+    "scale": "/assets/animals/arctic_wolf/scale.jpg",
+    "baby": "/assets/animals/arctic_wolf/baby.jpg"
    }
   },
   "snow_leopard": {
@@ -8847,6 +9017,11 @@
     "weight_comparison.young": "They weigh about as much as a horse — around 1,300 pounds.",
     "map_narration": "Camels live in the deserts of the Middle East, Central Asia, and North Africa.",
     "sound_description.young": "They make deep grunting and groaning sounds, and sometimes loud bellows when they're upset."
+   },
+   "images": {
+    "cover": "/assets/animals/camel/cover.jpg",
+    "scale": "/assets/animals/camel/scale.jpg",
+    "baby": "/assets/animals/camel/baby.jpg"
    }
   },
   "fennec_fox": {
@@ -9442,6 +9617,11 @@
     "weight_comparison.young": "They weigh about as much as a bag of sugar — around 7 pounds.",
     "map_narration": "Lemurs live only on the island of Madagascar, off the coast of Africa.",
     "sound_description.young": "They make chirping and purring sounds to talk to their families, and loud calls to warn about danger."
+   },
+   "images": {
+    "cover": "/assets/animals/lemur/cover.jpg",
+    "scale": "/assets/animals/lemur/scale.jpg",
+    "baby": "/assets/animals/lemur/baby.jpg"
    }
   },
   "amur_tiger": {
@@ -9541,6 +9721,11 @@
     "weight_comparison.young": "It's quite light — around fifteen pounds, about as heavy as a chubby house cat or a big bag of potatoes.",
     "map_narration": "Snuffling for ants in warm forests and grasslands, it lives across parts of Asia.",
     "sound_description.young": "Pangolins are very quiet and gentle, so you mostly hear soft little snuffles and sniffs as they search the ground for ants. When upset, one might let out a low, huffy puff."
+   },
+   "images": {
+    "cover": "/assets/animals/pangolin/cover.jpg",
+    "scale": "/assets/animals/pangolin/scale.jpg",
+    "baby": "/assets/animals/pangolin/baby.jpg"
    }
   },
   "sea_otter": {
@@ -9588,6 +9773,11 @@
     "weight_comparison.young": "It weighs around sixty-six pounds, about the same as a big, friendly dog.",
     "map_narration": "Floating on its back among the chilly waves, it lives along the rocky coasts of the northern Pacific Ocean.",
     "sound_description.young": "Sea otters squeak, whistle and chirp to talk to each other, and a baby will cry out with a high little squeal when it wants its mum."
+   },
+   "images": {
+    "cover": "/assets/animals/sea_otter/cover.jpg",
+    "scale": "/assets/animals/sea_otter/scale.jpg",
+    "baby": "/assets/animals/sea_otter/baby.jpg"
    }
   },
   "axolotl": {
@@ -9736,6 +9926,11 @@
     "weight_comparison.young": "It weighs about twenty-two pounds, which is around half as much as you, or about as heavy as a big bag of potatoes.",
     "map_narration": "High in the eucalyptus trees of eastern Australia, it dozes the whole day away.",
     "sound_description.young": "For such a small, cuddly animal, a koala can make a surprisingly deep, rumbly grunt — a bit like a tiny, snoring pig — when it's calling out to other koalas."
+   },
+   "images": {
+    "cover": "/assets/animals/koala/cover.jpg",
+    "scale": "/assets/animals/koala/scale.jpg",
+    "baby": "/assets/animals/koala/baby.jpg"
    }
   },
   "wombat": {
@@ -9832,6 +10027,11 @@
     "weight_comparison.young": "A grown harp seal weighs around two hundred and ninety pounds — about as heavy as seven children your size all piled together.",
     "map_narration": "Born on the floating ice, it swims through the cold seas near the top of the world.",
     "sound_description.young": "Harp seals can be surprisingly chatty underwater, making warbles, chirps, and trills, while a hungry pup on the ice cries out with a high little call to its mother."
+   },
+   "images": {
+    "cover": "/assets/animals/harp_seal/cover.jpg",
+    "scale": "/assets/animals/harp_seal/scale.jpg",
+    "baby": "/assets/animals/harp_seal/baby.jpg"
    }
   },
   "west_indian_manatee": {
@@ -9923,6 +10123,11 @@
     "weight_comparison.young": "It weighs around eighty-five pounds — about as heavy as two children your size added together.",
     "map_narration": "Deep in the warm rainforests of the Congo, it swings through the trees and makes peace with hugs.",
     "sound_description.young": "Bonobos are very chatty, using high squeaks, hoots, and peeping calls to talk to their family and let everyone know how they feel."
+   },
+   "images": {
+    "cover": "/assets/animals/bonobo/cover.jpg",
+    "scale": "/assets/animals/bonobo/scale.jpg",
+    "baby": "/assets/animals/bonobo/baby.jpg"
    }
   },
   "fruit_bat": {
@@ -9971,6 +10176,11 @@
     "weight_comparison.young": "It's surprisingly light for such big wings — only about two or three pounds, lighter than a full water bottle.",
     "map_narration": "Flapping out at dusk to find sweet fruit, it lives in the warm forests of Southeast Asia.",
     "sound_description.young": "Fruit bats squeak, chitter, and squabble when they crowd together in their tree, especially at dusk when everyone is waking up and getting ready to fly."
+   },
+   "images": {
+    "cover": "/assets/animals/fruit_bat/cover.jpg",
+    "scale": "/assets/animals/fruit_bat/scale.jpg",
+    "baby": "/assets/animals/fruit_bat/baby.jpg"
    }
   },
   "pallas_cat": {
@@ -10019,6 +10229,11 @@
     "weight_comparison.young": "It weighs about nine pounds, around the same as a pet house cat — even though all that fluffy fur makes it look much heavier.",
     "map_narration": "Hiding among the rocks, it lives in the cold, windy grasslands of Central Asia.",
     "sound_description.young": "Pallas's cats are usually very quiet, but they can make a strange yelping bark or a little growl, and sometimes a soft purr when they feel calm and safe."
+   },
+   "images": {
+    "cover": "/assets/animals/pallas_cat/cover.jpg",
+    "scale": "/assets/animals/pallas_cat/scale.jpg",
+    "baby": "/assets/animals/pallas_cat/baby.jpg"
    }
   },
   "cassowary": {
@@ -10305,6 +10520,11 @@
     "weight_comparison.young": "They are super light — about one pound, even lighter than a guinea pig.",
     "map_narration": "This little stripey marsupial lives in the dry eucalyptus woodlands of Western Australia.",
     "sound_description.young": "They are very quiet little animals, but they can make soft clicking and tut-tut sounds when something surprises them."
+   },
+   "images": {
+    "cover": "/assets/animals/numbat/cover.jpg",
+    "scale": "/assets/animals/numbat/scale.jpg",
+    "baby": "/assets/animals/numbat/baby.jpg"
    }
   }
  }

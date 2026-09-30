@@ -14,6 +14,8 @@ layout: layouts/post.njk
   .ad-origin { font-size: 0.9rem; font-weight: 600; background: rgba(255, 209, 102, 0.22); border-left: 4px solid #FFD166; border-radius: 0 10px 10px 0; padding: 0.55rem 0.8rem; }
   .ad-origin-label { font-family: 'Fredoka', sans-serif; color: #5D4037; }
   .ad-origin a { font-weight: 700; white-space: nowrap; }
+  .ad-days { margin: 0.3rem 0 0; padding-left: 1.1rem; }
+  .ad-days li { margin: 0.2rem 0; }
   figure.story-figure { margin: 1.5rem 0; text-align: center; }
   figure.story-figure img { max-width: 100%; border-radius: 12px; box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2); }
   figure.story-figure figcaption { font-size: 0.85rem; color: var(--muted); font-style: italic; margin-top: 0.5rem; }
@@ -35,6 +37,11 @@ layout: layouts/post.njk
 <div class="ad-greeting">{{ d.greeting | md | safe }}</div>
 {%- if origin %}
 <p class="ad-origin"><span class="ad-origin-label">About this day:</span> {{ origin.text | mdInline | safe }}{% if origin.sourceUrl %} <a href="{{ origin.sourceUrl }}" rel="noopener">Source</a>{% endif %}</p>
+{%- endif %}
+{%- if d.celebratedOn and d.celebratedOn.length %}
+<div class="ad-origin"><span class="ad-origin-label">Celebrated on:</span>
+  <ul class="ad-days">{% for x in d.celebratedOn %}<li><strong>{{ x.day }}</strong> · {{ x.date }}{% if x.origin %} — {{ x.origin }}{% endif %}{% if x.sourceUrl %} <a href="{{ x.sourceUrl }}" rel="noopener">Source</a>{% endif %}</li>{% endfor %}</ul>
+</div>
 {%- endif %}
 <p class="ad-readaloud">{{ d.readAloudNote or "Read this one out loud together — it's short, and it's more fun with voices." }}</p>
 
