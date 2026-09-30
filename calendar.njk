@@ -8,31 +8,15 @@ eleventyExcludeFromCollections: true
 {#- Days: _data/animalDays.json (mirrors the Notion calendar). A day links to its
     /calendar/<slug>/ page once that page exists (collections.calendar). -#}
 {%- set months = animalDays.days | calendarYear(collections.calendar, collections.posts) -%}
-{%- set officialCount = 0 -%}{%- set pickCount = 0 -%}
-{%- for d in animalDays.days -%}{%- if d.official -%}{%- set officialCount = officialCount + 1 -%}{%- else -%}{%- set pickCount = pickCount + 1 -%}{%- endif -%}{%- endfor -%}
-{%- macro aboutBody(total, official, picks) %}
-  <p class="about-stat"><b>{{ total }}</b> animal days a year<br><span>{{ official }} official awareness days + {{ picks }} Wild Atlas picks</span></p>
-  <h3>Where the dates come from</h3>
-  <p>Every official day on this calendar was set by someone else — conservation groups, zoos and aquariums, the United Nations (like World Wildlife Day and World Oceans Day). Most are celebrated worldwide; a few, like National Bison Day and National Panda Day, are US days. We didn't invent them. We just make sure each one has a story for kids.</p>
-  <h3>How an animal gets on the calendar</h3>
-  <ul>
-    <li><b>One animal a week</b>, matched to a real awareness day.</li>
-    <li>When several days land in the same week, we pick the one we think kids will love most.</li>
-    <li>In the few weeks with no animal day, we choose a favourite and label it a <span class="pick-badge">Wild Atlas pick</span>.</li>
-    <li>The year ends with <b>Explorer's Choice</b>, where families vote for a favourite.</li>
-  </ul>
-  <h3>Every page</h3>
-  <p>Has a short read-aloud story, how big the animal is next to a 5-year-old, and where you can see one for real — fact-checked against trusted sources like the IUCN Red List and the zoos and aquariums themselves.</p>
-  <p class="about-legend"><span class="lg lg-live"></span> Ready to read &nbsp; <span class="lg lg-soon"></span> Coming soon &nbsp; <span class="lg lg-today"></span> Today</p>
-{%- endmacro %}
 <style>
   :root { --max: 1120px; --bark: #5D4037; --sunny: #FFD166; --sunny-wash: #FFF4CC; --card: #FFFFFF; }
   .cal-hero { padding: 1.25rem 0 0.25rem; max-width: 46rem; }
   .cal-hero .eyebrow { font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin: 0 0 0.3rem; }
   .cal-hero h1 { font-family: 'Fredoka', sans-serif; font-size: clamp(2rem, 5vw, 2.7rem); line-height: 1.1; margin: 0 0 0.6rem; color: var(--bark); }
   .cal-hero p { color: var(--muted); font-size: 1.06rem; font-weight: 600; margin: 0; }
+  .cal-hero .dates-link { color: var(--accent); font-weight: 700; white-space: nowrap; }
   .cal-layout { display: grid; grid-template-columns: 1fr; gap: 1.5rem; align-items: start; margin-top: 1.25rem; }
-  @media (min-width: 1000px) { .cal-layout { grid-template-columns: minmax(0, 1fr) 300px; gap: 2rem; } }
+  
   .about-desktop { display: none; }
   @media (min-width: 1000px) {
     .about-desktop { display: block; position: sticky; top: 90px; background: var(--card); border: 2px solid var(--bark); border-radius: 14px; padding: 1.1rem 1.2rem; box-shadow: 0 6px 16px rgba(93, 64, 55, 0.12); font-size: 0.9rem; max-height: calc(100vh - 110px); overflow: auto; }
@@ -89,12 +73,11 @@ eleventyExcludeFromCollections: true
 <header class="cal-hero">
   <p class="eyebrow">Wild Atlas Animal Calendar</p>
   <h1>A year of real animal days</h1>
-  <p>World Hippo Day. World Octopus Day. International Polar Bear Day. Animal lovers around the world already celebrate these days — we didn't make them up. For each one, we've made a short read-aloud story to share with your kids.</p>
+  <p>Animal lovers around the world already celebrate these days — we didn't make them up. For each one, we've made a short read-aloud story to share with your kids. <a class="dates-link" href="/calendar/about/">Where these dates come from →</a></p>
 </header>
 
 <div class="cal-layout">
   <div>
-    <details class="about-mobile"><summary>About this calendar</summary>{{ aboutBody(animalDays.days | length, officialCount, pickCount) }}</details>
     {%- for m in months %}
     <section class="cal-month" id="m-{{ m.key }}" aria-labelledby="h-{{ m.key }}">
       <h2 id="h-{{ m.key }}">{{ m.key | monthLabel }}{% if loop.first %}<span class="now">This month</span>{% endif %}</h2>
@@ -116,10 +99,10 @@ eleventyExcludeFromCollections: true
           <li>
             {%- set inner %}
               <span class="cal-date"><b>{{ e.day_num }}</b><span>{{ e.weekday }}</span></span>
-              {% if e.image %}<img class="thumb" src="{{ e.image }}" alt="" loading="lazy">{% else %}<span class="thumb">{% if e.url %}Read{% elif e.isPast %}Next year{% else %}Soon{% endif %}</span>{% endif %}
+              {% if e.image %}<img class="thumb" src="{{ e.image }}" alt="" loading="lazy">{% else %}<span class="thumb"></span>{% endif %}
               <span>
                 <h3>{% if e.official %}{{ e.day }}{% else %}{{ e.animal }}{% endif %}{% if e.isToday %}<span class="today-pill">Today</span>{% endif %}</h3>
-                <p>{% if e.official %}{{ e.animal }}{% else %}<span class="pick-badge">{{ e.day }}</span>{% endif %}{% if not e.url %} · <span class="status">{% if e.isPast %}back next year{% else %}coming soon{% endif %}</span>{% endif %}</p>
+                <p>{% if e.official %}{{ e.animal }}{% else %}<span class="pick-badge">{{ e.day }}</span>{% endif %}</p>
               </span>
             {%- endset %}
             {% if e.url %}<a class="cal-card{% if e.isToday %} is-today{% endif %}" href="{{ e.url }}">{{ inner | safe }}</a>{% else %}<div class="cal-card soon{% if e.isToday %} is-today{% endif %}{% if e.isPast %} past{% endif %}">{{ inner | safe }}</div>{% endif %}
@@ -130,5 +113,4 @@ eleventyExcludeFromCollections: true
     </section>
     {%- endfor %}
   </div>
-  <aside class="about-desktop" aria-label="About this calendar"><p class="about-title">About this calendar</p>{{ aboutBody(animalDays.days | length, officialCount, pickCount) }}</aside>
 </div>
