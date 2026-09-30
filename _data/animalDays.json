@@ -359,5 +359,108 @@
    "day": "Explorer's Choice",
    "official": false
   }
- ]
+ ],
+ "alsoCelebrated": [
+  {
+   "date": "2026-07-16",
+   "day": "World Snake Day",
+   "animal": "King Cobra"
+  },
+  {
+   "date": "2026-08-08",
+   "day": "International Moon Bear Day",
+   "animal": "Asiatic Black Bear"
+  },
+  {
+   "date": "2026-08-10",
+   "day": "World Lion Day",
+   "animal": "Lion"
+  },
+  {
+   "date": "2026-08-30",
+   "day": "International Whale Shark Day",
+   "animal": "Whale Shark"
+  },
+  {
+   "date": "2026-09-01",
+   "day": "International Primate Day",
+   "animal": "Mandrill"
+  },
+  {
+   "date": "2026-09-22",
+   "day": "World Rhino Day",
+   "animal": "Rhino"
+  },
+  {
+   "date": "2026-09-26",
+   "day": "World Cassowary Day",
+   "animal": "Southern Cassowary"
+  },
+  {
+   "date": "2026-10-17",
+   "day": "International Sawfish Day",
+   "animal": "Sawfish"
+  },
+  {
+   "date": "2026-10-21",
+   "day": "World Reptile Day",
+   "animal": "Reptiles"
+  },
+  {
+   "date": "2026-10-22",
+   "day": "Wombat Day",
+   "animal": "Wombat"
+  },
+  {
+   "date": "2026-10-23",
+   "day": "International Snow Leopard Day",
+   "animal": "Snow Leopard"
+  },
+  {
+   "date": "2026-10-24",
+   "day": "International Gibbon Day",
+   "animal": "Gibbon"
+  },
+  {
+   "date": "2026-11-03",
+   "day": "World Basking Shark Day",
+   "animal": "Basking Shark"
+  },
+  {
+   "date": "2027-02-21",
+   "day": "World Whale Day",
+   "animal": "Humpback Whale"
+  },
+  {
+   "date": "2027-03-20",
+   "day": "World Frog Day",
+   "animal": "Poison Dart Frog"
+  },
+  {
+   "date": "2027-05-08",
+   "day": "World Migratory Bird Day",
+   "animal": "Arctic Tern"
+  },
+  {
+   "date": "2027-05-20",
+   "day": "World Bee Day",
+   "animal": "Bumblebee"
+  },
+  {
+   "date": "2027-05-31",
+   "day": "World Parrot Day",
+   "animal": "Parrot"
+  },
+  {
+   "date": "2027-06-11",
+   "day": "International Lynx Day",
+   "animal": "Iberian Lynx"
+  },
+  {
+   "date": "2027-06-17",
+   "day": "World Croc Day",
+   "animal": "Saltwater Crocodile"
+  }
+ ],
+ "_noteAlso": "Second-tier days: real awareness days we didn't pick. Shown on the calendar (dot + list line), no dedicated page. Seeded from the spreadsheet swap bench; add `url` (organiser page) when verified."
 }

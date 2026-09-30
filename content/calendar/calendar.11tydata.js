@@ -16,6 +16,7 @@ module.exports = {
   tags: ["calendarPage"],
   backLink: { url: "/calendar/", label: "Conservation calendar" },
   eleventyComputed: {
+    originSlug: (data) => data.page.fileSlug, // → _data/dayOrigins.json
     permalink: (data) =>
       data.status === "draft" && !process.env.SHOW_HIDDEN_POSTS
         ? false

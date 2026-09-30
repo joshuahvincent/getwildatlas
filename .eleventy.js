@@ -76,7 +76,7 @@ module.exports = function (eleventyConfig) {
   // Rolling 12-month animal calendar for /calendar/, current month first.
   // Awareness days recur yearly, so a day earlier than this month rolls to
   // next year. Each day links to its calendar page (or blog post) once it exists.
-  eleventyConfig.addFilter("calendarYear", (days, calendarPages, posts) => {
+  eleventyConfig.addFilter("calendarYear", (days, calendarPages, posts, also) => {
     const now = new Date();
     const start = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), 1);
     const pages = new Map((calendarPages || []).map((p) => [p.page.fileSlug, p]));
@@ -85,7 +85,7 @@ module.exports = function (eleventyConfig) {
     const months = [];
     for (let i = 0; i < 12; i++) {
       const d = new Date(start); d.setUTCMonth(d.getUTCMonth() + i);
-      months.push({ key: d.toISOString().slice(0, 7), events: [] });
+      months.push({ key: d.toISOString().slice(0, 7), events: [], also: [] });
     }
     for (const day of days) {
       let occ = new Date(day.date + "T00:00:00Z");
@@ -99,7 +99,17 @@ module.exports = function (eleventyConfig) {
         weekday: occ.toLocaleDateString("en-US", { weekday: "short", timeZone: "UTC" }),
         image: page ? page.data.coverImage : null, isToday: iso === todayIso, isPast: iso < todayIso });
     }
-    for (const m of months) m.events.sort((a, b) => (a.iso < b.iso ? -1 : 1));
+    // Second-tier days: real awareness days we didn't pick. Dot + list line, no page.
+    for (const day of also || []) {
+      let occ = new Date(day.date + "T00:00:00Z");
+      while (occ.getTime() < start) occ.setUTCFullYear(occ.getUTCFullYear() + 1);
+      const m = months.find((x) => x.key === occ.toISOString().slice(0, 7));
+      if (m) m.also.push({ ...day, iso: occ.toISOString().slice(0, 10), day_num: occ.getUTCDate() });
+    }
+    for (const m of months) {
+      m.events.sort((a, b) => (a.iso < b.iso ? -1 : 1));
+      m.also.sort((a, b) => (a.iso < b.iso ? -1 : 1));
+    }
     return months;
   });
   eleventyConfig.addGlobalData("todayIso", () => new Date().toISOString().slice(0, 10));

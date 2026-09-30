@@ -7,6 +7,7 @@ module.exports = {
     author: from("author"),
     coverImage: from("coverImage"),
     animalDay: from("animalDay"),
+    originSlug: (data) => data.entry && data.entry.page.fileSlug,
     postDate: (data) => data.entry && data.entry.date,
     canonicalUrl: (data) => data.entry && `https://wildatlasapp.com${data.entry.url}`,
   },
