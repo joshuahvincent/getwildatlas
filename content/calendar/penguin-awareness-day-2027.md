@@ -51,7 +51,6 @@ animalDay:
   source:
     label: WWF's facts about emperor penguins
     url: https://www.wwf.org.uk/learn/fascinating-facts/emperor-penguins
-status: draft
 blogStatus: scheduled
 ---
 
