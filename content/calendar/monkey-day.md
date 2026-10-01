@@ -51,7 +51,11 @@ Golden snub-nosed monkeys live in only one place on Earth: the mountain forests 
 
 Can you scrunch up your nose like a golden monkey?
 
+{% figure "/assets/blog/monkey-day/scale.jpg", "An illustrated golden snub-nosed monkey sitting beside the Wild Atlas explorer kid, with an arrow showing its body is about 65 centimeters (2 feet 2 inches) long" %}
+
 A big boy golden monkey's body alone is a little more than half as long as a 5-year-old is tall. But add his tail — which is about as long as his whole body — and nose to tail-tip, he can be as long as a 5-year-old is tall, or even longer!
+
+{% figure "/assets/blog/monkey-day/weight.jpg", "Two scales side by side: one golden snub-nosed monkey weighing 18 kilograms on one, and one five-year-old weighing 19 kilograms on the other" %}
 
 And here's a surprise: a full-grown male golden monkey weighs about as much as one 5-year-old child!
 
@@ -68,5 +72,4 @@ Can you huddle close with your family to stay warm, like a monkey troop does in 
 Golden monkey families join together into huge neighborhoods — sometimes hundreds of monkeys, all living in the same forest. When it gets really cold, families press close together in a big furry huddle, and the huddle gets even bigger the colder it gets.
 
 Can you point to something gold nearby, like a golden monkey's fur?
-
 

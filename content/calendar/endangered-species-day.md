@@ -69,9 +69,13 @@ Here's a surprise: black rhinos aren't black at all. They're grey — and often 
 
 Can you make your own lips pointy, like you're reaching for a leaf?
 
+{% figure "/assets/blog/endangered-species-day/scale.jpg", "An illustrated black rhino standing beside the Wild Atlas explorer kid, with arrows showing it is about 1.6 meters (5 feet 3 inches) tall at the shoulder and 3.3 meters (10 feet 10 inches) long" %}
+
 Stand up as tall as you can. A grown-up black rhino's shoulder is still way up above your head — about 1.6 meters, or 5 feet 3 inches high.
 
-Now picture 54 five-year-olds all climbing onto one giant scale together. That's about how much one black rhino weighs — around 1,000 kilograms, or 2,205 pounds!
+{% figure "/assets/blog/endangered-species-day/weight.jpg", "Two scales side by side: one black rhino weighing 1,000 kilograms on one, and 55 cartoon five-year-olds weighing about the same on the other" %}
+
+Now picture 55 five-year-olds all climbing onto one giant scale together. That's about how much one black rhino weighs — around 1,000 kilograms, or 2,205 pounds!
 
 A black rhino carries two horns, one longer than the other, and they're made of the very same stuff as your fingernails.
 

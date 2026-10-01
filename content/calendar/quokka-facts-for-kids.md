@@ -65,11 +65,15 @@ Can you make your biggest smiley face, like a quokka?
 
 Long ago, in 1696, an explorer sailed to a little island near Australia. He saw quokkas hopping around and thought they looked like giant rats — so he named the island "Rat's Nest." Today we call it Rottnest Island, and it's still home to thousands of quokkas.
 
+{% figure "/assets/blog/quokka-facts-for-kids/scale.jpg", "An illustrated quokka beside the Wild Atlas explorer kid, with an arrow showing it is about 80 centimeters (2 feet 8 inches) from nose to tail tip" %}
+
 Even a big quokka, from its nose all the way to the tip of its tail, is shorter than you are tall — and without its tail, it's only about half as long!
 
-It would take about five quokkas, all stacked up, to weigh as much as one 5-year-old!
+{% figure "/assets/blog/quokka-facts-for-kids/weight.jpg", "Two scales side by side: six quokkas weighing 21 kilograms on one, and one five-year-old weighing 19 kilograms on the other" %}
 
-Can you count to five? That's about how many quokkas it would take.
+It would take about six quokkas, all stacked up, to weigh a little more than one 5-year-old!
+
+Can you count to six? That's about how many quokkas it would take.
 
 {% figure "/assets/blog/quokka-facts-for-kids/baby.jpg", "A mother quokka sitting on sand with a furry joey peeking out of the pouch on her belly" %}
 

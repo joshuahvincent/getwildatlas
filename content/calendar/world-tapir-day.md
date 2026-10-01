@@ -79,7 +79,11 @@ Can you guess a tapir's closest cousins? Not pigs, and not elephants — it's ho
 
 The Malayan tapir is the biggest of the four tapir kinds in the world, and the only one that lives in Asia. Standing on all fours, its back is about as tall as you are, and nose to tail it's nearly as long as two 5-year-olds lying head to toe.
 
+{% figure "/assets/blog/world-tapir-day/scale.jpg", "An illustrated Malayan tapir beside the Wild Atlas explorer kid, with arrows showing it is about 1 meter tall and 2 meters long" %}
+
 A big Malayan tapir weighs about as much as 14 five-year-olds — all standing on one big scale together!
+
+{% figure "/assets/blog/world-tapir-day/weight.jpg", "Two scales side by side: one Malayan tapir weighing 250 kilograms on one, and 14 five-year-olds on the other" %}
 
 Can you picture 14 friends on one big scale?
 

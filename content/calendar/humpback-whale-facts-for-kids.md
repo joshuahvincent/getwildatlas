@@ -63,7 +63,11 @@ Nobody knows for sure why they sing — scientists are still learning. But the s
 
 A humpback doesn't have teeth. It has hundreds of bristly plates called baleen, and it uses them like a strainer to catch tiny krill and small fish. You're much too big for a humpback to ever swallow.
 
+{% figure "/assets/blog/humpback-whale-facts-for-kids/scale.jpg", "An illustrated humpback whale next to the tiny Wild Atlas explorer, with an arrow showing the whale is about 15 meters (49 feet) long" %}
+
 A grown-up humpback is about as long as 14 five-year-olds lying head to toe — around 15 meters (49 feet)! Its front flippers are so long that the first part of its scientific name, Megaptera, actually means "big-winged." One flipper alone can be longer than a car.
+
+{% figure "/assets/blog/humpback-whale-facts-for-kids/weight.jpg", "Two scales side by side: one humpback whale weighing 30,000 kilograms on one, and a huge crowd of 1,622 tiny five-year-olds on the other" %}
 
 Can you picture more than 1,500 five-year-olds all standing on one giant scale together? That's about how much a big humpback weighs.
 

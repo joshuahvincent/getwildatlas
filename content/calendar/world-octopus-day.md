@@ -85,6 +85,8 @@ Every arm is covered in suckers, and every sucker can **taste.** It tastes rocks
 
 Watch this: in about one second, it can change from smooth and reddish-brown to bumpy and gray — like turning into a rock. Count "one!" as fast as you can. That's how fast it changes.
 
+{% figure "/assets/blog/world-octopus-day/scale.jpg", "An illustrated giant Pacific octopus with its arms spread, next to a tiny explorer kid, with an arrow showing it is about 4 meters (13 feet) from arm tip to arm tip" %}
+
 That's a lot of octopus. But it starts out tiny.
 
 {% figure "/assets/blog/world-octopus-day/hatchling.jpg", "A tiny, see-through baby giant Pacific octopus with orange speckles, drifting in dark ocean water", "A newly hatched giant Pacific octopus is about the size of a grain of rice." %}
