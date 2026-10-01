@@ -5,7 +5,6 @@ author: Wild Atlas
 excerpt: "Happy World Turtle Day! A turtle's shell is part of its skeleton, it can feel a gentle touch, and baby sea turtles head for the bright sea. A read-aloud for ages 3–8."
 coverImage: /assets/animals/turtle/cover.jpg
 tags: [animals, ocean, family]
-status: draft
 appId: turtle
 animalDay:
   dayName: World Turtle Day
@@ -49,9 +48,9 @@ animalDay:
             place: Two Oceans Aquarium — Cape Town, South Africa
             blurb: Loggerhead and green turtles rest here while they get ready to return to the sea.
             url: https://www.aquarium.co.za/foundation/conservation/turtle-conservation-centre
-          - title: Turtles and rescue centre
+          - title: Turtles and their rescue stories
             place: SEA LIFE Sydney Aquarium — Sydney, Australia
-            blurb: Green sea turtles live here, and rescued turtles get care before heading home.
+            blurb: Green sea turtles live here, and some of them first came to the aquarium after being rescued.
             url: https://www.visitsealife.com/sydney/whats-inside/animals/turtles/
           - title: Turtle rehabilitation
             place: SEA LIFE Kelly Tarlton's — Auckland, New Zealand
@@ -65,7 +64,7 @@ animalDay:
 
     Starters: "How do you think a turtle feels inside its shell?" "What would you do if you were a baby turtle looking for the sea?"
 
-    If your kid asks *what if a turtle can't find the sea?* — this holds up: "Lots of baby turtles make it, and there are people who help too, like the ones who keep beaches dark at night. Turtles have been finding the sea for a very long time."
+    If your kid asks *what if a turtle can't find the sea?* — this holds up: "Baby turtles are born knowing which way to go, toward the bright open sky over the sea. And there are people who help too, like the ones who keep beaches dark at night. Turtles have been finding the sea for a very long time."
   appCta: "Wild Atlas has a whole page built around this animal, with narrated facts, the full scale comparison against a 5-year-old, and the sound a turtle actually makes. The turtle is in the Cozy Critters pack."
   appLinkText: Meet the turtle in Wild Atlas (Cozy Critters pack)
   source:
@@ -81,7 +80,7 @@ A turtle's shell isn't a house it can leave. It's part of the turtle's body, mad
 
 The shell can feel, too. If you tap it gently, the turtle knows you're there. That's why it's best to watch turtles and not touch them.
 
-Turtles are very, very old. Their family has lived on Earth for more than 200 million years. That's even longer than the dinosaurs!
+Turtles are very, very old. Their family has lived on Earth for more than 200 million years. They were here with the dinosaurs, and they're still here today!
 
 Turtles have no teeth. Instead, they use a strong, sharp beak to nibble and tear their food.
 

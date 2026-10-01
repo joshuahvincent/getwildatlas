@@ -5,7 +5,6 @@ author: Wild Atlas
 excerpt: "Happy International Leopard Day! Meet the leopard: spots shaped like roses, a leap as long as a car, and a very clever way to keep its dinner safe. A read-aloud, plus where to meet a real leopard."
 coverImage: /assets/animals/leopard/cover.jpg
 tags: [animals, conservation, family]
-status: draft
 appId: leopard
 animalDay:
   dayName: International Leopard Day
@@ -42,7 +41,7 @@ animalDay:
             url: https://zoo.sandiegozoo.org/animals/amur-leopard
           - title: Leopards
             place: The Maryland Zoo — Baltimore, Maryland
-            blurb: Visit the zoo's leopard page to see which leopards you can meet.
+            blurb: Look for the Amur leopard in the African Journey area.
             url: https://www.marylandzoo.org/animal/leopard/
       - label: Around the world
         places:
@@ -54,10 +53,6 @@ animalDay:
             place: Yorkshire Wildlife Park — Doncaster, England
             blurb: Leopard Heights is a huge open-topped home with plenty of room to prowl.
             url: https://www.yorkshirewildlifepark.com/
-          - title: Amur leopards
-            place: Marwell Zoo — Hampshire, England
-            blurb: Marwell has cared for Amur leopards as part of a European breeding program.
-            url: https://www.marwell.org.uk/
     note: Animals sometimes move between zoos — check the zoo's own website before you visit.
   grownups: |
     Leopards are listed as Vulnerable, mostly from losing habitat and prey, and from hunting. Some kinds of leopard are in much more trouble than others. There's a hopeful story: the Amur leopard of far eastern Russia and northeastern China was down to an estimated 84 in 2014–15, and by 2023 researchers estimated about 128–130 adults and sub-adults. Protected forest and careful camera-trap monitoring have helped it begin to recover.

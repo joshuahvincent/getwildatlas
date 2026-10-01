@@ -5,7 +5,6 @@ author: Wild Atlas
 excerpt: "Happy World Bear Day! Meet the grizzly bear — it can smell food from very far away, run as fast as a horse, and its cubs are born while Mom is fast asleep. A read-aloud, plus where to meet a real grizzly."
 coverImage: /assets/animals/grizzly_bear/cover.jpg
 tags: [animals, conservation, family]
-status: draft
 appId: grizzly_bear
 animalDay:
   dayName: World Bear Day
@@ -50,12 +49,8 @@ animalDay:
       - label: Around the world
         places:
           - title: Grizzly bears
-            place: Zoo Děčín — Děčín, Czechia
-            blurb: One of the few places in Europe where you can meet grizzlies.
-            url: https://www.zoodecin.cz/
-          - title: Grizzly bears
             place: Sofia Zoo — Sofia, Bulgaria
-            blurb: Another of the few European zoos with grizzly bears.
+            blurb: One of the few zoos in Europe where you can meet a grizzly bear.
             url: https://zoosofia.eu/
     note: Animals sometimes move between zoos — check the zoo's own website before you visit.
   grownups: |

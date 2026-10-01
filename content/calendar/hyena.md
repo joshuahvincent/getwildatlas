@@ -5,7 +5,6 @@ author: Wild Atlas
 excerpt: "Meet the hyena — it giggles, it's led by moms, and its bite can crack bones. A read-aloud for International Hyena Day, plus where to meet a real hyena."
 coverImage: /assets/animals/hyena/cover.jpg
 tags: [animals, conservation, family]
-status: draft
 appId: hyena
 animalDay:
   dayName: International Hyena Day

@@ -5,7 +5,6 @@ author: Wild Atlas
 excerpt: "Happy World Donkey Day! Donkeys have giant ears, a loud hee-haw, and a memory that lasts for years. One donkey weighs about as much as 10 five-year-olds. A read-aloud for ages 3–8."
 coverImage: /assets/animals/donkey/cover.jpg
 tags: [animals, farm, family]
-status: draft
 appId: donkey
 animalDay:
   dayName: World Donkey Day
@@ -51,7 +50,7 @@ animalDay:
             linkText: Plan a visit
     note: "Visiting hours change, so check each sanctuary's own website first. Always ask a grown-up who looks after the donkeys before you pet one, and let the donkey say hello first."
   grownups: |
-    The everyday farm donkey isn't rated by the IUCN Red List, the way wild animals are. Its wild ancestor, the African wild ass, is rated Critically Endangered, with fewer than 600 left in the deserts of Eritrea and Ethiopia, mostly because of hunting and competition for water and grass.
+    The everyday farm donkey isn't rated by the IUCN Red List, the way wild animals are. Its wild ancestor, the African wild ass, is rated Critically Endangered, with only a small number left in the deserts of Eritrea and Ethiopia (likely a few hundred at most), mostly because of hunting and competition for water and grass.
 
     There's a hopeful story close to home: World Donkey Day began as the idea of one animal scientist, Dr Abdul Raziq Kakar, who noticed how much donkeys help people and how little thanks they get. Today it's marked around the world, and sanctuaries like The Donkey Sanctuary in Ireland care for more than 1,800 donkeys and mules.
 

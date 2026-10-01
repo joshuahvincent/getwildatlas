@@ -5,7 +5,6 @@ author: Wild Atlas
 excerpt: "Happy World Camel Day! Meet the camel — its hump is full of fat, not water, its nostrils close against sand, and it can go more than a week without a drink. A read-aloud, plus where to meet a real camel."
 coverImage: /assets/animals/camel/cover.jpg
 tags: [animals, conservation, family]
-status: draft
 appId: camel
 animalDay:
   dayName: World Camel Day
@@ -50,16 +49,11 @@ animalDay:
             blurb: Dromedaries and Bactrian camels share a big open meadow in the middle of the park.
             url: https://www.tierpark-berlin.de/
             linkText: Visit Tierpark Berlin
-          - title: Camels at the zoo
-            place: Taronga Western Plains Zoo — Dubbo, Australia
-            blurb: Camels here have their own exhibit, and the zoo celebrates World Camel Day each year.
-            url: https://taronga.org.au/dubbo-zoo/animals
-            linkText: See animals at Taronga Western Plains Zoo
     note: Animals sometimes move between zoos — check the zoo's own website before you visit. Camels can also be met at farms, sanctuaries, and animal parks, so look near you.
   grownups: |
     Camels come in two main kinds: the one-humped dromedary and the two-humped Bactrian. Almost all of them live with people, as working and farm animals, so the IUCN Red List doesn't give them a conservation status in the usual way. Their wild cousin, the wild Bactrian camel, is a separate species that lives only in remote parts of China and Mongolia. It is listed as Endangered, with around a thousand adults left. That's an improvement: in October 2025 the IUCN moved it down from Critically Endangered, partly because of new information and partly because protected areas such as Great Gobi National Park in Mongolia are helping. It still needs a lot of care, since water, mining, and mixing with domestic camels remain worries.
 
-    A small family hope action: camels survive on very little water, and so can we be careful with it. This week, try turning off the tap while brushing teeth, or collecting a little cool bathwater or rinse water to give a plant a drink. Talk about how desert animals make a little go a long way.
+    A small family hope action: camels survive on very little water, and we can be careful with water too. This week, try turning off the tap while brushing teeth, or collecting a little cool bathwater or rinse water to give a plant a drink. Talk about how desert animals make a little go a long way.
 
     Starters: "How do you think a camel feels when the wind blows sand?" "What would you pack for a long trip with no shops?"
 

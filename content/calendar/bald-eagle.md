@@ -2,10 +2,9 @@
 title: "Bald Eagle Facts for Kids — The Bird That Isn't Bald"
 date: 2027-06-20
 author: Wild Atlas
-excerpt: "Happy American Eagle Day! Meet the bald eagle — it isn't bald, its wings stretch twice as wide as you are tall, and its nest can weigh as much as a small car. A read-aloud, plus where to meet one."
+excerpt: "Happy American Eagle Day! Meet the bald eagle — it isn't bald, its wings stretch about twice as wide as a 5-year-old is tall, and its nest can weigh as much as a small car. A read-aloud, plus where to meet one."
 coverImage: /assets/animals/bald_eagle/cover.jpg
 tags: [animals, birds, conservation, family]
-status: draft
 appId: bald_eagle
 animalDay:
   dayName: American Eagle Day
@@ -13,7 +12,7 @@ animalDay:
   animalName: bald eagle
   animalArticle: a
   campaign: animal_bald_eagle
-  greeting: "**Meet the bald eagle!** People around the world celebrate it on American Eagle Day, every June 20 — a day for one of the most recognizable birds in North America."
+  greeting: "**Meet the bald eagle!** People across the United States celebrate it on American Eagle Day, every June 20 — a day for one of the most recognizable birds in North America."
   celebratedOn:
     - day: American Eagle Day
       date: June 20
@@ -29,7 +28,7 @@ animalDay:
         places:
           - title: Acadia and Connick
             place: Smithsonian's National Zoo — Washington, D.C.
-            blurb: Both eagles are cared for at the zoo because injuries mean they can't fly in the wild. Connick is still growing his adult feathers.
+            blurb: Both eagles are cared for at the zoo because they can't fly in the wild. Connick is still growing his adult feathers.
             url: https://nationalzoo.si.edu/animals/bald-eagle
           - title: Bald eagles
             place: Saint Louis Zoo — St. Louis, Missouri
@@ -47,11 +46,11 @@ animalDay:
         places:
           - title: Bald eagles
             place: Erlebnis-Zoo Hannover — Hannover, Germany
-            blurb: Find them with the zoo's other birds of prey — and watch for the flying show in Yukon Bay.
+            blurb: Look for them in Yukon Bay, where the zoo's flying show takes place.
             url: https://www.zoo-hannover.de/tier-lexikon/weisskopfseeadler
           - title: Bald eagles
             place: Tierpark Berlin — Berlin, Germany
-            blurb: One of Europe's largest animal parks keeps bald eagles in its collection.
+            blurb: One of Europe's largest animal parks has bald eagles that star in its summer flying show.
             url: https://www.tierpark-berlin.de/
     note: Animals sometimes move between zoos — check the zoo's own website before you visit.
   grownups: |
@@ -61,7 +60,7 @@ animalDay:
 
     Starters: "What do you think an eagle sees when it looks down from way up high?" "What would you build a nest out of?"
 
-    If your kid asks *could an eagle pick me up?* — this holds up: "No. A bald eagle is about as heavy as a big bag of sugar, so it can only carry something small, like a fish. And it would much rather catch dinner in the river than bother a kid."
+    If your kid asks *could an eagle pick me up?* — this holds up: "No. A bald eagle is about as heavy as a couple of big bags of sugar, so it can only carry something small, like a fish. And it would much rather catch dinner in the river than bother a kid."
   appCta: "Wild Atlas has a whole page built around this animal in the Feathered Friends pack (a paid pack) — narrated facts, the full scale comparison against a 5-year-old, and the real sound a bald eagle makes."
   appLinkText: Meet the bald eagle in Wild Atlas
   source:

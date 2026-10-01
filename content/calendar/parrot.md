@@ -5,7 +5,6 @@ author: Wild Atlas
 excerpt: "Happy World Parrot Day! Meet the parrot — it can copy words, it holds its snack in its foot, and some parrots live for decades. A read-aloud, plus where to meet real parrots."
 coverImage: /assets/animals/parrot/cover.jpg
 tags: [animals, conservation, family]
-status: draft
 appId: parrot
 animalDay:
   dayName: World Parrot Day
@@ -61,7 +60,7 @@ animalDay:
             linkText: Visit Healesville Sanctuary
     note: Birds sometimes move between zoos and exhibits change — check the zoo's own website before you visit.
   grownups: |
-    "Parrot" covers about 400 kinds of birds, and many are doing well, but roughly 1 in 4 to 1 in 3 species are threatened. The main reasons are losing forest homes and being taken from the wild for the pet trade. There's a hopeful story: the Spix's macaw, a blue parrot that had disappeared from the wild by the year 2000, was brought back to Brazil from care programs in 2022. In October 2023, two chicks hatched in the wild to a pair that formed after release, the first wild-born Spix's chicks in decades. The work is ongoing, and the birds still need help, but it shows what patient teamwork can do.
+    "Parrot" covers about 400 kinds of birds, and many are doing well, but roughly 1 in 4 to 1 in 3 species are threatened. The main reasons are losing forest homes and being taken from the wild for the pet trade. There's a hopeful story: the Spix's macaw, a blue parrot that had disappeared from the wild by the year 2000, was released back into the wild in Brazil from care programs in 2022. In October 2023, two chicks hatched in the wild to a pair that formed after release, the first wild-born Spix's chicks in decades. The work is ongoing, and the birds still need help, but it shows what patient teamwork can do.
 
     Parrots need healthy forests and a free life in the treetops. This week, try a family bird-listening walk: stand still for two minutes and count how many different bird voices you can hear. Noticing birds is where caring about them starts.
 
@@ -83,19 +82,19 @@ A parrot makes sounds with a special voice box called a syrinx, and it uses its 
 
 Parrots live in warm forests all around the world, from South America to Australia.
 
-Look at that curved beak. It is strong enough to crack open hard nuts. And look at the feet! A parrot holds its food in one foot, just like you might hold a cracker in your hand.
+Look at that curved beak. It is strong enough to crack open hard nuts. And look at the feet! Many parrots hold their food in one foot, just like you might hold a cracker in your hand.
 
 Can you hold a snack in just one hand and take a bite? That's a parrot trick!
 
 {% figure "/assets/animals/parrot/scale.jpg", "A blue parrot with its wings spread wide, measured at 50 centimeters (1 foot 8 inches), standing next to a girl explorer for scale" %}
 
-Parrots come in lots of sizes. A parrot like the one in the app is about 40 centimeters (16 inches) long, about as long as a ruler and a half. A 5-year-old is 109 centimeters (3 feet 7 inches) tall, so you are much taller. Many parrots are smaller, and some are bigger!
+Parrots come in lots of sizes. A parrot like the one in the app is about 40 centimeters (16 inches) long (the big blue parrot in the picture is a larger kind, about 50 centimeters long), a little longer than a ruler. A 5-year-old is 109 centimeters (3 feet 7 inches) tall, so you are much taller. Many parrots are smaller, and some are bigger!
 
-A parrot weighs about 1.5 kilograms (3 pounds). It would take about a dozen parrots to weigh as much as one 5-year-old.
+A parrot weighs about 1.5 kilograms (3 pounds). It would take about 13 parrots to weigh as much as one 5-year-old.
 
 {% figure "/assets/animals/parrot/weight.jpg", "A scale showing 13 red parrots balanced against one 5-year-old child, with both sides weighing about the same" %}
 
-Can you picture a dozen parrots on a scale? What a noisy scale that would be!
+Can you picture 13 parrots on a scale? What a noisy scale that would be!
 
 Some parrots live a very long time, too — some can live for many decades, even longer than a grandparent has been alive.
 

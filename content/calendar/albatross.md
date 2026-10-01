@@ -5,7 +5,6 @@ author: Wild Atlas
 excerpt: "Happy World Albatross Day! Meet the albatross — it can glide for hours without flapping, and its wings are the widest of any bird. A read-aloud, plus where to see one."
 coverImage: /assets/animals/albatross/cover.jpg
 tags: [animals, conservation, family]
-status: draft
 appId: albatross
 animalDay:
   dayName: World Albatross Day
@@ -39,7 +38,7 @@ animalDay:
         places:
           - title: Northern royal albatrosses
             place: Royal Albatross Centre — Taiaroa Head, Dunedin, New Zealand
-            blurb: The only mainland nesting spot for these giants. Visitors watch from a glass observatory, and the chicks are easiest to see from December to March.
+            blurb: The only mainland nesting spot for these giants. Visitors watch from a glass observatory, and chicks hatch early in the year, so check the centre's website for the best time to see them.
             url: https://albatross.org.nz/about/
     note: "Albatrosses almost never live in zoos, so this list is short on purpose. Check each website before you visit, since seasons and schedules change."
   grownups: |
@@ -69,7 +68,7 @@ Its wings are the longest of any bird. The biggest albatross can stretch them ab
 
 Can you stretch your arms out like wings? Now imagine them three times longer.
 
-Here's a surprise. Albatrosses have a great sense of smell, and they can sniff out dinner from over 20 kilometers (about 12 miles) away. They also drink salty seawater, then sneeze the extra salt out through tubes on their beaks.
+Here's a surprise. Albatrosses have a great sense of smell, and they can sniff out dinner from far away. They also drink salty seawater, then sneeze the extra salt out through tubes on their beaks.
 
 An albatross weighs about 8 kilograms (18 pounds), about as much as a small watermelon. A 5-year-old weighs about as much as two or three albatrosses.
 

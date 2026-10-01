@@ -5,7 +5,6 @@ author: Wild Atlas
 excerpt: "Happy World Croc Day! Meet the crocodile — its eyes sit on top of its head, babies call from inside their eggs, and its mom carries them in her mouth. A read-aloud, plus where to meet a real croc."
 coverImage: /assets/animals/crocodile/cover.jpg
 tags: [animals, reptiles, conservation, family]
-status: draft
 appId: crocodile
 animalDay:
   dayName: World Croc Day
@@ -39,9 +38,9 @@ animalDay:
             place: San Diego Zoo — San Diego, California
             blurb: Look for small and slender-snouted crocodile species along the zoo's reptile paths.
             url: https://zoo.sandiegozoo.org/
-          - title: Siamese crocodiles
+          - title: Cuban and Philippine crocodiles
             place: Smithsonian's National Zoo — Washington, D.C.
-            blurb: The reptile house keeps crocodilians, including a species from Southeast Asia.
+            blurb: The Reptile Discovery Center keeps crocodilians, including Cuban and Philippine crocodiles, two rare species.
             url: https://nationalzoo.si.edu/
       - label: Around the world
         places:
@@ -83,15 +82,17 @@ When it's ready to hatch, it makes a tiny chirping sound. Mom hears it, digs up 
 
 Here's another surprise: a crocodile's eyes and nostrils sit on top of its head. It can hide in the water with almost everything under, and still see and breathe.
 
+Crocodiles even cry real tears while they eat! It isn't because they're sad. The tears help keep their eyes clean.
+
 Can you stick out your tongue? A crocodile can't! Its tongue is attached to the bottom of its mouth.
 
-Crocodiles have been around for over 200 million years. They lived alongside the dinosaurs!
+Crocodile relatives have been around for over 200 million years. They lived alongside the dinosaurs!
 
 And they're strong. Some crocodiles have one of the strongest bites of any animal on Earth.
 
 {% figure "/assets/animals/crocodile/scale.jpg", "A long crocodile measuring 5.2 meters, shown next to a small cartoon explorer child for scale" %}
 
-A big crocodile can be about 5 meters (17 feet) long. That's about as long as a large car — or five 5-year-olds lying head to toe, and then some!
+A big crocodile can be about 5 meters (17 feet) long. That's about as long as a large car — or about five 5-year-olds lying head to toe!
 
 {% figure "/assets/animals/crocodile/weight.jpg", "A scale showing one crocodile weighing 700 kilograms balanced against 38 five-year-olds standing on another scale" %}
 
