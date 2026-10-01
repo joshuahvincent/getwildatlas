@@ -51,7 +51,7 @@ layout: layouts/post.njk
 {%- set w = d.whereToSee %}
 <h2>{{ w.heading or ("Where to see " + d.animalArticle + " " + d.animalName) }}</h2>
 {% if w.intro %}{{ w.intro | md | safe }}{% endif %}
-{% if d.animalId and w.findLabel %}<a class="find-zoo-link" href="/zoos/?animal={{ d.animalId }}">{{ w.findLabel }} →</a>{% endif %}
+{% if zooFinderLive and d.animalId and w.findLabel %}<a class="find-zoo-link" href="/zoos/?animal={{ d.animalId }}">{{ w.findLabel }} →</a>{% endif %}
 {%- for group in w.groups %}
 {% if group.label %}<h3>{{ group.label }}</h3>{% endif %}
 <div class="zoo-grid">

@@ -11,7 +11,7 @@ animalDay:
   animalName: ostrich
   animalArticle: an
   campaign: world_ostrich_day_2027
-  greeting: "**Happy World Ostrich Day!** Every February 2, people celebrate the ostrich — and fittingly, the date lands on the 2nd day of the 2nd month, just like an ostrich's two toes."
+  greeting: "**Happy World Ostrich Day!** Every February 2, people celebrate the ostrich — a day started in 2020 by an ostrich keeper at Auckland Zoo. And fittingly, it lands on the 2nd day of the 2nd month, just like an ostrich's two toes."
   readAloudNote: "Read this one out loud together — it's short, and it's more fun with your fastest running voice."
   whereToSee:
     heading: Where to see an ostrich
@@ -34,25 +34,25 @@ animalDay:
             url: https://www.houstonzoo.org/explore/animals/ostrich/
           - title: African Savanna
             place: Toronto Zoo — Toronto, Ontario
-            blurb: Meet the southern ostrich, one of the kinds of common ostrich that live in southern Africa.
+            blurb: Meet the southern ostrich — the kind of common ostrich that lives in southern Africa.
             url: https://www.torontozoo.com/animals/ostrich
       - label: Around the world
         places:
-          - title: Meet Marwell's Ostrich
+          - title: Ostriches at Marwell
             place: Marwell Zoo — Hampshire, England
-            blurb: Listen for the male's deep "booming" call. It sounds a little like far-away thunder!
+            blurb: Male ostriches make a deep "booming" call — it sounds a little like far-away thunder! Can you make a big, low boom?
             url: https://www.marwell.org.uk/zoo/animals/ostrich
           - title: Safari bus ride
             place: Werribee Open Range Zoo — Victoria, Australia
             blurb: Ride the safari bus across open plains and watch ostriches use their wings like rudders to steer as they run.
-            url: https://www.zoo.org.au/werribee/animals/ostrich/
-          - title: Four ostriches
+            url: https://www.zoo.org.au/werribee/habitats/safari/
+          - title: Where World Ostrich Day began
             place: Auckland Zoo — Auckland, New Zealand
-            blurb: Four female ostriches live here. Count their toes — just two on each foot!
-            url: https://www.aucklandzoo.co.nz/animals/ostrich
+            blurb: An ostrich keeper at Auckland Zoo started World Ostrich Day in 2020! Here, the ostrich flock shares an African savannah with giraffes and zebras. Count their toes — just two on each foot!
+            url: https://www.aucklandzoo.co.nz/animals/common-ostrich
     note: Animals sometimes move — check the zoo's own website before you visit.
   grownups: |
-    Ostriches overall are listed as Least Concern, though their numbers are going down — there are still somewhere between 300,000 and 900,000 in the wild. One group, the North African ostrich, is a different story: it's a rare kind of ostrich that had disappeared from most of its old home in the Sahel. In March 2020, conservation groups worked with Chad's government to move 34 young ostriches into a protected reserve, followed by 29 more in 2021. By 2023, those birds had grown up and successfully hatched 10 chicks of their own — the first ostriches born in that reserve in 50 years.
+    Ostriches overall are listed as Least Concern, though their numbers are going down — there are still somewhere between 300,000 and 900,000 in the wild. One group, the North African ostrich, is a different story: it's a rare kind of ostrich that had disappeared from most of its old home in the Sahel. In March 2020, conservation groups worked with Chad's government to move 34 ostrich chicks into two protected reserves, followed by 29 more in 2021. By 2023, some of those birds had grown up and hatched 10 chicks of their own in the Ouadi Rimé–Ouadi Achim reserve — the first ostriches born there in 50 years.
 
     Ostriches are strong and fast, and in the wild they want plenty of space — that's why people who study them always watch from a safe distance.
 
@@ -61,12 +61,11 @@ animalDay:
     Starters: "If you were as fast as an ostrich, where would you run first?" "Why do you think an ostrich has such big eyes?" "What do you think it would feel like to hatch out of the biggest egg in the world?"
 
     If your kid asks *do ostriches really hide their heads in the sand?* — this holds up: "No — that's a myth. Ostriches turn their eggs in a sand nest with their heads down, and from far away that can look like their head disappeared. They never actually bury their heads."
-  appCta: "Wild Atlas has a whole page built around this animal — narrated facts, the full scale comparison against a 5-year-old, and the true story behind that sand myth."
+  appCta: "Wild Atlas has a whole page built around this animal, in the Safari Stars pack — narrated facts, the full scale comparison against a 5-year-old, and the true story behind that sand myth."
   appLinkText: Meet the ostrich in Wild Atlas
   source:
     label: the San Diego Zoo Wildlife Alliance
     url: https://animals.sandiegozoo.org/animals/ostrich
-status: draft
 blogStatus: scheduled
 ---
 
@@ -74,7 +73,7 @@ An ostrich egg is the biggest egg of any bird alive — just one weighs about as
 
 {% figure "/assets/blog/world-ostrich-day-2027/cover.jpg", "An ostrich running across golden savanna grass, kicking up dust" %}
 
-Ostriches can't fly. Instead, they run — faster than almost any other animal on two legs. A running ostrich can go as fast as a car driving through town, and one single running step can be longer than your bed!
+Ostriches can't fly. Instead, they run — faster than any other animal on two legs. A running ostrich can go as fast as a car driving through town, and one single running step can be longer than your bed!
 
 Can you sprint as fast as you can across the room, like an ostrich?
 
@@ -86,14 +85,14 @@ A big ostrich is taller than a grown-up — about as tall as two and a half five
 
 {% figure "/assets/blog/world-ostrich-day-2027/weight.jpg", "Two scales, one holding an ostrich and the other holding seven cartoon five-year-olds" %}
 
-Can you picture 6 or 7 friends standing on one big scale together? That's about how much a big ostrich weighs.
+Can you picture 6 or 7 five-year-olds standing on one big scale together? That's about how much a big ostrich weighs.
 
 Here's a fact worth busting: ostriches don't really bury their heads in the sand. That's a myth! They lie down flat with their neck stretched along the ground to hide — from far away, it can just look like their head disappeared.
 
 {% figure "/assets/blog/world-ostrich-day-2027/baby.jpg", "A fluffy speckled ostrich chick sitting alone on dry grass" %}
 
-A baby ostrich, called a chick, starts out about as big as a chicken — then grows about a ruler's length taller every month. Mom sits on the eggs in the daytime, and Dad takes the night shift. Chicks from different families often join up into big ostrich playgroups, watched over by just a few grown-ups.
+A baby ostrich, called a chick, starts out about as big as a chicken — then grows about a ruler's length taller every month at first. Mom sits on the eggs in the daytime, and Dad takes the night shift. Chicks from different families often join up into big ostrich playgroups, watched over by just a few grown-ups.
 
-Can you balance and lift one foot like an ostrich standing tall?
+Ostriches walk on just their toes. Can you walk tall on your tiptoes like an ostrich?
 
 <!-- DEEP LINK TBD: animal id ostrich, pack safari_stars -->

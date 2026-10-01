@@ -15,14 +15,14 @@ animalDay:
   readAloudNote: "Read this one out loud together — it's short, and it's more fun with a cold, blustery voice."
   whereToSee:
     heading: Where to see a polar bear
-    intro: "In the wild, polar bears live only in the frozen Arctic — on the sea ice and coasts of Canada, Alaska, Greenland, Norway and Russia, where hardly anyone goes. For the rest of us, a number of zoos around the world care for polar bears, and today is a good day to go say hello to one."
+    intro: "In the wild, polar bears live only in the frozen Arctic — on the sea ice and coasts of Canada, Alaska, Greenland, Norway and Russia, far from where most of us live. For the rest of us, a number of zoos around the world care for polar bears, and today is a good day to go say hello to one."
     findLabel: Find a zoo near you
     groups:
       - label: North America
         places:
           - title: Kali, Suka and Haley
             place: Detroit Zoo, Arctic Ring of Life — Royal Oak, Michigan
-            blurb: Kali came to Detroit in 2026, after being rescued as a cub in Alaska years ago. Look for him diving into the pool with Suka and Haley.
+            blurb: Kali came to Detroit in 2026, after being rescued as a cub in Alaska years ago. Look for him, and for Suka and Haley, diving into the pool.
             url: https://detroitzoo.org/animal/polar-bear/
           - title: Aurora and Lee
             place: Columbus Zoo and Aquarium, Polar Frontier — Powell, Ohio
@@ -34,13 +34,13 @@ animalDay:
             url: https://www.torontozoo.com/animals/Polar%20bear
           - title: A safe home for rescued cubs
             place: Assiniboine Park Zoo, Journey to Churchill — Winnipeg, Manitoba, Canada
-            blurb: This zoo gives cubs who need extra help a safe home for life. Its underwater tunnels let you watch a polar bear swim right over your head.
+            blurb: This zoo gives rescued cubs who need extra help a safe place to grow up. Its underwater tunnels let you watch a polar bear swim right over your head.
             url: https://www.assiniboinepark.ca/conservation-research-sustainability/polar-bear-care
       - label: Around the world
         places:
           - title: Arktos and Walker
             place: Highland Wildlife Park — Kincraig, Scotland
-            blurb: Two old friends who love to chase, wrestle and swim together at Scotland's only polar bear home.
+            blurb: Two fast friends who love to chase, wrestle and swim together at Scotland's only polar bear home.
             url: https://www.highlandwildlifepark.org.uk/animals/animal-inhabitants/polar-bear
           - title: The Boys
             place: Yorkshire Wildlife Park, Project Polar — Doncaster, England
@@ -52,27 +52,26 @@ animalDay:
             url: https://www.tierpark-berlin.de/en/animals/polar-bear
     note: "Animals sometimes move — check the zoo's own website before you visit."
   grownups: |
-    Polar bears are listed as **Vulnerable** by the IUCN. Their total number — around 26,000 — is hard to pin down, but some groups are already shrinking as the sea ice they rely on for hunting forms later and melts sooner each year.
+    Polar bears are listed as **Vulnerable** by the IUCN. Their total number — around 26,000 — is hard to pin down, but some groups are already shrinking as the sea ice they rely on for hunting forms later and melts sooner than it used to.
 
-    There's a hopeful story here. In 1973, at the height of the Cold War, the five countries with polar bears — Canada, Denmark (for Greenland), Norway, the US and the Soviet Union — still sat down and agreed to stop hunting bears from airplanes and icebreakers and to protect their habitat. It worked: numbers in some hard-hit groups grew back. Today's biggest threat is different — melting sea ice — but helping again will take that same kind of teamwork, this time on climate.
+    There's a hopeful story here. In 1973, in the middle of the Cold War, the five countries with polar bears — Canada, Denmark (for Greenland), Norway, the US and the Soviet Union — still sat down and agreed to stop hunting bears from airplanes and icebreakers and to protect their habitat. It worked: numbers in some hard-hit groups grew back. Today's biggest threat is different — melting sea ice — but helping again will take that same kind of teamwork, this time on climate.
 
     This week, try being a **Den Detective**: build a cozy "snow den" out of blankets and pillows, crawl in together, keep it quiet and dark like a real polar bear mom, and count how many stuffed animals fit inside as "cubs." Then tell someone why moms and cubs need a safe, quiet den.
 
-    Starters: *"What do you think it's like to walk on ice and swim in freezing water your whole life?"* · *"A mother polar bear digs a den in the snow to keep her cubs safe — what would you build to keep your family cozy?"*
+    Starters: *"What do you think it's like to walk on ice and swim in freezing water your whole life?"* · *"A mother polar bear digs a den in the snow to keep her cubs safe — what would you build to keep your family cozy?"* · *"What's one small thing our family could do for icy, faraway places?"*
 
     If your kid asks *could a polar bear hurt me?* — this holds up: "Polar bears are wild and very strong, so grown-ups who live near them always keep their distance and know how to stay safe. Here at home, you're not anywhere near one."
   appCta: "Wild Atlas has a whole page built around this animal — narrated facts, the full scale comparison against a 5-year-old, and more — in the Planet Pioneers pack."
   appLinkText: Meet the polar bear in Wild Atlas
   source:
     label: Polar Bears International
-    url: https://polarbearsinternational.org/act-now/awareness-events/international-polar-bear-day-toolkit/
-status: draft
+    url: https://polarbearsinternational.org/news-media/events/international-polar-bear-day/international-polar-bear-day-toolkit/
 blogStatus: scheduled
 ---
 
 A polar bear's fur isn't really white. Each hair is see-through — and underneath all that fluff, its skin is black!
 
-{% figure "/assets/blog/international-polar-bear-day-2027/cover.jpg", "An adult polar bear stepping off the edge of an ice floe into turquoise Arctic water, its back legs visible underwater beside the sea ice" %}
+{% figure "/assets/blog/international-polar-bear-day-2027/cover.jpg", "An adult polar bear climbing out of turquoise Arctic water onto the sea ice, its back legs still underwater" %}
 
 Yes, really. Every single hair is clear, like a tiny icicle. It only looks white because it scatters light, the way snow does. Underneath, a polar bear's skin is black — and so are its nose and lips.
 
@@ -86,7 +85,7 @@ Even standing on all four feet, a grown-up polar bear's back — about 1.3 meter
 
 Can you picture 28 five-year-olds on one big scale? That's about how much one big dad polar bear weighs — 500 kilograms (1,102 pounds)!
 
-Polar bears are champion swimmers, too. Their name means "sea bear," and they paddle with their giant front paws for days at a time, swimming further than most animals ever would.
+Polar bears are champion swimmers, too. Their science name, *Ursus maritimus*, means "sea bear," and they paddle with their giant front paws. Some have swum for days without stopping!
 
 {% figure "/assets/blog/international-polar-bear-day-2027/baby.jpg", "A fluffy white polar bear cub sitting upright on snowy tundra with mountains in the background" %}
 

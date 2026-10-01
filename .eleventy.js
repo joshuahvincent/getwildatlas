@@ -136,6 +136,8 @@ module.exports = function (eleventyConfig) {
     }
     return months;
   });
+  // Flip to true when /zoos/ (getwildatlas#38) ships — shows "Find the nearest zoo" buttons.
+  eleventyConfig.addGlobalData("zooFinderLive", false);
   eleventyConfig.addGlobalData("todayIso", () => new Date().toISOString().slice(0, 10));
   eleventyConfig.addFilter("isoDay", (d) => new Date(d).toISOString().slice(0, 10));
   const { RenderPlugin } = require("@11ty/eleventy");
