@@ -6,6 +6,7 @@ author: Wild Atlas
 excerpt: "Count Safari is the fifth game in Wild Atlas — a counting game built around real animals and the science of how kids actually learn to count."
 permalink: /blog/count-safari/
 coverImage: /assets/blog/count-safari-difficulty.png
+thumbImage: /assets/blog/thumbs/count-safari.jpg
 tags: [product, games]
 ---
 
