@@ -21,7 +21,7 @@ module.exports = {
     animalDay: (d) => {
       if (!d.lite) return {};
       const l = d.lite, a = l.animal, name = runningName(a.name);
-      const status = IUCN[a.iucn];
+      const status = "iucnText" in a ? a.iucnText : IUCN[a.iucn];
       const official = l.days.filter((x) => x.official);
       return {
         dayName: official.length ? official[0].day : "Wild Atlas pick",
@@ -34,7 +34,7 @@ module.exports = {
         celebratedOn: l.days.map((x) => ({ day: x.official ? x.day : "Wild Atlas pick", date: fmtDate(x.date), origin: x.origin, sourceUrl: x.sourceUrl })),
         readAloudNote: "Read this one out loud together — these facts come straight from the Wild Atlas app.",
         grownups: status
-          ? `The ${name} is listed as **${status}** by the IUCN.${a.habitat ? ` Where it lives: ${a.habitat.charAt(0).toLowerCase() + a.habitat.slice(1)}.` : ""}`
+          ? `The ${name} is listed as **${status}** by the IUCN.${a.habitat ? ` Where it lives: ${a.habitat}.` : ""}`
           : (a.habitat ? `Where it lives: ${a.habitat}.` : ""),
         appCta: `The ${name} is in Wild Atlas's ${a.packName} pack, with narrated facts, its sounds, and more to explore.`,
         appLinkText: `Meet the ${name} in Wild Atlas`,

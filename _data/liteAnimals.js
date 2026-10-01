@@ -28,13 +28,26 @@ module.exports = () => {
   const app = JSON.parse(fs.readFileSync(path.join(__dirname, "appAnimals.json"), "utf8")).animals;
   const origins = JSON.parse(fs.readFileSync(path.join(__dirname, "dayOrigins.json"), "utf8"));
   const full = fullArticleAppIds(root, cal.days);
+  // Website-only corrections to app copy (and day origins), by exact find/replace.
+  const overrides = JSON.parse(fs.readFileSync(path.join(__dirname, "appCopyOverrides.json"), "utf8")).overrides || [];
+  const fix = (appId, s) => overrides.filter((o) => o.appId === appId).reduce((acc, o) => (typeof acc === "string" ? acc.split(o.find).join(o.replace) : acc), s);
+  for (const [id, a] of Object.entries(app)) {
+    for (const [k, v] of Object.entries(a.text || {})) {
+      a.text[k] = Array.isArray(v) ? v.map((x) => fix(id, x)).filter((x) => x && x.trim()) : fix(id, v);
+    }
+    if (a.habitat) a.habitat = fix(id, a.habitat);
+  }
+  const iucnText = JSON.parse(fs.readFileSync(path.join(__dirname, "appCopyOverrides.json"), "utf8")).iucnText || {};
+  for (const [id, a] of Object.entries(app)) {
+    if (id in iucnText) a.iucnText = iucnText[id]; // null = no status (e.g. domestic animals)
+  }
   const byAnimal = new Map();
   const add = (d, official) => {
     if (!d.appId || !app[d.appId] || full.has(d.appId)) return;
     if (!byAnimal.has(d.appId)) byAnimal.set(d.appId, []);
     const o = (d.slug && origins[d.slug]) || {};
     byAnimal.get(d.appId).push({ day: d.day, date: d.date, official,
-      origin: d.origin || o.text || "", sourceUrl: d.sourceUrl || o.sourceUrl || "" });
+      origin: fix(d.appId, d.origin || o.text || ""), sourceUrl: d.sourceUrl || o.sourceUrl || "" });
   };
   cal.days.forEach((d) => add(d, d.official !== false));
   (cal.alsoCelebrated || []).forEach((d) => add(d, true));
