@@ -1,0 +1,128 @@
+[
+ {
+  "id": "jaguar",
+  "common_name": "Jaguar",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "sloth",
+  "common_name": "Sloth",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "toucan",
+  "common_name": "Toucan",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "macaw",
+  "common_name": "Macaw",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "poison_dart_frog",
+  "common_name": "Poison Dart Frog",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "anaconda",
+  "common_name": "Anaconda",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "capybara",
+  "common_name": "Capybara",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "howler_monkey",
+  "common_name": "Howler Monkey",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "spider_monkey",
+  "common_name": "Spider Monkey",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "orangutan",
+  "common_name": "Orangutan",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "tapir",
+  "common_name": "Tapir",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "leafcutter_ant",
+  "common_name": "Leafcutter Ant",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "harpy_eagle",
+  "common_name": "Harpy Eagle",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "okapi",
+  "common_name": "Okapi",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "tree_frog",
+  "common_name": "Tree Frog",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "glass_frog",
+  "common_name": "Glass Frog",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "panther_chameleon",
+  "common_name": "Panther Chameleon",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "boa_constrictor",
+  "common_name": "Boa Constrictor",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ }
+]

@@ -1,0 +1,128 @@
+[
+ {
+  "id": "polar_bear",
+  "common_name": "Polar Bear",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "arctic_wolf",
+  "common_name": "Arctic Wolf",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "snow_leopard",
+  "common_name": "Snow Leopard",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "camel",
+  "common_name": "Camel",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "fennec_fox",
+  "common_name": "Fennec Fox",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "kangaroo",
+  "common_name": "Kangaroo",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "red_kangaroo",
+  "common_name": "Red Kangaroo",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "platypus",
+  "common_name": "Platypus",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "tasmanian_devil",
+  "common_name": "Tasmanian Devil",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "panda",
+  "common_name": "Panda",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "red_panda",
+  "common_name": "Red Panda",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "ibex",
+  "common_name": "Ibex",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "caribou",
+  "common_name": "Caribou",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "walrus",
+  "common_name": "Walrus",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "musk_ox",
+  "common_name": "Musk Ox",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "armadillo",
+  "common_name": "Armadillo",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "emu",
+  "common_name": "Emu",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "lemur",
+  "common_name": "Lemur",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ }
+]

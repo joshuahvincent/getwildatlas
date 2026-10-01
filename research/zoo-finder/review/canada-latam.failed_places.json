@@ -1,0 +1,66 @@
+[
+{
+"id": "atlantis-paradise-island",
+"why": "not crawled"
+},
+{
+"id": "aquarium-du-quebec",
+"why": "home 403, pages 0"
+},
+{
+"id": "greater-vancouver-zoo",
+"why": "home 403, pages 0"
+},
+{
+"id": "little-rays-nature-centre-ottawa",
+"why": "home 200, pages 1"
+},
+{
+"id": "montreal-biodome",
+"why": "home 403, pages 0"
+},
+{
+"id": "parc-omega",
+"why": "home 403, pages 0"
+},
+{
+"id": "reptilia-zoo-london",
+"why": "home 403, pages 0"
+},
+{
+"id": "reptilia-zoo-vaughan",
+"why": "home 403, pages 0"
+},
+{
+"id": "reptilia-zoo-whitby",
+"why": "home 403, pages 0"
+},
+{
+"id": "ripleys-aquarium-of-canada",
+"why": "home 200, pages 1"
+},
+{
+"id": "science-north",
+"why": "home 200, pages 1"
+},
+{
+"id": "vancouver-aquarium",
+"why": "home 403, pages 0"
+},
+{
+"id": "zoologico-de-cali",
+"why": "home 200, pages 1"
+},
+{
+"id": "zoo-de-guyane",
+"why": "home 200, pages 1"
+},
+{
+"id": "dolphin-discovery-cozumel",
+"why": "not crawled"
+},
+{
+"id": "dolphin-discovery-isla-mujeres",
+"why": "not crawled"
+}
+]

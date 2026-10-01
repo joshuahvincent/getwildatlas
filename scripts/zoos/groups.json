@@ -1,0 +1,329 @@
+{
+ "_note": "Hand-curated same-group tiers for the /zoos/ page (Josh 2026-10-01). Dr. Nadia signs off before launch. One group per animal; single-member groups are omitted on purpose.",
+ "wild_cats": {
+  "label": "wild cats",
+  "kind": "wild",
+  "members": [
+   "lion",
+   "cheetah",
+   "leopard",
+   "jaguar",
+   "cougar",
+   "snow_leopard",
+   "serval",
+   "ocelot",
+   "bobcat"
+  ]
+ },
+ "bears": {
+  "label": "bears",
+  "kind": "wild",
+  "members": [
+   "grizzly_bear",
+   "black_bear",
+   "polar_bear",
+   "panda"
+  ]
+ },
+ "wolves_foxes": {
+  "label": "wolves, foxes and wild dogs",
+  "kind": "wild",
+  "members": [
+   "red_fox",
+   "coyote",
+   "arctic_wolf",
+   "arctic_fox",
+   "african_wild_dog",
+   "fennec_fox"
+  ]
+ },
+ "primates": {
+  "label": "monkeys, apes and lemurs",
+  "kind": "wild",
+  "members": [
+   "baboon",
+   "gorilla",
+   "chimpanzee",
+   "howler_monkey",
+   "spider_monkey",
+   "orangutan",
+   "lemur"
+  ]
+ },
+ "hoofed": {
+  "label": "hoofed animals",
+  "kind": "wild",
+  "members": [
+   "giraffe",
+   "okapi",
+   "zebra",
+   "rhinoceros",
+   "tapir",
+   "hippopotamus",
+   "african_buffalo",
+   "warthog",
+   "bison",
+   "moose",
+   "elk",
+   "mountain_goat",
+   "ibex",
+   "caribou",
+   "musk_ox",
+   "camel"
+  ]
+ },
+ "australian": {
+  "label": "Australian animals",
+  "kind": "wild",
+  "members": [
+   "kangaroo",
+   "red_kangaroo",
+   "tasmanian_devil",
+   "platypus"
+  ]
+ },
+ "rodents": {
+  "label": "rodents",
+  "kind": "wild",
+  "members": [
+   "capybara",
+   "beaver",
+   "prairie_dog"
+  ]
+ },
+ "sloths_armadillos": {
+  "label": "sloths and armadillos",
+  "kind": "wild",
+  "members": [
+   "sloth",
+   "armadillo"
+  ]
+ },
+ "whales_dolphins": {
+  "label": "whales and dolphins",
+  "kind": "wild",
+  "members": [
+   "orca",
+   "dolphin",
+   "blue_whale",
+   "narwhal",
+   "beluga_whale"
+  ]
+ },
+ "seals": {
+  "label": "seals and sea lions",
+  "kind": "wild",
+  "members": [
+   "sea_lion",
+   "walrus"
+  ]
+ },
+ "sharks_rays": {
+  "label": "sharks and rays",
+  "kind": "wild",
+  "members": [
+   "great_white_shark",
+   "hammerhead_shark",
+   "whale_shark",
+   "manta_ray"
+  ]
+ },
+ "reef_fish": {
+  "label": "reef fish",
+  "kind": "wild",
+  "members": [
+   "clownfish",
+   "seahorse",
+   "moray_eel"
+  ]
+ },
+ "cephalopods": {
+  "label": "octopus and squid",
+  "kind": "wild",
+  "members": [
+   "octopus",
+   "giant_squid"
+  ]
+ },
+ "sea_invertebrates": {
+  "label": "jellyfish and sea stars",
+  "kind": "wild",
+  "members": [
+   "jellyfish",
+   "starfish"
+  ]
+ },
+ "turtles": {
+  "label": "turtles and tortoises",
+  "kind": "wild",
+  "members": [
+   "sea_turtle",
+   "box_turtle",
+   "alligator_snapping_turtle"
+  ]
+ },
+ "snakes": {
+  "label": "snakes",
+  "kind": "wild",
+  "members": [
+   "anaconda",
+   "boa_constrictor",
+   "king_cobra",
+   "burmese_python",
+   "green_anaconda",
+   "viper",
+   "rattlesnake",
+   "sea_snake"
+  ]
+ },
+ "lizards": {
+  "label": "lizards",
+  "kind": "wild",
+  "members": [
+   "komodo_dragon",
+   "iguana",
+   "bearded_dragon",
+   "gila_monster",
+   "monitor_lizard",
+   "gecko",
+   "skink",
+   "frilled_lizard",
+   "horned_lizard",
+   "panther_chameleon"
+  ]
+ },
+ "crocodilians": {
+  "label": "alligators and crocodiles",
+  "kind": "wild",
+  "members": [
+   "alligator",
+   "crocodile"
+  ]
+ },
+ "frogs": {
+  "label": "frogs",
+  "kind": "wild",
+  "members": [
+   "poison_dart_frog",
+   "tree_frog",
+   "glass_frog"
+  ]
+ },
+ "parrots": {
+  "label": "parrots",
+  "kind": "wild",
+  "members": [
+   "macaw",
+   "parrot",
+   "cockatoo"
+  ]
+ },
+ "toucans_woodpeckers": {
+  "label": "toucans and woodpeckers",
+  "kind": "wild",
+  "members": [
+   "toucan",
+   "woodpecker"
+  ]
+ },
+ "eagles_falcons": {
+  "label": "eagles and falcons",
+  "kind": "wild",
+  "members": [
+   "harpy_eagle",
+   "bald_eagle",
+   "peregrine_falcon"
+  ]
+ },
+ "owls": {
+  "label": "owls",
+  "kind": "wild",
+  "members": [
+   "great_horned_owl",
+   "snowy_owl",
+   "barn_owl"
+  ]
+ },
+ "songbirds": {
+  "label": "songbirds",
+  "kind": "wild",
+  "members": [
+   "blue_jay",
+   "cardinal",
+   "robin",
+   "canary"
+  ]
+ },
+ "waterbirds": {
+  "label": "flamingos and swans",
+  "kind": "wild",
+  "members": [
+   "flamingo",
+   "swan"
+  ]
+ },
+ "seabirds": {
+  "label": "penguins and seabirds",
+  "kind": "wild",
+  "members": [
+   "emperor_penguin",
+   "atlantic_puffin",
+   "albatross"
+  ]
+ },
+ "flightless_birds": {
+  "label": "ostriches and emus",
+  "kind": "wild",
+  "members": [
+   "ostrich",
+   "emu"
+  ]
+ },
+ "dinosaurs": {
+  "label": "dinosaurs and pterosaurs",
+  "kind": "dino",
+  "members": [
+   "tyrannosaurus_rex",
+   "triceratops",
+   "velociraptor",
+   "stegosaurus",
+   "brachiosaurus",
+   "spinosaurus",
+   "ankylosaurus",
+   "pteranodon",
+   "allosaurus",
+   "diplodocus",
+   "iguanodon",
+   "parasaurolophus",
+   "carnotaurus",
+   "pachycephalosaurus",
+   "therizinosaurus",
+   "utahraptor",
+   "microraptor",
+   "deinonychus"
+  ]
+ },
+ "farm_animals": {
+  "label": "farm animals",
+  "kind": "farm",
+  "members": [
+   "cow",
+   "horse",
+   "sheep",
+   "goat",
+   "pig",
+   "chicken",
+   "duck",
+   "turkey",
+   "donkey",
+   "llama",
+   "alpaca",
+   "goose",
+   "water_buffalo",
+   "yak",
+   "highland_cow",
+   "mule",
+   "ox"
+  ]
+ }
+}

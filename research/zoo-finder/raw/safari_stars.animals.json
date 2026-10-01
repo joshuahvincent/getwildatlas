@@ -1,0 +1,128 @@
+[
+ {
+  "id": "african_elephant",
+  "common_name": "African Elephant",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "lion",
+  "common_name": "Lion",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "cheetah",
+  "common_name": "Cheetah",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "leopard",
+  "common_name": "Leopard",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "giraffe",
+  "common_name": "Giraffe",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "zebra",
+  "common_name": "Zebra",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "hippopotamus",
+  "common_name": "Hippopotamus",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "rhinoceros",
+  "common_name": "Rhinoceros",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "african_buffalo",
+  "common_name": "African Buffalo",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "hyena",
+  "common_name": "Hyena",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "warthog",
+  "common_name": "Warthog",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "meerkat",
+  "common_name": "Meerkat",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "ostrich",
+  "common_name": "Ostrich",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "baboon",
+  "common_name": "Baboon",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "gorilla",
+  "common_name": "Gorilla",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "chimpanzee",
+  "common_name": "Chimpanzee",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "african_wild_dog",
+  "common_name": "African Wild Dog",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "serval",
+  "common_name": "Serval",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ }
+]

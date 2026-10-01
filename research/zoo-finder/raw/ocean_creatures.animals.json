@@ -1,0 +1,128 @@
+[
+ {
+  "id": "great_white_shark",
+  "common_name": "Great White Shark",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "hammerhead_shark",
+  "common_name": "Hammerhead Shark",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "whale_shark",
+  "common_name": "Whale Shark",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "orca",
+  "common_name": "Orca",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "blue_whale",
+  "common_name": "Blue Whale",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "dolphin",
+  "common_name": "Dolphin",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "sea_turtle",
+  "common_name": "Sea Turtle",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "octopus",
+  "common_name": "Octopus",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "giant_squid",
+  "common_name": "Giant Squid",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "jellyfish",
+  "common_name": "Jellyfish",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "starfish",
+  "common_name": "Starfish",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "seahorse",
+  "common_name": "Seahorse",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "manta_ray",
+  "common_name": "Manta Ray",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "clownfish",
+  "common_name": "Clownfish",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "moray_eel",
+  "common_name": "Moray Eel",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "narwhal",
+  "common_name": "Narwhal",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "beluga_whale",
+  "common_name": "Beluga Whale",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "sea_lion",
+  "common_name": "Sea Lion",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ }
+]

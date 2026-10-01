@@ -1,0 +1,128 @@
+[
+ {
+  "id": "bald_eagle",
+  "common_name": "Bald Eagle",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "peregrine_falcon",
+  "common_name": "Peregrine Falcon",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "great_horned_owl",
+  "common_name": "Great Horned Owl",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "snowy_owl",
+  "common_name": "Snowy Owl",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "flamingo",
+  "common_name": "Flamingo",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "peacock",
+  "common_name": "Peacock",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "emperor_penguin",
+  "common_name": "Emperor Penguin",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "atlantic_puffin",
+  "common_name": "Atlantic Puffin",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "hummingbird",
+  "common_name": "Hummingbird",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "blue_jay",
+  "common_name": "Blue Jay",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "cardinal",
+  "common_name": "Cardinal",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "woodpecker",
+  "common_name": "Woodpecker",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "swan",
+  "common_name": "Swan",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "parrot",
+  "common_name": "Parrot",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "cockatoo",
+  "common_name": "Cockatoo",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "canary",
+  "common_name": "Canary",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "robin",
+  "common_name": "Robin",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "albatross",
+  "common_name": "Albatross",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ }
+]

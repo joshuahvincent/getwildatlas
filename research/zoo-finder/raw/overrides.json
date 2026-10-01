@@ -1,0 +1,6 @@
+{"_note": "Human/PM overrides applied after load. Never delete rows; flag them.",
+ "holdings": [
+  {"place_id": "denver-zoo", "animal_id": "hippopotamus", "check_status": "needs_review",
+   "reason": "Species page still live, but 2026-09-29 hippo research (kdvr.com, cpr.org) says Mahali, Denver's last hippo, moved to a Texas preserve in spring 2026 and the zoo has no plans to return hippos. Stale-page risk; confirm with zoo.",
+   "flagged": "2026-09-30", "by": "Prithy"}
+ ]}

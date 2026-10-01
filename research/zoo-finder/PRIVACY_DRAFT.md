@@ -1,0 +1,7 @@
+# Privacy policy: draft sentence for the /zoos/ page (getwildatlas#38). NOT applied; needs Josh's approval.
+
+The privacy policy body lives in `js/legal-translations.js` (6 locales, shared with the app's About screen), so the edit must go through the `wild-atlas-i18n` skill and a Cole voice pass, and counsel-level wording stays Josh's call. Proposed English text, to sit under the website section:
+
+> **Finding a zoo near you.** If you use the "Find a zoo" page on wildatlasapp.com, you can tell us roughly where you are by tapping "Use my location" or typing a city or postcode. That location is used only inside your browser to sort the list of places. It is not sent to us, saved, or added to the web address. We do not use it for advertising or analytics. The page and its map are served from our own website, and photos on the page are stored on our site, so loading them does not contact other services.
+
+Facts this sentence relies on (verified 2026-10-01 in the local build): geolocation runs only on a tap; coordinates and typed text stay in memory; the only requests are to our own domain; the site-wide Google Analytics tag still loads on the page (it records the page address, which contains only `?animal=<id>`), so the sentence says we do not add location to analytics rather than that no analytics runs. GA disclosure itself is still the deferred item from the 2026-08-11 note in CLAUDE.md.

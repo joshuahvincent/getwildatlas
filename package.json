@@ -4,7 +4,7 @@
   "private": true,
   "description": "Static site source for wildatlasapp.com. Built with Eleventy.",
   "scripts": {
-    "build": "eleventy",
+    "build": "node scripts/zoos/check-links.js && eleventy",
     "dev": "eleventy --serve --port=8081",
     "clean": "rm -rf _site"
   },

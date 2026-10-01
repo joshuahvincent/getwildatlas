@@ -1,0 +1,128 @@
+[
+ {
+  "id": "tyrannosaurus_rex",
+  "common_name": "Tyrannosaurus rex",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "triceratops",
+  "common_name": "Triceratops",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "velociraptor",
+  "common_name": "Velociraptor",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "stegosaurus",
+  "common_name": "Stegosaurus",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "brachiosaurus",
+  "common_name": "Brachiosaurus",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "spinosaurus",
+  "common_name": "Spinosaurus",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "ankylosaurus",
+  "common_name": "Ankylosaurus",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "pteranodon",
+  "common_name": "Pteranodon",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "allosaurus",
+  "common_name": "Allosaurus",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "diplodocus",
+  "common_name": "Diplodocus",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "iguanodon",
+  "common_name": "Iguanodon",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "parasaurolophus",
+  "common_name": "Parasaurolophus",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "carnotaurus",
+  "common_name": "Carnotaurus",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "pachycephalosaurus",
+  "common_name": "Pachycephalosaurus",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "therizinosaurus",
+  "common_name": "Therizinosaurus",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "utahraptor",
+  "common_name": "Utahraptor",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "microraptor",
+  "common_name": "Microraptor",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "deinonychus",
+  "common_name": "Deinonychus",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ }
+]

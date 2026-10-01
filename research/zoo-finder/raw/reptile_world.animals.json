@@ -1,0 +1,128 @@
+[
+ {
+  "id": "king_cobra",
+  "common_name": "King Cobra",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "burmese_python",
+  "common_name": "Burmese Python",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "green_anaconda",
+  "common_name": "Green Anaconda",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "komodo_dragon",
+  "common_name": "Komodo Dragon",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "iguana",
+  "common_name": "Iguana",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "bearded_dragon",
+  "common_name": "Bearded Dragon",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "gila_monster",
+  "common_name": "Gila Monster",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "alligator",
+  "common_name": "Alligator",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "crocodile",
+  "common_name": "Crocodile",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "box_turtle",
+  "common_name": "Box Turtle",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "monitor_lizard",
+  "common_name": "Monitor Lizard",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "gecko",
+  "common_name": "Gecko",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "skink",
+  "common_name": "Skink",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "viper",
+  "common_name": "Viper",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "rattlesnake",
+  "common_name": "Rattlesnake",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "sea_snake",
+  "common_name": "Sea Snake",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "frilled_lizard",
+  "common_name": "Frilled Lizard",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "horned_lizard",
+  "common_name": "Horned Lizard",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ }
+]
