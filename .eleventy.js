@@ -84,22 +84,37 @@ module.exports = function (eleventyConfig) {
   const monthDay = (d) => { const x = new Date(d); return `${MONTHS[x.getUTCMonth()]} ${x.getUTCDate()}`; };
   const whenText = (day) =>
     day.when || (day.rule ? `${ORD[day.rule[0]]} ${WD[day.rule[1]]} in ${MONTHS[day.rule[2] - 1]}` : monthDay(day.date + "T00:00:00Z"));
-  // "October 8" / "Third Friday in May" for a calendar page: its own day entry
-  // (by slug), else the day entry for its animal on that date, else the date.
+  // Live dates: the site rebuilds daily (deploy.yml cron), so "next occurrence
+  // from today" is always the current year's date — once a day passes, its page
+  // rolls to next year's date overnight. No year is printed; the weekday makes
+  // it concrete ("Friday, May 21").
+  const today = () => { const n = new Date(); return new Date(Date.UTC(n.getUTCFullYear(), n.getUTCMonth(), n.getUTCDate())); };
+  const fullDay = (d) => d.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", timeZone: "UTC" });
+  // {date, note, isToday} for a day entry: next real date, plus how it recurs
+  // for floating days ("Every third Friday in May") or multi-day spans.
+  const liveDay = (day) => {
+    if (day.when && !day.rule) return { date: day.when, note: null, isToday: false }; // fixed spans: "All of October"
+    const next = nextOccurrence(day, today());
+    const isToday = next.getTime() === today().getTime();
+    if (day.when) return { date: `Starts ${fullDay(next)}`, note: day.when, isToday };   // floating weeks
+    if (day.rule) return { date: fullDay(next), note: `Always the ${ORD[day.rule[0]].toLowerCase()} ${WD[day.rule[1]]} in ${MONTHS[day.rule[2] - 1]}`, isToday };
+    return { date: fullDay(next), note: null, isToday };
+  };
+  // Calendar page header: its own day entry (by slug), else the day entry for
+  // its animal on that date, else the page date's next occurrence.
   eleventyConfig.addFilter("perennialDate", (date, fileSlug, appId) => {
     const all = [...animalDaysData.days, ...animalDaysData.alsoCelebrated];
     const iso = new Date(date).toISOString().slice(0, 10);
     const hit = all.find((d) => fileSlug && (d.slug === fileSlug || d.pageSlug === fileSlug))
       || all.find((d) => appId && d.appId === appId && d.date === iso);
-    return hit ? whenText(hit) : monthDay(date);
+    return liveDay(hit || { date: iso });
   });
-  // Same, for a "Celebrated on" line ({day, date}).
-  // celebratedOn dates are already year-free text ("March 20"); floating days
-  // swap in their rule ("Third Saturday in March"), matched by day name.
+  // "Celebrated on" line ({day, date}): matched by day name to its entry.
   eleventyConfig.addFilter("perennialDay", (x) => {
-    const hit = [...animalDaysData.days, ...animalDaysData.alsoCelebrated].find((d) => d.day === x.day && (d.rule || d.when));
-    if (hit) return whenText(hit);
-    return x.date instanceof Date ? monthDay(x.date) : x.date;
+    const hit = [...animalDaysData.days, ...animalDaysData.alsoCelebrated].find((d) => d.day === x.day);
+    if (!hit) return x.date instanceof Date ? monthDay(x.date) : x.date;
+    const l = liveDay(hit);
+    return hit.rule && !hit.when ? `${l.date} (${l.note.replace(/^Always /, "always ")})` : l.date;
   });
   eleventyConfig.addFilter("dayNum", (d) => new Date(d).getUTCDate());
   eleventyConfig.addFilter("weekday", (d) => new Date(d).toLocaleDateString("en-US", { weekday: "short", timeZone: "UTC" }));

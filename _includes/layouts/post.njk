@@ -6,10 +6,12 @@ layout: layouts/blog-base.njk
     <p class="blog-post-meta">
       <a href="{{ backLink.url if backLink else '/blog/' }}">← {{ backLink.label if backLink else 'All posts' }}</a>
     </p>
-    {#- Calendar pages are perennial: a big month + day (or "Third Friday in May"), never a year. -#}
+    {#- Calendar pages show the next real date ("Friday, May 21"), rebuilt daily so it rolls over each year; never a year. -#}
     {%- set isCalendarPage = page.url and page.url.startsWith("/calendar/") %}
     {%- if isCalendarPage %}
-    <p class="day-date" style="display: inline-block; margin: 0.6rem 0 0; padding: 0.3rem 0.95rem; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: clamp(1.35rem, 3.6vw, 1.7rem); line-height: 1.2; color: #5D4037; background: #FFF4CC; border: 2px solid #5D4037; border-radius: 999px;">{{ page.date | perennialDate(page.fileSlug, appId) }}</p>
+    {%- set dd = page.date | perennialDate(page.fileSlug, appId) %}
+    <p class="day-date" style="display: inline-block; margin: 0.6rem 0 0; padding: 0.3rem 0.95rem; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: clamp(1.35rem, 3.6vw, 1.7rem); line-height: 1.2; color: #5D4037; background: #FFF4CC; border: 2px solid #5D4037; border-radius: 999px;">{% if dd.isToday %}Today! · {% endif %}{{ dd.date }}</p>
+    {%- if dd.note %}<p class="day-date-note" style="margin: 0.3rem 0 0; font-weight: 700; font-size: 0.92rem; color: rgba(93, 64, 55, 0.8);">{{ dd.note }}</p>{% endif %}
     {%- endif %}
     <h1>{{ title }}</h1>
     <p class="blog-post-byline" style="color: var(--muted); margin-top: 0.25rem;">
