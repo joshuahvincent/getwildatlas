@@ -69,11 +69,7 @@ Here's a surprise: black rhinos aren't black at all. They're grey — and often 
 
 Can you make your own lips pointy, like you're reaching for a leaf?
 
-{% figure "/assets/blog/endangered-species-day/scale.jpg", "An illustrated side view of a black rhino standing beside a small cartoon child explorer, with a tall arrow labeled about 1.6 meters, or 5 feet 3 inches, showing how much taller the rhino's shoulder is than the child" %}
-
 Stand up as tall as you can. A grown-up black rhino's shoulder is still way up above your head — about 1.6 meters, or 5 feet 3 inches high.
-
-{% figure "/assets/blog/endangered-species-day/weight.jpg", "Two illustrated scales side by side, one holding a black rhino and the other holding fifty-four cartoon five-year-old children" %}
 
 Now picture 54 five-year-olds all climbing onto one giant scale together. That's about how much one black rhino weighs — around 1,000 kilograms, or 2,205 pounds!
 

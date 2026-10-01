@@ -59,8 +59,6 @@ Meet the Arctic tern: a small, silvery-white seabird with a black cap and a brig
 
 Can you flap your arms like tern wings and fly from one end of the Earth to the other?
 
-{% figure "/assets/blog/arctic-tern-facts-for-kids/scale.jpg", "An illustrated Arctic tern with wings spread wide next to a 5-year-old child for scale, labeled 80 centimeters or 2 feet 7 inches wingspan" %}
-
 Stretch its wings out wide, and they're about three-quarters as wide as a 5-year-old is tall. But the bird itself is tiny — it would take about 170 Arctic terns on a scale to weigh as much as one 5-year-old!
 
 {% figure "/assets/blog/arctic-tern-facts-for-kids/weight.jpg", "A scale showing 170 small black Arctic tern shapes balancing the weight of one 5-year-old child" %}

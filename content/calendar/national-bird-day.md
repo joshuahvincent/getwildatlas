@@ -76,8 +76,6 @@ It's cobalt blue all over, with a bright yellow ring around each eye and a littl
 
 That beak is no joke. It's strong enough to crack palm nuts so tough that people would need a hammer to open them. Sometimes the macaw gets help without knowing it — cows eat the soft fruit around a palm nut first, and leave the hard nut behind for a macaw to crack.
 
-{% figure "/assets/blog/national-bird-day/scale.jpg", "An illustrated hyacinth macaw beside the Wild Atlas explorer kid, with a bar showing 1 meter (3 ft 3 in) from beak to tail" %}
-
 Stood right next to you, that's how long a hyacinth macaw really is — about a meter, or a little over three feet, from beak to tail. Can you guess what else that beak could crack open — a walnut? A coconut? Your cereal box?
 
 All that length doesn't add up to much weight, though. It would take about a dozen hyacinth macaws to weigh as much as one 5-year-old. In the Pantanal, most hyacinth macaws nest in holes in one special kind of tree, called the manduvi. A brand-new chick weighs about as much as a slice of bread. It hatches from one of about two eggs that its mom keeps warm for about a month, while dad brings her food.

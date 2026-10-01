@@ -79,8 +79,6 @@ Look closely at the stick in its paws — see the orange? A beaver's front teeth
 
 A beaver's home is called a lodge, and the front door is underwater, so it stays hidden and safe. Beavers even have their own built-in swimming goggles: clear eyelids that close over their eyes so they can see underwater.
 
-{% figure "/assets/blog/international-beaver-day/scale.jpg", "A Eurasian beaver next to a 5-year-old for scale" %}
-
 Its body alone is almost as long as you are tall — and add its big, flat tail, and it's even longer!
 
 {% figure "/assets/blog/international-beaver-day/weight.jpg", "A scale showing a Eurasian beaver's weight compared to a 5-year-old" %}
