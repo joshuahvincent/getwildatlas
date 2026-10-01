@@ -11,7 +11,7 @@ animalDay:
   animalName: manatee
   animalArticle: a
   campaign: manatee_appreciation_day_2027
-  greeting: "**Happy Manatee Appreciation Day!** Every year, on the last Wednesday of March, people celebrate the manatee — a slow, gentle giant that spends its whole life in warm water. The day comes from the Save the Manatee Club."
+  greeting: "**Happy Manatee Appreciation Day!** Every year, on the last Wednesday of March, people celebrate the manatee — a slow, gentle giant that spends its whole life in warm water. Save the Manatee Club, which has been helping manatees since 1981, invites everyone to join in."
   readAloudNote: "Read this one out loud together — it's short, and it's more fun with a slow, sleepy manatee voice."
   whereToSee:
     heading: Where to see a manatee
@@ -22,7 +22,7 @@ animalDay:
         places:
           - title: Stubby
             place: Columbus Zoo and Aquarium — Powell, Ohio
-            blurb: Stubby was hurt and can't go back to the wild, so the zoo is her home. Young rescued manatees grow up alongside her before heading back to Florida.
+            blurb: Stubby was hurt and probably can't go back to the wild, so the zoo is her home. Young rescued manatees grow up alongside her before heading back to Florida.
             url: https://www.columbuszoo.org/animals/florida-manatee
           - title: Manatee Springs
             place: Cincinnati Zoo & Botanical Garden — Cincinnati, Ohio
@@ -31,10 +31,10 @@ animalDay:
           - title: Manatee Critical Care Center
             place: ZooTampa — Tampa, Florida
             blurb: This zoo runs a real manatee hospital! It has helped more than 630 manatees, and most went back to the wild. Watch patients on the live underwater camera.
-            url: https://zootampa.org/florida-waters/
+            url: https://zootampa.org/conservation/florida-conservation/manatees/
           - title: Blue Spring State Park
             place: Orange City, Florida
-            blurb: In winter, hundreds of wild manatees swim into this warm spring to stay cosy. Manatee season runs November through March, so you can watch them from a long boardwalk.
+            blurb: In winter, hundreds of wild manatees swim into this warm spring to stay cosy, and you can watch them from a long boardwalk. Manatee season runs from about mid-November to late March, so plan a winter visit.
             url: https://www.floridastateparks.org/parks-and-trails/blue-spring-state-park
             linkText: Visit Blue Spring State Park
       - label: Around the world
@@ -45,7 +45,7 @@ animalDay:
             url: https://www.zoobeauval.com/en/zooparc/animals/west-indian-manatee
           - title: The Oceanium
             place: Odense ZOO — Odense, Denmark
-            blurb: In the Oceanium, you can watch manatees roll, turn somersaults, and even swim backwards!
+            blurb: In the Oceanium, you can watch manatees roll, turn somersaults, and even swim on their backs!
             url: https://www.odensezoo.dk/en/visit-zoo/animals/manatee/
           - title: Amazon-Guyana Biozone
             place: Parc Zoologique de Paris — Paris, France
@@ -55,19 +55,18 @@ animalDay:
   grownups: |
     Manatees are listed as Vulnerable — there aren't as many as there used to be. The Antillean manatees found through the Caribbean, Central America and South America have it hardest.
 
-    There's a hopeful story, though. In 1991, surveys counted only 1,267 manatees in Florida. Today there are at least 8,350. Slow-speed boating zones, warm-water refuges, and rescue programs have all helped — enough that in 2017 the US moved manatees from Endangered to Threatened. At ZooTampa, a real manatee hospital has rescued more than 630 manatees over 30+ years and returned most of them to the wild.
+    There's a hopeful story, though. In 1991, surveys counted only 1,267 manatees in Florida. Today there are at least 8,350 — some of that rise is from better counting, but a lot of it is real. Slow-speed boating zones, warm-water refuges, and rescue programs have all helped — enough that in 2017 the US moved manatees from Endangered to Threatened. The work isn't finished: seagrass loss has made some recent winters hard for Florida's manatees, which is one more reason people keep helping. At ZooTampa, a real manatee hospital has rescued more than 630 manatees over 30+ years and returned most of them to the wild.
 
-    Manatees move slowly, and boats move fast, so people who love manatees ask boaters to slow down and watch for them in "Manatee Zone" areas — that's the single biggest thing that protects them. This week, if you're near a river, lake, or the sea with a grown-up, help pick up litter and old fishing line — manatees can get tangled in it. And if you ever spot a "Manatee Zone — Slow Speed" sign, you can tell everyone what it means!
+    Manatees move slowly, and boats move fast, so people who love manatees ask boaters to slow down and watch for them in "Manatee Zone" areas — boats are one of the biggest dangers manatees face, so slow zones really matter. This week, if you're near a river, lake, or the sea with a grown-up, help pick up litter — and a grown-up can handle any old fishing line or hooks, since manatees can get tangled in it. And if you ever spot a "Manatee Zone — Slow Speed" sign, you can tell everyone what it means!
 
     Starters: "Did you know a manatee's closest cousin isn't a seal — it's an elephant?" "How do you think boats and manatees can share the same water safely?"
 
     If your kid asks *do manatees get hurt?* — this holds up: "Some do, mostly from boats going too fast, so people who study manatees ask boaters to slow down and watch for them — and there are special hospitals just for manatees that help them heal."
-  appCta: "Wild Atlas has a whole page built around this animal — narrated facts, the full scale comparison against a 5-year-old, and the sound a manatee actually makes."
+  appCta: "Wild Atlas has a whole page built around this animal — in the Legends of the Wild pack — narrated facts, the full scale comparison against a 5-year-old, and the weight scale showing 30 kids."
   appLinkText: Meet the manatee in Wild Atlas
   source:
     label: the U.S. Fish & Wildlife Service
     url: https://www.fws.gov/species/west-indian-manatee-trichechus-manatus
-status: draft
 blogStatus: scheduled
 ---
 
@@ -75,13 +74,15 @@ A brand-new baby manatee is already longer than a five-year-old is tall — and 
 
 {% figure "/assets/blog/manatee-appreciation-day-2027/cover.jpg", "A West Indian manatee gliding low over a sandy seagrass bed" %}
 
-A newborn calf is about 120 centimeters (4 feet) long and weighs around 30 kilograms (66 pounds). That's bigger than you, on the very first day of its life.
+A newborn calf is about 120 centimeters (4 feet) long and weighs around 30 kilograms (66 pounds). That's bigger than a five-year-old, on the very first day of its life.
 
-Manatees look like gentle giants of the sea, round and wrinkly and slow. But their closest cousin on land isn't a seal or a dolphin — it's the elephant!
+Manatees look like gentle giants of the sea, round and wrinkly and slow. But their closest cousin isn't a seal or a dolphin — it's the elephant, which lives on land!
 
 {% figure "/assets/blog/manatee-appreciation-day-2027/scale.jpg", "A manatee compared in length to the Wild Atlas explorer kid" %}
 
-A grown-up manatee is almost as long as three five-year-olds lying head to toe in a row, and it weighs about as much as 30 five-year-olds — all standing together on one big scale.
+A grown-up manatee is almost as long as three five-year-olds lying head to toe in a row.
+
+And it weighs about as much as 30 five-year-olds — all standing together on one big scale.
 
 {% figure "/assets/blog/manatee-appreciation-day-2027/weight.jpg", "A scale showing a manatee's weight compared to 30 five-year-olds" %}
 
@@ -95,6 +96,6 @@ A baby manatee stays close to its mom for a year or two, learning where the warm
 
 {% figure "/assets/blog/manatee-appreciation-day-2027/baby.jpg", "A young manatee calf resting at the surface of a shallow river" %}
 
-Can you hold your breath and float still like a resting manatee? Can you wiggle your fingers like a manatee's little flippers?
+Can you take a big breath and float your arms still, like a resting manatee? Can you wiggle your fingers like a manatee's little flippers?
 
 When the sea turns chilly in winter, manatees swim to warm springs to cosy up together — kind of like curling up under a warm blanket.

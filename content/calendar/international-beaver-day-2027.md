@@ -39,12 +39,12 @@ animalDay:
         places:
           - title: Scotland's first wild beavers
             place: Knapdale Forest, Argyll — Scotland
-            blurb: Scotland's first official wild beavers were set free here in 2009. Walk the forest trail and look for their dams and lodges.
+            blurb: Scotland's first official wild beavers were set free here in 2009. Walk the forest trails and look for signs of beavers, like chewed stumps, dams, and lodges.
             url: https://forestryandland.gov.scot/blog/meet-the-beavers-of-knapdale
             linkText: Learn about Knapdale's beavers
           - title: Beavers that came back on their own
             place: River Otter, East Devon — England
-            blurb: Wild beavers showed up along this river on their own, and they've built dam after dam ever since.
+            blurb: Wild beavers showed up along this river on their own, and they've built dam after dam ever since. It's a river to read about rather than a spot to visit.
             url: https://www.gov.uk/government/news/five-year-beaver-reintroduction-trial-successfully-completed
             linkText: Read the River Otter story
     cousin:
@@ -56,19 +56,18 @@ animalDay:
   grownups: |
     Eurasian beavers are listed as Least Concern by the IUCN, and their numbers are increasing — a real conservation win. But it wasn't always this way: about a hundred years ago, people hunted beavers so much that very few were left, as few as 1,200 across all of Europe and Asia. Beavers disappeared from Britain entirely, for about 400 years.
 
-    Then people changed the rules. Wild beavers turned up again on Devon's River Otter around 2008, and in 2020 the government said they'd proven so good for the river that they could stay for good. By 2025, England was working out how to let beavers return to rivers across the whole country, and in Scotland, beavers have even been set free in new places like Glen Affric. Across Europe and Asia, beaver numbers have grown from about 1,200 to around 1.5 million.
+    Then people changed the rules. Wild beavers turned up again on Devon's River Otter around 2008, and in 2020 the government said they'd proven so good for the river that they could stay for good. In 2025, England set out a plan to license wild beaver releases in more rivers, and in Scotland, beavers have even been set free in new places like Glen Affric. Across Europe and Asia, beaver numbers have grown from about 1,200 to around 1.5 million.
 
-    Go on a beaver-sign hunt this week: on a walk by a stream or pond, look for tree stumps chewed to a pencil point, or piles of sticks. Look, maybe draw what you find, and leave everything just as it is.
+    Go on a beaver-sign hunt this week: on a walk by a stream or pond (stay on the path, away from the water's edge), look for tree stumps chewed to a pencil point, or piles of sticks. Look, maybe draw what you find, and leave everything just as it is.
 
     Starters: "If you could build a house out of just sticks and mud, what would you build first?" "Why do you think a beaver's pond is a good home for lots of other animals too?"
 
     If your kid asks *would a beaver hurt me?* — this holds up: "No — a beaver would much rather swim away and hide than come near a person. If you ever saw one, the best thing to do is stay still and quiet and just watch."
-  appCta: "Wild Atlas has a whole page built around this animal, part of the Wild Americas pack — narrated facts, the full scale comparison against a 5-year-old, and the sound a beaver actually makes."
+  appCta: "Wild Atlas has a whole page about beavers, part of the Wild Americas pack — narrated facts and the full scale comparison against a 5-year-old."
   appLinkText: Meet the beaver in Wild Atlas
   source:
     label: the IUCN Red List
     url: https://www.iucnredlist.org/species/4007/197499749
-status: draft
 blogStatus: scheduled
 ---
 
@@ -86,7 +85,7 @@ Its body alone is almost as long as you are tall — and add its big, flat tail,
 
 {% figure "/assets/blog/international-beaver-day-2027/weight.jpg", "A scale showing a Eurasian beaver's weight compared to a 5-year-old" %}
 
-A grown-up beaver weighs about as much as one 5-year-old — a really big one weighs even more, almost too heavy to budge!
+A grown-up beaver weighs about as much as one 5-year-old — a really big one weighs about as much as one and a half 5-year-olds!
 
 SMACK! A beaver slaps its big flat tail on the water to warn its family. Can you slap your hand on the water like that — SPLASH?
 

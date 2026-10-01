@@ -30,7 +30,7 @@ animalDay:
             url: https://sandiegozoowildlifealliance.org/panda
           - title: Ping Ping and Fu Shuang
             place: Zoo Atlanta — Atlanta, Georgia
-            blurb: The newest pandas in the United States just arrived from China — check the zoo's site to see when they're out on view.
+            blurb: Ping Ping and Fu Shuang came from China in fall 2026 — the newest giant pandas in the United States. Check the zoo's site to make sure they're out on view before you go.
             url: https://zooatlanta.org/animal/giant-panda/
             linkText: Visit Zoo Atlanta
       - label: Around the world
@@ -41,7 +41,7 @@ animalDay:
             url: https://www.adelaidezoo.com.au/animals/giant-panda/
           - title: Leni and Lotti
             place: Zoo Berlin — Berlin, Germany
-            blurb: Germany's only giant pandas are twins, born at the zoo in 2024.
+            blurb: Leni and Lotti are twins, born at the zoo in 2024 — together with their mom and dad, they're the only giant pandas in Germany.
             url: https://www.zoo-berlin.de/en/animals/giant-panda
           - title: Lan Yun and He Feng
             place: Tiergarten Schönbrunn — Vienna, Austria
@@ -50,9 +50,9 @@ animalDay:
             linkText: Visit Tiergarten Schönbrunn
     note: Animals sometimes move — check the zoo's own website before you visit.
   grownups: |
-    Giant pandas are listed as Vulnerable (IUCN) — but here's the hopeful part: in 2016, the IUCN moved pandas from Endangered to Vulnerable, and China's own government followed in 2021. A national survey counted 1,864 wild pandas, a 17% rise over the decade before, thanks to protected bamboo forests. In 2021, China opened the Giant Panda National Park, joining dozens of reserves into one connected space more than three times the size of Yellowstone, so separated panda groups can find each other again.
+    Giant pandas are listed as Vulnerable (IUCN) — but here's the hopeful part: in 2016, the IUCN moved pandas from Endangered to Vulnerable, and China's own government followed in 2021. China's last national survey (2011–2014) counted 1,864 wild pandas, a 17% rise over the decade before, thanks to protected bamboo forests. In 2021, China opened the Giant Panda National Park, joining dozens of reserves into one connected space more than twice the size of Yellowstone, so separated panda groups can find each other again.
 
-    This week, try a Bamboo Count: grab a timer and see how many celery or carrot sticks you can crunch in one minute, like a panda. Then draw a map of a panda forest with a green path connecting two patches — that's what the new national park does for real pandas.
+    This week, try a Bamboo Count: sit down together and slowly crunch some celery or cucumber sticks for one minute, like a panda — a grown-up should watch, and little ones can use soft pieces. Then draw a map of a panda forest with a green path connecting two patches — that's what the new national park does for real pandas.
 
     Starters: "If you had to eat the same food almost all day, what would you pick?" "What do you think it would feel like to have a wrist that works like a thumb?"
 
@@ -62,7 +62,6 @@ animalDay:
   source:
     label: Smithsonian's National Zoo
     url: https://nationalzoo.si.edu/animals/giant-panda
-status: draft
 blogStatus: scheduled
 ---
 
@@ -70,24 +69,24 @@ When a giant panda is born, it's pink, almost bare, and about the size of a stic
 
 {% figure "/assets/blog/national-panda-day-2027/cover.jpg", "A giant panda walking through a bamboo forest" %}
 
-A giant panda is a real bear — but unlike most bears, it almost only eats bamboo. More than 99 out of 100 bites a panda takes are bamboo! Bamboo isn't very filling, so a panda eats for up to 16 hours a day — that's most of the time you're awake.
+A giant panda is a real bear — but unlike most bears, it almost only eats bamboo. More than 99 out of 100 bites a panda takes are bamboo! Bamboo isn't very filling, so a panda eats for up to 16 hours a day — that's most of the whole day!
 
-How does a panda hold onto slippery bamboo stalks? It has a special wrist bone that works just like an extra thumb, so it can grip a stalk the way you hold a carrot stick.
+How does a panda hold onto slippery bamboo stalks? It has a special wrist bone that works like an extra thumb, so it can grip a stalk the way you hold a carrot stick.
 
 Can you pretend to munch bamboo for one whole minute, like a panda does for most of its day?
 
-{% figure "/assets/blog/national-panda-day-2027/scale.jpg", "A giant panda standing beside the Wild Atlas child explorer for scale" %}
+{% figure "/assets/blog/national-panda-day-2027/scale.jpg", "Illustrated scale diagram: a giant panda on all fours beside the Wild Atlas child explorer, with an arrow showing 80 centimetres (2 feet 8 inches) from the ground to the panda's shoulder and 1.5 metres (5 feet) nose to tail", "Follow the up-and-down arrow: that's how tall a panda is at the shoulder — about up to your chest." %}
 
 Standing on all fours, a grown-up panda's back comes up to about your chest — and nose to tail, it's longer than you are tall.
 
 {% figure "/assets/blog/national-panda-day-2027/weight.jpg", "A scale comparing a giant panda's weight to seven 5-year-old children" %}
 
-Can you picture seven friends all standing on one big scale together? That's about how much one grown-up panda weighs.
+Can you picture seven five-year-olds all standing on one big scale together? That's about how much one grown-up panda weighs.
 
 Because bamboo is hard to digest, a panda can poop up to 40 times a day! And even though pandas are real bears, they don't hibernate — they keep munching bamboo, even in the snow. Sometimes a panda mom has twins!
 
 Pandas bleat a bit like a sheep, and sometimes honk. Can you try out your best panda honk?
 
-{% figure "/assets/blog/national-panda-day-2027/baby.jpg", "A fluffy young panda cub lying in bamboo leaves" %}
+{% figure "/assets/blog/national-panda-day-2027/baby.jpg", "A fluffy young panda cub with wide dark eyes, crouching on bamboo leaves" %}
 
 By the time a cub looks like this — fluffy, round, and full of fur — it's already grown a lot from the stick-of-butter size it was on the day it was born. It'll stay close to its mom for about a year and a half, learning to climb and find bamboo of its own.

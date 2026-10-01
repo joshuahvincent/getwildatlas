@@ -14,7 +14,7 @@ animalDay:
   readAloudNote: "Read this one out loud together — it's short, and it's even better with a long, low singing voice."
   whereToSee:
     heading: Where to see a humpback whale
-    intro: "In the wild, humpback whales gather in places like Hawai'i's warm bays and Alaska's icy fjords to feed, breed, and raise their calves. For the rest of us, no zoo or aquarium anywhere keeps a humpback whale — they're much too big, and they swim across whole oceans. The only way to see a real one is from a boat or a beach, in places where whales visit every year."
+    intro: "In the wild, humpback whales gather in places like Hawai'i's warm bays and Alaska's icy fjords to feed, breed, and raise their calves. For the rest of us, no zoo or aquarium anywhere keeps a humpback whale — they're much too big, and they swim across whole oceans. The only way to see a real one is from a boat or a beach, in places where whales visit every year. Most of us will meet a humpback through photos, videos, and stories like this one, and that's a real way to get to know them too."
     groups:
       - label: North America
         places:
@@ -24,7 +24,7 @@ animalDay:
             url: https://hawaiihumpbackwhale.noaa.gov/
           - title: Summer feeding grounds
             place: Glacier Bay National Park, Alaska
-            blurb: In summer, humpbacks travel to these icy Alaskan waters to feast on fish. Park rangers make boats slow down to help keep the whales safe.
+            blurb: In summer, humpbacks travel to these icy Alaskan waters to feast on krill and little fish. The park has special rules that make boats slow down to help keep the whales safe.
             url: https://www.nps.gov/glba/learn/nature/whales.htm
       - label: Around the world
         places:
@@ -35,24 +35,23 @@ animalDay:
           - title: Cold northern feeding waters
             place: Húsavík, North Iceland
             blurb: Far up north, humpbacks visit Iceland's cold waters each summer to feed before heading south again.
-            url: https://www.visiticeland.com/article/whale-watching
+            url: https://www.visithusavik.is/
     note: "Humpback whales visit different oceans in different seasons, so where and when you might see one changes through the year — check before you plan a trip."
   grownups: |
-    Humpback whales are listed as Least Concern by the IUCN, and their comeback is one of the great ocean recovery stories. In the 1960s, only about 5,000 humpbacks were left in the whole world after decades of whaling. Today there are roughly 135,000.
+    Humpback whales are listed as Least Concern by the IUCN, and their comeback is one of the great ocean recovery stories — though a few populations, like the humpbacks of the Arabian Sea, are still endangered. In the 1960s, only about 5,000 humpbacks were left in the whole world after decades of whaling. Today there are roughly 135,000.
 
     One population tells the story best. Humpbacks that breed off Brazil numbered nearly 27,000 in 1830. Whaling drove them down to only about 450 by the mid-1950s. People stopped hunting them, and a 2019 study found they'd recovered to about 93% of their original numbers.
 
-    Humpbacks still face real risks today — ships, fishing nets, and ocean noise can hurt them. This week's hope action: be a whale-watching helper. Practice saying "Slow down, whales around!" and draw a boat keeping its distance from a whale. A drawing won't slow a real ship, but knowing that whales need space is how whale helpers start.
+    Humpbacks still face real risks today — ships, fishing gear, and ocean noise can hurt them. This week's hope action: be a whale-watching helper. Practice saying "Slow down, whales around!" and draw a boat keeping its distance from a whale. A drawing won't slow a real ship, but knowing that whales need space is how whale helpers start.
 
     Starters: "If you could sing a song that traveled for miles underwater, what would you want other whales to know?" "What do you think it feels like to swim thousands of miles, with your mom right beside you the whole way?"
 
-    If your kid asks *could a whale swallow me?* — this holds up: "No — a humpback has no teeth. It eats tiny things like krill, strained through bristly plates in its mouth. You're much too big."
-  appCta: "The humpback whale isn't in Wild Atlas yet — but you can meet its giant cousin, the blue whale, the largest animal that has ever lived, along with 200+ other animals, each with narrated facts to explore."
+    If your kid asks *could a whale swallow me?* — this holds up: "No — a humpback has no teeth, and its throat is far too narrow to swallow a person. It eats tiny things like krill and small fish, strained through bristly plates in its mouth. You're much too big."
+  appCta: "The humpback whale isn't in Wild Atlas — but its giant cousin, the blue whale, the largest animal known to have ever lived, is in the Ocean Creatures pack, along with 200+ other animals across Wild Atlas, each with narrated facts to explore."
   appLinkText: Meet the blue whale in Wild Atlas
   source:
     label: NOAA Fisheries
     url: https://www.fisheries.noaa.gov/species/humpback-whale
-status: draft
 blogStatus: scheduled
 ---
 
@@ -66,7 +65,7 @@ A humpback doesn't have teeth. It has hundreds of bristly plates called baleen, 
 
 {% figure "/assets/blog/humpback-whale-facts-for-kids/scale.jpg", "A side-view illustration of a humpback whale next to the tiny Wild Atlas explorer in a snorkel mask, with an arrow measuring the whale's length" %}
 
-A grown-up humpback is about as long as 14 five-year-olds lying head to toe — around 15 meters (49 feet)! Its front flippers are so long that its scientific name actually means "big-winged." One flipper alone can be longer than a car.
+A grown-up humpback is about as long as 14 five-year-olds lying head to toe — around 15 meters (49 feet)! Its front flippers are so long that the first part of its scientific name, Megaptera, actually means "big-winged." One flipper alone can be longer than a car.
 
 {% figure "/assets/blog/humpback-whale-facts-for-kids/weight.jpg", "A weight diagram comparing one humpback whale on one scale to more than 1,500 tiny 5-year-old figures on the other" %}
 
@@ -78,6 +77,6 @@ A brand-new baby humpback, called a calf, is already about 4 times as long as a 
 
 Some humpbacks are team players, too. They work together to blow a giant circle of bubbles underwater, trapping fish inside it, then burst up through the middle with their mouths wide open!
 
-Can you hum one long, low note like a whale song, and hold it as long as you can? Can you stretch your arms out wide like a big flipper, then slap them down for a splashy breach?
+Can you hum one long, low note like a whale song, and hold it as long as you can? Can you stretch your arms out wide like big flippers? Now rise up on your tiptoes, then swoosh back down — that's how a humpback breaches, leaping out of the water and landing with a big splash!
 
-{% figure "/assets/blog/humpback-whale-facts-for-kids/habitat.jpg", "A humpback whale breaching in grey-green water in a cold Alaskan fjord, one long flipper held up like a wing, with forested mountains behind it" %}
+{% figure "/assets/blog/humpback-whale-facts-for-kids/habitat.jpg", "A humpback whale breaching in grey-green water in a cold northern fjord, one long flipper held up like a wing, with forested, snow-dusted mountains behind it" %}
