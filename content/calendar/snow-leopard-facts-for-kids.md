@@ -34,8 +34,8 @@ animalDay:
             url: https://www.torontozoo.com/animals/Snow%20leopard
           - title: Big Cat Falls
             place: Philadelphia Zoo — Philadelphia, Pennsylvania
-            blurb: Snow leopards share this big-cat habitat with some of their wild cousins.
-            url: https://www.philadelphiazoo.org/news/philadelphia-zoo-announces-arrival-of-snow-leopard-for-species-survival-plan-breeding-program/
+            blurb: Snow leopards live in Big Cat Falls, next door to some of their big-cat cousins.
+            url: https://www.philadelphiazoo.org/animals/snow-leopard/
       - label: Around the world
         places:
           - title: Bheri
@@ -54,15 +54,14 @@ animalDay:
 
     This week's hope action: play "Spot the Ghost Cat" — look at a photo of rocky mountains together and try to find the hidden snow leopard, just like the scientists do with their camera-trap photos. Then tell a grown-up one thing snow leopards need to keep thriving: wild mountains with plenty of wild sheep and goats to eat.
 
-    Starters: "What do you think it's like to live way up in the snowy mountains?" "Snow leopards are so good at hiding that almost no one ever sees one — what are you really good at being quiet during?"
+    Starters: "What do you think it's like to live way up in the snowy mountains?" "Snow leopards are so good at hiding that almost no one ever sees one in the wild — what's your best hiding spot?"
 
-    If your kid asks *could a snow leopard hurt me?* — this holds up: "They live way up in faraway mountains and they're very shy — they'd hide from you long before you ever saw them. They almost never come near people."
-  appCta: "Wild Atlas has the snow leopard, narrated, in the Planet Pioneers pack — the full scale comparison against a 5-year-old, its own fact cards, and the soft chuffing sound it really makes."
+    If your kid asks *could a snow leopard hurt me?* — this holds up: "They live way up in faraway mountains and they're very shy — they'd hide from you long before you ever saw them. They almost never bother people."
+  appCta: "Wild Atlas has the snow leopard, narrated, in the Planet Pioneers pack — the full scale comparison against a 5-year-old, its own fact cards, and the story of the soft chuffing sound it makes instead of a roar."
   appLinkText: Meet the snow leopard in Wild Atlas
   source:
     label: the IUCN SSC Cat Specialist Group
     url: https://www.catsg.org/living-species-snowleopard
-status: draft
 blogStatus: scheduled
 ---
 
@@ -78,13 +77,13 @@ Its spotty grey coat blends right into the rocks — so well that people who liv
 
 {% figure "/assets/blog/snow-leopard-facts-for-kids/scale.jpg", "An illustrated snow leopard standing next to a 5-year-old explorer for scale, its long tail curled behind it" %}
 
-Standing on all fours, a snow leopard comes up to about your tummy — but nose to tail, it's about as long as two kids lying head to toe! That long, fluffy tail helps it balance as it climbs steep, rocky cliffs, and at bedtime, it wraps around the snow leopard like a cozy scarf.
+Standing on all fours, a snow leopard comes up to about your tummy — but nose to tail, it's almost as long as two kids lying head to toe! That long, fluffy tail helps it balance as it climbs steep, rocky cliffs, and at bedtime, it wraps around the snow leopard like a cozy scarf.
 
 Can you curl up small and wrap your arms around yourself, just like a snow leopard's tail?
 
 {% figure "/assets/blog/snow-leopard-facts-for-kids/weight.jpg", "A scale showing a snow leopard's weight compared to three 5-year-olds" %}
 
-It would take about two or three kids your size standing on one big scale to weigh as much as one grown-up snow leopard. And its big, wide, furry paws work like snowshoes, so it doesn't sink into deep snow.
+About two or three five-year-olds, all standing on one big scale together, would weigh as much as one grown-up snow leopard. And its big, wide, furry paws work like snowshoes, so it doesn't sink into deep snow.
 
 {% figure "/assets/blog/snow-leopard-facts-for-kids/baby.jpg", "A fluffy snow leopard cub with blue eyes lying on a flat rock, with snowy mountains behind it" %}
 

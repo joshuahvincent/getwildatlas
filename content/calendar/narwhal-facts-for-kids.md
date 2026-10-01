@@ -31,21 +31,20 @@ animalDay:
             url: https://visitgreenland.com/destinations/qaanaaq/
     note: "These are real wild animals, so nothing is guaranteed — narwhals are shy, and a sighting always depends on ice, weather and luck. Maybe one day you'll see one!"
   grownups: |
-    Narwhals are listed as Least Concern by the IUCN, which is good news — but a changing Arctic still brings real challenges: shifting sea ice, more ship traffic and ocean noise, and orcas moving farther north as the ice retreats. Narwhals share their icy waters with orcas, which is simply part of how the Arctic stays in balance. Local Inuit communities have hunted narwhal sustainably and legally for generations, managed together with wildlife authorities, as part of a living culture.
+    Narwhals are listed as Least Concern by the IUCN, which is good news. Orcas are a natural predator of narwhals, which is how food chains work, not cruelty. Inuit communities have hunted narwhal for generations, and today that hunt is legal and co-managed with wildlife authorities, as part of a living culture.
 
     There's a hopeful story here too. In 2019, Inuit communities and the Government of Canada teamed up to protect Tallurutiup Imanga, a huge stretch of Arctic ocean in Nunavut where a large share of the world's narwhals spend their summers. Inuit guardians, called the Nauttiqsuqtiit, now watch over the water as its eyes and ears.
 
-    Narwhals listen with sound, so a quieter ocean matters to them. This week's hope action: draw a narwhal on a "quiet ocean" poster, with one thing that helps keep the water calm and icy, like boats going slow. A drawing won't quiet the Arctic by itself, but noticing why quiet water matters is how helpers start.
+    A changing Arctic still brings real challenges for narwhals: shifting sea ice, more ship traffic and ocean noise. Narwhals use sound to find food and find each other, so a quieter ocean matters to them. This week's hope action: draw a narwhal on a "quiet ocean" poster, with one thing that helps keep the water calm and icy, like boats going slow. A drawing won't quiet the Arctic by itself, but noticing why quiet water matters is how helpers start.
 
-    Starters: "If your tooth could sense the water around you, what would you want to feel first?" "Why do you think people used to think narwhal tusks came from unicorns?"
+    Starters: "If your tusk could sense the water around you, what would you want to feel first?" "Why do you think people used to think narwhal tusks came from unicorns?"
 
-    If your kid asks *could a narwhal stab me with its tusk?* — this holds up: "No — narwhals are shy, and that tusk is mostly for sensing the water, not fighting. People who study them always keep their distance and let narwhals be narwhals."
+    If your kid asks *could a narwhal stab me with its tusk?* — this holds up: "No — narwhals are shy and keep far away from people. Scientists think the tusk may help them sense the water, or show off to other narwhals. People who study them always keep their distance and let narwhals be narwhals."
   appCta: "Wild Atlas has the narwhal in the Ocean Creatures pack — narrated facts, the full scale comparison against a 5-year-old, and a close-up look at that spiraling tusk."
   appLinkText: Meet the narwhal in Wild Atlas
   source:
     label: NOAA Fisheries
     url: https://www.fisheries.noaa.gov/species/narwhal
-status: draft
 blogStatus: scheduled
 ---
 
@@ -57,19 +56,19 @@ Meet the narwhal, a whale that lives its whole life in the icy Arctic Ocean. Peo
 
 Can you spiral your arm slowly, like a narwhal's twisty tusk?
 
-That twisty tusk isn't for fighting. Scientists think it may help a narwhal feel what the water around it is like — though they're still studying exactly how. Mostly boy narwhals grow a tusk, but some girls have one too. Once in a while, a narwhal even grows two!
+Scientists are still finding out what that twisty tusk is for. It may help a narwhal feel what the water around it is like, and boy narwhals may show off their tusks to each other, a bit like antlers. Most boy narwhals grow a tusk, and some girls have one too. Once in a while, a narwhal even grows two!
 
 {% figure "/assets/blog/narwhal-facts-for-kids/scale.jpg", "An illustrated narwhal measuring 4.5 meters (14 feet 10 inches) long, next to a small child in a wetsuit for scale" %}
 
 A grown-up narwhal is about 4 times as long as a 5-year-old is tall — and that's before you even add the tusk!
 
-{% figure "/assets/blog/narwhal-facts-for-kids/weight.jpg", "A scale comparing one narwhal's weight to 82 five-year-olds stacked together" %}
+{% figure "/assets/blog/narwhal-facts-for-kids/weight.jpg", "Two scales showing one narwhal weighing about the same as 82 five-year-olds stacked together" %}
 
 A big narwhal weighs about as much as 82 five-year-olds, all balanced on one enormous scale. Can you picture that many friends in one place?
 
-Narwhals are excellent divers. They can swim down deeper than the world's tallest building is tall, and hold their breath for about 25 minutes. They have no fin on their back — just a low ridge — which may help them glide under the ice. In winter, they breathe through cracks in the frozen sea.
+Narwhals are excellent divers. They can swim down deeper than the world's tallest building is tall, and hold their breath for up to 25 minutes. They have no fin on their back — just a low ridge — which may help them glide under the ice. In winter, they breathe through cracks in the frozen sea.
 
-{% figure "/assets/blog/narwhal-facts-for-kids/baby.jpg", "A young narwhal with a speckled grey-brown back swimming under rippled blue sea ice, with sunbeams streaming through the water" %}
+{% figure "/assets/blog/narwhal-facts-for-kids/baby.jpg", "A young narwhal with a speckled grey-brown back and a short tusk, swimming under rippled blue sea ice with sunbeams streaming through the water", "A young narwhal, a few years old. Brand-new babies are smooth and grey, with no tusk yet." %}
 
 A brand-new baby narwhal is already longer than a 5-year-old is tall! Babies are smooth and grey. As narwhals grow older, they get spotty, and the oldest ones turn almost white.
 

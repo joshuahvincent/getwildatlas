@@ -1,8 +1,8 @@
 ---
-title: "Monkey Day: Golden Snub-Nosed Monkey Facts for Kids — Meet the Snow Monkey With a Blue Face and a Family Huddle"
+title: "Monkey Day: Golden Snub-Nosed Monkey Facts for Kids — Meet the Blue-Faced Monkey of China's Snowy Mountains"
 date: 2026-12-14
 author: Wild Atlas
-excerpt: "Happy Monkey Day! Meet the golden snub-nosed monkey — a golden, blue-faced monkey that lives high in China's snowy mountains, where the whole family huddles together to stay warm, and babies get help from grandmas and aunties too. A read-aloud, plus where a couple of lucky zoos in Europe have one."
+excerpt: "Happy Monkey Day! Meet the golden snub-nosed monkey — a golden, blue-faced monkey that lives high in China's snowy mountains, where the whole family huddles together to stay warm, and babies get help from grandmas and aunties too. A read-aloud, plus the two zoos in Europe that welcomed golden monkey babies this year."
 coverImage: /assets/blog/monkey-day-2026/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
@@ -10,7 +10,7 @@ animalDay:
   animalName: golden snub-nosed monkey
   animalArticle: a
   campaign: monkey_day_2026
-  greeting: "**Happy Monkey Day!** Every December 14, people celebrate monkeys — really \"all things simian,\" so apes, lemurs and tarsiers get to join the party too. Two art students started the tradition in 2000, just for fun, and it stuck. This year we're celebrating with one of the most surprising monkeys in the world: the golden snub-nosed monkey."
+  greeting: "**Happy Monkey Day!** Every December 14, people celebrate monkeys — and their primate cousins too, so apes, lemurs and tarsiers get to join the party. Two art students started the tradition in 2000, just for fun, and it stuck. This year we're celebrating with one of the most surprising monkeys in the world: the golden snub-nosed monkey."
   readAloudNote: "Read this one out loud together — it's short, and it's even better with a shiver and a snuggle."
   whereToSee:
     heading: Where to see a golden snub-nosed monkey
@@ -20,17 +20,17 @@ animalDay:
         places:
           - title: Jindou and Jinbao
             place: ZooParc de Beauval — Saint-Aignan, France
-            blurb: In spring 2026, Jindou and Jinbao welcomed a baby here — the first golden snub-nosed monkey ever born in a zoo outside Asia. Look for the family in the Chinese Highlands area, near the giant pandas.
+            blurb: In March 2026, Jindou and Jinbao welcomed a baby here — the first golden snub-nosed monkey ever born in a zoo outside Asia — and a second baby followed a few weeks later. Look for the family in the Chinese Highlands area, near the giant pandas.
             url: https://actus.zoobeauval.com/en/the-birth-of-a-golden-monkey-at-zooparc-de-beauval/
           - title: Liu Yun, Lu Lu, and Juan Juan
             place: Pairi Daiza — Brugelette, Belgium
             blurb: These monkeys live in "The Middle Kingdom" section of the park. In spring 2026 two babies were born here, a first for Belgium.
             url: https://www.pairidaiza.eu/en/worlds/the-middle-kingdom/gouden-qinling-stompneusaap/
-    note: "Animals sometimes move — check the zoo's own website before you visit."
+    note: "Animals sometimes move — check the zoo's own website before you visit. Not near either zoo? You can read more about each monkey family on the zoos' own pages, linked above."
   grownups: |
-    Golden snub-nosed monkeys are listed as Endangered, and in most places their numbers are still going down, mainly because their mountain forests have gotten smaller. But there's a hopeful story. In Shennongjia, a protected park in China, park scientists report that about 500 golden monkeys lived there forty years ago — and after decades of protecting the forest and building green "bridges" of trees so monkey families could find each other again, there are now more than 1,600.
+    Golden snub-nosed monkeys are listed as Endangered, and overall their numbers are still going down, mainly because their mountain forests have gotten smaller, though in some places they've started to hold steady. But there's a hopeful story. In Shennongjia, a protected park in China, park scientists report that about 500 golden monkeys lived there forty years ago — and after decades of protecting the forest and building green "bridges" of trees so monkey families could find each other again, there are now more than 1,600.
 
-    This week's hope action: go outside and look for lichen — the crusty, grey-green fuzz that grows on trees and rocks. That's what golden monkeys eat all winter. Draw what you find (don't scrape or eat it). It won't reach the monkeys in China directly, but noticing the living things around you is where caring for wild places starts.
+    This week's hope action: go outside and look for lichen — the grey-green fuzz that grows on trees and rocks. Golden monkeys eat lots of lichen in winter, especially the stringy kind that hangs from branches. Draw what you find (don't scrape or eat it). It won't reach the monkeys in China directly, but noticing the living things around you is where caring for wild places starts.
 
     Starters: "What do you think it would feel like to have fur warm enough for snowy mountains?" "If your family had lots of aunties helping take care of the babies, like a golden monkey troop, who would you want to help?"
 
@@ -40,7 +40,6 @@ animalDay:
   source:
     label: the Wisconsin Primate Info Net fact sheet
     url: https://primate.wisc.edu/primate-info-net/pin-factsheets/pin-factsheet-golden-snub-nosed-monkey/
-status: draft
 blogStatus: scheduled
 ---
 
@@ -48,19 +47,19 @@ High in China's snowy mountains lives a monkey with golden fur, a blue face and 
 
 {% figure "/assets/blog/monkey-day-2026/cover.jpg", "A golden snub-nosed monkey with golden fur, a pale blue face and an upturned nose, sitting on a snowy branch as snow falls" %}
 
-Golden snub-nosed monkeys live in only one place on Earth: the mountain forests of central China, where snow covers the ground for months at a time. Their thick golden coats help keep them warm, and their pale blue faces make them look like they're always looking up and smiling at the sky.
+Golden snub-nosed monkeys live in only one place on Earth: the mountain forests of central China, where snow covers the ground for months at a time. Their thick golden coats help keep them warm, and their tiny turned-up noses make them look like they're always smiling up at the sky.
 
 Can you scrunch up your nose like a golden monkey?
 
 {% figure "/assets/blog/monkey-day-2026/scale.jpg", "An illustrated size comparison of a golden snub-nosed monkey walking on all fours next to a 5-year-old explorer child" %}
 
-A big boy golden monkey's body alone reaches a little past halfway up a 5-year-old. But add his tail — which is about as long as his whole body — and nose to tail-tip, he can be as long as a 5-year-old is tall, or even longer!
+A big boy golden monkey's body alone is a little more than half as long as a 5-year-old is tall. But add his tail — which is about as long as his whole body — and nose to tail-tip, he can be as long as a 5-year-old is tall, or even longer!
 
 {% figure "/assets/blog/monkey-day-2026/weight.jpg", "A scale showing a golden snub-nosed monkey's weight compared to a 5-year-old child on a matching scale" %}
 
-And here's a surprise: a full-grown male golden monkey weighs about as much as one 5-year-old child, both standing on a scale together.
+And here's a surprise: a full-grown male golden monkey weighs about as much as one 5-year-old child!
 
-In winter, golden monkeys munch on lichen — a crunchy, fuzzy growth that clings to tree branches — along with leaves, buds and bark. They spend almost all their time up in the trees.
+In winter, golden monkeys munch on lichen — a stringy, fuzzy growth that hangs from tree branches — along with bark, buds and seeds. They spend almost all their time up in the trees.
 
 {% figure "/assets/blog/monkey-day-2026/baby.jpg", "A mother golden snub-nosed monkey with golden-brown fur holding her pale grey baby against her chest on a mossy branch" %}
 
@@ -74,4 +73,4 @@ Golden monkey families join together into huge neighborhoods — sometimes hundr
 
 Can you point to something gold nearby, like a golden monkey's fur?
 
-<!-- DEEP LINK TBD: species not in app catalog (no animalId) — see 01-naturalist-brief.md §7 -->
+
