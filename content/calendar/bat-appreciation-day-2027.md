@@ -1,8 +1,8 @@
 ---
-title: "International Bat Appreciation Day: Fruit Bat Facts for Kids — Meet the Bat With Wings Wider Than You Are Tall"
+title: "International Bat Appreciation Day: Flying Fox Facts for Kids — Meet the Fruit Bat With Wings Wider Than You Are Tall"
 date: 2027-04-17
 author: Wild Atlas
-excerpt: "Happy Bat Appreciation Day! Meet the flying fox — a giant fruit bat that finds its way by sight and smell, not sound. A read-aloud, plus where to meet a real one."
+excerpt: "Happy Bat Appreciation Day! Meet the flying fox — a giant fruit bat that finds its way by sight and smell, not echoes. A read-aloud, plus where to meet a real one."
 coverImage: /assets/blog/bat-appreciation-day-2027/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
@@ -47,15 +47,15 @@ animalDay:
             place: Night Safari — Singapore
             blurb: At this after-dark zoo, you walk through a pretend mangrove swamp as flying foxes flap past, just like in the wild after sunset.
             url: https://www.mandai.com/en/night-safari/animals-and-zones/malayan-flying-fox.html
-          - title: Asien world
+          - title: Asia world (Erlebniswelt Asien)
             place: ZOOM Erlebniswelt — Gelsenkirchen, Germany
             blurb: "This zoo's 'kalong' flying foxes live together in its Asia area — and the zoo has even welcomed flying-fox babies before."
             url: https://www.zoom-erlebniswelt.de/tiere/kalong-flughund/
     note: Animals sometimes move — check the zoo's own website before you visit.
   grownups: |
-    Large flying foxes are listed as Endangered (IUCN Red List, 2022), mostly from unsustainable hunting and the loss of the forests and mangroves they roost and feed in. There's a hopeful story: on a small island called Pulau Rhu, off the coast of Terengganu in Malaysia, thousands of flying foxes sleep in the treetops. Bat Conservation International teamed up with Reef Check Malaysia and Nature Based Solutions, and together they persuaded the state government to work toward protecting the island and the sea around it as one safe place — a first for that part of Malaysia.
+    Large flying foxes are listed as Endangered (IUCN Red List, 2022), mostly from unsustainable hunting and the loss of the forests and mangroves they roost and feed in. There's a hopeful story: on a small island called Pulau Rhu, off the coast of Terengganu in Malaysia, a whole colony of flying foxes sleeps in the treetops. Bat Conservation International teamed up with Reef Check Malaysia and Nature Based Solutions, and together they persuaded the state government to work toward protecting the island and the sea around it as one safe place — a first for that part of Malaysia.
 
-    Flying foxes need safe forests with tall trees to sleep in. This week, try the Wingspan Challenge: cut a piece of string or ribbon 1.5 meters (5 feet) long — that's a flying fox's wingspan — and lie down next to it to see who's longer, you or the bat. Then draw a flying fox visiting a flower with pollen on its nose, and tell someone how it helps new fruit trees grow.
+    Flying foxes need safe forests with tall trees to sleep in. This week, try the Wingspan Challenge: cut a piece of string or ribbon 1.5 meters (5 feet) long — that's a flying fox's wingspan — and lie down next to it to see who's longer, you or the bat. Then draw a flying fox visiting a flower with pollen on its nose, and tell someone how flying foxes help forests grow.
 
     Starters: "If you only flew at night like a flying fox, what would you want to explore first?" "What job do you think a flying fox is doing for the forest while it visits flowers?"
 
@@ -65,7 +65,6 @@ animalDay:
   source:
     label: Bat Conservation International
     url: https://www.batcon.org/our-work/endangered-species-interventions/creating-federally-protected-areas-for-flying-foxes-in-malaysia/
-status: draft
 blogStatus: scheduled
 ---
 
@@ -85,12 +84,12 @@ Can you picture 19 flying foxes on one big scale? That's about how many it would
 
 {% figure "/assets/blog/bat-appreciation-day-2027/weight.jpg", "Two scales comparing 19 fruit bats to one 5-year-old child, both weighing about 19 kilograms" %}
 
-A flying fox mom has one baby at a time. At first, the baby hangs on to Mom wherever she goes. Later it waits at the roost tree, and Mom flies back to feed it milk.
+A flying fox mom has one baby at a time. At first, the baby hangs on to Mom wherever she goes. Later it waits in the tree, and Mom flies back to feed it milk.
 
 {% figure "/assets/blog/bat-appreciation-day-2027/baby.jpg", "A young fruit bat clinging to a mossy branch in a damp forest" %}
 
 Every night, a flying fox eats about half its own weight in fruit and flowers — imagine eating half your weight in snacks!
 
-In the daytime, thousands of flying foxes hang upside-down together in the same tall trees, like a giant sleepover. When they visit flowers, pollen sticks to their furry faces, and they carry it to the next flower — that helps new fruit trees grow.
+In the daytime, thousands of flying foxes hang upside-down together in the same tall trees, like a giant sleepover. When they visit flowers, pollen sticks to their furry faces, and they carry it to the next flower — that helps the trees make fruit, and the seeds inside can grow into new trees.
 
 Can you stretch your arms out wide like flying-fox wings and flap them slowly? Can you sniff the air like a flying fox hunting for fruit by smell? Can you hang your arms down and pretend to nap standing up, the way a flying fox naps upside-down?

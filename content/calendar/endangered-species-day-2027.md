@@ -2,7 +2,7 @@
 title: "Endangered Species Day: Black Rhino Facts for Kids — Meet the Animal With a Lip Like a Finger"
 date: 2027-05-21
 author: Wild Atlas
-excerpt: "Happy Endangered Species Day! Meet the black rhino — its bendy top lip works almost like a finger, a little bird rides on its back as a lookout, and not long ago people helped bring it back from the brink. A read-aloud, plus real places where you can meet one."
+excerpt: "Happy Endangered Species Day! Meet the black rhino — its bendy top lip works almost like a finger, a little bird rides on its back as a lookout, and people are working hard to help it recover. A read-aloud, plus real places where you can meet one."
 coverImage: /assets/blog/endangered-species-day-2027/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
@@ -11,7 +11,7 @@ animalDay:
   animalName: black rhino
   animalArticle: a
   campaign: endangered_species_day_2027
-  greeting: "**Happy Endangered Species Day!** Every third Friday in May, people everywhere take a moment for animals that need our help — and today, we're taking that moment for the black rhino."
+  greeting: "**Happy Endangered Species Day!** Every third Friday in May, people take a moment for animals that need our help — and today, we're taking that moment for the black rhino."
   readAloudNote: "Read this one out loud together — it's short, and it's even better in a big, huffy rhino voice."
   whereToSee:
     heading: Where to see a black rhino
@@ -22,7 +22,7 @@ animalDay:
         places:
           - title: Hazina
             place: Lincoln Park Zoo, Regenstein African Journey — Chicago, Illinois
-            blurb: This baby black rhino was born in March 2026 — and took her first wobbly steps just 90 minutes later. Look for her with her mom, Kapuki, and dad, Utenzi.
+            blurb: Born in March 2026, this young black rhino took her first wobbly steps just 90 minutes later. Look for her with her mom, Kapuki, and dad, Utenzi.
             url: https://www.lpzoo.org/pressroom/critically-endangered-eastern-black-rhinoceros-born-at-lincoln-park-zoo/
           - title: A calf born at the Daniel Maltz Rhino Reserve
             place: Cleveland Metroparks Zoo — Cleveland, Ohio
@@ -48,17 +48,16 @@ animalDay:
 
     Here's the hope. Black rhinos had disappeared entirely from Rwanda's Akagera National Park; the last one was seen there in 2007. In 2017, conservationists brought 18 rhinos back from South Africa, and in 2019 five more flew in from zoos in Europe — one of them, a rhino named Jasiri, has since had two calves of her own in Rwanda. Across Africa, the black rhino population has climbed from that 1990s low to **6,788 at the end of 2024, and still rising.**
 
-    This week's hope actions: be a rhino fan — learn the finger-lip fact below, then tell someone in your family. Pick one zoo from "Where to see" below and plan a visit. And if you want to mark the rhino's very own day, **World Rhino Day is September 22.**
+    This week's hope actions: be a rhino fan — learn the finger-lip fact from the story, then tell someone in your family. Pick one zoo from "Where to see a black rhino" and plan a visit. And if you want to mark the rhino's very own day, **World Rhino Day is September 22.**
 
     Starters: *"Did you know a rhino's top lip works almost like a finger?"* · *"What do you think it would feel like to have skin as thick as a rhino's?"* · *"How do you think a little bird and a big rhino help each other?"*
 
     If your kid asks *why are there so few black rhinos?* — this holds up: "A long time ago, some people hunted rhinos and hurt how many there were. But rangers and scientists have worked hard for years to keep rhinos safe, and now there are more than twice as many as there used to be."
-  appCta: "Wild Atlas has a whole page built around the rhinoceros — narrated facts, the full scale comparison against a 5-year-old, and more — in the Safari Stars pack."
+  appCta: "Wild Atlas has a whole page built around the rhinoceros — narrated facts, the full scale comparison against a 5-year-old, and more — in the Safari Stars pack. (Its rhinoceros page is built around a bigger rhino, so its size numbers will be larger than a black rhino's.)"
   appLinkText: Meet the rhino in Wild Atlas
   source:
     label: Save the Rhino
     url: https://www.savetherhino.org/rhino-info/rhino-species/black-rhino/
-status: draft
 blogStatus: scheduled
 ---
 
@@ -70,7 +69,7 @@ Here's a surprise: black rhinos aren't black at all. They're grey — and often 
 
 Can you make your own lips pointy, like you're reaching for a leaf?
 
-{% figure "/assets/blog/endangered-species-day-2027/scale.jpg", "An illustrated side view of a black rhino next to a small cartoon child explorer, with an arrow showing the rhino's shoulder is much taller than the child" %}
+{% figure "/assets/blog/endangered-species-day-2027/scale.jpg", "An illustrated side view of a black rhino standing beside a small cartoon child explorer, with a tall arrow labeled about 1.6 meters, or 5 feet 3 inches, showing how much taller the rhino's shoulder is than the child" %}
 
 Stand up as tall as you can. A grown-up black rhino's shoulder is still way up above your head — about 1.6 meters, or 5 feet 3 inches high.
 

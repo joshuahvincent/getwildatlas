@@ -52,21 +52,20 @@ animalDay:
             url: https://tiergarten.nuernberg.de/
     note: Animals sometimes move between zoos — check the zoo's own website before you visit.
   grownups: |
-    Malayan tapirs are listed as Endangered, and their numbers are still going down — fewer than 2,500 are thought to be left in the wild. The biggest threats are rainforests cleared for farming, roads that cut forests into pieces, and snares set to catch other animals.
+    Malayan tapirs are listed as Endangered, and their numbers are still going down — fewer than 2,500 adults are thought to be left in the wild. The biggest threats are rainforests cleared for farming, roads that cut forests into pieces, and snares set to catch other animals.
 
     There's a hopeful story too. In 2024 and 2025, three Malayan tapir calves were born at accredited zoos — Zoo Miami, Point Defiance Zoo & Aquarium, and the Wilder Institute/Calgary Zoo — all through a shared Species Survival Plan that pairs tapirs across zoos like one big family tree, to help keep the population strong.
 
-    This week, draw a tapir with your kid and hang it up on April 27 to celebrate World Tapir Day. Grown-ups can also look for the RSPO label on products at the store, which supports palm oil grown without clearing more tapir forest.
+    Draw a tapir with your kid and hang it up to celebrate World Tapir Day. Grown-ups can also look for the RSPO label on products at the store, which is meant to help keep tapir forests standing.
 
     Starters: "If you had a bendy trunk-nose like a tapir, what's the first thing you'd use it for?" "Tapir babies are born with watermelon stripes — why do you think that helps a baby hide?"
 
     If your kid asks *do tigers eat tapirs?* — this holds up: "Sometimes, yes — tapirs and tigers share the same forest. But a tapir has excellent hearing and smell, and its best trick is slipping away quietly before a tiger even notices it's there."
-  appCta: "Wild Atlas has a whole page built around this animal — narrated facts, the full scale comparison against a 5-year-old, and the sound a tapir actually makes, in the Rainforest Explorers pack."
+  appCta: "Wild Atlas has a whole page built around this animal — narrated facts, the full scale comparison against a 5-year-old, and a description of how tapirs squeak and whistle, in the Rainforest Explorers pack."
   appLinkText: Meet the tapir in Wild Atlas
   source:
     label: the IUCN SSC Tapir Specialist Group
     url: https://tapirs.org/tapirs/
-status: draft
 blogStatus: scheduled
 ---
 
@@ -78,9 +77,9 @@ A tapir's nose and upper lip are joined together into one bendy little trunk. It
 
 Can you guess a tapir's closest cousins? Not pigs, and not elephants — it's horses and rhinos!
 
-The Malayan tapir is the biggest of the four tapir kinds in the world, and the only one that lives in Asia. Standing on all fours, its back comes up to about the top of your head, and nose to tail it's about as long as two 5-year-olds lying head to toe.
+The Malayan tapir is the biggest of the four tapir kinds in the world, and the only one that lives in Asia. Standing on all fours, its back is about as tall as you are, and nose to tail it's nearly as long as two 5-year-olds lying head to toe.
 
-{% figure "/assets/blog/world-tapir-day-2027/scale.jpg", "A Malayan tapir standing next to a 5-year-old for scale" %}
+{% figure "/assets/blog/world-tapir-day-2027/scale.jpg", "A Malayan tapir beside a young explorer, with arrows showing it is about 1 m tall and 2 m long" %}
 
 A big Malayan tapir weighs about as much as 14 five-year-olds — all standing on one big scale together!
 
