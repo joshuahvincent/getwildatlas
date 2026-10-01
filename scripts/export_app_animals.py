@@ -34,6 +34,7 @@ IMAGES = {  # output name -> candidate sources (first that exists wins)
     "cover": ["output/{id}_adult_action.png", "GeneratedHeroImages/{id}_hero.png"],
     "scale": ["GeneratedMeasurementImages/scale/{id}_scale_composite.png"],
     "baby": ["output/{id}_infant.png"],
+    "weight": ["GeneratedMeasurementImages/weight/{id}_weight.png"],
 }
 
 def main():

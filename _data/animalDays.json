@@ -75,7 +75,8 @@
    "day": "International Vulture Awareness Day",
    "official": true,
    "origin": "Grew out of South Africa's Vulture Awareness Day; made international in 2009 by the Endangered Wildlife Trust and the Hawk Conservancy Trust (UK).",
-   "sourceUrl": "https://sdzsafaripark.org/wildlife-awareness-days"
+   "sourceUrl": "https://sdzsafaripark.org/wildlife-awareness-days",
+   "pageSlug": "international-vulture-awareness-day"
   },
   {
    "date": "2026-09-12",
@@ -459,7 +460,8 @@
    "animal": "Moths",
    "origin": "ADDED. Started in 2012 by Friends of the East Brunswick Environmental Commission (New Jersey); now a global citizen-science event despite the name. 2026 dates computed from the rule; confirm on the official site.",
    "sourceUrl": "https://nationalmothweek.org/",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "national-moth-week"
   },
   {
    "date": "2026-08-02",
@@ -467,7 +469,8 @@
    "animal": "Golden lion tamarin",
    "origin": "First held in 2016 in Silva Jardim, Brazil. Promoted by AMLD and Save the Golden Lion Tamarin, and officially recognised by Brazil in 2018.",
    "sourceUrl": "https://www.savetheliontamarin.org/annual-glt-day",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "international-golden-lion-tamarin-day"
   },
   {
    "date": "2026-08-04",
@@ -484,7 +487,8 @@
    "animal": "Asiatic black bear (moon bear)",
    "origin": "Run by Animals Asia (founded by Jill Robinson). The date is the charity's founding anniversary.",
    "sourceUrl": "https://www.animalsasia.org/us/media/news/news-archive/join-thousands-of-people-across-the-world-and-make-a-difference-this-moonbearday.html",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "international-moon-bear-day"
   },
   {
    "date": "2026-08-08",
@@ -492,7 +496,8 @@
    "animal": "Scottish wildcat",
    "origin": "Started around 2016 by the grassroots group Action 4 Earth; UK wildcat groups support it.",
    "sourceUrl": "https://action4earth.wixsite.com/action4earth/scottish-wildcat-day",
-   "scope": "national-other"
+   "scope": "national-other",
+   "pageSlug": "scottish-wildcat-day"
   },
   {
    "date": "2026-08-10",
@@ -509,7 +514,8 @@
    "animal": "Hirola (Hunter's antelope)",
    "origin": "First held in 2015 and set on World Elephant Day to link the two species; promoted by the Hirola Conservation Programme.",
    "sourceUrl": "https://natureise.wordpress.com/2020/08/12/world-hirola-day-2020-spread-knowledge-and-awareness-about-hirolas/",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "world-hirola-day"
   },
   {
    "date": "2026-08-13",
@@ -526,7 +532,8 @@
    "animal": "Honey bee",
    "origin": "Started in 2009 by US beekeepers as National Honey Bee Awareness Day, with USDA recognition; also marked internationally as World Honey Bee Day.",
    "sourceUrl": "https://www.holidays-and-observances.com/animal-holidays.html",
-   "scope": "national-US"
+   "scope": "national-US",
+   "pageSlug": "national-honey-bee-day"
   },
   {
    "date": "2026-08-29",
@@ -561,7 +568,8 @@
    "animal": "Wildlife (general)",
    "origin": "Founded by Colleen Paige in 2005. The Sept 4 date honours Steve Irwin, who died on that day in 2006.",
    "sourceUrl": "https://nationaldaycalendar.com/celebrations/national-wildlife-day-september-4",
-   "scope": "national-US"
+   "scope": "national-US",
+   "pageSlug": "national-wildlife-day"
   },
   {
    "date": "2026-09-05",
@@ -578,7 +586,8 @@
    "animal": "Shorebirds (waders)",
    "origin": "Started in 2014 by bird conservationist Gyorgy Szimuly, alongside a Global Shorebird Count.",
    "sourceUrl": "https://earthsky.org/earth/first-ever-world-shorebirds-day-on-september-6/",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "world-shorebirds-day"
   },
   {
    "date": "2026-09-07",
@@ -586,7 +595,8 @@
    "animal": "Threatened species (thylacine anniversary)",
    "origin": "Declared in Australia in 1996. The date marks the death of the last known thylacine at Hobart Zoo in 1936.",
    "sourceUrl": "https://www.holidays-and-observances.com/animal-holidays.html",
-   "scope": "national-other"
+   "scope": "national-other",
+   "pageSlug": "national-threatened-species-day"
   },
   {
    "date": "2026-09-13",
@@ -594,7 +604,8 @@
    "animal": "Greater bilby",
    "origin": "Established in Australia in 2005 by Frank Manthey, co-founder of Save the Bilby Fund. It is a gazetted national day.",
    "sourceUrl": "https://savethebilbyfund.org.au/national-bilby-day/",
-   "scope": "national-other"
+   "scope": "national-other",
+   "pageSlug": "national-bilby-day"
   },
   {
    "date": "2026-09-17",
@@ -602,7 +613,8 @@
    "animal": "Manta and devil rays",
    "origin": "Established by the Manta Trust (UK charity).",
    "sourceUrl": "https://www.mantatrust.org/world-manta-day-2025-heres-whats-in-store",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "world-manta-day"
   },
   {
    "date": "2026-09-20",
@@ -655,7 +667,8 @@
    "animal": "Kiwi (Apteryx spp.)",
    "origin": "A New Zealand campaign led by the charity Save the Kiwi (Kiwis for kiwi, set up in 2012) with the Department of Conservation. It grew out of the earlier Save Kiwi Week. (No separately verifiable 'World Kiwi Day' was found; this month-long campaign is the kiwi observance.)",
    "sourceUrl": "https://blog.doc.govt.nz/2014/10/02/save-kiwi-month/",
-   "scope": "national-other"
+   "scope": "national-other",
+   "pageSlug": "save-kiwi-month"
   },
   {
    "date": "2026-10-01",
@@ -672,7 +685,8 @@
    "animal": "European badger (Meles meles)",
    "origin": "A UK day promoted by the Badger Trust and Scottish Badgers, who make all of October 'Brocktober'. It is tied to campaigning against the badger cull.",
    "sourceUrl": "https://www.badgertrust.org.uk/post/national-badger-day",
-   "scope": "national-other"
+   "scope": "national-other",
+   "pageSlug": "national-badger-day"
   },
   {
    "date": "2026-10-10",
@@ -680,7 +694,8 @@
    "animal": "Migratory birds",
    "origin": "A UN-backed campaign run by CMS, AEWA and Environment for the Americas. The two annual dates were unified in 2018. The 2026 theme is 'Every Bird Counts'.",
    "sourceUrl": "https://www.migratorybirdday.org/when-is-wmbd/",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "world-migratory-bird-day-october"
   },
   {
    "date": "2026-10-17",
@@ -688,7 +703,8 @@
    "animal": "Sawfish (Pristidae)",
    "origin": "Set up in 2017 by the Sawfish Conservation Society with the European and American zoo and aquarium associations (EAZA and AZA).",
    "sourceUrl": "https://www.sawfishconservationsociety.org/international-sawfish-day",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "international-sawfish-day"
   },
   {
    "date": "2026-10-18",
@@ -705,7 +721,8 @@
    "animal": "Reptiles",
    "origin": "Origins are not well documented; it is thought to date from about 2010 and has been promoted by Reptiles magazine and conservation groups such as ARC.",
    "sourceUrl": "https://arcprotects.org/national-reptile-awareness-day/",
-   "scope": "national-US"
+   "scope": "national-US",
+   "pageSlug": "national-reptile-awareness-day"
   },
   {
    "date": "2026-10-22",
@@ -740,7 +757,8 @@
    "animal": "River and freshwater dolphins",
    "origin": "Declared in East Kalimantan, Indonesia in October 2009 on the initiative of the IUCN SSC Cetacean Specialist Group and WWF.",
    "sourceUrl": "https://wwf.panda.org/wwf_news/?202087%2FFreshwater-dolphin-day=",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "international-freshwater-dolphin-day"
   },
   {
    "date": "2026-10-24",
@@ -766,7 +784,8 @@
    "animal": "West Indian / Florida manatee",
    "origin": "First declared in 1979 by Florida Governor Bob Graham, co-founder of Save the Manatee Club. It is a Florida state observance.",
    "sourceUrl": "https://savethemanatee.org/a-history-of-manatee-awareness-month/",
-   "scope": "regional"
+   "scope": "regional",
+   "pageSlug": "manatee-awareness-month"
   },
   {
    "date": "2026-11-03",
@@ -774,7 +793,8 @@
    "animal": "Basking shark (Cetorhinus maximus)",
    "origin": "Founded by the UK wildlife tour operator Basking Shark Scotland to raise awareness of the endangered basking shark.",
    "sourceUrl": "https://baskingsharkscotland.co.uk/basking-sharks/world-basking-shark-day/",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "world-basking-shark-day"
   },
   {
    "date": "2026-11-07",
@@ -800,7 +820,8 @@
    "animal": "Anteaters (Vermilingua)",
    "origin": "Established in 2014 by the IUCN SSC Anteater, Sloth & Armadillo Specialist Group, with support from Instituto Tamandua in Brazil.",
    "sourceUrl": "https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/world-anteater-day/",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "world-anteater-day"
   },
   {
    "date": "2026-12-04",
@@ -808,7 +829,8 @@
    "animal": "Wildlife (broad; focus on wildlife trafficking)",
    "origin": "Launched in 2012 by US Secretary of State Hillary Clinton and the State Department as a call to action against wildlife trafficking.",
    "sourceUrl": "https://2009-2017.state.gov/secretary/20092013clinton/rm/2012/12/199996.htm",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "wildlife-conservation-day"
   },
   {
    "date": "2026-12-13",
@@ -825,7 +847,8 @@
    "animal": "Birds",
    "origin": "ADDED. Audubon's citizen-science census, running since Christmas Day 1900 (proposed by ornithologist Frank Chapman); counts happen across the Americas and beyond.",
    "sourceUrl": "https://www.audubon.org/community-science/christmas-bird-count",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "christmas-bird-count"
   },
   {
    "date": "2027-01-21",
@@ -833,7 +856,8 @@
    "animal": "Squirrels",
    "origin": "Created in 2001 by Christy Hargrove, a wildlife rehabilitator linked to the Western North Carolina Nature Center.",
    "sourceUrl": "https://en.wikipedia.org/wiki/Squirrel_Appreciation_Day",
-   "scope": "national-US"
+   "scope": "national-US",
+   "pageSlug": "squirrel-appreciation-day"
   },
   {
    "date": "2027-01-29",
@@ -841,7 +865,8 @@
    "animal": "Garden birds",
    "origin": "ADDED. UK citizen-science survey run by the RSPB since 1979 (began as a children's event). 2027 dates computed from the rule; confirm when RSPB announces.",
    "sourceUrl": "https://www.rspb.org.uk/whats-happening/big-garden-birdwatch",
-   "scope": "national-other"
+   "scope": "national-other",
+   "pageSlug": "rspb-big-garden-birdwatch"
   },
   {
    "date": "2027-02-12",
@@ -849,7 +874,8 @@
    "animal": "Birds",
    "origin": "ADDED. Launched in 1998 by the Cornell Lab of Ornithology and National Audubon Society (Birds Canada joined later); global since 2013. 2027 dates computed from the usual pattern; confirm.",
    "sourceUrl": "https://www.birdcount.org/",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "great-backyard-bird-count"
   },
   {
    "date": "2027-02-21",
@@ -857,7 +883,8 @@
    "animal": "Whales (esp. humpback whale)",
    "origin": "Founded in 1980 on Maui by Greg Kaufman of Pacific Whale Foundation as part of the Maui Whale Festival.",
    "sourceUrl": "https://pacificwhale.org/world-whale-day/",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "world-whale-day"
   },
   {
    "date": "2027-03-15",
@@ -865,7 +892,8 @@
    "animal": "Turkey vulture",
    "origin": "Tradition in Hinckley, Ohio, formalised in 1957 by Cleveland Metroparks rangers and the local community.",
    "sourceUrl": "https://www.clevelandmetroparks.com/parks/visit/parks/hinckley-reservation/buzzard-roost",
-   "scope": "regional"
+   "scope": "regional",
+   "pageSlug": "buzzard-day"
   },
   {
    "date": "2027-03-20",
@@ -891,7 +919,8 @@
    "animal": "House sparrow and other common urban birds",
    "origin": "Launched in 2010 by the Nature Forever Society of India (Mohammed Dilawar) with the Eco-Sys Action Foundation.",
    "sourceUrl": "https://www.worldsparrowday.org/",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "world-sparrow-day"
   },
   {
    "date": "2027-03-23",
@@ -908,7 +937,8 @@
    "animal": "Aquatic animals (fish, marine mammals, invertebrates, etc.)",
    "origin": "Launched in 2020 by the Animal Law Clinic at Lewis & Clark Law School (Amy P. Wilson and Kathy Hessler).",
    "sourceUrl": "https://sustainability.gwu.edu/2024-world-aquatic-animal-day-animals-community",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "world-aquatic-animal-day"
   },
   {
    "date": "2027-04-14",
@@ -929,20 +959,13 @@
    "appId": "african_elephant"
   },
   {
-   "date": "2027-04-17",
-   "day": "International Bat Appreciation Day",
-   "animal": "Bats",
-   "origin": "Promoted by Bat Conservation International; the exact founding year is not well documented.",
-   "sourceUrl": "https://iucn.org/story/202504/benefits-bats-celebrating-critical-contributions-bats-international-bat-appreciation",
-   "scope": "worldwide"
-  },
-  {
    "date": "2027-04-21",
    "day": "World Curlew Day",
    "animal": "Curlews",
    "origin": "Created in 2017 by Mary Colwell; Apr 21 is St Beuno's feast day and the day she began her 2016 curlew walk.",
    "sourceUrl": "https://www.curlewaction.org/world-curlew-day/",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "world-curlew-day"
   },
   {
    "date": "2027-04-25",
@@ -977,7 +1000,8 @@
    "animal": "Tuna",
    "origin": "UN General Assembly resolution 71/124 (Dec 2016), first observed in 2017.",
    "sourceUrl": "https://www.un.org/press/en/2016/ga11869.doc.htm",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "world-tuna-day"
   },
   {
    "date": "2027-05-02",
@@ -985,7 +1009,8 @@
    "animal": "Songbirds (birdsong)",
    "origin": "Began in 1987 with Chris Baines at Moseley Bog, Birmingham, then was promoted by the Wildlife Trust for Birmingham and the Black Country.",
    "sourceUrl": "https://www.discoverwildlife.com/how-to/watch-wildlife/dawn-chorus-guide",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "international-dawn-chorus-day"
   },
   {
    "date": "2027-05-03",
@@ -1002,7 +1027,8 @@
    "animal": "Birds",
    "origin": "First held in 1894 in Oil City, Pennsylvania, started by school superintendent Charles Almanzo Babcock.",
    "sourceUrl": "https://www.loc.gov/item/today-in-history/may-04/",
-   "scope": "national-US"
+   "scope": "national-US",
+   "pageSlug": "bird-day"
   },
   {
    "date": "2027-05-08",
@@ -1019,7 +1045,8 @@
    "animal": "Migratory birds",
    "origin": "UN-backed campaign by the CMS and AEWA secretariats, running since 2006. Same observance as the October date; both kept as separate occurrences.",
    "sourceUrl": "https://www.un.org/en/observances/world-migratory-bird-day",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "world-migratory-bird-day-may"
   },
   {
    "date": "2027-05-08",
@@ -1027,7 +1054,8 @@
    "animal": "Birds",
    "origin": "Annual citizen-science birding day run by the Cornell Lab of Ornithology's eBird since 2015.",
    "sourceUrl": "https://ebird.org/globalbigday",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "global-big-day"
   },
   {
    "date": "2027-05-08",
@@ -1035,7 +1063,8 @@
    "animal": "Binturong (bearcat)",
    "origin": "Created in 2014 by ABConservation.",
    "sourceUrl": "https://www.abconservation.org/en/projects/world-binturong-day/",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "world-binturong-day"
   },
   {
    "date": "2027-05-20",
@@ -1043,7 +1072,8 @@
    "animal": "Bees and pollinators",
    "origin": "UN-declared in 2017 at Slovenia's proposal and first held in 2018; the date is beekeeper Anton Jansa's birthday.",
    "sourceUrl": "https://www.un.org/en/observances/bee-day",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "world-bee-day"
   },
   {
    "date": "2027-05-22",
@@ -1051,7 +1081,8 @@
    "animal": "Biodiversity / all wildlife (broad day)",
    "origin": "UN day, moved to May 22 by the UN General Assembly in 2000 to mark the adoption of the Convention on Biological Diversity text.",
    "sourceUrl": "https://en.wikipedia.org/wiki/List_of_environmental_dates",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "international-day-for-biological-diversity"
   },
   {
    "date": "2027-05-23",
@@ -1068,7 +1099,8 @@
    "animal": "Dugong",
    "origin": "Origins not well documented; strongly observed in India.",
    "sourceUrl": "https://www.drishtiias.com/daily-updates/daily-news-analysis/world-dugong-day-1",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "world-dugong-day"
   },
   {
    "date": "2027-05-28",
@@ -1076,7 +1108,8 @@
    "animal": "Whooping crane",
    "origin": "Origins not well documented; observed mainly in the US and Canada (for example, the Houston Zoo).",
    "sourceUrl": "https://www.houstonzoo.org/blog/happy-whooping-crane-day/",
-   "scope": "regional"
+   "scope": "regional",
+   "pageSlug": "whooping-crane-day"
   },
   {
    "date": "2027-05-31",
@@ -1093,7 +1126,8 @@
    "animal": "Lynx",
    "origin": "Established in 2017 by the Interreg Central Europe 3Lynx project.",
    "sourceUrl": "https://www.awarenessdays.com/awareness-days-calendar/international-lynx-day/",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "international-lynx-day"
   },
   {
    "date": "2027-06-12",
@@ -1128,7 +1162,8 @@
    "animal": "Horseshoe crabs",
    "origin": "Designated in 2020 by the IUCN SSC Horseshoe Crab Specialist Group.",
    "sourceUrl": "https://iucn.org/news/species-survival-commission/202006/international-horseshoe-crab-day-a-celebration-flagship-species-coastal-habitat-conservation",
-   "scope": "worldwide"
+   "scope": "worldwide",
+   "pageSlug": "international-horseshoe-crab-day"
   },
   {
    "date": "2027-06-20",

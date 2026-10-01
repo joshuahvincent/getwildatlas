@@ -87,6 +87,9 @@ module.exports = function (eleventyConfig) {
       const p = d.slug && d.appId && pages.get(d.slug);
       if (p && !animalPage.has(d.appId)) animalPage.set(d.appId, { url: p.url, image: p.data.coverImage });
     }
+    for (const p of calendarPages || []) {
+      if (p.data.appId && !animalPage.has(p.data.appId)) animalPage.set(p.data.appId, { url: p.url, image: p.data.coverImage });
+    }
     for (const l of liteAnimals || []) {
       if (!animalPage.has(l.appId)) animalPage.set(l.appId, { url: `/calendar/${l.slug}/`, image: l.animal.images && l.animal.images.cover });
     }
@@ -101,7 +104,7 @@ module.exports = function (eleventyConfig) {
       while (occ.getTime() < start) occ.setUTCFullYear(occ.getUTCFullYear() + 1);
       const m = months.find((x) => x.key === occ.toISOString().slice(0, 7));
       if (!m) continue;
-      const page = day.slug && pages.get(day.slug);
+      const page = (day.slug && pages.get(day.slug)) || (day.pageSlug && pages.get(day.pageSlug));
       const ap = day.appId && animalPage.get(day.appId);
       const url = page ? page.url : ap ? ap.url : day.blogUrl && postUrls.has(day.blogUrl) ? day.blogUrl : null;
       const iso = occ.toISOString().slice(0, 10);
@@ -114,7 +117,8 @@ module.exports = function (eleventyConfig) {
       let occ = new Date(day.date + "T00:00:00Z");
       while (occ.getTime() < start) occ.setUTCFullYear(occ.getUTCFullYear() + 1);
       const m = months.find((x) => x.key === occ.toISOString().slice(0, 7));
-      const ap = day.appId && animalPage.get(day.appId);
+      const sp = day.pageSlug && pages.get(day.pageSlug);
+      const ap = (sp && { url: sp.url, image: sp.data.coverImage }) || (day.appId && animalPage.get(day.appId));
       if (m) m.also.push({ ...day, iso: occ.toISOString().slice(0, 10), day_num: occ.getUTCDate(), url: ap ? ap.url : null, image: ap ? ap.image : null });
     }
     for (const m of months) {

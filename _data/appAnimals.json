@@ -2150,7 +2150,8 @@
    "images": {
     "cover": "/assets/animals/turtle/cover.jpg",
     "scale": "/assets/animals/turtle/scale.jpg",
-    "baby": "/assets/animals/turtle/baby.jpg"
+    "baby": "/assets/animals/turtle/baby.jpg",
+    "weight": "/assets/animals/turtle/weight.jpg"
    }
   },
   "tortoise": {
@@ -2200,7 +2201,8 @@
    "images": {
     "cover": "/assets/animals/tortoise/cover.jpg",
     "scale": "/assets/animals/tortoise/scale.jpg",
-    "baby": "/assets/animals/tortoise/baby.jpg"
+    "baby": "/assets/animals/tortoise/baby.jpg",
+    "weight": "/assets/animals/tortoise/weight.jpg"
    }
   },
   "leopard_gecko": {
@@ -3155,7 +3157,8 @@
    "images": {
     "cover": "/assets/animals/african_elephant/cover.jpg",
     "scale": "/assets/animals/african_elephant/scale.jpg",
-    "baby": "/assets/animals/african_elephant/baby.jpg"
+    "baby": "/assets/animals/african_elephant/baby.jpg",
+    "weight": "/assets/animals/african_elephant/weight.jpg"
    }
   },
   "lion": {
@@ -3204,7 +3207,8 @@
    "images": {
     "cover": "/assets/animals/lion/cover.jpg",
     "scale": "/assets/animals/lion/scale.jpg",
-    "baby": "/assets/animals/lion/baby.jpg"
+    "baby": "/assets/animals/lion/baby.jpg",
+    "weight": "/assets/animals/lion/weight.jpg"
    }
   },
   "cheetah": {
@@ -3253,7 +3257,8 @@
    "images": {
     "cover": "/assets/animals/cheetah/cover.jpg",
     "scale": "/assets/animals/cheetah/scale.jpg",
-    "baby": "/assets/animals/cheetah/baby.jpg"
+    "baby": "/assets/animals/cheetah/baby.jpg",
+    "weight": "/assets/animals/cheetah/weight.jpg"
    }
   },
   "leopard": {
@@ -3302,7 +3307,8 @@
    "images": {
     "cover": "/assets/animals/leopard/cover.jpg",
     "scale": "/assets/animals/leopard/scale.jpg",
-    "baby": "/assets/animals/leopard/baby.jpg"
+    "baby": "/assets/animals/leopard/baby.jpg",
+    "weight": "/assets/animals/leopard/weight.jpg"
    }
   },
   "giraffe": {
@@ -3350,7 +3356,8 @@
    "images": {
     "cover": "/assets/animals/giraffe/cover.jpg",
     "scale": "/assets/animals/giraffe/scale.jpg",
-    "baby": "/assets/animals/giraffe/baby.jpg"
+    "baby": "/assets/animals/giraffe/baby.jpg",
+    "weight": "/assets/animals/giraffe/weight.jpg"
    }
   },
   "zebra": {
@@ -3398,7 +3405,8 @@
    "images": {
     "cover": "/assets/animals/zebra/cover.jpg",
     "scale": "/assets/animals/zebra/scale.jpg",
-    "baby": "/assets/animals/zebra/baby.jpg"
+    "baby": "/assets/animals/zebra/baby.jpg",
+    "weight": "/assets/animals/zebra/weight.jpg"
    }
   },
   "hippopotamus": {
@@ -3446,7 +3454,8 @@
    "images": {
     "cover": "/assets/animals/hippopotamus/cover.jpg",
     "scale": "/assets/animals/hippopotamus/scale.jpg",
-    "baby": "/assets/animals/hippopotamus/baby.jpg"
+    "baby": "/assets/animals/hippopotamus/baby.jpg",
+    "weight": "/assets/animals/hippopotamus/weight.jpg"
    }
   },
   "rhinoceros": {
@@ -3495,7 +3504,8 @@
    "images": {
     "cover": "/assets/animals/rhinoceros/cover.jpg",
     "scale": "/assets/animals/rhinoceros/scale.jpg",
-    "baby": "/assets/animals/rhinoceros/baby.jpg"
+    "baby": "/assets/animals/rhinoceros/baby.jpg",
+    "weight": "/assets/animals/rhinoceros/weight.jpg"
    }
   },
   "african_buffalo": {
@@ -3587,7 +3597,8 @@
    "images": {
     "cover": "/assets/animals/hyena/cover.jpg",
     "scale": "/assets/animals/hyena/scale.jpg",
-    "baby": "/assets/animals/hyena/baby.jpg"
+    "baby": "/assets/animals/hyena/baby.jpg",
+    "weight": "/assets/animals/hyena/weight.jpg"
    }
   },
   "warthog": {
@@ -3721,7 +3732,8 @@
    "images": {
     "cover": "/assets/animals/ostrich/cover.jpg",
     "scale": "/assets/animals/ostrich/scale.jpg",
-    "baby": "/assets/animals/ostrich/baby.jpg"
+    "baby": "/assets/animals/ostrich/baby.jpg",
+    "weight": "/assets/animals/ostrich/weight.jpg"
    }
   },
   "baboon": {
@@ -3813,7 +3825,8 @@
    "images": {
     "cover": "/assets/animals/gorilla/cover.jpg",
     "scale": "/assets/animals/gorilla/scale.jpg",
-    "baby": "/assets/animals/gorilla/baby.jpg"
+    "baby": "/assets/animals/gorilla/baby.jpg",
+    "weight": "/assets/animals/gorilla/weight.jpg"
    }
   },
   "chimpanzee": {
@@ -3861,7 +3874,8 @@
    "images": {
     "cover": "/assets/animals/chimpanzee/cover.jpg",
     "scale": "/assets/animals/chimpanzee/scale.jpg",
-    "baby": "/assets/animals/chimpanzee/baby.jpg"
+    "baby": "/assets/animals/chimpanzee/baby.jpg",
+    "weight": "/assets/animals/chimpanzee/weight.jpg"
    }
   },
   "african_wild_dog": {
@@ -3909,7 +3923,8 @@
    "images": {
     "cover": "/assets/animals/african_wild_dog/cover.jpg",
     "scale": "/assets/animals/african_wild_dog/scale.jpg",
-    "baby": "/assets/animals/african_wild_dog/baby.jpg"
+    "baby": "/assets/animals/african_wild_dog/baby.jpg",
+    "weight": "/assets/animals/african_wild_dog/weight.jpg"
    }
   },
   "serval": {
@@ -4000,7 +4015,8 @@
    "images": {
     "cover": "/assets/animals/great_white_shark/cover.jpg",
     "scale": "/assets/animals/great_white_shark/scale.jpg",
-    "baby": "/assets/animals/great_white_shark/baby.jpg"
+    "baby": "/assets/animals/great_white_shark/baby.jpg",
+    "weight": "/assets/animals/great_white_shark/weight.jpg"
    }
   },
   "hammerhead_shark": {
@@ -4090,7 +4106,8 @@
    "images": {
     "cover": "/assets/animals/whale_shark/cover.jpg",
     "scale": "/assets/animals/whale_shark/scale.jpg",
-    "baby": "/assets/animals/whale_shark/baby.jpg"
+    "baby": "/assets/animals/whale_shark/baby.jpg",
+    "weight": "/assets/animals/whale_shark/weight.jpg"
    }
   },
   "orca": {
@@ -4138,7 +4155,8 @@
    "images": {
     "cover": "/assets/animals/orca/cover.jpg",
     "scale": "/assets/animals/orca/scale.jpg",
-    "baby": "/assets/animals/orca/baby.jpg"
+    "baby": "/assets/animals/orca/baby.jpg",
+    "weight": "/assets/animals/orca/weight.jpg"
    }
   },
   "blue_whale": {
@@ -4229,7 +4247,8 @@
    "images": {
     "cover": "/assets/animals/dolphin/cover.jpg",
     "scale": "/assets/animals/dolphin/scale.jpg",
-    "baby": "/assets/animals/dolphin/baby.jpg"
+    "baby": "/assets/animals/dolphin/baby.jpg",
+    "weight": "/assets/animals/dolphin/weight.jpg"
    }
   },
   "sea_turtle": {
@@ -4277,7 +4296,8 @@
    "images": {
     "cover": "/assets/animals/sea_turtle/cover.jpg",
     "scale": "/assets/animals/sea_turtle/scale.jpg",
-    "baby": "/assets/animals/sea_turtle/baby.jpg"
+    "baby": "/assets/animals/sea_turtle/baby.jpg",
+    "weight": "/assets/animals/sea_turtle/weight.jpg"
    }
   },
   "octopus": {
@@ -4325,7 +4345,8 @@
    "images": {
     "cover": "/assets/animals/octopus/cover.jpg",
     "scale": "/assets/animals/octopus/scale.jpg",
-    "baby": "/assets/animals/octopus/baby.jpg"
+    "baby": "/assets/animals/octopus/baby.jpg",
+    "weight": "/assets/animals/octopus/weight.jpg"
    }
   },
   "giant_squid": {
@@ -4673,7 +4694,8 @@
    "images": {
     "cover": "/assets/animals/narwhal/cover.jpg",
     "scale": "/assets/animals/narwhal/scale.jpg",
-    "baby": "/assets/animals/narwhal/baby.jpg"
+    "baby": "/assets/animals/narwhal/baby.jpg",
+    "weight": "/assets/animals/narwhal/weight.jpg"
    }
   },
   "beluga_whale": {
@@ -4810,7 +4832,8 @@
    "images": {
     "cover": "/assets/animals/jaguar/cover.jpg",
     "scale": "/assets/animals/jaguar/scale.jpg",
-    "baby": "/assets/animals/jaguar/baby.jpg"
+    "baby": "/assets/animals/jaguar/baby.jpg",
+    "weight": "/assets/animals/jaguar/weight.jpg"
    }
   },
   "sloth": {
@@ -4859,7 +4882,8 @@
    "images": {
     "cover": "/assets/animals/sloth/cover.jpg",
     "scale": "/assets/animals/sloth/scale.jpg",
-    "baby": "/assets/animals/sloth/baby.jpg"
+    "baby": "/assets/animals/sloth/baby.jpg",
+    "weight": "/assets/animals/sloth/weight.jpg"
    }
   },
   "toucan": {
@@ -4952,7 +4976,8 @@
    "images": {
     "cover": "/assets/animals/macaw/cover.jpg",
     "scale": "/assets/animals/macaw/scale.jpg",
-    "baby": "/assets/animals/macaw/baby.jpg"
+    "baby": "/assets/animals/macaw/baby.jpg",
+    "weight": "/assets/animals/macaw/weight.jpg"
    }
   },
   "poison_dart_frog": {
@@ -5001,7 +5026,8 @@
    "images": {
     "cover": "/assets/animals/poison_dart_frog/cover.jpg",
     "scale": "/assets/animals/poison_dart_frog/scale.jpg",
-    "baby": "/assets/animals/poison_dart_frog/baby.jpg"
+    "baby": "/assets/animals/poison_dart_frog/baby.jpg",
+    "weight": "/assets/animals/poison_dart_frog/weight.jpg"
    }
   },
   "anaconda": {
@@ -5092,7 +5118,8 @@
    "images": {
     "cover": "/assets/animals/capybara/cover.jpg",
     "scale": "/assets/animals/capybara/scale.jpg",
-    "baby": "/assets/animals/capybara/baby.jpg"
+    "baby": "/assets/animals/capybara/baby.jpg",
+    "weight": "/assets/animals/capybara/weight.jpg"
    }
   },
   "howler_monkey": {
@@ -5228,7 +5255,8 @@
    "images": {
     "cover": "/assets/animals/orangutan/cover.jpg",
     "scale": "/assets/animals/orangutan/scale.jpg",
-    "baby": "/assets/animals/orangutan/baby.jpg"
+    "baby": "/assets/animals/orangutan/baby.jpg",
+    "weight": "/assets/animals/orangutan/weight.jpg"
    }
   },
   "tapir": {
@@ -5277,7 +5305,8 @@
    "images": {
     "cover": "/assets/animals/tapir/cover.jpg",
     "scale": "/assets/animals/tapir/scale.jpg",
-    "baby": "/assets/animals/tapir/baby.jpg"
+    "baby": "/assets/animals/tapir/baby.jpg",
+    "weight": "/assets/animals/tapir/weight.jpg"
    }
   },
   "leafcutter_ant": {
@@ -5413,7 +5442,8 @@
    "images": {
     "cover": "/assets/animals/okapi/cover.jpg",
     "scale": "/assets/animals/okapi/scale.jpg",
-    "baby": "/assets/animals/okapi/baby.jpg"
+    "baby": "/assets/animals/okapi/baby.jpg",
+    "weight": "/assets/animals/okapi/weight.jpg"
    }
   },
   "tree_frog": {
@@ -5679,7 +5709,8 @@
    "images": {
     "cover": "/assets/animals/horse/cover.jpg",
     "scale": "/assets/animals/horse/scale.jpg",
-    "baby": "/assets/animals/horse/baby.jpg"
+    "baby": "/assets/animals/horse/baby.jpg",
+    "weight": "/assets/animals/horse/weight.jpg"
    }
   },
   "sheep": {
@@ -5985,7 +6016,8 @@
    "images": {
     "cover": "/assets/animals/donkey/cover.jpg",
     "scale": "/assets/animals/donkey/scale.jpg",
-    "baby": "/assets/animals/donkey/baby.jpg"
+    "baby": "/assets/animals/donkey/baby.jpg",
+    "weight": "/assets/animals/donkey/weight.jpg"
    }
   },
   "llama": {
@@ -6388,7 +6420,8 @@
    "images": {
     "cover": "/assets/animals/barn_owl/cover.jpg",
     "scale": "/assets/animals/barn_owl/scale.jpg",
-    "baby": "/assets/animals/barn_owl/baby.jpg"
+    "baby": "/assets/animals/barn_owl/baby.jpg",
+    "weight": "/assets/animals/barn_owl/weight.jpg"
    }
   },
   "bald_eagle": {
@@ -6436,7 +6469,8 @@
    "images": {
     "cover": "/assets/animals/bald_eagle/cover.jpg",
     "scale": "/assets/animals/bald_eagle/scale.jpg",
-    "baby": "/assets/animals/bald_eagle/baby.jpg"
+    "baby": "/assets/animals/bald_eagle/baby.jpg",
+    "weight": "/assets/animals/bald_eagle/weight.jpg"
    }
   },
   "peregrine_falcon": {
@@ -6705,7 +6739,8 @@
    "images": {
     "cover": "/assets/animals/emperor_penguin/cover.jpg",
     "scale": "/assets/animals/emperor_penguin/scale.jpg",
-    "baby": "/assets/animals/emperor_penguin/baby.jpg"
+    "baby": "/assets/animals/emperor_penguin/baby.jpg",
+    "weight": "/assets/animals/emperor_penguin/weight.jpg"
    }
   },
   "atlantic_puffin": {
@@ -6797,7 +6832,8 @@
    "images": {
     "cover": "/assets/animals/hummingbird/cover.jpg",
     "scale": "/assets/animals/hummingbird/scale.jpg",
-    "baby": "/assets/animals/hummingbird/baby.jpg"
+    "baby": "/assets/animals/hummingbird/baby.jpg",
+    "weight": "/assets/animals/hummingbird/weight.jpg"
    }
   },
   "blue_jay": {
@@ -7026,7 +7062,8 @@
    "images": {
     "cover": "/assets/animals/parrot/cover.jpg",
     "scale": "/assets/animals/parrot/scale.jpg",
-    "baby": "/assets/animals/parrot/baby.jpg"
+    "baby": "/assets/animals/parrot/baby.jpg",
+    "weight": "/assets/animals/parrot/weight.jpg"
    }
   },
   "cockatoo": {
@@ -7208,7 +7245,8 @@
    "images": {
     "cover": "/assets/animals/albatross/cover.jpg",
     "scale": "/assets/animals/albatross/scale.jpg",
-    "baby": "/assets/animals/albatross/baby.jpg"
+    "baby": "/assets/animals/albatross/baby.jpg",
+    "weight": "/assets/animals/albatross/weight.jpg"
    }
   },
   "king_cobra": {
@@ -7256,7 +7294,8 @@
    "images": {
     "cover": "/assets/animals/king_cobra/cover.jpg",
     "scale": "/assets/animals/king_cobra/scale.jpg",
-    "baby": "/assets/animals/king_cobra/baby.jpg"
+    "baby": "/assets/animals/king_cobra/baby.jpg",
+    "weight": "/assets/animals/king_cobra/weight.jpg"
    }
   },
   "burmese_python": {
@@ -7612,7 +7651,8 @@
    "images": {
     "cover": "/assets/animals/crocodile/cover.jpg",
     "scale": "/assets/animals/crocodile/scale.jpg",
-    "baby": "/assets/animals/crocodile/baby.jpg"
+    "baby": "/assets/animals/crocodile/baby.jpg",
+    "weight": "/assets/animals/crocodile/weight.jpg"
    }
   },
   "box_turtle": {
@@ -8059,7 +8099,8 @@
    "images": {
     "cover": "/assets/animals/bison/cover.jpg",
     "scale": "/assets/animals/bison/scale.jpg",
-    "baby": "/assets/animals/bison/baby.jpg"
+    "baby": "/assets/animals/bison/baby.jpg",
+    "weight": "/assets/animals/bison/weight.jpg"
    }
   },
   "grizzly_bear": {
@@ -8108,7 +8149,8 @@
    "images": {
     "cover": "/assets/animals/grizzly_bear/cover.jpg",
     "scale": "/assets/animals/grizzly_bear/scale.jpg",
-    "baby": "/assets/animals/grizzly_bear/baby.jpg"
+    "baby": "/assets/animals/grizzly_bear/baby.jpg",
+    "weight": "/assets/animals/grizzly_bear/weight.jpg"
    }
   },
   "black_bear": {
@@ -8289,7 +8331,8 @@
    "images": {
     "cover": "/assets/animals/cougar/cover.jpg",
     "scale": "/assets/animals/cougar/scale.jpg",
-    "baby": "/assets/animals/cougar/baby.jpg"
+    "baby": "/assets/animals/cougar/baby.jpg",
+    "weight": "/assets/animals/cougar/weight.jpg"
    }
   },
   "bobcat": {
@@ -8473,7 +8516,8 @@
    "images": {
     "cover": "/assets/animals/raccoon/cover.jpg",
     "scale": "/assets/animals/raccoon/scale.jpg",
-    "baby": "/assets/animals/raccoon/baby.jpg"
+    "baby": "/assets/animals/raccoon/baby.jpg",
+    "weight": "/assets/animals/raccoon/weight.jpg"
    }
   },
   "beaver": {
@@ -8522,7 +8566,8 @@
    "images": {
     "cover": "/assets/animals/beaver/cover.jpg",
     "scale": "/assets/animals/beaver/scale.jpg",
-    "baby": "/assets/animals/beaver/baby.jpg"
+    "baby": "/assets/animals/beaver/baby.jpg",
+    "weight": "/assets/animals/beaver/weight.jpg"
    }
   },
   "mountain_goat": {
@@ -8875,7 +8920,8 @@
    "images": {
     "cover": "/assets/animals/polar_bear/cover.jpg",
     "scale": "/assets/animals/polar_bear/scale.jpg",
-    "baby": "/assets/animals/polar_bear/baby.jpg"
+    "baby": "/assets/animals/polar_bear/baby.jpg",
+    "weight": "/assets/animals/polar_bear/weight.jpg"
    }
   },
   "arctic_wolf": {
@@ -8924,7 +8970,8 @@
    "images": {
     "cover": "/assets/animals/arctic_wolf/cover.jpg",
     "scale": "/assets/animals/arctic_wolf/scale.jpg",
-    "baby": "/assets/animals/arctic_wolf/baby.jpg"
+    "baby": "/assets/animals/arctic_wolf/baby.jpg",
+    "weight": "/assets/animals/arctic_wolf/weight.jpg"
    }
   },
   "snow_leopard": {
@@ -8972,7 +9019,8 @@
    "images": {
     "cover": "/assets/animals/snow_leopard/cover.jpg",
     "scale": "/assets/animals/snow_leopard/scale.jpg",
-    "baby": "/assets/animals/snow_leopard/baby.jpg"
+    "baby": "/assets/animals/snow_leopard/baby.jpg",
+    "weight": "/assets/animals/snow_leopard/weight.jpg"
    }
   },
   "camel": {
@@ -9021,7 +9069,8 @@
    "images": {
     "cover": "/assets/animals/camel/cover.jpg",
     "scale": "/assets/animals/camel/scale.jpg",
-    "baby": "/assets/animals/camel/baby.jpg"
+    "baby": "/assets/animals/camel/baby.jpg",
+    "weight": "/assets/animals/camel/weight.jpg"
    }
   },
   "fennec_fox": {
@@ -9328,7 +9377,8 @@
    "images": {
     "cover": "/assets/animals/red_panda/cover.jpg",
     "scale": "/assets/animals/red_panda/scale.jpg",
-    "baby": "/assets/animals/red_panda/baby.jpg"
+    "baby": "/assets/animals/red_panda/baby.jpg",
+    "weight": "/assets/animals/red_panda/weight.jpg"
    }
   },
   "ibex": {
@@ -9621,7 +9671,8 @@
    "images": {
     "cover": "/assets/animals/lemur/cover.jpg",
     "scale": "/assets/animals/lemur/scale.jpg",
-    "baby": "/assets/animals/lemur/baby.jpg"
+    "baby": "/assets/animals/lemur/baby.jpg",
+    "weight": "/assets/animals/lemur/weight.jpg"
    }
   },
   "amur_tiger": {
@@ -9671,7 +9722,8 @@
    "images": {
     "cover": "/assets/animals/amur_tiger/cover.jpg",
     "scale": "/assets/animals/amur_tiger/scale.jpg",
-    "baby": "/assets/animals/amur_tiger/baby.jpg"
+    "baby": "/assets/animals/amur_tiger/baby.jpg",
+    "weight": "/assets/animals/amur_tiger/weight.jpg"
    }
   },
   "pangolin": {
@@ -9725,7 +9777,8 @@
    "images": {
     "cover": "/assets/animals/pangolin/cover.jpg",
     "scale": "/assets/animals/pangolin/scale.jpg",
-    "baby": "/assets/animals/pangolin/baby.jpg"
+    "baby": "/assets/animals/pangolin/baby.jpg",
+    "weight": "/assets/animals/pangolin/weight.jpg"
    }
   },
   "sea_otter": {
@@ -9777,7 +9830,8 @@
    "images": {
     "cover": "/assets/animals/sea_otter/cover.jpg",
     "scale": "/assets/animals/sea_otter/scale.jpg",
-    "baby": "/assets/animals/sea_otter/baby.jpg"
+    "baby": "/assets/animals/sea_otter/baby.jpg",
+    "weight": "/assets/animals/sea_otter/weight.jpg"
    }
   },
   "axolotl": {
@@ -9826,7 +9880,8 @@
    "images": {
     "cover": "/assets/animals/axolotl/cover.jpg",
     "scale": "/assets/animals/axolotl/scale.jpg",
-    "baby": "/assets/animals/axolotl/baby.jpg"
+    "baby": "/assets/animals/axolotl/baby.jpg",
+    "weight": "/assets/animals/axolotl/weight.jpg"
    }
   },
   "clouded_leopard": {
@@ -9881,7 +9936,8 @@
    "images": {
     "cover": "/assets/animals/clouded_leopard/cover.jpg",
     "scale": "/assets/animals/clouded_leopard/scale.jpg",
-    "baby": "/assets/animals/clouded_leopard/baby.jpg"
+    "baby": "/assets/animals/clouded_leopard/baby.jpg",
+    "weight": "/assets/animals/clouded_leopard/weight.jpg"
    }
   },
   "koala": {
@@ -9930,7 +9986,8 @@
    "images": {
     "cover": "/assets/animals/koala/cover.jpg",
     "scale": "/assets/animals/koala/scale.jpg",
-    "baby": "/assets/animals/koala/baby.jpg"
+    "baby": "/assets/animals/koala/baby.jpg",
+    "weight": "/assets/animals/koala/weight.jpg"
    }
   },
   "wombat": {
@@ -9979,7 +10036,8 @@
    "images": {
     "cover": "/assets/animals/wombat/cover.jpg",
     "scale": "/assets/animals/wombat/scale.jpg",
-    "baby": "/assets/animals/wombat/baby.jpg"
+    "baby": "/assets/animals/wombat/baby.jpg",
+    "weight": "/assets/animals/wombat/weight.jpg"
    }
   },
   "harp_seal": {
@@ -10031,7 +10089,8 @@
    "images": {
     "cover": "/assets/animals/harp_seal/cover.jpg",
     "scale": "/assets/animals/harp_seal/scale.jpg",
-    "baby": "/assets/animals/harp_seal/baby.jpg"
+    "baby": "/assets/animals/harp_seal/baby.jpg",
+    "weight": "/assets/animals/harp_seal/weight.jpg"
    }
   },
   "west_indian_manatee": {
@@ -10127,7 +10186,8 @@
    "images": {
     "cover": "/assets/animals/bonobo/cover.jpg",
     "scale": "/assets/animals/bonobo/scale.jpg",
-    "baby": "/assets/animals/bonobo/baby.jpg"
+    "baby": "/assets/animals/bonobo/baby.jpg",
+    "weight": "/assets/animals/bonobo/weight.jpg"
    }
   },
   "fruit_bat": {
@@ -10180,7 +10240,8 @@
    "images": {
     "cover": "/assets/animals/fruit_bat/cover.jpg",
     "scale": "/assets/animals/fruit_bat/scale.jpg",
-    "baby": "/assets/animals/fruit_bat/baby.jpg"
+    "baby": "/assets/animals/fruit_bat/baby.jpg",
+    "weight": "/assets/animals/fruit_bat/weight.jpg"
    }
   },
   "pallas_cat": {
@@ -10233,7 +10294,8 @@
    "images": {
     "cover": "/assets/animals/pallas_cat/cover.jpg",
     "scale": "/assets/animals/pallas_cat/scale.jpg",
-    "baby": "/assets/animals/pallas_cat/baby.jpg"
+    "baby": "/assets/animals/pallas_cat/baby.jpg",
+    "weight": "/assets/animals/pallas_cat/weight.jpg"
    }
   },
   "cassowary": {
@@ -10285,7 +10347,8 @@
    "images": {
     "cover": "/assets/animals/cassowary/cover.jpg",
     "scale": "/assets/animals/cassowary/scale.jpg",
-    "baby": "/assets/animals/cassowary/baby.jpg"
+    "baby": "/assets/animals/cassowary/baby.jpg",
+    "weight": "/assets/animals/cassowary/weight.jpg"
    }
   },
   "spectacled_bear": {
@@ -10475,7 +10538,8 @@
    "images": {
     "cover": "/assets/animals/gibbon/cover.jpg",
     "scale": "/assets/animals/gibbon/scale.jpg",
-    "baby": "/assets/animals/gibbon/baby.jpg"
+    "baby": "/assets/animals/gibbon/baby.jpg",
+    "weight": "/assets/animals/gibbon/weight.jpg"
    }
   },
   "numbat": {
@@ -10524,7 +10588,8 @@
    "images": {
     "cover": "/assets/animals/numbat/cover.jpg",
     "scale": "/assets/animals/numbat/scale.jpg",
-    "baby": "/assets/animals/numbat/baby.jpg"
+    "baby": "/assets/animals/numbat/baby.jpg",
+    "weight": "/assets/animals/numbat/weight.jpg"
    }
   }
  }

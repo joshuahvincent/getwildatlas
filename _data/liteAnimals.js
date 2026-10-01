@@ -19,6 +19,14 @@ function fullArticleAppIds(root, days) {
     if (/^status:\s*draft\s*$/m.test(fs.readFileSync(f, "utf8")) && !process.env.SHOW_HIDDEN_POSTS) continue;
     if (!ids.has(d.appId)) ids.set(d.appId, `/calendar/${d.slug}/`);
   }
+  // Detailed animal pages declare their animal with front-matter `appId:`.
+  for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".md"))) {
+    const t = fs.readFileSync(path.join(dir, f), "utf8");
+    const m = t.match(/^appId:\s*([a-z_]+)\s*$/m);
+    if (!m) continue;
+    if (/^status:\s*draft\s*$/m.test(t) && !process.env.SHOW_HIDDEN_POSTS) continue;
+    if (!ids.has(m[1])) ids.set(m[1], `/calendar/${f.replace(/\.md$/, "")}/`);
+  }
   return ids;
 }
 
