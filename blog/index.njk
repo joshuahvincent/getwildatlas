@@ -29,7 +29,7 @@ eleventyExcludeFromCollections: true
             {% if post.data.thumbImage %}
               <img class="blog-list-thumb" src="{{ post.data.thumbImage }}" alt="" width="240" height="160" loading="lazy" style="width: 240px; height: 160px; object-fit: cover; border-radius: 12px; flex-shrink: 0; margin: 0;">
             {% elif post.data.coverImage %}
-              <img src="{{ post.data.coverImage }}" alt="" style="width: 120px; height: 80px; object-fit: cover; border-radius: 6px; flex-shrink: 0; margin: 0;">
+              <img class="blog-list-thumb" src="{{ post.data.coverImage }}" alt="" width="240" height="160" loading="lazy" style="width: 240px; height: 160px; object-fit: cover; border-radius: 12px; flex-shrink: 0; margin: 0;">
             {% endif %}
             <div>
               <h2 style="margin: 0 0 0.25rem; color: var(--accent);">{{ post.data.title }}</h2>
