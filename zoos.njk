@@ -1,0 +1,69 @@
+---
+layout: layouts/blog-base.njk
+title: "Where to See a Real Animal Near You"
+excerpt: "Pick an animal and find zoos, aquariums, museums and farms near you where your family can meet one in real life."
+permalink: /zoos/
+---
+<link rel="stylesheet" href="/js/vendor/maplibre/maplibre-gl.css">
+<link rel="stylesheet" href="/css/zoos.css?v=1">
+
+<div class="zf" id="zf">
+  <header class="zf-head">
+    <h1>Find a place to see a real <span id="zf-name">animal</span></h1>
+    <p class="zf-sub">Pick an animal, tell us roughly where you are, and we'll show the closest zoos, aquariums, museums and farms to visit with your family.</p>
+  </header>
+
+  <section class="zf-controls" aria-label="Search">
+    <div class="zf-row">
+      <label for="zf-animal" class="zf-label">Animal</label>
+      <select id="zf-animal" class="zf-select"><option value="">Loading animals…</option></select>
+    </div>
+
+    <div class="zf-row">
+      <span class="zf-label" id="zf-where-label">Where are you?</span>
+      <div class="zf-where" role="group" aria-labelledby="zf-where-label">
+        <button type="button" class="zf-btn" id="zf-locate">Use my location</button>
+        <span class="zf-or" aria-hidden="true">or</span>
+        <form class="zf-search" id="zf-form" autocomplete="off" role="search">
+          <label for="zf-q" class="sr-only">City or postcode</label>
+          <input type="text" id="zf-q" class="zf-input" placeholder="City or postcode" inputmode="text" autocapitalize="off" spellcheck="false" aria-controls="zf-suggest" aria-autocomplete="list">
+          <button type="submit" class="zf-btn zf-btn-quiet">Search</button>
+          <ul id="zf-suggest" class="zf-suggest" role="listbox" hidden></ul>
+        </form>
+      </div>
+      <p class="zf-privacy" id="zf-privacy">Your location stays in your browser. We use it only to sort this list. It is never sent to us or saved.</p>
+    </div>
+
+    <fieldset class="zf-row zf-dist" id="zf-dist">
+      <legend class="zf-label">How far?</legend>
+      <div class="zf-chips" id="zf-chips"></div>
+    </fieldset>
+  </section>
+
+  <p class="zf-notice" id="zf-notice" role="note"></p>
+  <p class="zf-status" id="zf-status" role="status" aria-live="polite"></p>
+
+  <div class="zf-tabs" id="zf-tabs" role="tablist" aria-label="View">
+    <button type="button" role="tab" id="zf-tab-list" aria-selected="true" aria-controls="zf-listpane">List</button>
+    <button type="button" role="tab" id="zf-tab-map" aria-selected="false" aria-controls="zf-mappane">Map</button>
+  </div>
+
+  <div class="zf-main" id="zf-main">
+    <div class="zf-listpane" id="zf-listpane" role="tabpanel" aria-labelledby="zf-tab-list">
+      <div id="zf-results"></div>
+    </div>
+    <div class="zf-mappane" id="zf-mappane" role="tabpanel" aria-labelledby="zf-tab-map">
+      <div class="zf-map" id="zf-map" aria-label="Map of places. The list next to it has the same places."></div>
+      <ul class="zf-legend" id="zf-legend" aria-hidden="true"></ul>
+    </div>
+  </div>
+
+  <footer class="zf-foot">
+    <p>Zoos and aquariums listed here are accredited by a recognised zoo association (AZA, CAZA, EAZA, BIAZA, ZAA). Museums are public natural-history museums. Farms and petting zoos come from OpenStreetMap and are not accredited, so please check them yourself. Places are always independent of Wild Atlas, and listing a place does not mean it works with us.</p>
+    <p class="zf-credits">Map outlines: Natural Earth (public domain). City and postcode locations: <a href="https://www.geonames.org" rel="noopener">GeoNames</a> (CC BY 4.0). Place photos: Wikimedia Commons, credited on each card.</p>
+    <p><a class="zf-app" href="https://apps.apple.com/us/app/wild-atlas/id6761081031?ct=find_a_zoo&amp;utm_source=website&amp;utm_medium=owned&amp;utm_campaign=find_a_zoo">Meet the animals in Wild Atlas first →</a></p>
+  </footer>
+</div>
+
+<script type="module" src="/js/zoos.js?v=1"></script>
+<noscript><p>This page needs JavaScript to find places near you. You can browse the <a href="/blog/">Wild Atlas blog</a> in the meantime.</p></noscript>

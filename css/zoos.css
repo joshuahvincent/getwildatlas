@@ -1,0 +1,91 @@
+/* /zoos/ — find a place to see a real animal. Uses the site's tokens (--accent, --ink, --muted, --rule, --bg) from the base layout. */
+.page-shell { max-width: 1180px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.zf { padding: 0 0 2rem; font-size: 16px; line-height: 1.5; }
+.zf h1 { font-size: clamp(1.6rem, 4.5vw, 2.3rem); margin: 0 0 .4rem; }
+.zf-sub { color: var(--muted); margin: 0 0 1.25rem; max-width: 46rem; }
+.zf-controls { background: #fff; border: 1px solid var(--rule); border-radius: 16px; padding: 1rem; display: grid; gap: 1rem; margin-bottom: 1rem; }
+.zf-row { border: 0; padding: 0; margin: 0; min-width: 0; }
+.zf-label { display: block; font-family: "Fredoka", system-ui, sans-serif; font-weight: 600; font-size: .9rem; color: var(--ink); margin: 0 0 .35rem; padding: 0; }
+.zf-select, .zf-input { font: inherit; width: 100%; max-width: 26rem; padding: .65rem .8rem; border: 1px solid #cdbf9f; border-radius: 10px; background: #fff; color: var(--ink); min-height: 44px; }
+.zf-where { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; position: relative; }
+.zf-or { color: var(--muted); }
+.zf-search { display: flex; gap: .5rem; flex: 1 1 18rem; position: relative; }
+.zf-search .zf-input { flex: 1; }
+.zf-btn { font: inherit; font-weight: 700; padding: .65rem 1.1rem; border-radius: 999px; border: 0; background: var(--accent); color: #fff; cursor: pointer; min-height: 44px; }
+.zf-btn:hover { filter: brightness(.95); }
+.zf-btn:disabled { opacity: .6; cursor: default; }
+.zf-btn-quiet { background: #f1e6cf; color: var(--ink); }
+.zf-btn:focus-visible, .zf-chip input:focus-visible + span, .zf-select:focus-visible, .zf-input:focus-visible, .zf-card a:focus-visible, .zf-card button:focus-visible, .zf-tabs button:focus-visible { outline: 3px solid #2b6cb0; outline-offset: 2px; }
+.zf-privacy { font-size: .82rem; color: var(--muted); margin: .5rem 0 0; }
+.zf-suggest { position: absolute; z-index: 20; top: 100%; left: 0; right: 0; margin: 4px 0 0; padding: 4px; list-style: none; background: #fff; border: 1px solid var(--rule); border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,.12); max-height: 16rem; overflow: auto; }
+.zf-suggest li { margin: 0; padding: .55rem .7rem; border-radius: 8px; cursor: pointer; }
+.zf-suggest li:hover, .zf-suggest li[aria-selected="true"] { background: #f7ecd6; }
+.zf-chips { display: flex; flex-wrap: wrap; gap: .45rem; }
+.zf-chip { position: relative; }
+.zf-chip input { position: absolute; opacity: 0; inset: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; }
+.zf-chip span { display: inline-block; padding: .5rem .9rem; border: 1px solid #cdbf9f; border-radius: 999px; background: #fff; font-weight: 600; min-height: 40px; }
+.zf-chip input:checked + span { background: var(--accent); border-color: var(--accent); color: #fff; }
+.zf-notice { background: #fff4cc; border: 1px solid #ecd48a; border-radius: 12px; padding: .7rem 1rem; margin: 0 0 .75rem; font-size: .92rem; color: #4a3b00; }
+.zf-notice strong { font-weight: 800; }
+.zf-status { min-height: 1.4em; margin: 0 0 .75rem; font-size: .95rem; }
+.zf-tabs { display: none; gap: .4rem; margin: 0 0 .75rem; }
+.zf-tabs button { font: inherit; font-weight: 700; flex: 1; padding: .6rem; border-radius: 10px; border: 1px solid #cdbf9f; background: #fff; cursor: pointer; min-height: 44px; }
+.zf-tabs button[aria-selected="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+.zf-main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+.zf-mappane { position: relative; }
+.zf-map { height: 420px; border-radius: 16px; overflow: hidden; border: 1px solid var(--rule); background: #dfeaf2; }
+.zf-legend { list-style: none; display: flex; flex-wrap: wrap; gap: .4rem 1rem; margin: .5rem 0 0; padding: 0; font-size: .82rem; color: var(--muted); }
+.zf-legend li { margin: 0; display: flex; align-items: center; gap: .35rem; }
+.zf-dot { width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--accent); display: inline-block; }
+.zf-dot.e { background: var(--accent); } .zf-dot.w { background: #e9b99f; } .zf-dot.r { background: #fff; border-color: #e08a5f; background: #f7d3bf; } .zf-dot.g { background: #fff; border-color: #8a7b66; } .zf-dot.me { background: #2b6cb0; border-color: #fff; box-shadow: 0 0 0 2px #2b6cb0; }
+.zf-sec { margin: 0 0 1.25rem; }
+.zf-sec > h2 { font-size: 1.15rem; margin: 0 0 .6rem; }
+.zf-sec > h2 small { font-family: "Nunito", sans-serif; font-weight: 600; color: var(--muted); font-size: .85rem; }
+.zf-list { list-style: none; padding: 0; margin: 0; display: grid; gap: .75rem; }
+.zf-card { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: .8rem; background: #fff; border: 1px solid var(--rule); border-radius: 14px; padding: .7rem; margin: 0; }
+.zf-card.is-active { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(194,90,44,.25); }
+.zf-photo { width: 96px; height: 96px; border-radius: 10px; object-fit: cover; background: #efe4cb; display: block; }
+.zf-photo-ph { width: 96px; height: 96px; border-radius: 10px; background: #efe4cb; display: grid; place-items: center; font-size: 2rem; }
+.zf-card h3 { margin: 0; font-size: 1.05rem; line-height: 1.25; }
+.zf-where-line { color: var(--muted); font-size: .88rem; margin: 0; }
+.zf-top { display: flex; justify-content: space-between; gap: .5rem; align-items: baseline; }
+.zf-dist-val { font-weight: 800; white-space: nowrap; font-size: .95rem; }
+.zf-note { margin: .3rem 0 0; font-size: .9rem; }
+.zf-note.weak { color: #8a4b00; font-weight: 600; }
+.zf-badges { display: flex; flex-wrap: wrap; gap: .35rem; margin: .4rem 0 0; }
+.zf-badge { font-size: .74rem; font-weight: 700; padding: .12rem .5rem; border-radius: 999px; background: #efe4cb; color: #4a3b22; }
+.zf-badge.na { background: #fde7d9; color: #8a3b10; }
+.zf-badge.type { background: #e3eefb; color: #1f4a7a; }
+.zf-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin: .45rem 0 0; font-size: .88rem; }
+.zf-actions button { font: inherit; font-weight: 700; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; }
+.zf-credit { font-size: .68rem; color: var(--muted); margin: .25rem 0 0; grid-column: 1; max-width: 96px; line-height: 1.2; overflow-wrap: anywhere; }
+
+.zf-moreBtn { margin: .75rem 0 0; }
+.zf-more { margin: 0 0 1.25rem; }
+.zf-more > summary { cursor: pointer; font-weight: 700; padding: .5rem 0; }
+.zf-empty { background: #fff; border: 1px dashed #cdbf9f; border-radius: 14px; padding: 1rem; }
+.zf-empty button { margin-top: .4rem; }
+.zf-foot { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-size: .85rem; color: var(--muted); }
+.zf-foot a { color: var(--accent); }
+.zf-app { font-weight: 800; font-size: 1rem; }
+.maplibregl-popup-content { font-family: "Nunito", system-ui, sans-serif; font-size: 14px; line-height: 1.4; padding: 12px 14px; border-radius: 12px; max-width: 260px; color: #2A2118; }
+.maplibregl-popup-content h4 { margin: 0 0 2px; font-family: "Fredoka", system-ui, sans-serif; font-size: 15px; }
+.maplibregl-popup-content p { margin: 2px 0; font-size: 13px; }
+.maplibregl-popup-content .pp-warn { color: #8a4b00; font-weight: 700; }
+@media (min-width: 900px) {
+  .zf-main { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); align-items: start; }
+  .zf-mappane { position: sticky; top: 84px; }
+  .zf-map { height: calc(100vh - 150px); min-height: 420px; max-height: 720px; }
+}
+@media (max-width: 899px) {
+  .zf-tabs { display: flex; }
+  .zf-main[data-view="list"] .zf-mappane { display: none; }
+  .zf-main[data-view="map"] .zf-listpane { display: none; }
+  .zf-map { height: 62vh; }
+}
+@media (max-width: 420px) {
+  .zf-card { grid-template-columns: 72px minmax(0, 1fr); }
+  .zf-photo, .zf-photo-ph { width: 72px; height: 72px; }
+  .zf-credit { max-width: 72px; }
+}
