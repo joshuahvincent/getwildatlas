@@ -3,7 +3,7 @@ title: "World Lemur Day: Ring-Tailed Lemur Facts for Kids — Meet the Animal Th
 date: 2026-10-30
 author: Wild Atlas
 excerpt: "Happy World Lemur Day! Meet the ring-tailed lemur — it sits up every sunny morning, spreads its arms wide and sunbathes like it's doing yoga. A read-aloud, plus real zoos where you can go meet one."
-coverImage: /assets/blog/world-lemur-day-2026/cover.jpg
+coverImage: /assets/blog/world-lemur-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: World Lemur Day
@@ -11,7 +11,7 @@ animalDay:
   animalName: ring-tailed lemur
   animalArticle: a
   campaign: world_lemur_day_2026
-  greeting: "**Happy World Lemur Day!** It falls on the last Friday of every October — this year that's Friday, October 30, the day before Halloween. Time to meet one of the sunniest animals on Earth: the ring-tailed lemur."
+  greeting: "**Happy World Lemur Day!** It falls on the last Friday of every October, just before Halloween. Time to meet one of the sunniest animals on Earth: the ring-tailed lemur."
   readAloudNote: "Read this one out loud together — it's short, and it's more fun with arms spread wide."
   whereToSee:
     heading: Where to see a ring-tailed lemur
@@ -71,7 +71,7 @@ blogStatus: scheduled
 
 Every sunny morning, ring-tailed lemurs sit up, spread their arms wide, and sunbathe — like they're doing yoga!
 
-{% figure "/assets/blog/world-lemur-day-2026/cover.jpg", "A ring-tailed lemur sitting upright on a sunlit boulder, arms spread wide and belly turned to the sun, in the dry spiny forest of southern Madagascar" %}
+{% figure "/assets/blog/world-lemur-day/cover.jpg", "A ring-tailed lemur sitting upright on a sunlit boulder, arms spread wide and belly turned to the sun, in the dry spiny forest of southern Madagascar" %}
 
 Meet the ring-tailed lemur. It lives in only one place on Earth — the dry forests and rocky hills of southern Madagascar, an island off the coast of Africa.
 
@@ -79,11 +79,11 @@ Can you sit up tall and spread your arms wide to warm your tummy in the sun, jus
 
 Here's a wow fact: its striped tail is even longer than the rest of its body — but it can't grab with it. Instead, its tail helps it balance and sends signals to its family.
 
-{% figure "/assets/blog/world-lemur-day-2026/scale.jpg", "A cartoon ring-tailed lemur sitting upright beside the Wild Atlas explorer girl for scale; at 45 cm, its head reaches just to the bottom of her shorts" %}
+{% figure "/assets/blog/world-lemur-day/scale.jpg", "A cartoon ring-tailed lemur sitting upright beside the Wild Atlas explorer girl for scale; at 45 cm, its head reaches just to the bottom of her shorts" %}
 
 When a ring-tailed lemur sits up, it's less than half as tall as a 5-year-old!
 
-{% figure "/assets/blog/world-lemur-day-2026/weight.jpg", "Two scales: seven ring-tailed lemurs weigh 21 kg (46 lb) on one, and one five-year-old child weighs 19 kg (41 lb) on the other" %}
+{% figure "/assets/blog/world-lemur-day/weight.jpg", "Two scales: seven ring-tailed lemurs weigh 21 kg (46 lb) on one, and one five-year-old child weighs 19 kg (41 lb) on the other" %}
 
 It would take about seven lemurs on a scale to outweigh one five-year-old!
 
@@ -91,12 +91,12 @@ In a lemur family, called a troop, the grown-up girls are in charge — they lea
 
 Can you wave your hand in the air like a lemur waving its stripy tail?
 
-{% figure "/assets/blog/world-lemur-day-2026/baby.jpg", "A mother ring-tailed lemur walking through leaf litter with her baby riding piggyback on her back" %}
+{% figure "/assets/blog/world-lemur-day/baby.jpg", "A mother ring-tailed lemur walking through leaf litter with her baby riding piggyback on her back" %}
 
 A newborn lemur weighs about as much as an egg. At first it clings to its mom's tummy, and after about two weeks, it climbs onto her back and rides piggyback.
 
 Can you make a lemur sound — a squeaky meow, a purr, or a click?
 
-{% figure "/assets/blog/world-lemur-day-2026/habitat.jpg", "A line of ring-tailed lemurs walking along a sunlit boulder with their striped tails held high and curled at the tips, over the dry spiny forest of southern Madagascar" %}
+{% figure "/assets/blog/world-lemur-day/habitat.jpg", "A line of ring-tailed lemurs walking along a sunlit boulder with their striped tails held high and curled at the tips, over the dry spiny forest of southern Madagascar" %}
 
 When a troop walks along the ground together, the lemurs hold their stripy tails up high, like flags, so the whole family travels together.

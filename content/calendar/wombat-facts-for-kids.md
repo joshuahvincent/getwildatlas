@@ -11,7 +11,7 @@ animalDay:
   animalName: wombat
   animalArticle: a
   campaign: wombat_wildcard_2026
-  greeting: "**This week's Wild Atlas pick: the wombat.** No wombat day falls today — the nearest one, the fan-favorite Wombat Day, falls every October 22, and this year's has already come and gone — but once you hear what a wombat's poop looks like, we couldn't wait to tell you."
+  greeting: "**This week's Wild Atlas pick: the wombat.** No wombat day falls this week — the fan-favorite Wombat Day is every October 22 — but once you hear what a wombat's poop looks like, we couldn't wait to tell you."
   readAloudNote: "Read this one out loud together — it's short, and it's even better with a low, snuffly wombat-grunt voice."
   whereToSee:
     heading: Where to see a wombat

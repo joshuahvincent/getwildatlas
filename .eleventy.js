@@ -13,6 +13,7 @@
 // the passthrough rules below. This repo is the sole source of wildatlasapp.com.
 
 module.exports = function (eleventyConfig) {
+  const animalDaysData = require("./_data/animalDays.json");
   // ---- Passthrough: static site --------------------------------------------
   // Copied verbatim into _site/. Eleventy must not transform these.
   eleventyConfig.addPassthroughCopy("assets");
@@ -56,9 +57,50 @@ module.exports = function (eleventyConfig) {
     )
   );
   eleventyConfig.addFilter("monthKey", (d) => new Date(d).toISOString().slice(0, 7));
+  // The calendar is perennial: no years on screen. Month names only.
   eleventyConfig.addFilter("monthLabel", (key) =>
-    new Date(key + "-01T00:00:00Z").toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" })
+    new Date(key + "-01T00:00:00Z").toLocaleDateString("en-US", { month: "long", timeZone: "UTC" })
   );
+  // Floating days carry `rule: [n, weekday (Mon=0..Sun=6), month]` (n = -1 for
+  // "last") in _data/animalDays.json, so each year's date is computed, not
+  // stored. `when` overrides the display text for weeks/months/ranges.
+  const ORD = { 1: "First", 2: "Second", 3: "Third", 4: "Fourth", "-1": "Last" };
+  const WD = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const occurrence = (day, year) => {
+    if (!day.rule) return new Date(Date.UTC(year, +day.date.slice(5, 7) - 1, +day.date.slice(8, 10)));
+    const [n, wd, m] = day.rule;
+    if (n > 0) {
+      const first = new Date(Date.UTC(year, m - 1, 1));
+      return new Date(Date.UTC(year, m - 1, 1 + ((wd - ((first.getUTCDay() + 6) % 7) + 7) % 7) + 7 * (n - 1)));
+    }
+    const last = new Date(Date.UTC(year, m, 0));
+    return new Date(Date.UTC(year, m - 1, last.getUTCDate() - ((((last.getUTCDay() + 6) % 7) - wd + 7) % 7)));
+  };
+  const nextOccurrence = (day, from) => {
+    const o = occurrence(day, from.getUTCFullYear());
+    return o.getTime() < from.getTime() ? occurrence(day, from.getUTCFullYear() + 1) : o;
+  };
+  const monthDay = (d) => { const x = new Date(d); return `${MONTHS[x.getUTCMonth()]} ${x.getUTCDate()}`; };
+  const whenText = (day) =>
+    day.when || (day.rule ? `${ORD[day.rule[0]]} ${WD[day.rule[1]]} in ${MONTHS[day.rule[2] - 1]}` : monthDay(day.date + "T00:00:00Z"));
+  // "October 8" / "Third Friday in May" for a calendar page: its own day entry
+  // (by slug), else the day entry for its animal on that date, else the date.
+  eleventyConfig.addFilter("perennialDate", (date, fileSlug, appId) => {
+    const all = [...animalDaysData.days, ...animalDaysData.alsoCelebrated];
+    const iso = new Date(date).toISOString().slice(0, 10);
+    const hit = all.find((d) => fileSlug && (d.slug === fileSlug || d.pageSlug === fileSlug))
+      || all.find((d) => appId && d.appId === appId && d.date === iso);
+    return hit ? whenText(hit) : monthDay(date);
+  });
+  // Same, for a "Celebrated on" line ({day, date}).
+  // celebratedOn dates are already year-free text ("March 20"); floating days
+  // swap in their rule ("Third Saturday in March"), matched by day name.
+  eleventyConfig.addFilter("perennialDay", (x) => {
+    const hit = [...animalDaysData.days, ...animalDaysData.alsoCelebrated].find((d) => d.day === x.day && (d.rule || d.when));
+    if (hit) return whenText(hit);
+    return x.date instanceof Date ? monthDay(x.date) : x.date;
+  });
   eleventyConfig.addFilter("dayNum", (d) => new Date(d).getUTCDate());
   eleventyConfig.addFilter("weekday", (d) => new Date(d).toLocaleDateString("en-US", { weekday: "short", timeZone: "UTC" }));
   eleventyConfig.addFilter("isPast", (d) => new Date(d).getTime() < Date.now() - 86400000);
@@ -75,7 +117,7 @@ module.exports = function (eleventyConfig) {
   });
   // Rolling 12-month animal calendar for /calendar/, current month first.
   // Awareness days recur yearly, so a day earlier than this month rolls to
-  // next year. Each day links to its calendar page (or blog post) once it exists.
+  // next year (floating days are recomputed from their rule). Each day links to its calendar page (or blog post) once it exists.
   eleventyConfig.addFilter("calendarYear", (days, calendarPages, posts, also, liteAnimals) => {
     const now = new Date();
     const start = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), 1);
@@ -100,8 +142,7 @@ module.exports = function (eleventyConfig) {
       months.push({ key: d.toISOString().slice(0, 7), events: [], also: [] });
     }
     for (const day of days) {
-      let occ = new Date(day.date + "T00:00:00Z");
-      while (occ.getTime() < start) occ.setUTCFullYear(occ.getUTCFullYear() + 1);
+      const occ = nextOccurrence(day, new Date(start));
       const m = months.find((x) => x.key === occ.toISOString().slice(0, 7));
       if (!m) continue;
       const page = (day.slug && pages.get(day.slug)) || (day.pageSlug && pages.get(day.pageSlug));
@@ -114,8 +155,7 @@ module.exports = function (eleventyConfig) {
     }
     // Second-tier days: real awareness days we didn't pick. Dot + list line, no page.
     for (const day of also || []) {
-      let occ = new Date(day.date + "T00:00:00Z");
-      while (occ.getTime() < start) occ.setUTCFullYear(occ.getUTCFullYear() + 1);
+      const occ = nextOccurrence(day, new Date(start));
       const m = months.find((x) => x.key === occ.toISOString().slice(0, 7));
       const sp = day.pageSlug && pages.get(day.pageSlug);
       const ap = (sp && { url: sp.url, image: sp.data.coverImage }) || (day.appId && animalPage.get(day.appId));

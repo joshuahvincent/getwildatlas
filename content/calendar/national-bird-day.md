@@ -3,7 +3,7 @@ title: "National Bird Day: Hyacinth Macaw Facts for Kids — Meet the Longest Pa
 date: 2027-01-05
 author: Wild Atlas
 excerpt: "Happy National Bird Day! Meet the hyacinth macaw — the longest parrot in the world, almost as long as a 5-year-old is tall. A read-aloud, plus where to meet a real hyacinth macaw."
-coverImage: /assets/blog/national-bird-day-2027/cover.jpg
+coverImage: /assets/blog/national-bird-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: National Bird Day
@@ -70,22 +70,22 @@ blogStatus: scheduled
 
 The hyacinth macaw is the longest parrot in the world — from beak to tail, it's almost as long as a 5-year-old is tall!
 
-{% figure "/assets/blog/national-bird-day-2027/cover.jpg", "A hyacinth macaw perched on a palm frond in the Pantanal" %}
+{% figure "/assets/blog/national-bird-day/cover.jpg", "A hyacinth macaw perched on a palm frond in the Pantanal" %}
 
 It's cobalt blue all over, with a bright yellow ring around each eye and a little yellow "smile" at the base of its huge, curved beak. Can you squawk as loud as a hyacinth macaw?
 
 That beak is no joke. It's strong enough to crack palm nuts so tough that people would need a hammer to open them. Sometimes the macaw gets help without knowing it — cows eat the soft fruit around a palm nut first, and leave the hard nut behind for a macaw to crack.
 
-{% figure "/assets/blog/national-bird-day-2027/scale.jpg", "An illustrated hyacinth macaw beside the Wild Atlas explorer kid, with a bar showing 1 meter (3 ft 3 in) from beak to tail" %}
+{% figure "/assets/blog/national-bird-day/scale.jpg", "An illustrated hyacinth macaw beside the Wild Atlas explorer kid, with a bar showing 1 meter (3 ft 3 in) from beak to tail" %}
 
 Stood right next to you, that's how long a hyacinth macaw really is — about a meter, or a little over three feet, from beak to tail. Can you guess what else that beak could crack open — a walnut? A coconut? Your cereal box?
 
 All that length doesn't add up to much weight, though. It would take about a dozen hyacinth macaws to weigh as much as one 5-year-old. In the Pantanal, most hyacinth macaws nest in holes in one special kind of tree, called the manduvi. A brand-new chick weighs about as much as a slice of bread. It hatches from one of about two eggs that its mom keeps warm for about a month, while dad brings her food.
 
-{% figure "/assets/blog/national-bird-day-2027/baby.jpg", "A partly feathered hyacinth macaw chick, a few weeks old, peeking out of a tree hollow" %}
+{% figure "/assets/blog/national-bird-day/baby.jpg", "A partly feathered hyacinth macaw chick, a few weeks old, peeking out of a tree hollow" %}
 
 Young macaws can stay close to their parents for more than a year, learning which nuts to crack.
 
-{% figure "/assets/blog/national-bird-day-2027/habitat.jpg", "The Pantanal wetlands of Brazil at golden hour" %}
+{% figure "/assets/blog/national-bird-day/habitat.jpg", "The Pantanal wetlands of Brazil at golden hour" %}
 
 Hyacinth macaws live mostly in the Pantanal, the world's biggest tropical wetland, in Brazil. Can you spread your arms out wide, like a macaw gliding low over the wetlands?

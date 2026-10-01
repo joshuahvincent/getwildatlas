@@ -3,7 +3,7 @@ title: "International Beaver Day: Eurasian Beaver Facts for Kids — Meet the An
 date: 2027-04-07
 author: Wild Atlas
 excerpt: "Happy International Beaver Day! Meet the Eurasian beaver — its orange teeth never stop growing, and the front door to its home is underwater. A read-aloud, plus where to meet one in Europe (and its American cousin closer to home)."
-coverImage: /assets/blog/international-beaver-day-2027/cover.jpg
+coverImage: /assets/blog/international-beaver-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: International Beaver Day
@@ -73,27 +73,27 @@ blogStatus: scheduled
 
 Beavers have bright orange teeth that never stop growing — and the front door to their home is underwater!
 
-{% figure "/assets/blog/international-beaver-day-2027/cover.jpg", "A Eurasian beaver gnawing a willow stick on a riverbank" %}
+{% figure "/assets/blog/international-beaver-day/cover.jpg", "A Eurasian beaver gnawing a willow stick on a riverbank" %}
 
 Look closely at the stick in its paws — see the orange? A beaver's front teeth have iron built right into them, which is what turns them that color and keeps them strong for gnawing wood, day after day. The teeth never stop growing, so all that gnawing wears them down to just the right size.
 
 A beaver's home is called a lodge, and the front door is underwater, so it stays hidden and safe. Beavers even have their own built-in swimming goggles: clear eyelids that close over their eyes so they can see underwater.
 
-{% figure "/assets/blog/international-beaver-day-2027/scale.jpg", "A Eurasian beaver next to a 5-year-old for scale" %}
+{% figure "/assets/blog/international-beaver-day/scale.jpg", "A Eurasian beaver next to a 5-year-old for scale" %}
 
 Its body alone is almost as long as you are tall — and add its big, flat tail, and it's even longer!
 
-{% figure "/assets/blog/international-beaver-day-2027/weight.jpg", "A scale showing a Eurasian beaver's weight compared to a 5-year-old" %}
+{% figure "/assets/blog/international-beaver-day/weight.jpg", "A scale showing a Eurasian beaver's weight compared to a 5-year-old" %}
 
 A grown-up beaver weighs about as much as one 5-year-old — a really big one weighs about as much as one and a half 5-year-olds!
 
 SMACK! A beaver slaps its big flat tail on the water to warn its family. Can you slap your hand on the water like that — SPLASH?
 
-{% figure "/assets/blog/international-beaver-day-2027/baby.jpg", "A young Eurasian beaver kit nibbling willow leaves" %}
+{% figure "/assets/blog/international-beaver-day/baby.jpg", "A young Eurasian beaver kit nibbling willow leaves" %}
 
 Baby beavers are called kits. They're born with fur already on, and each one weighs about as much as a can of beans or two. Kits live with their mom, dad, and older brothers and sisters for about two years before they swim off on their own.
 
-{% figure "/assets/blog/international-beaver-day-2027/habitat.jpg", "A misty beaver wetland with a lodge and dam at dawn" %}
+{% figure "/assets/blog/international-beaver-day/habitat.jpg", "A misty beaver wetland with a lodge and dam at dawn" %}
 
 Beavers build dams out of sticks and mud to make their pond just the right depth for that underwater door. Can you show me your best gnawing face, like a beaver chewing a stick? Their busy ponds end up being home for frogs, fish, and birds too.
 

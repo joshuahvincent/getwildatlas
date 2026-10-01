@@ -3,7 +3,7 @@ title: "World Octopus Day: Octopus Facts for Kids — Three Hearts, Blue Blood, 
 date: 2026-10-08
 author: Wild Atlas
 excerpt: "Happy World Octopus Day! A five-minute read-aloud about the giant Pacific octopus — three hearts, blue blood, nine 'brains' — plus real aquariums where you can go meet one."
-coverImage: /assets/blog/world-octopus-day-2026/cover.jpg
+coverImage: /assets/blog/world-octopus-day/cover.jpg
 tags: [animals, ocean, read-aloud]
 blogStatus: scheduled
 animalDay:
@@ -71,7 +71,7 @@ animalDay:
     url: https://www.montereybayaquarium.org/animals-the-ocean/animals-a-to-z/giant-pacific-octopus
 ---
 
-{% figure "/assets/blog/world-octopus-day-2026/cover.jpg", "A reddish-brown giant Pacific octopus resting on a cold, rocky reef, its arms curled over the rocks", "The giant Pacific octopus — the biggest octopus we know of." %}
+{% figure "/assets/blog/world-octopus-day/cover.jpg", "A reddish-brown giant Pacific octopus resting on a cold, rocky reef, its arms curled over the rocks", "The giant Pacific octopus — the biggest octopus we know of." %}
 
 Meet the giant Pacific octopus. It lives in the cold, rocky part of the ocean — the North Pacific, all the way from Japan to Alaska to California.
 
@@ -85,17 +85,17 @@ Every arm is covered in suckers, and every sucker can **taste.** It tastes rocks
 
 Watch this: in about one second, it can change from smooth and reddish-brown to bumpy and gray — like turning into a rock. Count "one!" as fast as you can. That's how fast it changes.
 
-{% figure "/assets/blog/world-octopus-day-2026/scale.jpg", "Illustrated scale diagram: a giant Pacific octopus with its arms stretched out, measuring 4 metres (13 feet) from arm tip to arm tip, next to a standing five-year-old for scale", "Arms stretched all the way out, a big grown-up octopus measures about three and a half five-year-olds from arm tip to arm tip." %}
+{% figure "/assets/blog/world-octopus-day/scale.jpg", "Illustrated scale diagram: a giant Pacific octopus with its arms stretched out, measuring 4 metres (13 feet) from arm tip to arm tip, next to a standing five-year-old for scale", "Arms stretched all the way out, a big grown-up octopus measures about three and a half five-year-olds from arm tip to arm tip." %}
 
 That's a lot of octopus. But it starts out tiny.
 
-{% figure "/assets/blog/world-octopus-day-2026/hatchling.jpg", "A tiny, see-through baby giant Pacific octopus with orange speckles, drifting in dark ocean water", "A newly hatched giant Pacific octopus is about the size of a grain of rice." %}
+{% figure "/assets/blog/world-octopus-day/hatchling.jpg", "A tiny, see-through baby giant Pacific octopus with orange speckles, drifting in dark ocean water", "A newly hatched giant Pacific octopus is about the size of a grain of rice." %}
 
 Can you find a grain of rice in your kitchen? That's how small it starts.
 
 First it drifts in the open ocean like a tiny speck. Then it settles down on the seafloor and grows up in a den, tucked into a crack between rocks.
 
-{% figure "/assets/blog/world-octopus-day-2026/habitat.jpg", "A giant Pacific octopus den in a rocky crevice, with a pile of empty shells outside the entrance", "See that little pile of shells outside the den? Scientists call it a midden. We like to call it the octopus's \"front porch.\"" %}
+{% figure "/assets/blog/world-octopus-day/habitat.jpg", "A giant Pacific octopus den in a rocky crevice, with a pile of empty shells outside the entrance", "See that little pile of shells outside the den? Scientists call it a midden. We like to call it the octopus's \"front porch.\"" %}
 
 Look outside its den — those are leftover shells from crabs and clams it's eaten, stacked up like a front porch.
 

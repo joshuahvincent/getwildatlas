@@ -3,7 +3,7 @@ title: "World Giraffe Day: Giraffe Facts for Kids — Meet the Baby That's Born 
 date: 2027-06-21
 author: Wild Atlas
 excerpt: "Happy World Giraffe Day! Meet the tallest animal on Earth — whose newborn calf is already about as tall as an adult, and standing within the hour. A read-aloud, plus where to meet a real giraffe."
-coverImage: /assets/blog/world-giraffe-day-2027/cover.jpg
+coverImage: /assets/blog/world-giraffe-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: World Giraffe Day
@@ -63,23 +63,23 @@ blogStatus: scheduled
 
 Meet the giraffe — the tallest animal on Earth, with a long, dark tongue and a coat of patches that's all its own.
 
-{% figure "/assets/blog/world-giraffe-day-2027/cover.jpg", "A giraffe running across a golden savanna, dust rising behind its hooves, with acacia trees on the horizon" %}
+{% figure "/assets/blog/world-giraffe-day/cover.jpg", "A giraffe running across a golden savanna, dust rising behind its hooves, with acacia trees on the horizon" %}
 
 A giraffe strides across the grassy savanna on legs as long as a grown-up's whole body, nibbling leaves that almost nothing else can reach. Its tongue is about as long as your arm — and it's dark blue-black, which scientists think helps keep it from getting sunburnt while it works in the sun all day.
 
 A big giraffe is as tall as five five-year-olds standing on each other's shoulders!
 
-{% figure "/assets/blog/world-giraffe-day-2027/scale.jpg", "Illustrated size comparison of a tall giraffe next to a small child explorer, with a line marking the giraffe's shoulder height" %}
+{% figure "/assets/blog/world-giraffe-day/scale.jpg", "Illustrated size comparison of a tall giraffe next to a small child explorer, with a line marking the giraffe's shoulder height" %}
 
 And it's heavy too — about as much as 65 five-year-olds, all standing on one big scale together!
 
-{% figure "/assets/blog/world-giraffe-day-2027/weight.jpg", "Illustrated weight comparison of a giraffe on one scale and a grid of 65 five-year-old children on another, both scales reading about 1200 kg | 2650 lb" %}
+{% figure "/assets/blog/world-giraffe-day/weight.jpg", "Illustrated weight comparison of a giraffe on one scale and a grid of 65 five-year-old children on another, both scales reading about 1200 kg | 2650 lb" %}
 
 Here's a surprise: a giraffe has the very same number of neck bones as you do — seven! Each one of its neck bones is just super long. Its heart is huge and strong, working hard to reach all the way up that tall neck to its brain. And those two little bumps on its head? They're called ossicones, and every giraffe — boys and girls both — has them from the day it's born.
 
 A baby giraffe arrives already enormous — about as tall as a grown-up — and it's up on its wobbly legs within an hour!
 
-{% figure "/assets/blog/world-giraffe-day-2027/baby.jpg", "A young giraffe calf standing in tall golden grass, ears out, with small tufted ossicones visible on its head" %}
+{% figure "/assets/blog/world-giraffe-day/baby.jpg", "A young giraffe calf standing in tall golden grass, ears out, with small tufted ossicones visible on its head" %}
 
 A newborn giraffe joins a giraffe nursery, where one mom babysits a whole group of calves while the others go off to eat. No two giraffes ever have the same patch pattern, not one, in the whole world. It's like a giraffe fingerprint.
 

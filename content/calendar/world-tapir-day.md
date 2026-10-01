@@ -3,7 +3,7 @@ title: "World Tapir Day: Malayan Tapir Facts for Kids — Meet the Baby Born in 
 date: 2027-04-27
 author: Wild Atlas
 excerpt: "Happy World Tapir Day! Meet the Malayan tapir — it has a bendy mini-trunk, cousins who are horses and rhinos, and babies born in watermelon stripes. A read-aloud, plus where to meet a real tapir."
-coverImage: /assets/blog/world-tapir-day-2027/cover.jpg
+coverImage: /assets/blog/world-tapir-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: World Tapir Day
@@ -71,7 +71,7 @@ blogStatus: scheduled
 
 Baby Malayan tapirs are born wearing watermelon stripes — then they slowly change into black-and-white grown-ups that some zookeepers call "Oreo tapirs."
 
-{% figure "/assets/blog/world-tapir-day-2027/cover.jpg", "An adult Malayan tapir walking along a misty rainforest stream" %}
+{% figure "/assets/blog/world-tapir-day/cover.jpg", "An adult Malayan tapir walking along a misty rainforest stream" %}
 
 A tapir's nose and upper lip are joined together into one bendy little trunk. It uses this mini-trunk like a finger, to grab leaves right off the branch.
 
@@ -79,21 +79,21 @@ Can you guess a tapir's closest cousins? Not pigs, and not elephants — it's ho
 
 The Malayan tapir is the biggest of the four tapir kinds in the world, and the only one that lives in Asia. Standing on all fours, its back is about as tall as you are, and nose to tail it's nearly as long as two 5-year-olds lying head to toe.
 
-{% figure "/assets/blog/world-tapir-day-2027/scale.jpg", "A Malayan tapir beside a young explorer, with arrows showing it is about 1 m tall and 2 m long" %}
+{% figure "/assets/blog/world-tapir-day/scale.jpg", "A Malayan tapir beside a young explorer, with arrows showing it is about 1 m tall and 2 m long" %}
 
 A big Malayan tapir weighs about as much as 14 five-year-olds — all standing on one big scale together!
 
-{% figure "/assets/blog/world-tapir-day-2027/weight.jpg", "A scale showing a Malayan tapir's weight compared to 14 five-year-olds" %}
+{% figure "/assets/blog/world-tapir-day/weight.jpg", "A scale showing a Malayan tapir's weight compared to 14 five-year-olds" %}
 
 Can you picture 14 friends on one big scale?
 
 A tapir calf is born with brown fur and pale stripes and spots, like a watermelon rind. The pattern helps a baby hide in speckled forest light while it's too little to run fast. After a few months, the stripes fade and the black-and-white saddle pattern grows in.
 
-{% figure "/assets/blog/world-tapir-day-2027/baby.jpg", "A striped Malayan tapir calf standing near its black-and-white mother" %}
+{% figure "/assets/blog/world-tapir-day/baby.jpg", "A striped Malayan tapir calf standing near its black-and-white mother" %}
 
 Tapirs love water, too. They can sink right down and walk along the bottom of a river!
 
-{% figure "/assets/blog/world-tapir-day-2027/habitat.jpg", "A misty Malaysian rainforest river where a Malayan tapir lives" %}
+{% figure "/assets/blog/world-tapir-day/habitat.jpg", "A misty Malaysian rainforest river where a Malayan tapir lives" %}
 
 At night, a tapir zigzags through the rainforest, nibbling just a few leaves from each plant before moving to the next one. It finds its way mostly by smell and hearing, since its eyesight isn't very sharp. And when it wants to talk, it doesn't roar — it whistles!
 

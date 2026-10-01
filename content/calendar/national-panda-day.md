@@ -3,7 +3,7 @@ title: "National Panda Day: Giant Panda Facts for Kids — Meet the Bear That's 
 date: 2027-03-16
 author: Wild Atlas
 excerpt: "Happy National Panda Day! Meet the giant panda — a real bear that almost only eats bamboo, born about the size of a stick of butter and grown up to weigh as much as seven five-year-olds. A read-aloud, plus where to meet a real panda."
-coverImage: /assets/blog/national-panda-day-2027/cover.jpg
+coverImage: /assets/blog/national-panda-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: National Panda Day
@@ -67,7 +67,7 @@ blogStatus: scheduled
 
 When a giant panda is born, it's pink, almost bare, and about the size of a stick of butter — but it grows up to weigh as much as seven five-year-olds!
 
-{% figure "/assets/blog/national-panda-day-2027/cover.jpg", "A giant panda walking through a bamboo forest" %}
+{% figure "/assets/blog/national-panda-day/cover.jpg", "A giant panda walking through a bamboo forest" %}
 
 A giant panda is a real bear — but unlike most bears, it almost only eats bamboo. More than 99 out of 100 bites a panda takes are bamboo! Bamboo isn't very filling, so a panda eats for up to 16 hours a day — that's most of the whole day!
 
@@ -75,11 +75,11 @@ How does a panda hold onto slippery bamboo stalks? It has a special wrist bone t
 
 Can you pretend to munch bamboo for one whole minute, like a panda does for most of its day?
 
-{% figure "/assets/blog/national-panda-day-2027/scale.jpg", "Illustrated scale diagram: a giant panda on all fours beside the Wild Atlas child explorer, with an arrow showing 80 centimetres (2 feet 8 inches) from the ground to the panda's shoulder and 1.5 metres (5 feet) nose to tail", "Follow the up-and-down arrow: that's how tall a panda is at the shoulder — about up to your chest." %}
+{% figure "/assets/blog/national-panda-day/scale.jpg", "Illustrated scale diagram: a giant panda on all fours beside the Wild Atlas child explorer, with an arrow showing 80 centimetres (2 feet 8 inches) from the ground to the panda's shoulder and 1.5 metres (5 feet) nose to tail", "Follow the up-and-down arrow: that's how tall a panda is at the shoulder — about up to your chest." %}
 
 Standing on all fours, a grown-up panda's back comes up to about your chest — and nose to tail, it's longer than you are tall.
 
-{% figure "/assets/blog/national-panda-day-2027/weight.jpg", "A scale comparing a giant panda's weight to seven 5-year-old children" %}
+{% figure "/assets/blog/national-panda-day/weight.jpg", "A scale comparing a giant panda's weight to seven 5-year-old children" %}
 
 Can you picture seven five-year-olds all standing on one big scale together? That's about how much one grown-up panda weighs.
 
@@ -87,6 +87,6 @@ Because bamboo is hard to digest, a panda can poop up to 40 times a day! And eve
 
 Pandas bleat a bit like a sheep, and sometimes honk. Can you try out your best panda honk?
 
-{% figure "/assets/blog/national-panda-day-2027/baby.jpg", "A fluffy young panda cub with wide dark eyes, crouching on bamboo leaves" %}
+{% figure "/assets/blog/national-panda-day/baby.jpg", "A fluffy young panda cub with wide dark eyes, crouching on bamboo leaves" %}
 
 By the time a cub looks like this — fluffy, round, and full of fur — it's already grown a lot from the stick-of-butter size it was on the day it was born. It'll stay close to its mom for about a year and a half, learning to climb and find bamboo of its own.

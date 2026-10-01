@@ -3,7 +3,7 @@ title: "World Wildlife Day: Lion Facts for Kids — A Roar You Can Hear Up to 8 
 date: 2027-03-03
 author: Wild Atlas
 excerpt: "Happy World Wildlife Day! This year we're meeting the lion — a roar you can hear up to 8 kilometres away, a family called a pride, and real lions coming home to a park in Rwanda."
-coverImage: /assets/blog/world-wildlife-day-2027/cover.jpg
+coverImage: /assets/blog/world-wildlife-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: World Wildlife Day
@@ -76,7 +76,7 @@ blogStatus: scheduled
 
 A lion's roar is so loud it can be heard up to 8 kilometres away.
 
-{% figure "/assets/blog/world-wildlife-day-2027/cover.jpg", "A lioness running through golden savanna grass at sunset, kicking up dust" %}
+{% figure "/assets/blog/world-wildlife-day/cover.jpg", "A lioness running through golden savanna grass at sunset, kicking up dust" %}
 
 Lions roar to tell their family, "Here I am, this is our home" — and the sound can travel as far as 80 football fields.
 
@@ -88,13 +88,13 @@ Can you roar as loud as you can, then whisper it? Which one carries farther?
 
 Stand next to a big lion, and the top of your head wouldn't even reach its shoulder. Nose to tail, a big lion is even longer than two five-year-olds lying down head to toe.
 
-{% figure "/assets/blog/world-wildlife-day-2027/scale.jpg", "A maned lion standing next to a 5-year-old explorer for scale, with arrows marking its length and shoulder height" %}
+{% figure "/assets/blog/world-wildlife-day/scale.jpg", "A maned lion standing next to a 5-year-old explorer for scale, with arrows marking its length and shoulder height" %}
 
 Only boy lions grow a big, fluffy mane — and it gets darker as they get older.
 
 It would take eleven five-year-olds standing on one big scale to outweigh a single lion!
 
-{% figure "/assets/blog/world-wildlife-day-2027/weight.jpg", "A scale showing a lion's weight compared to eleven 5-year-old explorers on a matching scale" %}
+{% figure "/assets/blog/world-wildlife-day/weight.jpg", "A scale showing a lion's weight compared to eleven 5-year-old explorers on a matching scale" %}
 
 Can you picture eleven friends on one scale, all trying to balance out one lion?
 
@@ -104,4 +104,4 @@ Can you curl up small like a hiding cub, then stretch up tall like a grown lion?
 
 Baby lions are called cubs. They're born with spots on their fur that fade as they grow, and their eyes stay shut for about their first week or two. Mum keeps them hidden and safe for a few weeks before they meet the rest of the pride.
 
-{% figure "/assets/blog/world-wildlife-day-2027/baby.jpg", "A lion cub with faintly spotted tawny fur sitting upright in savanna grass at sunrise" %}
+{% figure "/assets/blog/world-wildlife-day/baby.jpg", "A lion cub with faintly spotted tawny fur sitting upright in savanna grass at sunrise" %}

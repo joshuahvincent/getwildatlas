@@ -12,7 +12,7 @@ animalDay:
   animalName: red panda
   animalArticle: a
   campaign: animal_red_panda
-  greeting: "**Meet the red panda!** People around the world celebrate it on International Red Panda Day, held on the third Saturday of every September — this year, September 19."
+  greeting: "**Meet the red panda!** People around the world celebrate it on International Red Panda Day, held on the third Saturday of every September."
   celebratedOn:
     - day: International Red Panda Day
       date: September 19

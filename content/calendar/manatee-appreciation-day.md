@@ -3,7 +3,7 @@ title: "Manatee Appreciation Day: Manatee Facts for Kids — Meet the Gentle Gia
 date: 2027-03-31
 author: Wild Atlas
 excerpt: "Happy Manatee Appreciation Day! Meet the manatee — a newborn calf is already bigger than a five-year-old, its closest land cousin is the elephant, and its back teeth march forward for life. A read-aloud, plus where to meet a real manatee."
-coverImage: /assets/blog/manatee-appreciation-day-2027/cover.jpg
+coverImage: /assets/blog/manatee-appreciation-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: Manatee Appreciation Day
@@ -72,19 +72,19 @@ blogStatus: scheduled
 
 A brand-new baby manatee is already longer than a five-year-old is tall — and it weighs more, too!
 
-{% figure "/assets/blog/manatee-appreciation-day-2027/cover.jpg", "A West Indian manatee gliding low over a sandy seagrass bed" %}
+{% figure "/assets/blog/manatee-appreciation-day/cover.jpg", "A West Indian manatee gliding low over a sandy seagrass bed" %}
 
 A newborn calf is about 120 centimeters (4 feet) long and weighs around 30 kilograms (66 pounds). That's bigger than a five-year-old, on the very first day of its life.
 
 Manatees look like gentle giants of the sea, round and wrinkly and slow. But their closest cousin isn't a seal or a dolphin — it's the elephant, which lives on land!
 
-{% figure "/assets/blog/manatee-appreciation-day-2027/scale.jpg", "A manatee compared in length to the Wild Atlas explorer kid" %}
+{% figure "/assets/blog/manatee-appreciation-day/scale.jpg", "A manatee compared in length to the Wild Atlas explorer kid" %}
 
 A grown-up manatee is almost as long as three five-year-olds lying head to toe in a row.
 
 And it weighs about as much as 30 five-year-olds — all standing together on one big scale.
 
-{% figure "/assets/blog/manatee-appreciation-day-2027/weight.jpg", "A scale showing a manatee's weight compared to 30 five-year-olds" %}
+{% figure "/assets/blog/manatee-appreciation-day/weight.jpg", "A scale showing a manatee's weight compared to 30 five-year-olds" %}
 
 Can you picture 30 friends on one big scale?
 
@@ -94,7 +94,7 @@ Every few minutes, a manatee pokes its nose up for a breath of air, then sinks s
 
 A baby manatee stays close to its mom for a year or two, learning where the warm water is and where the best sea grass grows. Moms and babies chirp and squeak to keep in touch underwater.
 
-{% figure "/assets/blog/manatee-appreciation-day-2027/baby.jpg", "A young manatee calf resting at the surface of a shallow river" %}
+{% figure "/assets/blog/manatee-appreciation-day/baby.jpg", "A young manatee calf resting at the surface of a shallow river" %}
 
 Can you take a big breath and float your arms still, like a resting manatee? Can you wiggle your fingers like a manatee's little flippers?
 

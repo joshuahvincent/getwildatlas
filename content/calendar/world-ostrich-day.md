@@ -3,7 +3,7 @@ title: "World Ostrich Day: Ostrich Facts for Kids — Meet the Bird With the Big
 date: 2027-02-02
 author: Wild Atlas
 excerpt: "Happy World Ostrich Day! Meet the ostrich — the biggest bird alive, with an egg as heavy as two dozen chicken eggs. A read-aloud story, plus where to meet a real ostrich."
-coverImage: /assets/blog/world-ostrich-day-2027/cover.jpg
+coverImage: /assets/blog/world-ostrich-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: World Ostrich Day
@@ -71,7 +71,7 @@ blogStatus: scheduled
 
 An ostrich egg is the biggest egg of any bird alive — just one weighs about as much as two dozen chicken eggs!
 
-{% figure "/assets/blog/world-ostrich-day-2027/cover.jpg", "An ostrich running across golden savanna grass, kicking up dust" %}
+{% figure "/assets/blog/world-ostrich-day/cover.jpg", "An ostrich running across golden savanna grass, kicking up dust" %}
 
 Ostriches can't fly. Instead, they run — faster than any other animal on two legs. A running ostrich can go as fast as a car driving through town, and one single running step can be longer than your bed!
 
@@ -79,17 +79,17 @@ Can you sprint as fast as you can across the room, like an ostrich?
 
 Ostriches have just two toes on each foot. No other bird in the world does. And each of their eyes is even bigger than a ping-pong ball — the biggest eyes of any land animal.
 
-{% figure "/assets/blog/world-ostrich-day-2027/scale.jpg", "An illustrated ostrich standing next to a smiling child explorer, with an arrow showing its height" %}
+{% figure "/assets/blog/world-ostrich-day/scale.jpg", "An illustrated ostrich standing next to a smiling child explorer, with an arrow showing its height" %}
 
 A big ostrich is taller than a grown-up — about as tall as two and a half five-year-olds standing on each other's heads!
 
-{% figure "/assets/blog/world-ostrich-day-2027/weight.jpg", "Two scales, one holding an ostrich and the other holding seven cartoon five-year-olds" %}
+{% figure "/assets/blog/world-ostrich-day/weight.jpg", "Two scales, one holding an ostrich and the other holding seven cartoon five-year-olds" %}
 
 Can you picture 6 or 7 five-year-olds standing on one big scale together? That's about how much a big ostrich weighs.
 
 Here's a fact worth busting: ostriches don't really bury their heads in the sand. That's a myth! They lie down flat with their neck stretched along the ground to hide — from far away, it can just look like their head disappeared.
 
-{% figure "/assets/blog/world-ostrich-day-2027/baby.jpg", "A fluffy speckled ostrich chick sitting alone on dry grass" %}
+{% figure "/assets/blog/world-ostrich-day/baby.jpg", "A fluffy speckled ostrich chick sitting alone on dry grass" %}
 
 A baby ostrich, called a chick, starts out about as big as a chicken — then grows about a ruler's length taller every month at first. Mom sits on the eggs in the daytime, and Dad takes the night shift. Chicks from different families often join up into big ostrich playgroups, watched over by just a few grown-ups.
 

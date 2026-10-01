@@ -12,7 +12,7 @@ animalDay:
   animalName: Arctic wolf
   animalArticle: an
   campaign: animal_arctic_wolf
-  greeting: "**Meet the Arctic wolf!** People around the world celebrate wolves on International Wolf Day (August 13) and during National Wolf Awareness Week in the United States (this year, October 18)."
+  greeting: "**Meet the Arctic wolf!** People around the world celebrate wolves on International Wolf Day (August 13) and during National Wolf Awareness Week in the United States (the third week of October)."
   celebratedOn:
     - day: International Wolf Day
       date: August 13

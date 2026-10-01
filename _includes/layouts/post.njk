@@ -6,9 +6,14 @@ layout: layouts/blog-base.njk
     <p class="blog-post-meta">
       <a href="{{ backLink.url if backLink else '/blog/' }}">← {{ backLink.label if backLink else 'All posts' }}</a>
     </p>
+    {#- Calendar pages are perennial: a big month + day (or "Third Friday in May"), never a year. -#}
+    {%- set isCalendarPage = page.url and page.url.startsWith("/calendar/") %}
+    {%- if isCalendarPage %}
+    <p class="day-date" style="display: inline-block; margin: 0.6rem 0 0; padding: 0.3rem 0.95rem; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: clamp(1.35rem, 3.6vw, 1.7rem); line-height: 1.2; color: #5D4037; background: #FFF4CC; border: 2px solid #5D4037; border-radius: 999px;">{{ page.date | perennialDate(page.fileSlug, appId) }}</p>
+    {%- endif %}
     <h1>{{ title }}</h1>
     <p class="blog-post-byline" style="color: var(--muted); margin-top: 0.25rem;">
-      {% if not hideDate %}<time datetime="{{ (postDate or page.date) | isoDate }}">{{ (postDate or page.date) | readableDate }}</time> · {% endif %}{{ author }}
+      {% if not hideDate and not isCalendarPage %}<time datetime="{{ (postDate or page.date) | isoDate }}">{{ (postDate or page.date) | readableDate }}</time> · {% endif %}{{ author }}
       {% if content %} · {{ content | readingTime }}{% endif %}
     </p>
   </header>

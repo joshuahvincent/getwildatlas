@@ -76,7 +76,8 @@
    "official": true,
    "origin": "Grew out of South Africa's Vulture Awareness Day; made international in 2009 by the Endangered Wildlife Trust and the Hawk Conservancy Trust (UK).",
    "sourceUrl": "https://sdzsafaripark.org/wildlife-awareness-days",
-   "pageSlug": "international-vulture-awareness-day"
+   "pageSlug": "international-vulture-awareness-day",
+   "rule": [1, 5, 9]
   },
   {
    "date": "2026-09-12",
@@ -94,7 +95,8 @@
    "official": true,
    "appId": "red_panda",
    "origin": "Organised by the Red Panda Network since 2010.",
-   "sourceUrl": "https://redpandanetwork.org/international-red-panda-day"
+   "sourceUrl": "https://redpandanetwork.org/international-red-panda-day",
+   "rule": [3, 5, 9]
   },
   {
    "date": "2026-09-24",
@@ -119,7 +121,7 @@
    "animal": "Giant Pacific Octopus",
    "day": "World Octopus Day",
    "official": true,
-   "slug": "world-octopus-day-2026",
+   "slug": "world-octopus-day",
    "appId": "octopus"
   },
   {
@@ -127,7 +129,7 @@
    "animal": "Okapi",
    "day": "World Okapi Day",
    "official": true,
-   "slug": "world-okapi-day-2026",
+   "slug": "world-okapi-day",
    "appId": "okapi"
   },
   {
@@ -135,7 +137,7 @@
    "animal": "Three-toed Sloth",
    "day": "International Sloth Day",
    "official": true,
-   "slug": "international-sloth-day-2026",
+   "slug": "international-sloth-day",
    "appId": "sloth"
   },
   {
@@ -143,16 +145,18 @@
    "animal": "Ring-tailed Lemur",
    "day": "World Lemur Day",
    "official": true,
-   "slug": "world-lemur-day-2026",
-   "appId": "lemur"
+   "slug": "world-lemur-day",
+   "appId": "lemur",
+   "rule": [-1, 4, 10]
   },
   {
    "date": "2026-11-07",
    "animal": "American Bison",
    "day": "National Bison Day",
    "official": true,
-   "slug": "national-bison-day-2026",
-   "appId": "bison"
+   "slug": "national-bison-day",
+   "appId": "bison",
+   "rule": [1, 5, 11]
   },
   {
    "date": "2026-11-12",
@@ -167,7 +171,7 @@
    "animal": "Whale Shark",
    "day": "World Fisheries Day",
    "official": true,
-   "slug": "whale-shark-world-fisheries-day-2026",
+   "slug": "whale-shark-world-fisheries-day",
    "appId": "whale_shark"
   },
   {
@@ -175,7 +179,7 @@
    "animal": "Jaguar",
    "day": "International Jaguar Day",
    "official": true,
-   "slug": "international-jaguar-day-2026",
+   "slug": "international-jaguar-day",
    "appId": "jaguar"
   },
   {
@@ -183,7 +187,7 @@
    "animal": "Cheetah",
    "day": "International Cheetah Day",
    "official": true,
-   "slug": "international-cheetah-day-2026",
+   "slug": "international-cheetah-day",
    "appId": "cheetah"
   },
   {
@@ -198,7 +202,7 @@
    "animal": "Golden Snub-nosed Monkey",
    "day": "Monkey Day",
    "official": true,
-   "slug": "monkey-day-2026"
+   "slug": "monkey-day"
   },
   {
    "date": "2026-12-23",
@@ -220,7 +224,7 @@
    "animal": "Hyacinth Macaw",
    "day": "National Bird Day",
    "official": true,
-   "slug": "national-bird-day-2027",
+   "slug": "national-bird-day",
    "appId": "macaw"
   },
   {
@@ -236,7 +240,7 @@
    "animal": "Emperor Penguin",
    "day": "Penguin Awareness Day",
    "official": true,
-   "slug": "penguin-awareness-day-2027",
+   "slug": "penguin-awareness-day",
    "appId": "emperor_penguin"
   },
   {
@@ -244,7 +248,7 @@
    "animal": "Plains Zebra",
    "day": "International Zebra Day",
    "official": true,
-   "slug": "international-zebra-day-2027",
+   "slug": "international-zebra-day",
    "appId": "zebra"
   },
   {
@@ -252,7 +256,7 @@
    "animal": "Ostrich",
    "day": "World Ostrich Day",
    "official": true,
-   "slug": "world-ostrich-day-2027",
+   "slug": "world-ostrich-day",
    "appId": "ostrich"
   },
   {
@@ -260,7 +264,7 @@
    "animal": "Bonobo",
    "day": "World Bonobo Day",
    "official": true,
-   "slug": "world-bonobo-day-2027",
+   "slug": "world-bonobo-day",
    "appId": "bonobo"
   },
   {
@@ -268,7 +272,7 @@
    "animal": "Hippopotamus",
    "day": "World Hippo Day",
    "official": true,
-   "slug": "world-hippo-day-2027",
+   "slug": "world-hippo-day",
    "appId": "hippopotamus"
   },
   {
@@ -276,15 +280,16 @@
    "animal": "Pangolin",
    "day": "World Pangolin Day",
    "official": true,
-   "slug": "world-pangolin-day-2027",
-   "appId": "pangolin"
+   "slug": "world-pangolin-day",
+   "appId": "pangolin",
+   "rule": [3, 5, 2]
   },
   {
    "date": "2027-02-27",
    "animal": "Polar Bear",
    "day": "International Polar Bear Day",
    "official": true,
-   "slug": "international-polar-bear-day-2027",
+   "slug": "international-polar-bear-day",
    "appId": "polar_bear"
   },
   {
@@ -292,7 +297,7 @@
    "animal": "African Lion",
    "day": "World Wildlife Day",
    "official": true,
-   "slug": "world-wildlife-day-2027",
+   "slug": "world-wildlife-day",
    "appId": "lion"
   },
   {
@@ -307,14 +312,14 @@
    "animal": "Giant Panda",
    "day": "National Panda Day",
    "official": true,
-   "slug": "national-panda-day-2027"
+   "slug": "national-panda-day"
   },
   {
    "date": "2027-03-22",
    "animal": "Harp Seal",
    "day": "International Seal Day",
    "official": true,
-   "slug": "international-seal-day-2027",
+   "slug": "international-seal-day",
    "appId": "harp_seal"
   },
   {
@@ -322,14 +327,15 @@
    "animal": "West Indian Manatee",
    "day": "Manatee Appreciation Day",
    "official": true,
-   "slug": "manatee-appreciation-day-2027"
+   "slug": "manatee-appreciation-day",
+   "rule": [-1, 2, 3]
   },
   {
    "date": "2027-04-07",
    "animal": "Eurasian Beaver",
    "day": "International Beaver Day",
    "official": true,
-   "slug": "international-beaver-day-2027",
+   "slug": "international-beaver-day",
    "appId": "beaver"
   },
   {
@@ -337,7 +343,7 @@
    "animal": "Fruit Bat",
    "day": "Bat Appreciation Day",
    "official": true,
-   "slug": "bat-appreciation-day-2027",
+   "slug": "bat-appreciation-day",
    "appId": "fruit_bat"
   },
   {
@@ -345,7 +351,7 @@
    "animal": "Pallas's Cat",
    "day": "International Pallas's Cat Day",
    "official": true,
-   "slug": "international-pallas-cat-day-2027",
+   "slug": "international-pallas-cat-day",
    "appId": "pallas_cat"
   },
   {
@@ -353,7 +359,7 @@
    "animal": "Malayan Tapir",
    "day": "World Tapir Day",
    "official": true,
-   "slug": "world-tapir-day-2027",
+   "slug": "world-tapir-day",
    "appId": "tapir"
   },
   {
@@ -361,7 +367,7 @@
    "animal": "Koala",
    "day": "Wild Koala Day",
    "official": true,
-   "slug": "wild-koala-day-2027",
+   "slug": "wild-koala-day",
    "appId": "koala"
   },
   {
@@ -376,23 +382,25 @@
    "animal": "Black Rhino",
    "day": "Endangered Species Day",
    "official": true,
-   "slug": "endangered-species-day-2027",
-   "appId": "rhinoceros"
+   "slug": "endangered-species-day",
+   "appId": "rhinoceros",
+   "rule": [3, 4, 5]
   },
   {
    "date": "2027-05-26",
    "animal": "Sea Otter",
    "day": "World Otter Day",
    "official": true,
-   "slug": "world-otter-day-2027",
-   "appId": "sea_otter"
+   "slug": "world-otter-day",
+   "appId": "sea_otter",
+   "rule": [-1, 2, 5]
   },
   {
    "date": "2027-06-05",
    "animal": "Galapagos Giant Tortoise",
    "day": "World Environment Day",
    "official": true,
-   "slug": "world-environment-day-2027",
+   "slug": "world-environment-day",
    "appId": "tortoise"
   },
   {
@@ -400,7 +408,7 @@
    "animal": "Orca",
    "day": "World Oceans Day",
    "official": true,
-   "slug": "world-oceans-day-2027",
+   "slug": "world-oceans-day",
    "appId": "orca"
   },
   {
@@ -408,7 +416,7 @@
    "animal": "Green Sea Turtle",
    "day": "World Sea Turtle Day",
    "official": true,
-   "slug": "world-sea-turtle-day-2027",
+   "slug": "world-sea-turtle-day",
    "appId": "sea_turtle"
   },
   {
@@ -416,7 +424,7 @@
    "animal": "Giraffe",
    "day": "World Giraffe Day",
    "official": true,
-   "slug": "world-giraffe-day-2027",
+   "slug": "world-giraffe-day",
    "appId": "giraffe"
   },
   {
@@ -461,7 +469,9 @@
    "origin": "ADDED. Started in 2012 by Friends of the East Brunswick Environmental Commission (New Jersey); now a global citizen-science event despite the name. 2026 dates computed from the rule; confirm on the official site.",
    "sourceUrl": "https://nationalmothweek.org/",
    "scope": "worldwide",
-   "pageSlug": "national-moth-week"
+   "pageSlug": "national-moth-week",
+   "rule": [3, 5, 7],
+   "when": "Late July (one week)"
   },
   {
    "date": "2026-08-02",
@@ -542,7 +552,9 @@
    "origin": "Run across Europe by EUROBATS since 1997; about 30 countries take part. It spans the weekend of 29-30 Aug 2026.",
    "sourceUrl": "https://www.eurobats.org/international-bat-night",
    "scope": "regional",
-   "appId": "fruit_bat"
+   "appId": "fruit_bat",
+   "rule": [-1, 5, 8],
+   "when": "Last weekend of August"
   },
   {
    "date": "2026-08-30",
@@ -578,7 +590,8 @@
    "origin": "Usually credited to wildlife rehabilitator Penny Elliston in 1996, though sources disagree on the first year.",
    "sourceUrl": "https://www.awarenessdays.com/awareness-days-calendar/national-hummingbird-day/",
    "scope": "national-US",
-   "appId": "hummingbird"
+   "appId": "hummingbird",
+   "rule": [1, 5, 9]
   },
   {
    "date": "2026-09-06",
@@ -605,7 +618,8 @@
    "origin": "Established in Australia in 2005 by Frank Manthey, co-founder of Save the Bilby Fund. It is a gazetted national day.",
    "sourceUrl": "https://savethebilbyfund.org.au/national-bilby-day/",
    "scope": "national-other",
-   "pageSlug": "national-bilby-day"
+   "pageSlug": "national-bilby-day",
+   "rule": [2, 6, 9]
   },
   {
    "date": "2026-09-17",
@@ -623,7 +637,8 @@
    "origin": "ADDED. Organised by Defenders of Wildlife with the Elkhorn Slough Reserve and partner aquariums since about 2003. 2026 dates computed from the rule; confirm.",
    "sourceUrl": "https://defenders.org/sea-otter-awareness-week",
    "scope": "national-US",
-   "appId": "sea_otter"
+   "appId": "sea_otter",
+   "when": "Last full week of September"
   },
   {
    "date": "2026-09-22",
@@ -650,7 +665,8 @@
    "origin": "Run by the Australian Koala Foundation, which has held Save the Koala fundraising events since 1989.",
    "sourceUrl": "https://savethekoala.com/how-to-help/save-the-koala-month/",
    "scope": "national-other",
-   "appId": "koala"
+   "appId": "koala",
+   "rule": [-1, 4, 9]
   },
   {
    "date": "2026-09-26",
@@ -668,7 +684,8 @@
    "origin": "A New Zealand campaign led by the charity Save the Kiwi (Kiwis for kiwi, set up in 2012) with the Department of Conservation. It grew out of the earlier Save Kiwi Week. (No separately verifiable 'World Kiwi Day' was found; this month-long campaign is the kiwi observance.)",
    "sourceUrl": "https://blog.doc.govt.nz/2014/10/02/save-kiwi-month/",
    "scope": "national-other",
-   "pageSlug": "save-kiwi-month"
+   "pageSlug": "save-kiwi-month",
+   "when": "All of October"
   },
   {
    "date": "2026-10-01",
@@ -695,7 +712,8 @@
    "origin": "A UN-backed campaign run by CMS, AEWA and Environment for the Americas. The two annual dates were unified in 2018. The 2026 theme is 'Every Bird Counts'.",
    "sourceUrl": "https://www.migratorybirdday.org/when-is-wmbd/",
    "scope": "worldwide",
-   "pageSlug": "world-migratory-bird-day-october"
+   "pageSlug": "world-migratory-bird-day-october",
+   "rule": [2, 5, 10]
   },
   {
    "date": "2026-10-17",
@@ -713,7 +731,9 @@
    "origin": "Established in 1996 by Defenders of Wildlife. Governors in more than half of US states have proclaimed it.",
    "sourceUrl": "https://defenders.org/blog/2023/10/howling-history-of-wolf-awareness-week",
    "scope": "national-US",
-   "appId": "arctic_wolf"
+   "appId": "arctic_wolf",
+   "rule": [3, 6, 10],
+   "when": "Third week of October"
   },
   {
    "date": "2026-10-21",
@@ -767,7 +787,8 @@
    "origin": "An international celebration organised by North American conservation groups and government agencies, including Bat Conservation International and the US Fish & Wildlife Service.",
    "sourceUrl": "https://batweek.org/about/",
    "scope": "worldwide",
-   "appId": "fruit_bat"
+   "appId": "fruit_bat",
+   "when": "October 24–31"
   },
   {
    "date": "2026-11-01",
@@ -776,7 +797,9 @@
    "origin": "Created by Polar Bears International to coincide with the bears gathering near Churchill, Manitoba as they wait for sea ice. The 2026 dates come from Churchill Wild; check them against PBI.",
    "sourceUrl": "https://polarbearsinternational.org/act-now/awareness-events/polar-bear-week/",
    "scope": "worldwide",
-   "appId": "polar_bear"
+   "appId": "polar_bear",
+   "rule": [1, 6, 11],
+   "when": "First week of November"
   },
   {
    "date": "2026-11-01",
@@ -785,7 +808,8 @@
    "origin": "First declared in 1979 by Florida Governor Bob Graham, co-founder of Save the Manatee Club. It is a Florida state observance.",
    "sourceUrl": "https://savethemanatee.org/a-history-of-manatee-awareness-month/",
    "scope": "regional",
-   "pageSlug": "manatee-awareness-month"
+   "pageSlug": "manatee-awareness-month",
+   "when": "All of November"
   },
   {
    "date": "2026-11-03",
@@ -803,7 +827,8 @@
    "origin": "First held on Nov 7, 2015 by Project Numbat Inc., a volunteer group in Western Australia.",
    "sourceUrl": "http://www.numbat.org.au/news/2019/10/16/world-numbat-day",
    "scope": "worldwide",
-   "appId": "numbat"
+   "appId": "numbat",
+   "rule": [1, 5, 11]
   },
   {
    "date": "2026-11-08",
@@ -812,7 +837,9 @@
    "origin": "Began in 2004 as Orangutan Awareness Week and was renamed by the Orang Utan Republik Foundation, which has held it every November since 2005. The 2026 dates are computed from the rule.",
    "sourceUrl": "https://orangutancaring.org/",
    "scope": "worldwide",
-   "appId": "orangutan"
+   "appId": "orangutan",
+   "rule": [2, 6, 11],
+   "when": "Second week of November"
   },
   {
    "date": "2026-11-19",
@@ -848,7 +875,8 @@
    "origin": "ADDED. Audubon's citizen-science census, running since Christmas Day 1900 (proposed by ornithologist Frank Chapman); counts happen across the Americas and beyond.",
    "sourceUrl": "https://www.audubon.org/community-science/christmas-bird-count",
    "scope": "worldwide",
-   "pageSlug": "christmas-bird-count"
+   "pageSlug": "christmas-bird-count",
+   "when": "December 14 – January 5"
   },
   {
    "date": "2027-01-21",
@@ -866,7 +894,9 @@
    "origin": "ADDED. UK citizen-science survey run by the RSPB since 1979 (began as a children's event). 2027 dates computed from the rule; confirm when RSPB announces.",
    "sourceUrl": "https://www.rspb.org.uk/whats-happening/big-garden-birdwatch",
    "scope": "national-other",
-   "pageSlug": "rspb-big-garden-birdwatch"
+   "pageSlug": "rspb-big-garden-birdwatch",
+   "rule": [-1, 4, 1],
+   "when": "Last weekend of January"
   },
   {
    "date": "2027-02-12",
@@ -875,7 +905,9 @@
    "origin": "ADDED. Launched in 1998 by the Cornell Lab of Ornithology and National Audubon Society (Birds Canada joined later); global since 2013. 2027 dates computed from the usual pattern; confirm.",
    "sourceUrl": "https://www.birdcount.org/",
    "scope": "worldwide",
-   "pageSlug": "great-backyard-bird-count"
+   "pageSlug": "great-backyard-bird-count",
+   "rule": [2, 4, 2],
+   "when": "Four days in mid-February"
   },
   {
    "date": "2027-02-21",
@@ -884,7 +916,8 @@
    "origin": "Founded in 1980 on Maui by Greg Kaufman of Pacific Whale Foundation as part of the Maui Whale Festival.",
    "sourceUrl": "https://pacificwhale.org/world-whale-day/",
    "scope": "worldwide",
-   "pageSlug": "world-whale-day"
+   "pageSlug": "world-whale-day",
+   "rule": [3, 6, 2]
   },
   {
    "date": "2027-03-15",
@@ -902,7 +935,8 @@
    "origin": "Held on the third Saturday of March, set in Florida law (s. 683.18) since 1995.",
    "sourceUrl": "https://law.justia.com/codes/florida/title-xxxix/chapter-683/section-683-18/",
    "scope": "regional",
-   "appId": "cougar"
+   "appId": "cougar",
+   "rule": [3, 5, 3]
   },
   {
    "date": "2027-03-20",
@@ -1010,7 +1044,8 @@
    "origin": "Began in 1987 with Chris Baines at Moseley Bog, Birmingham, then was promoted by the Wildlife Trust for Birmingham and the Black Country.",
    "sourceUrl": "https://www.discoverwildlife.com/how-to/watch-wildlife/dawn-chorus-guide",
    "scope": "worldwide",
-   "pageSlug": "international-dawn-chorus-day"
+   "pageSlug": "international-dawn-chorus-day",
+   "rule": [1, 6, 5]
   },
   {
    "date": "2027-05-03",
@@ -1046,7 +1081,8 @@
    "origin": "UN-backed campaign by the CMS and AEWA secretariats, running since 2006. Same observance as the October date; both kept as separate occurrences.",
    "sourceUrl": "https://www.un.org/en/observances/world-migratory-bird-day",
    "scope": "worldwide",
-   "pageSlug": "world-migratory-bird-day-may"
+   "pageSlug": "world-migratory-bird-day-may",
+   "rule": [2, 5, 5]
   },
   {
    "date": "2027-05-08",
@@ -1055,7 +1091,8 @@
    "origin": "Annual citizen-science birding day run by the Cornell Lab of Ornithology's eBird since 2015.",
    "sourceUrl": "https://ebird.org/globalbigday",
    "scope": "worldwide",
-   "pageSlug": "global-big-day"
+   "pageSlug": "global-big-day",
+   "rule": [2, 5, 5]
   },
   {
    "date": "2027-05-08",
@@ -1064,7 +1101,8 @@
    "origin": "Created in 2014 by ABConservation.",
    "sourceUrl": "https://www.abconservation.org/en/projects/world-binturong-day/",
    "scope": "worldwide",
-   "pageSlug": "world-binturong-day"
+   "pageSlug": "world-binturong-day",
+   "rule": [2, 5, 5]
   },
   {
    "date": "2027-05-20",

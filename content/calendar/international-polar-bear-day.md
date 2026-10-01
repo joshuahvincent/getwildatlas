@@ -3,7 +3,7 @@ title: "International Polar Bear Day: Polar Bear Facts for Kids — Meet the Ani
 date: 2027-02-27
 author: Wild Atlas
 excerpt: "Happy International Polar Bear Day! Meet the polar bear — its fur isn't really white, it's one of the biggest meat-eaters on land, and right now its cubs are peeking out of their snow dens for the very first time. A read-aloud, plus real places where you can meet one."
-coverImage: /assets/blog/international-polar-bear-day-2027/cover.jpg
+coverImage: /assets/blog/international-polar-bear-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: International Polar Bear Day
@@ -71,23 +71,23 @@ blogStatus: scheduled
 
 A polar bear's fur isn't really white. Each hair is see-through — and underneath all that fluff, its skin is black!
 
-{% figure "/assets/blog/international-polar-bear-day-2027/cover.jpg", "An adult polar bear climbing out of turquoise Arctic water onto the sea ice, its back legs still underwater" %}
+{% figure "/assets/blog/international-polar-bear-day/cover.jpg", "An adult polar bear climbing out of turquoise Arctic water onto the sea ice, its back legs still underwater" %}
 
 Yes, really. Every single hair is clear, like a tiny icicle. It only looks white because it scatters light, the way snow does. Underneath, a polar bear's skin is black — and so are its nose and lips.
 
 Polar bears live way up at the top of the world, in the frozen Arctic, where the ocean turns to ice. They're one of the biggest meat-eaters that lives on land, and their favorite food is seals, which they catch out on the ice.
 
-{% figure "/assets/blog/international-polar-bear-day-2027/scale.jpg", "An illustrated side view of a standing adult polar bear next to a small cartoon child explorer holding a jar" %}
+{% figure "/assets/blog/international-polar-bear-day/scale.jpg", "An illustrated side view of a standing adult polar bear next to a small cartoon child explorer holding a jar" %}
 
 Even standing on all four feet, a grown-up polar bear's back — about 1.3 meters (4 feet 5 inches) tall at the shoulder — is taller than the top of a 5-year-old's head. Nose to tail, a big bear stretches 2.5 meters (8 feet 3 inches) long: longer than two kids lying down in a row!
 
-{% figure "/assets/blog/international-polar-bear-day-2027/weight.jpg", "Two illustrated scales side by side, one holding a polar bear and the other holding 28 cartoon five-year-old children" %}
+{% figure "/assets/blog/international-polar-bear-day/weight.jpg", "Two illustrated scales side by side, one holding a polar bear and the other holding 28 cartoon five-year-old children" %}
 
 Can you picture 28 five-year-olds on one big scale? That's about how much one big dad polar bear weighs — 500 kilograms (1,102 pounds)!
 
 Polar bears are champion swimmers, too. Their science name, *Ursus maritimus*, means "sea bear," and they paddle with their giant front paws. Some have swum for days without stopping!
 
-{% figure "/assets/blog/international-polar-bear-day-2027/baby.jpg", "A fluffy white polar bear cub sitting upright on snowy tundra with mountains in the background" %}
+{% figure "/assets/blog/international-polar-bear-day/baby.jpg", "A fluffy white polar bear cub sitting upright on snowy tundra with mountains in the background" %}
 
 A newborn cub weighs about as much as a loaf of bread, and its eyes aren't even open yet! It stays cozy in a snow den with its mom, drinking her milk, for months — and polar bear moms usually have twins. Right about now, the very first cubs of the year are starting to peek outside their dens for a look at the world.
 

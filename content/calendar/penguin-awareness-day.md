@@ -3,7 +3,7 @@ title: "Penguin Awareness Day: Emperor Penguin Facts for Kids — Meet the Dad W
 date: 2027-01-20
 author: Wild Atlas
 excerpt: "Happy Penguin Awareness Day! Meet the emperor penguin — the dad who keeps an egg warm on his feet for about two months without eating, and stands eye-to-eye with a 5-year-old. A read-aloud, plus where to meet a real emperor penguin."
-coverImage: /assets/blog/penguin-awareness-day-2027/cover.jpg
+coverImage: /assets/blog/penguin-awareness-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: Penguin Awareness Day
@@ -56,7 +56,7 @@ blogStatus: scheduled
 
 An emperor penguin dad keeps his egg warm on top of his feet for about two months — through the dark Antarctic winter — without eating a single bite.
 
-{% figure "/assets/blog/penguin-awareness-day-2027/cover.jpg", "An emperor penguin swimming underwater beneath the sea ice" %}
+{% figure "/assets/blog/penguin-awareness-day/cover.jpg", "An emperor penguin swimming underwater beneath the sea ice" %}
 
 Mom lays one egg, then heads out to sea to fish. Dad tucks the egg onto his feet, under a warm flap of belly skin, and keeps it cozy all on his own — through wind, through dark, through some of the coldest cold on Earth. He doesn't eat anything the whole time.
 
@@ -64,15 +64,15 @@ Can you balance a soft toy on your feet without dropping it, like a penguin dad?
 
 A grown-up emperor penguin stands about as tall as a 5-year-old — a 5-year-old could look one right in the eye!
 
-{% figure "/assets/blog/penguin-awareness-day-2027/scale.jpg", "An emperor penguin standing next to a 5-year-old explorer for scale" %}
+{% figure "/assets/blog/penguin-awareness-day/scale.jpg", "An emperor penguin standing next to a 5-year-old explorer for scale" %}
 
 It weighs about as much as a 5-year-old and a 2-year-old put together.
 
-{% figure "/assets/blog/penguin-awareness-day-2027/weight.jpg", "A scale comparing an emperor penguin's weight to a 5-year-old and a 2-year-old together" %}
+{% figure "/assets/blog/penguin-awareness-day/weight.jpg", "A scale comparing an emperor penguin's weight to a 5-year-old and a 2-year-old together" %}
 
 When the chick finally hatches, it's small enough to fit in two cupped hands. If mom isn't back from the sea yet, Dad even makes a special "penguin milk" in his throat for its very first meal.
 
-{% figure "/assets/blog/penguin-awareness-day-2027/baby.jpg", "A fluffy grey emperor penguin chick standing on the ice" %}
+{% figure "/assets/blog/penguin-awareness-day/baby.jpg", "A fluffy grey emperor penguin chick standing on the ice" %}
 
 Chicks wear fluffy grey feathers, like tiny pajamas, and gather in big groups while both parents go fishing. In a crowd of thousands of penguins, a parent finds its very own chick by listening for one special call.
 

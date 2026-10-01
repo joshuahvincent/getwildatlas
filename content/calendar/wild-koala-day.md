@@ -3,7 +3,7 @@ title: "Wild Koala Day: Koala Facts for Kids — Meet the Joey the Size of a Jel
 date: 2027-05-03
 author: Wild Atlas
 excerpt: "Happy Wild Koala Day! Meet the koala — a pouch animal (a marsupial, not a bear!) that naps up to 20 hours a day and starts life the size of a jellybean. A read-aloud, plus where to meet a real koala."
-coverImage: /assets/blog/wild-koala-day-2027/cover.jpg
+coverImage: /assets/blog/wild-koala-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: Wild Koala Day
@@ -59,21 +59,21 @@ blogStatus: scheduled
 
 A brand-new koala baby is about the size of a jellybean — and it climbs into its mom's pouch all by itself!
 
-{% figure "/assets/blog/wild-koala-day-2027/cover.jpg", "A koala climbing along a eucalyptus branch in warm late-afternoon light" %}
+{% figure "/assets/blog/wild-koala-day/cover.jpg", "A koala climbing along a eucalyptus branch in warm late-afternoon light" %}
 
 A koala isn't a bear at all. It's a marsupial — a pouch animal, just like a kangaroo — and its closest living relatives are actually wombats. Koalas live high in the eucalyptus, or gum, trees of eastern Australia, and nowhere else in the wild.
 
 Koalas are picky eaters. They munch almost nothing but eucalyptus leaves, and each koala has a few favorite kinds out of hundreds. Those leaves don't give much energy, so a koala's tummy works slowly to break them down — which is why koalas rest or sleep for up to 18 to 20 hours a day!
 
-{% figure "/assets/blog/wild-koala-day-2027/scale.jpg", "A koala beside the Wild Atlas child explorer for scale" %}
+{% figure "/assets/blog/wild-koala-day/scale.jpg", "A koala beside the Wild Atlas child explorer for scale" %}
 
 A grown-up koala is about 75 centimeters (2 feet 6 inches) long from nose to bottom — about two-thirds as long as a 5-year-old is tall.
 
-{% figure "/assets/blog/wild-koala-day-2027/weight.jpg", "A scale with two koalas compared to a scale with one 5-year-old child" %}
+{% figure "/assets/blog/wild-koala-day/weight.jpg", "A scale with two koalas compared to a scale with one 5-year-old child" %}
 
 Picture two grown-up koalas together on one big scale. Together, the two koalas would weigh about 20 kilograms (44 pounds) — about as much as one 5-year-old.
 
-{% figure "/assets/blog/wild-koala-day-2027/baby.jpg", "A young koala gripping a eucalyptus trunk" %}
+{% figure "/assets/blog/wild-koala-day/baby.jpg", "A young koala gripping a eucalyptus trunk" %}
 
 When a koala joey is born, it's about 2 centimeters long — smaller than your thumb — and weighs less than a gram. It can't see or hear yet, but it knows exactly where to go: straight into its mom's pouch, where it grows for months before it's ready to ride on her back.
 

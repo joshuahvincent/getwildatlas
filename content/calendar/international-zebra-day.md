@@ -3,7 +3,7 @@ title: "International Zebra Day: Zebra Facts for Kids — Meet the Animal With a
 date: 2027-01-31
 author: Wild Atlas
 excerpt: "Happy International Zebra Day! Meet the zebra — no two of them share a stripe pattern, a newborn foal is walking within 20 minutes, and a baby learns its own mom's stripes so it can find her. A read-aloud, plus real places where you can meet one."
-coverImage: /assets/blog/international-zebra-day-2027/cover.jpg
+coverImage: /assets/blog/international-zebra-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: International Zebra Day
@@ -71,27 +71,27 @@ blogStatus: scheduled
 
 Every zebra has its very own stripe pattern — no two are exactly alike, anywhere in the world.
 
-{% figure "/assets/blog/international-zebra-day-2027/cover.jpg", "An adult plains zebra standing alert in golden savanna grass, its bold black-and-white stripes catching the late-afternoon light" %}
+{% figure "/assets/blog/international-zebra-day/cover.jpg", "An adult plains zebra standing alert in golden savanna grass, its bold black-and-white stripes catching the late-afternoon light" %}
 
 That's not just a fun fact — it matters to zebras. A newborn foal has to learn its own mom — her stripes, her smell and her voice — fast, so it can find her again in a big, busy herd. For the first little while, Mom keeps the rest of the herd at a distance so her foal has time to learn her.
 
 There are three kinds of zebra, and the plains zebra — the one you'll see most often — lives on the grassy plains of eastern and southern Africa.
 
-{% figure "/assets/blog/international-zebra-day-2027/scale.jpg", "An illustrated side view of a standing zebra next to a small cartoon child explorer, with an arrow showing the zebra's shoulder is taller than the child's head" %}
+{% figure "/assets/blog/international-zebra-day/scale.jpg", "An illustrated side view of a standing zebra next to a small cartoon child explorer, with an arrow showing the zebra's shoulder is taller than the child's head" %}
 
 Stand up nice and tall. A grown-up zebra's back is still higher than the top of your head — about 1.3 meters (4 feet 4 inches) at the shoulder, taller than a 5-year-old.
 
-{% figure "/assets/blog/international-zebra-day-2027/weight.jpg", "Two illustrated scales side by side, one holding a zebra and the other holding nineteen cartoon five-year-old children" %}
+{% figure "/assets/blog/international-zebra-day/weight.jpg", "Two illustrated scales side by side, one holding a zebra and the other holding nineteen cartoon five-year-old children" %}
 
 Can you picture 19 five-year-olds all standing on one giant scale? That's about how much one big zebra weighs — 350 kilograms, or 772 pounds!
 
 Here's a mystery even scientists are still working on: stripes seem to muddle biting flies. The flies circle and circle, but they have a much harder time landing on all those stripes than they do on a plain-colored animal.
 
-{% figure "/assets/blog/international-zebra-day-2027/baby.jpg", "A plains zebra foal with fuzzy brown-and-white stripes standing beside its striped mother's legs on short grass" %}
+{% figure "/assets/blog/international-zebra-day/baby.jpg", "A plains zebra foal with fuzzy brown-and-white stripes standing beside its striped mother's legs on short grass" %}
 
 A brand-new baby zebra weighs almost as much as two five-year-olds — and here's the wildest part: it can stand up and walk within about 20 minutes of being born! Its stripes even start out soft and brown, and slowly turn black as it grows.
 
-{% figure "/assets/blog/international-zebra-day-2027/habitat.jpg", "A large herd of plains zebras grazing across a green grassy plain in golden light, with acacia trees and a rocky outcrop on the horizon" %}
+{% figure "/assets/blog/international-zebra-day/habitat.jpg", "A large herd of plains zebras grazing across a green grassy plain in golden light, with acacia trees and a rocky outcrop on the horizon" %}
 
 Zebra families join up into huge herds like this one — hundreds of stripes, moving together across the grass.
 

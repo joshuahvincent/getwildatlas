@@ -3,7 +3,7 @@ title: "International Jaguar Day: Jaguar Facts for Kids — Meet the Spotted Swi
 date: 2026-11-29
 author: Wild Atlas
 excerpt: "Happy International Jaguar Day! Meet the jaguar — the biggest cat in the Americas, with spots that have spots, a love of swimming, and cubs that stay glued to mom for a year and a half. A read-aloud, plus real zoos where you can go meet one."
-coverImage: /assets/blog/international-jaguar-day-2026/cover.jpg
+coverImage: /assets/blog/international-jaguar-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: International Jaguar Day
@@ -63,17 +63,17 @@ blogStatus: scheduled
 
 The jaguar is a big cat that loves to swim — and its spots have spots!
 
-{% figure "/assets/blog/international-jaguar-day-2026/cover.jpg", "An adult jaguar leaping from a muddy bank beside a shallow forest stream, golden coat covered in black spots and rosettes, dense green rainforest behind it" %}
+{% figure "/assets/blog/international-jaguar-day/cover.jpg", "An adult jaguar leaping from a muddy bank beside a shallow forest stream, golden coat covered in black spots and rosettes, dense green rainforest behind it" %}
 
 Meet the jaguar — the biggest cat in North and South America, and the third-biggest cat in the whole world. It has a big head, strong shoulders, and a golden coat covered in dark rosettes.
 
 Can you make your best low, rumbly jaguar growl?
 
-{% figure "/assets/blog/international-jaguar-day-2026/scale.jpg", "An illustrated adult jaguar standing next to a young explorer child, with an arrow marking the jaguar's shoulder height" %}
+{% figure "/assets/blog/international-jaguar-day/scale.jpg", "An illustrated adult jaguar standing next to a young explorer child, with an arrow marking the jaguar's shoulder height" %}
 
 Standing on all four paws, a jaguar's back reaches about a 5-year-old's shoulders. Nose to the end of its body, a big jaguar is almost as long as two 5-year-olds lying head to toe — and then there's the tail!
 
-{% figure "/assets/blog/international-jaguar-day-2026/weight.jpg", "A scale showing an adult jaguar's weight compared to six 5-year-old children on a matching scale" %}
+{% figure "/assets/blog/international-jaguar-day/weight.jpg", "A scale showing an adult jaguar's weight compared to six 5-year-old children on a matching scale" %}
 
 And it's heavy, too — a big jaguar weighs about as much as six 5-year-olds, all standing on one big scale together!
 
@@ -85,7 +85,7 @@ Now look closely at those spots. Many of a jaguar's rosettes have a tiny spot hi
 
 Can you find a spot pattern on your clothes or a stuffed animal, like a jaguar's?
 
-{% figure "/assets/blog/international-jaguar-day-2026/baby.jpg", "A jaguar cub with blue-grey eyes and a spotted fluffy coat sitting on mossy roots at the edge of a calm rainforest river" %}
+{% figure "/assets/blog/international-jaguar-day/baby.jpg", "A jaguar cub with blue-grey eyes and a spotted fluffy coat sitting on mossy roots at the edge of a calm rainforest river" %}
 
 Baby jaguars are born with their eyes shut tight, and jaguar moms usually have twins. Cubs stay close to their mom for about a year and a half, learning to swim, climb, and pad through the forest without making a sound.
 

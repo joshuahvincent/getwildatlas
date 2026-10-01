@@ -9,7 +9,7 @@ simpleDay:
   campaign: day_rspb_big_garden_birdwatch
   greeting: "**Happy Big Garden Birdwatch!** This weekend, kids and grown-ups settle in for one quiet hour to count the birds that visit them."
   origin:
-    text: "A UK bird survey run by the RSPB since 1979, when it began as an event for children. The 2027 dates are our best guess; check the RSPB for the final weekend."
+    text: "A UK bird survey run by the RSPB since 1979, when it began as an event for children. It's held over a weekend in late January; check the RSPB for the exact dates."
     sourceUrl: https://www.rspb.org.uk/whats-happening/big-garden-birdwatch
   whatItCelebrates: |
     The Big Garden Birdwatch is a citizen-science project, which means ordinary people help scientists by noticing things. For one hour, you watch the birds in your garden, yard, or a nearby park and count the ones you see.

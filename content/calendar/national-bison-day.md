@@ -3,7 +3,7 @@ title: "National Bison Day: American Bison Facts for Kids — Meet the Prairie's
 date: 2026-11-07
 author: Wild Atlas
 excerpt: "Happy National Bison Day! Meet the American bison — North America's biggest land animal, with a giant snowplow head, a talent for jumping fences, and babies born a bright orange-red. A read-aloud, plus real zoos where you can go meet one."
-coverImage: /assets/blog/national-bison-day-2026/cover.jpg
+coverImage: /assets/blog/national-bison-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: National Bison Day
@@ -67,17 +67,17 @@ blogStatus: scheduled
 
 Baby bison are born a bright orange-red — people call them "red dogs" — and just a couple of hours later, they can keep up with the whole herd.
 
-{% figure "/assets/blog/national-bison-day-2026/cover.jpg", "An adult American bison running across a golden, dry shortgrass prairie in warm low sunlight, kicking up dust, with a shaggy mane and curved horns" %}
+{% figure "/assets/blog/national-bison-day/cover.jpg", "An adult American bison running across a golden, dry shortgrass prairie in warm low sunlight, kicking up dust, with a shaggy mane and curved horns" %}
 
 Meet the American bison — the biggest land animal in North America. It has a huge, furry hump on its shoulders (that's mostly muscle!), a shaggy beard, and two curved horns.
 
 Can you make your voice low and rumbly, like a bison's grunt?
 
-{% figure "/assets/blog/national-bison-day-2026/scale.jpg", "An illustrated adult bison standing next to a small child explorer, with arrows marking the bison's height and length" %}
+{% figure "/assets/blog/national-bison-day/scale.jpg", "An illustrated adult bison standing next to a small child explorer, with arrows marking the bison's height and length" %}
 
 A big bull bison's shoulders reach higher than most grown-ups' heads — stand next to one, and a 5-year-old's head would only reach partway up its side! Nose to tail, it's about as long as three 5-year-olds lying head to toe.
 
-{% figure "/assets/blog/national-bison-day-2026/weight.jpg", "A scale showing an adult bison's weight compared to 49 five-year-old children on a matching scale" %}
+{% figure "/assets/blog/national-bison-day/weight.jpg", "A scale showing an adult bison's weight compared to 49 five-year-old children on a matching scale" %}
 
 And it's heavy, too — a big bull can weigh as much as 49 five-year-olds, all standing on one big scale together! But don't let the size fool you: a bison can run about as fast as a car driving through town, and jump right over a fence taller than you. It can even swim.
 
@@ -87,7 +87,7 @@ In winter, a bison uses its giant head like a snowplow, sweeping snow aside to f
 
 Can you swing your head slowly side to side, like a bison sweeping snow off the grass?
 
-{% figure "/assets/blog/national-bison-day-2026/baby.jpg", "A bison calf with fluffy reddish-orange 'red dog' fur standing alone in a green prairie" %}
+{% figure "/assets/blog/national-bison-day/baby.jpg", "A bison calf with fluffy reddish-orange 'red dog' fur standing alone in a green prairie" %}
 
 Here's the best wow fact of all: baby bison are born a bright orange-red — people call them "red dogs"! A red-dog calf can stand up within about half an hour — and a couple of hours later, it can keep pace with the whole herd. By the time it's a few months old, its coat turns brown, just like the grown-ups around it.
 

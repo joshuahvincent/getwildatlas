@@ -2,8 +2,8 @@
 title: "Monkey Day: Golden Snub-Nosed Monkey Facts for Kids — Meet the Blue-Faced Monkey of China's Snowy Mountains"
 date: 2026-12-14
 author: Wild Atlas
-excerpt: "Happy Monkey Day! Meet the golden snub-nosed monkey — a golden, blue-faced monkey that lives high in China's snowy mountains, where the whole family huddles together to stay warm, and babies get help from grandmas and aunties too. A read-aloud, plus the two zoos in Europe that welcomed golden monkey babies this year."
-coverImage: /assets/blog/monkey-day-2026/cover.jpg
+excerpt: "Happy Monkey Day! Meet the golden snub-nosed monkey — a golden, blue-faced monkey that lives high in China's snowy mountains, where the whole family huddles together to stay warm, and babies get help from grandmas and aunties too. A read-aloud, plus the two zoos in Europe that welcomed golden monkey babies in 2026."
+coverImage: /assets/blog/monkey-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: Monkey Day
@@ -14,7 +14,7 @@ animalDay:
   readAloudNote: "Read this one out loud together — it's short, and it's even better with a shiver and a snuggle."
   whereToSee:
     heading: Where to see a golden snub-nosed monkey
-    intro: "In the wild, golden snub-nosed monkeys live only in the snowy mountain forests of central China — nowhere else on Earth. For the rest of us, no zoo in North America has one right now, but two zoos in Europe do, and both welcomed baby monkeys for the first time this year."
+    intro: "In the wild, golden snub-nosed monkeys live only in the snowy mountain forests of central China — nowhere else on Earth. For the rest of us, no zoo in North America has one right now, but two zoos in Europe do, and both welcomed baby monkeys for the first time in 2026."
     groups:
       - label: Around the world
         places:
@@ -45,29 +45,29 @@ blogStatus: scheduled
 
 High in China's snowy mountains lives a monkey with golden fur, a blue face and a tiny turned-up nose — and when it's cold, the whole family snuggles up together to stay warm.
 
-{% figure "/assets/blog/monkey-day-2026/cover.jpg", "A golden snub-nosed monkey with golden fur, a pale blue face and an upturned nose, sitting on a snowy branch as snow falls" %}
+{% figure "/assets/blog/monkey-day/cover.jpg", "A golden snub-nosed monkey with golden fur, a pale blue face and an upturned nose, sitting on a snowy branch as snow falls" %}
 
 Golden snub-nosed monkeys live in only one place on Earth: the mountain forests of central China, where snow covers the ground for months at a time. Their thick golden coats help keep them warm, and their tiny turned-up noses make them look like they're always smiling up at the sky.
 
 Can you scrunch up your nose like a golden monkey?
 
-{% figure "/assets/blog/monkey-day-2026/scale.jpg", "An illustrated size comparison of a golden snub-nosed monkey walking on all fours next to a 5-year-old explorer child" %}
+{% figure "/assets/blog/monkey-day/scale.jpg", "An illustrated size comparison of a golden snub-nosed monkey walking on all fours next to a 5-year-old explorer child" %}
 
 A big boy golden monkey's body alone is a little more than half as long as a 5-year-old is tall. But add his tail — which is about as long as his whole body — and nose to tail-tip, he can be as long as a 5-year-old is tall, or even longer!
 
-{% figure "/assets/blog/monkey-day-2026/weight.jpg", "A scale showing a golden snub-nosed monkey's weight compared to a 5-year-old child on a matching scale" %}
+{% figure "/assets/blog/monkey-day/weight.jpg", "A scale showing a golden snub-nosed monkey's weight compared to a 5-year-old child on a matching scale" %}
 
 And here's a surprise: a full-grown male golden monkey weighs about as much as one 5-year-old child!
 
 In winter, golden monkeys munch on lichen — a stringy, fuzzy growth that hangs from tree branches — along with bark, buds and seeds. They spend almost all their time up in the trees.
 
-{% figure "/assets/blog/monkey-day-2026/baby.jpg", "A mother golden snub-nosed monkey with golden-brown fur holding her pale grey baby against her chest on a mossy branch" %}
+{% figure "/assets/blog/monkey-day/baby.jpg", "A mother golden snub-nosed monkey with golden-brown fur holding her pale grey baby against her chest on a mossy branch" %}
 
 Baby golden monkeys are born in spring, and they start out grey, not golden — their golden color comes in later. Babies get looked after by their mom, and sometimes by grandmas and aunties too, who help feed them.
 
 Can you huddle close with your family to stay warm, like a monkey troop does in the snow?
 
-{% figure "/assets/blog/monkey-day-2026/habitat.jpg", "A family of golden snub-nosed monkeys huddled together on a snowy branch, with a misty mountain valley in the background" %}
+{% figure "/assets/blog/monkey-day/habitat.jpg", "A family of golden snub-nosed monkeys huddled together on a snowy branch, with a misty mountain valley in the background" %}
 
 Golden monkey families join together into huge neighborhoods — sometimes hundreds of monkeys, all living in the same forest. When it gets really cold, families press close together in a big furry huddle, and the huddle gets even bigger the colder it gets.
 

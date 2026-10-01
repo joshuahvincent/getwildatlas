@@ -3,7 +3,7 @@ title: "World Fisheries Day: Whale Shark Facts for Kids — Meet the Biggest Fis
 date: 2026-11-21
 author: Wild Atlas
 excerpt: "Happy World Fisheries Day! It's a day to thank the people who fish — including the fishers in India who cut their own nets to set whale sharks free. Meet the whale shark: the biggest fish in the sea, with a throat only about as wide as a coin. A read-aloud, plus where to see one."
-coverImage: /assets/blog/whale-shark-world-fisheries-day-2026/cover.jpg
+coverImage: /assets/blog/whale-shark-world-fisheries-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: World Fisheries Day
@@ -55,7 +55,7 @@ blogStatus: scheduled
 
 The biggest fish in the whole ocean is as long as a school bus — but its throat is only about as wide as a coin, so it eats mostly teeny food.
 
-{% figure "/assets/blog/whale-shark-world-fisheries-day-2026/cover.jpg", "A whale shark swimming near the surface of clear turquoise water, its spotted grey back and wide flat head catching the light" %}
+{% figure "/assets/blog/whale-shark-world-fisheries-day/cover.jpg", "A whale shark swimming near the surface of clear turquoise water, its spotted grey back and wide flat head catching the light" %}
 
 Meet the whale shark. It's a shark, not a whale — the name just means it's whale-sized. And even though "shark" can sound scary, this one doesn't have the kind of teeth that could hurt you. Its mouth is built for sipping, not biting.
 
@@ -65,15 +65,15 @@ Can you open your mouth as wide as you can, like a whale shark sipping up its di
 
 Every whale shark wears its own pattern of pale spots and stripes, and no two are ever the same. Scientists use photos of the spots like name tags, to tell one whale shark from another.
 
-{% figure "/assets/blog/whale-shark-world-fisheries-day-2026/scale.jpg", "An illustrated whale shark measuring 12 meters (39 feet 5 inches) long, next to a small child in a wetsuit and snorkel mask for scale" %}
+{% figure "/assets/blog/whale-shark-world-fisheries-day/scale.jpg", "An illustrated whale shark measuring 12 meters (39 feet 5 inches) long, next to a small child in a wetsuit and snorkel mask for scale" %}
 
 A grown-up whale shark can be as long as 11 five-year-olds lying head to toe — about 12 meters (39 feet), or the length of a school bus.
 
-{% figure "/assets/blog/whale-shark-world-fisheries-day-2026/weight.jpg", "Two scales side by side: one whale shark at 18,000 kilograms, and 973 five-year-olds together at 18,001 kilograms" %}
+{% figure "/assets/blog/whale-shark-world-fisheries-day/weight.jpg", "Two scales side by side: one whale shark at 18,000 kilograms, and 973 five-year-olds together at 18,001 kilograms" %}
 
 It can weigh as much as 973 five-year-olds, all standing on one enormous scale together. Can you picture that many friends in one place?
 
-{% figure "/assets/blog/whale-shark-world-fisheries-day-2026/baby.jpg", "A young whale shark swimming alone through deep, sunlit blue water" %}
+{% figure "/assets/blog/whale-shark-world-fisheries-day/baby.jpg", "A young whale shark swimming alone through deep, sunlit blue water" %}
 
 A young whale shark is born about half as long as you are tall, and it grows up brave and independent, finding its own way from the very start. Nobody has ever seen one being born — but one whale shark mom was once found carrying about 300 babies inside her!
 

@@ -3,7 +3,7 @@ title: "International Bat Appreciation Day: Flying Fox Facts for Kids — Meet t
 date: 2027-04-17
 author: Wild Atlas
 excerpt: "Happy Bat Appreciation Day! Meet the flying fox — a giant fruit bat that finds its way by sight and smell, not echoes. A read-aloud, plus where to meet a real one."
-coverImage: /assets/blog/bat-appreciation-day-2027/cover.jpg
+coverImage: /assets/blog/bat-appreciation-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: International Bat Appreciation Day
@@ -70,23 +70,23 @@ blogStatus: scheduled
 
 If a large flying fox stretched out its wings right next to you, they'd reach farther than you are tall — it's one of the biggest bats in the whole world!
 
-{% figure "/assets/blog/bat-appreciation-day-2027/cover.jpg", "A fruit bat in flight, wings spread wide, flying toward the camera through a forest" %}
+{% figure "/assets/blog/bat-appreciation-day/cover.jpg", "A fruit bat in flight, wings spread wide, flying toward the camera through a forest" %}
 
 It's called a flying fox because its face looks like a little fox — but it's a bat, not a fox! This kind, the large flying fox, is one of the biggest fruit bats in the world.
 
 Most bats find their way by listening for echoes. This one doesn't. It flies using its big eyes and a super nose — a nose so good it can sniff out ripe fruit in the dark, a bit like a dog's.
 
-{% figure "/assets/blog/bat-appreciation-day-2027/scale.jpg", "A fruit bat with wings spread next to the Wild Atlas explorer, drawn as a 5-year-old, showing the bat's wingspan is wider than she is tall" %}
+{% figure "/assets/blog/bat-appreciation-day/scale.jpg", "A fruit bat with wings spread next to the Wild Atlas explorer, drawn as a 5-year-old, showing the bat's wingspan is wider than she is tall" %}
 
 Its furry body is only about as long as a school ruler — it's the wings that are huge.
 
 Can you picture 19 flying foxes on one big scale? That's about how many it would take to weigh as much as one five-year-old!
 
-{% figure "/assets/blog/bat-appreciation-day-2027/weight.jpg", "Two scales comparing 19 fruit bats to one 5-year-old child, both weighing about 19 kilograms" %}
+{% figure "/assets/blog/bat-appreciation-day/weight.jpg", "Two scales comparing 19 fruit bats to one 5-year-old child, both weighing about 19 kilograms" %}
 
 A flying fox mom has one baby at a time. At first, the baby hangs on to Mom wherever she goes. Later it waits in the tree, and Mom flies back to feed it milk.
 
-{% figure "/assets/blog/bat-appreciation-day-2027/baby.jpg", "A young fruit bat clinging to a mossy branch in a damp forest" %}
+{% figure "/assets/blog/bat-appreciation-day/baby.jpg", "A young fruit bat clinging to a mossy branch in a damp forest" %}
 
 Every night, a flying fox eats about half its own weight in fruit and flowers — imagine eating half your weight in snacks!
 

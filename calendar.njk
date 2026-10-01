@@ -124,7 +124,6 @@ eleventyExcludeFromCollections: true
   .ms-tab:hover { border-color: var(--bark); }
   .ms-tab.active { border-color: var(--bark); background: var(--sunny-wash); box-shadow: 0 4px 10px rgba(93, 64, 55, 0.12); }
   .ms-name { display: block; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 1.05rem; }
-  .ms-year { display: block; font-size: 0.72rem; font-weight: 600; opacity: 0.7; }
   .ms-count { display: block; font-size: 0.68rem; font-weight: 600; color: var(--muted); margin-top: 2px; }
   .cm-head { display: flex; align-items: center; gap: 0.6rem; margin: 0 0 0.8rem; }
   .cm-head h2 { margin: 0 !important; flex: 1; }
@@ -149,7 +148,6 @@ eleventyExcludeFromCollections: true
   {%- for m in months %}
   <a class="ms-tab{% if loop.first %} active{% endif %}" href="#m-{{ m.key }}" data-month="{{ m.key }}">
     <span class="ms-name">{{ m.key | monthLabel | truncate(3, true, "") }}</span>
-    <span class="ms-year">{{ m.key | truncate(4, true, "") }}</span>
     <span class="ms-count">{{ m.events.length + m.also.length }} days</span>
   </a>
   {%- endfor %}

@@ -3,7 +3,7 @@ title: "World Pangolin Day: Pangolin Facts for Kids — Meet the Only Mammal Cov
 date: 2027-02-20
 author: Wild Atlas
 excerpt: "Happy World Pangolin Day! Meet the pangolin — the only mammal covered head to tail in scales, with no teeth at all. A read-aloud, plus where to meet a real pangolin."
-coverImage: /assets/blog/world-pangolin-day-2027/baby.jpg
+coverImage: /assets/blog/world-pangolin-day/baby.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: World Pangolin Day
@@ -60,17 +60,17 @@ The pangolin in Wild Atlas is a Chinese pangolin, one of eight kinds of pangolin
 
 Here's a strange thing: a pangolin has no teeth at all. It scoops up ants with a long, sticky tongue — so long it's tucked away all the way down inside its chest! Then it swallows a few tiny stones, which help mash up its dinner in its tummy.
 
-{% figure "/assets/blog/world-pangolin-day-2027/scale.jpg", "A pangolin, 45 cm long, beside the Wild Atlas child explorer for scale" %}
+{% figure "/assets/blog/world-pangolin-day/scale.jpg", "A pangolin, 45 cm long, beside the Wild Atlas child explorer for scale" %}
 
 A grown-up Chinese pangolin's body is about 45 centimeters (1 foot 6 inches) long, nose to tail-start. That's much shorter than a 5-year-old is tall! Its long tail adds even more.
 
-{% figure "/assets/blog/world-pangolin-day-2027/weight.jpg", "A scale with four pangolins compared to a scale with one 5-year-old child" %}
+{% figure "/assets/blog/world-pangolin-day/weight.jpg", "A scale with four pangolins compared to a scale with one 5-year-old child" %}
 
 Can you picture four big pangolins on one scale? Together, they'd weigh about 24 kilograms (53 pounds) — a little more than one 5-year-old, at about 19 kilograms (41 pounds).
 
 When a pangolin feels really scared, it often doesn't run away. It curls into a tight, tight ball, so only its tough scales show. Almost nothing can bite through a ball like that.
 
-{% figure "/assets/blog/world-pangolin-day-2027/baby.jpg", "A young pangolin gripping a mossy log in the forest" %}
+{% figure "/assets/blog/world-pangolin-day/baby.jpg", "A young pangolin gripping a mossy log in the forest" %}
 
 A mother pangolin usually has just one baby. Its scales start out soft and harden within a few days. The baby rides on its mom's back or tail, and when she curls up, she wraps it up safe inside.
 

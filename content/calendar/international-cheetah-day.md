@@ -3,7 +3,7 @@ title: "International Cheetah Day: Cheetah Facts for Kids — Meet the Fastest R
 date: 2026-12-04
 author: Wild Atlas
 excerpt: "Happy International Cheetah Day! Meet the cheetah — the fastest land animal on Earth, a cat that chirps instead of roars, with a stride as long as six 5-year-olds lying head to toe. A read-aloud, plus real zoos where you can go meet one."
-coverImage: /assets/blog/international-cheetah-day-2026/cover.jpg
+coverImage: /assets/blog/international-cheetah-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: International Cheetah Day
@@ -67,17 +67,17 @@ blogStatus: scheduled
 
 The fastest runner on land can't roar — it chirps like a bird and purrs like a house cat.
 
-{% figure "/assets/blog/international-cheetah-day-2026/cover.jpg", "An adult cheetah running across dry golden savanna grass, mid-stride, kicking up a trail of dust behind it" %}
+{% figure "/assets/blog/international-cheetah-day/cover.jpg", "An adult cheetah running across dry golden savanna grass, mid-stride, kicking up a trail of dust behind it" %}
 
 Meet the cheetah — the fastest land animal on Earth. It has a slim body, a small round head, and black "tear lines" running from its eyes down to its mouth, like the stripes some athletes paint under their eyes.
 
 Can you make a soft chirp, like a cheetah cub calling for its mom?
 
-{% figure "/assets/blog/international-cheetah-day-2026/scale.jpg", "An illustrated adult cheetah standing next to a young explorer child, with an arrow marking the cheetah's shoulder height" %}
+{% figure "/assets/blog/international-cheetah-day/scale.jpg", "An illustrated adult cheetah standing next to a young explorer child, with an arrow marking the cheetah's shoulder height" %}
 
 Standing on all four paws, a cheetah's back reaches up to about a 5-year-old's chin. Nose to tail tip, a cheetah is about as long as two 5-year-olds lying head to toe.
 
-{% figure "/assets/blog/international-cheetah-day-2026/weight.jpg", "A scale showing an adult cheetah's weight compared to three 5-year-old children on a matching scale" %}
+{% figure "/assets/blog/international-cheetah-day/weight.jpg", "A scale showing an adult cheetah's weight compared to three 5-year-old children on a matching scale" %}
 
 And here's the surprise: even though it's so fast, a grown-up cheetah only weighs about as much as three 5-year-olds, all standing on one scale together. It needs a light body to run that fast.
 
@@ -87,7 +87,7 @@ Can you run in place as fast as you can while a grown-up counts to ten? A cheeta
 
 One giant cheetah stride can be about as long as six 5-year-olds lying head to toe in a row!
 
-{% figure "/assets/blog/international-cheetah-day-2026/baby.jpg", "A fluffy cheetah cub sitting upright in short savanna grass, dark tear-marks under its eyes, facing the camera" %}
+{% figure "/assets/blog/international-cheetah-day/baby.jpg", "A fluffy cheetah cub sitting upright in short savanna grass, dark tear-marks under its eyes, facing the camera" %}
 
 Baby cheetahs wear something grown-ups don't: a fluffy silver cape of fur down their backs. Scientists think it may help a cub look a bit like a tough honey badger, so other animals leave it alone. Cubs stay close to their mom for about a year and a half, learning how to be cheetahs.
 

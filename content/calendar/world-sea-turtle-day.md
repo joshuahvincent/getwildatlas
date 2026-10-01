@@ -3,7 +3,7 @@ title: "World Sea Turtle Day: Green Sea Turtle Facts for Kids — The Turtle Tha
 date: 2027-06-16
 author: Wild Atlas
 excerpt: "Happy World Sea Turtle Day! Meet the green sea turtle — it isn't green on the outside, it's named for the color of the fat under its shell. A read-aloud, plus where to (maybe) meet a real one."
-coverImage: /assets/blog/world-sea-turtle-day-2027/cover.jpg
+coverImage: /assets/blog/world-sea-turtle-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: World Sea Turtle Day
@@ -61,23 +61,23 @@ blogStatus: scheduled
 
 A green sea turtle isn't green on the outside. It munches so much seagrass that the fat under its shell turns green — and that's how it got its name!
 
-{% figure "/assets/blog/world-sea-turtle-day-2027/cover.jpg", "A green sea turtle gliding over a sunlit seagrass meadow" %}
+{% figure "/assets/blog/world-sea-turtle-day/cover.jpg", "A green sea turtle gliding over a sunlit seagrass meadow" %}
 
 Its shell is actually brown, grey, or olive. The green is a secret, tucked away where only a scientist — or a very curious kid — would think to look.
 
 Grown-up green sea turtles are ocean lawnmowers. They graze on seagrass and algae close to shore, the same way a cow grazes on grass in a field.
 
-{% figure "/assets/blog/world-sea-turtle-day-2027/scale.jpg", "A green sea turtle swimming beside a 5-year-old ocean explorer for scale" %}
+{% figure "/assets/blog/world-sea-turtle-day/scale.jpg", "A green sea turtle swimming beside a 5-year-old ocean explorer for scale" %}
 
 A grown-up green sea turtle is about as long as you are tall, and it can weigh as much as seven five-year-olds standing on one big scale together.
 
-{% figure "/assets/blog/world-sea-turtle-day-2027/weight.jpg", "A scale showing a green sea turtle's weight compared to seven five-year-olds" %}
+{% figure "/assets/blog/world-sea-turtle-day/weight.jpg", "A scale showing a green sea turtle's weight compared to seven five-year-olds" %}
 
 Can you picture seven friends on one big scale?
 
 When it's resting, a green sea turtle can hold its breath for hours before it needs to come back up for air. Can you hold your breath that long? Nope, not even close! Turtles are amazing swimmers.
 
-{% figure "/assets/blog/world-sea-turtle-day-2027/baby.jpg", "A green sea turtle hatchling crawling across the sand toward the waves" %}
+{% figure "/assets/blog/world-sea-turtle-day/baby.jpg", "A green sea turtle hatchling crawling across the sand toward the waves" %}
 
 Right about now, mother green turtles are crawling up warm beaches at night, digging a hole with their back flippers, and laying about a hundred round eggs — then covering them up and swimming back out to sea. She came back to lay her eggs near the beach where she was born, decades ago.
 
@@ -85,7 +85,7 @@ When the eggs hatch later this summer, the babies dig out of the sand together, 
 
 A brand-new hatchling is only about as long as your finger, and weighs about as much as a chocolate-chip cookie.
 
-{% figure "/assets/blog/world-sea-turtle-day-2027/habitat.jpg", "A green sea turtle gliding over a seagrass meadow in a shallow tropical lagoon" %}
+{% figure "/assets/blog/world-sea-turtle-day/habitat.jpg", "A green sea turtle gliding over a seagrass meadow in a shallow tropical lagoon" %}
 
 Can you flap your arms like turtle flippers and "fly" through the water? Can you dig a pretend nest in the sand? Can you crawl low and quick like a hatchling racing toward the sea?
 

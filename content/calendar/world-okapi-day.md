@@ -3,7 +3,7 @@ title: "World Okapi Day: Okapi Facts for Kids — Meet the Giraffe's Secret Cous
 date: 2026-10-18
 author: Wild Atlas
 excerpt: "Happy World Okapi Day! Meet the okapi — it looks like a zebra, but it's really the giraffe's only living cousin, hidden deep in the rainforest. A read-aloud, plus real zoos where you can go meet one."
-coverImage: /assets/blog/world-okapi-day-2026/cover.jpg
+coverImage: /assets/blog/world-okapi-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: World Okapi Day
@@ -71,7 +71,7 @@ blogStatus: scheduled
 
 It looks like a zebra, but it's really the giraffe's secret cousin.
 
-{% figure "/assets/blog/world-okapi-day-2026/cover.jpg", "An okapi stepping onto a mossy fallen log in the rainforest, its zebra-striped legs showing" %}
+{% figure "/assets/blog/world-okapi-day/cover.jpg", "An okapi stepping onto a mossy fallen log in the rainforest, its zebra-striped legs showing" %}
 
 Meet the okapi. It has stripy legs like a zebra and a long neck like a giraffe — and the giraffe really is its only cousin in the whole world.
 
@@ -83,15 +83,15 @@ Here's a wow fact: an okapi's tongue is so long and so blue, it can lick its own
 
 Can you touch your tongue to your own nose?
 
-{% figure "/assets/blog/world-okapi-day-2026/scale.jpg", "An illustrated okapi standing next to a 5-year-old explorer for scale" %}
+{% figure "/assets/blog/world-okapi-day/scale.jpg", "An illustrated okapi standing next to a 5-year-old explorer for scale" %}
 
 An okapi's back is taller than a 5-year-old — and its head, held high on that long neck, reaches even higher. Nose to tail, an okapi is about as long as two kids lying head to toe.
 
-{% figure "/assets/blog/world-okapi-day-2026/weight.jpg", "Two scales side by side: one okapi at 250 kg and fourteen 5-year-olds at 259 kg" %}
+{% figure "/assets/blog/world-okapi-day/weight.jpg", "Two scales side by side: one okapi at 250 kg and fourteen 5-year-olds at 259 kg" %}
 
 A grown-up okapi weighs about as much as 14 five-year-olds — all standing on one big scale together!
 
-{% figure "/assets/blog/world-okapi-day-2026/baby.jpg", "A young okapi calf standing on a leaf-covered forest path" %}
+{% figure "/assets/blog/world-okapi-day/baby.jpg", "A young okapi calf standing on a leaf-covered forest path" %}
 
 A newborn okapi calf weighs about as much as one five-year-old. It hides quietly in its own little nest in the forest, and its fur barely has a smell at first — a clever trick for staying hidden. And no two okapis have the same stripes. Each one is one of a kind, just like a fingerprint.
 

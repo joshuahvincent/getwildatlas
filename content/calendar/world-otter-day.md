@@ -3,7 +3,7 @@ title: "World Otter Day: Sea Otter Facts for Kids — Meet the Otter That Floats
 date: 2027-05-26
 author: Wild Atlas
 excerpt: "Happy World Otter Day! Meet the sea otter — one of the fluffiest animals in the ocean, who naps on its back and cracks dinner open with a rock. A read-aloud, plus where to meet a real sea otter."
-coverImage: /assets/blog/world-otter-day-2027/cover.jpg
+coverImage: /assets/blog/world-otter-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: World Otter Day
@@ -61,7 +61,7 @@ blogStatus: scheduled
 
 Meet the sea otter — one of the fluffiest, floatiest animals in the whole ocean, who nap on their backs with the sky over their noses.
 
-{% figure "/assets/blog/world-otter-day-2027/cover.jpg", "A sea otter swims through calm teal water, splashing, holding a small orange sea creature to its chest, with rocky sea stacks and a forested coastline behind" %}
+{% figure "/assets/blog/world-otter-day/cover.jpg", "A sea otter swims through calm teal water, splashing, holding a small orange sea creature to its chest, with rocky sea stacks and a forested coastline behind" %}
 
 A sea otter lives in cold, shallow seas along the North Pacific coast, often floating right in a swaying kelp forest. It's the biggest member of the weasel family, but one of the smallest animals that lives in the sea full-time.
 
@@ -69,17 +69,17 @@ Here's a surprise: a sea otter has no blubber at all to keep it warm. Instead, i
 
 Stretched out from nose to tail, a big sea otter is a little longer than you are tall.
 
-{% figure "/assets/blog/world-otter-day-2027/scale.jpg", "Illustrated size comparison of a sea otter lying down beside a standing 5-year-old explorer, 1.3 m | 4 ft 4 in" %}
+{% figure "/assets/blog/world-otter-day/scale.jpg", "Illustrated size comparison of a sea otter lying down beside a standing 5-year-old explorer, 1.3 m | 4 ft 4 in" %}
 
 And a big sea otter is heavy, too — about as much as a five-year-old and a little toddler standing on a scale together.
 
-{% figure "/assets/blog/world-otter-day-2027/weight.jpg", "Illustrated weight comparison of a sea otter on one scale and a 5-year-old plus a 2-year-old on the other, 30 kg | 66 lb" %}
+{% figure "/assets/blog/world-otter-day/weight.jpg", "Illustrated weight comparison of a sea otter on one scale and a 5-year-old plus a 2-year-old on the other, 30 kg | 66 lb" %}
 
 When a sea otter gets hungry, it floats on its back, puts a favorite rock on its tummy, and taps a clam or a crab shell on it until — crack! — dinner is open. It even keeps that rock tucked in a baggy pocket of skin under its arm, so it's always ready for snack time. To stay warm, a sea otter eats and eats and eats — big piles of food every single day.
 
 A newborn sea otter pup is born right in the water, already floating. Its mom grooms its fur for hours, until it holds so much air that the pup bobs on the waves like a cork — it can't even dive if it tries!
 
-{% figure "/assets/blog/world-otter-day-2027/baby.jpg", "A fluffy brown sea otter pup floating on its back among golden kelp, one hind foot raised, looking at the camera" %}
+{% figure "/assets/blog/world-otter-day/baby.jpg", "A fluffy brown sea otter pup floating on its back among golden kelp, one hind foot raised, looking at the camera" %}
 
 When mom needs to dive for food, she sometimes wraps her pup in kelp, like a soft, swaying blanket, so it stays in one safe spot until she's back.
 

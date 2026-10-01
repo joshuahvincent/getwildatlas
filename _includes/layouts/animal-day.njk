@@ -40,7 +40,7 @@ layout: layouts/post.njk
 {%- endif %}
 {%- if d.celebratedOn and d.celebratedOn.length %}
 <div class="ad-origin"><span class="ad-origin-label">Celebrated on:</span>
-  <ul class="ad-days">{% for x in d.celebratedOn %}<li><strong>{{ x.day }}</strong> · {{ x.date }}{% if x.origin %} — {{ x.origin }}{% endif %}{% if x.sourceUrl %} <a href="{{ x.sourceUrl }}" rel="noopener">Source</a>{% endif %}</li>{% endfor %}</ul>
+  <ul class="ad-days">{% for x in d.celebratedOn %}<li><strong>{{ x.day }}</strong> · {{ x | perennialDay }}{% if x.origin %} — {{ x.origin }}{% endif %}{% if x.sourceUrl %} <a href="{{ x.sourceUrl }}" rel="noopener">Source</a>{% endif %}</li>{% endfor %}</ul>
 </div>
 {%- endif %}
 <p class="ad-readaloud">{{ d.readAloudNote or "Read this one out loud together — it's short, and it's more fun with voices." }}</p>

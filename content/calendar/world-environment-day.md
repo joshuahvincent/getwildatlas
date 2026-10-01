@@ -3,7 +3,7 @@ title: "World Environment Day: Galápagos Giant Tortoise Facts for Kids — Meet
 date: 2027-06-05
 author: Wild Atlas
 excerpt: "Happy World Environment Day! Meet the Galápagos giant tortoise — it walks slower than you do, but it helps new plants grow as it goes. A read-aloud, plus where to meet a real one."
-coverImage: /assets/blog/world-environment-day-2027/cover.jpg
+coverImage: /assets/blog/world-environment-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: World Environment Day
@@ -11,7 +11,7 @@ animalDay:
   animalName: Galápagos giant tortoise
   animalArticle: a
   campaign: world_environment_day_2027
-  greeting: "**Happy World Environment Day!** Every June 5, people all over the world celebrate our planet — and this year, we're celebrating with the Galápagos giant tortoise, one of the best gardeners on Earth."
+  greeting: "**Happy World Environment Day!** Every June 5, people all over the world celebrate our planet — and today we're celebrating with the Galápagos giant tortoise, one of the best gardeners on Earth."
   readAloudNote: "Read this one out loud together — it's short, and it's even better in your slowest, sleepiest tortoise voice."
   whereToSee:
     heading: Where to see a Galápagos giant tortoise
@@ -73,7 +73,7 @@ blogStatus: scheduled
 
 A giant tortoise is a slow-walking gardener.
 
-{% figure "/assets/blog/world-environment-day-2027/cover.jpg", "A Galápagos giant tortoise walking across a misty green meadow" %}
+{% figure "/assets/blog/world-environment-day/cover.jpg", "A Galápagos giant tortoise walking across a misty green meadow" %}
 
 As it wanders its island, munching grass, leaves, and cactus, it carries seeds along in its tummy. One tortoise dropping can hold hundreds of seeds! When the seeds come back out, far from where the tortoise first ate them, new plants get to grow. That makes the tortoise one of the best gardeners on the island.
 
@@ -81,21 +81,21 @@ Here's a wow fact: the Galápagos Islands are named after these tortoises! Long 
 
 Can you stretch your neck up tall, like a tortoise reaching for a cactus?
 
-{% figure "/assets/blog/world-environment-day-2027/scale.jpg", "A Galápagos giant tortoise standing next to a 5-year-old for scale" %}
+{% figure "/assets/blog/world-environment-day/scale.jpg", "A Galápagos giant tortoise standing next to a 5-year-old for scale" %}
 
 A big tortoise can be about as long as you are tall. And a big one can weigh as much as about 14 five-year-olds, all standing on one enormous scale together!
 
-{% figure "/assets/blog/world-environment-day-2027/weight.jpg", "A scale showing a tortoise's weight compared to 14 five-year-olds" %}
+{% figure "/assets/blog/world-environment-day/weight.jpg", "A scale showing a tortoise's weight compared to 14 five-year-olds" %}
 
 Can you picture 14 friends standing on one big scale?
 
 Tortoises walk slower than you do, but they keep on going — some even take a long, slow walk up a volcano every year, from the dry coast to the green hills, and back again.
 
-{% figure "/assets/blog/world-environment-day-2027/baby.jpg", "A tiny Galápagos giant tortoise hatchling on the ground" %}
+{% figure "/assets/blog/world-environment-day/baby.jpg", "A tiny Galápagos giant tortoise hatchling on the ground" %}
 
 A brand-new baby tortoise is small enough to sit in your hand. Mom digs a nest for her eggs, and months later, the babies dig themselves out, all on their own!
 
-{% figure "/assets/blog/world-environment-day-2027/habitat.jpg", "A Galápagos giant tortoise reaching up toward a tall cactus on a dry, rocky coast" %}
+{% figure "/assets/blog/world-environment-day/habitat.jpg", "A Galápagos giant tortoise reaching up toward a tall cactus on a dry, rocky coast" %}
 
 Galápagos giant tortoises can live more than 100 years — longer than almost any other animal on Earth. Can you curl up small and tuck your head in, the way a tortoise tucks into its shell?
 

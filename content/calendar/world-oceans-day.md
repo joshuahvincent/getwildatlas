@@ -3,7 +3,7 @@ title: "World Oceans Day: Orca Facts for Kids — Meet the Biggest Dolphin in th
 date: 2027-06-08
 author: Wild Atlas
 excerpt: "Happy World Oceans Day! Meet the orca — our ambassador for the whole ocean today, and really the biggest dolphin in the world, with a family accent all its own. A read-aloud, plus where to (maybe) spot one in the wild."
-coverImage: /assets/blog/world-oceans-day-2027/cover.jpg
+coverImage: /assets/blog/world-oceans-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: World Oceans Day
@@ -58,23 +58,23 @@ blogStatus: scheduled
 
 Orcas are the biggest dolphins in the world, and every orca family has its own special calls that only they use!
 
-{% figure "/assets/blog/world-oceans-day-2027/cover.jpg", "An orca splashing through bright blue waves near a rocky island" %}
+{% figure "/assets/blog/world-oceans-day/cover.jpg", "An orca splashing through bright blue waves near a rocky island" %}
 
 That's right — orcas are really the largest member of the dolphin family, even though most people don't picture them that way. Their black-and-white pattern helps them blend into the sunlit water near the surface and the darker water down below.
 
 Every orca family has its own set of clicks, whistles, and calls — a bit like a family accent. No other family sounds quite the same. Can you make a clicking sound, like an orca listening for fish?
 
-{% figure "/assets/blog/world-oceans-day-2027/scale.jpg", "A cartoon orca, 7 meters long, next to a tiny cartoon child in a snorkel suit" %}
+{% figure "/assets/blog/world-oceans-day/scale.jpg", "A cartoon orca, 7 meters long, next to a tiny cartoon child in a snorkel suit" %}
 
 A grown-up orca is about 6 times as long as a 5-year-old is tall — stretched all the way out, that's about 7 meters (23 feet)!
 
-{% figure "/assets/blog/world-oceans-day-2027/weight.jpg", "Two scales: one orca on one, and a big crowd of cartoon children on the other, both weighing about the same" %}
+{% figure "/assets/blog/world-oceans-day/weight.jpg", "Two scales: one orca on one, and a big crowd of cartoon children on the other, both weighing about the same" %}
 
 Orcas are heavy, too. One orca can weigh as much as about 300 five-year-olds, all standing on one giant scale together. Can you picture that many friends on one scale?
 
 Orcas live together in family groups called pods, often led by a grandmother orca. In some orca families, the kids stay with their mom their whole lives — even once they're all grown up! Grandma orcas help lead their families to food, using everything they've learned over many, many years.
 
-{% figure "/assets/blog/world-oceans-day-2027/baby.jpg", "A young orca swimming underwater with bubbles rising behind it" %}
+{% figure "/assets/blog/world-oceans-day/baby.jpg", "A young orca swimming underwater with bubbles rising behind it" %}
 
 A newborn baby orca is already about twice as long as a 5-year-old is tall, and it weighs as much as about 10 five-year-olds! Baby orcas drink their mom's milk and stay close by her side.
 

@@ -3,7 +3,7 @@ title: "World Bonobo Day: Bonobo Facts for Kids — Meet the Ape That Laughs Whe
 date: 2027-02-14
 author: Wild Atlas
 excerpt: "Happy World Bonobo Day! Meet the bonobo — it laughs when it's tickled, builds a brand-new bed every night, and lives in families led by the moms. A read-aloud, plus where to meet one."
-coverImage: /assets/blog/world-bonobo-day-2027/cover.jpg
+coverImage: /assets/blog/world-bonobo-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: World Bonobo Day
@@ -69,7 +69,7 @@ blogStatus: scheduled
 
 Deep in the rainforests of the Democratic Republic of the Congo lives an ape that laughs when it's tickled.
 
-{% figure "/assets/blog/world-bonobo-day-2027/cover.jpg", "An adult bonobo hanging by its arms from a vine-wrapped branch in the rainforest" %}
+{% figure "/assets/blog/world-bonobo-day/cover.jpg", "An adult bonobo hanging by its arms from a vine-wrapped branch in the rainforest" %}
 
 That ape is the bonobo — one of our two closest animal cousins, along with chimpanzees. And just like you, a bonobo really does laugh when someone tickles it, a breathy, panting "huh-huh-huh."
 
@@ -79,7 +79,7 @@ Here's another surprise. Every single night, a grown-up bonobo builds a brand-ne
 
 On the ground, a bonobo usually walks low on its knuckles and feet, so it looks smaller than it really is. But stand one up tall, next to you...
 
-{% figure "/assets/blog/world-bonobo-day-2027/scale.jpg", "An adult bonobo on its feet and knuckles next to a 5-year-old explorer, with a 1.1-meter (3 ft 10 in) height arrow between them" %}
+{% figure "/assets/blog/world-bonobo-day/scale.jpg", "An adult bonobo on its feet and knuckles next to a 5-year-old explorer, with a 1.1-meter (3 ft 10 in) height arrow between them" %}
 
 ...and you'd be almost eye to eye.
 

@@ -3,7 +3,7 @@ title: "International Pallas's Cat Day: Pallas's Cat Facts for Kids — Meet the
 date: 2027-04-23
 author: Wild Atlas
 excerpt: "Happy International Pallas's Cat Day! Meet the Pallas's cat — a wild cat the size of a house cat, with fur so thick that up to 9,000 hairs fit on a spot the size of your fingernail, and a face that only looks grumpy. A read-aloud, plus where to meet a real one."
-coverImage: /assets/blog/international-pallas-cat-day-2027/cover.jpg
+coverImage: /assets/blog/international-pallas-cat-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: International Pallas's Cat Day
@@ -63,23 +63,23 @@ blogStatus: scheduled
 
 Meet the Pallas's cat: a wild cat about the size of a pet cat, with fur so thick it looks much bigger, and a flat, round face that makes it look grumpy, even when it isn't!
 
-{% figure "/assets/blog/international-pallas-cat-day-2027/cover.jpg", "A Pallas's cat bounding across a snow-patched grassland at dusk" %}
+{% figure "/assets/blog/international-pallas-cat-day/cover.jpg", "A Pallas's cat bounding across a snow-patched grassland at dusk" %}
 
 People in Mongolia call it the manul. It lives in the cold, rocky grasslands of Central Asia, and its fur is so thick that about 9,000 hairs fit on a spot the size of your fingernail! That's why a cat no bigger than a house cat looks like a big fluffy cushion.
 
 Look closely and you'll spot two more surprises. Its eyes have round pupils, not slit-shaped ones like a pet cat's. And its little ears sit low on the sides of its head, so it can peek over a rock without being spotted.
 
-{% figure "/assets/blog/international-pallas-cat-day-2027/scale.jpg", "A Pallas's cat beside the Wild Atlas child explorer for scale" %}
+{% figure "/assets/blog/international-pallas-cat-day/scale.jpg", "A Pallas's cat beside the Wild Atlas child explorer for scale" %}
 
 Standing next to a 5-year-old, a Pallas's cat's body is only about 60 centimeters (2 feet) long, and it stands about 31 centimeters (1 foot) tall at the shoulder — it would only come up to about a 5-year-old's knee!
 
-{% figure "/assets/blog/international-pallas-cat-day-2027/weight.jpg", "A scale with five Pallas's cats balanced against one 5-year-old child" %}
+{% figure "/assets/blog/international-pallas-cat-day/weight.jpg", "A scale with five Pallas's cats balanced against one 5-year-old child" %}
 
 Can you picture five Pallas's cats on one big scale? Together, they'd weigh about 20 kilograms (44 pounds) — about as much as one 5-year-old, at around 19 kilograms (41 pounds).
 
 The Pallas's cat isn't a fast runner, so instead it waits very still, then pounces. It sneaks up on little furry creatures at dawn and dusk, especially pikas — small, round-eared cousins of the rabbit.
 
-{% figure "/assets/blog/international-pallas-cat-day-2027/baby.jpg", "A fluffy Pallas's cat kitten sitting in dry golden grass" %}
+{% figure "/assets/blog/international-pallas-cat-day/baby.jpg", "A fluffy Pallas's cat kitten sitting in dry golden grass" %}
 
 Pallas's cat kittens are born in spring — right around this time of year — in a cozy den tucked into the rocks. By the end of summer, they're already practicing their best pounce, with their mom showing the way.
 

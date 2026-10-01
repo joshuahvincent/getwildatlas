@@ -3,7 +3,7 @@ title: "Endangered Species Day: Black Rhino Facts for Kids — Meet the Animal W
 date: 2027-05-21
 author: Wild Atlas
 excerpt: "Happy Endangered Species Day! Meet the black rhino — its bendy top lip works almost like a finger, a little bird rides on its back as a lookout, and people are working hard to help it recover. A read-aloud, plus real places where you can meet one."
-coverImage: /assets/blog/endangered-species-day-2027/cover.jpg
+coverImage: /assets/blog/endangered-species-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: Endangered Species Day
@@ -63,17 +63,17 @@ blogStatus: scheduled
 
 A black rhino's top lip is pointy and bendy — it works almost like a finger, reaching out to grab its favorite leaves and twigs off a bush.
 
-{% figure "/assets/blog/endangered-species-day-2027/cover.jpg", "An adult black rhinoceros in golden-hour savanna, its hooked upper lip gripping a thorny green shrub, with a small oxpecker bird perched on its back" %}
+{% figure "/assets/blog/endangered-species-day/cover.jpg", "An adult black rhinoceros in golden-hour savanna, its hooked upper lip gripping a thorny green shrub, with a small oxpecker bird perched on its back" %}
 
 Here's a surprise: black rhinos aren't black at all. They're grey — and often the color of whatever mud they rolled in last!
 
 Can you make your own lips pointy, like you're reaching for a leaf?
 
-{% figure "/assets/blog/endangered-species-day-2027/scale.jpg", "An illustrated side view of a black rhino standing beside a small cartoon child explorer, with a tall arrow labeled about 1.6 meters, or 5 feet 3 inches, showing how much taller the rhino's shoulder is than the child" %}
+{% figure "/assets/blog/endangered-species-day/scale.jpg", "An illustrated side view of a black rhino standing beside a small cartoon child explorer, with a tall arrow labeled about 1.6 meters, or 5 feet 3 inches, showing how much taller the rhino's shoulder is than the child" %}
 
 Stand up as tall as you can. A grown-up black rhino's shoulder is still way up above your head — about 1.6 meters, or 5 feet 3 inches high.
 
-{% figure "/assets/blog/endangered-species-day-2027/weight.jpg", "Two illustrated scales side by side, one holding a black rhino and the other holding fifty-four cartoon five-year-old children" %}
+{% figure "/assets/blog/endangered-species-day/weight.jpg", "Two illustrated scales side by side, one holding a black rhino and the other holding fifty-four cartoon five-year-old children" %}
 
 Now picture 54 five-year-olds all climbing onto one giant scale together. That's about how much one black rhino weighs — around 1,000 kilograms, or 2,205 pounds!
 
@@ -83,11 +83,11 @@ Can you wiggle your ears like a rhino listening for sounds in the bushes?
 
 Black rhinos have a small feathered friend: a bird called an oxpecker rides right on their back. When people come near, the bird calls out — a warning just for the rhino.
 
-{% figure "/assets/blog/endangered-species-day-2027/baby.jpg", "A small grey black rhino calf with big upright ears and a tiny horn bud, standing beside its mother in dry bushland" %}
+{% figure "/assets/blog/endangered-species-day/baby.jpg", "A small grey black rhino calf with big upright ears and a tiny horn bud, standing beside its mother in dry bushland" %}
 
 A brand-new baby rhino can stand up and start walking on its very first day! It stays close to its mom for two or three years, learning how to be a rhino.
 
-{% figure "/assets/blog/endangered-species-day-2027/habitat.jpg", "A wide golden savanna landscape with acacia trees and red earth, a black rhino browsing at a bush in the middle distance" %}
+{% figure "/assets/blog/endangered-species-day/habitat.jpg", "A wide golden savanna landscape with acacia trees and red earth, a black rhino browsing at a bush in the middle distance" %}
 
 This is a black rhino's home — the wide, bushy grasslands of eastern and southern Africa.
 
