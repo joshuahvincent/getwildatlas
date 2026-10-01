@@ -34,7 +34,7 @@ animalDay:
             url: https://www.birminghamzoo.com/2025/10/23/introducing-diego-the-new-jaguar-at-your-birmingham-zoo/
           - title: Solana
             place: Alexandria Zoo — Alexandria, Louisiana
-            blurb: A surprise baby! Solana ("sunshine" in Spanish) was born last year, after the zoo had hoped for a cub for nine years. Her dad, Bebu, came from the wild in Panama.
+            blurb: A surprise cub! Solana ("sunshine" in Spanish) was born last year, after the zoo had hoped for a cub for nine years. Her dad, Bebu, came from the wild in Panama.
             url: https://thealexandriazoo.com/JaguarCub.html
       - label: Around the world
         places:
@@ -58,13 +58,12 @@ animalDay:
   source:
     label: Panthera
     url: https://panthera.org/cat/jaguar
-status: draft
 blogStatus: scheduled
 ---
 
 The jaguar is a big cat that loves to swim — and its spots have spots!
 
-{% figure "/assets/blog/international-jaguar-day-2026/cover.jpg", "An adult jaguar leaping across a shallow forest stream, golden coat covered in black spots and rosettes, dense green rainforest behind it" %}
+{% figure "/assets/blog/international-jaguar-day-2026/cover.jpg", "An adult jaguar leaping from a muddy bank beside a shallow forest stream, golden coat covered in black spots and rosettes, dense green rainforest behind it" %}
 
 Meet the jaguar — the biggest cat in North and South America, and the third-biggest cat in the whole world. It has a big head, strong shoulders, and a golden coat covered in dark rosettes.
 

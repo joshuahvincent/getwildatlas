@@ -22,7 +22,7 @@ animalDay:
         places:
           - title: Allagash and Rogue's family
             place: Cheyenne Mountain Zoo — Colorado Springs, Colorado
-            blurb: In March 2025, the troop's matriarch, Allagash, took on three babies at once. Only one was hers — the other two were her sister Rogue's, and Allagash simply took them in as her own.
+            blurb: In March 2025, the troop's matriarch, Allagash, had twins — and on the very same day, her sister Rogue had a baby too. Allagash took in Rogue's baby as well, and raised all three as her own.
             url: https://www.cmzoo.org/animals/a-z/featured-animals-ring-tailed-lemur/
           - title: Lemur Island
             place: Smithsonian's National Zoo — Washington, D.C.
@@ -32,9 +32,9 @@ animalDay:
             place: Houston Zoo — Houston, Texas
             blurb: You'll find the troop here, and the zoo also helps people in Madagascar replant native forest for wild lemurs.
             url: https://www.houstonzoo.org/explore/animals/lemur-ring-tailed/
-          - title: The world's biggest lemur home outside Madagascar
+          - title: The most kinds of lemurs outside Madagascar
             place: Duke Lemur Center — Durham, North Carolina
-            blurb: A research and conservation center with guided tours — book ahead, since tour spots are more limited once the main season ends in autumn.
+            blurb: A research and conservation center with guided tours — book ahead — tour availability varies in the off-season.
             url: https://lemur.duke.edu/discover/meet-the-lemurs/ring-tailed-lemur/
       - label: Around the world
         places:
@@ -58,7 +58,7 @@ animalDay:
 
     This week's hope action: draw a ring-tailed lemur with its own stripy tail, and tell someone in your family one lemur fact on World Lemur Day. It won't plant a tree in Madagascar, but caring about lemurs is exactly how places like Anja got started.
 
-    Starters: "In a lemur troop, the grown-up girls are in charge. Who's in charge of what in our family?" "What's your favorite way to warm up in the sun?"
+    Starters: "In a lemur troop, the grown-up girls are in charge. If your family got to choose who's in charge, like a lemur troop does, who would you pick?" "What's your favorite way to warm up in the sun?"
 
     If your kid asks *will lemurs disappear forever?* — this holds up: "Some lemurs are in trouble because their forest home is shrinking, but in one part of Madagascar, people who live near the forest became lemur guides — and the lemurs there went from fewer than 100 to more than 400."
   appCta: "Wild Atlas has the ring-tailed lemur, narrated, in the Planet Pioneers pack — the full scale comparison against a 5-year-old, its own fact cards, and that famous sunbathing pose."
@@ -66,7 +66,6 @@ animalDay:
   source:
     label: the Lemur Conservation Network
     url: https://www.lemurconservationnetwork.org/world-lemur-day/
-status: draft
 blogStatus: scheduled
 ---
 
@@ -78,7 +77,7 @@ Meet the ring-tailed lemur. It lives in only one place on Earth — the dry fore
 
 Can you sit up tall and spread your arms wide to warm your tummy in the sun, just like a lemur?
 
-Here's a wow fact: its striped tail is even longer than its whole body — but it can't grab with it. Instead, its tail helps it balance and sends signals to its family.
+Here's a wow fact: its striped tail is even longer than the rest of its body — but it can't grab with it. Instead, its tail helps it balance and sends signals to its family.
 
 {% figure "/assets/blog/world-lemur-day-2026/scale.jpg", "A cartoon ring-tailed lemur sitting upright beside the Wild Atlas explorer girl for scale; at 45 cm, its head reaches just to the bottom of her shorts" %}
 
@@ -88,7 +87,7 @@ When a ring-tailed lemur sits up, it's less than half as tall as a 5-year-old!
 
 It would take about seven lemurs on a scale to outweigh one five-year-old!
 
-In a lemur family, called a troop, the grown-up girls are in charge — they lead the group and eat first. And when boy lemurs want to show off, they rub smelly scent onto their tails and wave them at each other — a very smelly competition that usually involves no touching at all.
+In a lemur family, called a troop, the grown-up girls are in charge — they lead the group and eat first. And when boy lemurs want to show off, they rub smelly scent onto their tails and wave them at each other — a very smelly competition — no touching required.
 
 Can you wave your hand in the air like a lemur waving its stripy tail?
 

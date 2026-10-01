@@ -62,13 +62,12 @@ animalDay:
   source:
     label: NPS Yellowstone
     url: https://www.nps.gov/yell/learn/nature/bison.htm
-status: draft
 blogStatus: scheduled
 ---
 
 Baby bison are born a bright orange-red — people call them "red dogs" — and just a couple of hours later, they can keep up with the whole herd.
 
-{% figure "/assets/blog/national-bison-day-2026/cover.jpg", "An adult American bison mid-stride, trotting across a golden, dry shortgrass prairie in warm low sunlight, with a shaggy mane and curved horns" %}
+{% figure "/assets/blog/national-bison-day-2026/cover.jpg", "An adult American bison running across a golden, dry shortgrass prairie in warm low sunlight, kicking up dust, with a shaggy mane and curved horns" %}
 
 Meet the American bison — the biggest land animal in North America. It has a huge, furry hump on its shoulders (that's mostly muscle!), a shaggy beard, and two curved horns.
 
@@ -76,7 +75,7 @@ Can you make your voice low and rumbly, like a bison's grunt?
 
 {% figure "/assets/blog/national-bison-day-2026/scale.jpg", "An illustrated adult bison standing next to a small child explorer, with arrows marking the bison's height and length" %}
 
-A big bull bison's shoulders reach higher than most grown-ups' heads — about one and two-thirds as tall as a 5-year-old, just at the shoulder! Nose to tail, it's about as long as three 5-year-olds lying head to toe.
+A big bull bison's shoulders reach higher than most grown-ups' heads — stand next to one, and a 5-year-old's head would only reach partway up its side! Nose to tail, it's about as long as three 5-year-olds lying head to toe.
 
 {% figure "/assets/blog/national-bison-day-2026/weight.jpg", "A scale showing an adult bison's weight compared to 49 five-year-old children on a matching scale" %}
 
@@ -90,6 +89,6 @@ Can you swing your head slowly side to side, like a bison sweeping snow off the 
 
 {% figure "/assets/blog/national-bison-day-2026/baby.jpg", "A bison calf with fluffy reddish-orange 'red dog' fur standing alone in a green prairie" %}
 
-Here's the best wow fact of all: baby bison are born a bright orange-red — people call them "red dogs"! A red-dog calf can stand up within about half an hour — and a few hours later, it can keep pace with the whole herd. By the time it's a few months old, its coat turns brown, just like the grown-ups around it.
+Here's the best wow fact of all: baby bison are born a bright orange-red — people call them "red dogs"! A red-dog calf can stand up within about half an hour — and a couple of hours later, it can keep pace with the whole herd. By the time it's a few months old, its coat turns brown, just like the grown-ups around it.
 
 Can you spot something orange today that reminds you of a red-dog calf?

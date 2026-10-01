@@ -36,9 +36,9 @@ animalDay:
             url: https://www.kaiyukan.com/
     note: "Animals sometimes move — check the aquarium's own website before you visit."
   grownups: |
-    Whale sharks are listed as Endangered, with numbers dropping by more than half over the last 75 years — mostly from getting caught in fishing nets and ship strikes.
+    Whale sharks are listed as Endangered, with numbers dropping by more than half over the last 75 years — mostly from fishing boats catching them and from ship strikes.
 
-    There's a hopeful story, and it's the perfect one for World Fisheries Day. Until 2001, hundreds of whale sharks died in fishing nets every year off the coast of Gujarat, India. That year, India gave whale sharks its strongest legal protection, and soon after, the Wildlife Trust of India and local partners started the Save the Whale Shark campaign. Today, when a fisher finds a whale shark tangled in a net, they cut the net to set it free — and they're paid back for the damaged net. More than 1,000 whale sharks have been released this way along India's west coast, and the practice has spread to several more states.
+    There's a hopeful story, and it's the perfect one for World Fisheries Day. Until 2001, fishing boats off the coast of Gujarat, India, caught hundreds of whale sharks every year. That year, India gave whale sharks its strongest legal protection, and soon after, the Wildlife Trust of India and local partners started the Save the Whale Shark campaign. Today, when a fisher finds a whale shark tangled in a net, they cut the net to set it free — and they're paid back for the damaged net. More than 1,000 whale sharks have been released this way along India's west coast, and the practice has spread to several more states.
 
     This week's hope action: draw a whale shark and give it your own one-of-a-kind spot pattern, then tell a grown-up about the fishers in India who set whale sharks free.
 
@@ -50,7 +50,6 @@ animalDay:
   source:
     label: Georgia Aquarium
     url: https://www.georgiaaquarium.org/animal/whale-shark/
-status: draft
 blogStatus: scheduled
 ---
 
@@ -76,6 +75,6 @@ It can weigh as much as 973 five-year-olds, all standing on one enormous scale t
 
 {% figure "/assets/blog/whale-shark-world-fisheries-day-2026/baby.jpg", "A young whale shark swimming alone through deep, sunlit blue water" %}
 
-A young whale shark is born about half as long as you are tall, and it grows up all on its own, with no parent to look after it. Nobody has ever seen one being born — but one whale shark mom was once found carrying about 300 babies inside her!
+A young whale shark is born about half as long as you are tall, and it grows up brave and independent, finding its own way from the very start. Nobody has ever seen one being born — but one whale shark mom was once found carrying about 300 babies inside her!
 
 Can you spot every dot on a whale shark's side, like counting stars?
