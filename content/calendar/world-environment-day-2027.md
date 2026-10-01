@@ -2,7 +2,7 @@
 title: "World Environment Day: Galápagos Giant Tortoise Facts for Kids — Meet the Island's Slow-Walking Gardener"
 date: 2027-06-05
 author: Wild Atlas
-excerpt: "Happy World Environment Day! Meet the Galápagos giant tortoise — it walks slower than you do, but it plants whole gardens as it goes. A read-aloud, plus where to meet a real one."
+excerpt: "Happy World Environment Day! Meet the Galápagos giant tortoise — it walks slower than you do, but it helps new plants grow as it goes. A read-aloud, plus where to meet a real one."
 coverImage: /assets/blog/world-environment-day-2027/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
@@ -22,10 +22,10 @@ animalDay:
         places:
           - title: Mommy and Abrazzo
             place: Philadelphia Zoo — Philadelphia, Pennsylvania
-            blurb: In 2025, these two became parents for the very first time at about 100 years old — the first tortoises ever hatched at the zoo.
+            blurb: In 2025, these two became parents for the very first time at about 100 years old — their babies were the first ever hatched at the zoo.
             url: https://www.philadelphiazoo.org/news/four-critically-endangered-galapagos-tortoises-hatch-at-philadelphia-zoo/
             linkText: Visit Philadelphia Zoo
-          - title: A whole island, indoors
+          - title: A whole Galápagos area
             place: Houston Zoo — Houston, Texas
             blurb: Houston Zoo built a Galápagos area with lava rocks, cactus, and mud wallows, where its tortoises stroll around like they're back on the islands.
             url: https://www.houstonzoo.org/explore/exhibits/galapagos/
@@ -49,26 +49,25 @@ animalDay:
             linkText: Visit ZSL London Zoo
           - title: More than 100 hatchlings
             place: Zoo Zürich — Zürich, Switzerland
-            blurb: Zoo Zürich is one of the only zoos in Europe where Galápagos tortoises have had babies — more than 100 have hatched there.
+            blurb: Zoo Zürich has a long-running Galápagos tortoise family — more than 100 babies have hatched there.
             url: https://www.zoo.ch/de/naturschutz-tiere/tier-pflanzenlexikon/galapagos-riesenschildkroete
             linkText: Visit Zoo Zürich
     note: Animals sometimes move — check the zoo's own website before you visit.
   grownups: |
-    Scientists recognize 15 kinds of Galápagos giant tortoise, one for each island or volcano, and the IUCN rates each one separately — several are Critically Endangered, others Endangered or Vulnerable, and two no longer exist. Long ago, sailors took tortoises onto their ships for food, which is a big reason numbers dropped so low. People don't do that anymore — today they protect tortoises instead, mainly by clearing out animals that don't belong on the islands and eat tortoise eggs and plants.
+    Scientists recognize 15 kinds of Galápagos giant tortoise, roughly one for each island or volcano, and the IUCN rates each one separately — several are Critically Endangered, others Endangered or Vulnerable, and two no longer exist. Long ago, sailors took tortoises onto their ships for food, which is a big reason numbers dropped so low. Today tortoises are protected, and people work to keep them safe — including by clearing out animals that don't belong on the islands and eat tortoise eggs and plants.
 
-    There's a hopeful story: by the 1960s, one island's tortoises, on Española, were down to just 15. People raised their babies safely for over 50 years and returned them home. Today there are more than 2,000 tortoises on Española, breeding on their own again.
+    There's a hopeful story: on Española island, the tortoises were down to a small breeding group of just 15. People raised their babies safely for over 50 years and returned them home. By 2020 there were more than 2,000 tortoises on Española, breeding on their own again.
 
     Be a gardener like a tortoise this week: plant a seed of something that grows naturally near you, in a pot or a garden, and water it together.
 
     Starters: "If you had a shell, what would you keep safe inside it?" "What's one thing our family could do this week to help an animal like this one?"
 
     If your kid asks *did people hurt the tortoises?* — this holds up: "A long time ago, some people did, before they understood how special and rare these tortoises are. Now lots of people work hard every day to keep them safe."
-  appCta: "Wild Atlas has a whole page built around the tortoise — narrated facts and the full scale comparison against a 5-year-old. You'll find it in the Cozy Critters pack."
+  appCta: "Wild Atlas has a giant tortoise page — narrated facts and a scale comparison against a 5-year-old. You'll find it in the Cozy Critters pack."
   appLinkText: Meet the tortoise in Wild Atlas
   source:
     label: Galapagos Conservancy
     url: https://www.galapagos.org/conservation/giant-tortoise-restoration/
-status: draft
 blogStatus: scheduled
 ---
 
@@ -88,7 +87,7 @@ A big tortoise can be about as long as you are tall. And a big one can weigh as 
 
 {% figure "/assets/blog/world-environment-day-2027/weight.jpg", "A scale showing a tortoise's weight compared to 14 five-year-olds" %}
 
-Can you picture 14 friends piled onto one big scale?
+Can you picture 14 friends standing on one big scale?
 
 Tortoises walk slower than you do, but they keep on going — some even take a long, slow walk up a volcano every year, from the dry coast to the green hills, and back again.
 
@@ -98,6 +97,5 @@ A brand-new baby tortoise is small enough to sit in your hand. Mom digs a nest f
 
 {% figure "/assets/blog/world-environment-day-2027/habitat.jpg", "A Galápagos giant tortoise reaching up toward a tall cactus on a dry, rocky coast" %}
 
-Can you curl up small and tuck your head in, the way a tortoise tucks into its shell? Galápagos giant tortoises can live more than 100 years — longer than almost any other animal on Earth.
+Galápagos giant tortoises can live more than 100 years — longer than almost any other animal on Earth. Can you curl up small and tuck your head in, the way a tortoise tucks into its shell?
 
-<!-- DEEP LINK TBD: animal id tortoise, pack cozy_critters -->

@@ -95,4 +95,3 @@ A baby ostrich, called a chick, starts out about as big as a chicken — then gr
 
 Ostriches walk on just their toes. Can you walk tall on your tiptoes like an ostrich?
 
-<!-- DEEP LINK TBD: animal id ostrich, pack safari_stars -->

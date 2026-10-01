@@ -99,4 +99,3 @@ At night, a tapir zigzags through the rainforest, nibbling just a few leaves fro
 
 Can you tiptoe quietly through the pretend leaves, the way a tapir sneaks through the forest at night?
 
-<!-- DEEP LINK TBD: animal id tapir, pack rainforest_explorers -->

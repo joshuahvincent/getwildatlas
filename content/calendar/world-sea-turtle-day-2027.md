@@ -11,7 +11,7 @@ animalDay:
   animalName: green sea turtle
   animalArticle: a
   campaign: world_sea_turtle_day_2027
-  greeting: "**Happy World Sea Turtle Day!** Every June 16, people celebrate all seven kinds of sea turtles — the date marks the birthday of Dr. Archie Carr, a scientist who spent his life studying and protecting them. Today we're meeting one of the seven: the green sea turtle. And right about now, on warm beaches around the world, mother green turtles are crawling ashore at night to lay their eggs."
+  greeting: "**Happy World Sea Turtle Day!** Every June 16, people celebrate all seven kinds of sea turtles — the date marks the birthday of Dr. Archie Carr, a scientist who spent his life studying and protecting them. Today we're meeting one of the seven: the green sea turtle. And right about now, on many warm beaches, mother green turtles are crawling ashore at night to lay their eggs."
   readAloudNote: "Read this one out loud together — it's short, and it's even better if you flap your arms like flippers while you read."
   whereToSee:
     heading: Where to see a green sea turtle
@@ -56,7 +56,6 @@ animalDay:
   source:
     label: NOAA Fisheries
     url: https://www.fisheries.noaa.gov/species/green-turtle
-status: draft
 blogStatus: scheduled
 ---
 
@@ -76,11 +75,11 @@ A grown-up green sea turtle is about as long as you are tall, and it can weigh a
 
 Can you picture seven friends on one big scale?
 
-When it's resting, a green sea turtle can hold its breath for hours before it needs to come back up for air. Can you hold your breath that long? Probably not — but see how long you can try!
+When it's resting, a green sea turtle can hold its breath for hours before it needs to come back up for air. Can you hold your breath that long? Nope, not even close! Turtles are amazing swimmers.
 
-{% figure "/assets/blog/world-sea-turtle-day-2027/baby.jpg", "A green sea turtle hatchling crawling across the sand at dawn" %}
+{% figure "/assets/blog/world-sea-turtle-day-2027/baby.jpg", "A green sea turtle hatchling crawling across the sand toward the waves" %}
 
-Right about now, mother green turtles are crawling up warm beaches at night, digging a hole with their back flippers, and laying about a hundred round eggs — then covering them up and swimming back out to sea. She's come back to lay her eggs near the very beach where she herself hatched, decades ago.
+Right about now, mother green turtles are crawling up warm beaches at night, digging a hole with their back flippers, and laying about a hundred round eggs — then covering them up and swimming back out to sea. She came back to lay her eggs near the beach where she was born, decades ago.
 
 When the eggs hatch later this summer, the babies dig out of the sand together, usually at night, and scurry toward the brightest glow on the horizon — which, on a natural beach, is the moon and stars over the ocean.
 
@@ -88,8 +87,7 @@ A brand-new hatchling is only about as long as your finger, and weighs about as 
 
 {% figure "/assets/blog/world-sea-turtle-day-2027/habitat.jpg", "A green sea turtle gliding over a seagrass meadow in a shallow tropical lagoon" %}
 
-Can you flap your arms like turtle flippers and "fly" through the water? Can you crawl low and quick like a hatchling racing toward the sea?
+Can you flap your arms like turtle flippers and "fly" through the water? Can you dig a pretend nest in the sand? Can you crawl low and quick like a hatchling racing toward the sea?
 
-Green sea turtles live in warm seas all around the world. If you ever spot a turtle or a nest on a beach, the kind thing to do is watch quietly from far away and let it be.
+People protected green sea turtles for a long time, and now there are many more. Green sea turtles live in warm seas all around the world. If you ever spot a turtle or a nest on a beach, the kind thing to do is watch quietly from far away and let it be.
 
-<!-- DEEP LINK TBD: animal id sea_turtle, pack ocean_creatures -->

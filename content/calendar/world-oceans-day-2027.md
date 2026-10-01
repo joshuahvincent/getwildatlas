@@ -39,43 +39,42 @@ animalDay:
             url: https://www.visittromso.no/whale-watching
     note: Orca sightings depend on the season and can never be promised — check the park's own website before you visit.
   grownups: |
-    Orcas are listed by the IUCN as Data Deficient — scientists don't yet have enough information to say how orca populations are doing worldwide, partly because researchers are still working out whether "orca" is really one species or several. Some orca families are doing better than others: the Southern Resident orcas of Washington and British Columbia are endangered, with a recent count finding just 74 whales.
+    Orcas are listed by the IUCN as Data Deficient — scientists don't yet have enough information to say how orca populations are doing worldwide, partly because researchers are still working out whether "orca" is really one species or several. Some orca families are doing better than others: the Southern Resident orcas of Washington and British Columbia are endangered and need extra help from us.
 
-    There's a hopeful story, too. In 1982, British Columbia set aside Robson Bight (Michael Bigg) Ecological Reserve, a quiet bay where Northern Resident orcas come to rub their bodies on smooth pebble beaches — a tradition unique to their culture. Boats are asked to stay out, so the orcas have the bay to themselves. Canada later extended legal protection to the surrounding waters, and the Northern Resident population has kept growing over recent years.
+    There's a hopeful story, too. In 1982, British Columbia set aside Robson Bight (Michael Bigg) Ecological Reserve, a quiet bay where Northern Resident orcas come to rub their bodies on smooth pebble beaches — a tradition unique to their culture. Boats are asked to stay out, so the orcas have the bay to themselves. Canada later extended legal protection to the surrounding waters, and the Northern Resident population grew in the counts that followed.
 
     Orcas find their food by listening, so a noisy ocean makes hunting harder. This week, try playing "quiet pod" at home: one person is the orca, eyes closed, listening for a soft "fish" (a gentle clap), while everyone else stays as quiet as they can. It won't reach the real ocean, but it's the same idea — orcas need quiet water to hear.
 
     Starters: "Did you know orcas are really the biggest dolphins in the world?" "Orca families each have their own set of calls, kind of like an accent — what's special about how our family talks or does things?"
 
-    If your kid asks *do orcas hurt people?* — this holds up: "No wild orca has ever hurt a person — they're too busy fishing and looking after their families."
+    If your kid asks *do orcas hurt people?* — this holds up: "There's no record of a wild orca seriously hurting a person — they're too busy fishing and looking after their families."
   appCta: "Wild Atlas has a whole page built around this animal — narrated facts, the full scale comparison against a 5-year-old, and the sound an orca actually makes."
   appLinkText: Meet the orca in Wild Atlas
   source:
     label: NOAA Fisheries
     url: https://www.fisheries.noaa.gov/species/killer-whale
-status: draft
 blogStatus: scheduled
 ---
 
 Orcas are the biggest dolphins in the world, and every orca family has its own special calls that only they use!
 
-{% figure "/assets/blog/world-oceans-day-2027/cover.jpg", "An orca surging through deep-blue open ocean" %}
+{% figure "/assets/blog/world-oceans-day-2027/cover.jpg", "An orca splashing through bright blue waves near a rocky island" %}
 
 That's right — orcas are really the largest member of the dolphin family, even though most people don't picture them that way. Their black-and-white pattern helps them blend into the sunlit water near the surface and the darker water down below.
 
-Every orca family has its own set of clicks, whistles, and calls — a bit like a family accent. No other family sounds quite the same. Can you make a clicking sound, like an orca listening for fish in the dark?
+Every orca family has its own set of clicks, whistles, and calls — a bit like a family accent. No other family sounds quite the same. Can you make a clicking sound, like an orca listening for fish?
 
-{% figure "/assets/blog/world-oceans-day-2027/scale.jpg", "An orca shown next to a child for scale" %}
+{% figure "/assets/blog/world-oceans-day-2027/scale.jpg", "A cartoon orca, 7 meters long, next to a tiny cartoon child in a snorkel suit" %}
 
 A grown-up orca is about 6 times as long as a 5-year-old is tall — stretched all the way out, that's about 7 meters (23 feet)!
 
-{% figure "/assets/blog/world-oceans-day-2027/weight.jpg", "A scale comparing an orca's weight to about 300 five-year-olds" %}
+{% figure "/assets/blog/world-oceans-day-2027/weight.jpg", "Two scales: one orca on one, and a big crowd of cartoon children on the other, both weighing about the same" %}
 
 Orcas are heavy, too. One orca can weigh as much as about 300 five-year-olds, all standing on one giant scale together. Can you picture that many friends on one scale?
 
 Orcas live together in family groups called pods, often led by a grandmother orca. In some orca families, the kids stay with their mom their whole lives — even once they're all grown up! Grandma orcas help lead their families to food, using everything they've learned over many, many years.
 
-{% figure "/assets/blog/world-oceans-day-2027/baby.jpg", "A young orca calf swimming underwater" %}
+{% figure "/assets/blog/world-oceans-day-2027/baby.jpg", "A young orca swimming underwater with bubbles rising behind it" %}
 
 A newborn baby orca is already about twice as long as a 5-year-old is tall, and it weighs as much as about 10 five-year-olds! Baby orcas drink their mom's milk and stay close by her side.
 

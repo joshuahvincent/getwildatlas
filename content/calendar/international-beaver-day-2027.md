@@ -99,4 +99,3 @@ Beavers build dams out of sticks and mud to make their pond just the right depth
 
 Eurasian beavers live by rivers and lakes all the way from Britain to Mongolia.
 
-<!-- DEEP LINK TBD: animal id beaver, pack wild_americas -->

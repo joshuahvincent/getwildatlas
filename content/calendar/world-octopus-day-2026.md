@@ -101,4 +101,3 @@ Look outside its den — those are leftover shells from crabs and clams it's eat
 
 Three hearts. Blue blood. Nine "brains." One amazing octopus.
 
-<!-- DEEP LINK TBD: animal id octopus, pack ocean_creatures -->

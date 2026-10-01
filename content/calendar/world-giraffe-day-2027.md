@@ -44,7 +44,7 @@ animalDay:
             url: https://www.zoo.org.au/werribee/animals/giraffe/
     note: Animals sometimes move — check the zoo's own website before you visit.
   grownups: |
-    In August 2025, scientists officially confirmed something exciting: there isn't just one kind of giraffe — there are four. The northern, reticulated, Masai and southern giraffe are each different enough to count as their own species, something researchers had wondered about for years. Three of the four now show stable or growing numbers, though the northern and reticulated giraffe still need real help, and giraffes overall have lost nearly 90% of the land they used to roam across Africa. The Giraffe Conservation Foundation (GCF), which started World Giraffe Day, estimates about 140,000 giraffes remain in the wild.
+    In August 2025, the IUCN's giraffe specialists officially recognised something exciting: there isn't just one kind of giraffe — there are four. The northern, reticulated, Masai and southern giraffe are each different enough to count as their own species, something researchers had wondered about for years. Three of the four now show stable or growing numbers, though the northern and reticulated giraffe still need real help, and giraffes overall have lost nearly 90% of the land they used to roam across Africa. The Giraffe Conservation Foundation (GCF), which started World Giraffe Day, estimates about 140,000 giraffes remain in the wild.
 
     One story shows what's possible. In 1996, only 49 West African giraffes were left in the wild, all in one small part of Niger. Local communities, Niger's government and conservation groups worked together to protect them — and today there are more than 600. Some even moved to a brand-new home, Gadabedji Biosphere Reserve, where giraffes hadn't lived in almost 50 years. Baby giraffes have already been born there.
 
@@ -58,25 +58,24 @@ animalDay:
   source:
     label: the Giraffe Conservation Foundation
     url: https://giraffeconservation.org/state-of-giraffe/
-status: draft
 blogStatus: scheduled
 ---
 
 Meet the giraffe — the tallest animal on Earth, with a long, dark tongue and a coat of patches that's all its own.
 
-{% figure "/assets/blog/world-giraffe-day-2027/cover.jpg", "A giraffe striding across a golden savanna, dust rising behind its hooves, with flat-topped acacia trees on the horizon" %}
+{% figure "/assets/blog/world-giraffe-day-2027/cover.jpg", "A giraffe running across a golden savanna, dust rising behind its hooves, with acacia trees on the horizon" %}
 
 A giraffe strides across the grassy savanna on legs as long as a grown-up's whole body, nibbling leaves that almost nothing else can reach. Its tongue is about as long as your arm — and it's dark blue-black, which scientists think helps keep it from getting sunburnt while it works in the sun all day.
 
 A big giraffe is as tall as five five-year-olds standing on each other's shoulders!
 
-{% figure "/assets/blog/world-giraffe-day-2027/scale.jpg", "Illustrated size comparison of a tall giraffe next to a small child explorer, showing how many times taller the giraffe stands" %}
+{% figure "/assets/blog/world-giraffe-day-2027/scale.jpg", "Illustrated size comparison of a tall giraffe next to a small child explorer, with a line marking the giraffe's shoulder height" %}
 
 And it's heavy too — about as much as 65 five-year-olds, all standing on one big scale together!
 
-{% figure "/assets/blog/world-giraffe-day-2027/weight.jpg", "Illustrated weight comparison of a giraffe on one scale and a pyramid of 65 five-year-old children on another, 1200 kg | 2646 lb" %}
+{% figure "/assets/blog/world-giraffe-day-2027/weight.jpg", "Illustrated weight comparison of a giraffe on one scale and a grid of 65 five-year-old children on another, both scales reading about 1200 kg | 2650 lb" %}
 
-Here's a surprise: a giraffe has the very same number of neck bones as you do — seven! Each one of its neck bones is just super long. Its heart is huge and strong, pumping blood all the way up that tall neck to its brain. And those two little bumps on its head? They're called ossicones, and every giraffe — boys and girls both — has them from the day it's born.
+Here's a surprise: a giraffe has the very same number of neck bones as you do — seven! Each one of its neck bones is just super long. Its heart is huge and strong, working hard to reach all the way up that tall neck to its brain. And those two little bumps on its head? They're called ossicones, and every giraffe — boys and girls both — has them from the day it's born.
 
 A baby giraffe arrives already enormous — about as tall as a grown-up — and it's up on its wobbly legs within an hour!
 

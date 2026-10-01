@@ -100,4 +100,3 @@ Hippos live together in family groups, usually 10 to 15 hippos. Their eyes, ears
 
 At night, hippos climb out of the river and munch grass — about 40 kilograms (88 pounds) of it. That's a lot of grass!
 
-<!-- DEEP LINK TBD: animal id hippopotamus, pack safari_stars -->
