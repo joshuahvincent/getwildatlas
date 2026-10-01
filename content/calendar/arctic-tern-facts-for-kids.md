@@ -63,6 +63,8 @@ Can you flap your arms like tern wings and fly from one end of the Earth to the 
 
 Stretch its wings out wide, and they're about three-quarters as wide as a 5-year-old is tall. But the bird itself is tiny — it would take about 170 Arctic terns on a scale to weigh as much as one 5-year-old!
 
+{% figure "/assets/blog/arctic-tern-facts-for-kids/weight.jpg", "Two scales side by side: 169 illustrated Arctic terns weighing 19 kilograms on one, and one five-year-old weighing 19 kilograms on the other" %}
+
 Can you make the loudest "kee-yah" tern call you can? That's one of the calls they make.
 
 It hunts by hovering over the sea, then zooming down — splash! — to grab a little fish.
