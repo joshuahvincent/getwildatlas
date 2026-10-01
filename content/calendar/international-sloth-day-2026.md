@@ -44,7 +44,6 @@ animalDay:
   source:
     label: IUCN SSC Anteater, Sloth & Armadillo Specialist Group
     url: https://xenarthrans.org/species/sloths/brown-throated-three-toed-sloth/
-status: draft
 blogStatus: scheduled
 ---
 

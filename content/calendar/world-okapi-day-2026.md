@@ -66,7 +66,6 @@ animalDay:
   source:
     label: the Okapi Conservation Project
     url: https://www.okapiconservation.org/world-okapi-day
-status: draft
 blogStatus: scheduled
 ---
 
