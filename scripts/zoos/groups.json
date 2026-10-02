@@ -111,21 +111,12 @@
   ]
  },
  "seals": {
-  "label": "seals and sea lions",
+  "label": "seals, sea lions and otters",
   "kind": "wild",
   "members": [
    "sea_lion",
-   "walrus"
-  ]
- },
- "sharks_rays": {
-  "label": "sharks and rays",
-  "kind": "wild",
-  "members": [
-   "great_white_shark",
-   "hammerhead_shark",
-   "whale_shark",
-   "manta_ray"
+   "walrus",
+   "sea_otter"
   ]
  },
  "reef_fish": {
@@ -263,10 +254,9 @@
   ]
  },
  "seabirds": {
-  "label": "penguins and seabirds",
+  "label": "seabirds",
   "kind": "wild",
   "members": [
-   "emperor_penguin",
    "atlantic_puffin",
    "albatross"
   ]
@@ -324,6 +314,60 @@
    "highland_cow",
    "mule",
    "ox"
+  ]
+ },
+ "sharks": {
+  "label": "sharks",
+  "kind": "wild",
+  "members": [
+   "great_white_shark",
+   "hammerhead_shark",
+   "whale_shark",
+   "sand_tiger_shark",
+   "blacktip_reef_shark",
+   "whitetip_reef_shark",
+   "nurse_shark",
+   "zebra_shark",
+   "epaulette_shark",
+   "bamboo_shark",
+   "wobbegong",
+   "leopard_shark",
+   "tiger_shark",
+   "bull_shark",
+   "lemon_shark",
+   "sandbar_shark",
+   "sevengill_shark",
+   "horn_shark",
+   "catshark"
+  ]
+ },
+ "rays": {
+  "label": "rays and skates",
+  "kind": "wild",
+  "members": [
+   "manta_ray",
+   "cownose_ray",
+   "southern_stingray",
+   "eagle_ray",
+   "skate_ray",
+   "guitarfish",
+   "sawfish",
+   "freshwater_stingray"
+  ]
+ },
+ "penguins": {
+  "label": "penguins",
+  "kind": "wild",
+  "members": [
+   "emperor_penguin",
+   "humboldt_penguin",
+   "african_penguin",
+   "magellanic_penguin",
+   "king_penguin",
+   "gentoo_penguin",
+   "adelie_chinstrap_penguin",
+   "rockhopper_macaroni_penguin",
+   "little_blue_penguin"
   ]
  }
 }

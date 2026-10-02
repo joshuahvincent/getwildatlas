@@ -19,20 +19,21 @@ def snippet(h):
 for p in places_in:
     idxf = os.path.join(WORK, 'html', p['id'], 'index.json')
     cf = os.path.join(WORK, 'cands', p['id'] + '.json')
-    if not os.path.exists(idxf) or not os.path.exists(cf):
-        failed.append({'id': p['id'], 'why': 'not crawled'}); continue
-    idx = json.load(open(idxf))
-    if not idx.get('home_status') or idx['home_status'] >= 400 or len(idx.get('pages', {})) < 2:
-        failed.append({'id': p['id'], 'why': 'home %s, pages %d' % (idx.get('home_status'), len(idx.get('pages', {})))}); continue
     lat, lng, csrc = p.get('lat'), p.get('lng'), p.get('coord_source')
     if lat is None and p['id'] in coords_cache:
         lat, lng, csrc = coords_cache[p['id']]['lat'], coords_cache[p['id']]['lng'], coords_cache[p['id']]['coord_source']
     if lat is None:
         failed.append({'id': p['id'], 'why': 'no coordinates'}); continue
+    # 2026-10-02: an accredited place stays on the map even when its website blocks scripts or crawls thin; it just has no animal rows from the crawl
     out_places.append({'id': p['id'], 'name': p['name'], 'type': p['type'], 'town': p.get('town'), 'region': p.get('region'), 'country': p.get('country'),
                        'lat': lat, 'lng': lng, 'coord_source': csrc, 'url': p['url'], 'accreditation': ','.join(p['accreditation']),
                        'accreditation_source': ';'.join(p.get('accreditation_source') or []) or None, 'wikidata': p.get('wikidata'),
                        'image_file': None, 'image_license': None, 'image_author': None})
+    if not os.path.exists(idxf) or not os.path.exists(cf):
+        failed.append({'id': p['id'], 'why': 'not crawled', 'kept': True}); continue
+    idx = json.load(open(idxf))
+    if not idx.get('home_status') or idx['home_status'] >= 400 or len(idx.get('pages', {})) < 2:
+        failed.append({'id': p['id'], 'why': 'home %s, pages %d' % (idx.get('home_status'), len(idx.get('pages', {}))), 'kept': True}); continue
     by_aid = {}
     for h in json.load(open(cf)):
         by_aid.setdefault(h['aid'], []).append(h)
@@ -69,9 +70,9 @@ json.dump({'batch': REGION, 'researched': TODAY, 'method': 'scripted-crawl', 'pl
            'notes_per_animal': {}, 'stats': {'places': len(out_places), 'holdings_exact': sum(h['match'] == 'exact' for h in holdings), 'holdings_related': sum(h['match'] == 'related' for h in holdings),
                                               'minutes_spent_estimate': 0, 'urls_fetched': len(fetches), 'blocked_urls': len(failed)},
            'method_notes': 'tools/crawl.py + analyze.py + assemble.py; auto-accepted strong evidence only'},
-          open(os.path.join(RAW, 'sweep_%s.json' % REGION), 'w'), ensure_ascii=False)
+          open(os.path.join(RAW, 'sweep_%s%s.json' % (REGION, os.environ.get('TAG', ''))), 'w'), ensure_ascii=False)
 os.makedirs(os.path.join(ROOT, 'review'), exist_ok=True)
-with open(os.path.join(ROOT, 'review', REGION + '.jsonl'), 'w') as f:
+with open(os.path.join(ROOT, 'review', REGION + os.environ.get('TAG', '') + '.jsonl'), 'w') as f:
     for r in review: f.write(json.dumps(r, ensure_ascii=False) + '\n')
-json.dump(failed, open(os.path.join(ROOT, 'review', REGION + '.failed_places.json'), 'w'), indent=0)
+json.dump(failed, open(os.path.join(ROOT, 'review', REGION + os.environ.get('TAG', '') + '.failed_places.json'), 'w'), indent=0)
 print(REGION, 'places', len(out_places), 'holdings', len(holdings), 'review', len(review), 'failed', len(failed))

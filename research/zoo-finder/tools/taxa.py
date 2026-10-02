@@ -398,3 +398,42 @@ NEG = ['tamarin lion', 'tamarin-lion', 'tamarins lions', 'tamarin lion doré', '
        'lobo de mar', 'lobo do mar', 'lobo-marinho', 'renne (grand)', 'rat de renne', 'aigle', 'tiger', 'tigre']
 # note: 'aigle','tiger','tigre','seal','antilope' entries in NEG are harmless (not animal names here) and keep masks conservative.
 NEG = [n for n in NEG if n not in ('aigle', 'tiger', 'tigre', 'seal', 'antilope', 'alligator snapping turtle', 'tortue alligator', 'tortue-alligator', 'tortuga caimán', 'tortuga aligátor', 'tartaruga alligatore', 'kajmanka supí', 'żółw sępi', 'keselyűteknős', 'geierschildkröte', 'caméléon panthère', 'kameleon lamparci', 'crocodile skink', 'crocodile monitor', 'varan crocodile', 'krokodilwaran', 'snow leopard', 'léopard des neiges', 'leopardo de las nieves', 'leopardo delle nevi', 'leopardo-das-neves', 'kar leoparı', 'leopard de zăpadă', 'snježni leopard', 'snežný leopard', 'snow leopards', 'leopard gecko', 'gecko léopard', 'gecko leopardo', 'geco leopardo', 'gekon lamparci', 'leopárdgekkó', 'leopardgecko', 'lobo marino', 'lobos marinos', 'lobo-marinho')]
+
+
+# ---------------- Aquarium / zoo additions (2026-10-02): common sharks and rays, penguins by species, sea otter, manatee ----------------
+# Extra (hidden) animals: they exist so a "sharks" / "rays" / "penguins" group match works; ids mirror raw/extra_animals.json.
+def _sp(aid, sci, names):
+    add(aid, sci=[(s, E, None, None) for s in sci], names=names)
+_sp('sand_tiger_shark', ['Carcharias taurus'], ['sand tiger shark', 'sand tiger', 'grey nurse shark', 'ragged-tooth shark', 'requin taureau', 'tiburón toro', 'sandtigerhai', 'squalo toro'])
+_sp('blacktip_reef_shark', ['Carcharhinus melanopterus'], ['blacktip reef shark', 'blacktip reef sharks', 'requin à pointes noires', 'requin pointes noires', 'tiburón punta negra', 'schwarzspitzen-riffhai'])
+_sp('whitetip_reef_shark', ['Triaenodon obesus'], ['whitetip reef shark', 'whitetip reef sharks', 'white tip reef shark', 'requin corail', 'tiburón punta blanca de arrecife', 'weißspitzen-riffhai'])
+_sp('nurse_shark', ['Ginglymostoma cirratum', 'Nebrius ferrugineus'], ['nurse shark', 'nurse sharks', 'requin nourrice', 'tiburón nodriza', 'ammenhai'])
+_sp('zebra_shark', ['Stegostoma tigrinum', 'Stegostoma fasciatum'], ['zebra shark', 'zebra sharks', 'requin zèbre', 'tiburón cebra', 'zebrahai'])
+_sp('epaulette_shark', ['Hemiscyllium *'], ['epaulette shark', 'epaulette sharks', 'walking shark', 'requin épaulette', 'tiburón epaulette'])
+_sp('bamboo_shark', ['Chiloscyllium *'], ['bamboo shark', 'bamboo sharks', 'brown-banded bamboo shark', 'whitespotted bamboo shark', 'requin bambou', 'tiburón bambú', 'bambushai'])
+_sp('wobbegong', ['Orectolobus *'], ['wobbegong', 'wobbegongs', 'carpet shark', 'carpet sharks'])
+_sp('leopard_shark', ['Triakis semifasciata'], ['leopard shark', 'leopard sharks', 'requin léopard', 'tiburón leopardo'])
+_sp('tiger_shark', ['Galeocerdo cuvier'], ['tiger shark', 'tiger sharks', 'requin tigre', 'tiburón tigre', 'tigerhai'])
+_sp('bull_shark', ['Carcharhinus leucas'], ['bull shark', 'bull sharks', 'requin bouledogue', 'bullenhai'])
+_sp('lemon_shark', ['Negaprion *'], ['lemon shark', 'lemon sharks', 'requin citron', 'tiburón limón', 'zitronenhai'])
+_sp('sandbar_shark', ['Carcharhinus plumbeus'], ['sandbar shark', 'sand bar shark', 'brown shark', 'requin gris', 'tiburón trozo'])
+_sp('sevengill_shark', ['Notorynchus cepedianus', 'Heptranchias perlo'], ['sevengill shark', 'broadnose sevengill shark', 'cow shark', 'requin plat-nez'])
+_sp('horn_shark', ['Heterodontus *'], ['horn shark', 'port jackson shark', 'bullhead shark', 'zebra bullhead shark', 'requin dormeur', 'tiburón cebra cornudo'])
+_sp('catshark', ['Scyliorhinus *', 'Cephaloscyllium *', 'Haploblepharus *', 'Poroderma *'], ['catshark', 'catsharks', 'cat shark', 'cat sharks', 'swell shark', 'dogfish shark', 'lesser spotted catshark', 'small-spotted catshark', 'roussette', 'pyjama shark', 'puffadder shyshark', 'gato de mar', 'katzenhai'])
+_sp('cownose_ray', ['Rhinoptera *'], ['cownose ray', 'cownose rays', 'cow nose ray', 'cow-nose ray', 'golden cownose ray', 'raie nez de vache', 'raya vaca', 'kuhnasenrochen'])
+_sp('southern_stingray', ['Hypanus americanus', 'Dasyatis americana', 'Hypanus *', 'Dasyatis *', 'Neotrygon *', 'Taeniura *', 'Himantura *', 'Maculabatis *', 'Pateobatis *'], ['southern stingray', 'southern stingrays', 'atlantic stingray', 'yellow stingray', 'blue-spotted stingray', 'bluespotted stingray', 'ribbontail stingray', 'bluespotted ribbontail ray', 'stingray', 'stingrays', 'sting ray', 'sting rays', 'raie pastenague', 'pastenague', 'raya látigo', 'stechrochen'])
+_sp('eagle_ray', ['Aetobatus *', 'Aetomylaeus *'], ['eagle ray', 'eagle rays', 'spotted eagle ray', 'whitespotted eagle ray', 'raie aigle', 'raya águila', 'adlerrochen'])
+_sp('skate_ray', ['Raja *', 'Leucoraja *', 'Dipturus *', 'Amblyraja *'], ['thornback ray', 'thornback skate', 'little skate', 'raie bouclée', 'raya de clavos', 'nagelrochen'])
+_sp('guitarfish', ['Rhinobatos *', 'Glaucostegus *', 'Pseudobatos *', 'Rhynchobatus *', 'Trygonorrhina *'], ['guitarfish', 'guitar fish', 'shovelnose ray', 'shovelnose guitarfish', 'banjo shark', 'giant guitarfish', 'raie guitare', 'violín', 'geigenrochen'])
+_sp('sawfish', ['Pristis *', 'Anoxypristis *'], ['sawfish', 'saw fish', 'largetooth sawfish', 'smalltooth sawfish', 'poisson-scie', 'pez sierra', 'sägefisch'])
+_sp('freshwater_stingray', ['Potamotrygon *', 'Paratrygon *', 'Plesiotrygon *'], ['freshwater stingray', 'freshwater stingrays', 'river stingray', 'ocellate river stingray', 'raie d\'eau douce', 'raya de agua dulce', 'süßwasserrochen'])
+_sp('humboldt_penguin', ['Spheniscus humboldti'], ['humboldt penguin', 'humboldt penguins', 'manchot de humboldt', 'pingüino de humboldt', 'humboldt-pinguin', 'pinguino di humboldt'])
+_sp('african_penguin', ['Spheniscus demersus'], ['african penguin', 'african penguins', 'jackass penguin', 'black-footed penguin', 'manchot du cap', 'pingüino africano', 'brillenpinguin', 'pinguino africano'])
+_sp('magellanic_penguin', ['Spheniscus magellanicus'], ['magellanic penguin', 'magellanic penguins', 'manchot de magellan', 'pingüino de magallanes', 'magellan-pinguin'])
+_sp('king_penguin', ['Aptenodytes patagonicus'], ['king penguin', 'king penguins', 'manchot royal', 'pingüino rey', 'königspinguin', 'pinguino reale'])
+_sp('gentoo_penguin', ['Pygoscelis papua'], ['gentoo penguin', 'gentoo penguins', 'manchot papou', 'pingüino papúa', 'eselspinguin', 'pinguino di gentoo'])
+_sp('adelie_chinstrap_penguin', ['Pygoscelis adeliae', 'Pygoscelis antarcticus'], ['adelie penguin', 'adélie penguin', 'chinstrap penguin', 'chinstrap penguins', 'manchot adélie', 'manchot à jugulaire', 'pingüino barbijo', 'zügelpinguin'])
+_sp('rockhopper_macaroni_penguin', ['Eudyptes *'], ['rockhopper penguin', 'rockhopper penguins', 'northern rockhopper penguin', 'southern rockhopper penguin', 'macaroni penguin', 'macaroni penguins', 'royal penguin', 'manchot sauteur', 'manchot macaroni', 'pingüino de penacho amarillo', 'felsenpinguin', 'goldschopfpinguin'])
+_sp('little_blue_penguin', ['Eudyptula *'], ['little blue penguin', 'little penguin', 'fairy penguin', 'blue penguin', 'manchot pygmée', 'pingüino azul', 'zwergpinguin'])
+_sp('sea_otter', ['Enhydra lutris'], ['sea otter', 'sea otters', 'loutre de mer', 'nutria marina', 'nutria de mar', 'seeotter', 'lontra marina'])
+_sp('west_indian_manatee', ['Trichechus *'], ['manatee', 'manatees', 'west indian manatee', 'florida manatee', 'amazonian manatee', 'african manatee', 'lamantin', 'lamantins', 'manatí', 'manatíes', 'seekuh', 'lamantino'])
