@@ -53,12 +53,13 @@ layout: layouts/post.njk
 {% if w.intro %}{{ w.intro | md | safe }}{% endif %}
 {% if zooFinderLive and d.animalId and w.findLabel %}<a class="find-zoo-link" href="/zoos/?animal={{ d.animalId }}">{{ w.findLabel }} →</a>{% endif %}
 {%- set wtsPins = w | whereToSeePins %}
-{% placesMap wtsPins, { label: "Map of places to see " + (d.animalArticle or "") + " " + (d.animalName or "this animal") } %}
+{% placesMap wtsPins, { label: "Map of places to see " + (d.animalArticle or "") + " " + (d.animalName or "this animal"), cards: "wts-cards" } %}
+<div id="wts-cards" class="places-map-cards">
 {%- for group in w.groups %}
 {% if group.label %}<h3>{{ group.label }}</h3>{% endif %}
 <div class="zoo-grid">
   {%- for p in group.places %}
-  <div class="zoo-card">
+  <div class="zoo-card" data-pin-key="{{ (p.title + '|' + p.place) | pinKey }}">
     <h4>{{ p.title }}</h4>
     <span class="zoo-city">{{ p.place }}</span>
     <p>{{ p.blurb | mdInline | safe }}</p>
@@ -68,12 +69,13 @@ layout: layouts/post.njk
 </div>
 {%- endfor %}
 {%- if w.cousin %}
-<div class="zoo-cousin">
+<div class="zoo-cousin" data-pin-key="{{ (w.cousin.title + '|' + (w.cousin.place or w.cousin.title)) | pinKey }}">
   <h4>{{ w.cousin.title }}</h4>
   <p>{{ w.cousin.blurb | mdInline | safe }}</p>
   <a href="{{ w.cousin.url | utm(d.campaign) }}">{{ w.cousin.linkText or "Learn more" }} →</a>
 </div>
 {%- endif %}
+</div>
 {% if w.note %}<p class="zoo-note">{{ w.note | mdInline | safe }}</p>{% endif %}
 {%- endif %}
 

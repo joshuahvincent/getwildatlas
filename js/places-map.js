@@ -15,6 +15,10 @@
 //   data-fit     "pins" (default: zoom to the pins) | "world"
 //   data-max-zoom  closest zoom when fitting to pins (default 5)
 //   data-legend  JSON {tier: label} to rename legend entries; "none" hides the legend
+//   data-cards   id of an element holding cards with data-pin-key="<pin key>". The cards
+//                collapse behind the map; tapping a pin shows its card in a panel under
+//                the map, and a "Show all N places as a list" button reveals them all.
+//                If the map can't load, the cards stay visible as a plain list.
 //
 // Pin tiers. The first four are the zoo finder's; "wild" is the in-the-wild pin.
 //   lists       big green dot with white halo   (has the animal)
@@ -104,7 +108,42 @@ function renderLegend(el, pins) {
   el.after(ul);
 }
 
-async function draw(el) {
+// ---------- linked cards (data-cards) ----------
+function setupCards(el) {
+  const box = el.dataset.cards && document.getElementById(el.dataset.cards);
+  if (!box) return null;
+  const n = box.querySelectorAll('[data-pin-key]').length;
+  if (!n) return null;
+  const detail = el$('div', { class: 'places-map-detail', 'aria-live': 'polite' });
+  detail.hidden = true;
+  const toggle = el$('button', { type: 'button', class: 'places-map-toggle', 'aria-controls': box.id, 'aria-expanded': 'false' });
+  const label = (open) => (toggle.textContent = open ? 'Hide the list' : 'Show all ' + n + ' place' + (n === 1 ? '' : 's') + ' as a list');
+  label(false);
+  toggle.addEventListener('click', () => {
+    const open = box.classList.toggle('pm-collapsed') === false;
+    toggle.setAttribute('aria-expanded', String(open));
+    label(open);
+  });
+  el.after(detail, toggle);
+  box.classList.add('pm-collapsed');
+  return { box, detail, toggle, restore() { box.classList.remove('pm-collapsed'); detail.remove(); toggle.remove(); } };
+}
+
+function showCard(cards, key) {
+  const card = key && cards.box.querySelector('[data-pin-key="' + CSS.escape(key) + '"]');
+  if (!card) return false;
+  const copy = card.cloneNode(true);
+  copy.removeAttribute('data-pin-key');
+  const close = el$('button', { type: 'button', class: 'places-map-detail-close', 'aria-label': 'Close' });
+  close.textContent = '×';
+  close.addEventListener('click', () => { cards.detail.hidden = true; cards.detail.replaceChildren(); });
+  cards.detail.replaceChildren(close, copy);
+  cards.detail.hidden = false;
+  cards.detail.scrollIntoView({ block: 'nearest', behavior: reducedMotion() ? 'auto' : 'smooth' });
+  return true;
+}
+
+async function draw(el, cards) {
   el.dataset.loading = '1';
   const pins = (await loadPins(el)).filter((p) => Number.isFinite(p.la) && Number.isFinite(p.lo)).map((p) => ({ ...p, tier: tierOf(p.tier) }));
   renderLegend(el, pins);
@@ -135,7 +174,8 @@ async function draw(el) {
       const f = e.features && e.features[0]; if (!f) return;
       const p = pins[f.properties.i];
       if (popup) popup.remove();
-      popup = new lib.Popup({ offset: 12, maxWidth: '260px' }).setLngLat([p.lo, p.la]).setDOMContent(popupNode(p)).addTo(map);
+      const shown = cards && showCard(cards, p.key);
+      popup = new lib.Popup({ offset: 12, maxWidth: '260px' }).setLngLat([p.lo, p.la]).setDOMContent(shown ? el$('div', {}, el$('h4', { text: p.title || '' })) : popupNode(p)).addTo(map);
       map.easeTo({ center: [p.lo, p.la], duration: reducedMotion() ? 0 : 400 });
     });
     map.on('mouseenter', layer, () => (map.getCanvas().style.cursor = 'pointer'));
@@ -143,8 +183,12 @@ async function draw(el) {
   });
 }
 
-function start(el) { draw(el).catch((err) => { delete el.dataset.loading; console.error('[places map]', err); }); }
 const maps = document.querySelectorAll('.places-map');
+const linked = new Map([...maps].map((m) => [m, setupCards(m)]));   // collapse cards right away, before the map loads
+function start(el) {
+  const cards = linked.get(el);
+  draw(el, cards).catch((err) => { delete el.dataset.loading; if (cards) cards.restore(); console.error('[places map]', err); });
+}
 if ('IntersectionObserver' in window) {
   const io = new IntersectionObserver((entries) => entries.forEach((e) => { if (e.isIntersecting) { io.unobserve(e.target); start(e.target); } }), { rootMargin: '300px' });
   maps.forEach((m) => io.observe(m));

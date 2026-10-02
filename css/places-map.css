@@ -17,3 +17,12 @@
 .places-map .maplibregl-popup-content h4 { margin: 0 0 2px; font-family: "Fredoka", system-ui, sans-serif; font-size: 15px; padding-right: 22px; }
 .places-map .maplibregl-popup-content p { margin: 2px 0; font-size: 13px; }
 .places-map .maplibregl-popup-close-button { width: 32px; height: 32px; font-size: 22px; line-height: 1; }
+
+/* Linked cards (data-cards): collapsed behind the map; the tapped pin's card shows in .places-map-detail. */
+.places-map-cards.pm-collapsed { display: none; }
+.places-map-detail { position: relative; margin: 0 0 0.8rem; }
+.places-map-detail > :not(.places-map-detail-close) { margin: 0; box-shadow: 0 6px 18px rgba(93, 64, 55, 0.14); border: 1.5px solid rgba(93, 64, 55, 0.25); }
+.places-map-detail-close { position: absolute; top: 6px; right: 8px; z-index: 1; width: 36px; height: 36px; border: 0; border-radius: 50%; background: transparent; color: #5D4037; font-size: 24px; line-height: 1; cursor: pointer; }
+.places-map-detail-close:hover, .places-map-detail-close:focus-visible { background: rgba(93, 64, 55, 0.1); }
+.places-map-toggle { display: inline-block; margin: 0 0 1rem; padding: 0.45rem 1rem; border: 1.5px solid #5D4037; border-radius: 999px; background: #fff; color: #5D4037; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.92rem; cursor: pointer; }
+.places-map-toggle:hover, .places-map-toggle:focus-visible { background: #FFF4CC; }
