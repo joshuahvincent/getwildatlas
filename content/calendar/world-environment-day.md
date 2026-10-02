@@ -73,7 +73,7 @@ blogStatus: scheduled
 
 A giant tortoise is a slow-walking gardener.
 
-{% figure "/assets/blog/world-environment-day/cover.jpg", "A Galápagos giant tortoise walking across a misty green meadow" %}
+{% figure "/assets/blog/world-environment-day/cover.jpg", "Galapagos giant tortoises walk slowly through grassy highlands — grassy highlands and scrub of the Galápagos Islands" %}
 
 As it wanders its island, munching grass, leaves, and cactus, it carries seeds along in its tummy. One tortoise dropping can hold hundreds of seeds! When the seeds come back out, far from where the tortoise first ate them, new plants get to grow. That makes the tortoise one of the best gardeners on the island.
 
@@ -91,11 +91,11 @@ Can you picture 14 friends standing on one big scale?
 
 Tortoises walk slower than you do, but they keep on going — some even take a long, slow walk up a volcano every year, from the dry coast to the green hills, and back again.
 
-{% figure "/assets/blog/world-environment-day/baby.jpg", "A tiny Galápagos giant tortoise hatchling on the ground" %}
+{% figure "/assets/blog/world-environment-day/baby.jpg", "A baby Galápagos Giant Tortoise in grassy volcanic highlands" %}
 
 A brand-new baby tortoise is small enough to sit in your hand. Mom digs a nest for her eggs, and months later, the babies dig themselves out, all on their own!
 
-{% figure "/assets/blog/world-environment-day/habitat.jpg", "A Galápagos giant tortoise reaching up toward a tall cactus on a dry, rocky coast" %}
+{% figure "/assets/blog/world-environment-day/habitat.jpg", "Galapagos giant tortoises stand in shallow muddy pools — grassy highlands and scrub of the Galápagos Islands" %}
 
 Galápagos giant tortoises can live more than 100 years — longer than almost any other animal on Earth. Can you curl up small and tuck your head in, the way a tortoise tucks into its shell?
 

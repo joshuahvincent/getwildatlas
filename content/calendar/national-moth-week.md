@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy National Moth Week!** Tonight, the fluttery night-time fliers are the stars of the show."
   image:
     src: /assets/calendar-days/national-moth-week/cover.jpg
-    alt: "A pale green moth with long tails resting on a dewy leaf beside a brown striped moth with feathery antennae on tree bark, in a misty woodland at dusk."
+    alt: "Luna moths perch on leaves in the woodland at dusk — deciduous woodland of eastern North America at night"
   origin:
     text: "Started in 2012 by the Friends of the East Brunswick Environmental Commission in New Jersey. It is now a global citizen-science event. Check the official site for this year's dates."
     sourceUrl: https://nationalmothweek.org/

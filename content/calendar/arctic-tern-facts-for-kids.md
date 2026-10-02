@@ -53,7 +53,7 @@ blogStatus: scheduled
 
 Every year, a bird that weighs about as much as a stick of butter flies from the top of the world to the bottom — and back again. That's the longest trip of any animal scientists have ever tracked!
 
-{% figure "/assets/blog/arctic-tern-facts-for-kids/cover.jpg", "An Arctic tern flying low over grey ocean water, with a black cap, red bill and forked tail" %}
+{% figure "/assets/blog/arctic-tern-facts-for-kids/cover.jpg", "Arctic terns soar over the sea on long pointed wings — rocky Arctic coastline and open sea in summer" %}
 
 Meet the Arctic tern: a small, silvery-white seabird with a black cap and a bright red beak and legs. Its tail splits into two long streamers, so some people call it the "sea swallow."
 
@@ -69,11 +69,11 @@ Can you make the loudest "kee-yah" tern call you can? That's one of the calls th
 
 It hunts by hovering over the sea, then zooming down — splash! — to grab a little fish.
 
-{% figure "/assets/blog/arctic-tern-facts-for-kids/baby.jpg", "A fluffy Arctic tern chick in a ground nest next to a parent holding a small fish" %}
+{% figure "/assets/blog/arctic-tern-facts-for-kids/baby.jpg", "A baby Arctic Tern in a pebbly shoreline nest" %}
 
 Tern chicks hatch fluffy, in a shallow dip in the ground. Mom and Dad take turns keeping the eggs warm, then bring their chick fish to eat. Chicks can fly when they're about a month old.
 
-{% figure "/assets/blog/arctic-tern-facts-for-kids/habitat.jpg", "An Arctic tern nesting colony on a subarctic shore under a glowing midnight-sun sky" %}
+{% figure "/assets/blog/arctic-tern-facts-for-kids/habitat.jpg", "Arctic terns stand on pebbly shorelines near their nests — rocky Arctic coastline and open sea in summer" %}
 
 In summer, Arctic terns nest on rocky, grassy shores near the top of the world. Then they fly all the way to the icy ocean near the bottom of the world for a second summer — so they probably see more sunshine than almost any animal alive.
 

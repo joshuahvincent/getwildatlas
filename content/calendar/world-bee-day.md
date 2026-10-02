@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy World Bee Day!** Let's say thank you to the buzzing helpers that visit flowers."
   image:
     src: /assets/calendar-days/world-bee-day/cover.jpg
-    alt: "Three honey bees with striped bodies and orange pollen baskets on their legs gathering nectar from yellow and purple flowers in a sunny wildflower meadow."
+    alt: "Honey bees fly over bright summer wildflowers — meadows full of wildflowers"
   origin:
     text: "The United Nations declared this day in 2017 after a proposal from Slovenia. It was first held in 2018, on beekeeper Anton Jansa's birthday."
     sourceUrl: "https://www.un.org/en/observances/bee-day"

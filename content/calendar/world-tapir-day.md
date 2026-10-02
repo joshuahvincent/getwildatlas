@@ -71,7 +71,7 @@ blogStatus: scheduled
 
 Baby Malayan tapirs are born wearing watermelon stripes — then they slowly change into black-and-white grown-ups that some zookeepers call "Oreo tapirs."
 
-{% figure "/assets/blog/world-tapir-day/cover.jpg", "An adult Malayan tapir walking along a misty rainforest stream" %}
+{% figure "/assets/blog/world-tapir-day/cover.jpg", "Malayan tapirs walk through the rainforest undergrowth — lowland tropical rainforest of Southeast Asia" %}
 
 A tapir's nose and upper lip are joined together into one bendy little trunk. It uses this mini-trunk like a finger, to grab leaves right off the branch.
 
@@ -89,11 +89,11 @@ Can you picture 14 friends on one big scale?
 
 A tapir calf is born with brown fur and pale stripes and spots, like a watermelon rind. The pattern helps a baby hide in speckled forest light while it's too little to run fast. After a few months, the stripes fade and the black-and-white saddle pattern grows in.
 
-{% figure "/assets/blog/world-tapir-day/baby.jpg", "A striped Malayan tapir calf standing near its black-and-white mother" %}
+{% figure "/assets/blog/world-tapir-day/baby.jpg", "A baby Malayan Tapir in rainforest undergrowth, with striped baby coat" %}
 
 Tapirs love water, too. They can sink right down and walk along the bottom of a river!
 
-{% figure "/assets/blog/world-tapir-day/habitat.jpg", "A misty Malaysian rainforest river where a Malayan tapir lives" %}
+{% figure "/assets/blog/world-tapir-day/habitat.jpg", "Malayan tapirs stand at the edge of a forest stream — lowland tropical rainforest of Southeast Asia" %}
 
 At night, a tapir zigzags through the rainforest, nibbling just a few leaves from each plant before moving to the next one. It finds its way mostly by smell and hearing, since its eyesight isn't very sharp. And when it wants to talk, it doesn't roar — it whistles!
 

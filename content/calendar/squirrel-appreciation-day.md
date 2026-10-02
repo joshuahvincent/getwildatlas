@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy Squirrel Appreciation Day!** Look out the window: is there a bushy-tailed neighbor having a busy day?"
   image:
     src: /assets/calendar-days/squirrel-appreciation-day/cover.jpg
-    alt: "A gray squirrel with a fluffy curled tail sits on a moss-covered branch holding a nut in its paws, in an autumn forest with orange and yellow leaves."
+    alt: "Eastern gray squirrels climb oak trees in autumn — deciduous woodland of eastern North America in autumn"
   origin:
     text: "Created in 2001 by Christy Hargrove, a wildlife rehabilitator linked to the Western North Carolina Nature Center."
     sourceUrl: https://en.wikipedia.org/wiki/Squirrel_Appreciation_Day

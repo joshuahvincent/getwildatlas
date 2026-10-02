@@ -63,7 +63,7 @@ blogStatus: scheduled
 
 A black rhino's top lip is pointy and bendy — it works almost like a finger, reaching out to grab its favorite leaves and twigs off a bush.
 
-{% figure "/assets/blog/endangered-species-day/cover.jpg", "An adult black rhinoceros in golden-hour savanna, its hooked upper lip gripping a thorny green shrub, with a small oxpecker bird perched on its back" %}
+{% figure "/assets/blog/endangered-species-day/cover.jpg", "Black rhinos walk through thorny bushland browsing on twigs — dry bushland and acacia scrub of eastern and southern Africa" %}
 
 Here's a surprise: black rhinos aren't black at all. They're grey — and often the color of whatever mud they rolled in last!
 
@@ -83,11 +83,11 @@ Can you wiggle your ears like a rhino listening for sounds in the bushes?
 
 Black rhinos have a small feathered friend: a bird called an oxpecker rides right on their back. When people come near, the bird calls out — a warning just for the rhino.
 
-{% figure "/assets/blog/endangered-species-day/baby.jpg", "A small grey black rhino calf with big upright ears and a tiny horn bud, standing beside its mother in dry bushland" %}
+{% figure "/assets/blog/endangered-species-day/baby.jpg", "A baby Black Rhinoceros in dry acacia bushland" %}
 
 A brand-new baby rhino can stand up and start walking on its very first day! It stays close to its mom for two or three years, learning how to be a rhino.
 
-{% figure "/assets/blog/endangered-species-day/habitat.jpg", "A wide golden savanna landscape with acacia trees and red earth, a black rhino browsing at a bush in the middle distance" %}
+{% figure "/assets/blog/endangered-species-day/habitat.jpg", "Black rhinos stand in the shade of acacia trees at midday — dry bushland and acacia scrub of eastern and southern Africa" %}
 
 This is a black rhino's home — the wide, bushy grasslands of eastern and southern Africa.
 

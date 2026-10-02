@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy Buzzard Day!** Today we look to the sky and welcome back the big, gliding turkey vultures."
   image:
     src: /assets/calendar-days/buzzard-day/cover.jpg
-    alt: "A turkey vulture with a bare red head and dark brown-black feathers perched on a weathered wooden fence post above golden, rolling farmland at sunset."
+    alt: "Turkey vultures soar over open farmland with wings in a shallow V — farmland and open countryside of Ohio"
   origin:
     text: "Every March 15 since 1957, Hinckley Reservation in Ohio has welcomed back its turkey vultures, a tradition that began with a newspaper story and grew into a town festival."
     sourceUrl: https://www.wkyc.com/article/news/local/medina-county/buzzards-return-to-hinckley-ohio/95-482a4115-880c-4b71-aef6-50d5166cdc4d

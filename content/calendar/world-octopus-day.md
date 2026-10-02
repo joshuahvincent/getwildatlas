@@ -71,7 +71,7 @@ animalDay:
     url: https://www.montereybayaquarium.org/animals-the-ocean/animals-a-to-z/giant-pacific-octopus
 ---
 
-{% figure "/assets/blog/world-octopus-day/cover.jpg", "A reddish-brown giant Pacific octopus resting on a cold, rocky reef, its arms curled over the rocks", "The giant Pacific octopus — the biggest octopus we know of." %}
+{% figure "/assets/blog/world-octopus-day/cover.jpg", "Giant Pacific octopuses swim over rocky reefs with arms trailing — cold rocky reefs and kelp forests of the North Pacific Ocean", "The giant Pacific octopus — the biggest octopus we know of." %}
 
 Meet the giant Pacific octopus. It lives in the cold, rocky part of the ocean — the North Pacific, all the way from Japan to Alaska to California.
 
@@ -89,13 +89,13 @@ Watch this: in about one second, it can change from smooth and reddish-brown to 
 
 That's a lot of octopus. But it starts out tiny.
 
-{% figure "/assets/blog/world-octopus-day/hatchling.jpg", "A tiny, see-through baby giant Pacific octopus with orange speckles, drifting in dark ocean water", "A newly hatched giant Pacific octopus is about the size of a grain of rice." %}
+{% figure "/assets/blog/world-octopus-day/hatchling.jpg", "A baby Giant Pacific Octopus in open water, as a tiny see-through hatchling", "A newly hatched giant Pacific octopus is about the size of a grain of rice." %}
 
 Can you find a grain of rice in your kitchen? That's how small it starts.
 
 First it drifts in the open ocean like a tiny speck. Then it settles down on the seafloor and grows up in a den, tucked into a crack between rocks.
 
-{% figure "/assets/blog/world-octopus-day/habitat.jpg", "A giant Pacific octopus den in a rocky crevice, with a pile of empty shells outside the entrance", "See that little pile of shells outside the den? Scientists call it a midden. We like to call it the octopus's \"front porch.\"" %}
+{% figure "/assets/blog/world-octopus-day/habitat.jpg", "Giant Pacific octopuses glide past kelp on the rocky sea floor — cold rocky reefs and kelp forests of the North Pacific Ocean", "See that little pile of shells outside the den? Scientists call it a midden. We like to call it the octopus's \"front porch.\"" %}
 
 Look outside its den — those are leftover shells from crabs and clams it's eaten, stacked up like a front porch.
 

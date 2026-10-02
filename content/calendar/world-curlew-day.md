@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy World Curlew Day!** Today we say hello to the curlew, a bird with a long curved bill and a song like a bubbling brook."
   image:
     src: /assets/calendar-days/world-curlew-day/cover.jpg
-    alt: "A curlew with a long, downward-curved bill and streaky brown feathers wading in shallow water on a sunset-lit tidal flat, its reflection in the water."
+    alt: "Eurasian curlews walk across shining mudflats — coastal mudflats and wet meadows of Europe"
   origin:
     text: "Created in 2017 by Mary Colwell. April 21 is the feast day of St Beuno, the patron saint of curlews, and the day she began her 2016 curlew walk."
     sourceUrl: "https://www.curlewaction.org/world-curlew-day/"

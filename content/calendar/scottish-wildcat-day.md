@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy Scottish Wildcat Day!** Today we meet the shy striped cat of the Scottish Highlands."
   image:
     src: /assets/calendar-days/scottish-wildcat-day/cover.jpg
-    alt: "A striped tabby-like Scottish wildcat with a thick, blunt, black-ringed tail standing among purple heather and Scots pines in the misty Highlands."
+    alt: "Scottish wildcats walk through purple heather — heather moorland and pine woodland of the Scottish Highlands"
   origin:
     text: "Started around 2016 by the grassroots group Action 4 Earth, and supported by wildcat groups across the UK."
     sourceUrl: https://action4earth.wixsite.com/action4earth/scottish-wildcat-day

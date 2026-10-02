@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy International Sawfish Day!** Today we celebrate a very unusual ocean animal with a long snout shaped like a saw."
   image:
     src: /assets/calendar-days/international-sawfish-day/cover.jpg
-    alt: "A sawfish with a flat body and a long toothed snout swims over sunlit sand in shallow tropical water, with coral and small fish behind it."
+    alt: "Smalltooth sawfish swim over sandy shallows — shallow warm coastal waters and mangroves"
   origin:
     text: "Held every October 17th and promoted by the Sawfish Conservation Society to raise awareness of sawfish."
     sourceUrl: "https://www.sawfishconservationsociety.org/international-sawfish-day"

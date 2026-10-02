@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy National Bilby Day!** Time to meet the greater bilby, a little Australian animal with the biggest ears."
   image:
     src: /assets/calendar-days/national-bilby-day/cover.jpg
-    alt: "A greater bilby with a long pointed snout, tall pink-lined ears, blue-grey fur and a black-and-white tail, sitting on red desert sand beside spinifex grass at dusk"
+    alt: "Greater bilbies dig in red desert sand at dusk — red sandy desert with spinifex grass in central Australia"
   origin:
     text: "Frank Manthey, co-founder of Save the Bilby Fund, set up this day in Australia in 2005. It is a gazetted national day."
     sourceUrl: "https://savethebilbyfund.org.au/national-bilby-day/"

@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy Save Kiwi Month!** All through October, people in New Zealand celebrate the kiwi, a small round bird that snuffles around in the dark."
   image:
     src: /assets/calendar-days/save-kiwi-month/cover.jpg
-    alt: "A brown kiwi with shaggy, hair-like feathers and a long thin bill pokes along the leafy floor of a misty New Zealand forest with ferns and mossy trees in golden dawn light."
+    alt: "Brown kiwi walk across the ferny forest floor at dawn — native forest floor of New Zealand among ferns"
   origin:
     text: "A month-long New Zealand campaign every October, led by the kiwi group Kiwis for kiwi together with the Department of Conservation."
     sourceUrl: "https://blog.doc.govt.nz/2014/10/02/save-kiwi-month/"

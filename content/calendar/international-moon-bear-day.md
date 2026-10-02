@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy International Moon Bear Day!** Today we say hello to the bear with a little moon on its chest."
   image:
     src: /assets/calendar-days/international-moon-bear-day/cover.jpg
-    alt: "A black moon bear with a pale crescent mark on its chest standing on a mossy bank beside a stream in a green mountain forest."
+    alt: "Asiatic black bears walk along forest streams — mountain forests of Asia"
   origin:
     text: "Run by the charity Animals Asia, whose founder is Jill Robinson. The date marks the charity's founding anniversary."
     sourceUrl: https://www.animalsasia.org/us/media/news/news-archive/join-thousands-of-people-across-the-world-and-make-a-difference-this-moonbearday.html

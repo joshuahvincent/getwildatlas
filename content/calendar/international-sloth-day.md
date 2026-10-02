@@ -49,7 +49,7 @@ blogStatus: scheduled
 
 A sloth's fur is like a tiny garden — green algae grows right in it, and little moths live there too!
 
-{% figure "/assets/blog/international-sloth-day/cover.jpg", "A three-toed sloth hanging by its arms below a mossy rainforest branch, feet tucked against its belly, surrounded by big leaves and a red bromeliad" %}
+{% figure "/assets/blog/international-sloth-day/cover.jpg", "Three-toed sloths climb slowly through the rainforest canopy — tropical rainforest canopy of Central and South America" %}
 
 Meet the three-toed sloth — one of the slowest-moving mammals in the world. It hangs from branches using three long, curved claws on every hand and foot, like built-in hooks, and it almost never lets go.
 
@@ -69,10 +69,10 @@ Can you turn your head almost all the way around, like a sloth's extra neck bone
 
 About once a week, a sloth climbs all the way down its tree — just to poop. The moths that live in its fur ride along and lay their eggs in the poop. When the baby moths grow up, they fly up into the trees to find a sloth of their own.
 
-{% figure "/assets/blog/international-sloth-day/baby.jpg", "A sloth hanging upside down from a mossy branch with a small baby sloth clinging to her belly" %}
+{% figure "/assets/blog/international-sloth-day/baby.jpg", "A baby Brown-throated Three-toed Sloth in the rainforest canopy, clinging to its mother" %}
 
 A baby sloth is born weighing less than a big bottle of water. It hangs onto its mom's tummy and rides along for months, learning which leaves are good to eat.
 
-{% figure "/assets/blog/international-sloth-day/habitat.jpg", "Misty rainforest canopy at dawn, with a small sloth hanging in the crown of a tall Cecropia tree" %}
+{% figure "/assets/blog/international-sloth-day/habitat.jpg", "Three-toed sloths hang from high branches in the misty canopy — tropical rainforest canopy of Central and South America" %}
 
 Can you move as slowly as you possibly can across the room, like a sloth?

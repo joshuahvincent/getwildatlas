@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy World Manta Day!** Let's glide into the ocean and meet the manta rays."
   image:
     src: /assets/calendar-days/world-manta-day/cover.jpg
-    alt: "A giant manta ray with a dark back, pale underside and wide wing-like fins gliding through clear blue tropical water above a coral reef, with a school of small silver fish below"
+    alt: "Giant manta rays glide through clear blue water — clear tropical ocean above coral reefs"
   origin:
     text: "World Manta Day was established by the Manta Trust, a UK charity that studies and protects manta and devil rays."
     sourceUrl: "https://www.mantatrust.org/world-manta-day-2025-heres-whats-in-store"

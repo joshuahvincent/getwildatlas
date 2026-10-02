@@ -71,7 +71,7 @@ blogStatus: scheduled
 
 Every sunny morning, ring-tailed lemurs sit up, spread their arms wide, and sunbathe — like they're doing yoga!
 
-{% figure "/assets/blog/world-lemur-day/cover.jpg", "A ring-tailed lemur sitting upright on a sunlit boulder, arms spread wide and belly turned to the sun, in the dry spiny forest of southern Madagascar" %}
+{% figure "/assets/blog/world-lemur-day/cover.jpg", "Ring-tailed lemurs leap between trees — dry forest and spiny scrub of southern Madagascar" %}
 
 Meet the ring-tailed lemur. It lives in only one place on Earth — the dry forests and rocky hills of southern Madagascar, an island off the coast of Africa.
 
@@ -91,12 +91,12 @@ In a lemur family, called a troop, the grown-up girls are in charge — they lea
 
 Can you wave your hand in the air like a lemur waving its stripy tail?
 
-{% figure "/assets/blog/world-lemur-day/baby.jpg", "A mother ring-tailed lemur walking through leaf litter with her baby riding piggyback on her back" %}
+{% figure "/assets/blog/world-lemur-day/baby.jpg", "A baby Ring-tailed Lemur in dry forest, riding on its mother's back" %}
 
 A newborn lemur weighs about as much as an egg. At first it clings to its mom's tummy, and after about two weeks, it climbs onto her back and rides piggyback.
 
 Can you make a lemur sound — a squeaky meow, a purr, or a click?
 
-{% figure "/assets/blog/world-lemur-day/habitat.jpg", "A line of ring-tailed lemurs walking along a sunlit boulder with their striped tails held high and curled at the tips, over the dry spiny forest of southern Madagascar" %}
+{% figure "/assets/blog/world-lemur-day/habitat.jpg", "Ring-tailed lemurs walk on the forest floor with tails held high — dry forest and spiny scrub of southern Madagascar" %}
 
 When a troop walks along the ground together, the lemurs hold their stripy tails up high, like flags, so the whole family travels together.

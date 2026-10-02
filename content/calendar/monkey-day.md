@@ -45,7 +45,7 @@ blogStatus: scheduled
 
 High in China's snowy mountains lives a monkey with golden fur, a blue face and a tiny turned-up nose — and when it's cold, the whole family snuggles up together to stay warm.
 
-{% figure "/assets/blog/monkey-day/cover.jpg", "A golden snub-nosed monkey with golden fur, a pale blue face and an upturned nose, sitting on a snowy branch as snow falls" %}
+{% figure "/assets/blog/monkey-day/cover.jpg", "Golden snub-nosed monkeys climb through snowy forest trees — snowy temperate mountain forests of central China" %}
 
 Golden snub-nosed monkeys live in only one place on Earth: the mountain forests of central China, where snow covers the ground for months at a time. Their thick golden coats help keep them warm, and their tiny turned-up noses make them look like they're always smiling up at the sky.
 
@@ -61,13 +61,13 @@ And here's a surprise: a full-grown male golden monkey weighs about as much as o
 
 In winter, golden monkeys munch on lichen — a stringy, fuzzy growth that hangs from tree branches — along with bark, buds and seeds. They spend almost all their time up in the trees.
 
-{% figure "/assets/blog/monkey-day/baby.jpg", "A mother golden snub-nosed monkey with golden-brown fur holding her pale grey baby against her chest on a mossy branch" %}
+{% figure "/assets/blog/monkey-day/baby.jpg", "A baby Golden Snub-nosed Monkey in a snowy forest, hugged by its blue-faced mother" %}
 
 Baby golden monkeys are born in spring, and they start out grey, not golden — their golden color comes in later. Babies get looked after by their mom, and sometimes by grandmas and aunties too, who help feed them.
 
 Can you huddle close with your family to stay warm, like a monkey troop does in the snow?
 
-{% figure "/assets/blog/monkey-day/habitat.jpg", "A family of golden snub-nosed monkeys huddled together on a snowy branch, with a misty mountain valley in the background" %}
+{% figure "/assets/blog/monkey-day/habitat.jpg", "Golden snub-nosed monkeys walk along branches in the mountain forest — snowy temperate mountain forests of central China" %}
 
 Golden monkey families join together into huge neighborhoods — sometimes hundreds of monkeys, all living in the same forest. When it gets really cold, families press close together in a big furry huddle, and the huddle gets even bigger the colder it gets.
 

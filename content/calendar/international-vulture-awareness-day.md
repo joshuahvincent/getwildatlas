@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy International Vulture Awareness Day!** Today we say thank you to the big, graceful birds that keep the wild tidy."
   image:
     src: /assets/calendar-days/international-vulture-awareness-day/cover.jpg
-    alt: "A large vulture with brown feathers and a bare grey head perched on an acacia branch at sunset on the African grassland, with elephants and flat-topped trees far away."
+    alt: "White-backed vultures soar high over the savanna — African savanna with scattered acacia trees"
   origin:
     text: "It grew out of South Africa's Vulture Awareness Day and became international in 2009, led by the Endangered Wildlife Trust and the Hawk Conservancy Trust in the UK."
     sourceUrl: https://sdzsafaripark.org/wildlife-awareness-days

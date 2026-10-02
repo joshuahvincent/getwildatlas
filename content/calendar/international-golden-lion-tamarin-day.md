@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy International Golden Lion Tamarin Day!** Let's celebrate the tiny monkey with a big golden mane."
   image:
     src: /assets/calendar-days/international-golden-lion-tamarin-day/cover.jpg
-    alt: "A small bright orange golden lion tamarin with a fluffy golden mane walking along a mossy branch in a misty green forest with red bromeliad plants."
+    alt: "Golden lion tamarins climb along mossy branches — Atlantic Forest of south-eastern Brazil"
   origin:
     text: "First held in 2016 in Silva Jardim, Brazil. It is promoted by AMLD and Save the Golden Lion Tamarin, and Brazil officially recognised it in 2018."
     sourceUrl: https://www.savetheliontamarin.org/annual-glt-day

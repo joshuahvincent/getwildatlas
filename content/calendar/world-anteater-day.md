@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy World Anteater Day!** Wiggle your nose and stick out your tongue: today is for the animals with the longest noses and tongues around."
   image:
     src: /assets/calendar-days/world-anteater-day/cover.jpg
-    alt: "A giant anteater with a long tapered snout and a big bushy tail walks through golden grassland dotted with scattered trees at sunset."
+    alt: "Giant anteaters walk through tall grassland — grassland and savanna of Central and South America"
   origin:
     text: "Established in 2014 by the IUCN SSC Anteater, Sloth & Armadillo Specialist Group."
     sourceUrl: https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/world-anteater-day/

@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy National Badger Day!** Today we say hello to the badger, the black-and-white striped digger who snuffles around the woods after dark."
   image:
     src: /assets/calendar-days/national-badger-day/cover.jpg
-    alt: "A European badger with a black and white striped face peeks out of its burrow entrance in a woodland carpeted with bluebells and ferns in soft evening light."
+    alt: "European badgers walk out of their setts at dusk — broadleaf woodland of Britain and Europe"
   origin:
     text: "A UK day promoted by the Badger Trust and Scottish Badgers, who call all of October 'Brocktober'. It also stands up for badgers' protection."
     sourceUrl: "https://www.badgertrust.org.uk/post/national-badger-day"

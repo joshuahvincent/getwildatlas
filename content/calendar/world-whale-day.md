@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy World Whale Day!** Today we celebrate the giants of the sea, especially the humpback whales that sing."
   image:
     src: /assets/calendar-days/world-whale-day/cover.jpg
-    alt: "A humpback whale with a dark back and a long white flipper gliding calmly at the surface of a blue ocean at dusk, with soft ripples around its knobby head."
+    alt: "Humpback whales glide calmly through clear blue water — open ocean and coastal waters worldwide"
   origin:
     text: "Founded in 1980 on Maui, Hawaii by Greg Kaufman of the Pacific Whale Foundation, as part of the Maui Whale Festival."
     sourceUrl: https://pacificwhale.org/world-whale-day/

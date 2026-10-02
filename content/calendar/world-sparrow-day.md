@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy World Sparrow Day!** Today we cheer for the little chirpy birds who live in our towns and cities."
   image:
     src: /assets/calendar-days/world-sparrow-day/cover.jpg
-    alt: "A male house sparrow with a grey crown, chestnut nape and black bib stands beside a female house sparrow on a green park bench railing, with a blurred city park and playground behind."
+    alt: "House sparrows perch on garden fences — gardens and town parks"
   origin:
     text: "Launched in 2010 by the Nature Forever Society of India (Mohammed Dilawar) with the Eco-Sys Action Foundation."
     sourceUrl: https://www.worldsparrowday.org/

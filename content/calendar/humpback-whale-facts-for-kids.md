@@ -57,7 +57,7 @@ blogStatus: scheduled
 
 Humpback whales are the singers of the sea. The males sing long, beautiful songs that travel for miles underwater!
 
-{% figure "/assets/blog/humpback-whale-facts-for-kids/cover.jpg", "An adult humpback whale gliding through clear, deep-blue open ocean, with its knobbly snout, pale pleated throat and one long, white-edged pectoral flipper" %}
+{% figure "/assets/blog/humpback-whale-facts-for-kids/cover.jpg", "Humpback whales leap clear of the water in a breach — open ocean and coastal waters worldwide" %}
 
 Nobody knows for sure why they sing — scientists are still learning. But the same whale can sing the same song for hours, over and over, and slowly, over time, the song changes into something new.
 
@@ -71,7 +71,7 @@ A grown-up humpback is about as long as 14 five-year-olds lying head to toe — 
 
 Can you picture more than 1,500 five-year-olds all standing on one giant scale together? That's about how much a big humpback weighs.
 
-{% figure "/assets/blog/humpback-whale-facts-for-kids/baby.jpg", "A young, light-grey humpback calf swimming just above its much larger mother in warm, clear, shallow turquoise water" %}
+{% figure "/assets/blog/humpback-whale-facts-for-kids/baby.jpg", "A baby Humpback Whale in clear blue water beside its mother" %}
 
 A brand-new baby humpback, called a calf, is already about 4 times as long as a 5-year-old is tall, and it swims right beside its mom from the very first day. Later, they travel together all the way to colder water — sometimes 5,000 miles, one of the longest journeys of any mammal.
 
@@ -79,4 +79,4 @@ Some humpbacks are team players, too. They work together to blow a giant circle 
 
 Can you hum one long, low note like a whale song, and hold it as long as you can? Can you stretch your arms out wide like big flippers? Now rise up on your tiptoes, then swoosh back down — that's how a humpback breaches, leaping out of the water and landing with a big splash!
 
-{% figure "/assets/blog/humpback-whale-facts-for-kids/habitat.jpg", "A humpback whale breaching in grey-green water in a cold northern fjord, one long flipper held up like a wing, with forested, snow-dusted mountains behind it" %}
+{% figure "/assets/blog/humpback-whale-facts-for-kids/habitat.jpg", "Humpback whales swim slowly near the surface with their long white flippers — open ocean and coastal waters worldwide" %}

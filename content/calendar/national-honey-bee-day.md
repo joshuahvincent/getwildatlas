@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy National Honey Bee Day!** Today we say thank you to the buzzy little helpers who visit flowers all summer long."
   image:
     src: /assets/calendar-days/national-honey-bee-day/cover.jpg
-    alt: "A fuzzy honey bee with golden-brown and dark stripes and clear wings, gathering nectar and pollen on a yellow-orange flower, with a soft green meadow behind it"
+    alt: "Honey bees fly from flower to flower in a meadow — meadows full of wildflowers"
   origin:
     text: "US beekeepers started this day in 2009 as National Honey Bee Awareness Day, and the US Department of Agriculture recognised it. Many people around the world also celebrate bees on World Bee Day in May."
     sourceUrl: "https://www.holidays-and-observances.com/animal-holidays.html"

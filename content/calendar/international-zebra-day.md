@@ -71,7 +71,7 @@ blogStatus: scheduled
 
 Every zebra has its very own stripe pattern — no two are exactly alike, anywhere in the world.
 
-{% figure "/assets/blog/international-zebra-day/cover.jpg", "An adult plains zebra standing alert in golden savanna grass, its bold black-and-white stripes catching the late-afternoon light" %}
+{% figure "/assets/blog/international-zebra-day/cover.jpg", "Plains zebras run across the open savanna — open grassland and savanna of eastern and southern Africa" %}
 
 That's not just a fun fact — it matters to zebras. A newborn foal has to learn its own mom — her stripes, her smell and her voice — fast, so it can find her again in a big, busy herd. For the first little while, Mom keeps the rest of the herd at a distance so her foal has time to learn her.
 
@@ -87,11 +87,11 @@ Can you picture 19 five-year-olds all standing on one giant scale? That's about 
 
 Here's a mystery even scientists are still working on: stripes seem to muddle biting flies. The flies circle and circle, but they have a much harder time landing on all those stripes than they do on a plain-colored animal.
 
-{% figure "/assets/blog/international-zebra-day/baby.jpg", "A plains zebra foal with fuzzy brown-and-white stripes standing beside its striped mother's legs on short grass" %}
+{% figure "/assets/blog/international-zebra-day/baby.jpg", "A baby Plains Zebra in golden savanna grass" %}
 
 A brand-new baby zebra weighs almost as much as two five-year-olds — and here's the wildest part: it can stand up and walk within about 20 minutes of being born! Its stripes even start out soft and brown, and slowly turn black as it grows.
 
-{% figure "/assets/blog/international-zebra-day/habitat.jpg", "A large herd of plains zebras grazing across a green grassy plain in golden light, with acacia trees and a rocky outcrop on the horizon" %}
+{% figure "/assets/blog/international-zebra-day/habitat.jpg", "Plains zebras walk through tall golden grass — open grassland and savanna of eastern and southern Africa" %}
 
 Zebra families join up into huge herds like this one — hundreds of stripes, moving together across the grass.
 

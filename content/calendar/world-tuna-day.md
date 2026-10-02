@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy World Tuna Day!** Today we cheer for tuna, the speedy, sleek fish that zoom through the open ocean."
   image:
     src: /assets/calendar-days/world-tuna-day/cover.jpg
-    alt: "A school of tuna swimming together in clear blue open ocean, with steel-blue backs, silvery sides and sunbeams filtering down from the surface."
+    alt: "Atlantic bluefin tuna swim fast through open blue water — open Atlantic Ocean"
   origin:
     text: "The United Nations General Assembly set up World Tuna Day in a December 2016 resolution. It was first observed in 2017."
     sourceUrl: "https://www.un.org/press/en/2016/ga11869.doc.htm"

@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy World Dugong Day!** Let's visit the sea cow that munches seagrass underwater."
   image:
     src: /assets/calendar-days/world-dugong-day/cover.jpg
-    alt: "A grey dugong with a downturned snout and a fluked tail swimming slowly over a seagrass meadow in clear, sunlit shallow tropical water."
+    alt: "Dugongs swim slowly over seagrass meadows — warm shallow seagrass meadows of the Indian and western Pacific Oceans"
   origin:
     text: "We could not find where this day began. It is observed in several places, strongly in India."
     sourceUrl: "https://www.drishtiias.com/daily-updates/daily-news-analysis/world-dugong-day-1"

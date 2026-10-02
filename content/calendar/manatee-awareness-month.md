@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy Manatee Awareness Month!** All November long, we get to celebrate one of the gentlest animals in the water: the manatee."
   image:
     src: /assets/calendar-days/manatee-awareness-month/cover.jpg
-    alt: "A gray manatee with a rounded body, paddle-shaped tail and two flippers glides just below the surface of clear, sunlit shallow water above a green seagrass bed."
+    alt: "West Indian manatees swim slowly over seagrass in clear water — warm shallow coastal waters and springs of Florida"
   origin:
     text: "First declared in 1979 by Florida Governor Bob Graham, a co-founder of Save the Manatee Club. It is a Florida state observance."
     sourceUrl: https://savethemanatee.org/a-history-of-manatee-awareness-month/

@@ -44,7 +44,7 @@ blogStatus: scheduled
 
 A baby harp seal is born on floating ice in a fluffy white coat. In less than two weeks, drinking its mom's super-rich milk, it grows to three times its birth weight!
 
-{% figure "/assets/blog/international-seal-day/cover.jpg", "A young, spotted harp seal swimming under floating Arctic sea ice" %}
+{% figure "/assets/blog/international-seal-day/cover.jpg", "Harp seals swim under Arctic sea ice — Arctic sea ice and cold North Atlantic waters" %}
 
 A brand-new harp seal pup is already about as heavy as a big bag of dog food, and almost as long as you are tall. Harp seal milk is super creamy — much, much richer than the milk in your fridge — and the pup gains weight fast. By the time it's ready to be on its own, it weighs as much as two five-year-olds.
 

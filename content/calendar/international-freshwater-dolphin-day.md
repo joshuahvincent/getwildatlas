@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy International Freshwater Dolphin Day!** Did you know some dolphins swim in rivers? Today we celebrate them."
   image:
     src: /assets/calendar-days/international-freshwater-dolphin-day/cover.jpg
-    alt: "A pale pink Amazon river dolphin with a long slender beak surfaces in calm brown river water beside flooded rainforest trees."
+    alt: "Amazon river dolphins swim through brown river water near flooded trees — flooded forest and rivers of the Amazon basin"
   origin:
     text: "Declared in East Kalimantan, Indonesia in October 2009, on the initiative of the IUCN SSC Cetacean Specialist Group and WWF."
     sourceUrl: "https://wwf.panda.org/wwf_news/?202087%2FFreshwater-dolphin-day="

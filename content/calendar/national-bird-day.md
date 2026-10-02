@@ -70,7 +70,7 @@ blogStatus: scheduled
 
 The hyacinth macaw is the longest parrot in the world — from beak to tail, it's almost as long as a 5-year-old is tall!
 
-{% figure "/assets/blog/national-bird-day/cover.jpg", "A hyacinth macaw perched on a palm frond in the Pantanal" %}
+{% figure "/assets/blog/national-bird-day/cover.jpg", "Hyacinth macaws fly between palm trees — palm groves and open woodland of the Brazilian Pantanal" %}
 
 It's cobalt blue all over, with a bright yellow ring around each eye and a little yellow "smile" at the base of its huge, curved beak. Can you squawk as loud as a hyacinth macaw?
 
@@ -82,10 +82,10 @@ Stood right next to you, that's how long a hyacinth macaw really is — about a 
 
 All that length doesn't add up to much weight, though. It would take about a dozen hyacinth macaws to weigh as much as one 5-year-old. In the Pantanal, most hyacinth macaws nest in holes in one special kind of tree, called the manduvi. A brand-new chick weighs about as much as a slice of bread. It hatches from one of about two eggs that its mom keeps warm for about a month, while dad brings her food.
 
-{% figure "/assets/blog/national-bird-day/baby.jpg", "A partly feathered hyacinth macaw chick, a few weeks old, peeking out of a tree hollow" %}
+{% figure "/assets/blog/national-bird-day/baby.jpg", "A baby Hyacinth Macaw in a tree-hollow nest" %}
 
 Young macaws can stay close to their parents for more than a year, learning which nuts to crack.
 
-{% figure "/assets/blog/national-bird-day/habitat.jpg", "The Pantanal wetlands of Brazil at golden hour" %}
+{% figure "/assets/blog/national-bird-day/habitat.jpg", "Hyacinth macaws perch in palm trees cracking nuts — palm groves and open woodland of the Brazilian Pantanal" %}
 
 Hyacinth macaws live mostly in the Pantanal, the world's biggest tropical wetland, in Brazil. Can you spread your arms out wide, like a macaw gliding low over the wetlands?

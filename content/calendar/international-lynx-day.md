@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy International Lynx Day!** Let's meet the wild cat with the tufty ears and snowshoe paws."
   image:
     src: /assets/calendar-days/international-lynx-day/cover.jpg
-    alt: "A spotted lynx with black ear tufts and a white facial ruff sitting calmly on a snowy log in a snow-covered conifer forest."
+    alt: "Eurasian lynx walk through snowy forest — snowy northern forests of Europe and Asia"
   origin:
     text: "The Interreg Central Europe 3Lynx project set up this day in 2017."
     sourceUrl: "https://www.awarenessdays.com/awareness-days-calendar/international-lynx-day/"

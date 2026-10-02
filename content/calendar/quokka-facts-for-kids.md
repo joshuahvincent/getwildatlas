@@ -57,7 +57,7 @@ blogStatus: scheduled
 
 Quokkas look like they're always smiling — and a whole island got its name because of them!
 
-{% figure "/assets/blog/quokka-facts-for-kids/cover.jpg", "A quokka sitting upright on sandy ground, nibbling a green leaf held in both front paws" %}
+{% figure "/assets/blog/quokka-facts-for-kids/cover.jpg", "Quokkas hop through coastal scrub — coastal scrub and woodland of Rottnest Island, Western Australia" %}
 
 A quokka is a small wallaby, a cousin of the kangaroo. A mum quokka has a soft pouch for her baby. It's about the size of a house cat, with round ears, a short face, and dark eyes. People call it "the world's happiest animal" because of that smiley face — but a quokka isn't smiling on purpose. Its face is just shaped that way!
 
@@ -75,13 +75,13 @@ It would take about six quokkas, all stacked up, to weigh a little more than one
 
 Can you count to six? That's about how many quokkas it would take.
 
-{% figure "/assets/blog/quokka-facts-for-kids/baby.jpg", "A mother quokka sitting on sand with a furry joey peeking out of the pouch on her belly" %}
+{% figure "/assets/blog/quokka-facts-for-kids/baby.jpg", "A baby Quokka in coastal scrub, peeking from its mother's pouch" %}
 
 A baby quokka, called a joey, rides in its mum's pouch for about half a year before it starts hopping beside her. Here's a wild secret: a quokka mum's body can keep a tiny extra baby waiting, on pause, and it only starts to grow if it's needed.
 
 Quokkas can even climb a little way up into trees to reach tasty leaves, and they can go a long time without a drink of water.
 
-{% figure "/assets/blog/quokka-facts-for-kids/habitat.jpg", "A wide view of sandy coastal scrub like Rottnest Island's, with a small quokka resting at the base of a shrub near a salt lake" %}
+{% figure "/assets/blog/quokka-facts-for-kids/habitat.jpg", "Quokkas stand among low bushes near sandy paths — coastal scrub and woodland of Rottnest Island, Western Australia" %}
 
 Wild quokkas live in just one corner of the world — the south-west of Western Australia, mostly on Rottnest Island.
 

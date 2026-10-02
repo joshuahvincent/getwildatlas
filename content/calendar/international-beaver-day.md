@@ -73,7 +73,7 @@ blogStatus: scheduled
 
 Beavers have bright orange teeth that never stop growing — and the front door to their home is underwater!
 
-{% figure "/assets/blog/international-beaver-day/cover.jpg", "A Eurasian beaver gnawing a willow stick on a riverbank" %}
+{% figure "/assets/blog/international-beaver-day/cover.jpg", "Eurasian beavers swim across calm rivers carrying branches — rivers, streams and wetlands of Europe and northern Asia" %}
 
 Look closely at the stick in its paws — see the orange? A beaver's front teeth have iron built right into them, which is what turns them that color and keeps them strong for gnawing wood, day after day. The teeth never stop growing, so all that gnawing wears them down to just the right size.
 
@@ -89,11 +89,11 @@ A grown-up beaver weighs about as much as one 5-year-old — a really big one we
 
 SMACK! A beaver slaps its big flat tail on the water to warn its family. Can you slap your hand on the water like that — SPLASH?
 
-{% figure "/assets/blog/international-beaver-day/baby.jpg", "A young Eurasian beaver kit nibbling willow leaves" %}
+{% figure "/assets/blog/international-beaver-day/baby.jpg", "A baby Eurasian Beaver in a riverbank beside a beaver lodge" %}
 
 Baby beavers are called kits. They're born with fur already on, and each one weighs about as much as a can of beans or two. Kits live with their mom, dad, and older brothers and sisters for about two years before they swim off on their own.
 
-{% figure "/assets/blog/international-beaver-day/habitat.jpg", "A misty beaver wetland with a lodge and dam at dawn" %}
+{% figure "/assets/blog/international-beaver-day/habitat.jpg", "Eurasian beavers walk along muddy riverbanks near their lodges — rivers, streams and wetlands of Europe and northern Asia" %}
 
 Beavers build dams out of sticks and mud to make their pond just the right depth for that underwater door. Can you show me your best gnawing face, like a beaver chewing a stick? Their busy ponds end up being home for frogs, fish, and birds too.
 

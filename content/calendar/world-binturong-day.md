@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy World Binturong Day!** Let's meet the shaggy bearcat that climbs treetops in Southeast Asia."
   image:
     src: /assets/calendar-days/world-binturong-day/cover.jpg
-    alt: "A binturong with shaggy black fur, pale ear tufts and long white whiskers resting on a mossy branch in a rainforest, its thick tail curled beneath it."
+    alt: "Binturongs climb through rainforest trees using their tails — tropical rainforest of South and Southeast Asia"
   origin:
     text: "ABConservation created this day in 2014."
     sourceUrl: "https://www.abconservation.org/en/projects/world-binturong-day/"

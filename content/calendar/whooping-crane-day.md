@@ -11,7 +11,7 @@ simpleDay:
   greeting: "**Happy Whooping Crane Day!** Let's meet a tall white bird that loves to dance."
   image:
     src: /assets/calendar-days/whooping-crane-day/cover.jpg
-    alt: "A tall white whooping crane with a red crown and long dark bill standing in shallow marsh water, with golden grassland behind it at sunset."
+    alt: "Whooping cranes walk through shallow marsh water — coastal marshes and prairie wetlands of North America"
   origin:
     text: "We could not find where this day began. It is observed mainly in the U.S. and Canada, for example by the Houston Zoo."
     sourceUrl: "https://www.houstonzoo.org/blog/happy-whooping-crane-day/"
