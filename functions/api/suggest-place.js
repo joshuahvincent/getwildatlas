@@ -8,7 +8,19 @@ const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 const json = (status, body) => new Response(JSON.stringify(body), { status, headers: { 'content-type': 'application/json', 'cache-control': 'no-store' } });
 const clean = (v, max) => String(v == null ? '' : v).replace(/[\u0000-\u001f\u007f]+/g, ' ').trim().slice(0, max);
 
-export async function onRequestPost({ request, env }) {
+// Alert email via Resend. Failure here never affects the submission (the row is already saved).
+// Env (Cloudflare Pages secrets/vars, Production + Preview): RESEND_API_KEY (secret); optional SUGGEST_TO (default info@wildatlasapp.com), SUGGEST_FROM (default "Wild Atlas Finder <finder@wildatlasapp.com>", must be on a domain verified in Resend).
+async function alertEmail(env, s) {
+  if (!env.RESEND_API_KEY) return;
+  const text = ['New place suggestion for the Wild Atlas finder', '', 'Place: ' + s.establishment, 'Animal(s): ' + (s.animal || '-'), 'Address: ' + s.address, 'Website: ' + (s.website || '-'), 'Contact: ' + s.email, 'From page: ' + (s.page || '-'), '',
+    'Stored in D1 wildatlas-places, table place_suggestions (status "new"). Nothing is added to the map until it is reviewed.'].join('\n');
+  try {
+    await fetch('https://api.resend.com/emails', { method: 'POST', headers: { authorization: 'Bearer ' + env.RESEND_API_KEY, 'content-type': 'application/json' },
+      body: JSON.stringify({ from: env.SUGGEST_FROM || 'Wild Atlas Finder <finder@wildatlasapp.com>', to: [env.SUGGEST_TO || 'info@wildatlasapp.com'], reply_to: s.email, subject: 'New place suggestion: ' + s.establishment.slice(0, 80), text }) });
+  } catch (_) { /* the submission is already saved */ }
+}
+
+export async function onRequestPost({ request, env, waitUntil }) {
   // same-origin only (a plain cross-site form post carries a foreign Origin)
   const origin = request.headers.get('origin');
   if (origin && new URL(origin).host !== new URL(request.url).host) return json(403, { ok: false, error: 'Not allowed.' });
@@ -29,5 +41,7 @@ export async function onRequestPost({ request, env }) {
     await env.PLACES_DB.prepare('INSERT INTO place_suggestions (establishment, contact_email, animal, address, website, source_page) VALUES (?, ?, ?, ?, ?, ?)')
       .bind(establishment, email, animal || null, address, website || null, clean(d.page, 120) || null).run();
   } catch (e) { return json(500, { ok: false, error: 'Sorry, that did not go through. Please email info@wildatlasapp.com.' }); }
+  const task = alertEmail(env, { establishment, animal, address, website, email, page: clean(d.page, 120) });
+  if (typeof waitUntil === 'function') waitUntil(task); else await task;
   return json(200, { ok: true });
 }
