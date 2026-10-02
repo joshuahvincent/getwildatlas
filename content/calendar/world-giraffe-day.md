@@ -58,7 +58,6 @@ animalDay:
   source:
     label: the Giraffe Conservation Foundation
     url: https://giraffeconservation.org/state-of-giraffe/
-blogStatus: scheduled
 ---
 
 Meet the giraffe — the tallest animal on Earth, with a long, dark tongue and a coat of patches that's all its own.

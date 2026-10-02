@@ -58,7 +58,6 @@ animalDay:
   source:
     label: Panthera
     url: https://panthera.org/cat/jaguar
-blogStatus: scheduled
 ---
 
 The jaguar is a big cat that loves to swim — and its spots have spots!

@@ -68,7 +68,6 @@ animalDay:
   source:
     label: the IUCN Red List
     url: https://www.iucnredlist.org/species/4007/197499749
-blogStatus: scheduled
 ---
 
 Beavers have bright orange teeth that never stop growing — and the front door to their home is underwater!

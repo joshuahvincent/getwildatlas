@@ -65,7 +65,6 @@ animalDay:
   source:
     label: Instituto Arara Azul
     url: https://www.institutoararaazul.org.br/en/species/hyacinth-macaw/
-blogStatus: scheduled
 ---
 
 The hyacinth macaw is the longest parrot in the world — from beak to tail, it's almost as long as a 5-year-old is tall!

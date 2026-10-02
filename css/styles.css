@@ -2090,3 +2090,33 @@ body { padding-top: var(--promo-h); }
   border-color: var(--peach-pop);
   color: #fff;
 }
+
+/* ── From the World Wildlife Calendar (js/calendar-card.js) ── */
+.calday { padding: var(--space-2xl) 0; }
+.calday[hidden] { display: none; }
+.calday-eyebrow { font-family: var(--font-heading); font-weight: 600; font-size: 1.05rem; color: var(--warm-bark); margin: 0 0 var(--space-sm); display: flex; align-items: center; gap: 8px; }
+.calday-eyebrow::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--peach-pop); }
+.calday-card { display: grid; grid-template-columns: 1.25fr 1fr; background: #fff; border: var(--stroke) solid var(--warm-bark); border-radius: var(--radius-lg); overflow: hidden; color: var(--warm-bark); text-decoration: none; box-shadow: 0 10px 28px rgba(93, 64, 55, 0.14); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.calday-card:hover, .calday-card:focus-visible { transform: translateY(-3px); box-shadow: 0 14px 34px rgba(93, 64, 55, 0.2); }
+.calday-photo { display: block; min-height: 280px; background: var(--yellow-light); }
+.calday-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s ease; }
+.calday-card:hover .calday-img { transform: scale(1.04); }
+.calday-text { display: flex; flex-direction: column; justify-content: center; gap: 6px; padding: var(--space-xl); background: var(--creamy-coat); }
+.calday-when { align-self: flex-start; font-weight: 800; font-size: 0.85rem; background: var(--sunny-sounds); border-radius: var(--radius-full); padding: 4px 12px; }
+.calday-day { font-family: var(--font-heading); font-weight: 700; font-size: clamp(1.6rem, 3vw, 2.3rem); line-height: 1.1; margin-top: 4px; }
+.calday-animal { font-weight: 600; font-size: 1.05rem; opacity: 0.8; }
+.calday-animal:empty { display: none; }
+.calday-cta { align-self: flex-start; margin-top: var(--space-md); background: var(--warm-bark); color: #fff; font-family: var(--font-heading); font-weight: 600; font-size: 1.05rem; border-radius: var(--radius-full); padding: 10px 22px; }
+.calday-card:hover .calday-cta { background: #4a3229; }
+.calday-foot { margin: var(--space-md) 0 0; font-weight: 600; color: var(--warm-bark); }
+.calday-foot a { color: var(--warm-bark); font-weight: 800; }
+@media (max-width: 760px) {
+  .calday-card { grid-template-columns: 1fr; }
+  .calday-photo { min-height: 0; aspect-ratio: 16 / 10; }
+  .calday-text { padding: var(--space-lg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .calday-card, .calday-img { transition: none; }
+  .calday-card:hover, .calday-card:focus-visible { transform: none; }
+  .calday-card:hover .calday-img { transform: none; }
+}

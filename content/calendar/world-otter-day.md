@@ -56,7 +56,6 @@ animalDay:
   source:
     label: the Monterey Bay Aquarium
     url: https://www.montereybayaquarium.org/animals/animals-a-to-z/sea-otter
-blogStatus: scheduled
 ---
 
 Meet the sea otter — one of the fluffiest, floatiest animals in the whole ocean, who nap on their backs with the sky over their noses.

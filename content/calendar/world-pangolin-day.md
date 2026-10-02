@@ -49,7 +49,6 @@ animalDay:
   source:
     label: the IUCN SSC Pangolin Specialist Group
     url: https://www.pangolinsg.org/pangolins/chinese-pangolin/
-blogStatus: scheduled
 ---
 
 A pangolin is covered in scales from head to tail, and they're made of the same stuff as your fingernails!

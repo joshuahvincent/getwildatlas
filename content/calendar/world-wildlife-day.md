@@ -71,7 +71,6 @@ animalDay:
   source:
     label: San Diego Zoo Wildlife Alliance
     url: https://animals.sandiegozoo.org/animals/lion
-blogStatus: scheduled
 ---
 
 A lion's roar is so loud it can be heard up to 8 kilometres away.

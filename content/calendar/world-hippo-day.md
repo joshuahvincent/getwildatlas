@@ -5,7 +5,6 @@ author: Wild Atlas
 excerpt: "Happy World Hippo Day! Meet the hippo — it doesn't swim, it makes its own sunscreen, and it's related to whales. A read-aloud, plus where to meet a real hippo."
 coverImage: /assets/blog/world-hippo-day/hippo-cover.jpg
 tags: [animals, conservation, family]
-blogStatus: scheduled
 animalDay:
   dayName: World Hippo Day
   animalId: hippopotamus

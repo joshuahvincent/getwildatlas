@@ -52,7 +52,6 @@ animalDay:
   source:
     label: the Australian Museum
     url: https://australian.museum/learn/animals/mammals/quokka/
-blogStatus: scheduled
 ---
 
 Quokkas look like they're always smiling — and a whole island got its name because of them!

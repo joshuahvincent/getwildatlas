@@ -48,7 +48,6 @@ animalDay:
   source:
     label: Egevang et al. 2010, Tracking of Arctic terns reveals longest animal migration (PNAS)
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2836663/
-blogStatus: scheduled
 ---
 
 Every year, a bird that weighs about as much as a stick of butter flies from the top of the world to the bottom — and back again. That's the longest trip of any animal scientists have ever tracked!

@@ -50,7 +50,7 @@
   <!-- Preconnect to Formspree -->
   <link rel="preconnect" href="https://formspree.io">
 
-  <link rel="stylesheet" href="css/styles.css?v=8">
+  <link rel="stylesheet" href="css/styles.css?v=9">
 
   <!-- Structured Data: SoftwareApplication -->
   <script type="application/ld+json">
@@ -245,6 +245,23 @@
           <span class="trust-label" data-i18n="trust.privacy">Privacy-first &amp; COPPA-compliant</span>
         </li>
       </ul>
+    </div>
+  </section>
+
+  <!-- FROM THE WORLD WILDLIFE CALENDAR (filled by js/calendar-card.js from /calendar/latest.json) -->
+  <section class="calday" id="calendar-today" aria-labelledby="calday-heading" hidden>
+    <div class="container">
+      <p class="calday-eyebrow" id="calday-heading">From the World Wildlife Calendar</p>
+      <a class="calday-card" href="/calendar/">
+        <span class="calday-photo"><img class="calday-img" src="data:," alt="" loading="lazy"></span>
+        <span class="calday-text">
+          <span class="calday-when"></span>
+          <span class="calday-day"></span>
+          <span class="calday-animal"></span>
+          <span class="calday-cta">Get more info <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+      <p class="calday-foot"><span class="calday-next" hidden>Coming up: <a class="calday-next-link" href="/calendar/"></a>, <span class="calday-next-date"></span> · </span><a href="/calendar/">See the whole calendar →</a></p>
     </div>
   </section>
 
@@ -872,6 +889,7 @@
   <script src="js/i18n.js?v=3"></script>
   <script src="js/main.js?v=3"></script>
   <script src="js/email-signup.js?v=2" defer></script>
+  <script src="js/calendar-card.js?v=1" defer></script>
   <script>
     // Anchor correction: on a fresh visit to /#walkthrough (etc.) the browser
     // jumps before lazy images + i18n above have laid out, so it lands short.

@@ -66,7 +66,6 @@ animalDay:
   source:
     label: the IUCN SSC Tapir Specialist Group
     url: https://tapirs.org/tapirs/
-blogStatus: scheduled
 ---
 
 Baby Malayan tapirs are born wearing watermelon stripes — then they slowly change into black-and-white grown-ups that some zookeepers call "Oreo tapirs."

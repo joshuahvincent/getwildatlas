@@ -68,7 +68,6 @@ animalDay:
   source:
     label: Galapagos Conservancy
     url: https://www.galapagos.org/conservation/giant-tortoise-restoration/
-blogStatus: scheduled
 ---
 
 A giant tortoise is a slow-walking gardener.

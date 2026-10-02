@@ -50,7 +50,6 @@ animalDay:
   source:
     label: Georgia Aquarium
     url: https://www.georgiaaquarium.org/animal/whale-shark/
-blogStatus: scheduled
 ---
 
 The biggest fish in the whole ocean is as long as a school bus — but its throat is only about as wide as a coin, so it eats mostly teeny food.

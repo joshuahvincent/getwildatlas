@@ -64,7 +64,6 @@ animalDay:
   source:
     label: San Diego Zoo Wildlife Alliance
     url: https://animals.sandiegozoo.org/animals/bonobo
-blogStatus: scheduled
 ---
 
 Deep in the rainforests of the Democratic Republic of the Congo lives an ape that laughs when it's tickled.

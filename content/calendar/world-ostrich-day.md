@@ -66,7 +66,6 @@ animalDay:
   source:
     label: the San Diego Zoo Wildlife Alliance
     url: https://animals.sandiegozoo.org/animals/ostrich
-blogStatus: scheduled
 ---
 
 An ostrich egg is the biggest egg of any bird alive — just one weighs about as much as two dozen chicken eggs!

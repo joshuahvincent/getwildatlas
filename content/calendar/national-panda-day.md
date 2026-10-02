@@ -62,7 +62,6 @@ animalDay:
   source:
     label: Smithsonian's National Zoo
     url: https://nationalzoo.si.edu/animals/giant-panda
-blogStatus: scheduled
 ---
 
 When a giant panda is born, it's pink, almost bare, and about the size of a stick of butter — but it grows up to weigh as much as seven five-year-olds!

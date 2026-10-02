@@ -40,7 +40,6 @@ animalDay:
   source:
     label: the Wisconsin Primate Info Net fact sheet
     url: https://primate.wisc.edu/primate-info-net/pin-factsheets/pin-factsheet-golden-snub-nosed-monkey/
-blogStatus: scheduled
 ---
 
 High in China's snowy mountains lives a monkey with golden fur, a blue face and a tiny turned-up nose — and when it's cold, the whole family snuggles up together to stay warm.

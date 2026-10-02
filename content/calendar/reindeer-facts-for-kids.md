@@ -64,7 +64,6 @@ animalDay:
   source:
     label: the Alaska Department of Fish and Game
     url: https://www.adfg.alaska.gov/index.cfm?adfg=caribou.main
-blogStatus: scheduled
 ---
 
 Reindeer are the only deer in the world where the girls grow antlers too!

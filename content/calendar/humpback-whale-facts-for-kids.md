@@ -52,7 +52,6 @@ animalDay:
   source:
     label: NOAA Fisheries
     url: https://www.fisheries.noaa.gov/species/humpback-whale
-blogStatus: scheduled
 ---
 
 Humpback whales are the singers of the sea. The males sing long, beautiful songs that travel for miles underwater!

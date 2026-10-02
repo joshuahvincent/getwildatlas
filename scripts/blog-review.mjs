@@ -47,33 +47,26 @@ const openIssues = JSON.parse(
   gh(["issue", "list", "--label", "blog-review", "--state", "open", "--json", "number,title", "--limit", "200"])
 );
 
-// Hand-written blog posts use `status: scheduled`; conservation-calendar pages
-// (already live at /calendar/<slug>/) use `blogStatus: scheduled` for their
-// blog copy.
-const candidates = [
-  ...readdirSync("content/blog").filter((f) => f.endsWith(".md")).map((f) => ({ dir: "content/blog", f, field: "status" })),
-  ...readdirSync("content/calendar").filter((f) => f.endsWith(".md")).map((f) => ({ dir: "content/calendar", f, field: "blogStatus" })),
-];
+// Hand-written blog posts use `status: scheduled`. (Conservation-calendar pages
+// don't get blog copies: Josh, 2026-10-02 — the home page links to the calendar instead.)
+const candidates = readdirSync("content/blog").filter((f) => f.endsWith(".md")).map((f) => ({ dir: "content/blog", f, field: "status" }));
 for (const { dir, f: file, field } of candidates) {
   const fm = frontMatter(readFileSync(`${dir}/${file}`, "utf8"));
   if (fm[field] !== "scheduled" || !fm.date || fm.status === "draft") continue;
-  const isCalendar = dir === "content/calendar";
 
   const date = new Date(fm.date.slice(0, 10) + "T00:00:00Z");
   const daysOut = Math.round((date - today) / 86400000);
   const slug = file.replace(/\.md$/, "");
   const tag = `[${slug}]`;
   const issue = openIssues.find((i) => i.title.includes(tag));
-  const preview = isCalendar
-    ? `https://wildatlasapp.com/calendar/${slug}/`
-    : PREVIEW_BASE + (fm.permalink || `/blog/${slug}/`);
+  const preview = PREVIEW_BASE + (fm.permalink || `/blog/${slug}/`);
   const when = date.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
 
   if (daysOut <= LEAD_DAYS && daysOut > 0 && !issue) {
     const body = `@${REVIEWER} — this blog post is scheduled for **${when}** (${daysOut} day${daysOut === 1 ? "" : "s"} away) and needs your OK before it goes live.
 
 **Read it:** ${preview}
-${isCalendar ? "_(This is the live conservation-calendar page. The blog copy is identical and won't appear on the blog until you approve.)_" : "_(Review copy of the site — the post isn't on wildatlasapp.com until you approve.)_"}
+_(Review copy of the site — the post isn't on wildatlasapp.com until you approve.)_
 
 **To approve:** reply to this email (or comment here) with just the word **approve**. It will go live automatically at 6am Pacific on ${when}.
 

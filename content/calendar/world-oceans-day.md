@@ -53,7 +53,6 @@ animalDay:
   source:
     label: NOAA Fisheries
     url: https://www.fisheries.noaa.gov/species/killer-whale
-blogStatus: scheduled
 ---
 
 Orcas are the biggest dolphins in the world, and every orca family has its own special calls that only they use!

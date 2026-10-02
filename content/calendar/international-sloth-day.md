@@ -44,7 +44,6 @@ animalDay:
   source:
     label: IUCN SSC Anteater, Sloth & Armadillo Specialist Group
     url: https://xenarthrans.org/species/sloths/brown-throated-three-toed-sloth/
-blogStatus: scheduled
 ---
 
 A sloth's fur is like a tiny garden — green algae grows right in it, and little moths live there too!

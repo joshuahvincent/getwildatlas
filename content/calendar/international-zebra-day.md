@@ -66,7 +66,6 @@ animalDay:
   source:
     label: San Diego Zoo Wildlife Alliance
     url: https://animals.sandiegozoo.org/animals/zebra
-blogStatus: scheduled
 ---
 
 Every zebra has its very own stripe pattern — no two are exactly alike, anywhere in the world.

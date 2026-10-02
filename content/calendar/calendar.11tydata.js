@@ -5,16 +5,13 @@
 //   (no status)            LIVE — Josh's standing decision (2026-09-30): calendar
 //                          pages publish as soon as the naturalist + child-psych
 //                          gates pass, no per-page approval.
-//   blogStatus: scheduled  blog copy (/blog/<slug>/) waits for Josh's "approve"
-//   blogStatus: approved   blog copy goes live on the page's `date`
-//                          (content/calendar-blog-copies.njk + daily build)
 //
 // SHOW_HIDDEN_POSTS=1 shows drafts (local dev + preview deploy).
 
 module.exports = {
   layout: "layouts/animal-day.njk",
   tags: ["calendarPage"],
-  backLink: { url: "/calendar/", label: "Conservation calendar" },
+  backLink: { url: "/calendar/", label: "World Wildlife Calendar" },
   eleventyComputed: {
     originSlug: (data) => data.page.fileSlug, // → _data/dayOrigins.json
     permalink: (data) =>

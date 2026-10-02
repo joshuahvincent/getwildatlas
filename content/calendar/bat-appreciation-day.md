@@ -65,7 +65,6 @@ animalDay:
   source:
     label: Bat Conservation International
     url: https://www.batcon.org/our-work/endangered-species-interventions/creating-federally-protected-areas-for-flying-foxes-in-malaysia/
-blogStatus: scheduled
 ---
 
 If a large flying fox stretched out its wings right next to you, they'd reach farther than you are tall — it's one of the biggest bats in the whole world!

@@ -29,21 +29,17 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("*.html");
 
   // ---- Collections ----------------------------------------------------------
-  // Blog posts = hand-written posts in content/blog/ plus the generated blog
-  // copies of conservation-calendar pages (tag "blogCopy", see
-  // content/calendar-blog-copies.njk). Sorted by their publish date.
+  // Blog posts = hand-written posts in content/blog/, sorted by publish date.
+  // (Conservation-calendar pages don't get blog copies — Josh, 2026-10-02; the
+  // home page's calendar card links into /calendar/ instead.)
   const postDate = (item) => new Date(item.data.postDate || item.date);
   eleventyConfig.addCollection("posts", (collection) => {
-    return [
-      ...collection.getFilteredByGlob("content/blog/*.md"),
-      ...collection.getFilteredByTag("blogCopy"),
-    ].sort((a, b) => postDate(b) - postDate(a));
+    return collection.getFilteredByGlob("content/blog/*.md").sort((a, b) => postDate(b) - postDate(a));
   });
 
   // ---- Conservation calendar ------------------------------------------------
   // content/calendar/<slug>.md → /calendar/<slug>/ (live once advisor-gated;
-  // `status: draft` hides). Its blog copy (/blog/<slug>/) is generated on the
-  // day once Josh approves (`blogStatus: approved`) — see calendar.11tydata.js.
+  // `status: draft` hides).
   const showHidden = () => Boolean(process.env.SHOW_HIDDEN_POSTS);
   const calendarItems = (collection) =>
     collection
@@ -51,11 +47,6 @@ module.exports = function (eleventyConfig) {
       .filter((i) => showHidden() || i.data.status !== "draft")
       .sort((a, b) => a.date - b.date);
   eleventyConfig.addCollection("calendar", calendarItems);
-  eleventyConfig.addCollection("calendarBlogDue", (collection) =>
-    calendarItems(collection).filter(
-      (i) => showHidden() || (i.data.blogStatus === "approved" && i.date.getTime() <= Date.now())
-    )
-  );
   eleventyConfig.addFilter("monthKey", (d) => new Date(d).toISOString().slice(0, 7));
   // The calendar is perennial: no years on screen. Month names only.
   eleventyConfig.addFilter("monthLabel", (key) =>
@@ -133,9 +124,10 @@ module.exports = function (eleventyConfig) {
   // Rolling 12-month animal calendar for /calendar/, current month first.
   // Awareness days recur yearly, so a day earlier than this month rolls to
   // next year (floating days are recomputed from their rule). Each day links to its calendar page (or blog post) once it exists.
-  eleventyConfig.addFilter("calendarYear", (days, calendarPages, posts, also, liteAnimals) => {
+  // `startOffset` shifts the 12 months back (latestDay uses -11 to look at the past year).
+  const buildYear = (days, calendarPages, posts, also, liteAnimals, startOffset = 0) => {
     const now = new Date();
-    const start = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), 1);
+    const start = Date.UTC(now.getUTCFullYear(), now.getUTCMonth() + startOffset, 1);
     const pages = new Map((calendarPages || []).map((p) => [p.page.fileSlug, p]));
     const postUrls = new Set((posts || []).map((p) => p.url));
     // Animal → page: a full article (calendar day with that appId and a live page) wins, else its animal page.
@@ -194,6 +186,22 @@ module.exports = function (eleventyConfig) {
       m.agenda = m.cells.filter((c) => c && (c.ev || c.also.length));
     }
     return months;
+  };
+  eleventyConfig.addFilter("calendarYear", (days, calendarPages, posts, also, liteAnimals) =>
+    buildYear(days, calendarPages, posts, also, liteAnimals));
+  // Home page "From the calendar" card: the most recent day (today or earlier,
+  // within the past year) that has a page and a photo, plus the next one coming up.
+  // Featured days win ties over also-celebrated days on the same date.
+  eleventyConfig.addFilter("latestDay", (days, calendarPages, posts, also, liteAnimals) => {
+    const t0 = today().toISOString().slice(0, 10);
+    const pick = (e, featured) => ({ day: e.day, animal: String(e.animal || "").replace(/\s*\(.*?\)\s*/g, " ").trim(), iso: e.iso, url: e.url, image: e.image, featured,
+      dateText: e.when || fullDay(new Date(e.iso + "T00:00:00Z")), isToday: e.iso === t0 });
+    const all = (offset) => buildYear(days, calendarPages, posts, also, liteAnimals, offset).flatMap((m) => [
+      ...m.events.map((e) => pick(e, true)), ...m.also.map((e) => pick(e, false))]).filter((e) => e.url && e.image);
+    const rank = (a, b) => (a.iso === b.iso ? Number(b.featured) - Number(a.featured) : 0);
+    const past = all(-11).filter((e) => e.iso <= t0).sort((a, b) => (a.iso < b.iso ? 1 : a.iso > b.iso ? -1 : rank(a, b)));
+    const next = all(0).filter((e) => e.iso > t0).sort((a, b) => (a.iso < b.iso ? -1 : a.iso > b.iso ? 1 : rank(a, b)));
+    return { latest: past[0] || null, next: next[0] || null };
   });
   // Flip to true when /zoos/ (getwildatlas#38) ships — shows "Find the nearest zoo" buttons.
   eleventyConfig.addGlobalData("zooFinderLive", false);

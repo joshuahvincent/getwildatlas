@@ -67,7 +67,6 @@ animalDay:
   source:
     label: the Australian Museum
     url: https://australian.museum/learn/animals/mammals/common-wombat/
-blogStatus: scheduled
 ---
 
 Wombats are the only animals in the world known to make cube-shaped poop!

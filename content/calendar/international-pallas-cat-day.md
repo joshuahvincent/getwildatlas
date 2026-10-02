@@ -58,7 +58,6 @@ animalDay:
   source:
     label: the IUCN Red List assessment for the Pallas's cat
     url: https://doi.org/10.2305/IUCN.UK.2020-2.RLTS.T15640A180145377.en
-blogStatus: scheduled
 ---
 
 Meet the Pallas's cat: a wild cat about the size of a pet cat, with fur so thick it looks much bigger, and a flat, round face that makes it look grumpy, even when it isn't!

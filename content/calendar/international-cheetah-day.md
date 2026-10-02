@@ -62,7 +62,6 @@ animalDay:
   source:
     label: Cheetah Conservation Fund
     url: https://cheetah.org/about/what-we-do/international-cheetah-day/
-blogStatus: scheduled
 ---
 
 The fastest runner on land can't roar — it chirps like a bird and purrs like a house cat.

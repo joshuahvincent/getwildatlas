@@ -62,7 +62,6 @@ animalDay:
   source:
     label: the IUCN SSC Cat Specialist Group
     url: https://www.catsg.org/living-species-snowleopard
-blogStatus: scheduled
 ---
 
 Snow leopards are big cats that can't roar, and their fluffy tail is so long they wrap it around themselves like a scarf!

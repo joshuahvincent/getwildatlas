@@ -62,7 +62,6 @@ animalDay:
   source:
     label: NPS Yellowstone
     url: https://www.nps.gov/yell/learn/nature/bison.htm
-blogStatus: scheduled
 ---
 
 Baby bison are born a bright orange-red — people call them "red dogs" — and just a couple of hours later, they can keep up with the whole herd.

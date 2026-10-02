@@ -58,7 +58,6 @@ animalDay:
   source:
     label: Save the Rhino
     url: https://www.savetherhino.org/rhino-info/rhino-species/black-rhino/
-blogStatus: scheduled
 ---
 
 A black rhino's top lip is pointy and bendy — it works almost like a finger, reaching out to grab its favorite leaves and twigs off a bush.

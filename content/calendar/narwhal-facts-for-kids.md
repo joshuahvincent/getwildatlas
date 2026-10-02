@@ -45,7 +45,6 @@ animalDay:
   source:
     label: NOAA Fisheries
     url: https://www.fisheries.noaa.gov/species/narwhal
-blogStatus: scheduled
 ---
 
 A narwhal's long, twisty "horn" isn't a horn at all. It's a tooth — and it grows right out through its lip!

@@ -66,7 +66,6 @@ animalDay:
   source:
     label: the Lemur Conservation Network
     url: https://www.lemurconservationnetwork.org/world-lemur-day/
-blogStatus: scheduled
 ---
 
 Every sunny morning, ring-tailed lemurs sit up, spread their arms wide, and sunbathe — like they're doing yoga!

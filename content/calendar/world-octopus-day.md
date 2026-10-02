@@ -5,7 +5,6 @@ author: Wild Atlas
 excerpt: "Happy World Octopus Day! A five-minute read-aloud about the giant Pacific octopus — three hearts, blue blood, nine 'brains' — plus real aquariums where you can go meet one."
 coverImage: /assets/blog/world-octopus-day/cover.jpg
 tags: [animals, ocean, read-aloud]
-blogStatus: scheduled
 animalDay:
   dayName: World Octopus Day
   animalId: giant-pacific-octopus

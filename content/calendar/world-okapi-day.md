@@ -66,7 +66,6 @@ animalDay:
   source:
     label: the Okapi Conservation Project
     url: https://www.okapiconservation.org/world-okapi-day
-blogStatus: scheduled
 ---
 
 It looks like a zebra, but it's really the giraffe's secret cousin.

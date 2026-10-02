@@ -67,7 +67,6 @@ animalDay:
   source:
     label: the U.S. Fish & Wildlife Service
     url: https://www.fws.gov/species/west-indian-manatee-trichechus-manatus
-blogStatus: scheduled
 ---
 
 A brand-new baby manatee is already longer than a five-year-old is tall — and it weighs more, too!
