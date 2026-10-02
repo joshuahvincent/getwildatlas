@@ -231,3 +231,6 @@
 @media (max-width: 899px) { .zf-advbtn { min-height: 44px; } }
 
 .zf-youpin { display: block; flex: none; }
+
+.zf-missing { margin: .5rem 0 0; font-size: .82rem; color: var(--muted); }
+.zf-missing a { color: var(--zf-accent); font-weight: 700; }
