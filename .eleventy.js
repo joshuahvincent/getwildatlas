@@ -220,8 +220,8 @@ module.exports = function (eleventyConfig) {
     if (opts.animal) attrs.push(`data-animal="${esc(opts.animal)}"`);
     if (opts.wildMax) attrs.push(`data-wild-max="${esc(opts.wildMax)}"`);
     if (!(pins && pins.length) && !opts.src) return "";
-    return `<link rel="stylesheet" href="/js/vendor/maplibre/maplibre-gl.css"><link rel="stylesheet" href="/css/places-map.css?v=3">` +
-      `<div ${attrs.join(" ")}></div><script type="module" src="/js/places-map.js?v=5"></script>`;
+    return `<link rel="stylesheet" href="/js/vendor/maplibre/maplibre-gl.css"><link rel="stylesheet" href="/css/places-map.css?v=4">` +
+      `<div ${attrs.join(" ")}></div><script type="module" src="/js/places-map.js?v=6"></script>`;
   });
   eleventyConfig.addFilter("isoDay", (d) => new Date(d).toISOString().slice(0, 10));
   const { RenderPlugin } = require("@11ty/eleventy");

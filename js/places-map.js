@@ -100,6 +100,7 @@ function popupNode(p) {
     p.tier === 'relative' ? el$('p', { text: 'A close relative' }) : null,
     p.tier === 'unconfirmed' ? el$('p', { text: 'Unconfirmed' }) : null,
     p.note ? el$('p', { text: p.note }) : null,
+    p.tier === 'wild' ? el$('p', { class: 'pm-caveat', text: 'Wildlife is never guaranteed.' }) : null,   // same line as /zoos/
     p.url ? el$('p', {}, el$('a', { href: p.url, target: '_blank', rel: 'noopener noreferrer', text: p.linkText || 'Visit website ↗' })) : null);
 }
 
