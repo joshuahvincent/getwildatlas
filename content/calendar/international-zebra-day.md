@@ -91,7 +91,7 @@ Here's a mystery even scientists are still working on: stripes seem to muddle bi
 
 A brand-new baby zebra weighs almost as much as two five-year-olds — and here's the wildest part: it can stand up and walk within about 20 minutes of being born! Its stripes even start out soft and brown, and slowly turn black as it grows.
 
-{% figure "/assets/blog/international-zebra-day/habitat.jpg", "Plains zebras walk through tall golden grass — open grassland and savanna of eastern and southern Africa" %}
+{% figure "/assets/blog/international-zebra-day/habitat.jpg", "A plains zebra drinking at the edge of a waterhole, its stripes reflected in the water" %}
 
 Zebra families join up into huge herds like this one — hundreds of stripes, moving together across the grass.
 

@@ -88,7 +88,7 @@ Black rhinos have a small feathered friend: a bird called an oxpecker rides righ
 
 A brand-new baby rhino can stand up and start walking on its very first day! It stays close to its mom for two or three years, learning how to be a rhino.
 
-{% figure "/assets/blog/endangered-species-day/habitat.jpg", "Black rhinos stand in the shade of acacia trees at midday — dry bushland and acacia scrub of eastern and southern Africa" %}
+{% figure "/assets/blog/endangered-species-day/habitat.jpg", "A black rhino standing face-on at a muddy waterhole in dry acacia bushland" %}
 
 This is a black rhino's home — the wide, bushy grasslands of eastern and southern Africa.
 

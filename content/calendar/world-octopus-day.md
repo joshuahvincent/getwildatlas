@@ -96,8 +96,6 @@ Can you find a grain of rice in your kitchen? That's how small it starts.
 
 First it drifts in the open ocean like a tiny speck. Then it settles down on the seafloor and grows up in a den, tucked into a crack between rocks.
 
-{% figure "/assets/blog/world-octopus-day/habitat.jpg", "Giant Pacific octopuses glide past kelp on the rocky sea floor — cold rocky reefs and kelp forests of the North Pacific Ocean", "See that little pile of shells outside the den? Scientists call it a midden. We like to call it the octopus's \"front porch.\"" %}
-
 Look outside its den — those are leftover shells from crabs and clams it's eaten, stacked up like a front porch.
 
 Three hearts. Blue blood. Nine "brains." One amazing octopus.

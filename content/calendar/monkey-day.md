@@ -68,7 +68,7 @@ Baby golden monkeys are born in spring, and they start out grey, not golden — 
 
 Can you huddle close with your family to stay warm, like a monkey troop does in the snow?
 
-{% figure "/assets/blog/monkey-day/habitat.jpg", "Golden snub-nosed monkeys walk along branches in the mountain forest — snowy temperate mountain forests of central China" %}
+{% figure "/assets/blog/monkey-day/habitat.jpg", "A golden snub-nosed monkey leaping between snowy pine trees, long golden fur flying" %}
 
 Golden monkey families join together into huge neighborhoods — sometimes hundreds of monkeys, all living in the same forest. When it gets really cold, families press close together in a big furry huddle, and the huddle gets even bigger the colder it gets.
 

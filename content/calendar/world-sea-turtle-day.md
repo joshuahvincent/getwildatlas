@@ -85,7 +85,7 @@ When the eggs hatch later this summer, the babies dig out of the sand together, 
 
 A brand-new hatchling is only about as long as your finger, and weighs about as much as a chocolate-chip cookie.
 
-{% figure "/assets/blog/world-sea-turtle-day/habitat.jpg", "Green sea turtles glide above seagrass meadows — warm coastal seas, seagrass meadows and coral reefs" %}
+{% figure "/assets/blog/world-sea-turtle-day/habitat.jpg", "A green sea turtle walking up a moonlit sandy beach to nest, leaving flipper tracks in the sand" %}
 
 Can you flap your arms like turtle flippers and "fly" through the water? Can you dig a pretend nest in the sand? Can you crawl low and quick like a hatchling racing toward the sea?
 
