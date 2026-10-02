@@ -15,6 +15,11 @@ const ACCRED_TEXT = { AZA: 'AZA accredited', CAZA: 'CAZA accredited', EAZA: 'EAZ
 const NOTICE = 'Animals move between zoos, museums and aquariums, so this list may not be up to date. Please check with the place before you visit to make sure the animal still lives there.';
 const NOTICE_WEAK = ' Some places below are unconfirmed, so please call ahead to check the animal is there.';
 
+// Analytics (GA4, already on the site). Privacy rule: NEVER send a location, a typed city/postcode, a place name, or a distance.
+// Only non-personal fields: animal id, how the visitor located themselves (method name only), filter value, result tier + place type.
+const TIER_NAME = ['exact', 'unconfirmed', 'relative', 'relative', 'similar'];
+function track(name, params) { try { if (typeof window.gtag === 'function') window.gtag('event', name, params || {}); } catch (e) { /* analytics must never break the page */ } }
+let lastEmpty = '';
 const $ = (id) => document.getElementById(id);
 const S = { places: [], animals: [], byId: {}, groups: {}, cur: null, origin: null, maxKm: Infinity, active: null, view: 'list', cache: {} };
 const countryName = (() => { try { const d = new Intl.DisplayNames(['en'], { type: 'region' }); return (c) => d.of(c) || c; } catch (e) { return (c) => c; } })();
@@ -84,7 +89,7 @@ function card(c) {
   const where = [p.ci, p.rg, countryName(p.cc)].filter(Boolean).join(', ');
   const accred = p.ac === 'none' ? el('span', { class: 'zf-badge na', text: 'Not accredited: check ahead' })
     : p.ac === 'museum' ? null : el('span', { class: 'zf-badge', text: p.ac.split(',').map((a) => ACCRED_TEXT[a] || a).join(' · ') });
-  const li = el('li', { class: 'zf-card', id: 'zf-card-' + c.pi, 'data-pi': c.pi },
+  const li = el('li', { class: 'zf-card', id: 'zf-card-' + c.pi, 'data-pi': c.pi, 'data-rank': c.rank, 'data-type': p.t },
     el('div', {}, photo, p.ph && p.cr ? el('p', { class: 'zf-credit', text: 'Photo: ' + p.cr }) : null),
     el('div', {},
       el('div', { class: 'zf-top' }, el('h3', { text: p.n }), c.km !== null ? el('span', { class: 'zf-dist-val', text: fmtDist(c.km) }) : null),
@@ -144,6 +149,11 @@ function render() {
     if (near && near.km > FAR_KM) msg += ' The closest we know about is ' + near.p.n + ', ' + fmtDist(near.km) + ' away. Your local zoo or museum may have wonderful animals too.';
   }
   $('zf-status').textContent = msg;
+  const near2 = primary[0] || all[0];
+  const emptyReason = !all.length ? ((d.e.length + d.r.length + d.g.length) ? 'none_in_range' : 'no_data') : (S.origin && near2 && near2.km > FAR_KM ? 'far' : '');
+  const sig = emptyReason ? d.id + '|' + emptyReason : '';
+  if (sig && sig !== lastEmpty) track('zoo_empty_state', { animal_id: d.id, reason: emptyReason });
+  lastEmpty = sig;
   drawMap(all);
 }
 
@@ -222,7 +232,7 @@ function popupNode(c) {
     c.km !== null ? el('p', { text: fmtDist(c.km) + ' away' }) : null,
     el('p', { text: p.ac === 'none' ? 'Not accredited: check ahead' : p.ac === 'museum' ? 'Natural history museum' : p.ac.split(',').map((a) => ACCRED_TEXT[a] || a).join(' · ') }),
     el('p', { class: note.weak ? 'pp-warn' : '', text: note.weak ? 'Unconfirmed. Call ahead to check the animal is there.' : 'Call ahead to confirm the animal is there.' }),
-    href ? el('p', {}, el('a', { href, target: '_blank', rel: 'noopener noreferrer', text: 'Visit website ↗' })) : null);
+    href ? el('p', {}, el('a', { href, target: '_blank', rel: 'noopener noreferrer', text: 'Visit website ↗', 'data-track': 'popup', 'data-rank': c.rank, 'data-type': p.t })) : null);
 }
 async function setActive(pi, opts) {
   pi = Number(pi); S.active = pi;
@@ -245,6 +255,7 @@ function setView(v) {
 
 // ---------- location ----------
 function setOrigin(o) {
+  track('zoo_location_used', { method: o.method || 'geolocation' });
   S.origin = o; $('zf-q').value = o.fromGeo ? '' : o.label;
   closeSuggest(); render();
 }
@@ -254,7 +265,7 @@ function useMyLocation() {
   btn.disabled = true; st.textContent = 'Finding you…';
   navigator.geolocation.getCurrentPosition((pos) => {
     btn.disabled = false; btn.textContent = 'Update my location';
-    setOrigin({ la: pos.coords.latitude, lo: pos.coords.longitude, label: 'your location', fromGeo: true });
+    setOrigin({ method: 'geolocation', la: pos.coords.latitude, lo: pos.coords.longitude, label: 'your location', fromGeo: true });
   }, () => {
     btn.disabled = false;
     st.textContent = 'No problem. We could not use your location, so try typing a city or postcode instead.';
@@ -282,7 +293,7 @@ async function suggest(q) {
   if (/\d/.test(q)) {
     for (const [cc, key] of postalCountries(q)) {
       const d = await loadPostal(cc), r = d[key];
-      if (r) out.push({ la: r[0], lo: r[1], label: key + ' · ' + r[2] + (r[3] && cc === 'US' ? ', ' + r[3] : '') + ', ' + countryName(cc) });
+      if (r) out.push({ method: 'postcode', la: r[0], lo: r[1], label: key + ' · ' + r[2] + (r[3] && cc === 'US' ? ', ' + r[3] : '') + ', ' + countryName(cc) });
     }
     if (out.length) return out.slice(0, 5);
   }
@@ -291,7 +302,7 @@ async function suggest(q) {
   const hit = cities.filter((c) => (c.a.startsWith(c0) || c.nn.startsWith(c0)) && (!c1 || c.st.toLowerCase() === c1 || c.cc.toLowerCase() === c1 || norm(countryName(c.cc)).startsWith(c1)));
   const seen = new Set();
   return hit.filter((c) => { const k = c.n + c.cc + c.st; if (seen.has(k)) return false; seen.add(k); return true; }).slice(0, 6)
-    .map((c) => ({ la: c.la, lo: c.lo, label: c.n + (c.cc === 'US' && c.st ? ', ' + c.st : '') + ', ' + countryName(c.cc) }));
+    .map((c) => ({ method: 'city', la: c.la, lo: c.lo, label: c.n + (c.cc === 'US' && c.st ? ', ' + c.st : '') + ', ' + countryName(c.cc) }));
 }
 let sugg = [], suggIdx = -1, suggTimer = 0;
 function closeSuggest() { const ul = $('zf-suggest'); ul.hidden = true; ul.textContent = ''; sugg = []; suggIdx = -1; $('zf-q').removeAttribute('aria-activedescendant'); }
@@ -310,6 +321,7 @@ function moveSuggest(d) {
 // ---------- animal + distance controls ----------
 async function selectAnimal(id, pushUrl) {
   if (!id || !S.byId[id]) { S.cur = null; render(); return; }
+  track('zoo_animal_selected', { animal_id: id, source: pushUrl ? 'picker' : 'link' });
   $('zf-status').textContent = 'Loading…';
   if (!S.cache[id]) S.cache[id] = await loadJson('/assets/zoos/a/' + id + '.json');
   S.cur = S.cache[id]; $('zf-animal').value = id; $('zf-name').textContent = S.cur.name.toLowerCase().replace(/\b(african|asian|arctic|atlantic|american|burmese|komodo|gila|tasmanian|polar)\b/g, (m) => m[0].toUpperCase() + m.slice(1));
@@ -323,7 +335,7 @@ function buildChips() {
   items.forEach((it, i) => {
     const id = 'zf-chip-' + i;
     const input = el('input', { type: 'radio', name: 'zf-dist', id, value: it.v, checked: it.v === 0 });
-    input.addEventListener('change', () => { S.maxKm = it.km; render(); });
+    input.addEventListener('change', () => { S.maxKm = it.km; track('zoo_distance_filter', { distance: it.v ? it.v + ' ' + unit : 'no limit' }); render(); });
     box.append(el('label', { class: 'zf-chip', for: id }, input, el('span', { text: it.label })));
   });
 }
@@ -357,6 +369,14 @@ async function init() {
     const b = e.target.closest('[data-show]'); if (b) { if (window.matchMedia('(max-width: 899px)').matches) setView('map'); setActive(b.dataset.show, { fly: true, popup: true }); return; }
     if (e.target.id === 'zf-widen') { S.maxKm = Infinity; document.querySelectorAll('input[name="zf-dist"]').forEach((i) => (i.checked = i.value === '0')); render(); }
   });
+  const clicked = (e) => {
+    const a = e.target.closest('a[target="_blank"]'); if (!a) return;
+    const holder = a.closest('.zf-card') || a;
+    if (!holder.dataset.rank) return;
+    track('zoo_result_click', { tier: TIER_NAME[Number(holder.dataset.rank)] || 'exact', place_type: holder.dataset.type || '' });
+  };
+  $('zf-results').addEventListener('click', clicked);
+  $('zf-map').addEventListener('click', clicked);
   $('zf-legend').append(...[['e', 'Lists this animal'], ['w', 'Unconfirmed'], ['r', 'Close relative'], ['g', 'Similar animals'], ['me', 'You']].map(([c, t]) => el('li', {}, el('span', { class: 'zf-dot ' + c }), t)));
   const q = new URLSearchParams(location.search).get('animal');
   const id = ALIASES[q] || q;
