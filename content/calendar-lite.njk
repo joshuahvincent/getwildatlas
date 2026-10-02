@@ -1,0 +1,30 @@
+---
+# Calendar animal pages: one per entry in _data/liteAnimals.js (app animal on
+# the calendar with no full article). Content comes from the app.
+pagination:
+  data: liteAnimals
+  size: 1
+  alias: lite
+  addAllPagesToCollections: true
+permalink: "/calendar/{{ lite.slug }}/"
+layout: layouts/animal-day.njk
+tags: [calendarLite]
+hideDate: true
+backLink: { url: "/calendar/", label: "Conservation calendar" }
+---
+{%- set a = lite.animal -%}{%- set t = a.text -%}
+{% if a.images.cover %}{% figure a.images.cover, "A " + a.name + " in the wild" %}{% endif %}
+
+{{ t["summary.young"] }}
+
+{% for f in (t["fun_facts.young"] or []) | batch(4) | first %}
+{{ f }}
+{% endfor %}
+
+{% if a.images.scale %}{% figure a.images.scale, "Illustration comparing the size of a " + a.name + " with a five-year-old child" %}{% endif %}
+
+{% if t["size_comparison.young"] %}{{ t["size_comparison.young"] }}{% endif %} {% if t["weight_comparison.young"] %}{{ t["weight_comparison.young"] }}{% endif %}
+
+{% if a.images.baby %}{% figure a.images.baby, "A baby " + a.name %}{% endif %}
+
+{% if t["map_narration"] %}{{ t["map_narration"] }}{% endif %}

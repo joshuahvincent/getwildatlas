@@ -1,0 +1,8 @@
+---
+# Feeds the home page's "From the calendar" card (index.html is a static
+# passthrough page, so it fetches this). Rebuilt daily by deploy.yml's schedule,
+# so "latest" rolls forward on its own.
+permalink: /calendar/latest.json
+eleventyExcludeFromCollections: true
+---
+{{ animalDays.days | latestDay(collections.calendar, collections.posts, animalDays.alsoCelebrated, liteAnimals) | dump | safe }}

@@ -6,6 +6,7 @@ author: Joshuah Vincent
 excerpt: "On conservation filmmaking, a Botswana expedition, and building the screen time we couldn't find."
 permalink: /blog/why-i-built-this/
 coverImage: /assets/blog/elephant-hilux.jpg
+thumbImage: /assets/blog/thumbs/why-i-built-this.jpg
 tags: [founder]
 ---
 

@@ -6,6 +6,7 @@ author: Josh Vincent
 excerpt: "Wild Atlas is fully navigable by a child who can't read a single word. Here's why that was the whole point."
 permalink: /blog/wild-atlas-for-pre-readers/
 coverImage: /assets/blog/v104-animal-portrait.png
+thumbImage: /assets/blog/thumbs/wild-atlas-for-pre-readers.jpg
 tags: [education, design]
 ---
 

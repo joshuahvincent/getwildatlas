@@ -1,0 +1,471 @@
+{
+ "_note": "Corrections to app copy for website animal pages only (from naturalist/child-psych review). Each: {appId, find, replace}. Applied by _data/liteAnimals.js. Route the same fixes to the app via wild-atlas-i18n.",
+ "overrides": [
+  {
+   "appId": "capybara",
+   "find": "but they're about 100 times bigger!",
+   "replace": "but they're about 50 times bigger!",
+   "severity": "FIX",
+   "reason": "Guinea pig ~1 kg vs capybara ~50 kg; 100x is inflated."
+  },
+  {
+   "appId": "capybara",
+   "find": "Capybaras eat their own poop to get extra vitamins from their food.",
+   "replace": "Capybaras eat some of their own soft droppings, which gives their tummies a second chance to get vitamins from their food.",
+   "severity": "NIT",
+   "reason": "Accurate (cecotrophy) but blunt for a 3-8 read-aloud; clearer, gentler wording. Drop if the team prefers the gross-out hook."
+  },
+  {
+   "appId": "axolotl",
+   "find": "Most of its kind live in just one special lake in Mexico.",
+   "replace": "In the wild, it lives only in a few waterways near Mexico City.",
+   "severity": "FIX",
+   "reason": "Wild axolotls survive only in the Xochimilco canals/lake remnants (Lake Chalco is gone); 'most live in one lake' misleads since many now live in captivity."
+  },
+  {
+   "appId": "axolotl",
+   "find": "Hiding among the water plants, it lives in just one special lake in Mexico.",
+   "replace": "Hiding among the water plants, it lives in the wild only near Mexico City, in Mexico.",
+   "severity": "FIX",
+   "reason": "Same: wild range is the Xochimilco canals, not a single lake."
+  },
+  {
+   "appId": "axolotl",
+   "find": "it can grow a perfect new one.",
+   "replace": "it can grow a new one.",
+   "severity": "NIT",
+   "reason": "Regeneration is remarkable but not always 'perfect'; hedge."
+  },
+  {
+   "appId": "great_white_shark",
+   "find": "They can smell a single drop of blood from far away — like finding one red marble in a swimming pool full of clear ones.",
+   "replace": "They have a super sense of smell and can notice tiny amounts of blood or fish scent in the water from far away.",
+   "severity": "FIX",
+   "reason": "Single-drop-from-far-away is a popular myth; they detect very dilute scents (roughly parts per million) but not that extreme. Blood framing also unneeded for ages 3-8."
+  },
+  {
+   "appId": "great_white_shark",
+   "find": "They can swim up to 56 kilometres per hour when they're chasing prey.",
+   "replace": "They are fast swimmers and can zoom in short bursts of speed when they're chasing prey.",
+   "severity": "FIX",
+   "reason": "56 km/h is an inflated, poorly supported burst figure; ~40 km/h is the more defensible upper range. Dropping the number avoids a doubtful claim."
+  },
+  {
+   "appId": "great_white_shark",
+   "find": "Great white sharks can grow as long as a minibus!",
+   "replace": "The biggest great white sharks can grow as long as a minibus!",
+   "severity": "NIT",
+   "reason": "Only the largest females reach ~6 m; also conflicts with the 16 ft typical size shown later."
+  },
+  {
+   "appId": "amur_tiger",
+   "find": "The Amur tiger is the biggest cat in the whole world",
+   "replace": "The Amur tiger is one of the biggest cats in the whole world",
+   "severity": "FIX",
+   "reason": "Amur (Siberian) and Bengal tigers are comparable in size; 'the biggest' is unhedged."
+  },
+  {
+   "appId": "african_elephant",
+   "find": "other elephants feel the vibrations through their feet from kilometres away.",
+   "replace": "other elephants can feel the vibrations through their feet from far away.",
+   "severity": "FIX",
+   "reason": "Ground-borne reception over 'kilometres' is not firmly established at that range; hedge."
+  },
+  {
+   "appId": "african_elephant",
+   "find": "A baby elephant can stand up and walk just 20 minutes after being born.",
+   "replace": "A baby elephant can stand up and walk within about half an hour of being born.",
+   "severity": "NIT",
+   "reason": "Typically ~20-30+ minutes; avoid a too-precise figure."
+  },
+  {
+   "appId": "african_elephant",
+   "find": "They weigh about as much as a school bus full of kids",
+   "replace": "They weigh about as much as a small school bus",
+   "severity": "FIX",
+   "reason": "A bus full of kids is far heavier than 11,000 lb (about 5 tonnes); comparison is inflated."
+  },
+  {
+   "appId": "african_elephant",
+   "find": "African grasslands, savannas, and forests",
+   "replace": "African grasslands, savannas, and forests",
+   "severity": "NIT",
+   "reason": "Proper noun capitalization."
+  },
+  {
+   "appId": "emperor_penguin",
+   "find": "water colder than your freezer",
+   "replace": "icy cold water",
+   "severity": "BLOCKER",
+   "reason": "Factual error: Antarctic seawater is about -2 C; a home freezer is about -18 C."
+  },
+  {
+   "appId": "gorilla",
+   "find": "taller than most grown-ups",
+   "replace": "about as tall as a grown-up",
+   "severity": "FIX",
+   "reason": "5 ft 7 in is average adult height, so 'taller than most grown-ups' contradicts the figure."
+  },
+  {
+   "appId": "gorilla",
+   "find": "not because they're angry!",
+   "replace": "it can be a way to show how big and strong they are!",
+   "severity": "FIX",
+   "reason": "Chest-beating is a display that can also signal alarm or excitement; 'not angry' is an unhedged overclaim."
+  },
+  {
+   "appId": "gorilla",
+   "find": "when they turn 12 years old",
+   "replace": "when they are about 12 years old",
+   "severity": "NIT",
+   "reason": "Age varies (roughly 12-13); hedge."
+  },
+  {
+   "appId": "dolphin",
+   "find": "Created by Sea Shepherd in 2022, marking the 2021 Faroe Islands killing of 1,428 white-sided dolphins.",
+   "replace": "Created by the conservation group Sea Shepherd in 2022 to raise awareness of the threats dolphins face.",
+   "severity": "FIX",
+   "reason": "Origin is accurate but the graphic killing detail is unsuitable for a 3-8 read-aloud page."
+  },
+  {
+   "appId": "dolphin",
+   "find": "Started by Earth Island Institute in 1990 during its campaign against dolphin deaths in tuna fishing.",
+   "replace": "Started by Earth Island Institute in 1990 as part of its dolphin-safe tuna campaign.",
+   "severity": "NIT",
+   "reason": "Softer wording for young listeners."
+  },
+  {
+   "appId": "dolphin",
+   "find": "Dolphins leap out of the water to save energy when swimming fast.",
+   "replace": "Dolphins often leap out of the water when swimming fast, which may help them save energy.",
+   "severity": "FIX",
+   "reason": "Energy-saving is a hypothesis (porpoising), not settled fact; unhedged."
+  },
+  {
+   "appId": "dolphin",
+   "find": "for up to three years",
+   "replace": "for several years",
+   "severity": "FIX",
+   "reason": "Bottlenose calves often stay with mothers 3-6 years; 'up to three' understates."
+  },
+  {
+   "appId": "african_wild_dog",
+   "find": "8 out of every 10 times",
+   "replace": "most of the time, often around 8 out of every 10 times",
+   "severity": "NIT",
+   "reason": "Success rates vary by study (about 60-80%); hedge."
+  },
+  {
+   "appId": "african_wild_dog",
+   "find": "up to 60 kilometres per hour",
+   "replace": "about 60 kilometres per hour",
+   "severity": "NIT",
+   "reason": "Commonly cited top speed is ~60-70 km/h; 'up to' fine but avoid implying a cap."
+  },
+  {
+   "appId": "red_panda",
+   "find": "Nepal, China, and Myanmar",
+   "replace": "the Himalayan region, including Nepal, India, Bhutan, China, and Myanmar",
+   "severity": "FIX",
+   "reason": "Incomplete range list; India and Bhutan are core range countries."
+  },
+  {
+   "appId": "orangutan",
+   "find": "The 2026 dates are computed from the rule.",
+   "replace": "It is held for a week in November; the exact dates change each year.",
+   "severity": "FIX",
+   "reason": "Doubtful 'Nov 8' single-date claim; the event is a week whose dates vary (e.g. Nov 10-16 in 2019), and 'computed from the rule' is unverified."
+  },
+  {
+   "appId": "orangutan",
+   "find": "they rarely come down to the ground",
+   "replace": "they mostly stay up in the trees, though some Bornean orangutans do walk on the ground",
+   "severity": "NIT",
+   "reason": "Bornean orangutans, especially males, travel on the ground more than Sumatran ones; hedge."
+  },
+  {
+   "appId": "emperor_penguin",
+   "find": "popularized from 1972",
+   "replace": "and is said to have become popular from the 1970s",
+   "severity": "NIT",
+   "reason": "Origin attribution is commonly repeated but weakly documented; hedge."
+  },
+  {
+   "appId": "chimpanzee",
+   "find": "central and western Africa",
+   "replace": "Africa",
+   "severity": "FIX",
+   "reason": "Chimps also live in East Africa (e.g. Gombe, Tanzania, which the Chimpanzee Day origin line cites); central and western only is incomplete."
+  },
+  {
+   "appId": "king_cobra",
+   "find": "A single bite delivers enough venom to bring down 20 people — or one elephant.",
+   "replace": "Its venom is very strong, so king cobras are best admired from far away.",
+   "severity": "FIX",
+   "reason": "Frightening for 3-8 read-aloud and the 20-people/elephant claim is a repeated, loosely sourced figure."
+  },
+  {
+   "appId": "king_cobra",
+   "find": "almost 15 feet from head to tail",
+   "replace": "up to about 15 feet or more from head to tail",
+   "severity": "NIT",
+   "reason": "Typical adults are 10-13 ft, max about 18 ft; 'almost 15' as a typical figure is slightly off."
+  },
+  {
+   "appId": "barn_owl",
+   "find": "make a scary screeching sound instead",
+   "replace": "make a raspy screech instead",
+   "severity": "FIX",
+   "reason": "'Scary' is unsuitable for young read-aloud and frames a natural call as frightening."
+  },
+  {
+   "appId": "barn_owl",
+   "find": "almost all the way around",
+   "replace": "far around, about three-quarters of a circle,",
+   "severity": "FIX",
+   "reason": "Owls rotate about 270 degrees, not nearly 360; 'almost all the way around' overstates."
+  },
+  {
+   "appId": "barn_owl",
+   "find": "They mate for life",
+   "replace": "They often stay with the same partner for life",
+   "severity": "NIT",
+   "reason": "Unhedged; barn owls are typically but not always monogamous."
+  },
+  {
+   "appId": "arctic_wolf",
+   "find": "They are the only wolves in the world that are not threatened by humans because almost no people live where they do.",
+   "replace": "Very few people live where they do, so they almost never meet people.",
+   "severity": "FIX",
+   "reason": "Unsupported absolute claim; Arctic wolves are not entirely free of human pressures (hunting, climate change)."
+  },
+  {
+   "appId": "raccoon",
+   "find": "Their front paws become five times more sensitive when wet, so they dip food in water to feel it better",
+   "replace": "Their front paws feel even more when they are wet, so they dip food in water to feel it better",
+   "severity": "FIX",
+   "reason": "Unsupported 'five times' figure."
+  },
+  {
+   "appId": "raccoon",
+   "find": "Raccoons have super-sensitive fingers with more touch receptors than most animals.",
+   "replace": "Raccoons have super-sensitive fingers with lots of touch receptors.",
+   "severity": "NIT",
+   "reason": "Unhedged comparative claim."
+  },
+  {
+   "appId": "raccoon",
+   "find": "They are excellent swimmers and can stay in water for several hours.",
+   "replace": "They can swim well when they need to.",
+   "severity": "FIX",
+   "reason": "Overstated swimming ability (the 'excellent swimmer' myth); duration claim unsupported."
+  },
+  {
+   "appId": "gibbon",
+   "find": "They can leap across gaps as wide as a school bus is long without falling.",
+   "replace": "They can leap across very wide gaps between trees.",
+   "severity": "FIX",
+   "reason": "Gibbon leaps are roughly 8-10 m typically; a bus-length figure is inflated and invites a risky comparison."
+  },
+  {
+   "appId": "gibbon",
+   "find": "they can zoom along faster than you can run",
+   "replace": "they can zoom along very fast",
+   "severity": "NIT",
+   "reason": "Hedge speed claim."
+  },
+  {
+   "appId": "numbat",
+   "find": "First held on Nov 7, 2015 by Project Numbat Inc., a volunteer group in Western Australia.",
+   "replace": "First held on Nov 7, 2015 by Project Numbat Inc., a volunteer group in Western Australia; now held on the first Saturday of November.",
+   "severity": "NIT",
+   "reason": "Verified first date; day now floats to first Saturday of November (Nov 7 is correct for 2026)."
+  },
+  {
+   "appId": "horse",
+   "find": "Horses were first tamed on the grasslands of Central Asia about six thousand years ago.",
+   "replace": "Horses were first tamed on the grasslands of Eurasia about five thousand years ago.",
+   "severity": "FIX",
+   "reason": "Genetic work places modern domestic horse lineage in the Pontic-Caspian steppe roughly 4,200 years ago, with earlier Botai horse use about 5,500 years ago; six thousand and Central Asia are overstated."
+  },
+  {
+   "appId": "horse",
+   "find": "A baby horse can stand up and walk just one hour after being born.",
+   "replace": "A baby horse can stand up and walk within a couple of hours after being born.",
+   "severity": "NIT",
+   "reason": "Foals usually stand within about an hour or two; hedge."
+  },
+  {
+   "appId": "horse",
+   "find": "Created by US Senate Resolution 452 in 2004",
+   "replace": "Recognized by US Senate Resolution 452 in 2004",
+   "severity": "NIT",
+   "reason": "A simple resolution recognizes/designates but does not create a law-based holiday."
+  },
+  {
+   "appId": "cougar",
+   "find": "They can jump farther than any other cat — up to 12 metres in one leap, which is longer than a school bus!",
+   "replace": "They are amazing jumpers — one leap can cover about 40 feet, about as long as a school bus!",
+   "severity": "FIX",
+   "reason": "'Farther than any other cat' is unsupported; also metric units mixed into en-US feet/pounds copy."
+  },
+  {
+   "appId": "cougar",
+   "find": "A cougar can run as fast as a car in a school zone — up to 80 kilometres per hour for short distances.",
+   "replace": "A cougar can run as fast as a car in a neighborhood — about 40 miles per hour for short distances.",
+   "severity": "FIX",
+   "reason": "80 km/h (50 mph) is an inflated figure; measured sprints are lower. Also fix mixed units for en-US."
+  },
+  {
+   "appId": "cougar",
+   "find": "Cougars have the longest back legs compared to their front legs of any cat, which helps them jump so far.",
+   "replace": "Cougars have very long back legs compared to their front legs, which helps them jump so far.",
+   "severity": "NIT",
+   "reason": "Superlative unhedged."
+  },
+  {
+   "appId": "poison_dart_frog",
+   "find": "it's bright yellow and smaller than a bottle cap.",
+   "replace": "it's bright yellow and small enough to sit in your hand.",
+   "severity": "FIX",
+   "reason": "Golden poison frogs reach about 5 cm, larger than a bottle cap; also 'most poisonous' is better stated as one of the most poisonous."
+  },
+  {
+   "appId": "poison_dart_frog",
+   "find": "The golden poison dart frog is the most poisonous",
+   "replace": "The golden poison dart frog is one of the most poisonous animals in the world",
+   "severity": "NIT",
+   "reason": "Hedge superlative."
+  },
+  {
+   "appId": "poison_dart_frog",
+   "find": "Indigenous people in Colombia used the frogs' poison on their hunting arrows.",
+   "replace": "Some Indigenous hunters in Colombia long ago used poison from a few kinds of these frogs on their hunting darts.",
+   "severity": "NIT",
+   "reason": "Only a few species were used; avoid generalizing."
+  },
+  {
+   "appId": "poison_dart_frog",
+   "find": "They weigh less than a single coin — you'd need hundreds to fill a teaspoon.",
+   "replace": "They weigh about as much as a paperclip or two.",
+   "severity": "FIX",
+   "reason": "Frogs weigh roughly 1-2 g each, so a teaspoon would hold only a handful; 'hundreds' is wrong."
+  },
+  {
+   "appId": "grizzly_bear",
+   "find": "across North America and parts of Asia",
+   "replace": "across western North America",
+   "severity": "FIX",
+   "reason": "Grizzlies are a North American brown bear; Asian brown bears are not called grizzlies."
+  },
+  {
+   "appId": "grizzly_bear",
+   "find": "They can smell food from 30 kilometres away — their nose is seven times stronger than a bloodhound's!",
+   "replace": "They can smell food from a very long way away — their nose is much better than a dog's!",
+   "severity": "FIX",
+   "reason": "30 km and 7x bloodhound are shaky, unhedged figures."
+  },
+  {
+   "appId": "grizzly_bear",
+   "find": "A grizzly's bite is strong enough to crush a bowling ball.",
+   "replace": "",
+   "severity": "FIX",
+   "reason": "Dubious viral claim and a bit scary for a 3-8 read-aloud."
+  },
+  {
+   "appId": "hyena",
+   "find": "They have excellent night vision and can see in almost total darkness",
+   "replace": "They have very good night vision and can see well in dim light",
+   "severity": "FIX",
+   "reason": "No animal sees in near-total darkness; overstated."
+  },
+  {
+   "appId": "leopard",
+   "find": "that's as tall as a giraffe!",
+   "replace": "that's taller than a door!",
+   "severity": "FIX",
+   "reason": "3 m is well short of a giraffe (4.5-5.5 m)."
+  },
+  {
+   "appId": "leopard",
+   "find": "Leopards are the strongest climbers of all the big cats.",
+   "replace": "Leopards are superb climbers, and often rest up in trees.",
+   "severity": "NIT",
+   "reason": "Unhedged superlative."
+  },
+  {
+   "appId": "leopard",
+   "find": "who sneak up on their prey without making a sound",
+   "replace": "who sneak up on their prey very quietly",
+   "severity": "NIT",
+   "reason": "Absolute claim; leopards do make sounds."
+  },
+  {
+   "appId": "donkey",
+   "find": "can remember other donkeys and places for over 25 years",
+   "replace": "can remember other donkeys and places for many years",
+   "severity": "NIT",
+   "reason": "Specific 25-year figure is a single-source claim; hedge."
+  },
+  {
+   "appId": "turtle",
+   "find": "Turtles can't stick their heads out of their shells if the shell is too small — the shell grows with them!",
+   "replace": "A turtle's shell is part of its body and grows with it — a turtle can't climb out of its shell!",
+   "severity": "BLOCKER",
+   "reason": "Original is garbled and factually wrong."
+  },
+  {
+   "appId": "turtle",
+   "find": "Some turtles can breathe through their butts!",
+   "replace": "Some turtles can even take in a little oxygen through their back ends!",
+   "severity": "FIX",
+   "reason": "Hedged to 'some' (certain freshwater species) and reworded kid-friendly."
+  },
+  {
+   "appId": "parrot",
+   "find": "because they have two voice boxes instead of one",
+   "replace": "because they have a special voice box called a syrinx and a clever tongue",
+   "severity": "FIX",
+   "reason": "'Two voice boxes' is a myth; birds have one syrinx with two sides."
+  },
+  {
+   "appId": "crocodile",
+   "find": "They have the strongest bite of any animal on Earth",
+   "replace": "They have one of the strongest bites of any animal on Earth",
+   "severity": "FIX",
+   "reason": "Unhedged superlative; only the saltwater crocodile holds the measured record, and this entry is a generic crocodile."
+  },
+  {
+   "appId": "crocodile",
+   "find": "They can live for 70 to 100 years — longer than most humans!",
+   "replace": "Some can live for 70 years or more!",
+   "severity": "FIX",
+   "reason": "100 years is inflated and unverified. 70+ is a hedged figure for the largest species."
+  },
+  {
+   "appId": "albatross",
+   "find": "they can stretch as wide as a small aeroplane!",
+   "replace": "they can stretch wider than a grown-up's outstretched arms, about as wide as a car is long!",
+   "severity": "FIX",
+   "reason": "A wingspan of about 11 ft (3.4 m) is nowhere near a small aeroplane (about 30 ft or more). The comparison is inflated."
+  },
+  {
+   "appId": "albatross",
+   "find": "They can smell food from over 20 kilometres away.",
+   "replace": "They have a great sense of smell and can sniff out food from far away.",
+   "severity": "FIX",
+   "reason": "The 20 km figure is a doubtful, unhedged claim. The documented behaviour is smelling food from long distances."
+  },
+  {
+   "appId": "bald_eagle",
+   "find": "A bald eagle's grip is ten times stronger than a human's hand.",
+   "replace": "A bald eagle's grip is much stronger than a human's hand.",
+   "severity": "NIT",
+   "reason": "The exact 10x figure is a popular but loosely sourced number. A hedged version is safer."
+  }
+ ],
+ "iucnText": {
+  "african_elephant": "Endangered (savanna elephant) and Critically Endangered (forest elephant)",
+  "horse": null
+ }
+}

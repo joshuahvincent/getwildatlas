@@ -1,0 +1,88 @@
+---
+layout: layouts/post.njk
+---
+{#-
+  Awareness-day animal post (World Hippo Day format). Every calendar animal
+  post uses this layout so they all look the same. Authoring guide + field
+  reference: docs/animal-day-posts.md
+-#}
+{%- set d = animalDay -%}
+{%- set origin = d.origin or (dayOrigins[originSlug] if originSlug else null) -%}
+<style>
+  .ad-greeting { font-size: 1.05rem; }
+  .ad-readaloud { color: var(--muted); font-style: italic; }
+  .ad-origin { font-size: 0.9rem; font-weight: 600; background: rgba(255, 209, 102, 0.22); border-left: 4px solid #FFD166; border-radius: 0 10px 10px 0; padding: 0.55rem 0.8rem; }
+  .ad-origin-label { font-family: 'Fredoka', sans-serif; color: #5D4037; }
+  .ad-origin a { font-weight: 700; white-space: nowrap; }
+  .ad-days { margin: 0.3rem 0 0; padding-left: 1.1rem; }
+  .ad-days li { margin: 0.2rem 0; }
+  figure.story-figure { margin: 1.5rem 0; text-align: center; }
+  figure.story-figure img { max-width: 100%; border-radius: 12px; box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2); }
+  figure.story-figure figcaption { font-size: 0.85rem; color: var(--muted); font-style: italic; margin-top: 0.5rem; }
+  .find-zoo-link { display: inline-block; margin: 0.25rem 0 0.5rem; padding: 0.6rem 1.1rem; border-radius: 999px; background: var(--accent); color: #fff !important; font-weight: 700; text-decoration: none; }
+  .find-zoo-link:hover { opacity: 0.9; }
+  .zoo-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 1.5rem 0; }
+  @media (min-width: 640px) { .zoo-grid { grid-template-columns: repeat(2, 1fr); } }
+  .zoo-card, .zoo-cousin { border-radius: 12px; padding: 1rem 1.1rem; background: rgba(120, 160, 200, 0.08); }
+  .zoo-cousin { background: rgba(200, 160, 100, 0.1); margin: 1rem 0 1.5rem; }
+  .zoo-card h4, .zoo-cousin h4 { margin: 0 0 0.15rem; font-size: 1.02rem; }
+  .zoo-card .zoo-city { font-size: 0.82rem; color: var(--muted); margin-bottom: 0.5rem; display: block; }
+  .zoo-card p, .zoo-cousin p { font-size: 0.92rem; line-height: 1.45; margin: 0 0 0.6rem; }
+  .zoo-card a, .zoo-cousin a { font-size: 0.88rem; font-weight: 600; }
+  .zoo-note { font-size: 0.88rem; color: var(--muted); }
+  .grownup-box { border-radius: 12px; padding: 1.2rem 1.3rem; background: rgba(120, 160, 200, 0.08); margin: 1.5rem 0; }
+  .grownup-box h3 { margin-top: 0; }
+</style>
+
+<div class="ad-greeting">{{ d.greeting | md | safe }}</div>
+{%- if origin %}
+<p class="ad-origin"><span class="ad-origin-label">About this day:</span> {{ origin.text | mdInline | safe }}{% if origin.sourceUrl %} <a href="{{ origin.sourceUrl }}" rel="noopener">Source</a>{% endif %}</p>
+{%- endif %}
+{%- if d.celebratedOn and d.celebratedOn.length %}
+<div class="ad-origin"><span class="ad-origin-label">Celebrated on:</span>
+  <ul class="ad-days">{% for x in d.celebratedOn %}<li><strong>{{ x.day }}</strong> · {{ x | perennialDay }}{% if x.origin %} — {{ x.origin }}{% endif %}{% if x.sourceUrl %} <a href="{{ x.sourceUrl }}" rel="noopener">Source</a>{% endif %}</li>{% endfor %}</ul>
+</div>
+{%- endif %}
+<p class="ad-readaloud">{{ d.readAloudNote or "Read this one out loud together — it's short, and it's more fun with voices." }}</p>
+
+{{ content | safe }}
+
+{%- if d.whereToSee %}
+{%- set w = d.whereToSee %}
+<h2>{{ w.heading or ("Where to see " + d.animalArticle + " " + d.animalName) }}</h2>
+{% if w.intro %}{{ w.intro | md | safe }}{% endif %}
+{% if zooFinderLive and d.animalId and w.findLabel %}<a class="find-zoo-link" href="/zoos/?animal={{ d.animalId }}">{{ w.findLabel }} →</a>{% endif %}
+{%- for group in w.groups %}
+{% if group.label %}<h3>{{ group.label }}</h3>{% endif %}
+<div class="zoo-grid">
+  {%- for p in group.places %}
+  <div class="zoo-card">
+    <h4>{{ p.title }}</h4>
+    <span class="zoo-city">{{ p.place }}</span>
+    <p>{{ p.blurb | mdInline | safe }}</p>
+    <a href="{{ p.url | utm(d.campaign) }}">{{ p.linkText or "Learn more" }} →</a>
+  </div>
+  {%- endfor %}
+</div>
+{%- endfor %}
+{%- if w.cousin %}
+<div class="zoo-cousin">
+  <h4>{{ w.cousin.title }}</h4>
+  <p>{{ w.cousin.blurb | mdInline | safe }}</p>
+  <a href="{{ w.cousin.url | utm(d.campaign) }}">{{ w.cousin.linkText or "Learn more" }} →</a>
+</div>
+{%- endif %}
+{% if w.note %}<p class="zoo-note">{{ w.note | mdInline | safe }}</p>{% endif %}
+{%- endif %}
+
+{%- if d.grownups %}
+<div class="grownup-box">
+  <h3>For grown-ups</h3>
+  {{ d.grownups | md | safe }}
+</div>
+{%- endif %}
+
+<h2>Keep exploring</h2>
+{{ d.appCta | md | safe }}
+<p><a href="https://apps.apple.com/us/app/wild-atlas/id6761081031?ct={{ d.campaign }}&amp;utm_source=blog&amp;utm_medium=owned&amp;utm_campaign={{ d.campaign }}">{{ d.appLinkText or ("Meet the " + d.animalName + " in Wild Atlas") }} →</a></p>
+{% if d.source %}<p>For more, visit <a href="{{ d.source.url | utm(d.campaign) }}">{{ d.source.label }}</a>.</p>{% endif %}

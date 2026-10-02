@@ -1,0 +1,66 @@
+---
+layout: layouts/blog-base.njk
+title: Where these dates come from
+excerpt: "The animal days on the Wild Atlas calendar are real awareness days set by the UN, conservation groups, zoos and others — here's how they're chosen."
+permalink: /calendar/about/
+eleventyExcludeFromCollections: true
+---
+{%- set officialCount = 0 -%}{%- set pickCount = 0 -%}
+{%- for d in animalDays.days -%}{%- if d.official -%}{%- set officialCount = officialCount + 1 -%}{%- else -%}{%- set pickCount = pickCount + 1 -%}{%- endif -%}{%- endfor -%}
+<style>
+  .ab { --bark: #5D4037; --sunny-wash: #FFF4CC; padding: 1rem 0 2rem; }
+  .ab .back { font-weight: 700; }
+  .ab h1 { font-family: 'Fredoka', sans-serif; color: var(--bark); font-size: clamp(1.9rem, 5vw, 2.5rem); margin: 0.6rem 0 1rem; }
+  .ab h2 { font-family: 'Fredoka', sans-serif; color: var(--bark); font-size: 1.3rem; margin: 1.8rem 0 0.5rem; }
+  .ab p, .ab li { font-weight: 400; line-height: 1.6; }
+  .ab ul { list-style: disc; padding-left: 1.4rem; margin: 0.4rem 0 0.8rem; }   /* the site stylesheet turns list bullets off globally */
+  .ab li { margin: 0.35rem 0; }
+  .ab li::marker { color: #5D4037; }
+  .ab a:not(.back) { color: var(--bark); text-decoration: underline; text-underline-offset: 2px; }
+  .ab-stat span { font-weight: 600; }
+  .ab-stat { background: var(--sunny-wash); border: 2px solid var(--bark); border-radius: 14px; padding: 0.9rem 1.1rem; display: flex; gap: 1rem; align-items: center; }
+  .ab-stat b { font-family: 'Fredoka', sans-serif; font-size: 2.4rem; color: var(--bark); line-height: 1; }
+  .pick-badge { display: inline-block; font-family: 'Fredoka', sans-serif; font-size: 0.78rem; font-weight: 600; background: #FFD166; color: #5D4037; border-radius: 999px; padding: 0 8px; }
+  .pick-badge::before { content: "\2605  "; }
+</style>
+<article class="ab">
+  <a class="back" href="/calendar/">← Back to the calendar</a>
+  <h1>Where these dates come from</h1>
+
+  {#- Count both lists: the weekly featured days and the also-celebrated days on the grid. -#}
+  {%- set alsoCount = animalDays.alsoCelebrated | length %}
+  <div class="ab-stat"><b>{{ (animalDays.days | length) + alsoCount }}</b><span>animal days a year: {{ officialCount + alsoCount }} real awareness days and {{ pickCount }} Wild Atlas Spotlights.</span></div>
+
+  <h2>We didn't make them up</h2>
+  <p>Every awareness day on the calendar was started by someone else. They come from different places:</p>
+  <ul>
+    <li>The United Nations declared some of them, like <a href="https://wildlifeday.org/en/about" rel="noopener">World Wildlife Day</a> and <a href="https://www.un.org/en/observances/oceans-day/background" rel="noopener">World Oceans Day</a>.</li>
+    <li>Conservation groups, zoos and aquariums started many more, to help people care about one animal at a time. For example, <a href="https://www.internationalleopardday.org/" rel="noopener">International Leopard Day</a> was started by the Cape Leopard Trust, Panthera and Saving the Survivors, and <a href="https://www.acap.aq/world-albatross-day/introduction-to-world-albatross-day" rel="noopener">World Albatross Day</a> by the international agreement that protects albatrosses.</li>
+    <li>Animal fans started a few. <a href="https://tonmo.com/threads/its-world-octopus-day.94241/" rel="noopener">World Octopus Day</a> began in 2007 with an online community of octopus fans, who picked the 8th for an animal with eight arms.</li>
+    <li>A few are United States days. <a href="https://www.wcs.org/get-involved/updates/senate-passes-bison-day-resolution" rel="noopener">National Bison Day</a> was started in 2012 by a coalition of tribes, ranchers and conservationists, and the U.S. Senate has recognised it every year since 2013.</li>
+  </ul>
+
+  <h2>When they happen</h2>
+  <ul>
+    <li>Most fall on the same date every year.</li>
+    <li>A few move around, like "the third Friday in May". The calendar works out the right date for each year automatically.</li>
+    <li>Each day's page says where the day came from, with a link to its source.</li>
+  </ul>
+
+  <h2>How an animal gets on the calendar</h2>
+  <ul>
+    <li>One featured animal a week, matched to a real awareness day.</li>
+    <li>When several animal days land in the same week, we feature the one we think kids will love most. The others still show on the calendar as "also celebrated" days.</li>
+    <li>In the few weeks with no animal day, we choose a favourite ourselves. These are marked <span class="pick-badge">Wild Atlas Spotlight</span>. They're our choice, not an official awareness day.</li>
+    <li>The year ends with Explorer's Choice: the animal kids explored most in the Wild Atlas app that year. Like a Spotlight, it's our choice, not an official awareness day.</li>
+  </ul>
+
+  <h2>What's on each page</h2>
+  <ul>
+    <li>Featured animals get a short story to read out loud together, how big and how heavy the animal is next to a five-year-old, what its babies look like, and a map of where to see one, at zoos and aquariums and in the wild.</li>
+    <li>Also-celebrated days get a shorter page: where the day came from, what it celebrates, why it matters, and a few fun facts.</li>
+    <li>Facts are checked against trusted sources, like the <a href="https://www.iucnredlist.org/" rel="noopener">IUCN Red List</a> and the zoos, aquariums and groups behind each day.</li>
+  </ul>
+
+  <p><a class="back" href="/calendar/">← Back to the calendar</a></p>
+</article>

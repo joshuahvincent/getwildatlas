@@ -3,3 +3,6 @@
 # Add a slug, commit to getwildatlas main, and wildatlasapp.com/<slug> 301-redirects.
 # (Requires eleventyConfig.addPassthroughCopy("_redirects"); in .eleventy.js.)
 /kids  /blog/what-kids-want-to-know-about-animals/  301
+# World Animal Day moved from the blog to its calendar page (Josh, 2026-10-02)
+/blog/world-animal-day/  /calendar/world-animal-day/  301
+/blog/world-animal-day  /calendar/world-animal-day/  301

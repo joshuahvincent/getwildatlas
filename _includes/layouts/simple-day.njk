@@ -1,0 +1,48 @@
+---
+layout: layouts/post.njk
+---
+{#-
+  Simple awareness-day page: for calendar days whose animal isn't in a Wild
+  Atlas pack (one image), and broad days like bird counts (text only).
+  Front-matter: simpleDay { greeting, image?{src,alt}, origin{text,sourceUrl},
+  whatItCelebrates, whyItMatters, funFacts[], joinIn, relatedApp{text}, source{label,url} }
+-#}
+{%- set s = simpleDay -%}
+<style>
+  .sd-greeting { font-size: 1.05rem; }
+  .sd-origin { font-size: 0.92rem; font-weight: 600; background: rgba(255, 209, 102, 0.22); border-left: 4px solid #FFD166; border-radius: 0 10px 10px 0; padding: 0.55rem 0.8rem; }
+  .sd-origin b { font-family: 'Fredoka', sans-serif; color: #5D4037; }
+  figure.story-figure { margin: 1.5rem 0; text-align: center; }
+  figure.story-figure img { max-width: 100%; border-radius: 12px; box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2); }
+  .sd-facts { border-radius: 12px; padding: 1rem 1.2rem; background: rgba(120, 160, 200, 0.08); }
+  .sd-facts h2 { margin-top: 0; }
+  .sd-facts li { margin: 0.35rem 0; }
+</style>
+
+<div class="sd-greeting">{{ s.greeting | md | safe }}</div>
+
+{% if s.image and s.image.src %}{% figure s.image.src, s.image.alt %}{% endif %}
+
+{% if s.origin %}<p class="sd-origin"><b>About this day:</b> {{ s.origin.text | mdInline | safe }}{% if s.origin.sourceUrl %} <a href="{{ s.origin.sourceUrl }}" rel="noopener">Source</a>{% endif %}</p>{% endif %}
+
+{% if s.whatItCelebrates %}<h2>What it celebrates</h2>
+{{ s.whatItCelebrates | md | safe }}{% endif %}
+
+{% if s.whyItMatters %}<h2>Why it matters</h2>
+{{ s.whyItMatters | md | safe }}{% endif %}
+
+{% if s.funFacts and s.funFacts.length %}
+<div class="sd-facts">
+  <h2>Fun facts</h2>
+  <ul>{% for f in s.funFacts %}<li>{{ f | mdInline | safe }}</li>{% endfor %}</ul>
+</div>
+{% endif %}
+
+{% if s.joinIn %}<h2>How to join in</h2>
+{{ s.joinIn | md | safe }}{% endif %}
+
+{% if s.relatedApp %}<h2>Keep exploring</h2>
+{{ s.relatedApp.text | md | safe }}
+<p><a href="https://apps.apple.com/us/app/wild-atlas/id6761081031?ct={{ s.campaign }}&amp;utm_source=blog&amp;utm_medium=owned&amp;utm_campaign={{ s.campaign }}">Explore Wild Atlas →</a></p>{% endif %}
+
+{% if s.source %}<p>Learn more: <a href="{{ s.source.url }}" rel="noopener">{{ s.source.label }}</a></p>{% endif %}
