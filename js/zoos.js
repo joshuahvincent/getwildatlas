@@ -12,7 +12,7 @@ const CHIP_MI = [5, 10, 20, 50, 150];
 const CHIP_KM = [10, 15, 30, 80, 250];
 const TYPE_LABEL = { zoo: 'Zoo', aquarium: 'Aquarium', safari_park: 'Safari park', museum: 'Museum', farm: 'Farm / petting zoo', sanctuary: 'Sanctuary', wild: 'National park / reserve' };
 const TYPE_EMOJI = { zoo: '🦁', aquarium: '🐠', safari_park: '🦒', museum: '🦴', farm: '🐐', sanctuary: '🐾', wild: '🌿' };
-const ACCRED_TEXT = { AZA: 'AZA accredited', CAZA: 'CAZA accredited', EAZA: 'EAZA member', BIAZA: 'BIAZA member', ZAA: 'ZAA accredited', JAZA: 'JAZA member' };
+const ACCRED_TEXT = { AZA: 'AZA accredited', CAZA: 'CAZA accredited', EAZA: 'EAZA member', BIAZA: 'BIAZA member', ZAA: 'ZAA accredited', JAZA: 'JAZA member', 'protected-area': 'Protected area', unesco: 'UNESCO World Heritage site' };
 const POPULAR = ['lion', 'giraffe', 'hippopotamus', 'african_elephant', 'emperor_penguin', 'dolphin', 'tyrannosaurus_rex', 'cow'];
 const SEARCH_TERMS = { tyrannosaurus_rex: 't rex trex dinosaur', velociraptor: 'raptor dinosaur', hippopotamus: 'hippo', african_elephant: 'elephant', great_white_shark: 'shark', hammerhead_shark: 'shark', whale_shark: 'shark', emperor_penguin: 'penguin', atlantic_puffin: 'puffin bird', polar_bear: 'bear', panda: 'giant panda bear', cow: 'cattle farm', pig: 'farm', sheep: 'farm lamb', horse: 'farm pony' };
 
@@ -296,12 +296,112 @@ function mapProblem(why) {
   box.textContent = ''; box.append(el('p', { class: 'zf-maperr' }, 'The map could not start in this browser, but the list has the same places.', el('small', {}, why ? ' (' + String(why).slice(0, 120) + ')' : '')));
   console.error('[zoos map]', why);
 }
+
+// ---------- fallback map (no WebGL): plain SVG, same pins, drag / wheel / +- to move ----------
+const FB = { svg: null, gPins: null, gMe: null, ring: null, pop: null, vb: null, cw: 600, ch: 400, pins: [], ready: null, drag: null };
+const FB_K = 2;   // svg units per degree
+function fbProject(lo, la) { return [(lo + 180) * FB_K, (90 - la) * FB_K]; }
+function fbSvg(tag, attrs) { const n = document.createElementNS('http://www.w3.org/2000/svg', tag); for (const k in attrs) n.setAttribute(k, attrs[k]); return n; }
+function fbWebglOk() { try { const c = document.createElement('canvas'); return !!(c.getContext('webgl2') || c.getContext('webgl')); } catch (e) { return false; } }
+function fbApply() {
+  const v = FB.vb, k = FB.cw ? v.w / FB.cw : 1;
+  FB.svg.setAttribute('viewBox', [v.x, v.y, v.w, v.w * FB.ch / FB.cw].join(' '));
+  FB.pins.forEach((p) => { p.g.setAttribute('transform', 'translate(' + p.x + ' ' + p.y + ') scale(' + k + ')'); });
+  FB.gMe.setAttribute('transform', FB.meXY ? 'translate(' + FB.meXY[0] + ' ' + FB.meXY[1] + ') scale(' + k + ')' : 'translate(-999 -999)');
+  FB.ring.setAttribute('transform', FB.ringXY ? 'translate(' + FB.ringXY[0] + ' ' + FB.ringXY[1] + ') scale(' + k + ')' : 'translate(-999 -999)');
+  if (FB.popFor) fbPlacePop();
+}
+function fbClamp() { const v = FB.vb, h = v.w * FB.ch / FB.cw; v.w = Math.min(360 * FB_K, Math.max(1.5 * FB_K * (FB.cw / 100), v.w)); v.x = Math.max(-40, Math.min(360 * FB_K + 40 - v.w, v.x)); v.y = Math.max(-40, Math.min(180 * FB_K + 40 - h, v.y)); }
+function fbZoom(f, cx, cy) {   // f > 1 zooms in about the container point (cx, cy)
+  const v = FB.vb, k = v.w / FB.cw, ux = v.x + cx * k, uy = v.y + cy * k, nw = v.w / f;
+  v.w = nw; const nk = nw / FB.cw; v.x = ux - cx * nk; v.y = uy - cy * nk; fbClamp(); fbApply();
+}
+function fbFitBounds(b, pad) {   // b = [[w, s], [e, n]]
+  const [x0, y0] = fbProject(b[0][0], b[1][1]), [x1, y1] = fbProject(b[1][0], b[0][1]);
+  const w = Math.max(x1 - x0, 4), h = Math.max(y1 - y0, 4), padU = (pad || 10) * Math.max(w / FB.cw, 0.01);
+  const need = Math.max((w + 2 * padU), (h + 2 * padU) * FB.cw / FB.ch);
+  FB.vb = { x: (x0 + x1) / 2 - need / 2, y: (y0 + y1) / 2 - need * FB.ch / FB.cw / 2, w: need }; fbClamp(); fbApply();
+}
+function fbPlacePop() {
+  const c = FB.popFor, v = FB.vb, k = v.w / FB.cw, [x, y] = fbProject(c.p.lo, c.p.la);
+  const px = (x - v.x) / k, py = (y - v.y) / k, pop = FB.pop;
+  pop.style.left = Math.max(8, Math.min(FB.cw - 8, px)) + 'px'; pop.style.top = Math.max(8, py - 12) + 'px';
+}
+function fbClosePop() { FB.popFor = null; if (FB.pop) FB.pop.hidden = true; }
+async function fbInit() {
+  if (FB.ready) return FB.ready;
+  FB.ready = (async () => {
+    const box = $('zf-map'); box.textContent = ''; box.classList.add('zf-fbmap'); delete box.dataset.failed;
+    FB.cw = box.clientWidth || 600; FB.ch = box.clientHeight || 400;
+    const svg = FB.svg = fbSvg('svg', { class: 'zf-fb', role: 'img', 'aria-label': 'Map of places', preserveAspectRatio: 'xMidYMid slice' });
+    svg.append(fbSvg('rect', { x: -400, y: -400, width: 1520, height: 1120, fill: '#dbe9f3' }));
+    const data = await (await fetch('/assets/zoos/geo/countries.json')).json();
+    let d = '';
+    const ring = (r) => 'M' + r.map((pt) => { const q = fbProject(pt[0], pt[1]); return q[0].toFixed(1) + ' ' + q[1].toFixed(1); }).join('L') + 'Z';
+    data.features.forEach((f) => { const g = f.geometry; (g.type === 'Polygon' ? [g.coordinates] : g.coordinates).forEach((poly) => poly.forEach((r) => { d += ring(r); })); });
+    svg.append(fbSvg('path', { d, fill: '#f7efdc', stroke: '#a8946a', 'stroke-width': 1, 'vector-effect': 'non-scaling-stroke', 'fill-rule': 'evenodd' }));
+    FB.gPins = fbSvg('g', {}); svg.append(FB.gPins);
+    FB.gMe = fbSvg('g', {}); FB.gMe.append(fbSvg('circle', { r: 18, fill: YOU, 'fill-opacity': .18 }), fbSvg('circle', { r: 11, fill: '#fff' }), fbSvg('circle', { r: 8, fill: YOU })); svg.append(FB.gMe);
+    FB.ring = fbSvg('g', {}); FB.ring.append(fbSvg('circle', { r: 15, fill: 'none', stroke: '#2A2118', 'stroke-width': 3 })); svg.append(FB.ring);
+    box.append(svg);
+    FB.pop = el('div', { class: 'zf-fbpop', hidden: '' }); box.append(FB.pop);
+    const ctl = el('div', { class: 'zf-fbctl' }, el('button', { type: 'button', 'aria-label': 'Zoom in', text: '+' }), el('button', { type: 'button', 'aria-label': 'Zoom out', text: '−' }));
+    ctl.children[0].addEventListener('click', () => fbZoom(1.6, FB.cw / 2, FB.ch / 2)); ctl.children[1].addEventListener('click', () => fbZoom(1 / 1.6, FB.cw / 2, FB.ch / 2));
+    box.append(ctl, el('div', { class: 'zf-fbcred', text: 'Outlines: Natural Earth' }));
+    box.addEventListener('wheel', (e) => { e.preventDefault(); const r = box.getBoundingClientRect(); fbZoom(e.deltaY < 0 ? 1.25 : 0.8, e.clientX - r.left, e.clientY - r.top); }, { passive: false });
+    box.addEventListener('pointerdown', (e) => { if (e.target.closest('.zf-fbctl,.zf-fbpop')) return; FB.drag = { x: e.clientX, y: e.clientY, vx: FB.vb.x, vy: FB.vb.y, moved: false, id: e.pointerId }; });
+    box.addEventListener('pointermove', (e) => {
+      const dr = FB.drag; if (!dr) return; const dx = e.clientX - dr.x, dy = e.clientY - dr.y;
+      if (!dr.moved && Math.hypot(dx, dy) < 5) return; dr.moved = true; box.classList.add('is-drag');
+      const k = FB.vb.w / FB.cw; FB.vb.x = dr.vx - dx * k; FB.vb.y = dr.vy - dy * k; fbClamp(); fbApply();
+    });
+    const end = (e) => { const dr = FB.drag; FB.drag = null; box.classList.remove('is-drag');
+      if (dr && !dr.moved) { const g = e.target.closest && e.target.closest('[data-pi]'); if (g) setActive(g.dataset.pi, { popup: true, scroll: true }); else fbClosePop(); } };
+    box.addEventListener('pointerup', end); box.addEventListener('pointercancel', () => { FB.drag = null; box.classList.remove('is-drag'); });
+    new ResizeObserver(() => { if (!box.clientWidth) return; FB.cw = box.clientWidth; FB.ch = box.clientHeight || FB.ch; if (FB.vb) { fbClamp(); fbApply(); } }).observe(box);
+    FB.vb = { x: 0, y: 0, w: 360 * FB_K };
+    return true;
+  })();
+  return FB.ready;
+}
+async function fbDraw(cands) {
+  await fbInit(); fbClosePop(); FB.ringXY = null;
+  const box = $('zf-map'); FB.cw = box.clientWidth || FB.cw; FB.ch = box.clientHeight || FB.ch;
+  FB.gPins.textContent = ''; FB.pins = [];
+  const style = { 3: ['#ffffff', '#6b6b6b', 4], 2: [GREEN, '#ffffff', 4.5], 1: [YELLOW, YELLOW_DARK, 7], 4: [TEAL, TEAL_DARK, 7], 0: [GREEN, GREEN_DARK, 7] };
+  const order = { 3: 0, 2: 1, 1: 2, 4: 3, 0: 4 };
+  cands.map((c) => ({ c, t: TIER_OF(c.rank) })).sort((a, b) => order[a.t] - order[b.t]).forEach(({ c, t }) => {
+    const [fill, stroke, r] = style[t], g = fbSvg('g', { 'data-pi': c.pi, class: 'zf-fbpin' });
+    if (t === 0 || t === 1 || t === 4) g.append(fbSvg('circle', { r: r + 2.5, fill: '#fff' }));
+    g.append(fbSvg('circle', { r, fill, stroke, 'stroke-width': 1.5 }), fbSvg('circle', { r: Math.max(r + 5, 11), fill: 'transparent' }));
+    const [x, y] = fbProject(c.p.lo, c.p.la); FB.pins.push({ g, x, y }); FB.gPins.append(g);
+  });
+  FB.meXY = S.origin ? fbProject(S.origin.lo, S.origin.la) : null;
+  fbFit(cands);
+}
+function fbFit(cands) {
+  const prim = cands.filter((c) => c.rank <= 3); let use = prim.length ? prim : cands;
+  if (S.cur && !S.origin && HOME_CC && use.some((c) => c.p.cc === HOME_CC)) use = use.filter((c) => c.p.cc === HOME_CC);
+  if (!S.cur && !S.origin) { fbFitBounds(START_VIEW, 10); return; }
+  const pts = (S.origin ? use.slice(0, 8) : use).map((c) => [c.p.lo, c.p.la]); if (S.origin) pts.push([S.origin.lo, S.origin.la]);
+  if (!pts.length) { fbFitBounds(START_VIEW, 10); return; }
+  const lo = pts.map((p) => p[0]), la = pts.map((p) => p[1]);
+  fbFitBounds([[Math.min(...lo) - 0.5, Math.min(...la) - 0.5], [Math.max(...lo) + 0.5, Math.max(...la) + 0.5]], 48);
+}
+async function fbActive(pi, opts) {
+  await fbInit(); const c = lastCands.find((x) => x.pi === pi); if (!c) return;
+  FB.ringXY = fbProject(c.p.lo, c.p.la);
+  if (opts && opts.fly) { const deg = FB.cw / (512 * Math.pow(2, 6.5)) * 360, w = deg * FB_K, [x, y] = FB.ringXY; FB.vb = { x: x - w / 2, y: y - w * FB.ch / FB.cw / 2, w }; fbClamp(); }
+  fbClosePop();
+  if (opts && opts.popup) { const pop = FB.pop; pop.textContent = ''; const x = el('button', { type: 'button', class: 'zf-fbx', 'aria-label': 'Close', text: '×' }); x.addEventListener('click', fbClosePop); pop.append(x, popupNode(c)); pop.hidden = false; FB.popFor = c; }
+  fbApply();
+}
 async function drawMap(cands) {
   lastCands = cands;
   if (!map && S.view !== 'map' && !window.matchMedia('(min-width: 900px)').matches) return;
   if (S.mapFailed) return;
+  if (!fbWebglOk()) { try { await fbDraw(cands); } catch (e) { S.mapFailed = true; mapProblem(e && e.message); } return; }   // no WebGL (Safari with it off, some locked-down machines): plain SVG map
   try {
-    const gl = document.createElement('canvas'); if (!(gl.getContext('webgl2') || gl.getContext('webgl'))) throw new Error('WebGL is not available');
     await Promise.race([ensureMap(), new Promise((_, rej) => setTimeout(() => rej(new Error('map took too long to start')), 25000))]);
   } catch (e) { S.mapFailed = true; mapProblem(e && e.message); return; }
   const feats = cands.map((c) => ({ type: 'Feature', properties: { pi: c.pi, tier: TIER_OF(c.rank) }, geometry: { type: 'Point', coordinates: [c.p.lo, c.p.la] } }));
@@ -337,6 +437,7 @@ async function setActive(pi, opts) {
   let cardEl = document.getElementById('zf-card-' + pi);
   if (!cardEl) { document.querySelectorAll('.zf-moreBtn').forEach((b) => b.click()); cardEl = document.getElementById('zf-card-' + pi); }
   if (cardEl) { cardEl.classList.add('is-active'); const det = cardEl.closest('details'); if (det && opts && opts.scroll) det.open = true; if (opts && opts.scroll && S.view === 'list') cardEl.scrollIntoView({ block: 'nearest', behavior: reducedMotion() ? 'auto' : 'smooth' }); }
+  if (!fbWebglOk()) { if (S.mapFailed) return; await fbActive(pi, opts); return; }
   await ensureMap();
   map.setFilter('active', ['==', ['get', 'pi'], pi]);
   const c = lastCands.find((x) => x.pi === pi); if (!c) return;
