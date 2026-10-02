@@ -28,7 +28,7 @@ for p in places_in:
     out_places.append({'id': p['id'], 'name': p['name'], 'type': p['type'], 'town': p.get('town'), 'region': p.get('region'), 'country': p.get('country'),
                        'lat': lat, 'lng': lng, 'coord_source': csrc, 'url': p['url'], 'accreditation': ','.join(p['accreditation']),
                        'accreditation_source': ';'.join(p.get('accreditation_source') or []) or None, 'wikidata': p.get('wikidata'),
-                       'image_file': None, 'image_license': None, 'image_author': None})
+                       'image_file': None, 'image_license': None, 'image_author': None, 'weak_type': p.get('weak_type'), 'google_place_id': p.get('google_place_id')})
     if not os.path.exists(idxf) or not os.path.exists(cf):
         failed.append({'id': p['id'], 'why': 'not crawled', 'kept': True}); continue
     idx = json.load(open(idxf))

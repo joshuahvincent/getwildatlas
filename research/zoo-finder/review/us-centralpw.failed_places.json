@@ -1,0 +1,72 @@
+[
+{
+"id": "audubon-aquarium-and-insectarium",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "baylor-university-bear-habitat",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "butterfly-house",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "david-traylor-zoo-of-emporia",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "downtown-aquarium-houston",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "great-plains-zoo",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "hutchinson-zoo",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "johnny-morris-wonders-of-wildlife-national-museum-and-aquarium",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "lincoln-childrens-zoo",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "longneck-manor",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "miller-park-zoo",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "scovill-zoo",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "sedgwick-county-zoo",
+"why": "home 409, pages 0",
+"kept": true
+},
+{
+"id": "sunset-zoological-park",
+"why": "not crawled",
+"kept": true
+}
+]

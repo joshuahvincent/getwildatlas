@@ -1,0 +1,452 @@
+[
+{
+"id": "guyana-zoo-q1557640",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "buenos-aires-zoo-q134617498",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "museu-paraense-emilio-goeldi-q3328425",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "chapultepec-zoo-q3375717",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "xcaret-q3570845",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "parque-zoologico-caricuao-q7139676",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "mar-del-plata-museum-of-the-sea-q9047113",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "parque-zoologico-nacional-simon-bolivar-q6063251",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "paramaribo-zoo-q922908",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "aquario-q28679974",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "rio-de-janeiro-zoological-garden-q10306230",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "chilean-national-zoo-q5098753",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "bioparque-los-ocarros-q16489723",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "zoologico-los-coyotes-q6171767",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "emperor-valley-zoo-q2198266",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "parque-lecocq-q7139644",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "curitiba-zoo-q9011010",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "zoologico-de-brasilia-q10306226",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "bloedel-conservatory-q4927320",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "acuario-nacional-de-cuba-q31505",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "zoologico-miguel-alvarez-del-toro-q8074133",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "valencia-s-aquarium-q623158",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "bauru-zoo-q20059693",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "sao-paulo-aquarium-q16493141",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "simba-safari-q10395314",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "zoological-garden-of-belo-horizonte-q9011004",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "niagara-parks-butterfly-conservatory-q7023739",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "sealand-of-the-pacific-q7440604",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "shubenacadie-wildlife-park-q7504536",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "suncor-energy-fluvarium-q7639072",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "rodadero-sea-aquarium-and-museum-q7356438",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "zoologico-de-barranquilla-q6171777",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "acuario-inbursa-q17126827",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "parque-zoologico-chorros-de-milla-q6062578",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "la-plata-zoo-and-botanical-garden-q5927023",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "bioparque-municipal-vesty-pakos-q61958854",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "zoologico-de-fauna-sudamericana-q6171768",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "belo-horizonte-aquarium-q9626989",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "bosque-dos-jequitibas-q9662083",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "jardim-zoobotanico-de-franca-q65171670",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "mangal-das-garcas-q10323617",
+"why": "home 503, pages 0",
+"kept": true
+},
+{
+"id": "parque-ecologico-de-sao-carlos-q65160535",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "parque-zoobotanico-getulio-vargas-q18043463",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "parque-zoobotanico-de-teresina-q10345406",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "parque-zoobotanico-do-museu-paraense-emilio-go-q56641215",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "zoologico-municipal-de-guarulhos-q64569689",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "zoologico-de-goiania-q10306228",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "jungle-cat-world-q6312792",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "killman-zoo-q14875235",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "reptilia-q7314355",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "zoologico-de-quilpue-q6171788",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "monteverde-theme-park-q28311039",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "spirogyra-butterfly-garden-q28311036",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "acuario-michin-guadalajara-q109875161",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "bioparque-de-convivencia-en-pachuca-hidalgo-q69171357",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "parque-del-centenario-q6062597",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "zacango-zoo-q6171792",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "national-zoo-of-nicaragua-q12011264",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "parque-natural-de-pucallpa-q6063110",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "neotropical-butterfly-park-q67784193",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "zoologico-municipal-dr-mauricio-lopez-lomba-q17274900",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "paraguana-zoo-q6171785",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "zoologico-de-saenz-pena-q13605580",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "acqua-mundo-q50887201",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "catavento-butterfly-house-q69254508",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "jacques-huber-aquarium-q123456955",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "municipal-aquarium-of-cuiaba-q124253394",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "underground-aquarium-at-jardim-da-luz-q55186828",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "zoobotanic-park-of-brusque-q121094903",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "zoologico-municipal-doutor-flavio-leite-ribeir-q56695189",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "zoologico-do-cigs-q102222071",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "zooparque-itatiba-q47785658",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "high-park-zoo-q53336437",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "huntsman-fundy-discovery-aquarium-q136565120",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "zoo-de-falardeau-q66169869",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "la-serena-zoo-q17636165",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "havana-zoo-q6171782",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "parque-real-de-aves-exoticas-q131317892",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "yanacocha-animal-rescue-centre-q131317953",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "ecological-center-of-sonora-q106463993",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tuzoofari-q97529901",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "wameru-zoo-q107573186",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "acuario-nautilus-q140677731",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "huachipa-zoo-park-q63927776",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "mariposario-pilpintuwasi-q20127747",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "zoologico-del-parque-de-la-exposicion-q95689733",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "granja-ecoturistica-yvambopi-q62071864",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "zoologico-do-municipio-de-sao-bernardo-do-camp-q56695186",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "butterfly-conservatory-q125954443",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "monteverde-butterfly-gardens-q141188929",
+"why": "home 200, pages 1",
+"kept": true
+}
+]

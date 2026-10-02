@@ -118,7 +118,7 @@ function siteLink(p) {
     return u.toString();
   } catch (e) { return null; }
 }
-const accredBadge = (p) => p.ac === 'none' ? el('span', { class: 'zf-badge na', text: 'Not accredited' })
+const accredBadge = (p) => p.ac === 'unverified' ? null : p.ac === 'none' ? el('span', { class: 'zf-badge na', text: 'Not accredited' })
   : p.ac === 'protected-area' ? el('span', { class: 'zf-badge', text: 'Protected area' })
   : p.ac === 'unesco' ? el('span', { class: 'zf-badge', text: 'UNESCO World Heritage' })
   : p.ac === 'museum' ? null : el('span', { class: 'zf-badge', text: p.ac.split(',').map((a) => ACCRED_TEXT[a] || a).join(' · ') });
@@ -445,7 +445,7 @@ function popupNode(c) {
   const p = c.p, href = p.u ? siteLink(p) : null;
   return el('div', {}, el('h4', { text: p.n }), el('p', { text: [p.ci, p.rg, countryName(p.cc)].filter(Boolean).join(', ') }),
     c.km !== null ? el('p', { text: fmtDist(c.km) + ' away' }) : null,
-    el('p', { text: p.ac === 'none' ? 'Not accredited' : p.ac === 'museum' ? 'Natural history museum' : p.ac.split(',').map((a) => ACCRED_TEXT[a] || a).join(' · ') }),
+    p.ac === 'unverified' ? null : el('p', { text: p.ac === 'none' ? 'Not accredited' : p.ac === 'museum' ? 'Natural history museum' : p.ac.split(',').map((a) => ACCRED_TEXT[a] || a).join(' · ') }),
     (c.rank === 1 || c.rank === 3) ? el('span', { class: 'pp-unc', text: 'Unconfirmed' }) : null,
     c.rank === 5 ? el('p', { text: 'National park / reserve. Wildlife is never guaranteed.' }) : null,
     href ? el('p', {}, el('a', { href, target: '_blank', rel: 'noopener noreferrer', text: 'Visit website ↗', 'data-rank': c.rank, 'data-type': p.t })) : null);

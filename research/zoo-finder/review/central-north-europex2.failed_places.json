@@ -1,0 +1,932 @@
+[
+{
+"id": "ozeaneum-q525190",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "polaria-q28888",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "zoolandia-q2336198",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tierpark-cottbus-q1395827",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "schmetterlinghaus-q1246454",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "reykjavik-park-and-zoo-q1422518",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "olmen-zoo-q1825496",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "tierpark-zittau-q765055",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "butterfly-garden-grevenmacher-q5002935",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "langedrag-naturpark-q11983144",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "safaripark-ganserndorf-q2211413",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tiergarten-walding-q18577780",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "aquatopia-q2589156",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "juraparc-q1713816",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tierpark-lange-erlen-q1693413",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "betzenberg-wildlife-park-q2570791",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "hirschfeld-wildlife-park-q1538627",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "kurpfalz-park-q1265654",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "olching-bird-park-q1799174",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "tier-und-pflanzenpark-fasanerie-q876440",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tierpark-dessau-q2432276",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "crocodile-zoo-q5187401",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "marselisborg-deer-park-q17111098",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "kitee-zoo-q3303225",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "wasserbillig-aquarium-q31630",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "froso-zoo-q10499804",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "kameltheater-kernhof-q1722919",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tierpark-rosegg-q24232843",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "vogelpark-turnersee-q17514617",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "bois-de-la-batie-q2404630",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "langenberg-wildlife-park-q2570812",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "adler-und-wolfspark-kasselburg-q107171042",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "inselzoo-altenburg-q1664520",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "irrland-q19931292",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tier-und-kulturpark-bischofswerda-q1494249",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tierpark-bad-pyrmont-q129322",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tierpark-gera-q1480506",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "wildpark-dulmen-q15134915",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "wildpark-daun-q1950392",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "wildpark-frankfurt-q2570827",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "wildpark-gangelt-q4538051",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "wildpark-potzberg-q2570837",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "zoologischer-garten-eberswalde-q220243",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "rnereservatet-q12342054",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "heinola-bird-sanctuary-q5489052",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tropicario-q18619542",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "lofotakvariet-q1867915",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "havets-hus-q10294080",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "junsele-zoo-q10541464",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "affenberg-landskron-q382301",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "raritatenzoo-ebbs-q2131737",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "steppentierpark-pamhagen-q55692233",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tiergarten-wels-q19971497",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "wild-und-erlebnispark-ferleiten-q47068187",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "wildpark-ernstbrunn-q2570809",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "zoo-linz-q220053",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "animal-park-eendekooi-q2400230",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "meli-meise-q130746173",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "arosa-barenland-q58212596",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "toni-s-zoo-q2442063",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "wildpark-bruderhaus-q1372195",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "wildpark-muhletali-q63256166",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "wildpark-peter-und-paul-q2570828",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "wildpark-roggenhausen-q22955412",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "adlerwarte-berlebeck-q358501",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "aquarium-wilhelmshaven-q15106696",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "dinklage-wildlife-park-q125949518",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "exotarium-oberhof-q1384171",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "grunes-meer-q20113336",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "haustierhof-reutemuhle-q1591327",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "heimat-tierpark-olderdissen-q1595518",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "leintalzoo-schwaigern-q1815378",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "meereszentrum-fehmarn-q18288410",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "naturwildpark-freisen-q1969865",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "sea-life-konigswinter-q2261870",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "solinger-vogel-und-tierpark-q2298879",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "terrazoo-rheinberg-q2405070",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tiergarten-delitzsch-q2432172",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tiergarten-falkenstein-q1559777",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "tiergarten-halberstadt-q2432176",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tiergarten-hannover-q1676123",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tiergarten-stafurt-q2432191",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tiergarten-stendal-q2432188",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "tiergarten-ulm-q1624934",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "tiergarten-worms-q2432195",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tierpark-angermunde-q2432266",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tierpark-bad-kosen-q110324148",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tierpark-eilenburg-q2432277",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tierpark-freiberg-q70873410",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tierpark-herborn-q1591277",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tierpark-hexentanzplatz-q110965513",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "tierpark-klosterwald-q20666027",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tierpark-limbach-oberfrohna-q2432293",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tierpark-senftenberg-q104725180",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tierpark-strohen-q2432304",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tierpark-weiwasser-q1628644",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tierpark-wismar-q27926364",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tierpark-wittenberg-q54940210",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "trappenkamp-naturerlebnisraum-erlebniswald-q1355417",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "trassenheide-butterfly-farm-q108749991",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tropenzoo-bansin-q1724108",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "vogelpark-abensberg-q2530013",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "vogelpark-biebesheim-q2530017",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "vogelpark-niendorf-q2530029",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "wild-und-freizeitpark-ostrittrum-q18029651",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "wild-park-klaushof-q1280090",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "wildfreigehege-bend-q1245716",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "wildgehege-hellenthal-q1746922",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "wildgehege-moritzburg-q14546448",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "wildparadies-tripsdrill-q1605346",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "wildpark-alte-fasanerie-q2570781",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "wildpark-an-den-eichen-q2570855",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "wildpark-brudergrund-q98755977",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "wildpark-eslarn-q16295423",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "wildpark-gersfeld-q1440716",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "wildpark-mainz-gonsenheim-q2570817",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "wildpark-pforzheim-q2570832",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "wildpark-rolandseck-q23900982",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "wildpark-schorfheide-q2570842",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "wildpark-tannenbusch-q2570851",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "wildtierpark-edersee-q2570807",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "wolfspark-werner-freund-q123686173",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "zoo-zabakuck-q16295025",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "zoo-am-rammelsberg-q105825209",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "zoo-der-minis-q53584875",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "aqua-akvarium-dyrepark-q12300112",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "hadsund-dyrehave-q12314978",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "zoopark-q12341733",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "sarkanniemi-aquarium-q11895750",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "escher-deierepark-q122984293",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tierpark-streichelzoo-wildgehege-hohe-wand-q21877777",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "mont-mosan-q3321963",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "plattli-zoo-q21973904",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "allgauer-schmetterling-erlebniswelt-q119173036",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "aquarium-kiel-q55721657",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "cologne-zoo-aquarium-q105713262",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "darwineum-q18019233",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "erlebnistierpark-jagerhof-q1264982",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "erlebnistierpark-memleben-q117319074",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "falconry-herrmann-q117026538",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "falknerei-bergisch-land-q115287174",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "geising-wildlife-park-q127917633",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "greifvogelpark-saarburg-q80306932",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "hasseldieksdamm-wildlife-park-q94532085",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "ludwigshafen-rheingonheim-wildlife-park-q65511273",
+"why": "home 503, pages 0",
+"kept": true
+},
+{
+"id": "remstecken-q2143175",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "sea-dog-basin-kiel-q55758537",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tannenberg-wildlife-park-q91013319",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tiergarten-am-tiergarten-12-in-nurnberg-q98629586",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tiergarten-am-tiergarten-14-in-nurnberg-q98629587",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tiergarten-am-tiergarten-6-in-nurnberg-q98629583",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tiergarten-sonneberg-q116838438",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tierpark-arche-noah-klotze-q2432310",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tierpark-goppingen-q2432283",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tierpark-klingenthal-q62030381",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "vogel-und-tierpark-irgenod-q15853066",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "vogelpark-plankstadt-q117084324",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "wiesenpark-oschersleben-q2569469",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "wildfreigehege-wolfsrat-q76450708",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "wildgehege-dodenau-q2570709",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "wildgehege-hochhausen-q46595153",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "wildpark-bad-marienberg-q2570784",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "wildpark-bilsteintal-q64221090",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "wildpark-diedrichsburg-q2570794",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "wildpark-frankenhof-q110338619",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "wildpark-malente-q110417990",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "wildpark-schwarzach-q59156904",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "wildpark-volklingen-q105406671",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "zoo-mainz-q220059",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "glad-zoo-q107689682",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "hjortdal-dyrefarm-q57408994",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "jyllandsakvariet-q61771823",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "munkholm-zoo-q66371106",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "nords-akvariet-q12329235",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "resund-aquarium-q12342036",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "drbak-akvarium-q23042702",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "the-little-zoo-q138511426",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "aspuddsparken-q18287104",
+"why": "home 500, pages 0",
+"kept": true
+},
+{
+"id": "gotland-animal-park-q64503995",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "am-schuttel-q130478436",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "parc-a-gibier-de-saint-hubert-q63087627",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tiergarten-am-tiergarten-28-in-nurnberg-q98629590",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tiergehege-am-goldenen-stern-q134425513",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "wildpark-schollbrunn-q67201866",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "zoo-schlichtweg-11-in-munchen-q98740653",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "zoo-siebenbrunner-strae-6-in-munchen-q98740652",
+"why": "not crawled",
+"kept": true
+}
+]
