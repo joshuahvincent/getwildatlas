@@ -21,7 +21,9 @@ eleventyExcludeFromCollections: true
   <a class="back" href="/calendar/">← Back to the calendar</a>
   <h1>Where these dates come from</h1>
 
-  <div class="ab-stat"><b>{{ animalDays.days | length }}</b><span>animal days a year: <strong>{{ officialCount }}</strong> real awareness days and <strong>{{ pickCount }}</strong> Wild Atlas picks.</span></div>
+  {#- Count both lists: the weekly featured days and the also-celebrated days on the grid. -#}
+  {%- set alsoCount = animalDays.alsoCelebrated | length %}
+  <div class="ab-stat"><b>{{ (animalDays.days | length) + alsoCount }}</b><span>animal days a year: <strong>{{ officialCount + alsoCount }}</strong> real awareness days and <strong>{{ pickCount }}</strong> Wild Atlas picks.</span></div>
 
   <h2>We didn't make them up</h2>
   <p>Every official day on the calendar was started by someone else — and different days come from different places:</p>
