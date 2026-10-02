@@ -16,6 +16,9 @@ const ACCRED_TEXT = { AZA: 'AZA accredited', CAZA: 'CAZA accredited', EAZA: 'EAZ
 const POPULAR = ['lion', 'giraffe', 'hippopotamus', 'african_elephant', 'emperor_penguin', 'dolphin', 'tyrannosaurus_rex', 'cow'];
 const SEARCH_TERMS = { tyrannosaurus_rex: 't rex trex dinosaur', velociraptor: 'raptor dinosaur', hippopotamus: 'hippo', african_elephant: 'elephant', great_white_shark: 'shark', hammerhead_shark: 'shark', whale_shark: 'shark', emperor_penguin: 'penguin', atlantic_puffin: 'puffin bird', polar_bear: 'bear', panda: 'giant panda bear', cow: 'cattle farm', pig: 'farm', sheep: 'farm lamb', horse: 'farm pony' };
 
+// Opening view when no animal and no location is set: most visitors are in the USA, so North America by default (Europe / Oceania by browser language)
+const EU = 'GB IE FR DE ES IT NL BE PT CH AT SE NO DK FI PL CZ SK HU RO GR'.split(' '), OC = ['AU', 'NZ'];
+const START_VIEW = OC.includes(HOME_CC) ? [[108, -48], [180, -9]] : EU.includes(HOME_CC) ? [[-12, 34], [38, 62]] : [[-135, 14], [-55, 60]];
 // Analytics (GA4, already on the site). Privacy rule: NEVER send a location, a typed city/postcode, a place name, or a distance.
 // Only non-personal fields: animal id, how the visitor located themselves (method name only), filter value, result tier + place type.
 const TIER_NAME = ['exact', 'unconfirmed', 'relative', 'relative', 'similar', 'wild'];
@@ -295,10 +298,10 @@ function fit(cands) {
   const prim = cands.filter((c) => c.rank <= 3);
   let use = prim.length ? prim : cands;
   if (S.cur && !S.origin && HOME_CC && use.some((c) => c.p.cc === HOME_CC)) use = use.filter((c) => c.p.cc === HOME_CC);
-  if (!S.cur && !S.origin) { map.resize(); map.fitBounds([[-168, -42], [178, 70]], { padding: 10, duration: 0 }); return; }   // world view without Antarctica
+  if (!S.cur && !S.origin) { map.resize(); map.fitBounds(START_VIEW, { padding: 10, duration: 0 }); return; }   // North America (or Europe / Oceania) to start; the visitor can pan out to the world
   (S.origin ? use.slice(0, 8) : use).forEach((c) => pts.push([c.p.lo, c.p.la]));
   if (S.origin) pts.push([S.origin.lo, S.origin.la]);
-  if (!pts.length) { map.jumpTo({ center: [10, 22], zoom: 1.2 }); return; }
+  if (!pts.length) { map.fitBounds(START_VIEW, { padding: 10, duration: 0 }); return; }
   const b = new mapLib.LngLatBounds(pts[0], pts[0]); pts.forEach((p) => b.extend(p));
   map.fitBounds(b, { padding: 48, maxZoom: 8, duration: reducedMotion() ? 0 : 600 });
 }
