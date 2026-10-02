@@ -23,11 +23,11 @@ def q(sql):
     sys.exit('D1 query failed')
 groups = {k: v for k, v in json.load(open(os.path.join(ROOT, 'scripts', 'zoos', 'groups.json'))).items() if not k.startswith('_')}
 group_of = {m: k for k, g in groups.items() for m in g['members']}
-animals = q("select id, common_name, pack, wild_only, in_the_wild from animals where pack in ('safari_stars','ocean_creatures','rainforest_explorers','feathered_friends','reptile_world','wild_americas','planet_pioneers','dino_roars','farm_friends') order by pack, common_name")
+animals = q("select id, common_name, pack, wild_only, in_the_wild from animals where pack in ('safari_stars','ocean_creatures','rainforest_explorers','feathered_friends','reptile_world','wild_americas','planet_pioneers','dino_roars','farm_friends','calendar') order by pack, common_name")
 anim = {a['id']: a for a in animals}
 places = q("select id,name,type,town,region,country,lat,lng,url,accreditation,image_file,image_license,image_author,status,area_km2,unesco from places where status='open' and lat is not null and lng is not null order by country, name")
 pidx = {p['id']: i for i, p in enumerate(places)}
-hold = q("select place_id,animal_id,match,species_seen,via,related_rationale,evidence_tier,check_status,display_until,source_url,confidence,obs_count from holdings where check_status!='gone' and animal_id in (select id from animals where pack in ('safari_stars','ocean_creatures','rainforest_explorers','feathered_friends','reptile_world','wild_americas','planet_pioneers','dino_roars','farm_friends'))")
+hold = q("select place_id,animal_id,match,species_seen,via,related_rationale,evidence_tier,check_status,display_until,source_url,confidence,obs_count from holdings where check_status!='gone' and animal_id in (select id from animals where pack in ('safari_stars','ocean_creatures','rainforest_explorers','feathered_friends','reptile_world','wild_americas','planet_pioneers','dino_roars','farm_friends','calendar'))")
 wild_ids = {p['id'] for p in places if p['type'] == 'sanctuary'}
 by_animal, by_place_animals = {}, {}
 for h in hold:
@@ -73,6 +73,6 @@ for aid, a in anim.items():
     doc = {'id': aid, 'name': a['common_name'], 'kind': kind, 'wild_only': bool(a['wild_only']), 'e': e, 'r': r, 'g': g, 'w': w}
     if gk: doc['group'] = {'key': gk, 'label': groups[gk]['label']}
     json.dump(doc, open(os.path.join(OUT, 'a', aid + '.json'), 'w'), separators=(',', ':'), ensure_ascii=False)
-    cover.append({'id': aid, 'n': a['common_name'], 'pack': a['pack'], 'k': kind, 'e': len(e), 'r': len(r), 'g': len(g), 'w': len(w)})
+    if a['pack'] != 'calendar': cover.append({'id': aid, 'n': a['common_name'], 'pack': a['pack'], 'k': kind, 'e': len(e), 'r': len(r), 'g': len(g), 'w': len(w)})
 json.dump({'generated': TODAY, 'animals': cover, 'groups': {k: {'label': v['label'], 'members': v['members']} for k, v in groups.items()}}, open(os.path.join(OUT, 'animals.json'), 'w'), separators=(',', ':'), ensure_ascii=False)
 print('places', len(P), 'animals', len(cover), 'holdings used', sum(len(v) for v in by_animal.values()))

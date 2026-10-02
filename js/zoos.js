@@ -82,8 +82,8 @@ function sortCands(list) {
 }
 // "All animals" view (no animal chosen): every zoo, aquarium, safari park and museum, so the page starts as a world map
 function allCandidates() {
-  return S.places.map((p, pi) => ({ pi, rank: 0, p, km: S.origin ? haversineKm({ la: S.origin.la, lo: S.origin.lo }, p) : null }))
-    .filter((c) => c.p.t !== 'farm' && c.p.t !== 'wild' && (c.km === null || c.km <= S.maxKm));
+  return S.places.map((p, pi) => ({ pi, rank: p.t === 'wild' ? 5 : 0, p, km: S.origin ? haversineKm({ la: S.origin.la, lo: S.origin.lo }, p) : null }))
+    .filter((c) => c.p.t !== 'farm' && (c.km === null || c.km <= S.maxKm));
 }
 
 // ---------- rendering ----------
@@ -91,6 +91,7 @@ function allCandidates() {
 function noteFor(c) {
   if (!S.cur) return { text: '', weak: false };
   const k = S.cur.kind;
+  if (c.rank === 5 && !S.cur) return { text: 'National park or reserve. Wildlife is never guaranteed.', weak: false };
   if (c.rank === 5) {
     const n = c.obs || 0;
     return { text: (c.via ? 'A close relative is recorded here: ' + c.via + '. ' : (n >= 25 ? 'Recorded here by visitors and researchers (open data). ' : 'A few sightings recorded here. ')) + 'Wildlife is never guaranteed.', weak: false };
@@ -171,8 +172,9 @@ function render() {
   const d = S.cur, box = $('zf-results'); box.textContent = '';
   $('zf-quick').hidden = !!d && !S.unknown ? true : false; updateSummary();
   if (!d) {
-    const everyone = sortCands(allCandidates());
-    if (everyone.length) box.append(section('All zoos, aquariums and museums', '(' + everyone.length.toLocaleString('en') + ')', everyone));
+    const everyone = sortCands(allCandidates()), zoosAll = everyone.filter((c) => c.rank === 0), parksAll = everyone.filter((c) => c.rank === 5);
+    if (zoosAll.length) box.append(section('All zoos, aquariums and museums', '(' + zoosAll.length.toLocaleString('en') + ')', zoosAll));
+    if (parksAll.length) box.append(section('See it in the wild', '(' + parksAll.length.toLocaleString('en') + ' national parks and reserves)', parksAll));
     else box.append(el('div', { class: 'zf-empty' }, el('p', { text: 'Nothing within that distance.' }), Number.isFinite(S.maxKm) ? el('button', { type: 'button', class: 'zf-btn', id: 'zf-widen', text: 'Search any distance' }) : null));
     const where = S.origin ? 'Closest first, from ' + (S.origin.label === 'your location' ? 'your location' : S.origin.label) + '.' : 'Add your location to put the closest first.';
     $('zf-status').textContent = (S.unknown ? 'We can\u2019t find \u201c' + S.unknown + '\u201d yet, so here are animal places ' + (S.origin ? 'near you' : 'to start with') + '. ' : 'Showing every place. Search for an animal to narrow it down. ') + (S.unknown ? '' : where);
@@ -355,10 +357,12 @@ function getLocation() {
   navigator.geolocation.getCurrentPosition((pos) => {
     btn.disabled = false;
     setOrigin({ method: 'geolocation', la: pos.coords.latitude, lo: pos.coords.longitude, label: 'your location', fromGeo: true });
-  }, () => {
+  }, (err) => {
     btn.disabled = false;
-    st.textContent = 'No problem. We could not use your location, so try typing a city or postcode.';
-  }, { maximumAge: 600000, timeout: 12000 });
+    // 1 = blocked / no permission UI (some in-app browsers can not show the prompt), 2 = position unavailable, 3 = timed out
+    st.textContent = err && err.code === 1 ? 'Your browser did not allow location for this page (some in-app browsers can not ask). You can type a city or postcode instead, or open this page in Chrome or Safari.'
+      : err && err.code === 3 ? 'Finding you took too long. Try again, or type a city or postcode.' : 'We could not work out where you are. Please type a city or postcode instead.';
+  }, { maximumAge: 600000, timeout: 15000 });
 }
 let cities = null, citiesLoading = null; const postal = {};
 const loadCities = () => cities ? Promise.resolve(cities) : (citiesLoading = citiesLoading || loadJson('/assets/zoos/geo/cities.json').then((c) => (cities = c.map((r) => ({ n: r[0], a: norm(r[1]), nn: norm(r[0]), cc: r[2], la: r[3], lo: r[4], pop: r[5], st: r[6] })))));

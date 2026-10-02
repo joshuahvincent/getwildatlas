@@ -1,0 +1,22 @@
+[
+ {"id":"amur_tiger","name":"Amur Tiger","sci":"Panthera tigris","note":"subspecies altaica; matched at species level"},
+ {"id":"axolotl","name":"Axolotl","sci":"Ambystoma mexicanum"},
+ {"id":"fruit_bat","name":"Fruit Bat (large flying fox)","sci":"Pteropus vampyrus"},
+ {"id":"cassowary","name":"Southern Cassowary","sci":"Casuarius casuarius"},
+ {"id":"clouded_leopard","name":"Clouded Leopard","sci":"Neofelis nebulosa"},
+ {"id":"gibbon","name":"Lar Gibbon","sci":"Hylobates lar"},
+ {"id":"pallas_cat","name":"Pallas's Cat","sci":"Otocolobus manul"},
+ {"id":"harp_seal","name":"Harp Seal","sci":"Pagophilus groenlandicus"},
+ {"id":"west_indian_manatee","name":"West Indian Manatee","sci":"Trichechus manatus"},
+ {"id":"numbat","name":"Numbat","sci":"Myrmecobius fasciatus"},
+ {"id":"koala","name":"Koala","sci":"Phascolarctos cinereus"},
+ {"id":"wombat","name":"Common Wombat","sci":"Vombatus ursinus"},
+ {"id":"bonobo","name":"Bonobo","sci":"Pan paniscus"},
+ {"id":"sea_otter","name":"Sea Otter","sci":"Enhydra lutris"},
+ {"id":"pangolin","name":"Chinese Pangolin","sci":"Manis pentadactyla"},
+ {"id":"galapagos_giant_tortoise","name":"Galápagos Giant Tortoise","sci":"Chelonoidis *","note":"species complex; genus level"},
+ {"id":"humpback_whale","name":"Humpback Whale","sci":"Megaptera novaeangliae"},
+ {"id":"arctic_tern","name":"Arctic Tern","sci":"Sterna paradisaea"},
+ {"id":"golden_snub_nosed_monkey","name":"Golden Snub-nosed Monkey","sci":"Rhinopithecus roxellana"},
+ {"id":"quokka","name":"Quokka","sci":"Setonix brachyurus"}
+]

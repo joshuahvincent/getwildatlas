@@ -31,6 +31,12 @@ for a in arr:
                % (q(a['id']), q(a.get('common_name')), q(t.get('scientific_name')), q(a['category']['pack_id']),
                   1 if n.get('wild_only') else 0, q(n.get('in_the_wild'))))
 
+# extra (calendar) animals: GBIF-only, hidden from the /zoos/ search (pack 'calendar'); added so their park sightings have an animal row to attach to
+extra_p = os.path.join(RAW, 'extra_animals.json')
+if os.path.exists(extra_p):
+    for a in json.load(open(extra_p)):
+        out.append("INSERT INTO animals (id,common_name,scientific_name,pack,wild_only,in_the_wild) VALUES (%s,%s,%s,'calendar',0,NULL) ON CONFLICT(id) DO UPDATE SET common_name=excluded.common_name, scientific_name=excluded.scientific_name;"
+                   % (q(a['id']), q(a['name']), q(a['sci'].replace(' *', ''))))
 # places
 ID_FIX = {'museum-f-r-naturkunde': 'museum-fur-naturkunde', 'museo-del-jur-sico-de-asturias': 'museo-del-jurasico-de-asturias'}
 places, by_qid, by_norm = {}, {}, {}
