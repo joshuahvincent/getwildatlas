@@ -2,7 +2,7 @@
 title: "Reindeer Facts for Kids — The Only Deer Where the Girls Grow Antlers Too"
 date: 2026-12-23
 author: Wild Atlas
-excerpt: "This week's Wild Atlas pick: the reindeer! Meet the only deer where the girls grow antlers too, plus a read-aloud story and where to see a real one."
+excerpt: "This week's Wild Atlas Spotlight: the reindeer! Meet the only deer where the girls grow antlers too, plus a read-aloud story and where to see a real one."
 coverImage: /assets/blog/reindeer-facts-for-kids/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
@@ -11,7 +11,7 @@ animalDay:
   animalName: reindeer
   animalArticle: a
   campaign: reindeer_wildcard_2026
-  greeting: "**This week's Wild Atlas pick: the reindeer.** There's no official Reindeer Day on the calendar — reindeer do get their own day, World Caribou Day, every June 6 — but with the holidays here, it felt like exactly the right week to meet the real animal behind the sleigh."
+  greeting: "**This week's Wild Atlas Spotlight: the reindeer.** There's no official Reindeer Day on the calendar — reindeer do get their own day, World Caribou Day, every June 6 — but with the holidays here, it felt like exactly the right week to meet the real animal behind the sleigh."
   readAloudNote: "Read this one out loud together — it's short, and it's even more fun with a little jingle in your voice."
   whereToSee:
     heading: Where to see a reindeer

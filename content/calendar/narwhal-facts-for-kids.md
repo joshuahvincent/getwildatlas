@@ -11,7 +11,7 @@ animalDay:
   animalName: narwhal
   animalArticle: a
   campaign: narwhal_facts_for_kids_2026
-  greeting: "**This week's Wild Atlas pick:** to finish the year, we're heading to the top of the world — all the way to the icy Arctic Ocean — to meet one of the strangest, most wonderful animals alive."
+  greeting: "**This week's Wild Atlas Spotlight:** to finish the year, we're heading to the top of the world — all the way to the icy Arctic Ocean — to meet one of the strangest, most wonderful animals alive."
   readAloudNote: "Read this one out loud together — it's short, and it's more fun with a swooshy, underwater voice."
   whereToSee:
     heading: Where to see a narwhal

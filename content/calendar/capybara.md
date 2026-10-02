@@ -7,14 +7,14 @@ coverImage: /assets/animals/capybara/cover.jpg
 tags: [animals, conservation, family]
 appId: capybara
 animalDay:
-  dayName: Wild Atlas pick
+  dayName: Wild Atlas Spotlight
   animalId: capybara
   animalName: capybara
   animalArticle: a
   campaign: animal_capybara
-  greeting: "**Meet the capybara!** There's no official capybara day on the calendar, so this one is simply a Wild Atlas pick — the calmest, friendliest giant we know."
+  greeting: "**Meet the capybara!** There's no official capybara day on the calendar, so this one is simply a Wild Atlas Spotlight — the calmest, friendliest giant we know."
   celebratedOn:
-    - day: Wild Atlas pick
+    - day: Wild Atlas Spotlight
       date: "2026-07-09"
       origin: ""
       sourceUrl: ""

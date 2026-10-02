@@ -10,7 +10,7 @@ animalDay:
   animalName: quokka
   animalArticle: a
   campaign: quokka_wildcard_2026
-  greeting: "**This week's Wild Atlas pick: the quokka.** No quokka day falls today — Rottnest Island has held an informal 'Quokka Birthday' in September, and it's long over by December — but once you hear about the island named after a giant-rat mistake, we couldn't wait to tell you."
+  greeting: "**This week's Wild Atlas Spotlight: the quokka.** No quokka day falls today — Rottnest Island has held an informal 'Quokka Birthday' in September, and it's long over by December — but once you hear about the island named after a giant-rat mistake, we couldn't wait to tell you."
   readAloudNote: "Read this one out loud together — it's short, and it's even better with your biggest smile."
   whereToSee:
     heading: Where to see a quokka

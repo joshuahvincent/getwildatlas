@@ -1,10 +1,10 @@
 {
- "_note": "Wild Atlas animal calendar. Source of truth: Notion 'Wild Atlas — Conservation Calendar'. `official` = a real awareness day set by others; false = a Wild Atlas pick week. `slug` links /calendar/<slug>/ once that page exists.",
+ "_note": "Wild Atlas animal calendar. Source of truth: Notion 'Wild Atlas — Conservation Calendar'. `official` = a real awareness day set by others; false = a Wild Atlas Spotlight week. `slug` links /calendar/<slug>/ once that page exists.",
  "days": [
   {
    "date": "2026-07-09",
    "animal": "Capybara",
-   "day": "Wild Atlas pick",
+   "day": "Wild Atlas Spotlight",
    "official": false,
    "appId": "capybara"
   },
@@ -20,7 +20,7 @@
   {
    "date": "2026-07-23",
    "animal": "Axolotl",
-   "day": "Wild Atlas pick",
+   "day": "Wild Atlas Spotlight",
    "official": false,
    "appId": "axolotl"
   },
@@ -161,7 +161,7 @@
   {
    "date": "2026-11-12",
    "animal": "Wombat",
-   "day": "Wild Atlas pick",
+   "day": "Wild Atlas Spotlight",
    "official": false,
    "slug": "wombat-facts-for-kids",
    "appId": "wombat"
@@ -193,7 +193,7 @@
   {
    "date": "2026-12-10",
    "animal": "Quokka",
-   "day": "Wild Atlas pick",
+   "day": "Wild Atlas Spotlight",
    "official": false,
    "slug": "quokka-facts-for-kids"
   },
@@ -207,14 +207,14 @@
   {
    "date": "2026-12-23",
    "animal": "Reindeer",
-   "day": "Wild Atlas pick",
+   "day": "Wild Atlas Spotlight",
    "official": false,
    "slug": "reindeer-facts-for-kids"
   },
   {
    "date": "2026-12-30",
    "animal": "Narwhal",
-   "day": "Wild Atlas pick",
+   "day": "Wild Atlas Spotlight",
    "official": false,
    "slug": "narwhal-facts-for-kids",
    "appId": "narwhal"
@@ -230,7 +230,7 @@
   {
    "date": "2027-01-14",
    "animal": "Snow Leopard",
-   "day": "Wild Atlas pick",
+   "day": "Wild Atlas Spotlight",
    "official": false,
    "slug": "snow-leopard-facts-for-kids",
    "appId": "snow_leopard"
@@ -303,7 +303,7 @@
   {
    "date": "2027-03-11",
    "animal": "Humpback Whale",
-   "day": "Wild Atlas pick",
+   "day": "Wild Atlas Spotlight",
    "official": false,
    "slug": "humpback-whale-facts-for-kids"
   },
@@ -373,7 +373,7 @@
   {
    "date": "2027-05-12",
    "animal": "Arctic Tern",
-   "day": "Wild Atlas pick",
+   "day": "Wild Atlas Spotlight",
    "official": false,
    "slug": "arctic-tern-facts-for-kids"
   },

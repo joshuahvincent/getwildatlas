@@ -10,7 +10,7 @@ animalDay:
   animalName: Arctic tern
   animalArticle: an
   campaign: arctic_tern_facts_for_kids_2027
-  greeting: "**This week's Wild Atlas pick:** last Saturday was World Migratory Bird Day, so this week we're following the greatest traveler of them all — a bird that flies from one end of the Earth to the other, every single year."
+  greeting: "**This week's Wild Atlas Spotlight:** last Saturday was World Migratory Bird Day, so this week we're following the greatest traveler of them all — a bird that flies from one end of the Earth to the other, every single year."
   readAloudNote: "Read this one out loud together — it's short, and it's even better with your best 'kee-yah' bird call."
   whereToSee:
     heading: Where to see an Arctic tern

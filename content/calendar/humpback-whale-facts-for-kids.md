@@ -2,7 +2,7 @@
 title: "Humpback Whale Facts for Kids — The Singer of the Sea"
 date: 2027-03-11
 author: Wild Atlas
-excerpt: "This week's Wild Atlas pick is the humpback whale — the singer of the sea, with flippers so big its name means \"big-winged.\" A read-aloud, plus real places to see one in the wild."
+excerpt: "This week's Wild Atlas Spotlight is the humpback whale — the singer of the sea, with flippers so big its name means \"big-winged.\" A read-aloud, plus real places to see one in the wild."
 coverImage: /assets/blog/humpback-whale-facts-for-kids/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
@@ -10,7 +10,7 @@ animalDay:
   animalName: humpback whale
   animalArticle: a
   campaign: humpback_whale_facts_for_kids_2027
-  greeting: "**This week's Wild Atlas pick: the humpback whale.** We missed World Whale Day last month (it was February 21), so here's our make-up celebration — and once you hear about a male humpback's song, you'll understand the wait."
+  greeting: "**This week's Wild Atlas Spotlight: the humpback whale.** We missed World Whale Day last month (it was February 21), so here's our make-up celebration — and once you hear about a male humpback's song, you'll understand the wait."
   readAloudNote: "Read this one out loud together — it's short, and it's even better with a long, low singing voice."
   whereToSee:
     heading: Where to see a humpback whale

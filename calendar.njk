@@ -35,7 +35,12 @@ eleventyExcludeFromCollections: true
   .about-legend { font-size: 0.82rem; color: var(--muted) !important; margin-top: 0.8rem !important; }
   .lg { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -1px; }
   .lg-live { background: var(--bark); } .lg-soon { border: 2px dashed rgba(93, 64, 55, 0.5); } .lg-today { background: var(--sunny); }
-  .pick-badge { display: inline-block; font-family: 'Fredoka', sans-serif; font-size: 0.72rem; font-weight: 600; background: #E4F4EC; color: #2F6B4F; border-radius: 999px; padding: 0 8px; white-space: nowrap; }
+  .pick-badge { display: inline-block; font-family: 'Fredoka', sans-serif; font-size: 0.72rem; font-weight: 600; background: #FFD166; color: #5D4037; border-radius: 999px; padding: 0 8px; white-space: nowrap; }
+  .pick-badge::before { content: "\2605  "; }
+  /* Wild Atlas Spotlight weeks: ours, not an official awareness day — warm card, gold border, star tag. */
+  .bc-feat.spotlight, .ag-feat.spotlight { background: #FFF4CC; border-color: #E0A800; }
+  .bc-feat.spotlight .bc-day { color: #7a5a00; }
+  .bc-feat.spotlight .bc-day::before { content: "\2605 "; }
   .cal-month { margin: 0 0 2.25rem; scroll-margin-top: 90px; }
   .cal-month h2 { font-family: 'Fredoka', sans-serif; color: var(--bark); font-size: 1.55rem; margin: 0 0 0.8rem; }
   .cal-month h2 .now { font-size: 0.75rem; background: var(--sunny); border-radius: 999px; padding: 2px 10px; vertical-align: middle; margin-left: 8px; }
@@ -155,7 +160,7 @@ eleventyExcludeFromCollections: true
   <p>Animal lovers around the world already celebrate these days — we didn't make them up. For each one, we've made a short read-aloud story to share with your kids. <a class="dates-link" href="/calendar/about/">Where these dates come from →</a></p>
 </header>
 
-<p class="cal-key"><span class="k-feat"></span> Featured animal — tap for its page &nbsp;·&nbsp; <span class="k-dot"></span> Also celebrated that day &nbsp;·&nbsp; <span class="pick-badge">Wild Atlas pick</span> a week with no official animal day, so we chose a favourite</p>
+<p class="cal-key"><span class="k-feat"></span> Featured animal — tap for its page &nbsp;·&nbsp; <span class="k-dot"></span> Also celebrated that day &nbsp;·&nbsp; <span class="pick-badge">Wild Atlas Spotlight</span> a week with no official animal day, so we chose a favourite</p>
 
 <nav class="month-strip" aria-label="Choose a month">
   {%- for m in months %}
@@ -181,8 +186,8 @@ eleventyExcludeFromCollections: true
         <span class="bc-num">{{ c.day }}</span>
         {%- if c.ev %}
           {%- set evLabel = c.ev.animal if c.ev.official else c.ev.animal %}
-          {%- if c.ev.url %}<a class="bc-feat" href="{{ c.ev.url }}" title="{{ c.ev.day }} — {{ c.ev.animal }}">{% if c.ev.image %}<img src="{{ c.ev.image }}" alt="" loading="lazy">{% endif %}<span class="bc-name">{{ evLabel }}</span><span class="bc-day">{% if c.ev.official %}{{ c.ev.day }}{% else %}Wild Atlas pick{% endif %}</span></a>
-          {%- else %}<div class="bc-feat soon" title="{{ c.ev.day }} — {{ c.ev.animal }}"><span class="bc-name">{{ evLabel }}</span><span class="bc-day">{% if c.ev.official %}{{ c.ev.day }}{% else %}Wild Atlas pick{% endif %}</span></div>{% endif %}
+          {%- if c.ev.url %}<a class="bc-feat{% if not c.ev.official %} spotlight{% endif %}" href="{{ c.ev.url }}" title="{{ c.ev.day }} — {{ c.ev.animal }}">{% if c.ev.image %}<img src="{{ c.ev.image }}" alt="" loading="lazy">{% endif %}<span class="bc-name">{{ evLabel }}</span><span class="bc-day">{% if c.ev.official %}{{ c.ev.day }}{% else %}Spotlight{% endif %}</span></a>
+          {%- else %}<div class="bc-feat soon{% if not c.ev.official %} spotlight{% endif %}" title="{{ c.ev.day }} — {{ c.ev.animal }}"><span class="bc-name">{{ evLabel }}</span><span class="bc-day">{% if c.ev.official %}{{ c.ev.day }}{% else %}Spotlight{% endif %}</span></div>{% endif %}
         {%- endif %}
         {%- for a in c.also %}{% if loop.index <= (1 if c.ev else 3) %}
           {%- if loop.first and not c.ev and a.image and a.url %}<a class="bc-mini" href="{{ a.url }}" title="{{ a.day }}"><img src="{{ a.image }}" alt="" loading="lazy"><span class="bc-mini-name">{{ a.day }}</span></a>
@@ -199,8 +204,8 @@ eleventyExcludeFromCollections: true
       <span class="cal-date"><b>{{ c.day }}</b><span>{{ c.iso | weekday }}</span></span>
       <div class="ag-body">
         {%- if c.ev %}
-          {%- if c.ev.url %}<a class="ag-feat" href="{{ c.ev.url }}">{% if c.ev.image %}<img src="{{ c.ev.image }}" alt="" loading="lazy">{% endif %}<span><strong>{% if c.ev.official %}{{ c.ev.day }}{% else %}{{ c.ev.animal }}{% endif %}</strong><br>{% if c.ev.official %}{{ c.ev.animal }}{% else %}<span class="pick-badge">Wild Atlas pick</span>{% endif %}</span></a>
-          {%- else %}<div class="ag-feat soon"><span><strong>{% if c.ev.official %}{{ c.ev.day }}{% else %}{{ c.ev.animal }}{% endif %}</strong><br>{% if c.ev.official %}{{ c.ev.animal }}{% else %}<span class="pick-badge">Wild Atlas pick</span>{% endif %}</span></div>{% endif %}
+          {%- if c.ev.url %}<a class="ag-feat{% if not c.ev.official %} spotlight{% endif %}" href="{{ c.ev.url }}">{% if c.ev.image %}<img src="{{ c.ev.image }}" alt="" loading="lazy">{% endif %}<span><strong>{% if c.ev.official %}{{ c.ev.day }}{% else %}{{ c.ev.animal }}{% endif %}</strong><br>{% if c.ev.official %}{{ c.ev.animal }}{% else %}<span class="pick-badge">Wild Atlas Spotlight</span>{% endif %}</span></a>
+          {%- else %}<div class="ag-feat soon{% if not c.ev.official %} spotlight{% endif %}"><span><strong>{% if c.ev.official %}{{ c.ev.day }}{% else %}{{ c.ev.animal }}{% endif %}</strong><br>{% if c.ev.official %}{{ c.ev.animal }}{% else %}<span class="pick-badge">Wild Atlas Spotlight</span>{% endif %}</span></div>{% endif %}
         {%- endif %}
         {%- for a in c.also %}{% if a.url %}<a class="ag-also{% if a.image %} has-thumb{% endif %}" href="{{ a.url }}">{% if a.image %}<img class="ag-thumb" src="{{ a.image }}" alt="" loading="lazy">{% endif %}<span>{{ a.day }}</span></a>{% else %}<span class="ag-also">{{ a.day }}</span>{% endif %}{% endfor %}
       </div>

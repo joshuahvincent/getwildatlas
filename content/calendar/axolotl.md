@@ -7,14 +7,14 @@ coverImage: /assets/animals/axolotl/cover.jpg
 tags: [animals, conservation, family]
 appId: axolotl
 animalDay:
-  dayName: Wild Atlas pick
+  dayName: Wild Atlas Spotlight
   animalId: axolotl
   animalName: axolotl
   animalArticle: an
   campaign: animal_axolotl
   greeting: "**Meet the axolotl!** People around the world celebrate it on Axolotl Day, every February 1 — a day that honors Mexico, where axolotls come from."
   celebratedOn:
-    - day: Wild Atlas pick
+    - day: Wild Atlas Spotlight
       date: "2026-07-23"
       origin: ""
       sourceUrl: ""
