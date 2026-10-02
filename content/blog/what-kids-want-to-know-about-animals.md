@@ -6,6 +6,7 @@ author: Joshuah Vincent
 excerpt: "The dangerous ones. The venomous ones. The enormous ones. And why those questions are exactly the right place to start."
 permalink: /blog/what-kids-want-to-know-about-animals/
 coverImage: /assets/blog/animal-questions/WA_adhoc_scale_orca_iphone_en-US_raw.png
+thumbImage: /assets/blog/thumbs/what-kids-want-to-know-about-animals.jpg
 tags: [education, animals]
 ---
 

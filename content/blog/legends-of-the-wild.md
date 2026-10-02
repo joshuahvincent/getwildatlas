@@ -6,6 +6,7 @@ author: Wild Atlas
 excerpt: "Legends of the Wild is a new pack in Wild Atlas — 18 rare and remarkable animals, each so extraordinary the world gave it its own day on the calendar."
 permalink: /blog/legends-of-the-wild/
 coverImage: /assets/blog/legends-of-the-wild-hero.png
+thumbImage: /assets/blog/thumbs/legends-of-the-wild.jpg
 tags: [product, packs]
 ---
 
