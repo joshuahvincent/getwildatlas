@@ -10,10 +10,10 @@
 .zf-animalfield .zf-input { padding-right: 2.3rem; }
 .zf-clear { position: absolute; right: .35rem; top: 50%; transform: translateY(-50%); width: 34px; height: 34px; border: 0; border-radius: 50%; background: transparent; font-size: 1.4rem; line-height: 1; color: var(--muted); cursor: pointer; }
 .zf-clear:hover { background: #f1e6cf; }
-.zf-btn { font: inherit; font-weight: 700; padding: .6rem 1.1rem; border-radius: 999px; border: 0; background: var(--zf-accent); color: #fff; cursor: pointer; min-height: 46px; display: inline-flex; align-items: center; gap: .4rem; white-space: nowrap; }
+.zf-btn { font: inherit; font-weight: 700; padding: .6rem 1.1rem; border-radius: 999px; border: 0; background: var(--zf-accent, #B04E22); color: #fff; cursor: pointer; min-height: 46px; display: inline-flex; align-items: center; gap: .4rem; white-space: nowrap; }
 .zf-btn:hover { filter: brightness(.94); }
 .zf-btn:disabled { opacity: .6; cursor: default; }
-.zf-btn-quiet { background: #f1e6cf; color: var(--ink); }
+.zf-btn-quiet { background: #f1e6cf; color: var(--ink, #2A2118); }
 .zf-input:focus-visible, .zf-btn:focus-visible, .zf-clear:focus-visible, .zf-card a:focus-visible, .zf-card button:focus-visible, .zf-tabs button:focus-visible, .zf-quick button:focus-visible, .zf-chip input:focus-visible + span, .zf-more summary:focus-visible { outline: 3px solid var(--zf-focus); outline-offset: 2px; box-shadow: 0 0 0 5px #FFF5E1; }
 .zf-line2 { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem; margin: .55rem 0 .2rem; }
 .zf-dist { border: 0; padding: 0; margin: 0; min-width: 0; }
@@ -137,7 +137,7 @@
 @media (max-width: 640px) { .zf-privacy { display: block; flex-basis: 100%; } .zf-privacy::before { content: none; } }
 
 /* location permission dialog */
-.zf-dialog { border: 0; border-radius: 18px; padding: 1.4rem 1.5rem 1.2rem; max-width: min(92vw, 26rem); color: var(--ink); box-shadow: 0 20px 60px rgba(0,0,0,.3); background: #fff; }
+.zf-dialog { --zf-accent: #B04E22; --ink: #2A2118; --muted: #5b4f3d; --zf-focus: #2A2118; border: 0; border-radius: 18px; padding: 1.4rem 1.5rem 1.2rem; max-width: min(92vw, 26rem); color: var(--ink); box-shadow: 0 20px 60px rgba(0,0,0,.3); background: #fff; }
 .zf-dialog::backdrop { background: rgba(42,33,24,.55); }
 .zf-dialog h2 { margin: 0 0 .5rem; font-size: 1.25rem; }
 .zf-dialog p { margin: 0 0 .7rem; }
