@@ -2092,6 +2092,23 @@ body { padding-top: var(--promo-h); }
   color: #fff;
 }
 
+/* Homepage newsletter band, compact (Josh 2026-10-02: about half the height).
+   Desktop: two columns inside one wide card — pitch on the left, form on the
+   right — with the secondary "sub" line dropped. Phones keep the stacked card. */
+.email-signup.email-signup--band { padding: var(--space-xl) 0; }
+@media (min-width: 861px) {
+  .email-signup--band .email-signup-inner {
+    max-width: 1000px; text-align: left; padding: var(--space-lg) var(--space-xl);
+    display: grid; grid-template-columns: 1fr 1.1fr; column-gap: var(--space-xl); align-items: center;
+  }
+  .email-signup--band .email-signup-inner > :not(form) { grid-column: 1; }
+  .email-signup--band .email-signup-form { grid-column: 2; grid-row: 1 / span 4; }
+  .email-signup--band .email-signup-sub { display: none; }
+  .email-signup--band .email-signup-heading { margin-bottom: var(--space-xs); }
+  .email-signup--band .email-signup-incentive { margin: 0; justify-content: flex-start; text-align: left; }
+  .email-signup--band .email-signup-consent, .email-signup--band .email-signup-fine { margin-top: var(--space-xs); }
+}
+
 /* ── From the World Wildlife Calendar (js/calendar-card.js) ──
    One short row under the trust strip: thumbnail, day + date, "Get more info". */
 .calday { padding: var(--space-lg) 0; background: var(--sky-wash); border-bottom: var(--stroke) solid rgba(93, 64, 55, 0.06); }
