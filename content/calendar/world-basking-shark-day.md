@@ -4,10 +4,14 @@ title: "World Basking Shark Day: The Gentle Giant With a Giant Mouth"
 date: 2026-11-03
 author: Wild Atlas
 excerpt: "Meet the basking shark: the second-biggest fish in the sea, and a gentle one that only eats tiny floating food. A read-aloud page for families."
+coverImage: /assets/calendar-days/world-basking-shark-day/cover.jpg
 tags: [animals, conservation, family]
 simpleDay:
   campaign: day_world_basking_shark_day
   greeting: "**Happy World Basking Shark Day!** Today we say hello to a shark as long as a bus that only eats the tiniest food in the ocean."
+  image:
+    src: /assets/calendar-days/world-basking-shark-day/cover.jpg
+    alt: "A basking shark glides through sun-dappled teal water with its huge mouth wide open, filtering plankton, lit by sun rays from above — cool green coastal waters of the North Atlantic"
   origin:
     text: "Founded by Basking Shark Scotland, a UK wildlife tour operator, to raise awareness of the endangered basking shark."
     sourceUrl: https://baskingsharkscotland.co.uk/basking-sharks/world-basking-shark-day/

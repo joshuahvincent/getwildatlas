@@ -4,10 +4,14 @@ title: "National Threatened Species Day: What It Is and How Your Family Can Help
 date: 2026-09-07
 author: Wild Atlas
 excerpt: "An Australian day to remember the thylacine and to look after the wild animals that need our help today."
+coverImage: /assets/calendar-days/national-threatened-species-day/cover.jpg
 tags: [animals, conservation, family, calendar]
 simpleDay:
   campaign: day_national_threatened_species_day
   greeting: "**Happy National Threatened Species Day!** Today people in Australia look after the animals and plants that need a helping hand."
+  image:
+    src: /assets/calendar-days/national-threatened-species-day/cover.jpg
+    alt: "Tasmanian devils walk along a mossy log in the forest — eucalyptus forest and coastal scrub of Tasmania"
   origin:
     text: "Australia declared this day in 1996. The date marks when the last known thylacine died at Hobart Zoo in 1936."
     sourceUrl: "https://www.holidays-and-observances.com/animal-holidays.html"

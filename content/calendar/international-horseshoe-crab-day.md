@@ -4,10 +4,14 @@ title: "International Horseshoe Crab Day: A Very Old Beach Visitor"
 date: 2027-06-20
 author: Wild Atlas
 excerpt: "Horseshoe crabs have been around for hundreds of millions of years. A read-aloud for International Horseshoe Crab Day."
+coverImage: /assets/calendar-days/international-horseshoe-crab-day/cover.jpg
 tags: [animals, conservation, family, calendar]
 simpleDay:
   campaign: day_international_horseshoe_crab_day
   greeting: "**Happy International Horseshoe Crab Day!** Let's meet a hard-shelled beach visitor from long, long ago."
+  image:
+    src: /assets/calendar-days/international-horseshoe-crab-day/cover.jpg
+    alt: "An Atlantic horseshoe crab rests on rippled sand in shallow, clear sunlit water — sandy beaches of Delaware Bay at the water's edge"
   origin:
     text: "The IUCN Species Survival Commission's Horseshoe Crab Specialist Group designated this day in 2020."
     sourceUrl: "https://iucn.org/news/species-survival-commission/202006/international-horseshoe-crab-day-a-celebration-flagship-species-coastal-habitat-conservation"
