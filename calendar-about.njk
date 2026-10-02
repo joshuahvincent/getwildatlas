@@ -13,7 +13,9 @@ eleventyExcludeFromCollections: true
   .ab h1 { font-family: 'Fredoka', sans-serif; color: var(--bark); font-size: clamp(1.9rem, 5vw, 2.5rem); margin: 0.6rem 0 1rem; }
   .ab h2 { font-family: 'Fredoka', sans-serif; color: var(--bark); font-size: 1.3rem; margin: 1.8rem 0 0.5rem; }
   .ab p, .ab li { font-weight: 400; line-height: 1.6; }
+  .ab ul { list-style: disc; padding-left: 1.4rem; margin: 0.4rem 0 0.8rem; }   /* the site stylesheet turns list bullets off globally */
   .ab li { margin: 0.35rem 0; }
+  .ab li::marker { color: #5D4037; }
   .ab a:not(.back) { color: var(--bark); text-decoration: underline; text-underline-offset: 2px; }
   .ab-stat span { font-weight: 600; }
   .ab-stat { background: var(--sunny-wash); border: 2px solid var(--bark); border-radius: 14px; padding: 0.9rem 1.1rem; display: flex; gap: 1rem; align-items: center; }
@@ -50,7 +52,7 @@ eleventyExcludeFromCollections: true
     <li>One featured animal a week, matched to a real awareness day.</li>
     <li>When several animal days land in the same week, we feature the one we think kids will love most. The others still show on the calendar as "also celebrated" days.</li>
     <li>In the few weeks with no animal day, we choose a favourite ourselves. These are marked <span class="pick-badge">Wild Atlas Spotlight</span>. They're our choice, not an official awareness day.</li>
-    <li>The year ends with Explorer's Choice.</li>
+    <li>The year ends with Explorer's Choice: the animal kids explored most in the Wild Atlas app that year. Like a Spotlight, it's our choice, not an official awareness day.</li>
   </ul>
 
   <h2>What's on each page</h2>
