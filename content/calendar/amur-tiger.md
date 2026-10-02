@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see an Amur tiger
     intro: "In the wild, Amur tigers live in the snowy forests of far-eastern Russia and nearby parts of China, where they are very hard to spot. For the rest of us, these zoos around the world have Amur tigers you can visit."
-    findLabel: Find the nearest zoo with Amur tigers
+    findLabel: Find the nearest places with Amur tigers
     groups:
       - label: North America
         places:

@@ -19,8 +19,9 @@ layout: layouts/post.njk
   figure.story-figure { margin: 1.5rem 0; text-align: center; }
   figure.story-figure img { max-width: 100%; border-radius: 12px; box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2); }
   figure.story-figure figcaption { font-size: 0.85rem; color: var(--muted); font-style: italic; margin-top: 0.5rem; }
-  .find-zoo-link { display: inline-block; margin: 0.25rem 0 0.5rem; padding: 0.6rem 1.1rem; border-radius: 999px; background: var(--accent); color: #fff !important; font-weight: 700; text-decoration: none; }
-  .find-zoo-link:hover { opacity: 0.9; }
+  /* Same white pill as the map's explore link (css/places-map.css .places-map-explore), so neither shouts over the other. */
+  .find-zoo-link { display: inline-block; margin: 0.25rem 0 0.5rem; padding: 0.4rem 0.9rem; border: 1.5px solid #5D4037; border-radius: 999px; background: #fff; color: #5D4037 !important; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.88rem; text-decoration: none; box-shadow: 0 2px 8px rgba(93, 64, 55, 0.18); }
+  .find-zoo-link:hover, .find-zoo-link:focus-visible { background: #FFF4CC; }
   .zoo-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 1.5rem 0; }
   @media (min-width: 640px) { .zoo-grid { grid-template-columns: repeat(2, 1fr); } }
   .zoo-card, .zoo-cousin { border-radius: 12px; padding: 1rem 1.1rem; background: rgba(120, 160, 200, 0.08); }
@@ -51,9 +52,11 @@ layout: layouts/post.njk
 {%- set w = d.whereToSee %}
 <h2>{{ w.heading or ("Where to see " + d.animalArticle + " " + d.animalName) }}</h2>
 {% if w.intro %}{{ w.intro | md | safe }}{% endif %}
-{% if zooFinderLive and d.animalId and w.findLabel %}<a class="find-zoo-link" href="/zoos/?animal={{ d.animalId }}">{{ w.findLabel }} →</a>{% endif %}
 {%- set wtsPins = w | whereToSeePins %}
-{% placesMap wtsPins, { label: "Map of places to see " + (d.animalArticle or "") + " " + (d.animalName or "this animal"), cards: "wts-cards", link: ({ href: "/zoos/", text: "Find more animals around the world" } if zooFinderLive else null), animal: ((w.wildAnimal or d.animalId or appId) if w.wildPlaces !== false else null) } %}
+{%- set findHref = ("/zoos/?animal=" + d.animalId) if (zooFinderLive and d.animalId and w.findLabel) else null %}
+{#- With a map, the zoo-finder link sits on the map (bottom-right); without one, it's a pill above the cards. #}
+{% if findHref and not (wtsPins | length) %}<a class="find-zoo-link" href="{{ findHref }}">{{ w.findLabel }} →</a>{% endif %}
+{% placesMap wtsPins, { label: "Map of places to see " + (d.animalArticle or "") + " " + (d.animalName or "this animal"), cards: "wts-cards", link: ({ href: findHref, text: w.findLabel } if findHref else null), animal: ((w.wildAnimal or d.animalId or appId) if w.wildPlaces !== false else null) } %}
 <div id="wts-cards" class="places-map-cards">
 {%- for group in w.groups %}
 {% if group.label %}<h3>{{ group.label }}</h3>{% endif %}

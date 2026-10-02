@@ -17,7 +17,7 @@ animalDay:
     wildAnimal: ring_tailed_lemur   # species-specific reserves (zoo finder hidden doc)
     heading: Where to see a ring-tailed lemur
     intro: "In the wild, ring-tailed lemurs live in only one place on Earth — the dry forests and spiny bush of southern Madagascar. Some families visit habituated wild troops on guided walks at community-run reserves like Anja, near Ambalavao. For the rest of us, these zoos around the world have ring-tailed lemurs you can visit."
-    findLabel: Find the nearest zoo with ring-tailed lemurs
+    findLabel: Find the nearest places with ring-tailed lemurs
     groups:
       - label: North America
         places:

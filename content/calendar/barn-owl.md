@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see a barn owl
     intro: "In the wild, barn owls live in grasslands, farm fields, and old barns on almost every continent. They come out at dusk and after dark, so they're hard to spot. For the rest of us, these zoos and farms have barn owls you can visit."
-    findLabel: Find the nearest zoo with barn owls
+    findLabel: Find the nearest places with barn owls
     groups:
       - label: North America
         places:

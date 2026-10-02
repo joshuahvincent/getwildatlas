@@ -17,7 +17,7 @@ animalDay:
     wildAnimal: malayan_tapir   # species-specific reserves (zoo finder hidden doc)
     heading: Where to see a Malayan tapir
     intro: "In the wild, Malayan tapirs live in rainforests in Malaysia, Thailand, Myanmar, and on the island of Sumatra. They're shy, mostly come out at night, and are very hard to spot — scientists usually find them with hidden cameras. For the rest of us, these zoos around the world have Malayan tapirs you can visit."
-    findLabel: Find the nearest zoo with tapirs
+    findLabel: Find the nearest places with tapirs
     groups:
       - label: North America
         places:

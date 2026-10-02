@@ -18,7 +18,7 @@ animalDay:
     wildAnimal: giant_pacific_octopus   # species-specific reserves (zoo finder hidden doc)
     heading: Where to see a giant Pacific octopus
     intro: "In the wild, giant Pacific octopuses live only in the cold North Pacific Ocean, hiding in rocky dens — lucky divers sometimes spot one. For the rest of us, an aquarium is the best way to meet one."
-    findLabel: Find the nearest aquarium with a giant Pacific octopus
+    findLabel: Find the nearest places with giant Pacific octopuses
     groups:
       - label: North America
         places:

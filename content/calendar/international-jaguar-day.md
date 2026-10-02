@@ -16,7 +16,7 @@ animalDay:
   whereToSee:
     heading: Where to see a jaguar
     intro: "In the wild, jaguars live from Mexico all the way to Argentina, in rainforests and wetlands — and they're so secretive that most people who live near them never see one. The best place on Earth to spot a wild jaguar is the Pantanal wetlands of Brazil, where they often rest on quiet riverbanks. For the rest of us, these zoos around the world have jaguars you can visit."
-    findLabel: Find the nearest zoo with jaguars
+    findLabel: Find the nearest places with jaguars
     groups:
       - label: North America
         places:

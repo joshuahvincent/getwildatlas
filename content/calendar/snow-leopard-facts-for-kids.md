@@ -16,7 +16,7 @@ animalDay:
   whereToSee:
     heading: Where to see a snow leopard
     intro: "In the wild, snow leopards live high in the rocky mountains of Asia — places like the Himalayas — and they're so shy that even scientists mostly \"see\" them on hidden cameras. For the rest of us, these zoos around the world have snow leopards you can visit, and winter is a great time to go, since snow leopards love the cold!"
-    findLabel: Find the nearest zoo with snow leopards
+    findLabel: Find the nearest places with snow leopards
     groups:
       - label: North America
         places:

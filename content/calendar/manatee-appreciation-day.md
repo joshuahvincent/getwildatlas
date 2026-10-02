@@ -16,7 +16,7 @@ animalDay:
   whereToSee:
     heading: Where to see a manatee
     intro: "In the wild, manatees live in warm, shallow water — rivers, springs, and coasts from Florida through the Caribbean to Brazil. In winter, Florida's manatees gather in warm springs, where families can watch them from a boardwalk. For the rest of us, these zoos and parks around the world have manatees you can visit too."
-    findLabel: Find the nearest zoo with manatees
+    findLabel: Find the nearest places with manatees
     groups:
       - label: North America
         places:

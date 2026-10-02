@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see an axolotl
     intro: "In the wild, axolotls live only in a few waterways near Mexico City, in Mexico, so it's very hard to spot one there. For the rest of us, these zoos and aquariums have axolotls you can visit."
-    findLabel: Find the nearest zoo with axolotls
+    findLabel: Find the nearest places with axolotls
     groups:
       - label: North America
         places:

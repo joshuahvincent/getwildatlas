@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see a parrot
     intro: "In the wild, parrots live in warm forests in places like South America, Africa, Asia, and Australia, where they flap and squawk through the treetops. For the rest of us, these zoos and bird parks have parrots you can visit."
-    findLabel: Find the nearest zoo with parrots
+    findLabel: Find the nearest places with parrots
     groups:
       - label: North America
         places:

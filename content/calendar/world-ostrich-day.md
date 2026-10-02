@@ -16,7 +16,7 @@ animalDay:
   whereToSee:
     heading: Where to see an ostrich
     intro: "In the wild, ostriches stride across the open grasslands and dry plains of Africa — on a safari in places like Kenya, Tanzania, Namibia or South Africa, you might spot one. For the rest of us, these zoos around the world have ostriches you can visit."
-    findLabel: Find the nearest zoo with ostriches
+    findLabel: Find the nearest places with ostriches
     groups:
       - label: North America
         places:

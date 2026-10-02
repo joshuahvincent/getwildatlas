@@ -16,7 +16,7 @@ animalDay:
   whereToSee:
     heading: Where to see a Galápagos giant tortoise
     intro: "In the wild, Galápagos giant tortoises live only on the Galápagos Islands, far out in the Pacific Ocean. For the rest of us, a handful of zoos care for these gentle giants — and some have lived at their zoo for nearly 100 years."
-    findLabel: Find the nearest zoo with Galápagos giant tortoises
+    findLabel: Find the nearest places with Galápagos giant tortoises
     groups:
       - label: North America
         places:

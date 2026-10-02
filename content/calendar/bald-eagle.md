@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see a bald eagle
     intro: "In the wild, bald eagles live near rivers, lakes, and coasts across North America — look high in tall trees near the water. For the rest of us, these zoos have bald eagles you can visit."
-    findLabel: Find the nearest zoo with bald eagles
+    findLabel: Find the nearest places with bald eagles
     groups:
       - label: North America
         places:

@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to meet a turtle
     intro: "In the wild, sea turtles swim in warm oceans and nest on sandy beaches, while other turtles live in ponds, rivers, and forests on almost every continent. For the rest of us: these aquariums and sea turtle hospitals have turtles you can visit."
-    findLabel: Find the nearest place with turtles
+    findLabel: Find the nearest places with turtles
     groups:
       - label: North America
         places:

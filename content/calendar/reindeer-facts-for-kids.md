@@ -16,7 +16,7 @@ animalDay:
   whereToSee:
     heading: Where to see a reindeer
     intro: "In the wild, reindeer and caribou live in the far north of the world, on the snowy Arctic tundra and in cold northern forests across Alaska, Canada, Greenland, Scandinavia, Finland, and Russia. For the rest of us, these zoos around the world have reindeer and caribou you can visit."
-    findLabel: Find the nearest zoo with reindeer
+    findLabel: Find the nearest places with reindeer
     groups:
       - label: North America
         places:

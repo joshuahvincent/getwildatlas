@@ -16,7 +16,7 @@ animalDay:
   whereToSee:
     heading: Where to see a giant panda
     intro: "In the wild, giant pandas live only in China, high in misty mountain forests full of bamboo — even people who live nearby almost never see one. For the rest of us, these zoos around the world have pandas you can visit."
-    findLabel: Find the nearest zoo with pandas
+    findLabel: Find the nearest places with pandas
     groups:
       - label: North America
         places:

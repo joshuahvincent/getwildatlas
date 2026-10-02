@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see a red panda
     intro: "In the wild, red pandas live high in the cool mountain forests of the Himalayas and nearby parts of Asia, where they are very hard to spot. For the rest of us, these zoos around the world have red pandas you can visit."
-    findLabel: Find the nearest zoo with red pandas
+    findLabel: Find the nearest places with red pandas
     groups:
       - label: North America
         places:

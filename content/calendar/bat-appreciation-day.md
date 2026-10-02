@@ -16,7 +16,7 @@ animalDay:
   whereToSee:
     heading: Where to see a fruit bat
     intro: "In the wild, large flying foxes live only in the forests, mangroves and coastlines of Southeast Asia, where thousands sleep together in tall trees by day and fly out to feed at dusk. For the rest of us, these zoos and sanctuaries around the world have flying foxes you can visit."
-    findLabel: Find the nearest zoo with fruit bats
+    findLabel: Find the nearest places with fruit bats
     groups:
       - label: North America
         places:

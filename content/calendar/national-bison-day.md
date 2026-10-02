@@ -16,7 +16,7 @@ animalDay:
   whereToSee:
     heading: Where to see an American bison
     intro: "In the wild, bison roam the grasslands of North America — places like Yellowstone National Park, where there were nearly 5,300 bison in 2025. You'd watch from the car or with binoculars, staying far, far back. For the rest of us, these zoos around the world have bison you can visit."
-    findLabel: Find the nearest zoo with bison
+    findLabel: Find the nearest places with bison
     groups:
       - label: North America
         places:

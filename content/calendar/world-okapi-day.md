@@ -16,7 +16,7 @@ animalDay:
   whereToSee:
     heading: Where to see an okapi
     intro: "In the wild, okapis live only in rainforest in the Democratic Republic of the Congo, and they're so shy that even the scientists who study them mostly see them on hidden cameras. For the rest of us, these zoos around the world have okapis you can visit."
-    findLabel: Find the nearest zoo with okapis
+    findLabel: Find the nearest places with okapis
     groups:
       - label: North America
         places:
