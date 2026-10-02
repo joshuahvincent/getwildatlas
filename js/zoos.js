@@ -136,7 +136,7 @@ function card(c) {
     const img = el('img', { class: 'zf-photo', src: '/assets/zoos/img/' + p.id + '.jpg', alt: 'Photo of ' + p.n, loading: 'lazy', decoding: 'async', width: 96, height: 96 });
     // never show a broken-image tile: if a photo fails to load, swap in the place-type tile and drop its credit
     img.addEventListener('error', () => { img.replaceWith(placeholder(p)); const cr = img.closest('.zf-card') && img.closest('.zf-card').querySelector('.zf-credit'); if (cr) cr.remove(); }, { once: true });
-    photo = img; credit = p.cr ? el('p', { class: 'zf-credit', text: 'Photo: ' + creditText(p.cr) }) : null;
+    photo = img; credit = p.cr ? el('details', { class: 'zf-credit' }, el('summary', { text: 'Photo credit' }), el('span', { text: creditText(p.cr) })) : null;
   }
   const where = [p.ci, p.rg, countryName(p.cc)].filter(Boolean).join(', ');
   return el('li', { class: 'zf-card' + (c.rank === 1 || c.rank === 3 ? ' is-weak' : ''), id: 'zf-card-' + c.pi, 'data-pi': c.pi, 'data-rank': c.rank, 'data-type': p.t },
@@ -150,8 +150,7 @@ function card(c) {
         el('span', { class: 'zf-badge type', text: TYPE_LABEL[p.t] || p.t }), accredBadge(p)),
       el('div', { class: 'zf-actions' },
         href ? el('a', { href, target: '_blank', rel: 'noopener noreferrer', text: 'Visit website ↗' }) : null,
-        el('button', { type: 'button', 'data-show': c.pi, text: 'Show on map' }))),
-    credit);
+        el('button', { type: 'button', 'data-show': c.pi, text: 'Show on map' }), credit)));
 }
 const PAGE = 24;
 function cardList(list) {
@@ -283,6 +282,15 @@ async function ensureMap() {
     map.addControl(new mapLib.AttributionControl({ compact: true, customAttribution: 'Outlines: Natural Earth' }));
     await new Promise((res) => (map.loaded() ? res() : map.once('load', res)));
     delete $('zf-map').dataset.loading;
+    // no polar ocean (maplibre 6's maxBounds throws here, so: a zoom floor that fits the 84°N to 58°S band, and a latitude clamp when a move ends)
+    const floorZoom = () => { const el = $('zf-map'); try { map.setMinZoom(Math.max(0.6, Math.log2(el.clientWidth / 512), Math.log2(el.clientHeight / 342))); } catch (e) {} };
+    floorZoom(); map.on('resize', floorZoom);
+    map.on('moveend', () => {
+      try {
+        const b = map.getBounds(), d = b.getNorth() > 84 ? 84 - b.getNorth() : b.getSouth() < -58 ? -58 - b.getSouth() : 0;
+        if (Math.abs(d) > 0.05) { const c = map.getCenter(); map.jumpTo({ center: [c.lng, Math.max(-80, Math.min(80, c.lat + d))] }); }
+      } catch (e) {}
+    });
     console.debug('[zoos map] ready in ' + Math.round(performance.now() - t0) + ' ms');
     // state/province outlines (1 MB) are only fetched once the visitor zooms in, so the first view starts faster
     const addAdmin1 = () => {
@@ -319,7 +327,8 @@ function fbApply() {
   FB.ring.setAttribute('transform', FB.ringXY ? 'translate(' + FB.ringXY[0] + ' ' + FB.ringXY[1] + ') scale(' + k + ')' : 'translate(-999 -999)');
   if (FB.popFor) fbPlacePop();
 }
-function fbClamp() { const v = FB.vb, h = v.w * FB.ch / FB.cw; v.w = Math.min(360 * FB_K, Math.max(1.5 * FB_K * (FB.cw / 100), v.w)); v.x = Math.max(-40, Math.min(360 * FB_K + 40 - v.w, v.x)); v.y = Math.max(-40, Math.min(180 * FB_K + 40 - h, v.y)); }
+const FB_Y0 = (90 - 84) * FB_K, FB_Y1 = (90 + 58) * FB_K;   // no polar ocean: the map stops at 84°N and 58°S
+function fbClamp() { const v = FB.vb; v.w = Math.min(360 * FB_K, (FB_Y1 - FB_Y0) * FB.cw / FB.ch, Math.max(1.5 * FB_K * (FB.cw / 100), v.w)); const h = v.w * FB.ch / FB.cw; v.x = Math.max(0, Math.min(360 * FB_K - v.w, v.x)); v.y = Math.max(FB_Y0, Math.min(FB_Y1 - h, v.y)); }
 function fbZoom(f, cx, cy) {   // f > 1 zooms in about the container point (cx, cy)
   const v = FB.vb, k = v.w / FB.cw, ux = v.x + cx * k, uy = v.y + cy * k, nw = v.w / f;
   v.w = nw; const nk = nw / FB.cw; v.x = ux - cx * nk; v.y = uy - cy * nk; fbClamp(); fbApply();
@@ -367,7 +376,7 @@ async function fbInit() {
       if (dr && !dr.moved) { const g = e.target.closest && e.target.closest('[data-pi]'); if (g) setActive(g.dataset.pi, { popup: true, scroll: true }); else fbClosePop(); } };
     box.addEventListener('pointerup', end); box.addEventListener('pointercancel', () => { FB.drag = null; box.classList.remove('is-drag'); });
     new ResizeObserver(() => { if (!box.clientWidth) return; FB.cw = box.clientWidth; FB.ch = box.clientHeight || FB.ch; if (FB.vb) { fbClamp(); fbApply(); } }).observe(box);
-    FB.vb = { x: 0, y: 0, w: 360 * FB_K };
+    FB.vb = { x: 0, y: FB_Y0, w: 360 * FB_K }; fbClamp();
     return true;
   })();
   return FB.ready;
@@ -460,10 +469,29 @@ function setView(v) {
 }
 
 // ---------- location ----------
+const LOC_KEY = 'wa_zoo_loc_v1';   // the visitor's place, on this device only (localStorage); never sent anywhere
+function loadSaved() {
+  try { const o = JSON.parse(localStorage.getItem(LOC_KEY) || 'null'); return o && isFinite(o.la) && isFinite(o.lo) && o.label ? o : null; } catch (e) { return null; }
+}
+function saveOrigin(o) { try { localStorage.setItem(LOC_KEY, JSON.stringify({ la: Math.round(o.la * 100) / 100, lo: Math.round(o.lo * 100) / 100, label: o.label, method: o.method, fromGeo: !!o.fromGeo })); } catch (e) {} }
+function forgetLocation() {
+  try { localStorage.removeItem(LOC_KEY); } catch (e) {}
+  S.origin = null; S.editing = false; $('zf-q').value = ''; $('zf-q').placeholder = 'City or postcode'; $('zf-forget').hidden = true; render();
+}
 function setOrigin(o) {
+  saveOrigin(o); $('zf-forget').hidden = false;
   track('zoo_location_used', { method: o.method || 'geolocation' });
   S.origin = o; S.editing = false; $('zf-q').value = o.label === 'your location' ? '' : o.label; $('zf-q').placeholder = o.fromGeo ? 'Using your location' : 'City or postcode';
   closeSuggest(); render();
+}
+// no saved place: ask on arrival (our own dialog first, then the browser's). Skipped if the visitor said "Not now" this session or the browser has blocked location.
+async function askOnArrival() {
+  try { if (sessionStorage.getItem('wa_zoo_declined')) return; } catch (e) {}
+  if (!('geolocation' in navigator)) return;
+  let state = 'prompt';
+  try { if (navigator.permissions && navigator.permissions.query) state = (await navigator.permissions.query({ name: 'geolocation' })).state; } catch (e) {}
+  if (state === 'denied' || S.origin) return;
+  if (state === 'granted') getLocation(); else useMyLocation();
 }
 function useMyLocation() {
   // ask first, in our own words, before the browser's own permission prompt
@@ -472,9 +500,9 @@ function useMyLocation() {
     const share = dlg.querySelector('button[value=share]'), cancel = dlg.querySelector('button[value=cancel]');
     // act on the buttons directly (the dialog's close event is not reliable in every browser)
     const onShare = (e) => { e.preventDefault(); cancel.removeEventListener('click', onCancel); dlg.close('share'); getLocation(); };
-    const onCancel = (e) => { e.preventDefault(); share.removeEventListener('click', onShare); dlg.close('cancel'); };
+    const onCancel = (e) => { e.preventDefault(); share.removeEventListener('click', onShare); try { sessionStorage.setItem('wa_zoo_declined', '1'); } catch (x) {} dlg.close('cancel'); };
     share.addEventListener('click', onShare, { once: true }); cancel.addEventListener('click', onCancel, { once: true });
-    dlg.addEventListener('cancel', () => { share.removeEventListener('click', onShare); cancel.removeEventListener('click', onCancel); }, { once: true });   // Esc
+    dlg.addEventListener('cancel', () => { try { sessionStorage.setItem('wa_zoo_declined', '1'); } catch (x) {} share.removeEventListener('click', onShare); cancel.removeEventListener('click', onCancel); }, { once: true });   // Esc
     dlg.showModal(); return;
   }
   getLocation();
@@ -614,14 +642,15 @@ function buildChips() {
   items.forEach((it, i) => {
     const id = 'zf-chip-' + i;
     const input = el('input', { type: 'radio', name: 'zf-dist', id, value: it.v, checked: it.v === 0, 'aria-label': it.v ? 'Within ' + it.label : 'Any distance' });
-    input.addEventListener('change', () => { S.maxKm = it.km; S.distLabel = it.v ? 'Within ' + it.label : 'Any distance'; track('zoo_distance_filter', { distance: it.v ? it.v + ' ' + unit : 'no limit' }); render(); });
+    input.addEventListener('change', () => { S.maxKm = it.km; S.distLabel = it.v ? 'Within ' + it.label : 'Any distance'; track('zoo_distance_filter', { distance: it.v ? it.v + ' ' + unit : 'no limit' }); filterLabel(); render(); });
     box.append(el('label', { class: 'zf-chip', for: id }, input, el('span', { text: it.label })));
   });
 }
+let filterLabel = () => {};
 function buildTypes() {
   const box = $('zf-typechips'); if (!box) return;
   const sum = $('zf-adv-sum');
-  const label = () => { sum.textContent = S.types.size === TYPE_GROUPS.length ? 'More filters' : 'More filters (' + S.types.size + ' of ' + TYPE_GROUPS.length + ' types)'; };
+  const label = filterLabel = () => { const bits = []; if (S.types.size < TYPE_GROUPS.length) bits.push(S.types.size + ' of ' + TYPE_GROUPS.length + ' types'); if (Number.isFinite(S.maxKm)) bits.push(S.distLabel.toLowerCase()); sum.textContent = 'More filters' + (bits.length ? ' (' + bits.join(', ') + ')' : ''); };
   TYPE_GROUPS.forEach(([k, name]) => {
     const id = 'zf-type-' + k, input = el('input', { type: 'checkbox', id, value: k, checked: true });
     input.addEventListener('change', () => {
@@ -658,6 +687,9 @@ async function init() {
     S.animals = meta.animals.map((a) => Object.assign({}, a, { gl: gl[a.id] || '' })); S.animals.forEach((a) => { S.byId[a.id] = a; S.bySlug[slugOf(a.id)] = a; });
   } catch (e) { $('zf-status').textContent = 'Sorry, we could not load the places just now. Please try again in a moment.'; return; }
   renderQuick();
+  const saved = loadSaved();
+  if (saved) { S.origin = saved; $('zf-q').value = saved.label === 'your location' ? '' : saved.label; $('zf-q').placeholder = saved.fromGeo ? 'Using your location' : 'City or postcode'; $('zf-forget').hidden = false; }
+  $('zf-forget').addEventListener('click', forgetLocation);
   const input = $('zf-animal');
   input.addEventListener('focus', () => showAnimalList(input.value === (S.cur && S.cur.name) ? '' : input.value));
   input.addEventListener('input', () => { $('zf-animal-clear').hidden = !input.value; if (S.unknown) S.unknown = ''; showAnimalList(input.value); });
@@ -682,8 +714,8 @@ async function init() {
   $('zf-tab-map').addEventListener('click', () => setView('map'));
   $('zf-results').addEventListener('click', (e) => {
     const b = e.target.closest('[data-show]'); if (b) { if (window.matchMedia('(max-width: 899px)').matches) setView('map'); setActive(b.dataset.show, { fly: true, popup: true }); return; }
-    if (e.target.id === 'zf-resetf') { S.types = new Set(TYPE_GROUPS.map((g) => g[0])); S.hidden.clear(); document.querySelectorAll('#zf-typechips input').forEach((i) => (i.checked = true)); document.querySelectorAll('.zf-key').forEach((b) => b.setAttribute('aria-pressed', 'true')); $('zf-adv-sum').textContent = 'More filters'; render(); return; }
-    if (e.target.id === 'zf-widen') { S.maxKm = Infinity; S.distLabel = 'Any distance'; document.querySelectorAll('input[name="zf-dist"]').forEach((i) => (i.checked = i.value === '0')); render(); }
+    if (e.target.id === 'zf-resetf') { S.types = new Set(TYPE_GROUPS.map((g) => g[0])); S.hidden.clear(); document.querySelectorAll('#zf-typechips input').forEach((i) => (i.checked = true)); document.querySelectorAll('.zf-key').forEach((b) => b.setAttribute('aria-pressed', 'true')); S.maxKm = Infinity; S.distLabel = 'Any distance'; document.querySelectorAll('input[name="zf-dist"]').forEach((i) => (i.checked = i.value === '0')); filterLabel(); render(); return; }
+    if (e.target.id === 'zf-widen') { S.maxKm = Infinity; S.distLabel = 'Any distance'; document.querySelectorAll('input[name="zf-dist"]').forEach((i) => (i.checked = i.value === '0')); filterLabel(); render(); }
     if (e.target.id === 'zf-another') { S.editing = true; updateSummary(); $('zf-animal').focus(); $('zf-animal').select(); }
   });
   const clicked = (e) => {
@@ -700,5 +732,6 @@ async function init() {
   const fromPath = root.dataset.animal, fromLegacy = legacy && (ALIASES[legacy] || legacy.replace(/-/g, '_'));
   if (!fromPath && fromLegacy && S.byId[fromLegacy]) { location.replace('/zoos/' + slugOf(fromLegacy) + '/'); return; }
   if (fromPath && S.byId[fromPath]) { await selectAnimal(fromPath, 'landing'); const seo = $('zf-seo-list'); if (seo) seo.remove(); } else render();
+  if (!saved) setTimeout(askOnArrival, 600);
 }
 init();

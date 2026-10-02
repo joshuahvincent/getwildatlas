@@ -187,3 +187,16 @@
 .zf-key:focus-visible { outline: 3px solid var(--zf-focus); outline-offset: 1px; }
 .zf-key[aria-pressed="false"] { opacity: .5; text-decoration: line-through; }
 @media (max-width: 899px) { .zf-key { min-height: 44px; } .zf-adv summary { min-height: 44px; } }
+
+/* compact cards, folded photo credit, shorter map, forget link */
+.zf-card { grid-template-columns: 84px minmax(0, 1fr); gap: .65rem; padding: .55rem; }
+.zf-photo, .zf-photo-ph { width: 84px; height: 84px; }
+.zf-card h3 { font-size: 1rem; }
+.zf-card .zf-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .7rem; }
+.zf-card details.zf-credit { grid-column: auto; font-size: .72rem; color: var(--muted); margin: 0; }
+.zf-card details.zf-credit summary { cursor: pointer; list-style: none; text-decoration: underline; text-underline-offset: 2px; }
+.zf-card details.zf-credit summary::-webkit-details-marker { display: none; }
+.zf-card details.zf-credit[open] { flex-basis: 100%; }
+.zf-linkbtn { background: none; border: 0; font: inherit; color: var(--zf-accent); text-decoration: underline; cursor: pointer; padding: 0; }
+@media (min-width: 900px) { .zf-map { height: auto; aspect-ratio: 4 / 3; max-height: calc(100vh - 150px); min-height: 320px; } }
+@media (max-width: 899px) { .zf-map { height: auto; aspect-ratio: 1 / 1; max-height: 70vh; min-height: 300px; } .zf-card { grid-template-columns: 72px minmax(0, 1fr); } .zf-photo, .zf-photo-ph { width: 72px; height: 72px; } }
