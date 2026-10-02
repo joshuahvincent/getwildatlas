@@ -13,6 +13,10 @@ name: Deploy to Cloudflare Pages
 on:
   push:
     branches: [main, "preview/**"]
+  # Daily rebuild so approved, future-dated blog posts go live on their date.
+  # 13:00 UTC = 6am Pacific during daylight time (5am in winter).
+  schedule:
+    - cron: "0 13 * * *"
   workflow_dispatch:
 
 concurrency:
@@ -63,3 +67,34 @@ jobs:
           PAGES_BRANCH: ${{ steps.target.outputs.branch }}
         run: |
           echo "Preview: https://$PAGES_BRANCH.wildatlaswebsite.pages.dev" >> "$GITHUB_STEP_SUMMARY"
+
+  # Review copy of the site with scheduled/draft posts visible, for Josh's
+  # pre-publish review: https://preview.wildatlaswebsite.pages.dev
+  # Not indexed (X-Robots-Tag + robots.txt), not linked from the live site.
+  # Main only, so preview/** pushes don't overwrite this shared review copy.
+  preview:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - run: npm ci
+
+      - run: npm run build
+        env:
+          SHOW_HIDDEN_POSTS: "1"
+
+      - name: Block indexing of the preview
+        run: |
+          printf 'User-agent: *\nDisallow: /\n' > _site/robots.txt
+          printf '/*\n  X-Robots-Tag: noindex, nofollow\n' > _site/_headers
+
+      - run: npx wrangler pages deploy _site --project-name=wildatlaswebsite --branch=preview
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

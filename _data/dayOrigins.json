@@ -1,0 +1,275 @@
+{
+ "international-cheetah-day": {
+  "text": "International Cheetah Day was started in 2010 by Dr. Laurie Marker of the Cheetah Conservation Fund. December 4 was the birthday of Khayam, a cheetah she raised.",
+  "sourceLabel": "Cheetah Conservation Fund — International Cheetah Day",
+  "sourceUrl": "https://cheetah.org/about/what-we-do/international-cheetah-day/",
+  "confidence": "high",
+  "dateCheck": "Fixed date of December 4 every year. 2026-12-04 is correct."
+ },
+ "quokka-facts-for-kids": {
+  "text": "There's no official day for the quokka this week, so this one is a Wild Atlas pick.",
+  "sourceLabel": "",
+  "sourceUrl": "",
+  "confidence": "high",
+  "dateCheck": "No official day, so there is no date to check. 2026-12-10 is our own scheduling pick."
+ },
+ "monkey-day": {
+  "text": "Monkey Day was started in 2000 by two art students, Casey Sorrow and Eric Millikin, at Michigan State University. It's a fun, unofficial day for all primates.",
+  "sourceLabel": "Wikipedia — Monkey Day",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Monkey_Day",
+  "confidence": "medium",
+  "dateCheck": "Fixed date of December 14 every year. 2026-12-14 is correct."
+ },
+ "reindeer-facts-for-kids": {
+  "text": "There's no official day for the reindeer this week, so this one is a Wild Atlas pick.",
+  "sourceLabel": "",
+  "sourceUrl": "",
+  "confidence": "high",
+  "dateCheck": "No official day, so there is no date to check. 2026-12-23 is a holiday-season pick."
+ },
+ "narwhal-facts-for-kids": {
+  "text": "There's no official day for the narwhal this week, so this one is a Wild Atlas pick.",
+  "sourceLabel": "",
+  "sourceUrl": "",
+  "confidence": "high",
+  "dateCheck": "No official day, so there is no date to check. 2026-12-30 is our own scheduling pick."
+ },
+ "national-bird-day": {
+  "text": "National Bird Day was started in 2002 by the Avian Welfare Coalition, working with Born Free USA, to help people care about birds kept as pets and birds in the wild.",
+  "sourceLabel": "Avian Welfare Coalition — Achievements",
+  "sourceUrl": "https://www.avianwelfare.org/aboutus/achievements.htm",
+  "confidence": "high",
+  "dateCheck": "Fixed date of January 5 every year. 2027-01-05 is correct. The AWC page confirms it founded the day in January 2002. Born Free USA's co-founding role is backed by secondary sources such as Britannica, not by the AWC page."
+ },
+ "snow-leopard-facts-for-kids": {
+  "text": "There's no official day for the snow leopard this week, so this one is a Wild Atlas pick.",
+  "sourceLabel": "",
+  "sourceUrl": "",
+  "confidence": "high",
+  "dateCheck": "No official day, so there is no date to check. 2027-01-14 is our own scheduling pick. International Snow Leopard Day is October 23 and does not fall this week."
+ },
+ "penguin-awareness-day": {
+  "text": "Penguin Awareness Day's origins aren't well documented, but zoos, aquariums and penguin fans mark it every January 20.",
+  "sourceLabel": "",
+  "sourceUrl": "",
+  "confidence": "medium",
+  "dateCheck": "Fixed date of January 20 every year. 2027-01-20 is correct. One secondary source credits a 1972 calendar note by Gerry Wallace, but it names the place as 'Alamogordo, California'. Alamogordo is in New Mexico, so the source is unreliable and I did not use that claim. Do not confuse this day with World Penguin Day on April 25."
+ },
+ "arctic-tern-facts-for-kids": {
+  "text": "There's no official day for the Arctic tern this week, so this one is a Wild Atlas pick.",
+  "sourceLabel": "",
+  "sourceUrl": "",
+  "confidence": "high",
+  "dateCheck": "Wildcard week with no official day. 2027-05-12 is a Wednesday, and nothing else needs checking."
+ },
+ "endangered-species-day": {
+  "text": "Endangered Species Day began in 2006, when the Endangered Species Coalition asked the U.S. Senate to create it. It's for all endangered animals, and we picked the black rhino.",
+  "sourceLabel": "Endangered Species Coalition",
+  "sourceUrl": "https://www.endangered.org/be-part-of-endangered-species-day/",
+  "confidence": "high",
+  "dateCheck": "The day falls on the third Friday in May. In May 2027 the Fridays are the 7th, 14th and 21st, so 2027-05-21 is correct. Senate Resolution 431 passed on May 11, 2006."
+ },
+ "world-otter-day": {
+  "text": "World Otter Day was started by the International Otter Survival Fund, a UK charity. It's held every year on the last Wednesday in May.",
+  "sourceLabel": "International Otter Survival Fund - World Otter Day",
+  "sourceUrl": "https://www.otter.org/world-otter-day",
+  "confidence": "medium",
+  "dateCheck": "The day falls on the last Wednesday in May. In May 2027 the Wednesdays are the 5th, 12th, 19th and 26th, so 2027-05-26 is correct. I left the start year out: the IOSF page calls 2026 its '10th year', which points to 2016, but some other sources say it started earlier."
+ },
+ "world-environment-day": {
+  "text": "The United Nations declared World Environment Day in 1972, and it was first held in 1973. It's for the whole planet, and we picked the Galápagos giant tortoise.",
+  "sourceLabel": "UNEP - World Environment Day history",
+  "sourceUrl": "https://www.worldenvironmentday.global/about/history",
+  "confidence": "high",
+  "dateCheck": "Fixed date of June 5, so 2027-06-05 is correct. The date marks the opening day of the 1972 UN conference on the environment in Stockholm."
+ },
+ "world-oceans-day": {
+  "text": "World Oceans Day was first suggested in 1992, and the United Nations made it official in 2008. It's for the whole ocean, and we picked the orca.",
+  "sourceLabel": "United Nations - World Oceans Day background",
+  "sourceUrl": "https://www.un.org/en/observances/oceans-day/background",
+  "confidence": "high",
+  "dateCheck": "Fixed date of June 8, so 2027-06-08 is correct. UN resolution 63/111 (5 Dec 2008) set the date, and UN observance began in 2009."
+ },
+ "world-sea-turtle-day": {
+  "text": "World Sea Turtle Day is held on June 16, the birthday of Dr. Archie Carr, a scientist known as the father of sea turtle research.",
+  "sourceLabel": "Sea Turtle Conservancy - #SeaTurtleWeek",
+  "sourceUrl": "https://www.seaturtleweek.com/world-sea-turtle-day",
+  "confidence": "medium",
+  "dateCheck": "Fixed date of June 16, so 2027-06-16 is correct. The Sea Turtle Conservancy page confirms the date honors Carr's birthday (born June 16, 1909) but doesn't say who started the day or when. Some secondary sources say turtle groups began it around 2000, but I couldn't confirm that, so the sentence leaves out a founder and year."
+ },
+ "world-giraffe-day": {
+  "text": "World Giraffe Day was started in 2014 by the Giraffe Conservation Foundation. They picked June 21, the longest day of the year, for the tallest animal.",
+  "sourceLabel": "Giraffe Conservation Foundation",
+  "sourceUrl": "https://giraffeconservation.org/2023/06/20/world-giraffe-day/",
+  "confidence": "high",
+  "dateCheck": "Fixed date of June 21, so 2027-06-21 is correct. That's the June solstice, the longest day in the Northern Hemisphere."
+ },
+ "world-octopus-day": {
+  "text": "World Octopus Day was started in 2007 by TONMO (The Octopus News Magazine Online), a community of octopus fans, who picked the 8th for an animal with eight arms.",
+  "sourceLabel": "TONMO — It's World Octopus Day",
+  "sourceUrl": "https://tonmo.com/threads/its-world-octopus-day.94241/",
+  "confidence": "high",
+  "dateCheck": "Fixed date, October 8. 2026-10-08 (Thursday) matches."
+ },
+ "world-okapi-day": {
+  "text": "World Okapi Day was created by the Okapi Conservation Project and first celebrated on October 18, 2016, to help protect okapis and their rainforest home.",
+  "sourceLabel": "Okapi Conservation Project — World Okapi Day",
+  "sourceUrl": "https://www.okapiconservation.org/world-okapi-day2",
+  "confidence": "high",
+  "dateCheck": "Fixed date, October 18. 2026-10-18 matches. OCP's page says 'we created World Okapi Day', and a WCS blog dated 2016-10-18 calls it 'the very first World Okapi Day'."
+ },
+ "international-sloth-day": {
+  "text": "International Sloth Day was started in 2010 by AIUNAU, a sloth rescue group in Colombia, to help people learn about sloths and protect them.",
+  "sourceLabel": "UPI — International Sloth Day founded 2010",
+  "sourceUrl": "https://www.upi.com/Odd_News/2022/10/20/International-Sloth-Day-founded-2010/1091666276580/",
+  "confidence": "medium",
+  "dateCheck": "Fixed date, October 20. 2026-10-20 matches. Small caveat: UPI says the idea came up at a meeting in Medellín in November 2010, so the first October 20 may have been in 2011. The sentence just says 'started in 2010' to stay safe. I couldn't find a primary AIUNAU page."
+ },
+ "world-lemur-day": {
+  "text": "World Lemur Day began in Madagascar in 2014, when primate scientist Jonah Ratsimbazafy of the group GERP organised the first lemur festival. It's now held the last Friday of October.",
+  "sourceLabel": "Lemur Conservation Network — World Lemur Day FAQ",
+  "sourceUrl": "https://www.lemurconservationnetwork.org/world-lemur-day/frequently-asked-questions-about-world-lemur-day/",
+  "confidence": "high",
+  "dateCheck": "Floating date: last Friday of October. In 2026 the Fridays in October are the 2nd, 9th, 16th, 23rd and 30th, so 2026-10-30 matches."
+ },
+ "national-bison-day": {
+  "text": "National Bison Day was started in 2012 by the Vote Bison Coalition, a group of tribes, ranchers and conservationists. The U.S. Senate has recognised it every year since 2013.",
+  "sourceLabel": "WCS — Senate passes National Bison Day resolution",
+  "sourceUrl": "https://www.wcs.org/get-involved/updates/senate-passes-bison-day-resolution",
+  "confidence": "high",
+  "dateCheck": "Floating date: first Saturday of November. November 1, 2026 is a Sunday, so the first Saturday is November 7. 2026-11-07 matches. The 2012 start by the Vote Bison Coalition comes from search results; the WCS page confirms the Senate resolutions and the first-Saturday rule."
+ },
+ "wombat-facts-for-kids": {
+  "text": "There's no official day for the wombat this week, so this one is a Wild Atlas pick.",
+  "sourceLabel": "",
+  "sourceUrl": "",
+  "confidence": "high",
+  "dateCheck": "No official day on 2026-11-12. Side note: Australia's National Wombat Day is October 22, but that's not this week."
+ },
+ "whale-shark-world-fisheries-day": {
+  "text": "World Fisheries Day began in 1997, when fishing communities from 18 countries met in New Delhi and called for fishing that keeps oceans and rivers healthy.",
+  "sourceLabel": "Sea Around Us — World Fisheries Day",
+  "sourceUrl": "https://www.seaaroundus.org/tag/world-fisheries-day/",
+  "confidence": "medium",
+  "dateCheck": "Fixed date, November 21. 2026-11-21 matches. It's not a UN-declared day: it came from the World Forum of Fish Harvesters & Fish Workers meeting in New Delhi in 1997. The whale shark is our pick; the day itself isn't about one animal. Most accounts agree on the 1997 origin, but they are secondary sources."
+ },
+ "international-jaguar-day": {
+  "text": "International Jaguar Day was announced in 2018 by Latin American governments and conservation groups, including the UN Development Programme, WWF, WCS and Panthera.",
+  "sourceLabel": "UNDP — Latin America launches new roadmap to save the jaguar",
+  "sourceUrl": "https://www.undp.org/press-releases/latin-america-launches-new-roadmap-save-jaguar",
+  "confidence": "high",
+  "dateCheck": "Fixed date, November 29. 2026-11-29 matches. It was announced at the UN Biodiversity Conference (CBD COP14) in 2018. The UNDP page blocked direct fetch (403), so the wording is from its indexed text."
+ },
+ "international-zebra-day": {
+  "text": "Its origins aren't well documented, but zoos and conservation groups around the world mark International Zebra Day every January 31.",
+  "sourceLabel": "",
+  "sourceUrl": "",
+  "confidence": "medium",
+  "dateCheck": "Fixed date Jan 31; 2027-01-31 is a Sunday. OK. Sources disagree on the origin: some tie it to an Ehlers-Danlos awareness day (the zebra is its mascot), others vaguely credit conservationists around 2020. There's no authoritative founder, so the text is deliberately honest about that."
+ },
+ "world-ostrich-day": {
+  "text": "World Ostrich Day was started in 2020 by Jade Tinker, an ostrich keeper at Auckland Zoo. February 2 (2/2) nods to the ostrich's two toes on each foot.",
+  "sourceLabel": "Auckland Zoo: Common Ostrich",
+  "sourceUrl": "https://www.aucklandzoo.co.nz/animals/common-ostrich",
+  "confidence": "high",
+  "dateCheck": "Fixed date Feb 2; 2027-02-02 is a Tuesday. OK."
+ },
+ "world-bonobo-day": {
+  "text": "World Bonobo Day was started by Ashley Stone of The Bonobo Project and first marked on Valentine's Day 2017, a nod to bonobos' famously peaceful ways.",
+  "sourceLabel": "PR Newswire: The Bonobo Project announces federal resolution for World Bonobo Day",
+  "sourceUrl": "https://www.prnewswire.com/news-releases/the-bonobo-project-announces-federal-resolution-for-world-bonobo-day-300596203.html",
+  "confidence": "medium",
+  "dateCheck": "Fixed date Feb 14; 2027-02-14 is a Sunday. OK. The 2017 first observance (California Senate resolution) comes from Mongabay and PEN coverage. The press release names Stone as founder and describes the 2018 federal proclamation. Some secondary sites instead credit Bonobo Conservation Initiative and Lola ya Bonobo."
+ },
+ "world-hippo-day": {
+  "text": "Its origins aren't well documented, but zoos and conservation groups mark World Hippo Day every February 15.",
+  "sourceLabel": "",
+  "sourceUrl": "",
+  "confidence": "medium",
+  "dateCheck": "Fixed date Feb 15; 2027-02-15 is a Monday. OK. Secondary sites give conflicting origins (IFAW in 2007, or Zambia Carnivore Programme and Sheldrick Trust in 2012). No primary source found, so it's left as undocumented."
+ },
+ "world-pangolin-day": {
+  "text": "World Pangolin Day was first held in 2012, started by the wildlife group Annamiticus, and falls on the third Saturday of February.",
+  "sourceLabel": "World Pangolin Day (Annamiticus)",
+  "sourceUrl": "https://www.worldpangolinday.org/",
+  "confidence": "medium",
+  "dateCheck": "Floating date: third Saturday of February. In Feb 2027 the Saturdays are 6, 13 and 20, so the third is 2027-02-20. Matches. The official site is run by Annamiticus (founder Rhishja Cota). The 2012 start comes from National Day Calendar and similar sites; the official page doesn't state the year outright."
+ },
+ "international-polar-bear-day": {
+  "text": "International Polar Bear Day was started by Polar Bears International and falls on February 27, when polar bear mothers and cubs are snug in their snow dens.",
+  "sourceLabel": "Polar Bears International: International Polar Bear Day",
+  "sourceUrl": "https://polarbearsinternational.org/act-now/awareness-events/international-polar-bear-day/",
+  "confidence": "high",
+  "dateCheck": "Fixed date Feb 27; 2027-02-27 is a Saturday. OK. The founding year is left out on purpose because sources conflict: PBI's '18th consecutive year' in 2023 suggests about 2006, while other sites say 2000 or 2012."
+ },
+ "world-wildlife-day": {
+  "text": "World Wildlife Day was declared by the United Nations in 2013. March 3 marks the day in 1973 when countries signed CITES, the treaty protecting wild animals and plants from harmful trade.",
+  "sourceLabel": "World Wildlife Day (CITES): About",
+  "sourceUrl": "https://wildlifeday.org/en/about",
+  "confidence": "high",
+  "dateCheck": "Fixed date Mar 3; 2027-03-03 is a Wednesday. OK. It was proclaimed by the UN General Assembly (68th session) on 20 Dec 2013. The day isn't animal-specific; the African Lion is our pick for it."
+ },
+ "humpback-whale-facts-for-kids": {
+  "text": "There's no official day for the humpback whale this week, so this one is a Wild Atlas pick.",
+  "sourceLabel": "",
+  "sourceUrl": "",
+  "confidence": "high",
+  "dateCheck": "Wild Atlas Wildcard, not an official day; 2027-03-11 is a Thursday. Nothing to check."
+ },
+ "national-panda-day": {
+  "text": "No one knows for sure who started National Panda Day, but zoos and conservation groups mark it every March 16 to celebrate giant pandas.",
+  "sourceLabel": "Awareness Days: National Panda Day",
+  "sourceUrl": "https://www.awarenessdays.com/awareness-days-calendar/national-panda-day/",
+  "confidence": "medium",
+  "dateCheck": "Fixed date, March 16 each year; 2027-03-16 (a Tuesday) is correct. No founder or first year is on record. The claim that it links to WWF's 2009 'Adopt a Panda' programme appears only on unverified calendar sites, so we left it out."
+ },
+ "international-seal-day": {
+  "text": "In 1982 the U.S. Senate named a 'Day of the Seal' to help protect seals, and today people around the world celebrate seals every March 22.",
+  "sourceLabel": "U.S. Senate Resolution 266 (97th Congress, 1982), via TrackBill",
+  "sourceUrl": "https://trackbill.com/bill/us-congress-senate-resolution-266-a-resolution-to-declare-march-1-1982-as-national-day-of-the-seal/162481/",
+  "confidence": "medium",
+  "dateCheck": "Observed March 22 each year; 2027-03-22 (a Monday) is correct. Caveat: the 1982 Senate resolution (S.Res.266) named March 1, 1982 'National Day of the Seal', not March 22. How the day moved to March 22 is not documented, so the sentence avoids saying Congress picked March 22. Many calendar sites repeat 'declared by U.S. Congress in 1982'. The congress.gov page blocked our fetch (403)."
+ },
+ "manatee-appreciation-day": {
+  "text": "Manatee Appreciation Day falls on the last Wednesday of March. Save the Manatee Club, started in 1981 by Jimmy Buffett and Florida Governor Bob Graham, champions it.",
+  "sourceLabel": "Save the Manatee Club: Celebrate Manatee Appreciation Day",
+  "sourceUrl": "https://savethemanatee.org/celebrate-manatee-appreciation-day-on-march-29/",
+  "confidence": "medium",
+  "dateCheck": "Floating date: the last Wednesday of March. For 2027 that is March 31, a Wednesday, so 2027-03-31 is correct. Save the Manatee Club's own page gives the date rule but does not say who created the day or when. The 1981 date is when the Club was founded; third-party sites that say the day itself began in 1981 are unverified, so the sentence doesn't claim that."
+ },
+ "international-beaver-day": {
+  "text": "International Beaver Day was started in 2009 by the group Beavers: Wetlands & Wildlife. It falls on April 7, the birthday of 'Beaver Woman' Dorothy Richards.",
+  "sourceLabel": "Wikipedia: Dorothy Burney Richards",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Dorothy_Burney_Richards",
+  "confidence": "medium",
+  "dateCheck": "Fixed date, April 7 each year (Richards was born April 7, 1894); 2027-04-07 (a Wednesday) is correct. Wikipedia confirms the link to her birthday. The 2009 start year and Beavers: Wetlands & Wildlife as founder come from secondary sources (HolidayInsights, Checkiday); we could not open the group's own site."
+ },
+ "bat-appreciation-day": {
+  "text": "Its origins aren't well documented, but bat lovers and groups like Bat Conservation International celebrate these night-flying helpers every April 17.",
+  "sourceLabel": "",
+  "sourceUrl": "",
+  "confidence": "low",
+  "dateCheck": "Fixed date, April 17 each year; 2027-04-17 (a Saturday) is correct. Some calendar sites say Bat Conservation International founded it, with conflicting start years (one says 2000, Austin). We found no statement from BCI itself, so the sentence doesn't name a founder."
+ },
+ "international-pallas-cat-day": {
+  "text": "Its origins aren't well documented, but zoos and groups like the Pallas's Cat International Conservation Alliance celebrate these fluffy wild cats every April 23.",
+  "sourceLabel": "Snow Leopard Trust: Celebrate International Pallas's Cat Day",
+  "sourceUrl": "https://snowleopard.org/celebrate-international-pallass-cat-day/",
+  "confidence": "low",
+  "dateCheck": "Fixed date, April 23 each year; 2027-04-23 (a Friday) is correct. One search summary said the alliance (PICA, formed 2016) launched the day in 2019, but no source page we opened confirms it. The Snow Leopard Trust (a PICA partner) and Edinburgh Zoo both mark April 23 but don't name a founder."
+ },
+ "world-tapir-day": {
+  "text": "World Tapir Day was started in 2008 by conservationists to help more people know and protect tapirs, one of the world's least-known animals.",
+  "sourceLabel": "UPI: World Tapir Day was started by conservationists in 2008",
+  "sourceUrl": "https://www.upi.com/Odd_News/2022/04/27/World-Tapir-Day-started-2008/3721651007707/",
+  "confidence": "medium",
+  "dateCheck": "Fixed date, April 27 each year; 2027-04-27 (a Tuesday) is correct. No single founder is widely agreed; one source names Anthony Long but we could not confirm it. Some sources tie April 27 to the birthday of April, the Belize Zoo's Baird's tapir, but that is also unconfirmed, so it is left out of the sentence."
+ },
+ "wild-koala-day": {
+  "text": "Wild Koala Day was started in 2016 by a network of Australian koala conservation groups, led by the Koala Clancy Foundation, to celebrate and protect wild koalas.",
+  "sourceLabel": "Wild Koala Day (official site)",
+  "sourceUrl": "https://www.wildkoaladay.com.au/",
+  "confidence": "high",
+  "dateCheck": "Fixed date, May 3 each year; 2027-05-03 (a Monday) is correct. The official site confirms the 2016 start by a network of koala groups. Koala Clancy Foundation as proposer, with co-founder Janine Duffy, comes from koalaclancyfoundation.org.au."
+ }
+}
