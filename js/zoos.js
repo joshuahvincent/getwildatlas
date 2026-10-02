@@ -692,12 +692,13 @@ async function init() {
   $('zf-forget').addEventListener('click', forgetLocation);
   // "Larger map": the map takes most of the width and the list shrinks to compact rows; remembered on this device
   const setSize = (big, save) => {
-    $('zf-main').dataset.size = big ? 'large' : ''; $('zf-size').setAttribute('aria-pressed', String(big)); $('zf-size').textContent = big ? 'Smaller map' : 'Larger map';
-    if (save) { try { localStorage.setItem('wa_zoo_size', big ? 'large' : ''); } catch (e) {} track('zoo_map_size', { state: big ? 'large' : 'normal' }); }
+    $('zf-main').dataset.size = big ? 'large' : 'normal'; $('zf-size').setAttribute('aria-pressed', String(big)); $('zf-size').textContent = big ? 'Smaller map' : 'Larger map';
+    if (save) { try { localStorage.setItem('wa_zoo_size', big ? 'large' : 'normal'); } catch (e) {} track('zoo_map_size', { state: big ? 'large' : 'normal' }); }
     setTimeout(() => { if (map) { map.resize(); if (lastCands.length) fit(lastCands); } else if (FB.svg) { FB.cw = $('zf-map').clientWidth; FB.ch = $('zf-map').clientHeight; fbClamp(); fbApply(); } }, 60);
   };
   $('zf-size').addEventListener('click', () => setSize($('zf-main').dataset.size !== 'large', true));
-  try { if (localStorage.getItem('wa_zoo_size') === 'large') setSize(true, false); } catch (e) {}
+  let pref = ''; try { pref = localStorage.getItem('wa_zoo_size') || ''; } catch (e) {}
+  if (pref === 'normal') setSize(false, false);   // the larger map is the default; only an explicit "Smaller map" is remembered
   const input = $('zf-animal');
   input.addEventListener('focus', () => showAnimalList(input.value === (S.cur && S.cur.name) ? '' : input.value));
   input.addEventListener('input', () => { $('zf-animal-clear').hidden = !input.value; if (S.unknown) S.unknown = ''; showAnimalList(input.value); });
