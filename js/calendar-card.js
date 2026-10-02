@@ -18,9 +18,6 @@
     $('.calday-when').textContent = (d.isToday ? 'Today · ' : '') + d.dateText;
     $('.calday-day').textContent = d.day;
     $('.calday-animal').textContent = d.animal && d.animal.toLowerCase() !== d.day.toLowerCase() ? 'Meet the ' + d.animal.charAt(0).toLowerCase() + d.animal.slice(1) : '';
-    var n = data.next, next = $('.calday-next');
-    if (n) { var a = $('.calday-next-link'); a.href = n.url; a.textContent = n.day; $('.calday-next-date').textContent = n.dateText; next.hidden = false; }
-    else next.hidden = true;
   }
   fetch('/calendar/latest.json', { cache: 'no-cache' })
     .then(function (r) { return r.ok ? r.json() : null; })
