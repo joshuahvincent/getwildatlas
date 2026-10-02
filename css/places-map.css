@@ -29,6 +29,16 @@
 .places-map-toggle:hover, .places-map-toggle:focus-visible { background: #FFF4CC; }
 
 /* Explore link (opts.link): bottom-right corner of the map; attribution sits bottom-left. */
-.places-map-explore { position: absolute; right: 10px; bottom: 10px; z-index: 3; padding: 0.4rem 0.9rem; border: 1.5px solid #5D4037; border-radius: 999px; background: #fff; color: #5D4037; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.88rem; text-decoration: none; box-shadow: 0 2px 8px rgba(93, 64, 55, 0.18); }
+.places-map-explore { position: absolute; right: 10px; bottom: 10px; z-index: 1; max-width: calc(100% - 20px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; box-sizing: border-box; padding: 0.4rem 0.9rem; border: 1.5px solid #5D4037; border-radius: 999px; background: #fff; color: #5D4037; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.88rem; text-decoration: none; box-shadow: 0 2px 8px rgba(93, 64, 55, 0.18); }
 .places-map-explore:hover, .places-map-explore:focus-visible { background: #FFF4CC; }
-@media (max-width: 600px) { .places-map-explore { font-size: 0.8rem; padding: 0.35rem 0.75rem; } }
+@media (max-width: 600px) { .places-map-explore { font-size: 0.78rem; padding: 0.3rem 0.7rem; } }
+/* Pin popups sit above the explore link (it's z-index 1). */
+.places-map .maplibregl-popup { z-index: 2; }
+
+/* List mode (data-cards-mode="list", the default): "See it in the list ↓" in a pin's popup
+   scrolls to its card and flashes this highlight. */
+.places-map .pm-jump { padding: 0; border: 0; background: none; color: #5D4037; font: inherit; font-weight: 800; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+[data-pin-key].pm-highlight { animation: pm-flash 2.4s ease-out; }
+@keyframes pm-flash { 0%, 40% { box-shadow: 0 0 0 4px #FFD166, 0 6px 18px rgba(93, 64, 55, 0.18); } 100% { box-shadow: 0 0 0 0 rgba(255, 209, 102, 0); } }
+@media (prefers-reduced-motion: reduce) { [data-pin-key].pm-highlight { animation: none; outline: 4px solid #FFD166; outline-offset: 2px; } }
+.places-map-explore.pm-below { position: static; display: inline-block; max-width: 100%; margin: 0 0 0.8rem; white-space: normal; }

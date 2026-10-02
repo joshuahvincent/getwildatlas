@@ -21,9 +21,11 @@
 //                line up. `w` rows: [placeIndex, recordedSightings, relativeName or ""],
 //                most-sighted first.
 //   data-wild-max  most reserves to show (default 15)
-//   data-cards   id of an element holding cards with data-pin-key="<pin key>". The cards
-//                collapse behind the map; tapping a pin shows its card in a panel under
-//                the map, and a "Show all N places as a list" button reveals them all.
+//   data-cards   id of an element holding cards with data-pin-key="<pin key>".
+//   data-cards-mode  "list" (default): the cards stay visible under the map; a pin's
+//                popup gets "See it in the list ↓", which scrolls to and highlights its
+//                card. "collapse": the cards hide behind the map; tapping a pin shows its
+//                card in a panel under the map, with a "Show all N places" button.
 //                If the map can't load, the cards stay visible as a plain list.
 //
 // Pin tiers. The first four are the zoo finder's; "wild" is the in-the-wild pin.
@@ -122,6 +124,7 @@ function setupCards(el) {
   if (!box) return null;
   const n = box.querySelectorAll('[data-pin-key]').length;
   if (!n) return null;
+  if (el.dataset.cardsMode !== 'collapse') return { box, mode: 'list', restore() {} };
   const detail = el$('div', { class: 'places-map-detail', 'aria-live': 'polite' });
   detail.hidden = true;
   const toggle = el$('button', { type: 'button', class: 'places-map-toggle', 'aria-controls': box.id, 'aria-expanded': 'false' });
@@ -137,9 +140,18 @@ function setupCards(el) {
   return { box, detail, toggle, restore() { box.classList.remove('pm-collapsed'); detail.remove(); toggle.remove(); } };
 }
 
+// List mode: scroll the pin's card into view and flash a highlight on it.
+function jumpToCard(card) {
+  card.scrollIntoView({ block: 'center', behavior: reducedMotion() ? 'auto' : 'smooth' });
+  card.classList.remove('pm-highlight'); void card.offsetWidth; card.classList.add('pm-highlight');
+  if (!card.hasAttribute('tabindex')) card.setAttribute('tabindex', '-1');
+  card.focus({ preventScroll: true });
+}
+
 function showCard(cards, key) {
   const card = key && cards.box.querySelector('[data-pin-key="' + CSS.escape(key) + '"]');
   if (!card) return false;
+  if (cards.mode === 'list') return card;
   const copy = card.cloneNode(true);
   copy.removeAttribute('data-pin-key');
   const close = el$('button', { type: 'button', class: 'places-map-detail-close', 'aria-label': 'Close' });
@@ -211,8 +223,20 @@ async function draw(el, cards) {
       const p = pins[f.properties.i];
       if (popup) popup.remove();
       const shown = cards && showCard(cards, p.key);
-      popup = new lib.Popup({ offset: 12, maxWidth: '260px' }).setLngLat([p.lo, p.la]).setDOMContent(shown ? el$('div', {}, el$('h4', { text: p.title || '' })) : popupNode(p)).addTo(map);
-      map.easeTo({ center: [p.lo, p.la], duration: reducedMotion() ? 0 : 400 });
+      let content;
+      if (shown instanceof Element) {   // list mode: full popup + a jump to its card
+        content = popupNode(p);
+        const jump = el$('button', { type: 'button', class: 'pm-jump', text: 'See it in the list ↓' });
+        jump.addEventListener('click', () => jumpToCard(shown));
+        content.append(el$('p', {}, jump));
+      } else content = shown ? el$('div', {}, el$('h4', { text: p.title || '' })) : popupNode(p);
+      // Centre on the pin first, then open the popup, so it has room on a small map.
+      const narrowMap = el.clientWidth < 520;   // too narrow for a side popup: open it straight above the pin
+      const open = new lib.Popup({ offset: 12, maxWidth: Math.min(260, el.clientWidth - 24) + 'px', ...(narrowMap ? { anchor: 'bottom' } : {}) }).setLngLat([p.lo, p.la]).setDOMContent(content);
+      popup = open;
+      map.once('moveend', () => { if (popup === open) open.addTo(map); });
+      // On a small map, park the pin low so its popup fits above it.
+      map.easeTo({ center: [p.lo, p.la], offset: [0, narrowMap ? Math.round(el.clientHeight * 0.3) : 0], duration: reducedMotion() ? 0 : 400 });
     });
     map.on('mouseenter', layer, () => (map.getCanvas().style.cursor = 'pointer'));
     map.on('mouseleave', layer, () => (map.getCanvas().style.cursor = ''));
@@ -220,6 +244,12 @@ async function draw(el, cards) {
 }
 
 const maps = document.querySelectorAll('.places-map');
+// The explore link (shortcode `link`) sits in the map's bottom-right corner; on a narrow
+// map that corner is too small (attribution, popups), so it moves just under the map.
+maps.forEach((el) => {
+  const link = el.querySelector('.places-map-explore');
+  if (link && el.clientWidth < 520) { link.classList.add('pm-below'); el.after(link); }
+});
 const linked = new Map([...maps].map((m) => [m, setupCards(m)]));   // collapse cards right away, before the map loads
 function start(el) {
   const cards = linked.get(el);

@@ -203,7 +203,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("placePins", (list, tier) => placesLib.placePins(list, tier));
   eleventyConfig.addFilter("whereToSeePins", placesLib.whereToSeePins);
   eleventyConfig.addFilter("pinKey", placesLib.pinKey);
-  // {% placesMap pins, { label, src, format, types, fit, maxZoom, legend, height, cards, animal, wildMax, link } %}
+  // {% placesMap pins, { label, src, format, types, fit, maxZoom, legend, height, cards, cardsMode, animal, wildMax, link } %}
   // link: { href, text } adds an explore link in the map's bottom-right corner.
   // pins: an array from placePins/whereToSeePins, or null when using `src` (e.g. all zoo-finder places).
   eleventyConfig.addShortcode("placesMap", (pins, opts = {}) => {
@@ -218,12 +218,13 @@ module.exports = function (eleventyConfig) {
     if (opts.legend) attrs.push(`data-legend="${esc(typeof opts.legend === "string" ? opts.legend : JSON.stringify(opts.legend))}"`);
     if (opts.height) attrs.push(`style="--places-map-h: ${esc(opts.height)}"`);
     if (opts.cards) attrs.push(`data-cards="${esc(opts.cards)}"`);
+    if (opts.cardsMode) attrs.push(`data-cards-mode="${esc(opts.cardsMode)}"`);
     if (opts.animal) attrs.push(`data-animal="${esc(opts.animal)}"`);
     if (opts.wildMax) attrs.push(`data-wild-max="${esc(opts.wildMax)}"`);
     if (!(pins && pins.length) && !opts.src) return "";
     const link = opts.link && opts.link.href ? `<a class="places-map-explore" href="${esc(opts.link.href)}">${esc(opts.link.text || "Explore the map")} →</a>` : "";
-    return `<link rel="stylesheet" href="/js/vendor/maplibre/maplibre-gl.css"><link rel="stylesheet" href="/css/places-map.css?v=5">` +
-      `<div ${attrs.join(" ")}>${link}</div><script type="module" src="/js/places-map.js?v=7"></script>`;
+    return `<link rel="stylesheet" href="/js/vendor/maplibre/maplibre-gl.css"><link rel="stylesheet" href="/css/places-map.css?v=8">` +
+      `<div ${attrs.join(" ")}>${link}</div><script type="module" src="/js/places-map.js?v=13"></script>`;
   });
   eleventyConfig.addFilter("isoDay", (d) => new Date(d).toISOString().slice(0, 10));
   const { RenderPlugin } = require("@11ty/eleventy");
