@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/js/vendor/maplibre/maplibre-gl.css">
-<link rel="stylesheet" href="/css/zoos.css?v=15">
+<link rel="stylesheet" href="/css/zoos.css?v=16">
 
 <div class="zf" id="zf" data-animal="{{ a.id if a else '' }}">
   <h1 class="zf-title">Find a place to see real animals</h1>
@@ -63,6 +63,7 @@
       </div>
     </div>
     <div class="zf-mappane" id="zf-mappane">
+      <div class="zf-maptools"><button type="button" class="zf-sizebtn" id="zf-size" aria-pressed="false">Larger map</button></div>
       <div class="zf-map" id="zf-map" role="region" aria-label="Map of the places in the list. The list has the same places."></div>
       <ul class="zf-legend" id="zf-legend"></ul>
     </div>
@@ -95,5 +96,5 @@
   </form>
 </dialog>
 
-<script type="module" src="/js/zoos.js?v=37"></script>
+<script type="module" src="/js/zoos.js?v=38"></script>
 <noscript><p>This page needs JavaScript to find places near you. The list above shows some places to start with, and you can browse the <a href="/blog/">Wild Atlas blog</a> in the meantime.</p></noscript>

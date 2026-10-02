@@ -200,3 +200,22 @@
 .zf-linkbtn { background: none; border: 0; font: inherit; color: var(--zf-accent); text-decoration: underline; cursor: pointer; padding: 0; }
 @media (min-width: 900px) { .zf-map { height: auto; aspect-ratio: 4 / 3; max-height: calc(100vh - 150px); min-height: 320px; } }
 @media (max-width: 899px) { .zf-map { height: auto; aspect-ratio: 1 / 1; max-height: 70vh; min-height: 300px; } .zf-card { grid-template-columns: 72px minmax(0, 1fr); } .zf-photo, .zf-photo-ph { width: 72px; height: 72px; } }
+
+/* larger map: the map leads, the list becomes compact rows */
+.zf-maptools { display: flex; justify-content: flex-end; margin: 0 0 .35rem; }
+.zf-sizebtn { font: inherit; font-weight: 700; font-size: .85rem; padding: .25rem .8rem; border: 1.5px solid var(--zf-edge); border-radius: 999px; background: #fff; color: var(--ink, #2A2118); cursor: pointer; min-height: 32px; }
+.zf-sizebtn:hover { background: #fbf4e3; }
+.zf-sizebtn:focus-visible { outline: 3px solid var(--zf-focus); outline-offset: 2px; }
+@media (min-width: 900px) {
+  .zf-main[data-size="large"] { grid-template-columns: minmax(300px, .5fr) minmax(0, 1.7fr); }
+  .zf-main[data-size="large"] .zf-map { aspect-ratio: auto; height: calc(100vh - 190px); min-height: 440px; max-height: 920px; }
+}
+@media (max-width: 899px) { .zf-main[data-size="large"] .zf-map { aspect-ratio: 3 / 4; max-height: 82vh; } }
+.zf-main[data-size="large"] .zf-card { grid-template-columns: 40px minmax(0, 1fr); gap: .5rem; padding: .35rem .5rem; border-radius: 10px; }
+.zf-main[data-size="large"] .zf-photo, .zf-main[data-size="large"] .zf-photo-ph { width: 40px; height: 40px; border-radius: 8px; font-size: 1.2rem; }
+.zf-main[data-size="large"] .zf-card h3 { font-size: .92rem; }
+.zf-main[data-size="large"] .zf-note, .zf-main[data-size="large"] .zf-badges, .zf-main[data-size="large"] details.zf-credit { display: none; }
+.zf-main[data-size="large"] .zf-where-line { font-size: .78rem; margin: 0; }
+.zf-main[data-size="large"] .zf-actions { gap: .2rem .6rem; font-size: .82rem; }
+.zf-main[data-size="large"] .zf-actions button { padding: .1rem .5rem; min-height: 28px; font-size: .8rem; }
+.zf-main[data-size="large"] .zf-list { gap: .35rem; }
