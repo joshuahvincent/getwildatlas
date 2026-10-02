@@ -171,7 +171,7 @@ function section(title, sub, list) {
 }
 // once an animal and a location are both set, the controls fold into one summary line ("Hippopotamus · Seattle, WA · Any distance · Change")
 function updateSummary() {
-  const collapsed = !!(S.cur && S.origin && !S.editing);
+  const collapsed = false;   // the animal and place fields stay separate so the animal is always one click to change
   $('zf-panel').hidden = collapsed; $('zf-summary').hidden = !collapsed;
   $('zf-edit').setAttribute('aria-expanded', String(!collapsed));
   if (collapsed) $('zf-sum-text').textContent = [S.cur.name, S.origin.label === 'your location' ? 'Near you' : S.origin.label, S.distLabel].join(' · ');
