@@ -186,7 +186,7 @@ function render() {
     if (parksAll.length) box.append(section('See it in the wild', '(' + parksAll.length.toLocaleString('en') + ' national parks and reserves)', parksAll));
     if (!everyone.length) box.append(el('div', { class: 'zf-empty' }, el('p', { text: filtered() ? 'No places match these filters.' : 'Nothing within that distance.' }), filtered() ? el('button', { type: 'button', class: 'zf-btn', id: 'zf-resetf', text: 'Show everything again' }) : null, Number.isFinite(S.maxKm) ? el('button', { type: 'button', class: 'zf-btn', id: 'zf-widen', text: 'Search any distance' }) : null));
     const where = S.origin ? '' : 'Add your location to put the closest first.';
-    $('zf-status').textContent = (S.unknown ? 'We can\u2019t find \u201c' + S.unknown + '\u201d yet, so here are animal places ' + (S.origin ? 'near you' : 'to start with') + '. ' : 'Showing every place. Search for an animal to narrow it down. ') + (S.unknown ? '' : where);
+    $('zf-status').textContent = (S.unknown ? 'We can\u2019t find \u201c' + S.unknown + '\u201d yet, so here are animal places ' + (S.origin ? 'near you' : 'to start with') + '. ' : '') + (S.unknown ? '' : where);
     lastCands = everyone; drawMap(everyone); return;
   }
   const all = sortCands(candidates()).filter(visible);
