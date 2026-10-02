@@ -105,5 +105,30 @@
   "id": "black_rhinoceros",
   "name": "Black Rhinoceros",
   "sci": "Diceros bicornis"
+ },
+ {
+  "id": "eurasian_beaver",
+  "name": "Eurasian Beaver",
+  "sci": "Castor fiber"
+ },
+ {
+  "id": "hyacinth_macaw",
+  "name": "Hyacinth Macaw",
+  "sci": "Anodorhynchus hyacinthinus"
+ },
+ {
+  "id": "malayan_tapir",
+  "name": "Malayan Tapir",
+  "sci": "Tapirus indicus"
+ },
+ {
+  "id": "giant_pacific_octopus",
+  "name": "Giant Pacific Octopus",
+  "sci": "Enteroctopus dofleini"
+ },
+ {
+  "id": "ring_tailed_lemur",
+  "name": "Ring-tailed Lemur",
+  "sci": "Lemur catta"
  }
 ]

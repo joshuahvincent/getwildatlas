@@ -6348,5 +6348,55 @@
 "via": null,
 "rat": null
 }
+],
+"eurasian_beaver": [
+{
+"key": 4409131,
+"rank": "SPECIES",
+"name": "Castor fiber Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"hyacinth_macaw": [
+{
+"key": 2479359,
+"rank": "SPECIES",
+"name": "Anodorhynchus hyacinthinus (Latham, 1790)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"malayan_tapir": [
+{
+"key": 2440896,
+"rank": "SPECIES",
+"name": "Tapirus indicus Desmarest, 1819",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"giant_pacific_octopus": [
+{
+"key": 2289485,
+"rank": "SPECIES",
+"name": "Enteroctopus dofleini (W\u00fclker, 1910)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"ring_tailed_lemur": [
+{
+"key": 2436412,
+"rank": "SPECIES",
+"name": "Lemur catta Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+}
 ]
 }

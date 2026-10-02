@@ -157,3 +157,18 @@
 .zf-dot.d { background: #0E7C86; border: 2px solid #fff; box-shadow: 0 0 0 1.5px #08454A; }
 .zf-maperr { margin: 0; padding: 1.2rem; text-align: center; color: var(--muted); display: grid; place-content: center; height: 100%; gap: .3rem; }
 .zf-maperr small { font-size: .78rem; opacity: .8; }
+
+/* fallback map (no WebGL) */
+.zf-fbmap { position: relative; overflow: hidden; touch-action: none; cursor: grab; }
+.zf-fbmap.is-drag { cursor: grabbing; }
+.zf-fb { width: 100%; height: 100%; display: block; user-select: none; }
+.zf-fbpin { cursor: pointer; }
+.zf-fbctl { position: absolute; top: 10px; right: 10px; display: grid; gap: 1px; }
+.zf-fbctl button { width: 36px; height: 36px; border: 1px solid #c9b894; background: #fff; font-size: 22px; line-height: 1; color: #2A2118; cursor: pointer; }
+.zf-fbctl button:first-child { border-radius: 8px 8px 0 0; } .zf-fbctl button:last-child { border-radius: 0 0 8px 8px; }
+.zf-fbcred { position: absolute; right: 6px; bottom: 4px; font-size: 11px; color: #5b4f3d; background: rgba(255,255,255,.7); padding: 0 5px; border-radius: 4px; }
+.zf-fbpop { position: absolute; transform: translate(-50%, -100%); background: #fff; border-radius: 12px; box-shadow: 0 3px 14px rgba(0,0,0,.25); font-family: "Nunito", system-ui, sans-serif; font-size: 14px; line-height: 1.4; padding: 14px 16px 12px; max-width: 260px; color: #2A2118; cursor: auto; }
+.zf-fbpop h4 { margin: 0 0 2px; font-family: "Fredoka", system-ui, sans-serif; font-size: 15px; padding-right: 22px; }
+.zf-fbpop p { margin: 2px 0; font-size: 13px; }
+.zf-fbpop .pp-unc { display: inline-block; font-weight: 700; font-size: 12px; background: #fff1c2; color: #5c4400; border: 1px dashed #9a7b00; border-radius: 999px; padding: 0 8px; margin: 2px 0; }
+.zf-fbx { position: absolute; top: 2px; right: 2px; width: 32px; height: 32px; border: 0; background: none; font-size: 22px; cursor: pointer; }
