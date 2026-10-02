@@ -50,7 +50,7 @@
   <!-- Preconnect to Formspree -->
   <link rel="preconnect" href="https://formspree.io">
 
-  <link rel="stylesheet" href="css/styles.css?v=10">
+  <link rel="stylesheet" href="css/styles.css?v=11">
 
   <!-- Structured Data: SoftwareApplication -->
   <script type="application/ld+json">
@@ -248,42 +248,17 @@
     </div>
   </section>
 
-  <!-- PARENT EMAIL SIGNUP -->
-  <section class="email-signup email-signup--band" id="newsletter" aria-labelledby="es-home-heading">
-    <div class="band-row">
-    <div class="email-signup-inner">
-      <p class="email-signup-eyebrow">For parents &amp; guardians</p>
-      <h2 id="es-home-heading" class="email-signup-heading">A few emails a year. Worth opening.</h2>
-      <p class="email-signup-sub">New animal packs, features, and notes for parents &mdash; sent when we have something real to share.</p>
-      <p class="email-signup-incentive"><img class="incentive-icon" src="assets/newsletter-gift.png" alt="">Subscribe and the <strong>Farm Friends</strong> pack ($3.99) is <strong>free</strong> &mdash; yours to keep even if you unsubscribe.</p>
-      <form class="email-signup-form" action="/api/subscribe" method="POST" novalidate>
-        <input type="hidden" name="source" value="homepage">
-        <div class="email-signup-row">
-          <label class="sr-only" for="es-home-email">Email address</label>
-          <input id="es-home-email" class="email-signup-input" type="email" name="email" required autocomplete="email" placeholder="your@email.com">
-          <button class="email-signup-btn" type="submit">Subscribe</button>
-        </div>
-        <label class="email-signup-consent">
-          <input type="checkbox" name="consent" required>
-          <span>I agree to receive occasional emails from Wild Atlas about new packs, app updates, and notes for parents.</span>
-        </label>
-        <p class="email-signup-fine">We send occasionally &mdash; unsubscribe anytime, and we don&rsquo;t share your address. We use <a href="https://www.beehiiv.com" target="_blank" rel="noopener">beehiiv</a> to send these emails. See our <a href="privacy.html">Privacy Policy</a>.</p>
-        <p class="email-signup-msg" role="status" aria-live="polite" hidden></p>
-      </form>
-    </div>
-    <!-- From the World Wildlife Calendar: filled by js/calendar-card.js from /calendar/latest.json -->
-    <aside class="calday" id="calendar-today" aria-labelledby="calday-heading" hidden>
+  <!-- FROM THE WORLD WILDLIFE CALENDAR: one short row, filled by js/calendar-card.js from /calendar/latest.json -->
+  <section class="calday" id="calendar-today" aria-labelledby="calday-heading" hidden>
+    <div class="container">
       <a class="calday-card" href="/calendar/">
-        <span class="calday-photo"><img class="calday-img" src="data:," alt="" loading="lazy"><span class="calday-when"></span></span>
+        <img class="calday-img" src="data:," alt="" loading="lazy">
         <span class="calday-text">
           <span class="calday-eyebrow" id="calday-heading">From the World Wildlife Calendar</span>
-          <span class="calday-day"></span>
-          <span class="calday-animal"></span>
-          <span class="calday-cta">Get more info <span aria-hidden="true">→</span></span>
+          <span class="calday-line"><span class="calday-day"></span><span class="calday-when"></span></span>
         </span>
+        <span class="calday-cta">Get more info <span aria-hidden="true">→</span></span>
       </a>
-      <a class="calday-all" href="/calendar/">See the whole calendar →</a>
-    </aside>
     </div>
   </section>
 
@@ -384,6 +359,30 @@
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- PARENT EMAIL SIGNUP -->
+  <section class="email-signup email-signup--band" id="newsletter" aria-labelledby="es-home-heading">
+    <div class="email-signup-inner">
+      <p class="email-signup-eyebrow">For parents &amp; guardians</p>
+      <h2 id="es-home-heading" class="email-signup-heading">A few emails a year. Worth opening.</h2>
+      <p class="email-signup-sub">New animal packs, features, and notes for parents &mdash; sent when we have something real to share.</p>
+      <p class="email-signup-incentive"><img class="incentive-icon" src="assets/newsletter-gift.png" alt="">Subscribe and the <strong>Farm Friends</strong> pack ($3.99) is <strong>free</strong> &mdash; yours to keep even if you unsubscribe.</p>
+      <form class="email-signup-form" action="/api/subscribe" method="POST" novalidate>
+        <input type="hidden" name="source" value="homepage">
+        <div class="email-signup-row">
+          <label class="sr-only" for="es-home-email">Email address</label>
+          <input id="es-home-email" class="email-signup-input" type="email" name="email" required autocomplete="email" placeholder="your@email.com">
+          <button class="email-signup-btn" type="submit">Subscribe</button>
+        </div>
+        <label class="email-signup-consent">
+          <input type="checkbox" name="consent" required>
+          <span>I agree to receive occasional emails from Wild Atlas about new packs, app updates, and notes for parents.</span>
+        </label>
+        <p class="email-signup-fine">We send occasionally &mdash; unsubscribe anytime, and we don&rsquo;t share your address. We use <a href="https://www.beehiiv.com" target="_blank" rel="noopener">beehiiv</a> to send these emails. See our <a href="privacy.html">Privacy Policy</a>.</p>
+        <p class="email-signup-msg" role="status" aria-live="polite" hidden></p>
+      </form>
     </div>
   </section>
 
@@ -887,7 +886,7 @@
   <script src="js/i18n.js?v=3"></script>
   <script src="js/main.js?v=3"></script>
   <script src="js/email-signup.js?v=2" defer></script>
-  <script src="js/calendar-card.js?v=2" defer></script>
+  <script src="js/calendar-card.js?v=3" defer></script>
   <script>
     // Anchor correction: on a fresh visit to /#walkthrough (etc.) the browser
     // jumps before lazy images + i18n above have laid out, so it lands short.

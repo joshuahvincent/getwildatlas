@@ -17,7 +17,6 @@
     img.src = d.image; img.alt = d.animal ? 'Photo: ' + d.animal : '';
     $('.calday-when').textContent = (d.isToday ? 'Today · ' : '') + d.dateText;
     $('.calday-day').textContent = d.day;
-    $('.calday-animal').textContent = d.animal && d.animal.toLowerCase() !== d.day.toLowerCase() ? 'Meet the ' + d.animal.charAt(0).toLowerCase() + d.animal.slice(1) : '';
   }
   fetch('/calendar/latest.json', { cache: 'no-cache' })
     .then(function (r) { return r.ok ? r.json() : null; })

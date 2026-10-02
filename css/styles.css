@@ -2092,33 +2092,26 @@ body { padding-top: var(--promo-h); }
 }
 
 /* ── From the World Wildlife Calendar (js/calendar-card.js) ──
-   A compact card beside the newsletter signup in the homepage band. When it's
-   hidden (non-English page, or the feed didn't load) the signup sits alone, centred. */
-.band-row { display: flex; justify-content: center; align-items: stretch; gap: var(--space-lg); padding: 0 var(--space-md); }
-.band-row .email-signup-inner { margin: 0; flex: 0 1 560px; }
-.calday { flex: 0 1 300px; display: flex; flex-direction: column; text-align: left; }
+   One short row under the trust strip: thumbnail, day + date, "Get more info". */
+.calday { padding: 0 0 var(--space-xl); }
 .calday[hidden] { display: none; }
-.calday-eyebrow { font-weight: 800; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--warm-bark); opacity: 0.75; margin-bottom: 2px; }
-.calday-card { flex: 1; display: flex; flex-direction: column; background: #fff; border: 1.5px solid rgba(93, 64, 55, 0.12); border-radius: var(--radius-md); overflow: hidden; color: var(--warm-bark); text-decoration: none; transition: transform 0.2s ease, box-shadow 0.2s ease; }
-.calday-card:hover, .calday-card:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(93, 64, 55, 0.14); }
-.calday-photo { position: relative; display: block; aspect-ratio: 16 / 10; background: var(--yellow-light); overflow: hidden; }
-.calday-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s ease; }
-.calday-card:hover .calday-img { transform: scale(1.04); }
-.calday-when { position: absolute; left: 10px; top: 10px; font-weight: 800; font-size: 0.8rem; color: var(--warm-bark); background: var(--sunny-sounds); border-radius: var(--radius-full); padding: 3px 10px; }
-.calday-text { flex: 1; display: flex; flex-direction: column; gap: 2px; padding: var(--space-md); }
-.calday-day { font-family: var(--font-heading); font-weight: 700; font-size: 1.3rem; line-height: 1.15; }
-.calday-animal { font-weight: 600; font-size: 0.95rem; opacity: 0.8; }
-.calday-animal:empty { display: none; }
-.calday-cta { align-self: flex-start; margin-top: auto; padding-top: var(--space-sm); font-family: var(--font-heading); font-weight: 600; color: var(--warm-bark); text-decoration: underline; text-underline-offset: 3px; }
-.calday-all { margin-top: var(--space-xs); font-weight: 700; font-size: 0.9rem; color: var(--warm-bark); }
-@media (max-width: 860px) {
-  .band-row { flex-direction: column; align-items: center; }
-  .band-row .email-signup-inner, .calday { flex: none; width: 100%; max-width: 560px; }
-  .calday-card { flex-direction: row; }
-  .calday-photo { flex: 0 0 42%; aspect-ratio: auto; min-height: 130px; }
+.calday-card { display: flex; align-items: center; gap: var(--space-md); max-width: 760px; margin: 0 auto; padding: 10px 18px 10px 10px; background: #fff; border: 1.5px solid rgba(93, 64, 55, 0.12); border-radius: var(--radius-full); color: var(--warm-bark); text-decoration: none; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.calday-card:hover, .calday-card:focus-visible { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(93, 64, 55, 0.12); }
+.calday-img { flex: none; width: 64px; height: 64px; border-radius: 50%; object-fit: cover; background: var(--yellow-light); }
+.calday-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.calday-eyebrow { font-weight: 800; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.75; }
+.calday-line { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 10px; }
+.calday-day { font-family: var(--font-heading); font-weight: 700; font-size: 1.2rem; line-height: 1.2; }
+.calday-when { font-weight: 700; font-size: 0.85rem; opacity: 0.75; }
+.calday-cta { flex: none; font-family: var(--font-heading); font-weight: 600; color: #fff; background: var(--warm-bark); border-radius: var(--radius-full); padding: 8px 16px; font-size: 0.95rem; }
+@media (max-width: 600px) {
+  .calday-card { border-radius: var(--radius-md); gap: var(--space-sm); padding: 10px; }
+  .calday-img { width: 52px; height: 52px; }
+  .calday-day { font-size: 1.05rem; }
+  .calday-cta { padding: 0; background: none; color: var(--warm-bark); text-decoration: underline; text-underline-offset: 3px; font-size: 0.9rem; }
+  .calday-cta span { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .calday-card, .calday-img { transition: none; }
+  .calday-card { transition: none; }
   .calday-card:hover, .calday-card:focus-visible { transform: none; }
-  .calday-card:hover .calday-img { transform: none; }
 }
