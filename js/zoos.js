@@ -26,7 +26,10 @@ function track(name, params) { try { if (typeof window.gtag === 'function') wind
 let lastEmpty = '';
 
 const $ = (id) => document.getElementById(id);
-const S = { places: [], animals: [], byId: {}, bySlug: {}, groups: {}, cur: null, origin: null, maxKm: Infinity, distLabel: 'Any distance', editing: false, unknown: '', active: null, view: 'list', cache: {} };
+const TYPE_GROUPS = [['zoo', 'Zoos'], ['aquarium', 'Aquariums'], ['museum', 'Museums'], ['farm', 'Farms and petting zoos'], ['wild', 'National parks and reserves']];
+const typeKey = (t) => (t === 'safari_park' || t === 'sanctuary' ? 'zoo' : t);
+const KEYS = [['e', 'Lists it', 0], ['w', 'Unconfirmed', 1], ['r', 'Close relative', 2], ['g', 'Similar animals', 3], ['d', 'In the wild', 4]];   // map key: dot class, label, tier
+const S = { types: new Set(TYPE_GROUPS.map((g) => g[0])), hidden: new Set(), keep: false, places: [], animals: [], byId: {}, bySlug: {}, groups: {}, cur: null, origin: null, maxKm: Infinity, distLabel: 'Any distance', editing: false, unknown: '', active: null, view: 'list', cache: {} };
 const countryName = (() => { try { const d = new Intl.DisplayNames(['en'], { type: 'region' }); return (c) => d.of(c) || c; } catch (e) { return (c) => c; } })();
 const slugOf = (id) => id.replace(/_/g, '-');
 
@@ -82,13 +85,16 @@ function sortCands(list) {
   return list.sort((a, b) => groupOf(a.rank) - groupOf(b.rank)
     || ((a.rank === 5 && b.rank === 5) ? ((a.via ? 1 : 0) - (b.via ? 1 : 0)) : 0)   // in the wild: parks with the animal itself before parks with a close relative
     || (a.km !== null ? a.km - b.km
-      : (a.rank - b.rank) || ((b.p.cc === HOME_CC) - (a.p.cc === HOME_CC)) || (a.p.cc + a.p.n).localeCompare(b.p.cc + b.p.n)));
+      : (a.rank - b.rank) || ((a.p.t === 'farm') - (b.p.t === 'farm')) || ((b.p.cc === HOME_CC) - (a.p.cc === HOME_CC)) || (a.p.cc + a.p.n).localeCompare(b.p.cc + b.p.n)));
 }
 // "All animals" view (no animal chosen): every zoo, aquarium, safari park and museum, so the page starts as a world map
 function allCandidates() {
   return S.places.map((p, pi) => ({ pi, rank: p.t === 'wild' ? 5 : 0, p, km: S.origin ? haversineKm({ la: S.origin.la, lo: S.origin.lo }, p) : null }))
-    .filter((c) => c.p.t !== 'farm' && (c.km === null || c.km <= S.maxKm));
+    .filter((c) => c.km === null || c.km <= S.maxKm);
 }
+// the type filter (More filters) and the map key (click a key item to hide that kind of result) both narrow what is shown
+const visible = (c) => S.types.has(typeKey(c.p.t)) && !S.hidden.has(TIER_OF(c.rank));
+const filtered = () => S.types.size < TYPE_GROUPS.length || S.hidden.size > 0;
 
 // ---------- rendering ----------
 // Quiet by design: ONE short "check with the place" line lives in the page header. Cards only say something when the match is not a plain exact one.
@@ -176,15 +182,15 @@ function render() {
   const d = S.cur, box = $('zf-results'); box.textContent = '';
   $('zf-quick').hidden = !!d && !S.unknown ? true : false; updateSummary();
   if (!d) {
-    const everyone = sortCands(allCandidates()), zoosAll = everyone.filter((c) => c.rank === 0), parksAll = everyone.filter((c) => c.rank === 5);
-    if (zoosAll.length) box.append(section('All zoos, aquariums and museums', '(' + zoosAll.length.toLocaleString('en') + ')', zoosAll));
+    const everyone = sortCands(allCandidates()).filter(visible), zoosAll = everyone.filter((c) => c.rank === 0), parksAll = everyone.filter((c) => c.rank === 5);
+    if (zoosAll.length) box.append(section('All places', '(' + zoosAll.length.toLocaleString('en') + ')', zoosAll));
     if (parksAll.length) box.append(section('See it in the wild', '(' + parksAll.length.toLocaleString('en') + ' national parks and reserves)', parksAll));
-    else box.append(el('div', { class: 'zf-empty' }, el('p', { text: 'Nothing within that distance.' }), Number.isFinite(S.maxKm) ? el('button', { type: 'button', class: 'zf-btn', id: 'zf-widen', text: 'Search any distance' }) : null));
+    if (!everyone.length) box.append(el('div', { class: 'zf-empty' }, el('p', { text: filtered() ? 'No places match these filters.' : 'Nothing within that distance.' }), filtered() ? el('button', { type: 'button', class: 'zf-btn', id: 'zf-resetf', text: 'Show everything again' }) : null, Number.isFinite(S.maxKm) ? el('button', { type: 'button', class: 'zf-btn', id: 'zf-widen', text: 'Search any distance' }) : null));
     const where = S.origin ? 'Closest first, from ' + (/^Near /.test(S.origin.label) ? S.origin.label.replace(/^Near /, 'near ') : S.origin.label === 'your location' ? 'your location' : S.origin.label) + '.' : 'Add your location to put the closest first.';
     $('zf-status').textContent = (S.unknown ? 'We can\u2019t find \u201c' + S.unknown + '\u201d yet, so here are animal places ' + (S.origin ? 'near you' : 'to start with') + '. ' : 'Showing every place. Search for an animal to narrow it down. ') + (S.unknown ? '' : where);
     lastCands = everyone; drawMap(everyone); return;
   }
-  const all = sortCands(candidates());
+  const all = sortCands(candidates()).filter(visible);
   const exact = all.filter((c) => c.rank <= 1), rel = all.filter((c) => c.rank === 2 || c.rank === 3), grp = all.filter((c) => c.rank === 4), wild = all.filter((c) => c.rank === 5);
   const noun = d.kind === 'dino' ? 'Museums with ' : d.kind === 'farm' ? 'Farms and petting zoos for ' : 'Places with ';
   // the wild section leads when a park is closer than the nearest zoo (e.g. a visitor in Nairobi); otherwise it follows the zoo results
@@ -202,8 +208,9 @@ function render() {
   if (wildSec && !wildFirst) box.append(wildSec);
   if (!all.length) {
     const total = d.e.length + d.r.length + d.g.length + (d.w || []).length;
-    const e = el('div', { class: 'zf-empty' }, el('p', { text: total ? 'Nothing within that distance.' : 'We have not found a place for this one yet. We are still checking.' }));
+    const e = el('div', { class: 'zf-empty' }, el('p', { text: filtered() && total ? 'No places match these filters.' : total ? 'Nothing within that distance.' : 'We have not found a place for this one yet. We are still checking.' }));
     if (total && Number.isFinite(S.maxKm)) e.append(el('button', { type: 'button', class: 'zf-btn', id: 'zf-widen', text: 'Search any distance' }));
+    if (filtered() && total) e.append(el('button', { type: 'button', class: 'zf-btn', id: 'zf-resetf', text: 'Show everything again' }));
     e.append(el('button', { type: 'button', class: 'zf-btn zf-btn-quiet', id: 'zf-another', text: 'Pick another animal' }));
     box.append(e);
   }
@@ -378,7 +385,7 @@ async function fbDraw(cands) {
     const [x, y] = fbProject(c.p.lo, c.p.la); FB.pins.push({ g, x, y }); FB.gPins.append(g);
   });
   FB.meXY = S.origin ? fbProject(S.origin.lo, S.origin.la) : null;
-  fbFit(cands);
+  if (S.keep) { S.keep = false; fbApply(); } else fbFit(cands);
 }
 function fbFit(cands) {
   const prim = cands.filter((c) => c.rank <= 3); let use = prim.length ? prim : cands;
@@ -399,7 +406,7 @@ async function fbActive(pi, opts) {
 }
 async function drawMap(cands) {
   lastCands = cands;
-  if (!map && S.view !== 'map' && !window.matchMedia('(min-width: 900px)').matches) return;
+  if (!map && S.view !== 'map' && !window.matchMedia('(min-width: 900px)').matches) { S.keep = false; return; }
   if (S.mapFailed) return;
   if (!fbWebglOk()) { try { await fbDraw(cands); } catch (e) { S.mapFailed = true; mapProblem(e && e.message); } return; }   // no WebGL (Safari with it off, some locked-down machines): plain SVG map
   try {
@@ -408,7 +415,7 @@ async function drawMap(cands) {
   const feats = cands.map((c) => ({ type: 'Feature', properties: { pi: c.pi, tier: TIER_OF(c.rank) }, geometry: { type: 'Point', coordinates: [c.p.lo, c.p.la] } }));
   map.getSource('pins').setData({ type: 'FeatureCollection', features: feats });
   map.getSource('me').setData({ type: 'FeatureCollection', features: S.origin ? [{ type: 'Feature', properties: {}, geometry: { type: 'Point', coordinates: [S.origin.lo, S.origin.la] } }] : [] });
-  fit(cands);
+  if (S.keep) S.keep = false; else fit(cands);
 }
 function fit(cands) {
   if (!map) return;
@@ -611,6 +618,21 @@ function buildChips() {
     box.append(el('label', { class: 'zf-chip', for: id }, input, el('span', { text: it.label })));
   });
 }
+function buildTypes() {
+  const box = $('zf-typechips'); if (!box) return;
+  const sum = $('zf-adv-sum');
+  const label = () => { sum.textContent = S.types.size === TYPE_GROUPS.length ? 'More filters' : 'More filters (' + S.types.size + ' of ' + TYPE_GROUPS.length + ' types)'; };
+  TYPE_GROUPS.forEach(([k, name]) => {
+    const id = 'zf-type-' + k, input = el('input', { type: 'checkbox', id, value: k, checked: true });
+    input.addEventListener('change', () => {
+      if (input.checked) S.types.add(k); else S.types.delete(k);
+      if (!S.types.size) { S.types.add(k); input.checked = true; }   // never leave nothing selected
+      label(); track('zoo_type_filter', { place_type: k, state: input.checked ? 'on' : 'off' }); render();
+    });
+    box.append(el('label', { class: 'zf-chip', for: id }, input, el('span', { text: name })));
+  });
+  label();
+}
 function renderQuick() {
   const q = $('zf-quick'); q.textContent = ''; q.append('Try:');
   POPULAR.map((id) => S.byId[id]).filter(Boolean).forEach((a) => { const b = el('button', { type: 'button', text: a.n }); b.addEventListener('click', () => chooseAnimal(a.id)); q.append(b); });
@@ -622,7 +644,12 @@ async function init() {
     const r = $('zf-results') || document.body; r.prepend(el('p', { class: 'zf-empty' }, 'This page is out of date. Please ', el('a', { href: location.pathname, text: 'refresh' }), '.')); return;
   }
   buildChips();
-  $('zf-legend').append(...[['e', 'Lists it'], ['w', 'Unconfirmed'], ['r', 'Close relative'], ['g', 'Similar animals'], ['d', 'In the wild']].map(([c, t]) => el('li', {}, el('span', { class: 'zf-dot ' + c, 'aria-hidden': 'true' }), t)),
+  buildTypes();
+  $('zf-legend').append(...KEYS.map(([c, t, tier]) => {
+    const b = el('button', { type: 'button', class: 'zf-key', 'aria-pressed': 'true', title: 'Click to hide or show' }, el('span', { class: 'zf-dot ' + c, 'aria-hidden': 'true' }), t);
+    b.addEventListener('click', () => { const off = !S.hidden.has(tier); off ? S.hidden.add(tier) : S.hidden.delete(tier); b.setAttribute('aria-pressed', String(!off)); track('zoo_key_toggle', { tier: t, state: off ? 'hidden' : 'shown' }); S.keep = true; render(); });
+    return el('li', {}, b);
+  }),
     el('li', { id: 'zf-legend-me', hidden: true }, el('span', { class: 'zf-dot me', 'aria-hidden': 'true' }), 'You'));
   try {
     const [places, meta] = await Promise.all([loadJson(PLACES_URL), loadJson(ANIMALS_URL)]);
@@ -655,6 +682,7 @@ async function init() {
   $('zf-tab-map').addEventListener('click', () => setView('map'));
   $('zf-results').addEventListener('click', (e) => {
     const b = e.target.closest('[data-show]'); if (b) { if (window.matchMedia('(max-width: 899px)').matches) setView('map'); setActive(b.dataset.show, { fly: true, popup: true }); return; }
+    if (e.target.id === 'zf-resetf') { S.types = new Set(TYPE_GROUPS.map((g) => g[0])); S.hidden.clear(); document.querySelectorAll('#zf-typechips input').forEach((i) => (i.checked = true)); document.querySelectorAll('.zf-key').forEach((b) => b.setAttribute('aria-pressed', 'true')); $('zf-adv-sum').textContent = 'More filters'; render(); return; }
     if (e.target.id === 'zf-widen') { S.maxKm = Infinity; S.distLabel = 'Any distance'; document.querySelectorAll('input[name="zf-dist"]').forEach((i) => (i.checked = i.value === '0')); render(); }
     if (e.target.id === 'zf-another') { S.editing = true; updateSummary(); $('zf-animal').focus(); $('zf-animal').select(); }
   });
