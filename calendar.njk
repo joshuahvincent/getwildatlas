@@ -137,7 +137,7 @@ eleventyExcludeFromCollections: true
     .agenda { display: block; }
   }
   @media (prefers-reduced-motion: reduce) { .bc-feat img { transition: none; } a.bc-feat:hover img { transform: none; } }
-  .month-strip { display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 10px; margin: 0 0 1rem; scroll-snap-type: x proximity; scrollbar-width: thin; }
+  .month-strip { position: relative; display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 10px; margin: 0 0 1rem; scroll-snap-type: x proximity; scrollbar-width: thin; }
   .ms-tab { flex: 0 0 auto; scroll-snap-align: center; min-width: 74px; text-align: center; padding: 8px 10px; border: 2px solid rgba(93, 64, 55, 0.25); border-radius: 14px; background: var(--card); text-decoration: none; color: var(--bark); line-height: 1.15; }
   .ms-tab:hover { border-color: var(--bark); }
   .ms-tab.active { border-color: var(--bark); background: var(--sunny-wash); box-shadow: 0 4px 10px rgba(93, 64, 55, 0.12); }
@@ -222,19 +222,32 @@ eleventyExcludeFromCollections: true
   var tabs = [].slice.call(document.querySelectorAll('.ms-tab'));
   if (!sections.length) return;
   document.documentElement.classList.add('cal-js');
-  function show(key, scroll) {
+  function show(key) {
     var found = sections.some(function (s) { return s.id === 'm-' + key; });
     if (!found) key = sections[0].id.slice(2);
     sections.forEach(function (s) { s.hidden = s.id !== 'm-' + key; });
     tabs.forEach(function (t) {
       var on = t.getAttribute('data-month') === key;
       t.classList.toggle('active', on);
-      if (on) { t.setAttribute('aria-current', 'true'); t.scrollIntoView({ block: 'nearest', inline: 'center' }); } else { t.removeAttribute('aria-current'); }
+      if (on) {
+        t.setAttribute('aria-current', 'true');
+        // centre the tab in the strip by scrolling the strip only (scrollIntoView would also move the page)
+        strip.scrollLeft = t.offsetLeft - (strip.clientWidth - t.offsetWidth) / 2;
+      } else { t.removeAttribute('aria-current'); }
     });
-    if (scroll) document.querySelector('.month-strip').scrollIntoView({ block: 'start', behavior: 'smooth' });
   }
-  function fromHash(scroll) { show((location.hash || '').replace('#m-', ''), scroll); }
-  window.addEventListener('hashchange', function () { fromHash(true); });
-  fromHash(false);
+  var strip = document.querySelector('.month-strip');
+  function fromHash() { show((location.hash || '').replace('#m-', '')); }
+  // Month tabs and ‹ › arrows switch months in place: no jump to the anchor, the page stays where it is.
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a.ms-tab, a.cm-nav');
+    if (!a || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    e.preventDefault();
+    var hash = a.getAttribute('href');
+    if (history.replaceState) history.replaceState(null, '', hash);
+    show(hash.replace('#m-', ''));
+  });
+  window.addEventListener('hashchange', fromHash);
+  fromHash();
 })();
 </script>
