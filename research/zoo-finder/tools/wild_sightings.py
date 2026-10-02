@@ -8,6 +8,15 @@ HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
 CACHE = os.path.join(ROOT, 'cache_local', 'wild'); os.makedirs(CACHE, exist_ok=True)
 UA = 'WildAtlas-zoo-finder/1.0 (https://wildatlasapp.com)'
 roster = [x for x in json.load(open(os.path.join(ROOT, 'raw', 'wild_roster.json'))) if x['unesco'] or (x['area_km2'] or 0) >= 100 or (x['url'] and (x['area_km2'] is None or x['area_km2'] >= 10)) or x['class'] == 'curated']   # skip tiny obscure sites
+# UNESCO sites listed only for cultural criteria (i)-(vi) are not nature destinations: drop those whose class is just 'UNESCO protected area' (raw/unesco_criteria.json from Wikidata P2614)
+CRIT = json.load(open(os.path.join(ROOT, 'raw', 'unesco_criteria.json'))); NAT = {'(vii)', '(viii)', '(ix)', '(x)'}
+CULTURAL_NO_CRITERIA = {'Q' + x for x in []}   # sites with no criteria data are judged by name below
+CULTURAL_NAMES = ('Römerkastell Halheim', 'Campus de Alcalá de Henares', 'National History Park', 'Solovetsky Islands', 'Solovetsky state Museum-reserve')
+def cultural_only(x):
+    if x['class'] != 'UNESCO protected area': return False
+    c = set(CRIT.get(x['wikidata'], []))
+    return (bool(c) and not (c & NAT)) or (not c and any(n in x['name'] for n in CULTURAL_NAMES))
+roster = [x for x in roster if not cultural_only(x)]
 keys = json.load(open(os.path.join(ROOT, 'raw', 'gbif_keys.json')))
 # class-level filter (mammals, birds, reptiles, amphibians, ray-finned fish, sharks and rays, cephalopods, jellyfish, sea stars); the facet then returns counts for every taxon
 # inside them, including our genus/species keys. (Listing all 738 keys makes the web address too long for GBIF.)
