@@ -11,7 +11,7 @@ animalDay:
   animalName: snow leopard
   animalArticle: a
   campaign: snow_leopard_wildcard_2027
-  greeting: "**This week's Wild Atlas pick:** a big cat so good at hiding in its snowy mountain home that people call it the \"ghost of the mountains\" — the snow leopard."
+  greeting: "**This week's Wild Atlas Spotlight:** a big cat so good at hiding in its snowy mountain home that people call it the \"ghost of the mountains\" — the snow leopard."
   readAloudNote: "Read this one out loud together — it's short, and it's more fun with a soft, chuffy voice."
   whereToSee:
     heading: Where to see a snow leopard

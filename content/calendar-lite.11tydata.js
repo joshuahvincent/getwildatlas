@@ -24,14 +24,14 @@ module.exports = {
       const status = "iucnText" in a ? a.iucnText : IUCN[a.iucn];
       const official = l.days.filter((x) => x.official);
       return {
-        dayName: official.length ? official[0].day : "Wild Atlas pick",
+        dayName: official.length ? official[0].day : "Wild Atlas Spotlight",
         animalName: name,
         animalArticle: /^[aeiou]/i.test(name) ? "an" : "a",
         campaign: `animal_${l.appId}`,
         greeting: official.length
           ? `**Meet the ${name}!** People around the world celebrate the ${name} on ${official.map((x) => `${x.day} (${fmtDate(x.date)})`).join(", ")}.`
-          : `**Meet the ${name}!** It's one of our Wild Atlas picks for the calendar.`,
-        celebratedOn: l.days.map((x) => ({ day: x.official ? x.day : "Wild Atlas pick", date: fmtDate(x.date), origin: x.origin, sourceUrl: x.sourceUrl })),
+          : `**Meet the ${name}!** It's one of our Wild Atlas Spotlights for the calendar.`,
+        celebratedOn: l.days.map((x) => ({ day: x.official ? x.day : "Wild Atlas Spotlight", date: fmtDate(x.date), origin: x.origin, sourceUrl: x.sourceUrl })),
         readAloudNote: "Read this one out loud together — these facts come straight from the Wild Atlas app.",
         grownups: status
           ? `The ${name} is listed as **${status}** by the IUCN.${a.habitat ? ` Where it lives: ${a.habitat}.` : ""}`

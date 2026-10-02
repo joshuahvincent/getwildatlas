@@ -18,7 +18,8 @@ eleventyExcludeFromCollections: true
   .ab-stat span { font-weight: 600; }
   .ab-stat { background: var(--sunny-wash); border: 2px solid var(--bark); border-radius: 14px; padding: 0.9rem 1.1rem; display: flex; gap: 1rem; align-items: center; }
   .ab-stat b { font-family: 'Fredoka', sans-serif; font-size: 2.4rem; color: var(--bark); line-height: 1; }
-  .pick-badge { display: inline-block; font-family: 'Fredoka', sans-serif; font-size: 0.78rem; font-weight: 600; background: #E4F4EC; color: #2F6B4F; border-radius: 999px; padding: 0 8px; }
+  .pick-badge { display: inline-block; font-family: 'Fredoka', sans-serif; font-size: 0.78rem; font-weight: 600; background: #FFD166; color: #5D4037; border-radius: 999px; padding: 0 8px; }
+  .pick-badge::before { content: "\2605  "; }
 </style>
 <article class="ab">
   <a class="back" href="/calendar/">← Back to the calendar</a>
@@ -26,7 +27,7 @@ eleventyExcludeFromCollections: true
 
   {#- Count both lists: the weekly featured days and the also-celebrated days on the grid. -#}
   {%- set alsoCount = animalDays.alsoCelebrated | length %}
-  <div class="ab-stat"><b>{{ (animalDays.days | length) + alsoCount }}</b><span>animal days a year: {{ officialCount + alsoCount }} real awareness days and {{ pickCount }} Wild Atlas picks.</span></div>
+  <div class="ab-stat"><b>{{ (animalDays.days | length) + alsoCount }}</b><span>animal days a year: {{ officialCount + alsoCount }} real awareness days and {{ pickCount }} Wild Atlas Spotlights.</span></div>
 
   <h2>We didn't make them up</h2>
   <p>Every awareness day on the calendar was started by someone else. They come from different places:</p>
@@ -48,7 +49,7 @@ eleventyExcludeFromCollections: true
   <ul>
     <li>One featured animal a week, matched to a real awareness day.</li>
     <li>When several animal days land in the same week, we feature the one we think kids will love most. The others still show on the calendar as "also celebrated" days.</li>
-    <li>In the few weeks with no animal day, we choose a favourite and label it a <span class="pick-badge">Wild Atlas pick</span>.</li>
+    <li>In the few weeks with no animal day, we choose a favourite ourselves. These are marked <span class="pick-badge">Wild Atlas Spotlight</span>. They're our choice, not an official awareness day.</li>
     <li>The year ends with Explorer's Choice.</li>
   </ul>
 
