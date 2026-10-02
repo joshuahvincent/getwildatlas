@@ -112,7 +112,7 @@
    "animal": "Animals around the world",
    "day": "World Animal Day",
    "official": true,
-   "blogUrl": "/blog/world-animal-day/",
+   "slug": "world-animal-day",
    "origin": "Heinrich Zimmermann held the first one in Berlin in 1925. It moved to Oct 4 (the feast of St Francis) in 1929 and was adopted internationally in Florence in 1931.",
    "sourceUrl": "https://www.worldanimalday.org.uk/wp-content/uploads/2023/08/Origin-of-World-Animal-Day-update-2020-12.pdf"
   },
