@@ -6,6 +6,7 @@ excerpt: "Quokkas look like they're always smiling, and a whole island is named 
 coverImage: /assets/blog/quokka-facts-for-kids/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
+  animalId: quokka
   dayName: Wild Atlas Wildcard
   animalName: quokka
   animalArticle: a

@@ -6,6 +6,7 @@ excerpt: "Happy Monkey Day! Meet the golden snub-nosed monkey — a golden, blue
 coverImage: /assets/blog/monkey-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
+  animalId: golden_snub_nosed_monkey
   dayName: Monkey Day
   animalName: golden snub-nosed monkey
   animalArticle: a

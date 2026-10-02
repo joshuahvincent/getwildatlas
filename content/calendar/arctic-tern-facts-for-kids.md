@@ -6,6 +6,7 @@ excerpt: "Last Saturday was World Migratory Bird Day, so this week we're followi
 coverImage: /assets/blog/arctic-tern-facts-for-kids/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
+  animalId: arctic_tern
   dayName: null
   animalName: Arctic tern
   animalArticle: an

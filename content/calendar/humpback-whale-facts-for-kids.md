@@ -6,6 +6,7 @@ excerpt: "This week's Wild Atlas pick is the humpback whale — the singer of th
 coverImage: /assets/blog/humpback-whale-facts-for-kids/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
+  animalId: humpback_whale
   dayName: Wild Atlas Wildcard
   animalName: humpback whale
   animalArticle: a
