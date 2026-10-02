@@ -11,13 +11,14 @@ def get(pid):
     dest = os.path.join(out, pid + '.jpg')
     if os.path.exists(dest): return pid, 'have'
     name = files[pid].split(':', 1)[1].replace(' ', '_')
-    url = 'https://commons.wikimedia.org/wiki/Special:FilePath/%s?width=420' % urllib.parse.quote(name)
+    W = 320 if pid.startswith('wild-') else 420   # national-park photos are smaller to keep the site light (thousands of parks)
+    url = 'https://commons.wikimedia.org/wiki/Special:FilePath/%s?width=%d' % (urllib.parse.quote(name), W)
     for i in range(4):
         try:
             b = urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': UA}), timeout=40).read()
             im = Image.open(io.BytesIO(b)).convert('RGB')
-            if im.width > 420: im = im.resize((420, round(im.height * 420 / im.width)))
-            im.save(dest, 'JPEG', quality=72, optimize=True, progressive=True)
+            if im.width > W: im = im.resize((W, round(im.height * W / im.width)))
+            im.save(dest, 'JPEG', quality=66 if W == 320 else 72, optimize=True, progressive=True)
             time.sleep(0.3)
             return pid, 'ok'
         except Exception as e:

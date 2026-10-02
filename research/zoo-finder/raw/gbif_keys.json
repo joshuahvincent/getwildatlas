@@ -6146,5 +6146,205 @@
 "via": null,
 "rat": null
 }
+],
+"amur_tiger": [
+{
+"key": 5219416,
+"rank": "SPECIES",
+"name": "Panthera tigris (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"axolotl": [
+{
+"key": 2431950,
+"rank": "SPECIES",
+"name": "Ambystoma mexicanum (Shaw & Nodder, 1798)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"fruit_bat": [
+{
+"key": 5218644,
+"rank": "SPECIES",
+"name": "Pteropus vampyrus (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"cassowary": [
+{
+"key": 5231783,
+"rank": "SPECIES",
+"name": "Casuarius casuarius (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"clouded_leopard": [
+{
+"key": 2435079,
+"rank": "SPECIES",
+"name": "Neofelis nebulosa (Griffith, 1821)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"gibbon": [
+{
+"key": 5219553,
+"rank": "SPECIES",
+"name": "Hylobates lar (Linnaeus, 1771)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"pallas_cat": [
+{
+"key": 2435023,
+"rank": "SPECIES",
+"name": "Otocolobus manul (Pallas, 1776)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"harp_seal": [
+{
+"key": 2434801,
+"rank": "SPECIES",
+"name": "Pagophilus groenlandicus (Erxleben, 1777)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"west_indian_manatee": [
+{
+"key": 2435296,
+"rank": "SPECIES",
+"name": "Trichechus manatus Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"numbat": [
+{
+"key": 5219465,
+"rank": "SPECIES",
+"name": "Myrmecobius fasciatus Waterhouse, 1836",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"koala": [
+{
+"key": 2440012,
+"rank": "SPECIES",
+"name": "Phascolarctos cinereus (Goldfuss, 1817)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"wombat": [
+{
+"key": 2440301,
+"rank": "SPECIES",
+"name": "Vombatus ursinus (Shaw, 1800)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"bonobo": [
+{
+"key": 5219533,
+"rank": "SPECIES",
+"name": "Pan paniscus Schwarz, 1929",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"sea_otter": [
+{
+"key": 2433670,
+"rank": "SPECIES",
+"name": "Enhydra lutris (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"pangolin": [
+{
+"key": 5219638,
+"rank": "SPECIES",
+"name": "Manis pentadactyla Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"galapagos_giant_tortoise": [
+{
+"key": 5220265,
+"rank": "GENUS",
+"name": "Chelonoidis Fitzinger, 1835",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"humpback_whale": [
+{
+"key": 5220086,
+"rank": "SPECIES",
+"name": "Megaptera novaeangliae (Borowski, 1781)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"arctic_tern": [
+{
+"key": 5229230,
+"rank": "SPECIES",
+"name": "Sterna paradisaea Pontoppidan, 1763",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"golden_snub_nosed_monkey": [
+{
+"key": 7262005,
+"rank": "SPECIES",
+"name": "Rhinopithecus roxellana (A.Milne-Edwards, 1870)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"quokka": [
+{
+"key": 2440110,
+"rank": "SPECIES",
+"name": "Setonix brachyurus (Quoy & Gaimard, 1830)",
+"match": "exact",
+"via": null,
+"rat": null
+}
 ]
 }

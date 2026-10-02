@@ -4,6 +4,8 @@ RAW = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
 animal_ids = set()
 for f in glob.glob(os.path.join(RAW, '*.animals.json')):
     animal_ids |= {a['id'] for a in json.load(open(f))}
+_ex = os.path.join(RAW, 'extra_animals.json')
+if os.path.exists(_ex): animal_ids |= {a['id'] for a in json.load(open(_ex))}   # GBIF-only calendar animals
 roster = {i['id'] for i in json.load(open(os.path.join(RAW, 'roster.json')))['institutions']} if os.path.exists(os.path.join(RAW, 'roster.json')) else set()
 hard = 0
 for f in sorted(glob.glob(os.path.join(RAW, 'sweep_*.json'))):
@@ -11,7 +13,7 @@ for f in sorted(glob.glob(os.path.join(RAW, 'sweep_*.json'))):
     pids = {p['id'] for p in d.get('places', [])}
     for p in d.get('places', []):
         if p.get('lat') is None or p.get('lng') is None: errs['place missing coords'] += 1
-        if roster and p['id'] not in roster and p.get('type') != 'museum': warn['place not in roster'] += 1
+        if roster and p['id'] not in roster and p.get('type') not in ('museum', 'wild'): warn['place not in roster'] += 1
         if not p.get('accreditation'): errs['place missing accreditation'] += 1
     for h in d.get('holdings', []):
         if h['animal_id'] not in animal_ids: errs['unknown animal_id'] += 1

@@ -80,6 +80,7 @@ function candidates() {
 const groupOf = (r) => (r <= 1 ? 0 : r <= 3 ? 1 : r === 4 ? 2 : 3);
 function sortCands(list) {
   return list.sort((a, b) => groupOf(a.rank) - groupOf(b.rank)
+    || ((a.rank === 5 && b.rank === 5) ? ((a.via ? 1 : 0) - (b.via ? 1 : 0)) : 0)   // in the wild: parks with the animal itself before parks with a close relative
     || (a.km !== null ? a.km - b.km
       : (a.rank - b.rank) || ((b.p.cc === HOME_CC) - (a.p.cc === HOME_CC)) || (a.p.cc + a.p.n).localeCompare(b.p.cc + b.p.n)));
 }
@@ -186,6 +187,10 @@ function render() {
   const all = sortCands(candidates());
   const exact = all.filter((c) => c.rank <= 1), rel = all.filter((c) => c.rank === 2 || c.rank === 3), grp = all.filter((c) => c.rank === 4), wild = all.filter((c) => c.rank === 5);
   const noun = d.kind === 'dino' ? 'Museums with ' : d.kind === 'farm' ? 'Farms and petting zoos for ' : 'Places with ';
+  // the wild section leads when a park is closer than the nearest zoo (e.g. a visitor in Nairobi); otherwise it follows the zoo results
+  const wildFirst = !!(S.origin && wild.length && (!exact.length || wild[0].km < exact[0].km));
+  const wildSec = wild.length ? section('See it in the wild', '(' + wild.length + ' national parks and reserves)', wild) : null;
+  if (wildFirst && wildSec) box.append(wildSec);
   if (exact.length) box.append(section(noun + d.name, '(' + exact.length + ')', exact));
   if (rel.length) box.append(section('Places with a close relative', '(' + rel.length + ')', rel));
   if (grp.length) {
@@ -194,7 +199,7 @@ function render() {
     if (exact.length || rel.length) box.append(el('details', { class: 'zf-more' }, el('summary', { text: label + ' (' + grp.length + ')' }), body));
     else box.append(el('section', { class: 'zf-sec' }, el('h2', {}, label, el('small', { text: ' (' + grp.length + ')' })), body));
   }
-  if (wild.length) box.append(section('See it in the wild', '(' + wild.length + ' national parks and reserves)', wild));
+  if (wildSec && !wildFirst) box.append(wildSec);
   if (!all.length) {
     const total = d.e.length + d.r.length + d.g.length + (d.w || []).length;
     const e = el('div', { class: 'zf-empty' }, el('p', { text: total ? 'Nothing within that distance.' : 'We have not found a place for this one yet. We are still checking.' }));
@@ -208,12 +213,15 @@ function render() {
     const home = HOME_CC && primary.some((c) => c.p.cc === HOME_CC);
     msg = all.length ? (home ? 'Showing places in ' + countryName(HOME_CC) + ' first. Add your location to put the closest first.' : 'Add your location to put the closest first.') : '';
   } else {
-    const near = (primary[0] || all[0]);
+    const near = (primary[0] || all[0]), nearWild = wild[0];
     msg = all.length ? 'Closest first, from ' + (/^Near /.test(S.origin.label) ? S.origin.label.replace(/^Near /, 'near ') : S.origin.label === 'your location' ? 'your location' : S.origin.label) + '.' : '';
-    if (near && near.km > FAR_KM) msg += ' The closest is ' + near.p.n + ', ' + fmtDist(near.km) + ' away.';
+    if (near && near.rank !== 5 && near.km > FAR_KM) {
+      msg += ' The closest ' + (d.kind === 'dino' ? 'museum' : 'zoo or museum') + ' is ' + near.p.n + ', ' + fmtDist(near.km) + ' away.';
+      if (nearWild && nearWild.km < near.km) msg += ' In the wild, ' + nearWild.p.n + ' is ' + fmtDist(nearWild.km) + ' away.';
+    } else if (near && near.rank === 5 && near.km > FAR_KM) msg += ' The closest is ' + near.p.n + ', ' + fmtDist(near.km) + ' away.';
   }
   $('zf-status').textContent = msg;
-  const near2 = primary[0] || all[0];
+  const near2 = [...primary.slice(0, 1), ...wild.slice(0, 1)].sort((a, b) => (a.km || 0) - (b.km || 0))[0] || all[0];
   const emptyReason = !all.length ? ((d.e.length + d.r.length + d.g.length + (d.w || []).length) ? 'none_in_range' : 'no_data') : (S.origin && near2 && near2.km > FAR_KM ? 'far' : '');
   const sig = emptyReason ? d.id + '|' + emptyReason : '';
   if (sig && sig !== lastEmpty) track('zoo_empty_state', { animal_id: d.id, reason: emptyReason });
