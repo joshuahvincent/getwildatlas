@@ -95,6 +95,18 @@ eleventyExcludeFromCollections: true
   .bc-also::before { content: ""; position: absolute; left: 2px; top: 0.42em; width: 6px; height: 6px; border-radius: 50%; background: #7FB89A; }
   a.bc-also { color: var(--bark); }
   a.bc-also:hover { text-decoration: underline; }
+  /* Also-celebrated days with a page image: round thumbnail instead of the dot; on an otherwise empty day, a small (secondary) photo card. */
+  .bc-also.has-thumb { padding-left: 22px; min-height: 18px; line-height: 18px; }
+  .bc-also.has-thumb::before { display: none; }
+  .bc-thumb { position: absolute; left: 0; top: 0; width: 18px; height: 18px; border-radius: 50%; object-fit: cover; margin: 0; border: 1.5px solid #7FB89A; }
+  .bc-mini { display: block; border-radius: 8px; overflow: hidden; background: #fff; border: 1.5px solid #7FB89A; text-decoration: none; color: var(--bark); margin-bottom: 3px; }
+  .bc-mini img { display: block; width: 100%; height: 44px; object-fit: cover; margin: 0; transition: transform 0.3s ease; }
+  a.bc-mini:hover img { transform: scale(1.06); }
+  .bc-mini .bc-mini-name { display: block; font-size: 0.66rem; font-weight: 700; line-height: 1.2; padding: 3px 5px 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ag-also.has-thumb { display: flex; align-items: center; gap: 8px; padding-left: 0; }
+  .ag-also.has-thumb::before { display: none; }
+  .ag-thumb { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; margin: 0; flex: 0 0 auto; border: 1.5px solid #7FB89A; }
+  @media (prefers-reduced-motion: reduce) { .bc-mini img { transition: none; } a.bc-mini:hover img { transform: none; } }
   .bc-more { color: var(--accent); }
   .agenda { display: none; list-style: none; padding: 0; margin: 1rem 0 0; }
   .ag-row { display: flex; gap: 0.7rem; padding: 0.55rem 0; border-bottom: 1px solid var(--rule); }
@@ -111,7 +123,7 @@ eleventyExcludeFromCollections: true
     .bc { min-height: 0; aspect-ratio: 1 / 1; padding: 0; overflow: hidden; }
     .bc-feat { position: absolute; inset: 0; border-radius: 8px; }
     .bc-feat img { height: 100%; }
-    .bc-feat .bc-name, .bc-feat .bc-day, .bc-also, .bc-more { display: none; }
+    .bc-feat .bc-name, .bc-feat .bc-day, .bc-also, .bc-more, .bc-mini { display: none; }
     .bc-feat.soon { display: block; }
     .bc.has-also:not(.has-ev)::after { content: ""; position: absolute; left: 50%; bottom: 6px; width: 7px; height: 7px; margin-left: -3.5px; border-radius: 50%; background: #7FB89A; }
     .bc-num { z-index: 2; }
@@ -172,7 +184,8 @@ eleventyExcludeFromCollections: true
           {%- else %}<div class="bc-feat soon" title="{{ c.ev.day }} — {{ c.ev.animal }}"><span class="bc-name">{{ evLabel }}</span><span class="bc-day">{% if c.ev.official %}{{ c.ev.day }}{% else %}Wild Atlas pick{% endif %}</span></div>{% endif %}
         {%- endif %}
         {%- for a in c.also %}{% if loop.index <= (1 if c.ev else 3) %}
-          {%- if a.url %}<a class="bc-also" href="{{ a.url }}" title="{{ a.day }}">{{ a.day }}</a>{% else %}<span class="bc-also" title="{{ a.day }}">{{ a.day }}</span>{% endif %}
+          {%- if loop.first and not c.ev and a.image and a.url %}<a class="bc-mini" href="{{ a.url }}" title="{{ a.day }}"><img src="{{ a.image }}" alt="" loading="lazy"><span class="bc-mini-name">{{ a.day }}</span></a>
+          {%- elif a.url %}<a class="bc-also{% if a.image %} has-thumb{% endif %}" href="{{ a.url }}" title="{{ a.day }}">{% if a.image %}<img class="bc-thumb" src="{{ a.image }}" alt="" loading="lazy">{% endif %}{{ a.day }}</a>{% else %}<span class="bc-also" title="{{ a.day }}">{{ a.day }}</span>{% endif %}
         {%- endif %}{% endfor %}
         {%- set cap = 1 if c.ev else 3 %}{% if c.also.length > cap %}<span class="bc-more" title="{% for a in c.also %}{{ a.day }}{% if not loop.last %} · {% endif %}{% endfor %}">+{{ c.also.length - cap }} more</span>{% endif %}
       </div>
@@ -188,7 +201,7 @@ eleventyExcludeFromCollections: true
           {%- if c.ev.url %}<a class="ag-feat" href="{{ c.ev.url }}">{% if c.ev.image %}<img src="{{ c.ev.image }}" alt="" loading="lazy">{% endif %}<span><strong>{% if c.ev.official %}{{ c.ev.day }}{% else %}{{ c.ev.animal }}{% endif %}</strong><br>{% if c.ev.official %}{{ c.ev.animal }}{% else %}<span class="pick-badge">Wild Atlas pick</span>{% endif %}</span></a>
           {%- else %}<div class="ag-feat soon"><span><strong>{% if c.ev.official %}{{ c.ev.day }}{% else %}{{ c.ev.animal }}{% endif %}</strong><br>{% if c.ev.official %}{{ c.ev.animal }}{% else %}<span class="pick-badge">Wild Atlas pick</span>{% endif %}</span></div>{% endif %}
         {%- endif %}
-        {%- for a in c.also %}{% if a.url %}<a class="ag-also" href="{{ a.url }}">{{ a.day }}</a>{% else %}<span class="ag-also">{{ a.day }}</span>{% endif %}{% endfor %}
+        {%- for a in c.also %}{% if a.url %}<a class="ag-also{% if a.image %} has-thumb{% endif %}" href="{{ a.url }}">{% if a.image %}<img class="ag-thumb" src="{{ a.image }}" alt="" loading="lazy">{% endif %}<span>{{ a.day }}</span></a>{% else %}<span class="ag-also">{{ a.day }}</span>{% endif %}{% endfor %}
       </div>
     </li>
     {%- endfor %}
