@@ -40,3 +40,4 @@ research/zoo-finder/db/load.sql
 research/zoo-finder/db/images_only.sql
 research/zoo-finder/db/uploaded_keys.txt
 research/zoo-finder/raw/haiku_trial*/
+!assets/zoos/icons/
