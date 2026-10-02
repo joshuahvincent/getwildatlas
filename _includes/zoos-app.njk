@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/js/vendor/maplibre/maplibre-gl.css">
-<link rel="stylesheet" href="/css/zoos.css?v=9">
+<link rel="stylesheet" href="/css/zoos.css?v=10">
 
 <div class="zf" id="zf" data-animal="{{ a.id if a else '' }}">
   <h1 class="zf-title">Find a place to see real animals</h1>
@@ -51,6 +51,10 @@
             <li><strong>{{ p.n }}</strong>, {{ p.where }}</li>
             {%- endfor %}
           </ul>
+          {%- if a.wild.length %}
+          <h3>See it in the wild</h3>
+          <p>Wild {{ a.name }} are recorded in national parks and reserves such as {{ a.wild | join(', ') }}{% if a.wildTotal > a.wild.length %}, and {{ a.wildTotal - a.wild.length }} more{% endif %}. Wildlife is never guaranteed.</p>
+          {%- endif %}
           <p>Turn on JavaScript to see all {{ a.total }} places on a map, sorted by distance from you.</p>
         </section>
         {%- endif %}
@@ -89,5 +93,5 @@
   </form>
 </dialog>
 
-<script type="module" src="/js/zoos.js?v=14"></script>
+<script type="module" src="/js/zoos.js?v=15"></script>
 <noscript><p>This page needs JavaScript to find places near you. The list above shows some places to start with, and you can browse the <a href="/blog/">Wild Atlas blog</a> in the meantime.</p></noscript>

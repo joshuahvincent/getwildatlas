@@ -48,10 +48,11 @@ for f in sorted((glob.glob(os.path.join(RAW, 'out_*.json')) + glob.glob(os.path.
         if qid: by_qid[qid] = p['id']
         by_norm[norm(p['name'])] = p['id']
         st, note = STATUS.get(p['id'], ('open', None))
-        out.append("INSERT OR IGNORE INTO places (id,name,type,town,region,country,lat,lng,coord_source,wikidata_qid,url,accreditation,accreditation_source,accreditation_checked,image_file,image_license,image_author,status,status_note,first_seen,last_verified) VALUES (%s);"
-                   % ','.join(q(x) for x in [p['id'], p['name'], p['type'], p.get('town'), p.get('region'), p.get('country'), p.get('lat'), p.get('lng'),
+        # type 'wild' (national park / reserve) is stored as 'sanctuary' (see schema.sql); the export maps it back to 'wild'
+        out.append("INSERT OR IGNORE INTO places (id,name,type,town,region,country,lat,lng,coord_source,wikidata_qid,url,accreditation,accreditation_source,accreditation_checked,image_file,image_license,image_author,status,status_note,first_seen,last_verified,area_km2,unesco) VALUES (%s);"
+                   % ','.join(q(x) for x in [p['id'], p['name'], 'sanctuary' if p['type'] == 'wild' else p['type'], p.get('town'), p.get('region'), p.get('country'), p.get('lat'), p.get('lng'),
                                              p.get('coord_source'), qid, p.get('url'), p.get('accreditation'), p.get('accreditation_source'), TODAY,
-                                             p.get('image_file'), p.get('image_license'), p.get('image_author'), st, note, TODAY, TODAY]))
+                                             p.get('image_file'), p.get('image_license'), p.get('image_author'), st, note, TODAY, TODAY, p.get('area_km2'), 1 if p.get('unesco') else 0]))
 
 farms_p = os.path.join(RAW, 'farms_osm.json')
 if os.path.exists(farms_p):
@@ -81,10 +82,10 @@ def museum_id(name):
 def holding(h, pid, verified_by):
     if not h.get('source_url') or 'wikipedia.org' in h['source_url']:
         return None
-    return ("INSERT OR IGNORE INTO holdings (place_id,animal_id,match,species_seen,via,related_rationale,source_url,evidence,confidence,display_until,first_seen,last_verified,verified_by,source_fingerprint,check_status,next_due,evidence_tier) VALUES (%s);"
+    return ("INSERT OR IGNORE INTO holdings (place_id,animal_id,match,species_seen,via,related_rationale,source_url,evidence,confidence,display_until,first_seen,last_verified,verified_by,source_fingerprint,check_status,next_due,evidence_tier,obs_count) VALUES (%s);"
             % ','.join(q(x) for x in [pid, h['animal_id'], h['match'], h.get('species_seen'), h.get('via'), h.get('related_rationale'), h['source_url'],
                                       h.get('evidence'), h.get('confidence'), h.get('display_until'), TODAY, TODAY, verified_by, FP.get(h['source_url']), 'ok',
-                                      '2027-09-30' if h['animal_id'] != 'octopus' else '2026-12-31', h.get('evidence_tier', 'strong')]))
+                                      '2027-09-30' if h['animal_id'] != 'octopus' else '2026-12-31', h.get('evidence_tier', 'strong'), h.get('obs_count')]))
 
 FP = {}   # source_url -> fingerprint (from sweep 'fetches')
 for f in sorted(glob.glob(os.path.join(RAW, 'sweep_*.json'))):
