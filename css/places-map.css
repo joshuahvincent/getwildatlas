@@ -27,3 +27,8 @@
 .places-map-detail-close:hover, .places-map-detail-close:focus-visible { background: rgba(93, 64, 55, 0.1); }
 .places-map-toggle { display: inline-block; margin: 0 0 1rem; padding: 0.45rem 1rem; border: 1.5px solid #5D4037; border-radius: 999px; background: #fff; color: #5D4037; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.92rem; cursor: pointer; }
 .places-map-toggle:hover, .places-map-toggle:focus-visible { background: #FFF4CC; }
+
+/* Explore link (opts.link): bottom-right corner of the map; attribution sits bottom-left. */
+.places-map-explore { position: absolute; right: 10px; bottom: 10px; z-index: 3; padding: 0.4rem 0.9rem; border: 1.5px solid #5D4037; border-radius: 999px; background: #fff; color: #5D4037; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.88rem; text-decoration: none; box-shadow: 0 2px 8px rgba(93, 64, 55, 0.18); }
+.places-map-explore:hover, .places-map-explore:focus-visible { background: #FFF4CC; }
+@media (max-width: 600px) { .places-map-explore { font-size: 0.8rem; padding: 0.35rem 0.75rem; } }

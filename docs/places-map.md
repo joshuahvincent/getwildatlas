@@ -45,6 +45,7 @@ Places it can't resolve are left off the map. If that happens, add them to `_dat
 | `height` | CSS height, e.g. `"420px"` (default 340px; 280px on phones). |
 | `animal` | A zoo finder animal id (e.g. `hippopotamus`). Adds that animal's in-the-wild places (national parks, reserves) from the `w` list in the zoo finder's `assets/zoos/a/<id>.json` as teal pins, most-sighted first, skipping any place already pinned. |
 | `wildMax` | Most reserves to show with `animal` (default 15). |
+| `link` | `{ href, text }`: a pill link in the map's bottom-right corner (the attribution moves bottom-left). Animal pages use it to send people to the zoo finder (`/zoos/`), only when `zooFinderLive` is on. |
 | `cards` | id of an element holding detail cards, each with `data-pin-key="{{ (title + '|' + place) \| pinKey }}"`. The cards hide behind the map; tapping a pin opens its card under the map; a "Show all N places as a list" button reveals them. If the map can't load, the cards stay visible. |
 
 ## Pin tiers

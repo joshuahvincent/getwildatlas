@@ -189,7 +189,7 @@ async function draw(el, cards) {
   el.placesMap = map; // handy for debugging in the console
   map.touchZoomRotate.disableRotation();
   map.addControl(new lib.NavigationControl({ showCompass: false }), 'top-right');
-  map.addControl(new lib.AttributionControl({ compact: true, customAttribution: 'Outlines: Natural Earth' }));
+  map.addControl(new lib.AttributionControl({ compact: true, customAttribution: 'Outlines: Natural Earth' }), 'bottom-left');
   await new Promise((res) => (map.loaded() ? res() : map.once('load', res)));
   delete el.dataset.loading;
   map.getSource('pins').setData({
