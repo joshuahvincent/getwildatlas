@@ -53,7 +53,7 @@ layout: layouts/post.njk
 {% if w.intro %}{{ w.intro | md | safe }}{% endif %}
 {% if zooFinderLive and d.animalId and w.findLabel %}<a class="find-zoo-link" href="/zoos/?animal={{ d.animalId }}">{{ w.findLabel }} →</a>{% endif %}
 {%- set wtsPins = w | whereToSeePins %}
-{% placesMap wtsPins, { label: "Map of places to see " + (d.animalArticle or "") + " " + (d.animalName or "this animal"), cards: "wts-cards" } %}
+{% placesMap wtsPins, { label: "Map of places to see " + (d.animalArticle or "") + " " + (d.animalName or "this animal"), cards: "wts-cards", animal: (d.animalId or appId) } %}
 <div id="wts-cards" class="places-map-cards">
 {%- for group in w.groups %}
 {% if group.label %}<h3>{{ group.label }}</h3>{% endif %}

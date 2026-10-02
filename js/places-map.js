@@ -15,6 +15,9 @@
 //   data-fit     "pins" (default: zoom to the pins) | "world"
 //   data-max-zoom  closest zoom when fitting to pins (default 5)
 //   data-legend  JSON {tier: label} to rename legend entries; "none" hides the legend
+//   data-animal  a zoo finder animal id (assets/zoos/a/<id>.json): adds that animal's
+//                in-the-wild places (national parks, reserves) as teal pins, read at
+//                runtime from the same export as places.json so row indexes line up.
 //   data-cards   id of an element holding cards with data-pin-key="<pin key>". The cards
 //                collapse behind the map; tapping a pin shows its card in a panel under
 //                the map, and a "Show all N places as a list" button reveals them all.
@@ -143,9 +146,31 @@ function showCard(cards, key) {
   return true;
 }
 
+// In-the-wild places for one zoo finder animal: its exact-match rows whose place type is "wild".
+// (Zoos are already in the page's own curated list; reserves come from the zoo finder.)
+async function wildPinsFor(animalId, existing) {
+  const [animal, places] = await Promise.all([
+    fetch('/assets/zoos/a/' + encodeURIComponent(animalId) + '.json').then((r) => (r.ok ? r.json() : null)),
+    fetch('/assets/zoos/places.json').then((r) => (r.ok ? r.json() : [])),
+  ]);
+  if (!animal || !Array.isArray(animal.e)) return [];
+  const near = (a, b) => Math.abs(a.la - b.la) < 0.05 && Math.abs(a.lo - b.lo) < 0.05;   // ~5 km: same place already pinned
+  const out = [];
+  for (const row of animal.e) {
+    const p = places[row[0]];
+    if (!p || p.t !== 'wild') continue;
+    const pin = { ...fromZooPlace(p), tier: 'wild' };
+    if (!existing.some((e) => near(e, pin)) && !out.some((e) => near(e, pin))) out.push(pin);
+  }
+  return out;
+}
+
 async function draw(el, cards) {
   el.dataset.loading = '1';
   const pins = (await loadPins(el)).filter((p) => Number.isFinite(p.la) && Number.isFinite(p.lo)).map((p) => ({ ...p, tier: tierOf(p.tier) }));
+  if (el.dataset.animal) {
+    try { pins.push(...(await wildPinsFor(el.dataset.animal, pins))); } catch (err) { console.warn('[places map] no wild places for', el.dataset.animal, err); }
+  }
   renderLegend(el, pins);
   const lib = await import('/js/vendor/maplibre/maplibre-gl.mjs');
   // minZoom -1 (not the zoo finder's 0.6) so world-spanning pins fit on a phone

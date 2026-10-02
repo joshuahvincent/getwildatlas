@@ -43,6 +43,7 @@ Places it can't resolve are left off the map. If that happens, add them to `_dat
 | `maxZoom` | The closest zoom used when fitting to pins (default 5). |
 | `legend` | `{ tier: "label" }` to rename legend entries, or `"none"` to hide the legend. |
 | `height` | CSS height, e.g. `"420px"` (default 340px; 280px on phones). |
+| `animal` | A zoo finder animal id (e.g. `hippopotamus`). Adds that animal's in-the-wild places (national parks, reserves) from the zoo finder's data as teal pins, skipping any place already pinned. |
 | `cards` | id of an element holding detail cards, each with `data-pin-key="{{ (title + '|' + place) \| pinKey }}"`. The cards hide behind the map; tapping a pin opens its card under the map; a "Show all N places as a list" button reveals them. If the map can't load, the cards stay visible. |
 
 ## Pin tiers

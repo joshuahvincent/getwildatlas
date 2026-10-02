@@ -203,7 +203,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("placePins", (list, tier) => placesLib.placePins(list, tier));
   eleventyConfig.addFilter("whereToSeePins", placesLib.whereToSeePins);
   eleventyConfig.addFilter("pinKey", placesLib.pinKey);
-  // {% placesMap pins, { label, src, format, types, fit, maxZoom, legend, height, cards } %}
+  // {% placesMap pins, { label, src, format, types, fit, maxZoom, legend, height, cards, animal } %}
   // pins: an array from placePins/whereToSeePins, or null when using `src` (e.g. all zoo-finder places).
   eleventyConfig.addShortcode("placesMap", (pins, opts = {}) => {
     const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -217,9 +217,10 @@ module.exports = function (eleventyConfig) {
     if (opts.legend) attrs.push(`data-legend="${esc(typeof opts.legend === "string" ? opts.legend : JSON.stringify(opts.legend))}"`);
     if (opts.height) attrs.push(`style="--places-map-h: ${esc(opts.height)}"`);
     if (opts.cards) attrs.push(`data-cards="${esc(opts.cards)}"`);
+    if (opts.animal) attrs.push(`data-animal="${esc(opts.animal)}"`);
     if (!(pins && pins.length) && !opts.src) return "";
     return `<link rel="stylesheet" href="/js/vendor/maplibre/maplibre-gl.css"><link rel="stylesheet" href="/css/places-map.css?v=3">` +
-      `<div ${attrs.join(" ")}></div><script type="module" src="/js/places-map.js?v=3"></script>`;
+      `<div ${attrs.join(" ")}></div><script type="module" src="/js/places-map.js?v=4"></script>`;
   });
   eleventyConfig.addFilter("isoDay", (d) => new Date(d).toISOString().slice(0, 10));
   const { RenderPlugin } = require("@11ty/eleventy");
