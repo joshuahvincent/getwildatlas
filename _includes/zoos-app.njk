@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/js/vendor/maplibre/maplibre-gl.css">
-<link rel="stylesheet" href="/css/zoos.css?v=17">
+<link rel="stylesheet" href="/css/zoos.css?v=18">
 
 <div class="zf" id="zf" data-animal="{{ a.id if a else '' }}">
   <h1 class="zf-title">Find a place to see real animals</h1>
@@ -23,15 +23,16 @@
         </div>
         <button type="button" class="zf-btn zf-locate" id="zf-locate"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg><span class="zf-locate-text">Use my location</span></button>
       </div>
-      <details class="zf-adv" id="zf-adv">
-        <summary id="zf-adv-sum">More filters</summary>
+      <div class="zf-metaline">
+        <button type="button" class="zf-advbtn" id="zf-adv-sum" aria-expanded="false" aria-controls="zf-advbody">More filters</button>
+        <p class="zf-notice" id="zf-notice"><span class="zf-notice-i" aria-hidden="true">i</span>Animals move around, so check with the place before you visit.<span class="zf-forgetwrap" id="zf-forgetwrap" hidden> · <button type="button" class="zf-linkbtn" id="zf-forget">Forget my location</button></span></p>
+      </div>
+      <div class="zf-advbody" id="zf-advbody" hidden>
         <fieldset class="zf-dist zf-types" id="zf-dist"><legend>How far</legend><div class="zf-chips" id="zf-chips"></div></fieldset>
         <fieldset class="zf-types" id="zf-types"><legend>Type of place</legend><div class="zf-chips zf-typechips" id="zf-typechips"></div></fieldset>
-      </details>
+      </div>
     </div>
   </div>
-
-  <p class="zf-notice" id="zf-notice"><span class="zf-notice-i" aria-hidden="true">i</span>Animals move around, so check with the place before you visit. <span class="zf-privacy">Your location never leaves your browser.</span> <button type="button" class="zf-linkbtn" id="zf-forget" hidden>Forget my location</button></p>
 
   <p class="zf-quick" id="zf-quick" hidden></p>
   <p class="zf-status" id="zf-status" role="status" aria-live="polite"></p>
@@ -96,5 +97,5 @@
   </form>
 </dialog>
 
-<script type="module" src="/js/zoos.js?v=40"></script>
+<script type="module" src="/js/zoos.js?v=41"></script>
 <noscript><p>This page needs JavaScript to find places near you. The list above shows some places to start with, and you can browse the <a href="/blog/">Wild Atlas blog</a> in the meantime.</p></noscript>

@@ -476,10 +476,10 @@ function loadSaved() {
 function saveOrigin(o) { try { localStorage.setItem(LOC_KEY, JSON.stringify({ la: Math.round(o.la * 100) / 100, lo: Math.round(o.lo * 100) / 100, label: o.label, method: o.method, fromGeo: !!o.fromGeo })); } catch (e) {} }
 function forgetLocation() {
   try { localStorage.removeItem(LOC_KEY); } catch (e) {}
-  S.origin = null; S.editing = false; $('zf-q').value = ''; $('zf-q').placeholder = 'City or postcode'; $('zf-forget').hidden = true; render();
+  S.origin = null; S.editing = false; $('zf-q').value = ''; $('zf-q').placeholder = 'City or postcode'; $('zf-forgetwrap').hidden = true; render();
 }
 function setOrigin(o) {
-  saveOrigin(o); $('zf-forget').hidden = false;
+  saveOrigin(o); $('zf-forgetwrap').hidden = false;
   track('zoo_location_used', { method: o.method || 'geolocation' });
   S.origin = o; S.editing = false; $('zf-q').value = o.label === 'your location' ? '' : o.label; $('zf-q').placeholder = o.fromGeo ? 'Using your location' : 'City or postcode';
   closeSuggest(); render();
@@ -688,8 +688,9 @@ async function init() {
   } catch (e) { $('zf-status').textContent = 'Sorry, we could not load the places just now. Please try again in a moment.'; return; }
   renderQuick();
   const saved = loadSaved();
-  if (saved) { S.origin = saved; $('zf-q').value = saved.label === 'your location' ? '' : saved.label; $('zf-q').placeholder = saved.fromGeo ? 'Using your location' : 'City or postcode'; $('zf-forget').hidden = false; }
+  if (saved) { S.origin = saved; $('zf-q').value = saved.label === 'your location' ? '' : saved.label; $('zf-q').placeholder = saved.fromGeo ? 'Using your location' : 'City or postcode'; $('zf-forgetwrap').hidden = false; }
   $('zf-forget').addEventListener('click', forgetLocation);
+  $('zf-adv-sum').addEventListener('click', () => { const open = $('zf-advbody').hidden; $('zf-advbody').hidden = !open; $('zf-adv-sum').setAttribute('aria-expanded', String(open)); });
   // "Larger map": the map takes most of the width and the list shrinks to compact rows; remembered on this device
   const setSize = (big, save) => {
     $('zf-main').dataset.size = big ? 'large' : 'normal'; $('zf-size').setAttribute('aria-pressed', String(big)); $('zf-size').textContent = big ? 'Smaller map' : 'Larger map';

@@ -219,3 +219,13 @@
 .zf-main[data-size="large"] .zf-actions { gap: .2rem .6rem; font-size: .82rem; }
 .zf-main[data-size="large"] .zf-actions button { padding: .1rem .5rem; min-height: 28px; font-size: .8rem; }
 .zf-main[data-size="large"] .zf-list { gap: .35rem; }
+
+/* one line: More filters + the check-ahead note */
+.zf-metaline { display: flex; flex-wrap: wrap; align-items: center; gap: .1rem 1rem; margin: .35rem 0 .2rem; }
+.zf-advbtn { background: none; border: 0; font: inherit; font-weight: 700; font-size: .9rem; color: var(--zf-accent); cursor: pointer; padding: 0; min-height: 32px; display: inline-flex; align-items: center; gap: .3rem; }
+.zf-advbtn::before { content: "▸"; font-size: .8rem; transition: transform .15s; }
+.zf-advbtn[aria-expanded="true"]::before { transform: rotate(90deg); }
+.zf-advbtn:focus-visible { outline: 3px solid var(--zf-focus); outline-offset: 2px; }
+.zf-metaline .zf-notice { margin: 0; }
+.zf-advbody { margin: .1rem 0 .3rem; }
+@media (max-width: 899px) { .zf-advbtn { min-height: 44px; } }
