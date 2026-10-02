@@ -11,13 +11,31 @@ os.makedirs(out, exist_ok=True)
 def rnd(c):
     if isinstance(c[0], (int, float)): return [round(c[0], 2), round(c[1], 2)]
     return [rnd(x) for x in c]
-def outline(fn, keep):
+def rdp(pts, eps):
+    # Douglas-Peucker line simplification (iterative); keeps outlines recognisable with far fewer points
+    if len(pts) < 5: return pts
+    keep = [False] * len(pts); keep[0] = keep[-1] = True; stack = [(0, len(pts) - 1)]
+    while stack:
+        a, b = stack.pop(); (x1, y1), (x2, y2) = pts[a], pts[b]; dx, dy = x2 - x1, y2 - y1; n = dx * dx + dy * dy; mx, mi = 0.0, -1
+        for i in range(a + 1, b):
+            x, y = pts[i]
+            d = ((x - x1) * (x - x1) + (y - y1) * (y - y1)) if n == 0 else abs(dy * (x - x1) - dx * (y - y1)) / (n ** 0.5)
+            if d > mx: mx, mi = d, i
+        if mx > eps: keep[mi] = True; stack += [(a, mi), (mi, b)]
+    return [p for p, k in zip(pts, keep) if k]
+def simp(c, eps):
+    if isinstance(c[0][0], (int, float)):   # a ring
+        r = rdp(c, eps); return r if len(r) >= 4 else None
+    out = [simp(x, eps) for x in c]; return [x for x in out if x]
+def outline(fn, keep, eps=0.04):
     d = json.load(open(os.path.join(src, fn)))
     feats = []
     for f in d['features']:
         p = f['properties']; g = f['geometry']
         if not g: continue
-        feats.append({'type': 'Feature', 'properties': keep(p), 'geometry': {'type': g['type'], 'coordinates': rnd(g['coordinates'])}})
+        if p.get('ISO_A2') == 'AQ' or p.get('iso_a2') == 'AQ' or p.get('NAME') == 'Antarctica' or p.get('admin') == 'Antarctica': continue   # Antarctica takes up too much of the map and holds no places
+        co = simp(rnd(g['coordinates']), eps)
+        if co: feats.append({'type': 'Feature', 'properties': keep(p), 'geometry': {'type': g['type'], 'coordinates': co}})
     return {'type': 'FeatureCollection', 'features': feats}
 json.dump(outline('ne_50m_admin_0_countries.geojson', lambda p: {'n': p.get('NAME'), 'c': p.get('ISO_A2')}), open(os.path.join(out, 'countries.json'), 'w'), separators=(',', ':'))
 json.dump(outline('ne_50m_admin_1_states_provinces.geojson', lambda p: {'n': p.get('name'), 'c': p.get('iso_a2')}), open(os.path.join(out, 'admin1.json'), 'w'), separators=(',', ':'))

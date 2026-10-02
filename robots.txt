@@ -4,3 +4,4 @@ Allow: /
 
 # Sitemap
 Sitemap: https://wildatlasapp.com/sitemap.xml
+Sitemap: https://wildatlasapp.com/sitemap-zoos.xml

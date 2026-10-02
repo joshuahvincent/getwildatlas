@@ -1,0 +1,10 @@
+---
+layout: layouts/blog-base.njk
+pagination:
+  data: zoodata.animals
+  size: 1
+  alias: a
+permalink: "/zoos/{{ a.slug }}/"
+ogType: website
+---
+{% include "zoos-app.njk" %}
