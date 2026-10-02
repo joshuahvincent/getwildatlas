@@ -7,7 +7,7 @@ coverImage: /assets/blog/world-environment-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
   dayName: World Environment Day
-  animalId: tortoise
+  animalId: galapagos_giant_tortoise
   animalName: Galápagos giant tortoise
   animalArticle: a
   campaign: world_environment_day_2027
