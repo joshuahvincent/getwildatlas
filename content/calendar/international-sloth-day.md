@@ -73,6 +73,6 @@ About once a week, a sloth climbs all the way down its tree — just to poop. Th
 
 A baby sloth is born weighing less than a big bottle of water. It hangs onto its mom's tummy and rides along for months, learning which leaves are good to eat.
 
-{% figure "/assets/blog/international-sloth-day/habitat.jpg", "Three-toed sloths hang from high branches in the misty canopy — tropical rainforest canopy of Central and South America" %}
+{% figure "/assets/blog/international-sloth-day/habitat.jpg", "A three-toed sloth swimming slowly across a calm brown rainforest river, head above the water" %}
 
 Can you move as slowly as you possibly can across the room, like a sloth?
