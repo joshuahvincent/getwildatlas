@@ -49,7 +49,7 @@
 .zf-dot.w { background: #fff; border: 3px solid var(--zf-accent); }
 .zf-dot.r { width: 9px; height: 9px; background: var(--zf-accent); border: 1.5px solid #fff; box-shadow: 0 0 0 1px #6e2f12; margin: 0 2px; }
 .zf-dot.g { width: 9px; height: 9px; background: #fff; border: 2px solid #6b6b6b; margin: 0 2px; }
-.zf-dot.me { background: #2F7F86; border: 3px solid #fff; box-shadow: 0 0 0 2px #2F7F86; }
+.zf-dot.me { background: #2563EB; border: 3px solid #fff; box-shadow: 0 0 0 2px rgba(37,99,235,.35); }
 .zf-sec { margin: 0 0 1.25rem; }
 .zf-sec > h2 { font-size: 1.1rem; margin: 0 0 .6rem; }
 .zf-sec > h2 small { font-family: "Nunito", sans-serif; font-weight: 700; color: var(--muted); font-size: .85rem; }
@@ -234,3 +234,17 @@
 
 .zf-missing { margin: .5rem 0 0; font-size: .82rem; color: var(--muted); }
 .zf-missing a { color: var(--zf-accent); font-weight: 700; }
+
+/* the key's "You" dot matches the map's: blue dot, white halo, soft blue ring */
+.zf-dot.me { background: #2563EB; border: 3px solid #fff; box-shadow: 0 0 0 3px rgba(37,99,235,.3); }
+
+/* suggest-a-place form */
+.zf-suggest-dlg { max-width: min(94vw, 30rem); }
+.zf-fl { display: block; font-weight: 700; font-size: .88rem; margin: .55rem 0 0; }
+.zf-fl input { display: block; width: 100%; box-sizing: border-box; margin-top: .2rem; font: inherit; font-weight: 400; padding: .55rem .7rem; border: 1.5px solid var(--zf-edge); border-radius: 10px; background: #fff; color: var(--ink, #2A2118); min-height: 44px; }
+.zf-fl input:focus-visible { outline: 3px solid var(--zf-focus); outline-offset: 1px; }
+.zf-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.zf-suggest-msg { min-height: 1.3em; margin: .5rem 0 0; font-size: .9rem; }
+.zf-suggest-msg.err { color: #9b1c1c; font-weight: 700; }
+.zf-suggest-msg.ok { color: #1e6b2a; font-weight: 700; }
+.zf-suggest-dlg { max-height: 92vh; overflow: auto; }

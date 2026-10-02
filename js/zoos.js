@@ -266,8 +266,6 @@ function mapStyle() {
       { id: 'me-ring', type: 'circle', source: 'me', paint: { 'circle-radius': 18, 'circle-color': YOU, 'circle-opacity': 0.18 } },
       { id: 'me-halo', type: 'circle', source: 'me', paint: { 'circle-radius': 11, 'circle-color': '#ffffff' } },
       { id: 'me', type: 'circle', source: 'me', paint: { 'circle-radius': 8, 'circle-color': YOU } },
-      // the Wild Atlas app's map pin (added once its image has loaded; it then replaces the plain dot)
-      { id: 'me-pin', type: 'symbol', source: 'me', layout: { visibility: 'none', 'icon-image': 'you-pin', 'icon-anchor': 'bottom', 'icon-allow-overlap': true, 'icon-ignore-placement': true, 'icon-size': 1 } },
     ],
   };
 }
@@ -284,12 +282,6 @@ async function ensureMap() {
     map.addControl(new mapLib.AttributionControl({ compact: true, customAttribution: 'Outlines: Natural Earth' }));
     await new Promise((res) => (map.loaded() ? res() : map.once('load', res)));
     delete $('zf-map').dataset.loading;
-    try {
-      const img = await map.loadImage('/assets/zoos/icons/you-pin.png');
-      map.addImage('you-pin', img.data, { pixelRatio: 2 });
-      map.setLayoutProperty('me-pin', 'visibility', 'visible');
-      ['me-halo', 'me'].forEach((l) => map.setLayoutProperty(l, 'visibility', 'none'));
-    } catch (e) { console.warn('[zoos map] pin icon', e); if (map.getLayer('me-pin')) map.removeLayer('me-pin'); }
     // no polar ocean (maplibre 6's maxBounds throws here, so: a zoom floor that fits the 84°N to 58°S band, and a latitude clamp when a move ends)
     const floorZoom = () => { const el = $('zf-map'); try { map.setMinZoom(Math.max(0.6, Math.log2(el.clientWidth / 512), Math.log2(el.clientHeight / 342))); } catch (e) {} };
     floorZoom(); map.on('resize', floorZoom);
@@ -366,7 +358,7 @@ async function fbInit() {
     data.features.forEach((f) => { const g = f.geometry; (g.type === 'Polygon' ? [g.coordinates] : g.coordinates).forEach((poly) => poly.forEach((r) => { d += ring(r); })); });
     svg.append(fbSvg('path', { d, fill: '#f7efdc', stroke: '#a8946a', 'stroke-width': 1, 'vector-effect': 'non-scaling-stroke', 'fill-rule': 'evenodd' }));
     FB.gPins = fbSvg('g', {}); svg.append(FB.gPins);
-    FB.gMe = fbSvg('g', {}); FB.gMe.append(fbSvg('circle', { r: 18, fill: YOU, 'fill-opacity': .18 }), fbSvg('image', { href: '/assets/zoos/icons/you-pin.png', x: -20, y: -55, width: 40, height: 55 })); svg.append(FB.gMe);
+    FB.gMe = fbSvg('g', {}); FB.gMe.append(fbSvg('circle', { r: 18, fill: YOU, 'fill-opacity': .18 }), fbSvg('circle', { r: 11, fill: '#fff' }), fbSvg('circle', { r: 8, fill: YOU })); svg.append(FB.gMe);
     FB.ring = fbSvg('g', {}); FB.ring.append(fbSvg('circle', { r: 15, fill: 'none', stroke: '#2A2118', 'stroke-width': 3 })); svg.append(FB.ring);
     box.append(svg);
     FB.pop = el('div', { class: 'zf-fbpop', hidden: '' }); box.append(FB.pop);
@@ -689,7 +681,7 @@ async function init() {
     b.addEventListener('click', () => { const off = !S.hidden.has(tier); off ? S.hidden.add(tier) : S.hidden.delete(tier); b.setAttribute('aria-pressed', String(!off)); track('zoo_key_toggle', { tier: t, state: off ? 'hidden' : 'shown' }); S.keep = true; render(); });
     return el('li', {}, b);
   }),
-    el('li', { id: 'zf-legend-me', hidden: true }, el('img', { class: 'zf-youpin', src: '/assets/zoos/icons/you-pin.png', alt: '', 'aria-hidden': 'true', width: 14, height: 19 }), 'You'));
+    el('li', { id: 'zf-legend-me', hidden: true }, el('span', { class: 'zf-dot me', 'aria-hidden': 'true' }), 'You'));
   try {
     const [places, meta] = await Promise.all([loadJson(PLACES_URL), loadJson(ANIMALS_URL)]);
     S.places = places; S.groups = meta.groups;
@@ -700,6 +692,30 @@ async function init() {
   const saved = loadSaved();
   if (saved) { S.origin = saved; $('zf-q').value = saved.label === 'your location' ? '' : saved.label; $('zf-q').placeholder = saved.fromGeo ? 'Using your location' : 'City or postcode'; $('zf-forgetwrap').hidden = false; }
   $('zf-forget').addEventListener('click', forgetLocation);
+  // "Don't see your place?" form: stored for review by a person (functions/api/suggest-place.js); the animal field starts as the animal being viewed
+  const sdlg = $('zf-suggest'), sform = $('zf-suggest-form'), smsg = $('zf-suggest-msg');
+  $('zf-suggest-open').addEventListener('click', () => {
+    smsg.textContent = ''; smsg.className = 'zf-suggest-msg'; $('zf-suggest-send').disabled = false;
+    $('zf-suggest-animal').value = S.cur ? S.cur.name : '';
+    if (typeof sdlg.showModal === 'function') sdlg.showModal(); else sdlg.setAttribute('open', '');
+    sform.elements.establishment.focus();
+  });
+  $('zf-suggest-close').addEventListener('click', () => sdlg.close());
+  sform.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const f = sform.elements, body = { establishment: f.establishment.value, animal: f.animal.value, address: f.address.value, website: f.website.value, email: f.email.value, company: f.company.value, page: location.pathname };
+    const bad = (m) => { smsg.textContent = m; smsg.className = 'zf-suggest-msg err'; };
+    if (!body.establishment.trim()) return bad('Please add the name of the place.');
+    if (!body.address.trim()) return bad('Please add the address.');
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(body.email.trim())) return bad('Please add a valid contact email.');
+    $('zf-suggest-send').disabled = true; smsg.textContent = 'Sending…'; smsg.className = 'zf-suggest-msg';
+    try {
+      const r = await fetch('/api/suggest-place', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) });
+      const j = await r.json().catch(() => ({}));
+      if (r.ok && j.ok) { track('zoo_suggest_submit', { has_animal: body.animal.trim() ? 'yes' : 'no' }); sform.reset(); smsg.textContent = 'Thank you! We will check it and add it to the map.'; smsg.className = 'zf-suggest-msg ok'; }
+      else { $('zf-suggest-send').disabled = false; bad(j.error || 'Sorry, that did not go through. Please email info@wildatlasapp.com.'); }
+    } catch (x) { $('zf-suggest-send').disabled = false; bad('Sorry, that did not go through. Please email info@wildatlasapp.com.'); }
+  });
   $('zf-adv-sum').addEventListener('click', () => { const open = $('zf-advbody').hidden; $('zf-advbody').hidden = !open; $('zf-adv-sum').setAttribute('aria-expanded', String(open)); });
   // "Larger map": the map takes most of the width and the list shrinks to compact rows; remembered on this device
   const setSize = (big, save) => {

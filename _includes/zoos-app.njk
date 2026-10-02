@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/js/vendor/maplibre/maplibre-gl.css">
-<link rel="stylesheet" href="/css/zoos.css?v=20">
+<link rel="stylesheet" href="/css/zoos.css?v=21">
 
 <div class="zf" id="zf" data-animal="{{ a.id if a else '' }}">
   <h1 class="zf-title">Find a place to see real animals</h1>
@@ -67,7 +67,7 @@
       <div class="zf-maptools"><button type="button" class="zf-sizebtn" id="zf-size" aria-pressed="true">Smaller map</button></div>
       <div class="zf-map" id="zf-map" role="region" aria-label="Map of the places in the list. The list has the same places."></div>
       <ul class="zf-legend" id="zf-legend"></ul>
-      <p class="zf-missing">Don't see your zoo, aquarium or park here? <a href="mailto:info@wildatlasapp.com?subject=Add%20a%20place%20to%20the%20Wild%20Atlas%20finder">Let us know</a>.</p>
+      <p class="zf-missing">Don't see your zoo, aquarium or park here? <button type="button" class="zf-linkbtn" id="zf-suggest-open">Let us know</button>.</p>
     </div>
   </div>
 
@@ -86,6 +86,24 @@
   </footer>
 </div>
 
+<dialog id="zf-suggest" class="zf-dialog zf-suggest-dlg" aria-labelledby="zf-suggest-h">
+  <form id="zf-suggest-form" novalidate>
+    <h2 id="zf-suggest-h">Add your place</h2>
+    <p class="zf-dialog-note">Tell us about a zoo, aquarium, museum, farm or park that is missing. We check each one before it goes on the map.</p>
+    <label class="zf-fl">Name of the place<input name="establishment" required maxlength="160" autocomplete="organization"></label>
+    <label class="zf-fl">Animal(s) you can see there<input name="animal" id="zf-suggest-animal" maxlength="160" placeholder="For example: lion, giraffe"></label>
+    <label class="zf-fl">Address<input name="address" required maxlength="300" autocomplete="street-address" placeholder="Street, city, country"></label>
+    <label class="zf-fl">Website link<input name="website" type="url" inputmode="url" maxlength="300" placeholder="https://" autocomplete="url"></label>
+    <label class="zf-fl">Contact email<input name="email" type="email" required maxlength="160" autocomplete="email"></label>
+    <label class="zf-hp" aria-hidden="true">Company<input name="company" tabindex="-1" autocomplete="off"></label>
+    <p class="zf-dialog-note">We only use your email to ask about the place. We do not add it to any list.</p>
+    <p class="zf-suggest-msg" id="zf-suggest-msg" role="status" aria-live="polite"></p>
+    <div class="zf-dialog-actions">
+      <button type="submit" class="zf-btn" id="zf-suggest-send">Send</button>
+      <button type="button" class="zf-btn zf-btn-quiet" id="zf-suggest-close">Close</button>
+    </div>
+  </form>
+</dialog>
 <dialog id="zf-geo" class="zf-dialog" aria-labelledby="zf-geo-h">
   <form method="dialog">
     <h2 id="zf-geo-h">Share your location?</h2>
@@ -98,5 +116,5 @@
   </form>
 </dialog>
 
-<script type="module" src="/js/zoos.js?v=43"></script>
+<script type="module" src="/js/zoos.js?v=44"></script>
 <noscript><p>This page needs JavaScript to find places near you. The list above shows some places to start with, and you can browse the <a href="/blog/">Wild Atlas blog</a> in the meantime.</p></noscript>
