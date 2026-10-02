@@ -266,6 +266,8 @@ function mapStyle() {
       { id: 'me-ring', type: 'circle', source: 'me', paint: { 'circle-radius': 18, 'circle-color': YOU, 'circle-opacity': 0.18 } },
       { id: 'me-halo', type: 'circle', source: 'me', paint: { 'circle-radius': 11, 'circle-color': '#ffffff' } },
       { id: 'me', type: 'circle', source: 'me', paint: { 'circle-radius': 8, 'circle-color': YOU } },
+      // the Wild Atlas app's map pin (added once its image has loaded; it then replaces the plain dot)
+      { id: 'me-pin', type: 'symbol', source: 'me', layout: { visibility: 'none', 'icon-image': 'you-pin', 'icon-anchor': 'bottom', 'icon-allow-overlap': true, 'icon-ignore-placement': true, 'icon-size': 1 } },
     ],
   };
 }
@@ -282,6 +284,12 @@ async function ensureMap() {
     map.addControl(new mapLib.AttributionControl({ compact: true, customAttribution: 'Outlines: Natural Earth' }));
     await new Promise((res) => (map.loaded() ? res() : map.once('load', res)));
     delete $('zf-map').dataset.loading;
+    try {
+      const img = await map.loadImage('/assets/zoos/icons/you-pin.png');
+      map.addImage('you-pin', img.data, { pixelRatio: 2 });
+      map.setLayoutProperty('me-pin', 'visibility', 'visible');
+      ['me-halo', 'me'].forEach((l) => map.setLayoutProperty(l, 'visibility', 'none'));
+    } catch (e) { console.warn('[zoos map] pin icon', e); if (map.getLayer('me-pin')) map.removeLayer('me-pin'); }
     // no polar ocean (maplibre 6's maxBounds throws here, so: a zoom floor that fits the 84°N to 58°S band, and a latitude clamp when a move ends)
     const floorZoom = () => { const el = $('zf-map'); try { map.setMinZoom(Math.max(0.6, Math.log2(el.clientWidth / 512), Math.log2(el.clientHeight / 342))); } catch (e) {} };
     floorZoom(); map.on('resize', floorZoom);
@@ -358,7 +366,7 @@ async function fbInit() {
     data.features.forEach((f) => { const g = f.geometry; (g.type === 'Polygon' ? [g.coordinates] : g.coordinates).forEach((poly) => poly.forEach((r) => { d += ring(r); })); });
     svg.append(fbSvg('path', { d, fill: '#f7efdc', stroke: '#a8946a', 'stroke-width': 1, 'vector-effect': 'non-scaling-stroke', 'fill-rule': 'evenodd' }));
     FB.gPins = fbSvg('g', {}); svg.append(FB.gPins);
-    FB.gMe = fbSvg('g', {}); FB.gMe.append(fbSvg('circle', { r: 18, fill: YOU, 'fill-opacity': .18 }), fbSvg('circle', { r: 11, fill: '#fff' }), fbSvg('circle', { r: 8, fill: YOU })); svg.append(FB.gMe);
+    FB.gMe = fbSvg('g', {}); FB.gMe.append(fbSvg('circle', { r: 18, fill: YOU, 'fill-opacity': .18 }), fbSvg('image', { href: '/assets/zoos/icons/you-pin.png', x: -20, y: -55, width: 40, height: 55 })); svg.append(FB.gMe);
     FB.ring = fbSvg('g', {}); FB.ring.append(fbSvg('circle', { r: 15, fill: 'none', stroke: '#2A2118', 'stroke-width': 3 })); svg.append(FB.ring);
     box.append(svg);
     FB.pop = el('div', { class: 'zf-fbpop', hidden: '' }); box.append(FB.pop);
@@ -399,6 +407,7 @@ async function fbDraw(cands) {
 function fbFit(cands) {
   const prim = cands.filter((c) => c.rank <= 3); let use = prim.length ? prim : cands;
   if (S.cur && !S.origin && HOME_CC && use.some((c) => c.p.cc === HOME_CC)) use = use.filter((c) => c.p.cc === HOME_CC);
+  if (!S.cur && S.origin) { fbFitBounds([[-170, -58], [180, 80]], 0); return; }
   if (!S.cur && !S.origin) { fbFitBounds(START_VIEW, 10); return; }
   const pts = (S.origin ? use.slice(0, 8) : use).map((c) => [c.p.lo, c.p.la]); if (S.origin) pts.push([S.origin.lo, S.origin.la]);
   if (!pts.length) { fbFitBounds(START_VIEW, 10); return; }
@@ -432,6 +441,7 @@ function fit(cands) {
   const prim = cands.filter((c) => c.rank <= 3);
   let use = prim.length ? prim : cands;
   if (S.cur && !S.origin && HOME_CC && use.some((c) => c.p.cc === HOME_CC)) use = use.filter((c) => c.p.cc === HOME_CC);
+  if (!S.cur && S.origin) { map.resize(); map.fitBounds([[-170, -58], [180, 80]], { padding: 0, duration: 0 }); return; }   // all animals + a location: the whole world, with the pin showing where you are
   if (!S.cur && !S.origin) { map.resize(); map.fitBounds(START_VIEW, { padding: 10, duration: 0 }); return; }   // North America (or Europe / Oceania) to start; the visitor can pan out to the world
   (S.origin ? use.slice(0, 8) : use).forEach((c) => pts.push([c.p.lo, c.p.la]));
   if (S.origin) pts.push([S.origin.lo, S.origin.la]);
@@ -679,7 +689,7 @@ async function init() {
     b.addEventListener('click', () => { const off = !S.hidden.has(tier); off ? S.hidden.add(tier) : S.hidden.delete(tier); b.setAttribute('aria-pressed', String(!off)); track('zoo_key_toggle', { tier: t, state: off ? 'hidden' : 'shown' }); S.keep = true; render(); });
     return el('li', {}, b);
   }),
-    el('li', { id: 'zf-legend-me', hidden: true }, el('span', { class: 'zf-dot me', 'aria-hidden': 'true' }), 'You'));
+    el('li', { id: 'zf-legend-me', hidden: true }, el('img', { class: 'zf-youpin', src: '/assets/zoos/icons/you-pin.png', alt: '', 'aria-hidden': 'true', width: 14, height: 19 }), 'You'));
   try {
     const [places, meta] = await Promise.all([loadJson(PLACES_URL), loadJson(ANIMALS_URL)]);
     S.places = places; S.groups = meta.groups;

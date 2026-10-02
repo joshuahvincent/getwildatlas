@@ -229,3 +229,5 @@
 .zf-metaline .zf-notice { margin: 0; }
 .zf-advbody { margin: .1rem 0 .3rem; }
 @media (max-width: 899px) { .zf-advbtn { min-height: 44px; } }
+
+.zf-youpin { display: block; flex: none; }
