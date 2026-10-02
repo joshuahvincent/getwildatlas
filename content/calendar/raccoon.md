@@ -20,6 +20,7 @@ animalDay:
       sourceUrl: "https://nationaldaycalendar.com/celebrations/international-raccoon-appreciation-day-october-1"
   readAloudNote: "Read this one out loud together — it's short, and it's best in a sneaky, tiptoe-y whisper."
   whereToSee:
+    wildPlaces: false   # zoo finder reserves hidden (marine sanctuary), 2026-10-02
     heading: Where to see a raccoon
     intro: "In the wild, raccoons live in forests, wetlands, parks, and even towns across North America. For the rest of us, these zoos have raccoons you can visit."
     findLabel: Find the nearest zoo with raccoons

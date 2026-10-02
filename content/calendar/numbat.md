@@ -20,6 +20,7 @@ animalDay:
       sourceUrl: http://www.numbat.org.au/news/2019/10/16/world-numbat-day
   readAloudNote: "Read this one out loud together — it's short, and it's more fun with a tiny tongue-flicking sound."
   whereToSee:
+    wildPlaces: false   # zoo finder reserves hidden (range: parks outside the numbat range), 2026-10-02
     heading: Where to see a numbat
     intro: "In the wild, numbats live in a few small patches of eucalyptus woodland in Western Australia. For the rest of us: numbats are very rare in zoos, and the one place we could confirm you can visit them is Perth Zoo in Western Australia."
     findLabel: Find the nearest zoo with numbats

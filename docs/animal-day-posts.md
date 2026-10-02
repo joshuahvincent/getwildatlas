@@ -16,3 +16,11 @@ Every conservation-calendar animal post, such as World Hippo Day or World Elepha
 - Named zoo animals and holdings must be re-verified the week of publishing, since animals move.
 - Images live in `assets/blog/<slug>/`, as JPEGs at most 1400px wide. Use app art for animals in the app.
 - `campaign`: `<day_snake_case>_<year>`, e.g. `world_hippo_day_2027`.
+
+## Where-to-see map
+
+The "Where to see" section shows a map: `{% placesMap %}`, see `docs/places-map.md`.
+
+- **Place cards:** each one becomes a pin. Mark wild-viewing spots (whale-watch waters, refuges, national parks) with `wild: true` so they get the teal "In the wild" pin.
+- **Reserves:** the map also adds national parks and reserves for the page's animal from the zoo finder's data (`assets/zoos/a/<animalId>.json`, the `w` list). The animal is the page's `animalDay.animalId`, or `appId` if that isn't set.
+- **Turning reserves off:** set `whereToSee.wildPlaces: false` when that data is wrong for the page's species or subspecies, or mixes up land and sea. Note why in a comment. Nineteen pages are off as of 2026-10-02. Turn them back on once the zoo finder fixes their data.

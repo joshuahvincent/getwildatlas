@@ -20,6 +20,7 @@ animalDay:
       sourceUrl: https://www.awarenessdays.com/awareness-days-calendar/national-hummingbird-day/
   readAloudNote: "Read this one out loud together — try a fast little humming sound whenever you get to the wings."
   whereToSee:
+    wildPlaces: false   # zoo finder reserves hidden (marine sanctuary), 2026-10-02
     heading: Where to see a hummingbird
     intro: "In the wild, hummingbirds live only in the Americas, from Alaska all the way down to Chile, wherever there are lots of flowers. For the rest of us: a few places keep hummingbirds in big walk-through gardens, and a flower pot by a window might bring a wild visitor, too."
     findLabel: Find the nearest zoo with hummingbirds

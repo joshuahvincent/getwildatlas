@@ -14,6 +14,7 @@ animalDay:
   greeting: "**Happy World Otter Day!** Every year, on the last Wednesday of May, people celebrate all fourteen kinds of otter in the world. Today we're celebrating one very special otter — the one that lives in the sea, floats on its back, and cracks its dinner open with a rock."
   readAloudNote: "Read this one out loud together — it's short, and it's even better with a slow, sleepy, bobbing-on-the-waves voice."
   whereToSee:
+    wildPlaces: false   # zoo finder reserves hidden (inland refuges), 2026-10-02
     heading: Where to see a sea otter
     intro: "In the wild, sea otters float in cold, shallow seas along the North Pacific coast — from Japan and Russia to Alaska, Canada and California. You can sometimes spot them from shore around Monterey Bay, though you should always watch from far away. For the rest of us, these zoos and aquariums care for sea otters too — many were rescued, and some are foster moms who help pups who need a hand get back to the wild."
     findLabel: Find a zoo

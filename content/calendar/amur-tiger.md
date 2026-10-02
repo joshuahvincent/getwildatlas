@@ -20,6 +20,7 @@ animalDay:
       sourceUrl: https://en.wikipedia.org/wiki/International_Tiger_Day
   readAloudNote: "Read this one out loud together — it's even better in a soft, sneaky-tiger whisper."
   whereToSee:
+    wildPlaces: false   # zoo finder reserves hidden (subspecies: Bengal-tiger reserves), 2026-10-02
     heading: Where to see an Amur tiger
     intro: "In the wild, Amur tigers live in the snowy forests of far-eastern Russia and nearby parts of China, where they are very hard to spot. For the rest of us, these zoos around the world have Amur tigers you can visit."
     findLabel: Find the nearest zoo with Amur tigers

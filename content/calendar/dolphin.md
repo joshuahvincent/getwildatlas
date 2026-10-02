@@ -24,6 +24,7 @@ animalDay:
       sourceUrl: https://www.seashepherdglobal.org/latest-news/world-dolphin-day/
   readAloudNote: "Read this one out loud together — add a few clicks and whistles for the dolphin sounds."
   whereToSee:
+    wildPlaces: false   # zoo finder reserves hidden (inland refuge), 2026-10-02
     heading: Where to see a dolphin
     intro: "In the wild, dolphins live in oceans and seas all around the world, and some kinds even live in rivers. For the rest of us, these zoos, aquariums, and marine centers care for bottlenose dolphins you can visit."
     findLabel: Find the nearest zoo or aquarium with dolphins
