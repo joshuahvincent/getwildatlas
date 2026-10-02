@@ -19,7 +19,12 @@ MARINE = {'humpback_whale','orca','sea_otter','great_white_shark','harp_seal','o
           'sea_lion','sea_snake','seahorse','starfish','jellyfish','moray_eel','walrus','west_indian_manatee','giant_squid','clownfish','emperor_penguin','albatross','atlantic_puffin'}
 COAST = re.compile(r'marine|coast|seashore|shore|\bsea\b|ocean|\bbay\b|reef|island|cape\b|point\b|lagoon|gulf|archipelag|estuar|delta|wadden|beach|harbou?r|sound\b|fjord|atoll|cay\b|key\b|peninsula', re.I)
 MARINE_PARK = re.compile(r'marine|\bsea\b|ocean|reef|sanctuary.*(bay|sea|ocean)|farallones', re.I)
+RANGE = {   # hand-set range limits where the circle/records put an animal outside where it really lives
+    'great_white_shark': lambda p: not (-25 <= p['lat'] <= 25),   # not the tropics
+    'numbat': lambda p: p['country'] == 'AU' and (p['lng'] < 125 or 'mallee cliffs' in p['name'].lower()),   # SW Western Australia + the fenced Mallee Cliffs reintroduction
+}
 def allowed(aid, p):
+    if aid in RANGE and not RANGE[aid](p): return False
     if aid in ONLY_COUNTRIES and p['country'] not in ONLY_COUNTRIES[aid]: return False
     if aid in ONLY_NAME and not ONLY_NAME[aid].search(p['name']): return False
     if aid in MARINE: return bool(COAST.search(p['name']))
