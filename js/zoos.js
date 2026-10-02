@@ -179,7 +179,7 @@ function render() {
     if (zoosAll.length) box.append(section('All zoos, aquariums and museums', '(' + zoosAll.length.toLocaleString('en') + ')', zoosAll));
     if (parksAll.length) box.append(section('See it in the wild', '(' + parksAll.length.toLocaleString('en') + ' national parks and reserves)', parksAll));
     else box.append(el('div', { class: 'zf-empty' }, el('p', { text: 'Nothing within that distance.' }), Number.isFinite(S.maxKm) ? el('button', { type: 'button', class: 'zf-btn', id: 'zf-widen', text: 'Search any distance' }) : null));
-    const where = S.origin ? 'Closest first, from ' + (S.origin.label === 'your location' ? 'your location' : S.origin.label) + '.' : 'Add your location to put the closest first.';
+    const where = S.origin ? 'Closest first, from ' + (/^Near /.test(S.origin.label) ? S.origin.label.replace(/^Near /, 'near ') : S.origin.label === 'your location' ? 'your location' : S.origin.label) + '.' : 'Add your location to put the closest first.';
     $('zf-status').textContent = (S.unknown ? 'We can\u2019t find \u201c' + S.unknown + '\u201d yet, so here are animal places ' + (S.origin ? 'near you' : 'to start with') + '. ' : 'Showing every place. Search for an animal to narrow it down. ') + (S.unknown ? '' : where);
     lastCands = everyone; drawMap(everyone); return;
   }
@@ -209,7 +209,7 @@ function render() {
     msg = all.length ? (home ? 'Showing places in ' + countryName(HOME_CC) + ' first. Add your location to put the closest first.' : 'Add your location to put the closest first.') : '';
   } else {
     const near = (primary[0] || all[0]);
-    msg = all.length ? 'Closest first, from ' + (S.origin.label === 'your location' ? 'your location' : S.origin.label) + '.' : '';
+    msg = all.length ? 'Closest first, from ' + (/^Near /.test(S.origin.label) ? S.origin.label.replace(/^Near /, 'near ') : S.origin.label === 'your location' ? 'your location' : S.origin.label) + '.' : '';
     if (near && near.km > FAR_KM) msg += ' The closest is ' + near.p.n + ', ' + fmtDist(near.km) + ' away.';
   }
   $('zf-status').textContent = msg;
@@ -283,10 +283,19 @@ async function ensureMap() {
   })();
   return mapReady;
 }
+function mapProblem(why) {
+  const box = $('zf-map'); if (!box || box.dataset.failed) return; box.dataset.failed = '1'; delete box.dataset.loading;
+  box.textContent = ''; box.append(el('p', { class: 'zf-maperr' }, 'The map could not start in this browser, but the list has the same places.', el('small', {}, why ? ' (' + String(why).slice(0, 120) + ')' : '')));
+  console.error('[zoos map]', why);
+}
 async function drawMap(cands) {
   lastCands = cands;
   if (!map && S.view !== 'map' && !window.matchMedia('(min-width: 900px)').matches) return;
-  await ensureMap();
+  if (S.mapFailed) return;
+  try {
+    const gl = document.createElement('canvas'); if (!(gl.getContext('webgl2') || gl.getContext('webgl'))) throw new Error('WebGL is not available');
+    await Promise.race([ensureMap(), new Promise((_, rej) => setTimeout(() => rej(new Error('map took too long to start')), 25000))]);
+  } catch (e) { S.mapFailed = true; mapProblem(e && e.message); return; }
   const feats = cands.map((c) => ({ type: 'Feature', properties: { pi: c.pi, tier: TIER_OF(c.rank) }, geometry: { type: 'Point', coordinates: [c.p.lo, c.p.la] } }));
   map.getSource('pins').setData({ type: 'FeatureCollection', features: feats });
   map.getSource('me').setData({ type: 'FeatureCollection', features: S.origin ? [{ type: 'Feature', properties: {}, geometry: { type: 'Point', coordinates: [S.origin.lo, S.origin.la] } }] : [] });
@@ -336,7 +345,7 @@ function setView(v) {
 // ---------- location ----------
 function setOrigin(o) {
   track('zoo_location_used', { method: o.method || 'geolocation' });
-  S.origin = o; S.editing = false; $('zf-q').value = o.fromGeo ? '' : o.label; $('zf-q').placeholder = o.fromGeo ? 'Using your location' : 'City or postcode';
+  S.origin = o; S.editing = false; $('zf-q').value = o.label === 'your location' ? '' : o.label; $('zf-q').placeholder = o.fromGeo ? 'Using your location' : 'City or postcode';
   closeSuggest(); render();
 }
 function useMyLocation() {
@@ -353,13 +362,21 @@ function useMyLocation() {
   }
   getLocation();
 }
+async function nearestCity(la, lo) {
+  try {
+    await loadCities(); let best = null, bd = 1e9;
+    for (const c of cities) { if (c.pop < 20000) continue; const d = haversineKm({ la, lo }, { la: c.la, lo: c.lo }); if (d < bd) { bd = d; best = c; } }
+    return best && bd <= 120 ? best.n + (best.cc === 'US' && best.st ? ', ' + best.st : ', ' + countryName(best.cc)) : null;
+  } catch (e) { return null; }
+}
 function getLocation() {
   const btn = $('zf-locate'), st = $('zf-status');
   if (!('geolocation' in navigator)) { st.textContent = 'Your browser can not share your location. Try typing a city or postcode.'; return; }
   btn.disabled = true; st.textContent = 'Finding you…';
-  navigator.geolocation.getCurrentPosition((pos) => {
+  navigator.geolocation.getCurrentPosition(async (pos) => {
     btn.disabled = false;
-    setOrigin({ method: 'geolocation', la: pos.coords.latitude, lo: pos.coords.longitude, label: 'your location', fromGeo: true });
+    const near = await nearestCity(pos.coords.latitude, pos.coords.longitude);   // looked up locally; the coordinates never leave the browser
+    setOrigin({ method: 'geolocation', la: pos.coords.latitude, lo: pos.coords.longitude, label: near ? 'Near ' + near : 'your location', fromGeo: true });
   }, (err) => {
     btn.disabled = false;
     // 1 = permission denied (blocked for this site, or the operating system's location service is off), 2 = position unavailable, 3 = timed out
@@ -439,7 +456,7 @@ function showAnimalList(q) {
   aList = animalMatches(q); aIdx = -1; const ul = $('zf-animal-list'); ul.textContent = '';
   if (!aList.length) ul.append(el('li', { role: 'option', 'aria-disabled': 'true', text: q.trim() ? 'We can\u2019t find \u201c' + q.trim() + '\u201d yet. Press Enter to see animal places near you.' : 'Type an animal, like lion, penguin or T. rex.' }));
   aList.forEach((a, i) => {
-    const li = el('li', { role: 'option', id: 'zf-a' + i }, el('span', { text: a.n }), el('small', { text: (KIND_LABEL[a.k] || '') + (a.e ? ' · ' + a.e + ' places' : '') }));
+    const li = el('li', { role: 'option', id: 'zf-a' + i }, el('span', { text: a.n }), el('small', { text: (a.e + a.r === 0 && a.w ? 'In national parks & reserves' : (KIND_LABEL[a.k] || '')) + (a.e ? ' · ' + a.e + ' places' : a.w ? ' · ' + a.w + ' parks' : '') }));
     li.addEventListener('mousedown', (e) => { e.preventDefault(); chooseAnimal(a.id); });
     ul.append(li);
   });

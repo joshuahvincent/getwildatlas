@@ -73,6 +73,6 @@ for aid, a in anim.items():
     doc = {'id': aid, 'name': a['common_name'], 'kind': kind, 'wild_only': bool(a['wild_only']), 'e': e, 'r': r, 'g': g, 'w': w}
     if gk: doc['group'] = {'key': gk, 'label': groups[gk]['label']}
     json.dump(doc, open(os.path.join(OUT, 'a', aid + '.json'), 'w'), separators=(',', ':'), ensure_ascii=False)
-    if a['pack'] != 'calendar': cover.append({'id': aid, 'n': a['common_name'], 'pack': a['pack'], 'k': kind, 'e': len(e), 'r': len(r), 'g': len(g), 'w': len(w)})
+    cover.append({'id': aid, 'n': a['common_name'], 'pack': a['pack'], 'k': kind, 'e': len(e), 'r': len(r), 'g': len(g), 'w': len(w)})
 json.dump({'generated': TODAY, 'animals': cover, 'groups': {k: {'label': v['label'], 'members': v['members']} for k, v in groups.items()}}, open(os.path.join(OUT, 'animals.json'), 'w'), separators=(',', ':'), ensure_ascii=False)
 print('places', len(P), 'animals', len(cover), 'holdings used', sum(len(v) for v in by_animal.values()))

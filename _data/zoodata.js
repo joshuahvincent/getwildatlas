@@ -25,7 +25,12 @@ module.exports = () => {
     // prose uses a lowercase common name ("a hippopotamus", "an African elephant"); dinosaur names keep their scientific capitalisation
     const nm = m.k === "dino" ? m.n : m.n.toLowerCase().replace(/\b(african|asian|arctic|atlantic|american|burmese|komodo|gila|tasmanian|siberian)\b/g, (x) => x[0].toUpperCase() + x.slice(1));
     let title, desc, summary;
-    if (m.k === "dino") {
+    const wildOnly = d.e.length + d.r.length === 0 && (d.w || []).length > 0;   // GBIF-only animals (no zoo rows): national parks and reserves only
+    if (wildOnly) {
+      title = `Where to See ${article} ${m.n} in the Wild`;
+      desc = `Find national parks and reserves where ${article} ${nm} has been recorded in the wild. ${(d.w || []).length} places on a map with distance. Wildlife is never guaranteed.`;
+      summary = `National parks and reserves where ${article} ${nm} has been recorded in the wild. Wildlife is never guaranteed, so check with the park before you go.`;
+    } else if (m.k === "dino") {
       title = `Where to See ${article} ${m.n} Fossil Near You`;
       desc = `Find natural-history museums near you with ${article} ${nm} fossil or cast on display. ${total ? total + " places on a map" : "Places on a map"} with photos and distance. Check before you go.`;
       summary = `Museums with ${article} ${nm} on display, as a real fossil or a cast${d.r.length ? ", plus museums with a close relative" : ""}. Check with the museum before you go.`;
