@@ -3,7 +3,7 @@ human/machine observations). One facet query per park. Caches per park (resume-s
 Thresholds: >=5 records = listed (weak evidence tier), >=25 = strong. Relatives need >=10. The park boundary is approximated by a circle of equal area (max 90 km radius),
 so records from a neighbouring area can leak in: that is why 5-24 records are labelled unconfirmed.
 Usage: python3 tools/wild_sightings.py [--limit N]   (run from research/zoo-finder)"""
-import json, math, os, sys, time, urllib.parse, urllib.request
+import json, math, os, re, sys, time, urllib.parse, urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
 CACHE = os.path.join(ROOT, 'cache_local', 'wild'); os.makedirs(CACHE, exist_ok=True)
 UA = 'WildAtlas-zoo-finder/1.0 (https://wildatlasapp.com)'
@@ -12,6 +12,18 @@ keys = json.load(open(os.path.join(ROOT, 'raw', 'gbif_keys.json')))
 # class-level filter (mammals, birds, reptiles, amphibians, ray-finned fish, sharks and rays, cephalopods, jellyfish, sea stars); the facet then returns counts for every taxon
 # inside them, including our genus/species keys. (Listing all 738 keys makes the web address too long for GBIF.)
 CLASS_KEYS = [359, 212, 358, 131, 204, 121, 136, 352, 214]
+# habitat guards (calendar-session review, 2026-10-01): circle boundaries leak land records into marine sanctuaries and sea records into inland refuges
+ONLY_COUNTRIES = {'galapagos_giant_tortoise': {'EC'}}
+ONLY_NAME = {'galapagos_giant_tortoise': re.compile(r'gal[aá]pagos', re.I)}   # Chelonoidis also covers mainland tortoises
+MARINE = {'humpback_whale','orca','sea_otter','great_white_shark','harp_seal','octopus','blue_whale','beluga_whale','narwhal','dolphin','hammerhead_shark','manta_ray','whale_shark','sea_turtle',
+          'sea_lion','sea_snake','seahorse','starfish','jellyfish','moray_eel','walrus','west_indian_manatee','giant_squid','clownfish','emperor_penguin','albatross','atlantic_puffin'}
+COAST = re.compile(r'marine|coast|seashore|shore|\bsea\b|ocean|\bbay\b|reef|island|cape\b|point\b|lagoon|gulf|archipelag|estuar|delta|wadden|beach|harbou?r|sound\b|fjord|atoll|cay\b|key\b|peninsula', re.I)
+MARINE_PARK = re.compile(r'marine|\bsea\b|ocean|reef|sanctuary.*(bay|sea|ocean)|farallones', re.I)
+def allowed(aid, p):
+    if aid in ONLY_COUNTRIES and p['country'] not in ONLY_COUNTRIES[aid]: return False
+    if aid in ONLY_NAME and not ONLY_NAME[aid].search(p['name']): return False
+    if aid in MARINE: return bool(COAST.search(p['name']))
+    return not MARINE_PARK.search(p['name'])
 lim = int(sys.argv[sys.argv.index('--limit') + 1]) if '--limit' in sys.argv else None
 def circle(lat, lng, r_km, n=24):
     pts = []
@@ -31,6 +43,12 @@ def facet(poly):
         except Exception as e:
             time.sleep(4 * (i + 1))
     return None
+def direct_count(key, poly):
+    u = 'https://api.gbif.org/v1/occurrence/search?' + urllib.parse.urlencode({'geometry': poly, 'taxonKey': key, 'year': '2010,2026', 'hasCoordinate': 'true', 'occurrenceStatus': 'PRESENT', 'limit': 0})
+    for i in range(3):
+        try: return json.load(urllib.request.urlopen(urllib.request.Request(u, headers={'User-Agent': UA}), timeout=60))['count']
+        except Exception: time.sleep(3)
+    return 0
 def counts_for(p):
     f = os.path.join(CACHE, p['wikidata'] + '.json')
     if os.path.exists(f): return json.load(open(f))
@@ -49,11 +67,14 @@ for p, res in zip(todo, fetched):
     c = {int(k): v for k, v in res['counts'].items()}
     hs = []
     for aid, rows in keys.items():
+        if not allowed(aid, p): continue
         ex = [r for r in rows if r['match'] == 'exact']; rel = [r for r in rows if r['match'] == 'related']
         # genus keys include their species, so take the larger of (genus count, species sum) to avoid double counting
         def tot(rs):
             g = max([c.get(r['key'], 0) for r in rs if r['rank'] != 'SPECIES'] or [0]); s = sum(c.get(r['key'], 0) for r in rs if r['rank'] == 'SPECIES'); return max(g, s)
         n = tot(ex)
+        if n == 0 and aid in ONLY_COUNTRIES and ex:   # genus facet counts are missing for some genera: ask GBIF directly (few parks)
+            n = direct_count(ex[0]['key'], res['poly'])
         if n >= 5:
             best = max(ex, key=lambda r: c.get(r['key'], 0))
             hs.append({'animal_id': aid, 'match': 'exact', 'species_seen': (best['name'] or '').split(' (')[0], 'via': None, 'related_rationale': None, 'obs_count': n, 'key': best['key']})
