@@ -5579,20 +5579,12 @@
 ],
 "arctic_wolf": [
 {
-"key": 5219173,
+"key": 6164203,
 "rank": "SUBSPECIES",
 "name": "Canis lupus arctos Pocock, 1935",
 "match": "exact",
 "via": null,
 "rat": null
-},
-{
-"key": 5219173,
-"rank": "SPECIES",
-"name": "Canis lupus Linnaeus, 1758",
-"match": "related",
-"via": "Grey wolf (Canis lupus)",
-"rat": "Same species; the arctic wolf is a grey wolf subspecies."
 }
 ],
 "snow_leopard": [
@@ -5615,9 +5607,9 @@
 ],
 "camel": [
 {
-"key": 2441236,
-"rank": "GENUS",
-"name": "Camelus Linnaeus, 1758",
+"key": 2441238,
+"rank": "SPECIES",
+"name": "Camelus bactrianus Linnaeus, 1758",
 "match": "exact",
 "via": null,
 "rat": null
@@ -6149,9 +6141,9 @@
 ],
 "amur_tiger": [
 {
-"key": 5219416,
-"rank": "SPECIES",
-"name": "Panthera tigris (Linnaeus, 1758)",
+"key": 5219420,
+"rank": "SUBSPECIES",
+"name": "Panthera tigris altaica Temminck, 1844",
 "match": "exact",
 "via": null,
 "rat": null
@@ -6342,6 +6334,16 @@
 "key": 2440110,
 "rank": "SPECIES",
 "name": "Setonix brachyurus (Quoy & Gaimard, 1830)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"black_rhinoceros": [
+{
+"key": 5220111,
+"rank": "SPECIES",
+"name": "Diceros bicornis (Linnaeus, 1758)",
 "match": "exact",
 "via": null,
 "rat": null
