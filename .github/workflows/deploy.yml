@@ -24,6 +24,9 @@ on:
     - cron: "0 13 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 concurrency:
   group: deploy-${{ github.ref }}
   cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
@@ -53,7 +56,8 @@ jobs:
             branch=main
           else
             branch=$(printf '%s' "$REF_NAME" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//')
-            if [ -z "$branch" ] || [ "$branch" = "main" ]; then
+            # "preview" is the review copy's alias (review-copy job below); never let a branch take it.
+            if [ -z "$branch" ] || [ "$branch" = "main" ] || [ "$branch" = "preview" ]; then
               echo "Refusing to deploy non-main ref '$REF_NAME' as '$branch'" >&2
               exit 1
             fi
