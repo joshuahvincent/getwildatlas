@@ -198,6 +198,8 @@ module.exports = function (eleventyConfig) {
   // Flip to true when /zoos/ (getwildatlas#38) ships — shows "Find the nearest zoo" buttons.
   eleventyConfig.addGlobalData("zooFinderLive", false);
   eleventyConfig.addGlobalData("todayIso", () => new Date().toISOString().slice(0, 10));
+  // Map pins for a calendar page's "Where to see" section (see lib/where-to-see-pins.js).
+  eleventyConfig.addFilter("whereToSeePins", require("./lib/where-to-see-pins.js"));
   eleventyConfig.addFilter("isoDay", (d) => new Date(d).toISOString().slice(0, 10));
   const { RenderPlugin } = require("@11ty/eleventy");
   eleventyConfig.addPlugin(RenderPlugin);
