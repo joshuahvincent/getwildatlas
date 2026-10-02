@@ -52,7 +52,7 @@ git commit -m "..."
 git push -u origin preview/<name>
 ```
 
-Cloudflare Pages will build a per-branch preview at `https://<branch-name>.wildatlaswebsite.pages.dev`. Open it, scan it across pages and locales, then either:
+The deploy workflow (`.github/workflows/deploy.yml`) builds every `preview/**` push and publishes it as a Cloudflare Pages preview at `https://<alias>.wildatlaswebsite.pages.dev`, where the alias is the branch name with `/` turned into `-` (so `preview/my-post` → `preview-my-post.wildatlaswebsite.pages.dev`). The link is in the workflow run's summary, about 1–2 minutes after the push. Previews are `noindex`. Only `main` ever deploys to `wildatlasapp.com`; a manual "Run workflow" on a preview branch deploys that branch's preview, not production. Open it, scan it across pages and locales, then either:
 
 - **Merge to main** when good (PR optional — squash or fast-forward, your call), or
 - **Push another commit** to the same branch if something's off.

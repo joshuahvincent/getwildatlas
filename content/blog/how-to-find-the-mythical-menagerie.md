@@ -6,6 +6,7 @@ author: Wild Atlas
 excerpt: "Somewhere past the edge of the map, Wild Atlas keeps a hidden pack that isn't on any list. Here's the expedition that gets you in."
 permalink: /blog/how-to-find-the-mythical-menagerie/
 coverImage: /assets/blog/mythical-stargazer-tile.jpg
+thumbImage: /assets/blog/thumbs/how-to-find-the-mythical-menagerie.jpg
 tags: [product, packs]
 ---
 

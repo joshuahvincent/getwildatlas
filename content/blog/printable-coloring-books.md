@@ -6,6 +6,7 @@ author: Wild Atlas
 excerpt: "18 animals. 20 pages. A4. Free. Every pack you own now has its own printable coloring book, and Cozy Critters' is ready to download today — no purchase, no account needed."
 permalink: /blog/printable-coloring-books/
 coverImage: /assets/blog/printables-trex.png
+thumbImage: /assets/blog/thumbs/printable-coloring-books.jpg
 tags: [product, update]
 ---
 
