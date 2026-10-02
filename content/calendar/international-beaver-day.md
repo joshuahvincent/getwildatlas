@@ -14,8 +14,7 @@ animalDay:
   greeting: "**Happy International Beaver Day!** Every April 7, people celebrate all beavers everywhere — the date honors Dorothy Richards, a researcher who spent decades studying beavers and became known as the \"Beaver Woman.\" There are two kinds of beaver in the world, and today we're visiting one of them: the Eurasian beaver."
   readAloudNote: "Read this one out loud together — it's short, and it's even better with a big SMACK sound effect."
   whereToSee:
-    wildAnimal: eurasian_beaver   # species-specific reserves (zoo finder hidden doc)
-    wildPlaces: false   # hidden: eurasian_beaver list includes UNESCO cultural sites (Kyiv cathedral, Alpine pile dwellings, Roman fort), 2026-10-02
+    wildAnimal: eurasian_beaver   # species-specific reserves; UNESCO cultural sites removed upstream 2026-10-02
     heading: Where to see a Eurasian beaver
     intro: "In the wild, Eurasian beavers live along rivers and lakes all the way from Britain to Mongolia. They wake up at dusk, so the best way to spot one is to go quietly with a grown-up around sunset and watch from the riverbank for chewed-up tree stumps. For the rest of us, here's where to meet one in person — mostly in Europe, since North American zoos care for its cousin instead."
     findLabel: Find a zoo near you
