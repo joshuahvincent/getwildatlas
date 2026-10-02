@@ -4,10 +4,14 @@ title: "World Migratory Bird Day (May): Birds on the Move and How Your Family Ca
 date: 2027-05-08
 author: Wild Atlas
 excerpt: "Happy World Migratory Bird Day! Why birds take amazing trips, and easy ways to cheer them on."
+coverImage: /assets/calendar-days/world-migratory-bird-day-may/cover.jpg
 tags: [animals, conservation, family]
 simpleDay:
   campaign: day_world_migratory_bird_day_may
   greeting: "**Happy World Migratory Bird Day!** Some birds fly thousands of miles every year. Today we cheer them on."
+  image:
+    src: /assets/calendar-days/world-migratory-bird-day-may/cover.jpg
+    alt: "Barn swallows swoop low over a green spring meadow — farmland and meadows in spring"
   origin:
     text: "A UN-backed campaign run by the CMS and AEWA secretariats since 2006. It is held in May and again in October."
     sourceUrl: "https://www.un.org/en/observances/world-migratory-bird-day"

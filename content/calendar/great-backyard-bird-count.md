@@ -4,10 +4,14 @@ title: "Great Backyard Bird Count: What It Is and How Your Family Can Join In"
 date: 2027-02-12
 author: Wild Atlas
 excerpt: "People around the world spend a little time watching birds and sharing what they see. Here's what the Great Backyard Bird Count is and how your family can join in."
+coverImage: /assets/calendar-days/great-backyard-bird-count/cover.jpg
 tags: [birds, conservation, family]
 simpleDay:
   campaign: day_great_backyard_bird_count
   greeting: "**Happy Great Backyard Bird Count!** For a few days, people everywhere look out their windows, step into yards and parks, and count the birds."
+  image:
+    src: /assets/calendar-days/great-backyard-bird-count/cover.jpg
+    alt: "Black-capped chickadees perch on a snowy birch branch — winter backyards and woodland of North America"
   origin:
     text: "Launched in 1998 by the Cornell Lab of Ornithology and the National Audubon Society, with Birds Canada joining later. It became a worldwide event in 2013. 2027 dates are our best guess."
     sourceUrl: https://www.birdcount.org/

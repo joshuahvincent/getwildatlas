@@ -4,10 +4,14 @@ title: "Christmas Bird Count: What It Is and How Your Family Can Join In"
 date: 2026-12-14
 author: Wild Atlas
 excerpt: "Every winter, people count the birds they see, and the numbers help scientists. Here's what the Christmas Bird Count is and how your family can join in."
+coverImage: /assets/calendar-days/christmas-bird-count/cover.jpg
 tags: [birds, conservation, family]
 simpleDay:
   campaign: day_christmas_bird_count
   greeting: "**Happy Christmas Bird Count!** For a few weeks each winter, people all over take a close look at the birds around them and count them. You can too."
+  image:
+    src: /assets/calendar-days/christmas-bird-count/cover.jpg
+    alt: "Northern cardinals perch on snowy branches — snowy backyards and woodland edges of eastern North America"
   origin:
     text: "Audubon's bird census, running since Christmas Day 1900, was proposed by ornithologist Frank Chapman. Counts happen across the Americas."
     sourceUrl: https://www.audubon.org/community-science/christmas-bird-count

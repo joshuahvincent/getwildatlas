@@ -4,10 +4,14 @@ title: "Wildlife Conservation Day: What It Is and How Your Family Can Help"
 date: 2026-12-04
 author: Wild Atlas
 excerpt: "Wildlife Conservation Day is about helping wild animals stay safe in the wild. Here's what it means and kind things families can do."
+coverImage: /assets/calendar-days/wildlife-conservation-day/cover.jpg
 tags: [conservation, family]
 simpleDay:
   campaign: day_wildlife_conservation_day
   greeting: "**Happy Wildlife Conservation Day!** Today is a day to say thank you to wild animals and to the people who look out for them."
+  image:
+    src: /assets/calendar-days/wildlife-conservation-day/cover.jpg
+    alt: "Sumatran orangutans climb through the rainforest canopy — tropical rainforest of northern Sumatra"
   origin:
     text: "Launched in 2012 by US Secretary of State Hillary Clinton and the State Department as a call to action against wildlife trafficking."
     sourceUrl: https://2009-2017.state.gov/secretary/20092013clinton/rm/2012/12/199996.htm

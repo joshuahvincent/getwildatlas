@@ -4,10 +4,14 @@ title: "International Dawn Chorus Day: Why Birds Sing at Sunrise and How Your Fa
 date: 2027-05-02
 author: Wild Atlas
 excerpt: "Happy International Dawn Chorus Day! What the birds are singing at sunrise, and an easy way to listen together."
+coverImage: /assets/calendar-days/international-dawn-chorus-day/cover.jpg
 tags: [animals, conservation, family]
 simpleDay:
   campaign: day_international_dawn_chorus_day
   greeting: "**Happy International Dawn Chorus Day!** Early in the morning, birds sing together like a big outdoor orchestra. Today we listen."
+  image:
+    src: /assets/calendar-days/international-dawn-chorus-day/cover.jpg
+    alt: "Common blackbirds sing from a branch in soft dawn light — gardens and woodland of Europe at dawn"
   origin:
     text: "Began in Birmingham, England, with wildlife enthusiast and broadcaster Chris Baines, and was then promoted by the Wildlife Trust for Birmingham and the Black Country."
     sourceUrl: "https://www.discoverwildlife.com/how-to/watch-wildlife/dawn-chorus-guide"

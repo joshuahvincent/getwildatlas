@@ -4,10 +4,14 @@ title: "National Reptile Awareness Day: What It Is and How Your Family Can Join 
 date: 2026-10-21
 author: Wild Atlas
 excerpt: "Happy National Reptile Awareness Day! Meet the scaly world of reptiles and find easy ways to learn about them together."
+coverImage: /assets/calendar-days/national-reptile-awareness-day/cover.jpg
 tags: [animals, conservation, family]
 simpleDay:
   campaign: day_national_reptile_awareness_day
   greeting: "**Happy National Reptile Awareness Day!** Today we say hello to the scaly, sun-loving animals we call reptiles."
+  image:
+    src: /assets/calendar-days/national-reptile-awareness-day/cover.jpg
+    alt: "Panther chameleons walk slowly along a leafy branch, tail curled — humid forest of northern Madagascar"
   origin:
     text: "Its beginnings are not well documented. It is promoted by conservation groups such as ARC, and is held every October 21st."
     sourceUrl: "https://arcprotects.org/national-reptile-awareness-day/"
