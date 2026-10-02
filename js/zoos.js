@@ -359,9 +359,13 @@ function getLocation() {
     setOrigin({ method: 'geolocation', la: pos.coords.latitude, lo: pos.coords.longitude, label: 'your location', fromGeo: true });
   }, (err) => {
     btn.disabled = false;
-    // 1 = blocked / no permission UI (some in-app browsers can not show the prompt), 2 = position unavailable, 3 = timed out
-    st.textContent = err && err.code === 1 ? 'Your browser did not allow location for this page (some in-app browsers can not ask). You can type a city or postcode instead, or open this page in Chrome or Safari.'
-      : err && err.code === 3 ? 'Finding you took too long. Try again, or type a city or postcode.' : 'We could not work out where you are. Please type a city or postcode instead.';
+    // 1 = permission denied (blocked for this site, or the operating system's location service is off), 2 = position unavailable, 3 = timed out
+    const fallback = ' You can type a city or postcode instead.';
+    if (err && err.code === 1) {
+      const say = (blocked) => { st.textContent = blocked ? 'Location is blocked for this site in your browser. Click the location icon at the right of the address bar (or the lock icon on the left) and choose Allow, then try again.' + fallback
+        : 'Your browser or computer did not allow location for this page. On a Mac, check System Settings > Privacy & Security > Location Services > Chrome is on.' + fallback; };
+      if (navigator.permissions && navigator.permissions.query) navigator.permissions.query({ name: 'geolocation' }).then((r) => say(r.state === 'denied'), () => say(false)); else say(false);
+    } else st.textContent = err && err.code === 3 ? 'Finding you took too long. Try again, or type a city or postcode.' : 'We could not work out where you are.' + fallback;
   }, { maximumAge: 600000, timeout: 15000 });
 }
 let cities = null, citiesLoading = null; const postal = {};
