@@ -1,0 +1,289 @@
+# Places not on our list: triage (2026-10-02)
+
+Source: Wikidata zoos and aquariums with coordinates that are not in our roster or sweeps. Checked with Google Places (exists / open), website liveness and Wikipedia reach.
+
+| group | count | what happens |
+|---|---|---|
+| add | 1422 | Google says open and at that location: add to the finder |
+| closed | 58 | Google says permanently closed: skip |
+| temp_closed | 39 | Google says temporarily closed: skip for now |
+| review_free_ok | 84 | Google could not match, but website alive or notable: review by hand |
+| review_no_evidence | 85 | No match anywhere: held back |
+
+## closed (58)
+
+- Jurong Bird Park (zoo, SG) 
+- Miami Seaquarium (aquarium, US) https://miamiseaquarium.com/
+- Islamabad Zoo (zoo, PK) 
+- Mendoza Zoological Park (zoo, AR) http://www.zoo.mendoza.gov.ar/
+- 63 Seaworld (aquarium, KR) http://www.63.co.kr/63eng/SW/SW_main.html
+- Woodward's Gardens (zoo, US) 
+- Comilla Zoo and Botanical Garden (zoo, BD) 
+- Birdland Animal Park (zoo, AU) http://www.birdlandanimalpark.com.au/
+- Flying High Bird Sanctuary (zoo, AU) http://www.flyinghighbirdsanctuary.com
+- Reef HQ (aquarium, AU) http://www.reefhq.com.au
+- Bowmanville Zoo (zoo, CA) 
+- Oaklawn Farm Zoo (zoo, CA) http://oaklawnfarmzoo.ca/
+- Pacific Undersea Gardens (aquarium, CA) 
+- Osa Wildlife Sanctuary (zoo, CR) 
+- Cat Survival Trust (zoo, GB) http://www.catsurvivaltrust.org
+- International Centre for Birds of Prey (zoo, GB) https://www.icbp.org/
+- Leeds Zoological and Botanical Gardens (zoo, GB) 
+- Kamo Wildlife Sanctuary (zoo, NZ) http://www.kingdomofzion.co.nz
+- Orsa Rovdjurspark (zoo, SE) https://www.orsarovdjurspark.se/
+- Wild Kingdom Train Zoo (zoo, US) http://www.lagoonpark.com/ride/wild-kingdom-train/
+- Córdoba Zoo (zoo, AR) 
+- Manly Sea Life Sanctuary (aquarium, AU) http://www.manlysealifesanctuary.com.au/
+- ZOO Serpentarium (zoo, BE) https://www.zooserpentarium.be/
+- Arenal Eco Zoo (zoo, CR) 
+- The Ara Project (zoo, CR) http://www.thearaproject.org
+- Zookoutek Břežanské údolí (zoo, CZ) 
+- Oderbruchzoo (zoo, DE) 
+- Tiergarten Fasanerie Groß-Gerau (zoo, DE) http://tiergarten-grossgerau.de/
+- Wildpark Weißewarte (zoo, DE) http://www.wildpark-weissewarte.de/
+- Alborania-Aula del Mar Museum (aquarium, ES) 
+- Sealand, Noirmoutier (aquarium, FR) 
+- Heythrop Zoological Gardens (zoo, GB) 
+- Aquarium of Syracuse (aquarium, IT) 
+- North Safari Sapporo (zoo, JP) https://www.north-safari.com/
+- Tango Uocchikan (aquarium, JP) https://www.kepco.co.jp/corporate/profile/community/pr/miyazu/
+- Desaru Ostrich Farm (zoo, MY) 
+- Mactan Island Aquarium (aquarium, PH) http://www.mactanaquarium.xetaspace.net/index.html
+- Malabon Zoo (zoo, PH) 
+- Zoo in Braniewo (zoo, PL) 
+- Sika Deer Ecological Park (zoo, TW) 
+- Heaven's Corner (zoo, US) http://www.heavenscorner.net
+- Tristate Zoological Park (zoo, US) http://www.tristatezoologicalpark.com
+- West Coast Game Park Safari (zoo, US) 
+- Loros del Sur (zoo, ES) 
+- Parc zoologique de Fréjus (zoo, FR) http://www.zoo-frejus.com
+- Parc zoologique du Cap Ferrat (zoo, FR) 
+- Miniature Pony Centre (zoo, GB) 
+- Aquarium Terrarium (aquarium, HR) https://aquariumsibenik.com/
+- 秋田八幡平クマ牧場 (zoo, JP) 
+- Kungsbyn Zoo (zoo, SE) 
+- Gulf World Marine Park (aquarium, US) https://gulfworldmarinepark.com/
+- Roos-n-More Zoo (zoo, US) http://roosnmore.org
+- Serpent Safari (zoo, US) http://www.serpentsafari.net/
+- Siegfried & Roy's Secret Garden and Dolphin Habitat (zoo, US) https://www.mirage.com/en/amenities/siegfried-roys-secret-garden-and-dolphin-habitat.html
+- Wildlife WayStation (zoo, US) 
+- Aquarium du Cap d'Agde (aquarium, FR) 
+- Ostrich Farm, Saifai, Etawah (zoo, IN) 
+- The Pig Museum (zoo, KR) https://blog.naver.com/dreamfarm_/223494271310
+
+## temp_closed (39)
+
+- Bandung Zoo (zoo, ID) 
+- Taraporewala Aquarium (aquarium, IN) 
+- Kuwait Zoo (zoo, KW) 
+- Benghazi Zoo (zoo, LY) 
+- Satsukiyama Zoo (zoo, JP) https://satsukiyamazoo.com/
+- Murree Wildlife Park (zoo, PK) 
+- Rayong Aquarium (aquarium, TH) http://www.fisheries.go.th/fisheries/aq/webplace1.php?hidAQCode=00000012
+- Cascades Raptor Center (zoo, US) http://www.eraptors.org
+- Happ's Reptilienzoo (zoo, AT) http://www.reptilienzoo.at/
+- Municipal Aquarium of Santos (aquarium, BR) 
+- Papanack Park Zoo (zoo, CA) http://www.papanack.com
+- Bornholm Butterfly Park (zoo, DK) http://www.sommerfugleparken.dk/index.php/en/
+- Jyllands Park Zoo (zoo, DK) http://www.jyllandsparkzoo.dk/
+- Acuario Municipal (Santa Pola) (aquarium, ES) http://www.santapola.com/turismo/acuario/acuario.htm
+- Escurial Zoo and Flower Park (zoo, FI) https://www.kukka-jaelainpuistoescurial.fi/escurial-in-english/
+- Marble Palace Zoo (zoo, IN) 
+- Zoological Garden of Monaco (zoo, MC) http://www.monte-carlo.mc/en/tourism/zoo/
+- Paraná River Aquarium (aquarium, AR) http://www.acuariodelrioparana.gob.ar/
+- Parque Jacarandá (zoo, BR) 
+- Elmvale Jungle Zoo (zoo, CA) https://www.elmvalejunglezoo.com/
+- Berliner Aquarium Unter den Linden (zoo, DE) 
+- Le rocher des aigles (zoo, FR) http://www.rocherdesaigles.com
+- Parc animalier des Gorges de l'Ardèche (zoo, FR) https://www.parcanimalier07.com/
+- Macduff Marine Aquarium (aquarium, GB) https://www.macduff-aquarium.org.uk/
+- Israel Antelope Ranch (zoo, IL) http://www.afrika.co.il/
+- Public marine aquarium of Trieste (aquarium, IT) https://aquariomarinotrieste.it/
+- Kamalia Wildlife Park (zoo, PK) 
+- Avesta visentpark (zoo, SE) http://www.avestavisentpark.se/
+- Woods Hole Science Aquarium (aquarium, US) http://aquarium.nefsc.noaa.gov
+- York's Wild Kingdom (zoo, US) https://yorkswildkingdom.com/
+- Indian River Reptile Zoo (zoo, CA) 
+- El Arish zoo (zoo, EG) 
+- Ysitien lemmikki (zoo, FI) http://www.ysitienlemmikki.fi/
+- Fon du Lac Farm Park (zoo, US) 
+- UnderWater World Guam (aquarium, US) https://uwwguam.com/
+- Aquashow Audierne (aquarium, FR) 
+- Donjon des aigles (zoo, FR) 
+- Le Jardin des Bêtes (zoo, FR) https://www.jardindesbetes.fr/
+- Macduff Marine Aquarium (aquarium, GB) https://www.macduff-aquarium.org.uk/
+
+## review_free_ok (84)
+
+- Pombia Safari Park (zoo, IT) https://www.safaripark.it/
+- Rostov Zoo (zoo, RU) http://zoopark-rostov.ru
+- Bristol Zoo (zoo, GB) http://www.bristolzoo.org.uk
+- Carmel Hai-Bar Nature Reserve (zoo, IL) http://www.parks.org.il/parks/ParksAndReserves/Hai%20Bar%20Carmel/Pages/default.aspx
+- Changa Manga (zoo, PK) 
+- Gaza Zoo (zoo, PS) 
+- Mysore Zoo (zoo, IN) http://www.mysorezoo.info
+- Taiping Zoo (zoo, MY) http://www.zootaiping.gov.my/
+- Bondla Wildlife Sanctuary (zoo, IN) 
+- Bangkok Aquarium (aquarium, TH) http://www.fisheries.go.th/fisheries/aq/webplace1.php?hidAQCode=00000001
+- Thủ Lệ Park (zoo, VN) http://www.hanoizoo.com/vuonthuhanoi/2009/vn/#
+- Shanghai Haichang Ocean Park (aquarium, CN) http://www.shhcoceanpark.com
+- Shanghai Wild Animal Park (zoo, CN) http://en.shwzoo.com/
+- Arignar Anna Zoological Park (zoo, IN) http://www.aazoopark.in/
+- National Marine Aquarium of Namibia (aquarium, NA) 
+- Cairns Tropical Zoo (zoo, AU) http://www.cairnstropicalzoo.com.au
+- Jinan Zoo (zoo, CN) 
+- Addis Ababa Zoo (zoo, ET) 
+- Sanjay Gandhi Biological Park (zoo, IN) http://forest.bih.nic.in/SGBPark.htm
+- La Vanille Nature Park (zoo, MU) https://www.lavanille-naturepark.com/
+- Sumu Wildlife Park (zoo, NG) 
+- Calauit Safari Park (zoo, PH) 
+- Gaziantep Zoo (zoo, TR) http://gaziantepzoo.org//
+- Dokuchaievsk Zoo (zoo, UA) 
+- Dolphinarium in Donetsk (aquarium, UA) 
+- Nikolaev Zoo (zoo, UA) 
+- Sierra Safari Zoo (zoo, US) 
+- Alma Park Zoo (zoo, AU) http://www.almaparkzoo.com.au/
+- Aquarium of Brussels (aquarium, BE) http://www.aquariologie.be
+- Jardin zoologique tropical (zoo, FR) http://www.zootropical.com
+- Parc Jardins du Monde (zoo, FR) https://www.planet-exotica.com/
+- Jong's Crocodile Farm and Zoo (zoo, MY) http://www.jongscrocodile.com/
+- Timișoara Zoological Garden (zoo, RO) http://www.zootimisoara.ro
+- Shambala Animal Kingdom (zoo, AU) http://www.shambalaanimalkingdom.com.au
+- Mogilyov Zoo (zoo, BY) http://zoosad.by/
+- Kitakitsune Farm (zoo, JP) https://kitakitsune-farm.com/
+- Kujukushima Pearl Sea Resort (aquarium, JP) https://pearlsea.jp/
+- Nasu Animal Kingdom (zoo, JP) https://nasu-oukoku.com/
+- New Yashima Aquarium (aquarium, JP) https://r.goope.jp/new-yashima-aq
+- Noboribetsu Bear Park (zoo, JP) https://bearpark.jp/
+- Moscow Oceanarium (aquarium, RU) http://www.moscowoceanpark.ru
+- Alabama Gulf Coast Zoo (zoo, US) http://www.alabamagulfcoastzoo.org/
+- ME's Zoo (zoo, US) http://meszoo.com
+- Portland Aquarium (zoo, US) http://portlandaquarium.net/
+- Welaka National Fish Hatchery (aquarium, US) https://www.fws.gov/fish-hatchery/welaka
+- West Virginia Zoo (zoo, US) http://www.westvirginiazoo.com
+- TerraZoo Sontra (zoo, DE) https://www.terrazoo.de/
+- Aquarium de Guadeloupe (aquarium, FR) https://www.aquariumdelaguadeloupe.com/
+- Domaine des Oiseaux (zoo, FR) https://www.ville-mazeres.fr/Domaine-des-Oiseaux/
+- Parc à loups du Gévaudan (zoo, FR) http://www.loupsdugevaudan.com
+- Zoo des 3 vallées (zoo, FR) http://www.zoodes3vallees.fr/
+- Monkey Sanctuary (zoo, GB) http://www.monkeysanctuary.org
+- Bio Ramon (zoo, IL) https://www.parks.org.il/reserve-park/chay-ramon/
+- Chai park (zoo, IL) http://www.haypark.co.il
+- Marinepia Matsushima Aquarium (aquarium, JP) http://www.marinepia.co.jp/
+- átoa (aquarium, JP) https://atoa-kobe.jp/
+- Zoo León (zoo, MX) http://www.zooleon.org.mx/
+- Perm Zoo (zoo, RU) https://zoo.perm.ru
+- Utrish Dolphinarium (aquarium, RU) https://web.archive.org/web/20111211122753/http://www.dolphin-anapa.ru/
+- Ankara Zoo (zoo, TR) http://www.aoc.gov.tr/index.php?view=cnt&cinf=41%7C12%7C12
+- Collins Zoo (zoo, US) http://www.collinsmszoo.com
+- Garlyn Zoo (zoo, US) http://www.garlynzoo.com
+- Tier- und Spielpark Bichlbach (zoo, AT) http://streichelzoo.com/
+- Tierpark Altenfelden (zoo, AT) http://tierpark-altenfelden.at/
+- African Safari World (zoo, AU) http://www.village.com.au/
+- Cairns Zoom and Wildlife Dome (zoo, AU) https://cairnszoom.com.au/
+- Linyi Zoological and Botanical Garden (zoo, CN) http://lydzwy.cn
+- Haustierpark Lelkendorf (zoo, DE) http://www.haustierpark.com/
+- Cheptainville Zoo (zoo, FR) http://www.ileauxoiseaux.fr
+- Axe Valley Wildlife Park (zoo, GB) https://www.axevalleypark.co.uk/
+- Biota! (aquarium, GB) http://www.silvertownquays-london.com
+- Chestnut Centre (zoo, GB) http://www.chestnutcentre.co.uk/
+- The Magic of Life Butterfly House (zoo, GB) http://www.magicoflife.org
+- Wetheriggs Zoo and Animal Sanctuary (zoo, GB) http://www.wetheriggsanimalrescue.co.uk
+- Himalayan Nature Park Kufri (zoo, IN) http://hpforest.gov.in/himalayan-nature-park-kufri
+- Parco ittico Paradiso (aquarium, IT) https://www.parcoittico.it/
+- AlpsPark (zoo, JP) http://toybox-net.jp/alpspark/
+- Susami Crustacean Aquarium (aquarium, JP) https://ebikani-aquarium.com/
+- Yamagata Fresh-water Fish Museum (aquarium, JP) https://hitachiomiya-sinkouzaidan.opal.ne.jp/tansui/
+- Imo State Zoo & Wildlife Park (zoo, NG) https://imozoo.im.gov.ng/
+- Moose of Annerod (zoo, SE) http://mooseafannerodgard.se/
+- Natural Bridge Zoo (zoo, US) http://naturalbridgezoo.com/
+- Tarpon Springs Aquarium (aquarium, US) http://www.tarponspringsaquarium.com/
+- World Aquarium (aquarium, US) http://www.worldaquarium.net
+
+## review_no_evidence (85)
+
+- Montreal Aquarium (aquarium, CA) 
+- Thrissur Zoo (zoo, IN) 
+- Bayap Zoo (zoo, KH) 
+- Kampot Zoo (zoo, KH) 
+- Peyrieras Reptile Reserve (zoo, MG) 
+- Sevastopol Zoo (zoo, RU) 
+- Plovdiv Zoo (zoo, BG) 
+- Aracaju Oceanarium (aquarium, BR) 
+- Harbin Zoo (zoo, CN) 
+- Kula Eco Park (zoo, FJ) 
+- Kurumbapatti Zoological Park (zoo, IN) 
+- Inubōsaki Marine Park (aquarium, JP) 
+- Okhotsk Tokkari Center (aquarium, JP) 
+- Clifton Fish Aquarium (aquarium, PK) 
+- Gatwala Wildlife Park (zoo, PK) 
+- Grönåsens Älgpark (zoo, SE) 
+- Ashgabat Zoo (zoo, TM) 
+- Barnum's Aquarial Gardens (zoo, US) 
+- Boston Aquarial and Zoological Gardens (zoo, US) 
+- Triangle Metro Zoo (zoo, US) 
+- Tiergarten am Schüttel (zoo, AT) 
+- Mugga Lane Zoo (zoo, AU) 
+- Limburg Zoo (zoo, BE) 
+- Xining Zoo (zoo, CN) 
+- Yunnan Wildlife Park (zoo, CN) 
+- Lesní koutek Ralsko (zoo, CZ) 
+- Wolfgang-Köhler-Primaten-Forschungszentrum (zoo, DE) 
+- Doghill (zoo, FI) 
+- Aquarium de Vannes (aquarium, FR) 
+- Oxford Zoo (zoo, GB) 
+- Solomon's Animals (zoo, IL) 
+- Kakanakote (zoo, IN) 
+- Kakuzan Zoo (zoo, JP) 
+- Koh Kong Safari World (zoo, KH) 
+- Balkasar Bear Sanctuary (zoo, PK) 
+- Mini-Zoo (zoo, PL) 
+- MiniZoo in Jacek Kuroń Park in Sosnowiec (zoo, PL) 
+- Constanța Aquarium (aquarium, RO) 
+- Boston Aquarial Gardens (aquarium, US) 
+- Universal City Zoo (zoo, US) 
+- Groote Schuur Zoo (zoo, ZA) 
+- Tygerberg Zoo (zoo, ZA) 
+- Vivarium (aquarium, AT) 
+- Mansfield Zoo (zoo, AU) 
+- Phillip Island Wildlife Park (zoo, AU) 
+- Something Wild Wildlife Sanctuary (zoo, AU) 
+- The Lair (zoo, AU) 
+- Waterways Wildlife Park (zoo, AU) 
+- Pleven Zoo (zoo, BG) 
+- Mini Zoo Palmira Gobbi (zoo, BR) 
+- Dolphin Encounters (zoo, BS) 
+- Old Belize Museum and Cucumber Beach (zoo, BZ) 
+- Okanagan Game Farm (zoo, CA) 
+- Cube Oceanarium (aquarium, CN) 
+- Mini Zoo (zoo, CZ) 
+- Former Kalletal Zoo (zoo, DE) 
+- Wildpark Kranichstein (zoo, DE) 
+- Pikkukili (zoo, FI) 
+- Ermenonville Zoo (zoo, FR) 
+- Zoo de Vendeuil (zoo, FR) 
+- Coventry Zoo (zoo, GB) 
+- Thorpe Farm (zoo, GB) 
+- Welsh Hawking Centre (zoo, GB) 
+- Ehime Prefectural Dogo Zoo (zoo, JP) 
+- Nagoya Zoo (zoo, JP) 
+- Nihon Kamoshika Sentā (zoo, JP) 
+- Yokohama Omoshiro Aquarium (aquarium, JP) 
+- Irkutsk Zoo (zoo, RU) 
+- Punggol Zoo (zoo, SG) 
+- Singapore Miniature Zoo (zoo, SG) 
+- Dufile Animal Sanctuary (zoo, UG) 
+- Cleveland Aquarium (aquarium, US) 
+- Greenville Wildlife Park (zoo, US) 
+- International Reptile Rescue (zoo, US) 
+- The Zoo In Forest Park (zoo, US) 
+- Hirschgarten (zoo, DE) 
+- Ménagerie Dörfchen; In den Hohen Tannen in Aschaffenburg (zoo, DE) 
+- Ménagerie Zuccalistraße 28 in München (zoo, DE) 
+- Zoo Siebenbrunner Straße 6 in München (zoo, DE) 
+- Aquarium Tropical de Djibouti (aquarium, DJ) 
+- Zoological Garden Jos (zoo, NG) 
+- Great National Aquarium (aquarium, PE) 
+- Phuket Aquarium (aquarium, TH) 
+- Luna Park Zoo (zoo, US) 
+- Miami Beach Aquarium (aquarium, US) 
