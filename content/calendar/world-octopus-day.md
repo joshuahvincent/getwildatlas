@@ -15,7 +15,7 @@ animalDay:
   greeting: "**Happy World Octopus Day!** It's on October 8 — the eighth day of the month, for an animal with eight arms. So today we're diving into the North Pacific to meet the biggest octopus we know of: the giant Pacific octopus."
   readAloudNote: "Read this one out loud together — it's short, and it ends with real aquariums you can go visit."
   whereToSee:
-    wildPlaces: false   # zoo finder reserves hidden (species: common octopus data, page is the giant Pacific octopus), rechecked 2026-10-02 after zoo finder fixes
+    wildAnimal: giant_pacific_octopus   # species-specific reserves (zoo finder hidden doc)
     heading: Where to see a giant Pacific octopus
     intro: "In the wild, giant Pacific octopuses live only in the cold North Pacific Ocean, hiding in rocky dens — lucky divers sometimes spot one. For the rest of us, an aquarium is the best way to meet one."
     findLabel: Find the nearest aquarium with a giant Pacific octopus
