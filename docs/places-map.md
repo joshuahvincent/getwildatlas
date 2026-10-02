@@ -54,9 +54,9 @@ These match the zoo finder:
 | `unconfirmed` | big yellow | Unconfirmed |
 | `relative` | small green | Close relative |
 | `similar` | small white, grey ring | Similar animals |
-| `wild` | big teal | In the wild |
+| `wild` | big teal (#0E7C86) | In the wild |
 
-The teal colour is provisional until the zoo finder's in-the-wild pin is final. The legend only lists tiers that appear on that map.
+The legend only lists tiers that appear on that map.
 
 ## Used by
 - Calendar animal pages: the "Where to see" section (`_includes/layouts/animal-day.njk`, through `whereToSeePins`).

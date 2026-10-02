@@ -25,7 +25,7 @@
 // Numeric tiers 0–3 from the zoo finder are accepted too (0 lists … 3 similar).
 
 const GREEN = '#2E7D32', GREEN_DARK = '#17441a', YELLOW = '#FACC15', YELLOW_DARK = '#6b5200';
-const TEAL = '#2F7F86', TEAL_DARK = '#1b4d52'; // provisional until the zoo finder's teal pin is final
+const TEAL = '#0E7C86', TEAL_DARK = '#08454A'; // the zoo finder's in-the-wild pin
 const TIER_NAMES = ['lists', 'unconfirmed', 'relative', 'similar'];
 const LEGEND = { lists: 'Place to see one', wild: 'In the wild', unconfirmed: 'Unconfirmed', relative: 'Close relative', similar: 'Similar animals' };
 const LEGEND_ORDER = ['lists', 'wild', 'unconfirmed', 'relative', 'similar'];
@@ -50,8 +50,9 @@ function style() {
       small('pin-similar', 'similar', '#ffffff', '#6b6b6b', 1.6),
       small('pin-relative', 'relative', GREEN, '#ffffff', 1.5),
       { id: 'halo', type: 'circle', source: 'pins', filter: ['in', ['get', 'tier'], ['literal', ['lists', 'unconfirmed', 'wild']]], paint: { 'circle-radius': zoomR(7, 9.5, 12.5), 'circle-color': '#ffffff' } },
-      big('pin-wild', 'wild', TEAL, TEAL_DARK, 1.5),
+      // draw order matches /zoos/: similar < relative < halo < unconfirmed < wild < lists
       big('pin-unconfirmed', 'unconfirmed', YELLOW, YELLOW_DARK, 2),
+      big('pin-wild', 'wild', TEAL, TEAL_DARK, 1.5),
       big('pin-lists', 'lists', GREEN, GREEN_DARK, 1.5),
     ],
   };

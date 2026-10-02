@@ -21,12 +21,14 @@ animalDay:
         places:
           - title: The floe edge
             place: Pond Inlet, Arctic Bay & Lancaster Sound, Nunavut, Canada
+            wild: true
             blurb: In spring, some visitors travel by sled to the edge of the sea ice, where narwhals come up to breathe. In summer, they're sometimes spotted right from shore.
             url: https://destinationnunavut.ca/experiences/wildlife/narwhal
       - label: Around the world
         places:
           - title: Inglefield Bredning
             place: Qaanaaq, North Greenland
+            wild: true
             blurb: Every summer, narwhals swim by the thousands into the fjord near Qaanaaq — one of the best places on Earth to spot one.
             url: https://visitgreenland.com/destinations/qaanaaq/
     note: "These are real wild animals, so nothing is guaranteed — narwhals are shy, and a sighting always depends on ice, weather and luck. Maybe one day you'll see one!"

@@ -39,11 +39,13 @@ animalDay:
         places:
           - title: Scotland's first wild beavers
             place: Knapdale Forest, Argyll — Scotland
+            wild: true
             blurb: Scotland's first official wild beavers were set free here in 2009. Walk the forest trails and look for signs of beavers, like chewed stumps, dams, and lodges.
             url: https://forestryandland.gov.scot/blog/meet-the-beavers-of-knapdale
             linkText: Learn about Knapdale's beavers
           - title: Beavers that came back on their own
             place: River Otter, East Devon — England
+            wild: true
             blurb: Wild beavers showed up along this river on their own, and they've built dam after dam ever since. It's a river to read about rather than a spot to visit.
             url: https://www.gov.uk/government/news/five-year-beaver-reintroduction-trial-successfully-completed
             linkText: Read the River Otter story

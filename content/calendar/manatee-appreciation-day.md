@@ -34,6 +34,7 @@ animalDay:
             url: https://zootampa.org/conservation/florida-conservation/manatees/
           - title: Blue Spring State Park
             place: Orange City, Florida
+            wild: true
             blurb: In winter, hundreds of wild manatees swim into this warm spring to stay cosy, and you can watch them from a long boardwalk. Manatee season runs from about mid-November to late March, so plan a winter visit.
             url: https://www.floridastateparks.org/parks-and-trails/blue-spring-state-park
             linkText: Visit Blue Spring State Park

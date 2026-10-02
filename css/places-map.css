@@ -9,7 +9,7 @@
 .pm-dot { width: 14px; height: 14px; border-radius: 50%; display: inline-block; box-sizing: border-box; flex: none; }
 .pm-dot.lists { background: #2E7D32; border: 2px solid #fff; box-shadow: 0 0 0 1.5px #17441a; }
 .pm-dot.unconfirmed { background: #FACC15; border: 2px solid #fff; box-shadow: 0 0 0 1.5px #6b5200; }
-.pm-dot.wild { background: #2F7F86; border: 2px solid #fff; box-shadow: 0 0 0 1.5px #1b4d52; }
+.pm-dot.wild { background: #0E7C86; border: 2px solid #fff; box-shadow: 0 0 0 1.5px #08454A; }
 .pm-dot.relative { width: 9px; height: 9px; background: #2E7D32; border: 1.5px solid #fff; box-shadow: 0 0 0 1px #17441a; margin: 0 2px; }
 .pm-dot.similar { width: 9px; height: 9px; background: #fff; border: 2px solid #6b6b6b; margin: 0 2px; }
 

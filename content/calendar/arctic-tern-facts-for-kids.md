@@ -20,16 +20,19 @@ animalDay:
         places:
           - title: Puffin and tern island
             place: Machias Seal Island, Gulf of Maine (boat from Cutler, Maine)
+            wild: true
             blurb: Every summer, this small island fills with nesting Arctic terns and puffins. Visitors watch from a boat or a wooden hide, and landings aren't guaranteed.
             url: https://www.boldcoast.com/
           - title: Maine's comeback islands
             place: Maine Coastal Islands National Wildlife Refuge
+            wild: true
             blurb: Scientists helped Arctic terns start nesting here again after years without them. The islands are viewed from boats only, during nesting season.
             url: https://www.fws.gov/refuge/maine-coastal-islands
       - label: Around the world
         places:
           - title: The Farne Islands
             place: Northumberland, England (boat from Seahouses)
+            wild: true
             blurb: Hundreds of pairs of Arctic terns nest here, and parents swoop close to guard their chicks — visitors wear hats just in case!
             url: https://www.nationaltrust.org.uk/visit/north-east/farne-islands
     note: "These are wild seabirds on nesting islands, so a sighting depends on the season (roughly May to August) and the weather. Always watch from a boat, path or hide with a guide, and never walk into a nesting colony."
