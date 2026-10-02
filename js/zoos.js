@@ -104,7 +104,13 @@ function siteLink(p) {
 }
 const accredBadge = (p) => p.ac === 'none' ? el('span', { class: 'zf-badge na', text: 'Not accredited' })
   : p.ac === 'museum' ? null : el('span', { class: 'zf-badge', text: p.ac.split(',').map((a) => ACCRED_TEXT[a] || a).join(' · ') });
-function placeholder(p) { return el('div', { class: 'zf-photo-ph', 'aria-hidden': 'true', text: TYPE_EMOJI[p.t] || '🐾' }); }
+// no photo (or a photo that failed): a Wild Atlas place-type icon (Gemini, wild-atlas-icon-generator rules); emoji only if even that fails
+const ICON_OF = { zoo: 'zoo', safari_park: 'zoo', sanctuary: 'zoo', aquarium: 'aquarium', museum: 'museum', farm: 'farm' };
+function placeholder(p) {
+  const img = el('img', { class: 'zf-photo zf-icon', src: '/assets/zoos/icons/place-' + (ICON_OF[p.t] || 'zoo') + '.png', alt: '', 'aria-hidden': 'true', loading: 'lazy', width: 96, height: 96 });
+  img.addEventListener('error', () => img.replaceWith(el('div', { class: 'zf-photo-ph', 'aria-hidden': 'true', text: TYPE_EMOJI[p.t] || '🐾' })), { once: true });
+  return img;
+}
 function card(c) {
   const p = c.p, note = noteFor(c), href = p.u ? siteLink(p) : null;
   let photo = placeholder(p), credit = null;

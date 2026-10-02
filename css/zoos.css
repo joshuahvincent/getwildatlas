@@ -151,3 +151,5 @@
 .zf-dot.e { background: #2E7D32; border: 2px solid #fff; box-shadow: 0 0 0 1.5px #17441a; }
 .zf-dot.w { background: #FACC15; border: 2px solid #6b5200; }
 .zf-dot.r { width: 9px; height: 9px; background: #2E7D32; border: 1.5px solid #fff; box-shadow: 0 0 0 1px #17441a; margin: 0 2px; }
+
+.zf-photo.zf-icon { object-fit: contain; background: #fbf4e3; }
