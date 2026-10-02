@@ -16,6 +16,7 @@ ICONS = {
   'zoo': "Show a single cute friendly giraffe head and neck with soft peach-gold coat and teal patches, peeking over a short rounded cream picket fence. Tiny accent: one small soft green leaf in its mouth.",
   'aquarium': "Show a single cute chunky rounded aquarium tank with thick soft cream glass edges, soft warm teal water, and one happy round peach fish inside. Tiny accent: two or three small bubbles.",
   'museum': "Show a single cute chunky rounded dinosaur skull fossil in soft cream bone color with simple rounded teeth, resting on a small warm pastel gold display base. Tiny accent: one small flat gold 4-point star.",
+  'wild': "Show a single cute chunky rounded flat-topped acacia tree in soft green with a warm brown trunk, standing on a small mound of soft peach-gold savanna ground. Tiny accent: a small soft gold sun behind it.",
   'farm': "Show a single cute chunky rounded barn in soft peach with cream trim, a warm teal roof, and a friendly arched door. Tiny accent: a small soft gold sun peeking behind it.",
 }
 key = os.environ.get('GEMINI_API_KEY')

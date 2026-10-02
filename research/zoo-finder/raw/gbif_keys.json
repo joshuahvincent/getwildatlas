@@ -1,0 +1,6350 @@
+{
+"african_elephant": [
+{
+"key": 2435348,
+"rank": "GENUS",
+"name": "Loxodonta Anonymous, 1827",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5219461,
+"rank": "SPECIES",
+"name": "Elephas maximus Linnaeus, 1758",
+"match": "related",
+"via": "Asian elephant (Elephas maximus)",
+"rat": "Same family Elephantidae; the other living elephant genus."
+}
+],
+"lion": [
+{
+"key": 5219404,
+"rank": "SPECIES",
+"name": "Panthera leo (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"cheetah": [
+{
+"key": 2435270,
+"rank": "SPECIES",
+"name": "Acinonyx jubatus (Schreber, 1775)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"leopard": [
+{
+"key": 5219436,
+"rank": "SPECIES",
+"name": "Panthera pardus (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"giraffe": [
+{
+"key": 7716694,
+"rank": "GENUS",
+"name": "Giraffa Brisson, 1762",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"zebra": [
+{
+"key": 2440892,
+"rank": "SPECIES",
+"name": "Equus quagga Boddaert, 1785",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2440894,
+"rank": "SPECIES",
+"name": "Equus grevyi Oustalet, 1882",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2440888,
+"rank": "SPECIES",
+"name": "Equus zebra Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2440892,
+"rank": "SPECIES",
+"name": "Equus burchellii (Gray, 1824)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2440892,
+"rank": "SPECIES",
+"name": "Equus burchellii (Gray, 1824)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"hippopotamus": [
+{
+"key": 2441247,
+"rank": "SPECIES",
+"name": "Hippopotamus amphibius Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2441249,
+"rank": "SPECIES",
+"name": "Choeropsis liberiensis (Morton, 1849)",
+"match": "related",
+"via": "Pygmy hippopotamus (Choeropsis liberiensis)",
+"rat": "Same family Hippopotamidae; the only other living hippo."
+},
+{
+"key": 2441249,
+"rank": "SPECIES",
+"name": "Hexaprotodon liberiensis (Morton, 1849)",
+"match": "related",
+"via": "Pygmy hippopotamus (Choeropsis liberiensis)",
+"rat": "Same family Hippopotamidae; the only other living hippo."
+}
+],
+"rhinoceros": [
+{
+"key": 2440880,
+"rank": "SPECIES",
+"name": "Ceratotherium simum (Burchell, 1817)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5220111,
+"rank": "SPECIES",
+"name": "Diceros bicornis (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5220113,
+"rank": "SPECIES",
+"name": "Rhinoceros unicornis Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5220112,
+"rank": "SPECIES",
+"name": "Rhinoceros sondaicus Desmarest, 1822",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2440878,
+"rank": "SPECIES",
+"name": "Dicerorhinus sumatrensis (G.Fischer, 1814)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"african_buffalo": [
+{
+"key": 2441034,
+"rank": "SPECIES",
+"name": "Syncerus caffer (Sparrman, 1779)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"hyena": [
+{
+"key": 5218781,
+"rank": "SPECIES",
+"name": "Crocuta crocuta (Erxleben, 1777)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5218777,
+"rank": "SPECIES",
+"name": "Hyaena hyaena (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5218780,
+"rank": "SPECIES",
+"name": "Hyaena brunnea Thunberg, 1820",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5218780,
+"rank": "SPECIES",
+"name": "Parahyaena brunnea (Thunberg, 1820)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"warthog": [
+{
+"key": 2441210,
+"rank": "GENUS",
+"name": "Phacochoerus F.Cuvier, 1826",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"meerkat": [
+{
+"key": 2434126,
+"rank": "SPECIES",
+"name": "Suricata suricatta (Schreber, 1776)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"ostrich": [
+{
+"key": 2495150,
+"rank": "SPECIES",
+"name": "Struthio camelus Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2495149,
+"rank": "SPECIES",
+"name": "Struthio molybdophanes Reichenow, 1883",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"baboon": [
+{
+"key": 5219585,
+"rank": "GENUS",
+"name": "Papio Erxleben, 1777",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2436553,
+"rank": "SPECIES",
+"name": "Theropithecus gelada (R\u00fcppell, 1835)",
+"match": "related",
+"via": "Gelada (Theropithecus gelada)",
+"rat": "Same tribe Papionini; sister genus of the baboons, often called gelada baboon."
+}
+],
+"gorilla": [
+{
+"key": 2436441,
+"rank": "SPECIES",
+"name": "Gorilla gorilla (Savage, 1847)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 7262070,
+"rank": "SPECIES",
+"name": "Gorilla beringei Matschie, 1903",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"chimpanzee": [
+{
+"key": 5219534,
+"rank": "SPECIES",
+"name": "Pan troglodytes (Blumenbach, 1775)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5219533,
+"rank": "SPECIES",
+"name": "Pan paniscus Schwarz, 1929",
+"match": "related",
+"via": "Bonobo (Pan paniscus)",
+"rat": "Same genus Pan; the only other chimpanzee species."
+}
+],
+"african_wild_dog": [
+{
+"key": 5219317,
+"rank": "SPECIES",
+"name": "Lycaon pictus (Temminck, 1820)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"serval": [
+{
+"key": 2435172,
+"rank": "SPECIES",
+"name": "Leptailurus serval (Schreber, 1776)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2435172,
+"rank": "SPECIES",
+"name": "Felis serval Schreber, 1776",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"great_white_shark": [
+{
+"key": 2420694,
+"rank": "SPECIES",
+"name": "Carcharodon carcharias (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"hammerhead_shark": [
+{
+"key": 2418788,
+"rank": "GENUS",
+"name": "Sphyrna Rafinesque, 1810",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"whale_shark": [
+{
+"key": 2417522,
+"rank": "SPECIES",
+"name": "Rhincodon typus Smith, 1828",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"orca": [
+{
+"key": 2440483,
+"rank": "SPECIES",
+"name": "Orcinus orca (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"blue_whale": [
+{
+"key": 2440735,
+"rank": "SPECIES",
+"name": "Balaenoptera musculus (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"dolphin": [
+{
+"key": 2440446,
+"rank": "GENUS",
+"name": "Tursiops Gervais, 1855",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 8324617,
+"rank": "SPECIES",
+"name": "Delphinus delphis Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2440608,
+"rank": "GENUS",
+"name": "Lagenorhynchus Gray, 1846",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2440546,
+"rank": "GENUS",
+"name": "Stenella Gray, 1866",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2440536,
+"rank": "GENUS",
+"name": "Sotalia Gray, 1866",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2440314,
+"rank": "SPECIES",
+"name": "Inia geoffrensis (Blainville, 1817)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5220027,
+"rank": "SPECIES",
+"name": "Grampus griseus (G.Cuvier, 1812)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 8697392,
+"rank": "SPECIES",
+"name": "Cephalorhynchus commersonii (Lac\u00e9p\u00e8de, 1804)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2440494,
+"rank": "GENUS",
+"name": "Sousa Gray, 1866",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2440460,
+"rank": "SPECIES",
+"name": "Orcaella brevirostris (Owen, 1866)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"sea_turtle": [
+{
+"key": 2442225,
+"rank": "SPECIES",
+"name": "Chelonia mydas (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 8894817,
+"rank": "SPECIES",
+"name": "Caretta caretta (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 8841716,
+"rank": "SPECIES",
+"name": "Eretmochelys imbricata (Linnaeus, 1766)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2442152,
+"rank": "GENUS",
+"name": "Lepidochelys Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 9789983,
+"rank": "SPECIES",
+"name": "Dermochelys coriacea (Vandelli, 1761)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2442173,
+"rank": "SPECIES",
+"name": "Natator depressus (Garman, 1880)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"octopus": [
+{
+"key": 2289226,
+"rank": "GENUS",
+"name": "Octopus Cuvier, 1798",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2289485,
+"rank": "SPECIES",
+"name": "Enteroctopus dofleini (W\u00fclker, 1910)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4304632,
+"rank": "GENUS",
+"name": "Amphioctopus P.Fischer, 1882",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2289346,
+"rank": "GENUS",
+"name": "Eledone Leach, 1817",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2289323,
+"rank": "GENUS",
+"name": "Hapalochlaena G.C.Robson, 1929",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4621790,
+"rank": "GENUS",
+"name": "Abdopus Norman & Finn, 2001",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"giant_squid": [
+{
+"key": 2290184,
+"rank": "SPECIES",
+"name": "Architeuthis dux Steenstrup, 1857",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"jellyfish": [
+{
+"key": 7626211,
+"rank": "GENUS",
+"name": "Aurelia Lamarck, 1816",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2264404,
+"rank": "GENUS",
+"name": "Chrysaora P\u00e9ron & Lesueur, 1810",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2264578,
+"rank": "SPECIES",
+"name": "Cotylorhiza tuberculata (Macri, 1778)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2264584,
+"rank": "GENUS",
+"name": "Rhizostoma Cuvier, 1800",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2264423,
+"rank": "SPECIES",
+"name": "Pelagia noctiluca (Forssk\u00e5l, 1775)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2264530,
+"rank": "SPECIES",
+"name": "Phyllorhiza punctata von Lendenfeld, 1884",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2264598,
+"rank": "GENUS",
+"name": "Cassiopea P\u00e9ron & Lesueur, 1810",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2264541,
+"rank": "GENUS",
+"name": "Mastigias Agassiz, 1862",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2264496,
+"rank": "GENUS",
+"name": "Catostylus Agassiz, 1862",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2264467,
+"rank": "GENUS",
+"name": "Cyanea P\u00e9ron & Lesueur, 1810",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2264689,
+"rank": "SPECIES",
+"name": "Chironex fleckeri Southcott, 1956",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2264709,
+"rank": "GENUS",
+"name": "Carybdea P\u00e9ron & Lesueur, 1810",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2264572,
+"rank": "GENUS",
+"name": "Netrostoma Schultze, 1898",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2264568,
+"rank": "SPECIES",
+"name": "Cephea cephea (Forsk\u00e5l, 1775)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2264525,
+"rank": "SPECIES",
+"name": "Lychnorhiza lucerna Haeckel, 1880",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2264591,
+"rank": "GENUS",
+"name": "Rhopilema Haeckel, 1880",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2264420,
+"rank": "SPECIES",
+"name": "Sanderia malayensis Goette, 1886",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2264537,
+"rank": "GENUS",
+"name": "Thysanostoma Agassiz, 1862",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"starfish": [
+{
+"key": 7765831,
+"rank": "SPECIES",
+"name": "Asterias rubens Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5187268,
+"rank": "GENUS",
+"name": "Protoreaster D\u00f6derlein, 1916",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5187090,
+"rank": "GENUS",
+"name": "Linckia Nardo, 1834",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2273623,
+"rank": "SPECIES",
+"name": "Echinaster sepositus (Retzius, 1783)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2274204,
+"rank": "SPECIES",
+"name": "Marthasterias glacialis (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2269836,
+"rank": "GENUS",
+"name": "Astropecten Gray, 1840",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2273386,
+"rank": "GENUS",
+"name": "Fromia Gray, 1840",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2273739,
+"rank": "GENUS",
+"name": "Pisaster M\u00fcller & Troschel, 1840",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2272943,
+"rank": "GENUS",
+"name": "Culcita Agassiz, 1836",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2272969,
+"rank": "SPECIES",
+"name": "Oreaster reticulatus (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2272109,
+"rank": "SPECIES",
+"name": "Asterina gibbosa (Pennant, 1777)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2272168,
+"rank": "GENUS",
+"name": "Patiria Gray, 1840",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2274565,
+"rank": "SPECIES",
+"name": "Pycnopodia helianthoides (Brandt, 1835)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2271208,
+"rank": "SPECIES",
+"name": "Acanthaster planci (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2272936,
+"rank": "SPECIES",
+"name": "Choriaster granulatus L\u00fctken, 1869",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2273832,
+"rank": "SPECIES",
+"name": "Coscinasterias tenuispina (Lamarck, 1816)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2272634,
+"rank": "SPECIES",
+"name": "Ophidiaster ophidianus (Lamarck, 1816)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2272519,
+"rank": "SPECIES",
+"name": "Hacelia attenuata Gray, 1840",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2271946,
+"rank": "GENUS",
+"name": "Pentaceraster D\u00f6derlein, 1916",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2271315,
+"rank": "SPECIES",
+"name": "Archaster typicus M\u00fcller & Troschel, 1840",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2270981,
+"rank": "SPECIES",
+"name": "Crossaster papposus (Linnaeus, 1767)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2272135,
+"rank": "GENUS",
+"name": "Henricia Gray, 1840",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2270561,
+"rank": "GENUS",
+"name": "Luidia Forbes, 1839",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"seahorse": [
+{
+"key": 8156547,
+"rank": "GENUS",
+"name": "Hippocampus Rafinesque, 1810",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"manta_ray": [
+{
+"key": 9548142,
+"rank": "SPECIES",
+"name": "Mobula birostris (Walbaum, 1792)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 9241141,
+"rank": "SPECIES",
+"name": "Mobula alfredi (Krefft, 1868)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 9548142,
+"rank": "SPECIES",
+"name": "Manta birostris (Walbaum, 1792)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 9241141,
+"rank": "SPECIES",
+"name": "Manta alfredi (Krefft, 1868)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"clownfish": [
+{
+"key": 2357171,
+"rank": "GENUS",
+"name": "Amphiprion Bloch & Schneider, 1801",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2398709,
+"rank": "SPECIES",
+"name": "Premnas biaculeatus (Bloch, 1790)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"moray_eel": [
+{
+"key": 2404329,
+"rank": "SPECIES",
+"name": "Muraena helena Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2352074,
+"rank": "GENUS",
+"name": "Muraena Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2403463,
+"rank": "GENUS",
+"name": "Gymnothorax Bloch, 1795",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5213106,
+"rank": "SPECIES",
+"name": "Echidna nebulosa (Ahl, 1789)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2404128,
+"rank": "SPECIES",
+"name": "Rhinomuraena quaesita Garman, 1888",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2404184,
+"rank": "GENUS",
+"name": "Enchelycore Kaup, 1856",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2404380,
+"rank": "SPECIES",
+"name": "Gymnomuraena zebra (Shaw, 1797)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"narwhal": [
+{
+"key": 5220008,
+"rank": "SPECIES",
+"name": "Monodon monoceros Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"beluga_whale": [
+{
+"key": 5220003,
+"rank": "SPECIES",
+"name": "Delphinapterus leucas (Pallas, 1776)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"sea_lion": [
+{
+"key": 2433457,
+"rank": "GENUS",
+"name": "Zalophus Gill, 1866",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5218774,
+"rank": "SPECIES",
+"name": "Otaria flavescens (Shaw, 1800)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5218774,
+"rank": "SPECIES",
+"name": "Otaria byronia (de Blainville, 1820)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2433462,
+"rank": "SPECIES",
+"name": "Eumetopias jubatus (Schreber, 1776)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2433484,
+"rank": "SPECIES",
+"name": "Neophoca cinerea (P\u00e9ron, 1816)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2433467,
+"rank": "SPECIES",
+"name": "Phocarctos hookeri (Gray, 1844)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2433469,
+"rank": "GENUS",
+"name": "Arctocephalus \u00c9.Geoffroy Saint-Hilaire & F.Cuvier, 1826",
+"match": "related",
+"via": "Fur seal (Arctocephalus sp.)",
+"rat": "Same family Otariidae (eared seals) as sea lions."
+},
+{
+"key": 2433487,
+"rank": "SPECIES",
+"name": "Callorhinus ursinus (Linnaeus, 1758)",
+"match": "related",
+"via": "Northern fur seal (Callorhinus ursinus)",
+"rat": "Same family Otariidae (eared seals) as sea lions."
+}
+],
+"bald_eagle": [
+{
+"key": 2480446,
+"rank": "SPECIES",
+"name": "Haliaeetus leucocephalus (Linnaeus, 1766)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2480449,
+"rank": "SPECIES",
+"name": "Haliaeetus albicilla (Linnaeus, 1758)",
+"match": "related",
+"via": "White-tailed eagle (Haliaeetus albicilla)",
+"rat": "Same genus Haliaeetus (sea eagles)."
+},
+{
+"key": 2480454,
+"rank": "SPECIES",
+"name": "Haliaeetus vocifer (Daudin, 1800)",
+"match": "related",
+"via": "African fish eagle (Haliaeetus vocifer)",
+"rat": "Same genus Haliaeetus (sea eagles)."
+},
+{
+"key": 2480445,
+"rank": "SPECIES",
+"name": "Haliaeetus pelagicus (Pallas, 1811)",
+"match": "related",
+"via": "Steller's sea eagle (Haliaeetus pelagicus)",
+"rat": "Same genus Haliaeetus (sea eagles)."
+},
+{
+"key": 2480455,
+"rank": "SPECIES",
+"name": "Haliaeetus leucogaster (Gmelin, 1788)",
+"match": "related",
+"via": "White-bellied sea eagle (Haliaeetus leucogaster)",
+"rat": "Same genus Haliaeetus (sea eagles)."
+}
+],
+"peregrine_falcon": [
+{
+"key": 2481047,
+"rank": "SPECIES",
+"name": "Falco peregrinus Tunstall, 1771",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"great_horned_owl": [
+{
+"key": 5959118,
+"rank": "SPECIES",
+"name": "Bubo virginianus (J.F.Gmelin, 1788)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5959092,
+"rank": "SPECIES",
+"name": "Bubo bubo (Linnaeus, 1758)",
+"match": "related",
+"via": "Eurasian eagle-owl (Bubo bubo)",
+"rat": "Same genus Bubo (eagle-owls); the Old World counterpart."
+}
+],
+"snowy_owl": [
+{
+"key": 5959143,
+"rank": "SPECIES",
+"name": "Bubo scandiacus (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5959143,
+"rank": "SPECIES",
+"name": "Nyctea scandiaca (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5959143,
+"rank": "SPECIES",
+"name": "Bubo scandiacus (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"flamingo": [
+{
+"key": 2481102,
+"rank": "GENUS",
+"name": "Phoenicopterus Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2481104,
+"rank": "SPECIES",
+"name": "Phoeniconaias minor (\u00c9.Geoffroy Saint-Hilaire, 1798)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2481101,
+"rank": "GENUS",
+"name": "Phoenicoparrus Bonaparte, 1856",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"peacock": [
+{
+"key": 9451184,
+"rank": "SPECIES",
+"name": "Pavo cristatus Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2473599,
+"rank": "SPECIES",
+"name": "Pavo muticus Linnaeus, 1766",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2473678,
+"rank": "SPECIES",
+"name": "Afropavo congensis Chapin, 1936",
+"match": "related",
+"via": "Congo peafowl (Afropavo congensis)",
+"rat": "Same subfamily Pavoninae; the African peafowl."
+}
+],
+"emperor_penguin": [
+{
+"key": 2481661,
+"rank": "SPECIES",
+"name": "Aptenodytes forsteri G.R.Gray, 1844",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2481654,
+"rank": "GENUS",
+"name": "Spheniscus Brisson, 1760",
+"match": "related",
+"via": null,
+"rat": "Same family Spheniscidae (penguins)."
+},
+{
+"key": 2481660,
+"rank": "SPECIES",
+"name": "Aptenodytes patagonicus J.F.Miller, 1778",
+"match": "related",
+"via": null,
+"rat": "Same family Spheniscidae (penguins)."
+},
+{
+"key": 2481662,
+"rank": "GENUS",
+"name": "Pygoscelis Wagler, 1832",
+"match": "related",
+"via": null,
+"rat": "Same family Spheniscidae (penguins)."
+},
+{
+"key": 2481633,
+"rank": "GENUS",
+"name": "Eudyptes Vieillot, 1816",
+"match": "related",
+"via": null,
+"rat": "Same family Spheniscidae (penguins)."
+},
+{
+"key": 2481645,
+"rank": "GENUS",
+"name": "Eudyptula Bonaparte, 1856",
+"match": "related",
+"via": null,
+"rat": "Same family Spheniscidae (penguins)."
+},
+{
+"key": 2481632,
+"rank": "SPECIES",
+"name": "Megadyptes antipodes (Hombron & Jacquinot, 1841)",
+"match": "related",
+"via": null,
+"rat": "Same family Spheniscidae (penguins)."
+}
+],
+"atlantic_puffin": [
+{
+"key": 2481353,
+"rank": "SPECIES",
+"name": "Fratercula arctica (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2481357,
+"rank": "SPECIES",
+"name": "Fratercula cirrhata (Pallas, 1769)",
+"match": "related",
+"via": "Tufted puffin (Fratercula cirrhata)",
+"rat": "Same genus Fratercula (puffins)."
+},
+{
+"key": 2481359,
+"rank": "SPECIES",
+"name": "Fratercula corniculata (J.F.Naumann, 1821)",
+"match": "related",
+"via": "Horned puffin (Fratercula corniculata)",
+"rat": "Same genus Fratercula (puffins)."
+}
+],
+"hummingbird": [
+{
+"key": 2476407,
+"rank": "GENUS",
+"name": "Amazilia R.Lesson, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2476058,
+"rank": "GENUS",
+"name": "Chlorostilbon Gould, 1853",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2476673,
+"rank": "GENUS",
+"name": "Calypte Gould, 1856",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2476402,
+"rank": "GENUS",
+"name": "Archilochus Reichenbach, 1854",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5228473,
+"rank": "GENUS",
+"name": "Colibri von Spix, 1824",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2476571,
+"rank": "GENUS",
+"name": "Phaethornis Swainson, 1827",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2476192,
+"rank": "GENUS",
+"name": "Florisuga Bonaparte, 1850",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2476667,
+"rank": "SPECIES",
+"name": "Eupetomena macroura (J.F.Gmelin, 1788)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2476526,
+"rank": "GENUS",
+"name": "Thalurania Gould, 1848",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2476346,
+"rank": "SPECIES",
+"name": "Chrysolampis mosquitus (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2476843,
+"rank": "GENUS",
+"name": "Selasphorus Swainson, 1832",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2476930,
+"rank": "GENUS",
+"name": "Heliodoxa Gould, 1850",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2476712,
+"rank": "GENUS",
+"name": "Anthracothorax F.Boie, 1831",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2476892,
+"rank": "SPECIES",
+"name": "Glaucis hirsutus (J.F.Gmelin, 1788)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2476398,
+"rank": "SPECIES",
+"name": "Eulampis jugularis (Linnaeus, 1766)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2476284,
+"rank": "SPECIES",
+"name": "Orthorhyncus cristatus (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2476058,
+"rank": "GENUS",
+"name": "Chlorostilbon Gould, 1853",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2476291,
+"rank": "SPECIES",
+"name": "Leucochloris albicollis (Vieillot, 1818)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2476819,
+"rank": "GENUS",
+"name": "Hylocharis F.Boie, 1831",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2476999,
+"rank": "GENUS",
+"name": "Lophornis R.Lesson, 1829",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2476975,
+"rank": "GENUS",
+"name": "Topaza G.R.Gray, 1840",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"blue_jay": [
+{
+"key": 2482593,
+"rank": "SPECIES",
+"name": "Cyanocitta cristata (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"cardinal": [
+{
+"key": 2490384,
+"rank": "SPECIES",
+"name": "Cardinalis cardinalis (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"woodpecker": [
+{
+"key": 2478487,
+"rank": "GENUS",
+"name": "Picus Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2477899,
+"rank": "GENUS",
+"name": "Dendrocopos Koch, 1816",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2477865,
+"rank": "GENUS",
+"name": "Dryocopus F.Boie, 1826",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2478067,
+"rank": "GENUS",
+"name": "Melanerpes Swainson, 1832",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 11016979,
+"rank": "GENUS",
+"name": "Colaptes Vigors, 1825",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4850317,
+"rank": "GENUS",
+"name": "Dendrocoptes Cabanis & Heine, 1863",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 8399994,
+"rank": "GENUS",
+"name": "Dryobates F.Boie, 1826",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 8012314,
+"rank": "SPECIES",
+"name": "Jynx torquilla Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2477732,
+"rank": "GENUS",
+"name": "Picoides Lac\u00e9p\u00e8de, 1799",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4845041,
+"rank": "GENUS",
+"name": "Leuconotopicus Malherbe, 1845",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2478560,
+"rank": "GENUS",
+"name": "Campephilus G.R.Gray, 1840",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2478432,
+"rank": "GENUS",
+"name": "Celeus F.Boie, 1831",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2478036,
+"rank": "GENUS",
+"name": "Chrysocolaptes Blyth, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5228802,
+"rank": "GENUS",
+"name": "Dinopium Rafinesque, 1814",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"swan": [
+{
+"key": 8996942,
+"rank": "GENUS",
+"name": "Cygnus Garsault, 1764",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2498288,
+"rank": "SPECIES",
+"name": "Coscoroba coscoroba (Molina, 1782)",
+"match": "related",
+"via": "Coscoroba swan (Coscoroba coscoroba)",
+"rat": "Same subfamily Anserinae; called coscoroba swan though not a true Cygnus swan."
+}
+],
+"parrot": [
+{
+"key": 1686160,
+"rank": "GENUS",
+"name": "Ara Lacepede, 1799",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479603,
+"rank": "GENUS",
+"name": "Amazona Lesson, 1830",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2480181,
+"rank": "SPECIES",
+"name": "Psittacus erithacus Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 8873404,
+"rank": "SPECIES",
+"name": "Psittacus timneh Fraser, 1844",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479358,
+"rank": "GENUS",
+"name": "Anodorhynchus Spix, 1824",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479185,
+"rank": "SPECIES",
+"name": "Cyanopsitta spixii (Wagler, 1832)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479088,
+"rank": "GENUS",
+"name": "Aratinga Spix, 1824",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479799,
+"rank": "GENUS",
+"name": "Pyrrhura Bonaparte, 1856",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479946,
+"rank": "GENUS",
+"name": "Poicephalus Swainson, 1837",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2480075,
+"rank": "SPECIES",
+"name": "Eclectus roratus (Statius Muller, 1776)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479670,
+"rank": "GENUS",
+"name": "Trichoglossus Stephens, 1826",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 9623552,
+"rank": "GENUS",
+"name": "Platycercus Vigors, 1825",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479538,
+"rank": "GENUS",
+"name": "Agapornis Selby, 1836",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479798,
+"rank": "SPECIES",
+"name": "Melopsittacus undulatus (Shaw, 1805)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479192,
+"rank": "GENUS",
+"name": "Psittacula Cuvier, 1800",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479900,
+"rank": "GENUS",
+"name": "Pionus Wagler, 1832",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479267,
+"rank": "GENUS",
+"name": "Primolius Bonaparte, 1857",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2480064,
+"rank": "SPECIES",
+"name": "Guaruba guarouba (Gmelin, 1788)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479593,
+"rank": "SPECIES",
+"name": "Nestor notabilis Gould, 1856",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479413,
+"rank": "GENUS",
+"name": "Lorius Vigors, 1825",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479705,
+"rank": "GENUS",
+"name": "Chalcopsitta Bonaparte, 1850",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479478,
+"rank": "GENUS",
+"name": "Eos Wagler, 1832",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479869,
+"rank": "GENUS",
+"name": "Cacatua Vieillot, 1817",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479598,
+"rank": "SPECIES",
+"name": "Eolophus roseicapilla (Vieillot, 1817)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479187,
+"rank": "SPECIES",
+"name": "Probosciger aterrimus (Gmelin, 1788)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2480103,
+"rank": "GENUS",
+"name": "Calyptorhynchus Desmarest, 1826",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479977,
+"rank": "SPECIES",
+"name": "Nymphicus hollandicus (Kerr, 1792)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479436,
+"rank": "GENUS",
+"name": "Pionites Heine, 1890",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479535,
+"rank": "SPECIES",
+"name": "Deroptyus accipitrinus (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479365,
+"rank": "SPECIES",
+"name": "Diopsittaca nobilis (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479446,
+"rank": "SPECIES",
+"name": "Orthopsittaca manilata (Boddaert, 1783)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479561,
+"rank": "GENUS",
+"name": "Brotogeris Vigors, 1825",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479059,
+"rank": "GENUS",
+"name": "Forpus F.Boie, 1858",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479407,
+"rank": "SPECIES",
+"name": "Myiopsitta monachus (Boddaert, 1783)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479529,
+"rank": "SPECIES",
+"name": "Cyanoliseus patagonus (Vieillot, 1818)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2480011,
+"rank": "GENUS",
+"name": "Rhynchopsitta Bonaparte, 1854",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479274,
+"rank": "GENUS",
+"name": "Tanygnathus Wagler, 1832",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2480031,
+"rank": "GENUS",
+"name": "Prioniturus Wagler, 1832",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479860,
+"rank": "SPECIES",
+"name": "Psittrichas fulgidus (Lesson, 1830)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479296,
+"rank": "GENUS",
+"name": "Coracopsis Wagler, 1832",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479496,
+"rank": "GENUS",
+"name": "Polytelis Wagler, 1832",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479503,
+"rank": "GENUS",
+"name": "Neophema Salvadori, 1891",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479719,
+"rank": "GENUS",
+"name": "Barnardius Bonaparte, 1854",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2480085,
+"rank": "GENUS",
+"name": "Psephotus Gould, 1845",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479924,
+"rank": "GENUS",
+"name": "Alisterus Mathews, 1911",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479861,
+"rank": "GENUS",
+"name": "Aprosmictus Gould, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4577797,
+"rank": "GENUS",
+"name": "Thectocercus Ridgway, 1912",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4851355,
+"rank": "GENUS",
+"name": "Psittacara Vigors, 1825",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2480179,
+"rank": "SPECIES",
+"name": "Leptosittaca branickii Berlepsch & Stolzmann, 1894",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2480100,
+"rank": "SPECIES",
+"name": "Ognorhynchus icterotis (Massena & Souance, 1854)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 7340174,
+"rank": "GENUS",
+"name": "Pyrilia Bonaparte, 1856",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479978,
+"rank": "GENUS",
+"name": "Pionopsitta Bonaparte, 1854",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479735,
+"rank": "SPECIES",
+"name": "Graydidascalus brachyurus (Kuhl, 1820)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5229093,
+"rank": "SPECIES",
+"name": "Triclaria malachitacea (Spix, 1824)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479736,
+"rank": "GENUS",
+"name": "Charmosyna Wagler, 1832",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2480014,
+"rank": "GENUS",
+"name": "Vini Lesson, 1833",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2480066,
+"rank": "GENUS",
+"name": "Neopsittacus Salvadori, 1875",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 8209719,
+"rank": "GENUS",
+"name": "Cyanoramphus Bonaparte, 1854",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479370,
+"rank": "GENUS",
+"name": "Loriculus Blyth, 1850",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 8977008,
+"rank": "GENUS",
+"name": "Bolborhynchus Bonaparte, 1857",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479403,
+"rank": "GENUS",
+"name": "Nannopsittaca Ridgway, 1912",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2480121,
+"rank": "GENUS",
+"name": "Touit G.R.Gray, 1855",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479468,
+"rank": "GENUS",
+"name": "Hapalopsittaca Ridgway, 1912",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2480030,
+"rank": "SPECIES",
+"name": "Callocephalon fimbriatum (J.Grant, 1803)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 7340185,
+"rank": "SPECIES",
+"name": "Lophochroa leadbeateri",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4576169,
+"rank": "GENUS",
+"name": "Zanda Mathews, 1913",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479305,
+"rank": "GENUS",
+"name": "Pseudeos J.L.Peters, 1935",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2480167,
+"rank": "GENUS",
+"name": "Glossopsitta Bonaparte, 1854",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4851231,
+"rank": "GENUS",
+"name": "Parvipsitta Mathews, 1916",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479452,
+"rank": "GENUS",
+"name": "Psitteuteles Bonaparte, 1854",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2480053,
+"rank": "GENUS",
+"name": "Psittaculirostris J.E.Gray & G.R.Gray, 1859",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2480147,
+"rank": "GENUS",
+"name": "Cyclopsitta Reichenbach, 1850",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479333,
+"rank": "GENUS",
+"name": "Geoffroyus Bonaparte, 1850",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479667,
+"rank": "SPECIES",
+"name": "Alipiopsitta xanthops (Spix, 1824)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4851434,
+"rank": "GENUS",
+"name": "Eupsittula Bonaparte, 1853",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479449,
+"rank": "SPECIES",
+"name": "Conuropsis carolinensis (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479586,
+"rank": "GENUS",
+"name": "Enicognathus G.R.Gray, 1840",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"cockatoo": [
+{
+"key": 2479869,
+"rank": "GENUS",
+"name": "Cacatua Vieillot, 1817",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479598,
+"rank": "SPECIES",
+"name": "Eolophus roseicapilla (Vieillot, 1817)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479187,
+"rank": "SPECIES",
+"name": "Probosciger aterrimus (Gmelin, 1788)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2480103,
+"rank": "GENUS",
+"name": "Calyptorhynchus Desmarest, 1826",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2480030,
+"rank": "SPECIES",
+"name": "Callocephalon fimbriatum (J.Grant, 1803)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 7340185,
+"rank": "SPECIES",
+"name": "Lophochroa leadbeateri",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4576169,
+"rank": "GENUS",
+"name": "Zanda Mathews, 1913",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479977,
+"rank": "SPECIES",
+"name": "Nymphicus hollandicus (Kerr, 1792)",
+"match": "related",
+"via": "Cockatiel (Nymphicus hollandicus)",
+"rat": "Same family Cacatuidae; the smallest cockatoo relative."
+}
+],
+"canary": [
+{
+"key": 2494303,
+"rank": "SPECIES",
+"name": "Serinus canaria (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"robin": [
+{
+"key": 9510564,
+"rank": "SPECIES",
+"name": "Turdus migratorius Linnaeus, 1766",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"albatross": [
+{
+"key": 2481387,
+"rank": "GENUS",
+"name": "Diomedea Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2481398,
+"rank": "GENUS",
+"name": "Thalassarche Reichenbach, 1853",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2481378,
+"rank": "GENUS",
+"name": "Phoebastria Reichenbach, 1853",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"jaguar": [
+{
+"key": 5219426,
+"rank": "SPECIES",
+"name": "Panthera onca (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"sloth": [
+{
+"key": 2436362,
+"rank": "GENUS",
+"name": "Choloepus Illiger, 1811",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2436350,
+"rank": "GENUS",
+"name": "Bradypus Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"toucan": [
+{
+"key": 2478764,
+"rank": "GENUS",
+"name": "Ramphastos Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2478813,
+"rank": "GENUS",
+"name": "Pteroglossus Illiger, 1811",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2478755,
+"rank": "GENUS",
+"name": "Selenidera Gould, 1837",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2478937,
+"rank": "GENUS",
+"name": "Aulacorhynchus Gould, 1835",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2478852,
+"rank": "GENUS",
+"name": "Andigena Gould, 1851",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"macaw": [
+{
+"key": 1686160,
+"rank": "GENUS",
+"name": "Ara Lacepede, 1799",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479358,
+"rank": "GENUS",
+"name": "Anodorhynchus Spix, 1824",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479185,
+"rank": "SPECIES",
+"name": "Cyanopsitta spixii (Wagler, 1832)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479267,
+"rank": "GENUS",
+"name": "Primolius Bonaparte, 1857",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479446,
+"rank": "SPECIES",
+"name": "Orthopsittaca manilata (Boddaert, 1783)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2479365,
+"rank": "SPECIES",
+"name": "Diopsittaca nobilis (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"poison_dart_frog": [
+{
+"key": 2429066,
+"rank": "GENUS",
+"name": "Dendrobates Wagler, 1830",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2424031,
+"rank": "GENUS",
+"name": "Phyllobates Dum\u00e9ril & Bibron, 1841",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2429134,
+"rank": "GENUS",
+"name": "Oophaga Bauer, 1994",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2429076,
+"rank": "GENUS",
+"name": "Ranitomeya Bauer, 1986",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2426197,
+"rank": "GENUS",
+"name": "Epipedobates Myers, 1987",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2429155,
+"rank": "GENUS",
+"name": "Adelphobates Grant, Frost, Caldwell, Gagliardo, Haddad, Kok, Means, Noonan, Schargel & Wheeler, 2006",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2429000,
+"rank": "GENUS",
+"name": "Ameerega Bauer, 1986",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2426259,
+"rank": "GENUS",
+"name": "Allobates Zimmermann & Zimmermann, 1988",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2429162,
+"rank": "GENUS",
+"name": "Hyloxalus Jim\u00e9nez de la Espada, 1870",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 7462591,
+"rank": "GENUS",
+"name": "Andinobates Twomey, Brown, Am\u00e9zquita & Mej\u00eda-Vargas, 2011",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2428989,
+"rank": "GENUS",
+"name": "Excidobates Twomey & Brown, 2008",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2429152,
+"rank": "GENUS",
+"name": "Minyobates Myers, 1987",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2426198,
+"rank": "GENUS",
+"name": "Colostethus Cope, 1866",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"anaconda": [
+{
+"key": 2465273,
+"rank": "GENUS",
+"name": "Eunectes Wagler, 1830",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"capybara": [
+{
+"key": 5786666,
+"rank": "SPECIES",
+"name": "Hydrochoerus hydrochaeris (Linnaeus, 1766)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5429068,
+"rank": "GENUS",
+"name": "Hydrochoerus Brisson, 1762",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"howler_monkey": [
+{
+"key": 2436647,
+"rank": "GENUS",
+"name": "Alouatta Lac\u00e9p\u00e8de, 1799",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"spider_monkey": [
+{
+"key": 2436640,
+"rank": "GENUS",
+"name": "Ateles \u00c9.Geoffroy Saint-Hilaire, 1806",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"orangutan": [
+{
+"key": 5219531,
+"rank": "GENUS",
+"name": "Pongo Lac\u00e9p\u00e8de, 1799",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"tapir": [
+{
+"key": 7939585,
+"rank": "GENUS",
+"name": "Tapirus Brisson, 1762",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"leafcutter_ant": [
+{
+"key": 1323108,
+"rank": "GENUS",
+"name": "Atta Fabricius, 1804",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 1320640,
+"rank": "GENUS",
+"name": "Acromyrmex Mayr, 1865",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"harpy_eagle": [
+{
+"key": 2480516,
+"rank": "SPECIES",
+"name": "Harpia harpyja (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"okapi": [
+{
+"key": 2441207,
+"rank": "SPECIES",
+"name": "Okapia johnstoni (P.L.Sclater, 1901)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"tree_frog": [
+{
+"key": 2428191,
+"rank": "GENUS",
+"name": "Agalychnis Cope, 1864",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2423589,
+"rank": "GENUS",
+"name": "Hyla Laurenti, 1768",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4816258,
+"rank": "GENUS",
+"name": "Dryophytes Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 10921246,
+"rank": "GENUS",
+"name": "Litoria Tschudi, 1838",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 10842219,
+"rank": "SPECIES",
+"name": "Ranoidea caerulea (White, 1790)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4816749,
+"rank": "GENUS",
+"name": "Ranoidea Tschudi, 1838",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2427962,
+"rank": "GENUS",
+"name": "Phyllomedusa Wagler, 1830",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2427491,
+"rank": "GENUS",
+"name": "Trachycephalus Tschudi, 1838",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2428077,
+"rank": "GENUS",
+"name": "Osteopilus Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2428124,
+"rank": "GENUS",
+"name": "Pseudacris Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2427373,
+"rank": "GENUS",
+"name": "Scinax Wagler, 1830",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2427608,
+"rank": "GENUS",
+"name": "Boana Gray, 1825",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2428702,
+"rank": "GENUS",
+"name": "Hypsiboas Wagler, 1830",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2428122,
+"rank": "GENUS",
+"name": "Pithecopus Cope, 1866",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2428361,
+"rank": "GENUS",
+"name": "Cruziohyla Faivovich, Haddad, Garcia, Frost, Campbell & Wheeler, 2005",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2428679,
+"rank": "GENUS",
+"name": "Smilisca Cope, 1865",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2428387,
+"rank": "GENUS",
+"name": "Dendropsophus Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 10807070,
+"rank": "SPECIES",
+"name": "Pachymedusa dacnicolor (Cope, 1864)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 8599556,
+"rank": "GENUS",
+"name": "Callimedusa Duellman, Marion & Hedges, 2016",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2427916,
+"rank": "GENUS",
+"name": "Phyllodytes Wagler, 1830",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2427656,
+"rank": "GENUS",
+"name": "Tepuihyla Ayarzag\u00fcena, Se\u00f1aris & Gorzula, 1993",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2428285,
+"rank": "GENUS",
+"name": "Hyloscirtus Peters, 1882",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2427936,
+"rank": "GENUS",
+"name": "Nyctimystes Stejneger, 1916",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2421577,
+"rank": "GENUS",
+"name": "Rhacophorus Kuhl & Van Hasselt, 1822",
+"match": "related",
+"via": null,
+"rat": "Family Rhacophoridae, the Old World tree frogs (commonly called tree frogs)."
+},
+{
+"key": 2423774,
+"rank": "GENUS",
+"name": "Polypedates Tschudi, 1838",
+"match": "related",
+"via": null,
+"rat": "Family Rhacophoridae, the Old World tree frogs (commonly called tree frogs)."
+},
+{
+"key": 11075275,
+"rank": "GENUS",
+"name": "Theloderma Tschudi, 1838",
+"match": "related",
+"via": null,
+"rat": "Family Rhacophoridae, the Old World tree frogs (commonly called tree frogs)."
+},
+{
+"key": 10671698,
+"rank": "GENUS",
+"name": "Zhangixalus Li, Jiang, Ren & Jiang, 2019",
+"match": "related",
+"via": null,
+"rat": "Family Rhacophoridae, the Old World tree frogs (commonly called tree frogs)."
+},
+{
+"key": 2423592,
+"rank": "GENUS",
+"name": "Chiromantis Peters, 1854",
+"match": "related",
+"via": null,
+"rat": "Family Rhacophoridae, the Old World tree frogs (commonly called tree frogs)."
+}
+],
+"glass_frog": [
+{
+"key": 2428199,
+"rank": "GENUS",
+"name": "Hyalinobatrachium Ruiz-Carranza & Lynch, 1991",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 11066160,
+"rank": "GENUS",
+"name": "Centrolene Jim\u00e9nez de la Espada, 1872",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 11014084,
+"rank": "GENUS",
+"name": "Cochranella Taylor, 1951",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4816853,
+"rank": "GENUS",
+"name": "Sachatamia Guayasamin, Castroviejo-Fisher, Trueb, Ayarzag\u00fcena, Rada & Vil\u00e0, 2009",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4816850,
+"rank": "GENUS",
+"name": "Espadarana Guayasamin, Castroviejo-Fisher, Trueb, Ayarzag\u00fcena, Rada & Vil\u00e0, 2009",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2429293,
+"rank": "GENUS",
+"name": "Teratohyla Taylor, 1951",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2429337,
+"rank": "GENUS",
+"name": "Nymphargus Cisneros-Heredia & McDiarmid, 2007",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4816851,
+"rank": "GENUS",
+"name": "Vitreorana Guayasamin, Castroviejo-Fisher, Trueb, Ayarzag\u00fcena, Rada & Vil\u00e0, 2009",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"panther_chameleon": [
+{
+"key": 5221988,
+"rank": "SPECIES",
+"name": "Furcifer pardalis (Cuvier, 1829)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 9183678,
+"rank": "GENUS",
+"name": "Chamaeleo Laurenti, 1768",
+"match": "related",
+"via": null,
+"rat": "Same family Chamaeleonidae (chameleons)."
+},
+{
+"key": 2448843,
+"rank": "GENUS",
+"name": "Calumma Gray, 1865",
+"match": "related",
+"via": null,
+"rat": "Same family Chamaeleonidae (chameleons)."
+},
+{
+"key": 4818567,
+"rank": "GENUS",
+"name": "Trioceros Swainson, 1839",
+"match": "related",
+"via": null,
+"rat": "Same family Chamaeleonidae (chameleons)."
+},
+{
+"key": 2449310,
+"rank": "GENUS",
+"name": "Brookesia Gray, 1865",
+"match": "related",
+"via": null,
+"rat": "Same family Chamaeleonidae (chameleons)."
+},
+{
+"key": 2449439,
+"rank": "GENUS",
+"name": "Rieppeleon Matthee, Tilbury & Townsend, 2004",
+"match": "related",
+"via": null,
+"rat": "Same family Chamaeleonidae (chameleons)."
+},
+{
+"key": 4287384,
+"rank": "GENUS",
+"name": "Kinyongia Tilbury, Tolley & Branch, 2006",
+"match": "related",
+"via": null,
+"rat": "Same family Chamaeleonidae (chameleons)."
+},
+{
+"key": 2449257,
+"rank": "GENUS",
+"name": "Rhampholeon G\u00fcnther, 1874",
+"match": "related",
+"via": null,
+"rat": "Same family Chamaeleonidae (chameleons)."
+},
+{
+"key": 5221973,
+"rank": "SPECIES",
+"name": "Furcifer oustaleti (Mocquard, 1894)",
+"match": "related",
+"via": null,
+"rat": "Same family Chamaeleonidae (chameleons)."
+},
+{
+"key": 5221969,
+"rank": "SPECIES",
+"name": "Furcifer lateralis (Gray, 1831)",
+"match": "related",
+"via": null,
+"rat": "Same family Chamaeleonidae (chameleons)."
+},
+{
+"key": 9069202,
+"rank": "SPECIES",
+"name": "Furcifer verrucosus Cuvier, 1829",
+"match": "related",
+"via": null,
+"rat": "Same family Chamaeleonidae (chameleons)."
+},
+{
+"key": 2449357,
+"rank": "GENUS",
+"name": "Furcifer Fitzinger, 1843",
+"match": "related",
+"via": null,
+"rat": "Same family Chamaeleonidae (chameleons)."
+}
+],
+"boa_constrictor": [
+{
+"key": 2464899,
+"rank": "SPECIES",
+"name": "Boa constrictor Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2464915,
+"rank": "SPECIES",
+"name": "Boa imperator Daudin, 1803",
+"match": "related",
+"via": "Central American boa (Boa imperator)",
+"rat": "Same genus Boa; split from Boa constrictor in 2020s taxonomy."
+}
+],
+"king_cobra": [
+{
+"key": 2469850,
+"rank": "SPECIES",
+"name": "Ophiophagus hannah (Cantor, 1836)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2469849,
+"rank": "GENUS",
+"name": "Ophiophagus G\u00fcnther, 1864",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 8965840,
+"rank": "GENUS",
+"name": "Naja Laurenti, 1768",
+"match": "related",
+"via": "Cobra (Naja sp.)",
+"rat": "Same family Elapidae; the true cobras, close relatives of the king cobra."
+}
+],
+"burmese_python": [
+{
+"key": 4820533,
+"rank": "SPECIES",
+"name": "Python bivittatus Kuhl, 1820",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4820533,
+"rank": "SUBSPECIES",
+"name": "Python molurus bivittatus Kuhl, 1820",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2465369,
+"rank": "SPECIES",
+"name": "Python molurus (Linnaeus, 1758)",
+"match": "related",
+"via": "Indian python (Python molurus)",
+"rat": "Same genus Python; the Burmese python was long treated as its subspecies."
+},
+{
+"key": 2465380,
+"rank": "SPECIES",
+"name": "Python regius (Shaw, 1802)",
+"match": "related",
+"via": "Ball python (Python regius)",
+"rat": "Same genus Python."
+},
+{
+"key": 2465346,
+"rank": "SPECIES",
+"name": "Python sebae (Gmelin, 1789)",
+"match": "related",
+"via": "African rock python (Python sebae)",
+"rat": "Same genus Python."
+},
+{
+"key": 2465349,
+"rank": "SPECIES",
+"name": "Python natalensis Smith, 1840",
+"match": "related",
+"via": "Southern African rock python (Python natalensis)",
+"rat": "Same genus Python."
+},
+{
+"key": 2465373,
+"rank": "SPECIES",
+"name": "Python brongersmai Stull, 1938",
+"match": "related",
+"via": "Brongersma's blood python (Python brongersmai)",
+"rat": "Same genus Python."
+},
+{
+"key": 2465382,
+"rank": "SPECIES",
+"name": "Python curtus Schlegel, 1872",
+"match": "related",
+"via": "Blood python (Python curtus)",
+"rat": "Same genus Python."
+},
+{
+"key": 9260388,
+"rank": "SPECIES",
+"name": "Malayopython reticulatus (Schneider, 1801)",
+"match": "related",
+"via": "Reticulated python (Malayopython reticulatus)",
+"rat": "Same family Pythonidae."
+},
+{
+"key": 9260388,
+"rank": "SPECIES",
+"name": "Python reticulatus (Schneider, 1801)",
+"match": "related",
+"via": "Reticulated python (Malayopython reticulatus)",
+"rat": "Same family Pythonidae."
+}
+],
+"green_anaconda": [
+{
+"key": 5225712,
+"rank": "SPECIES",
+"name": "Eunectes murinus (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5225710,
+"rank": "SPECIES",
+"name": "Eunectes notaeus Cope, 1862",
+"match": "related",
+"via": "Yellow anaconda (Eunectes notaeus)",
+"rat": "Same genus Eunectes (anacondas)."
+},
+{
+"key": 5225713,
+"rank": "SPECIES",
+"name": "Eunectes deschauenseei Dunn & Conant, 1936",
+"match": "related",
+"via": "Dark-spotted anaconda (Eunectes deschauenseei)",
+"rat": "Same genus Eunectes (anacondas)."
+}
+],
+"komodo_dragon": [
+{
+"key": 2470854,
+"rank": "SPECIES",
+"name": "Varanus komodoensis Ouwens, 1912",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"iguana": [
+{
+"key": 2459675,
+"rank": "GENUS",
+"name": "Iguana Laurenti, 1768",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2459562,
+"rank": "GENUS",
+"name": "Cyclura Harlan, 1825",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 7672273,
+"rank": "GENUS",
+"name": "Brachylophus Cuvier, 1829",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2459728,
+"rank": "GENUS",
+"name": "Ctenosaura Wiegmann, 1828",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2459704,
+"rank": "GENUS",
+"name": "Sauromalus A.H.A.Dum\u00e9ril, 1856",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2459646,
+"rank": "SPECIES",
+"name": "Dipsosaurus dorsalis (Baird & Girard, 1852)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2459637,
+"rank": "GENUS",
+"name": "Conolophus Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5224602,
+"rank": "SPECIES",
+"name": "Amblyrhynchus cristatus Bell, 1825",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"bearded_dragon": [
+{
+"key": 2465626,
+"rank": "GENUS",
+"name": "Pogona Storr, 1982",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"gila_monster": [
+{
+"key": 2460817,
+"rank": "SPECIES",
+"name": "Heloderma suspectum Cope, 1869",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2460820,
+"rank": "SPECIES",
+"name": "Heloderma horridum (Wiegmann, 1829)",
+"match": "related",
+"via": "Mexican beaded lizard (Heloderma horridum)",
+"rat": "Same genus Heloderma; the only other beaded lizards."
+},
+{
+"key": 9268064,
+"rank": "SPECIES",
+"name": "Heloderma exasperatum Bogert & Martin Del Campo, 1956",
+"match": "related",
+"via": "Rio Fuerte beaded lizard (Heloderma exasperatum)",
+"rat": "Same genus Heloderma; the only other beaded lizards."
+},
+{
+"key": 9502272,
+"rank": "SPECIES",
+"name": "Heloderma charlesbogerti Campbell & Vannini, 1988",
+"match": "related",
+"via": "Guatemalan beaded lizard (Heloderma charlesbogerti)",
+"rat": "Same genus Heloderma; the only other beaded lizards."
+}
+],
+"alligator": [
+{
+"key": 2441370,
+"rank": "SPECIES",
+"name": "Alligator mississippiensis (Daudin, 1801)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2441368,
+"rank": "SPECIES",
+"name": "Alligator sinensis Fauvel, 1879",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5220195,
+"rank": "GENUS",
+"name": "Caiman Spix, 1825",
+"match": "related",
+"via": "Caiman (Caiman sp.)",
+"rat": "Same family Alligatoridae as alligators."
+},
+{
+"key": 2441393,
+"rank": "GENUS",
+"name": "Paleosuchus Gray, 1862",
+"match": "related",
+"via": "Dwarf caiman (Paleosuchus sp.)",
+"rat": "Same family Alligatoridae as alligators."
+},
+{
+"key": 2441409,
+"rank": "SPECIES",
+"name": "Melanosuchus niger (Spix, 1825)",
+"match": "related",
+"via": "Black caiman (Melanosuchus niger)",
+"rat": "Same family Alligatoridae as alligators."
+}
+],
+"crocodile": [
+{
+"key": 2441321,
+"rank": "GENUS",
+"name": "Crocodylus Laurenti, 1768",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2441384,
+"rank": "GENUS",
+"name": "Osteolaemus Cope, 1861",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2441402,
+"rank": "GENUS",
+"name": "Mecistops Gray, 1844",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"box_turtle": [
+{
+"key": 9065560,
+"rank": "GENUS",
+"name": "Terrapene Merrem, 1820",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"monitor_lizard": [
+{
+"key": 2470685,
+"rank": "SPECIES",
+"name": "Varanus salvator (Laurenti, 1768)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470656,
+"rank": "SPECIES",
+"name": "Varanus niloticus (Linnaeus, 1766)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470729,
+"rank": "SPECIES",
+"name": "Varanus exanthematicus (Bosc, 1792)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 8491752,
+"rank": "SPECIES",
+"name": "Varanus prasinus (Schlegel, 1839)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470741,
+"rank": "SPECIES",
+"name": "Varanus macraei B\u00f6hme & Jacobs, 2001",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470700,
+"rank": "SPECIES",
+"name": "Varanus beccarii (Doria, 1874)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470767,
+"rank": "SPECIES",
+"name": "Varanus melinus B\u00f6hme & Ziegler, 1997",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470727,
+"rank": "SPECIES",
+"name": "Varanus salvadorii (Peters & Doria, 1878)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470802,
+"rank": "SPECIES",
+"name": "Varanus albigularis Daudin, 1802",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470838,
+"rank": "SPECIES",
+"name": "Varanus acanthurus Boulenger, 1885",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470715,
+"rank": "SPECIES",
+"name": "Varanus varius (Shaw, 1790)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 8875670,
+"rank": "SPECIES",
+"name": "Varanus gouldii (Gray, 1838)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470772,
+"rank": "SPECIES",
+"name": "Varanus panoptes Storr, 1980",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470735,
+"rank": "SPECIES",
+"name": "Varanus mertensi Glauert, 1951",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470752,
+"rank": "SPECIES",
+"name": "Varanus indicus (Daudin, 1802)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470724,
+"rank": "SPECIES",
+"name": "Varanus jobiensis Ahl, 1932",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470695,
+"rank": "SPECIES",
+"name": "Varanus mitchelli Mertens, 1958",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 9106026,
+"rank": "SPECIES",
+"name": "Varanus tristis Schlegel, 1839",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470696,
+"rank": "SPECIES",
+"name": "Varanus storri Mertens, 1966",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470679,
+"rank": "SPECIES",
+"name": "Varanus glauerti Mertens, 1957",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470739,
+"rank": "SPECIES",
+"name": "Varanus giganteus (Gray, 1845)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470872,
+"rank": "GENUS",
+"name": "Varanus Merrem, 1820",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470704,
+"rank": "SPECIES",
+"name": "Varanus dumerilii Schlegel, 1839",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470763,
+"rank": "SPECIES",
+"name": "Varanus rudicollis (Gray, 1845)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470669,
+"rank": "SPECIES",
+"name": "Varanus bengalensis (Daudin, 1802)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 9628941,
+"rank": "SPECIES",
+"name": "Varanus griseus (Daudin, 1803)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4820715,
+"rank": "SPECIES",
+"name": "Varanus cumingi Martin, 1839",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4820714,
+"rank": "SPECIES",
+"name": "Varanus nuchalis (G\u00fcnther, 1872)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470843,
+"rank": "SPECIES",
+"name": "Varanus olivaceus Hallowell, 1857",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470851,
+"rank": "SPECIES",
+"name": "Varanus boehmei Jacobs, 2003",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470770,
+"rank": "SPECIES",
+"name": "Varanus reisingeri Eidenm\u00fcller & Wicker, 2005",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470713,
+"rank": "SPECIES",
+"name": "Varanus kordensis (Meyer, 1874)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470818,
+"rank": "SPECIES",
+"name": "Varanus keithhornei Wells & Wellington, 1985",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470847,
+"rank": "SPECIES",
+"name": "Varanus glebopalma Mitchell, 1955",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470800,
+"rank": "SPECIES",
+"name": "Varanus spenceri Lucas & Frost, 1903",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470793,
+"rank": "SPECIES",
+"name": "Varanus rosenbergi Mertens, 1957",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470681,
+"rank": "SPECIES",
+"name": "Varanus yemenensis B\u00f6hme, Joger & Sch\u00e4tti, 1989",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 8223839,
+"rank": "SPECIES",
+"name": "Varanus marmoratus (Wiegmann, 1834)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470738,
+"rank": "SPECIES",
+"name": "Varanus baritji King & Horner, 1987",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470684,
+"rank": "SPECIES",
+"name": "Varanus kingorum Storr, 1980",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470711,
+"rank": "SPECIES",
+"name": "Varanus gilleni Lucas & Frost, 1895",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470682,
+"rank": "SPECIES",
+"name": "Varanus caudolineatus Boulenger, 1885",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470849,
+"rank": "SPECIES",
+"name": "Varanus primordius Mertens, 1942",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470855,
+"rank": "SPECIES",
+"name": "Varanus scalaris Mertens, 1941",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 8434026,
+"rank": "SPECIES",
+"name": "Varanus timorensis (Gray, 1831)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470795,
+"rank": "SPECIES",
+"name": "Varanus similis Mertens, 1958",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 9106026,
+"rank": "SPECIES",
+"name": "Varanus tristis Schlegel, 1839",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470834,
+"rank": "SPECIES",
+"name": "Varanus semiremex Peters, 1869",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470848,
+"rank": "SPECIES",
+"name": "Varanus mabitang Gaulke & Curio, 2001",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 7715666,
+"rank": "SPECIES",
+"name": "Varanus bitatawa Welton, Siler, Bennett, Diesmos, Ruya, Dugay, Rico, Van Weerd & Brown, 2010",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4820713,
+"rank": "SPECIES",
+"name": "Varanus togianus (Peters, 1872)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470831,
+"rank": "SPECIES",
+"name": "Varanus doreanus (Meyer, 1874)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470693,
+"rank": "SPECIES",
+"name": "Varanus finschi B\u00f6hme, Horn & Ziegler, 1994",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470853,
+"rank": "SPECIES",
+"name": "Varanus cerambonensis Philipp, B\u00f6hme & Ziegler, 1999",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 7913939,
+"rank": "SPECIES",
+"name": "Varanus lirungensis Koch, Arida, Schmitz, B\u00f6hme & Ziegler, 2009",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 7795156,
+"rank": "SPECIES",
+"name": "Varanus rainerguentheri Ziegler, B\u00f6hme & Schmitz, 2007",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2470872,
+"rank": "GENUS",
+"name": "Varanus Merrem, 1820",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"gecko": [
+{
+"key": 2447294,
+"rank": "GENUS",
+"name": "Gekko Laurenti, 1768",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2447418,
+"rank": "GENUS",
+"name": "Phelsuma Gray, 1825",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445923,
+"rank": "GENUS",
+"name": "Eublepharis Gray, 1827",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446592,
+"rank": "SPECIES",
+"name": "Correlophus ciliatus Guichenot, 1866",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2447389,
+"rank": "GENUS",
+"name": "Rhacodactylus Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445739,
+"rank": "GENUS",
+"name": "Uroplatus Dumeril, 1806",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445004,
+"rank": "GENUS",
+"name": "Hemitheconyx Stejneger, 1893",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2447584,
+"rank": "GENUS",
+"name": "Tarentola Gray, 1825",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5221394,
+"rank": "GENUS",
+"name": "Hemidactylus Oken, 1817",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 9053548,
+"rank": "GENUS",
+"name": "Lygodactylus Gray, 1864",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2447715,
+"rank": "GENUS",
+"name": "Nephrurus G\u00fcnther, 1876",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445439,
+"rank": "GENUS",
+"name": "Paroedura G\u00fcnther, 1879",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445635,
+"rank": "GENUS",
+"name": "Ptychozoon Kuhl & Van Hasselt, 1822",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 7586210,
+"rank": "GENUS",
+"name": "Mniarogekko Bauer, Whitaker, Sadlier & Jackman, 2012",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446849,
+"rank": "GENUS",
+"name": "Strophurus Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446518,
+"rank": "GENUS",
+"name": "Chondrodactylus W.Peters, 1870",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445496,
+"rank": "GENUS",
+"name": "Pachydactylus Wiegmann, 1834",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2447055,
+"rank": "GENUS",
+"name": "Stenodactylus Fitzinger, 1826",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2447090,
+"rank": "GENUS",
+"name": "Teratoscincus Strauch, 1863",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446409,
+"rank": "GENUS",
+"name": "Goniurosaurus Barbour, 1908",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2447230,
+"rank": "GENUS",
+"name": "Coleonyx Gray, 1845",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 10704812,
+"rank": "GENUS",
+"name": "Ptyodactylus Cuvier, 1820",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2447589,
+"rank": "GENUS",
+"name": "Gonatodes Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 8827334,
+"rank": "GENUS",
+"name": "Sphaerodactylus Wagler, 1830",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5221452,
+"rank": "GENUS",
+"name": "Naultinus Gray, 1842",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446471,
+"rank": "GENUS",
+"name": "Hoplodactylus Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445656,
+"rank": "GENUS",
+"name": "Oedura Gray, 1842",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2447562,
+"rank": "GENUS",
+"name": "Underwoodisaurus Wermuth, 1965",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446858,
+"rank": "GENUS",
+"name": "Diplodactylus Gray, 1832",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446984,
+"rank": "GENUS",
+"name": "Cyrtodactylus Gray, 1827",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2447113,
+"rank": "GENUS",
+"name": "Blaesodactylus Boettger, 1893",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446334,
+"rank": "GENUS",
+"name": "Ebenavia Boettger, 1877",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446770,
+"rank": "GENUS",
+"name": "Homopholis Boulenger, 1885",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2447392,
+"rank": "GENUS",
+"name": "Palmatogecko Andersson, 1908",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445174,
+"rank": "GENUS",
+"name": "Saltuarius Couper, Covacevich & Moritz, 1993",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446971,
+"rank": "GENUS",
+"name": "Phyllurus Cuvier, 1820",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2447390,
+"rank": "GENUS",
+"name": "Tropiocolotes W.Peters, 1880",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2448202,
+"rank": "GENUS",
+"name": "Aristelliger Cope, 1862",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445827,
+"rank": "GENUS",
+"name": "Thecadactylus Cuvier, 1820",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2447647,
+"rank": "GENUS",
+"name": "Lepidodactylus Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446193,
+"rank": "GENUS",
+"name": "Gehyra Gray, 1834",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 7937525,
+"rank": "GENUS",
+"name": "Christinus Wells & Wellington, 1984",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445777,
+"rank": "GENUS",
+"name": "Woodworthia Garman, 1901",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 6066791,
+"rank": "GENUS",
+"name": "Mokopirirakau Nielsen, Bauer, Jackman, Hitchmough & Daugherty, 2011",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2447637,
+"rank": "GENUS",
+"name": "Dierogekko Bauer, Jackman, Sadlier & Whitaker, 2006",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446809,
+"rank": "GENUS",
+"name": "Bavayia Roux, 1913",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446344,
+"rank": "GENUS",
+"name": "Eurydactylodes Wermuth, 1965",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446547,
+"rank": "GENUS",
+"name": "Oedodera Bauer, Jackman, Sadlier & Whitaker, 2006",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2447125,
+"rank": "GENUS",
+"name": "Pseudothecadactylus Brongersma, 1936",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445824,
+"rank": "GENUS",
+"name": "Lucasium Wermuth, 1965",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446567,
+"rank": "GENUS",
+"name": "Rhynchoedura G\u00fcnther, 1867",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2448220,
+"rank": "GENUS",
+"name": "Holodactylus Boettger, 1893",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445948,
+"rank": "GENUS",
+"name": "Aeluroscalabotes Boulenger, 1885",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445011,
+"rank": "GENUS",
+"name": "Rhoptropus W.Peters, 1869",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445857,
+"rank": "GENUS",
+"name": "Afroedura Loveridge, 1944",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445483,
+"rank": "GENUS",
+"name": "Geckolepis Grandidier, 1867",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445027,
+"rank": "GENUS",
+"name": "Matoatoa Nussbaum, Raxworthy & Pronk, 1998",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446912,
+"rank": "GENUS",
+"name": "Hemiphyllodactylus Bleeker, 1860",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446608,
+"rank": "SPECIES",
+"name": "Euleptes europaea (Gen\u00e9, 1839)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445438,
+"rank": "GENUS",
+"name": "Mediodactylus Szczerbak & Golubev, 1977",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2447747,
+"rank": "GENUS",
+"name": "Cyrtopodion Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446965,
+"rank": "GENUS",
+"name": "Alsophylax Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2447393,
+"rank": "GENUS",
+"name": "Agamura Blanford, 1874",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2447137,
+"rank": "GENUS",
+"name": "Bunopus Blanford, 1874",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446614,
+"rank": "GENUS",
+"name": "Crossobamon Boettger, 1888",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2448092,
+"rank": "GENUS",
+"name": "Pristurus R\u00fcppell, 1835",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445838,
+"rank": "GENUS",
+"name": "Quedenfeldtia Boettger, 1883",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2448169,
+"rank": "GENUS",
+"name": "Saurodactylus Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 7608290,
+"rank": "GENUS",
+"name": "Chatogekko Gamble, Daza, Colli, Vitt & Bauer, 2011",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446553,
+"rank": "GENUS",
+"name": "Coleodactylus Parker, 1926",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446440,
+"rank": "GENUS",
+"name": "Lepidoblepharis Peracca, 1897",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446754,
+"rank": "GENUS",
+"name": "Pseudogonatodes Ruthven, 1915",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446133,
+"rank": "GENUS",
+"name": "Homonota Gray, 1845",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445785,
+"rank": "GENUS",
+"name": "Garthia Donoso-Barros & Vanzolini, 1965",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445911,
+"rank": "GENUS",
+"name": "Phyllopezus W.Peters, 1877",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 9166850,
+"rank": "GENUS",
+"name": "Gymnodactylus Spix, 1825",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2446181,
+"rank": "GENUS",
+"name": "Ptenopus Gray, 1866",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2445945,
+"rank": "GENUS",
+"name": "Narudasia Methuen & Hewitt, 1914",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"skink": [
+{
+"key": 2462502,
+"rank": "GENUS",
+"name": "Tiliqua Gray, 1825",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2462499,
+"rank": "SPECIES",
+"name": "Corucia zebrata Gray, 1855",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2463095,
+"rank": "GENUS",
+"name": "Egernia Gray, 1838",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 9133068,
+"rank": "GENUS",
+"name": "Chalcides Laurenti, 1768",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2463587,
+"rank": "GENUS",
+"name": "Scincus J.N.Laurent, 1768",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 3240904,
+"rank": "GENUS",
+"name": "Trachylepis Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 9068937,
+"rank": "GENUS",
+"name": "Eumeces Wiegmann, 1834",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2462133,
+"rank": "GENUS",
+"name": "Plestiodon Dum\u00e9ril & Bibron, 1839",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2461071,
+"rank": "GENUS",
+"name": "Tribolonotus A.M.C.Dum\u00e9ril & Bibron, 1839",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 9156954,
+"rank": "GENUS",
+"name": "Mabuya Fitzinger, 1826",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 7665052,
+"rank": "GENUS",
+"name": "Eutropis Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2461895,
+"rank": "GENUS",
+"name": "Lepidothyris",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2463185,
+"rank": "GENUS",
+"name": "Cyclodomorphus Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2462449,
+"rank": "GENUS",
+"name": "Riopa Gray, 1839",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2463302,
+"rank": "GENUS",
+"name": "Scincopus Peters, 1864",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2463877,
+"rank": "GENUS",
+"name": "Feylinia Gray, 1845",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444495,
+"rank": "GENUS",
+"name": "Acontias Cuvier, 1817",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4821189,
+"rank": "GENUS",
+"name": "Bellatorias Wells & Wellington, 1984",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2462698,
+"rank": "GENUS",
+"name": "Liopholis Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2464889,
+"rank": "GENUS",
+"name": "Lygosoma Hardwicke & Gray, 1827",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2464792,
+"rank": "GENUS",
+"name": "Chioninia Gray, 1845",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 8412193,
+"rank": "SPECIES",
+"name": "Macroscincus coctei (Dum\u00e9ril & Bibron, 1839)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2462629,
+"rank": "GENUS",
+"name": "Eulamprus Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2461965,
+"rank": "GENUS",
+"name": "Oligosoma Girard, 1857",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2463307,
+"rank": "GENUS",
+"name": "Emoia Gray, 1845",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2464175,
+"rank": "GENUS",
+"name": "Sphenomorphus Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2461780,
+"rank": "GENUS",
+"name": "Tropidophorus A.M.C.Dum\u00e9ril & Bibron, 1839",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2462091,
+"rank": "GENUS",
+"name": "Mochlus G\u00fcnther, 1864",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2464550,
+"rank": "GENUS",
+"name": "Leptosiaphos Schmidt, 1943",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2461613,
+"rank": "GENUS",
+"name": "Ablepharus Fitzinger, 1823",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2464026,
+"rank": "GENUS",
+"name": "Novoeumeces Griffith, Ngo & Murphy, 2000",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2461745,
+"rank": "GENUS",
+"name": "Brachymeles A.M.C.Dum\u00e9ril & Bibron, 1839",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2464033,
+"rank": "GENUS",
+"name": "Lamprolepis Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"viper": [
+{
+"key": 2469892,
+"rank": "GENUS",
+"name": "Vipera Laurenti, 1768",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444943,
+"rank": "GENUS",
+"name": "Bitis Gray, 1842",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444304,
+"rank": "GENUS",
+"name": "Daboia Gray, 1842",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444094,
+"rank": "GENUS",
+"name": "Echis Merrem, 1820",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444742,
+"rank": "GENUS",
+"name": "Cerastes Laurenti, 1768",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2443751,
+"rank": "GENUS",
+"name": "Atheris Cope, 1862",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 9064312,
+"rank": "GENUS",
+"name": "Bothrops Wagler, 1824",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444662,
+"rank": "GENUS",
+"name": "Bothriechis Peters, 1859",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 9106694,
+"rank": "GENUS",
+"name": "Trimeresurus Lacep\u00e8de, 1804",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444622,
+"rank": "GENUS",
+"name": "Agkistrodon de Beauvois, 1799",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444916,
+"rank": "GENUS",
+"name": "Lachesis Daudin, 1803",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444697,
+"rank": "GENUS",
+"name": "Macrovipera Reuss, 1927",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444492,
+"rank": "GENUS",
+"name": "Montivipera Nilson, Tuniyev, Andr\u00e9n, Orlov, Joger & Herrmann, 1999",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444529,
+"rank": "GENUS",
+"name": "Gloydius Hoge & Romano-Hoge, 1981",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444497,
+"rank": "SPECIES",
+"name": "Deinagkistrodon acutus (G\u00fcnther, 1888)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2443815,
+"rank": "SPECIES",
+"name": "Calloselasma rhodostoma (Kuhl, 1824)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2443717,
+"rank": "GENUS",
+"name": "Tropidolaemus Wagler, 1830",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444145,
+"rank": "GENUS",
+"name": "Protobothrops Hoge & Romano-Hoge, 1983",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444186,
+"rank": "GENUS",
+"name": "Craspedocephalus Kuhl & van Hasselt, 1822",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444258,
+"rank": "GENUS",
+"name": "Porthidium Cope, 1871",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444129,
+"rank": "GENUS",
+"name": "Atropoides Werman, 1992",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2443828,
+"rank": "GENUS",
+"name": "Pseudocerastes Boulenger, 1896",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2443893,
+"rank": "GENUS",
+"name": "Causus Wagler, 1830",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444658,
+"rank": "SPECIES",
+"name": "Proatheris superciliaris (Peters, 1855)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2443713,
+"rank": "GENUS",
+"name": "Azemiops Boulenger, 1888",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444956,
+"rank": "GENUS",
+"name": "Bothrocophias Gutberlet & Campbell, 2001",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 11175467,
+"rank": "GENUS",
+"name": "Metlapilcoatlus",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2443841,
+"rank": "GENUS",
+"name": "Ophryacus Cope, 1887",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444896,
+"rank": "GENUS",
+"name": "Cerrophidion Campbell & Lamar, 1992",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444096,
+"rank": "GENUS",
+"name": "Popeia Malhotra & Thorpe, 2004",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444502,
+"rank": "GENUS",
+"name": "Viridovipera Malhorta & Thorpe, 2004",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444187,
+"rank": "GENUS",
+"name": "Parias Gray, 1849",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2443783,
+"rank": "GENUS",
+"name": "Ovophis Burger, 1981",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 8398019,
+"rank": "SPECIES",
+"name": "Garthius chaseni (Smith, 1931)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2443909,
+"rank": "GENUS",
+"name": "Hypnale Fitzinger, 1843",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444894,
+"rank": "SPECIES",
+"name": "Eristicophis macmahoni Alcock & Finn, 1897",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444524,
+"rank": "SPECIES",
+"name": "Montatheris hindii (Boulenger, 1910)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"rattlesnake": [
+{
+"key": 2444354,
+"rank": "GENUS",
+"name": "Crotalus Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2444221,
+"rank": "GENUS",
+"name": "Sistrurus Garman, 1884",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"sea_snake": [
+{
+"key": 2450145,
+"rank": "GENUS",
+"name": "Laticauda Laurenti, 1768",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 9206453,
+"rank": "GENUS",
+"name": "Hydrophis Latreille, 1801",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2450119,
+"rank": "GENUS",
+"name": "Aipysurus Lacep\u00e8de, 1804",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 7674056,
+"rank": "SPECIES",
+"name": "Pelamis platura (Linnaeus, 1766)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2449678,
+"rank": "GENUS",
+"name": "Emydocephalus Krefft, 1869",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"frilled_lizard": [
+{
+"key": 2466087,
+"rank": "SPECIES",
+"name": "Chlamydosaurus kingii Gray, 1825",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"horned_lizard": [
+{
+"key": 2451046,
+"rank": "GENUS",
+"name": "Phrynosoma Wiegmann, 1828",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"bison": [
+{
+"key": 2441176,
+"rank": "SPECIES",
+"name": "Bison bison (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2441184,
+"rank": "SPECIES",
+"name": "Bison bonasus (Linnaeus, 1758)",
+"match": "related",
+"via": "European bison (Bison bonasus)",
+"rat": "Same genus Bison; the European wisent."
+}
+],
+"grizzly_bear": [
+{
+"key": 2433433,
+"rank": "SUBSPECIES",
+"name": "Ursus arctos horribilis Ord, 1815",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2433433,
+"rank": "SPECIES",
+"name": "Ursus arctos Linnaeus, 1758",
+"match": "related",
+"via": "Brown bear (Ursus arctos)",
+"rat": "Same species; the grizzly is the North American brown bear subspecies."
+}
+],
+"black_bear": [
+{
+"key": 2433407,
+"rank": "SPECIES",
+"name": "Ursus americanus Pallas, 1780",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 9335699,
+"rank": "SPECIES",
+"name": "Ursus thibetanus G",
+"match": "related",
+"via": "Asian black bear (Ursus thibetanus)",
+"rat": "Same genus Ursus; the Asian counterpart of the American black bear."
+}
+],
+"moose": [
+{
+"key": 2440940,
+"rank": "SPECIES",
+"name": "Alces alces (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4262283,
+"rank": "SPECIES",
+"name": "Alces americanus (Clinton, 1822)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"elk": [
+{
+"key": 2440958,
+"rank": "SPECIES",
+"name": "Cervus canadensis Erxleben, 1777",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2440958,
+"rank": "SUBSPECIES",
+"name": "Cervus elaphus canadensis Erxleben, 1777",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2440958,
+"rank": "SPECIES",
+"name": "Cervus elaphus Linnaeus, 1758",
+"match": "related",
+"via": "Red deer (Cervus elaphus)",
+"rat": "Same genus Cervus; red deer and wapiti were long treated as one species."
+}
+],
+"cougar": [
+{
+"key": 2435099,
+"rank": "SPECIES",
+"name": "Puma concolor (Linnaeus, 1771)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2435099,
+"rank": "SPECIES",
+"name": "Felis concolor Linnaeus, 1771",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"bobcat": [
+{
+"key": 2435246,
+"rank": "SPECIES",
+"name": "Lynx rufus (Schreber, 1777)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2435240,
+"rank": "SPECIES",
+"name": "Lynx lynx (Linnaeus, 1758)",
+"match": "related",
+"via": "Eurasian lynx (Lynx lynx)",
+"rat": "Same genus Lynx."
+},
+{
+"key": 2435261,
+"rank": "SPECIES",
+"name": "Lynx pardinus (Temminck, 1827)",
+"match": "related",
+"via": "Iberian lynx (Lynx pardinus)",
+"rat": "Same genus Lynx."
+},
+{
+"key": 2435263,
+"rank": "SPECIES",
+"name": "Lynx canadensis Kerr, 1792",
+"match": "related",
+"via": "Canada lynx (Lynx canadensis)",
+"rat": "Same genus Lynx."
+}
+],
+"red_fox": [
+{
+"key": 5219243,
+"rank": "SPECIES",
+"name": "Vulpes vulpes (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"coyote": [
+{
+"key": 5219153,
+"rank": "SPECIES",
+"name": "Canis latrans Say, 1823",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5219219,
+"rank": "SPECIES",
+"name": "Canis aureus Linnaeus, 1758",
+"match": "related",
+"via": "Golden jackal (Canis aureus)",
+"rat": "Same genus Canis; the jackal fills a similar mid-size canid niche."
+}
+],
+"raccoon": [
+{
+"key": 5218786,
+"rank": "SPECIES",
+"name": "Procyon lotor (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 9518324,
+"rank": "SPECIES",
+"name": "Procyon cancrivorus G",
+"match": "related",
+"via": "Crab-eating raccoon (Procyon cancrivorus)",
+"rat": "Same genus Procyon."
+}
+],
+"beaver": [
+{
+"key": 2439838,
+"rank": "SPECIES",
+"name": "Castor canadensis Kuhl, 1820",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4409131,
+"rank": "SPECIES",
+"name": "Castor fiber Linnaeus, 1758",
+"match": "related",
+"via": "Eurasian beaver (Castor fiber)",
+"rat": "Same genus Castor; the Old World beaver."
+}
+],
+"mountain_goat": [
+{
+"key": 2441151,
+"rank": "SPECIES",
+"name": "Oreamnos americanus (Blainville, 1816)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"arctic_fox": [
+{
+"key": 5219303,
+"rank": "SPECIES",
+"name": "Vulpes lagopus (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5219303,
+"rank": "SPECIES",
+"name": "Alopex lagopus (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"wolverine": [
+{
+"key": 5219073,
+"rank": "SPECIES",
+"name": "Gulo gulo (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"prairie_dog": [
+{
+"key": 2437231,
+"rank": "GENUS",
+"name": "Cynomys Rafinesque, 1817",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"alligator_snapping_turtle": [
+{
+"key": 5220318,
+"rank": "SPECIES",
+"name": "Macrochelys temminckii Troost, 1835",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5220318,
+"rank": "SPECIES",
+"name": "Macroclemys temminckii (Troost, 1835)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2441905,
+"rank": "SPECIES",
+"name": "Chelydra serpentina (Linnaeus, 1758)",
+"match": "related",
+"via": "Common snapping turtle (Chelydra serpentina)",
+"rat": "Same family Chelydridae (snapping turtles)."
+}
+],
+"roadrunner": [
+{
+"key": 2496458,
+"rank": "GENUS",
+"name": "Geococcyx Wagler, 1831",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"ocelot": [
+{
+"key": 2434982,
+"rank": "SPECIES",
+"name": "Leopardus pardalis (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2434982,
+"rank": "SPECIES",
+"name": "Felis pardalis Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2434950,
+"rank": "SPECIES",
+"name": "Leopardus wiedii (Schinz, 1821)",
+"match": "related",
+"via": "Margay (Leopardus wiedii)",
+"rat": "Same genus Leopardus."
+},
+{
+"key": 2434942,
+"rank": "SPECIES",
+"name": "Leopardus geoffroyi (d'Orbigny & Gervais, 1844)",
+"match": "related",
+"via": "Geoffroy's cat (Leopardus geoffroyi)",
+"rat": "Same genus Leopardus."
+},
+{
+"key": 2434930,
+"rank": "SPECIES",
+"name": "Leopardus tigrinus (Schreber, 1775)",
+"match": "related",
+"via": "Oncilla (Leopardus tigrinus)",
+"rat": "Same genus Leopardus."
+},
+{
+"key": 7740958,
+"rank": "SPECIES",
+"name": "Leopardus guttulus (Hensel, 1872)",
+"match": "related",
+"via": "Southern tiger cat (Leopardus guttulus)",
+"rat": "Same genus Leopardus."
+},
+{
+"key": 2434919,
+"rank": "SPECIES",
+"name": "Leopardus colocola (Molina, 1782)",
+"match": "related",
+"via": "Pampas cat (Leopardus colocola)",
+"rat": "Same genus Leopardus."
+},
+{
+"key": 2434923,
+"rank": "SPECIES",
+"name": "Leopardus guigna (Molina, 1782)",
+"match": "related",
+"via": "Kodkod (Leopardus guigna)",
+"rat": "Same genus Leopardus."
+}
+],
+"polar_bear": [
+{
+"key": 2433451,
+"rank": "SPECIES",
+"name": "Ursus maritimus Phipps, 1774",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2433451,
+"rank": "SPECIES",
+"name": "Thalarctos maritimus (Phipps, 1774)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"arctic_wolf": [
+{
+"key": 5219173,
+"rank": "SUBSPECIES",
+"name": "Canis lupus arctos Pocock, 1935",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5219173,
+"rank": "SPECIES",
+"name": "Canis lupus Linnaeus, 1758",
+"match": "related",
+"via": "Grey wolf (Canis lupus)",
+"rat": "Same species; the arctic wolf is a grey wolf subspecies."
+}
+],
+"snow_leopard": [
+{
+"key": 2435238,
+"rank": "SPECIES",
+"name": "Panthera uncia (Schreber, 1775)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2435238,
+"rank": "SPECIES",
+"name": "Uncia uncia (Schreber, 1775)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"camel": [
+{
+"key": 2441236,
+"rank": "GENUS",
+"name": "Camelus Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"fennec_fox": [
+{
+"key": 5219310,
+"rank": "SPECIES",
+"name": "Vulpes zerda (Zimmermann, 1780)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5219310,
+"rank": "SPECIES",
+"name": "Fennecus zerda",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"kangaroo": [
+{
+"key": 5219981,
+"rank": "SPECIES",
+"name": "Macropus giganteus Shaw, 1790",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5219965,
+"rank": "SPECIES",
+"name": "Macropus fuliginosus (Desmarest, 1817)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5219963,
+"rank": "SPECIES",
+"name": "Osphranter rufus (Desmarest, 1822)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5219963,
+"rank": "SPECIES",
+"name": "Macropus rufus (Desmarest, 1822)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5219988,
+"rank": "SPECIES",
+"name": "Osphranter antilopinus Gould, 1842",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5219970,
+"rank": "SPECIES",
+"name": "Osphranter robustus (Gould, 1841)",
+"match": "related",
+"via": "Common wallaroo (Osphranter robustus)",
+"rat": "Same family Macropodidae; a wallaroo, close kin of the kangaroos."
+},
+{
+"key": 5219970,
+"rank": "SPECIES",
+"name": "Macropus robustus Gould, 1840",
+"match": "related",
+"via": "Common wallaroo (Osphranter robustus)",
+"rat": "Same family Macropodidae; a wallaroo, close kin of the kangaroos."
+},
+{
+"key": 9589697,
+"rank": "SPECIES",
+"name": "Notamacropus rufogriseus (Desmarest, 1817)",
+"match": "related",
+"via": "Red-necked wallaby (Notamacropus rufogriseus)",
+"rat": "Same family Macropodidae; a wallaby, small relative of the kangaroos."
+},
+{
+"key": 2440196,
+"rank": "SPECIES",
+"name": "Macropus rufogriseus (Desmarest, 1817)",
+"match": "related",
+"via": "Red-necked wallaby (Notamacropus rufogriseus)",
+"rat": "Same family Macropodidae; a wallaby, small relative of the kangaroos."
+},
+{
+"key": 4826184,
+"rank": "GENUS",
+"name": "Notamacropus",
+"match": "related",
+"via": "Wallaby (Notamacropus sp.)",
+"rat": "Same family Macropodidae; a wallaby, small relative of the kangaroos."
+},
+{
+"key": 2440149,
+"rank": "SPECIES",
+"name": "Wallabia bicolor (Desmarest, 1804)",
+"match": "related",
+"via": "Swamp wallaby (Wallabia bicolor)",
+"rat": "Same family Macropodidae; a wallaby, small relative of the kangaroos."
+},
+{
+"key": 2440205,
+"rank": "GENUS",
+"name": "Dendrolagus M\u00fcller, 1840",
+"match": "related",
+"via": "Tree kangaroo (Dendrolagus sp.)",
+"rat": "Same family Macropodidae; tree-dwelling kangaroos."
+},
+{
+"key": 2440111,
+"rank": "GENUS",
+"name": "Petrogale Gray, 1837",
+"match": "related",
+"via": "Rock wallaby (Petrogale sp.)",
+"rat": "Same family Macropodidae; a wallaby, small relative of the kangaroos."
+},
+{
+"key": 2440159,
+"rank": "GENUS",
+"name": "Thylogale Gray, 1837",
+"match": "related",
+"via": "Pademelon (Thylogale sp.)",
+"rat": "Same family Macropodidae."
+}
+],
+"red_kangaroo": [
+{
+"key": 5219963,
+"rank": "SPECIES",
+"name": "Osphranter rufus (Desmarest, 1822)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5219963,
+"rank": "SPECIES",
+"name": "Macropus rufus (Desmarest, 1822)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5219981,
+"rank": "SPECIES",
+"name": "Macropus giganteus Shaw, 1790",
+"match": "related",
+"via": "Eastern grey kangaroo (Macropus giganteus)",
+"rat": "Same family Macropodidae; another large kangaroo."
+},
+{
+"key": 5219965,
+"rank": "SPECIES",
+"name": "Macropus fuliginosus (Desmarest, 1817)",
+"match": "related",
+"via": "Western grey kangaroo (Macropus fuliginosus)",
+"rat": "Same family Macropodidae; another large kangaroo."
+},
+{
+"key": 5219970,
+"rank": "SPECIES",
+"name": "Osphranter robustus (Gould, 1841)",
+"match": "related",
+"via": "Common wallaroo (Osphranter robustus)",
+"rat": "Same genus Osphranter."
+},
+{
+"key": 5219970,
+"rank": "SPECIES",
+"name": "Macropus robustus Gould, 1840",
+"match": "related",
+"via": "Common wallaroo (Osphranter robustus)",
+"rat": "Same genus Osphranter."
+}
+],
+"platypus": [
+{
+"key": 2433376,
+"rank": "SPECIES",
+"name": "Ornithorhynchus anatinus (Shaw, 1799)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"tasmanian_devil": [
+{
+"key": 2435451,
+"rank": "SPECIES",
+"name": "Sarcophilus harrisii (Boitard, 1841)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"panda": [
+{
+"key": 2433399,
+"rank": "SPECIES",
+"name": "Ailuropoda melanoleuca (David, 1869)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"red_panda": [
+{
+"key": 5219446,
+"rank": "SPECIES",
+"name": "Ailurus fulgens F.G.Cuvier, 1825",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 11031496,
+"rank": "SPECIES",
+"name": "Ailurus styani Thomas, 1902",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"ibex": [
+{
+"key": 2441055,
+"rank": "SPECIES",
+"name": "Capra ibex Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2441054,
+"rank": "SPECIES",
+"name": "Capra pyrenaica Schinz, 1838",
+"match": "related",
+"via": "Iberian ibex (Capra pyrenaica)",
+"rat": "Same genus Capra; a different ibex species."
+},
+{
+"key": 2441049,
+"rank": "SPECIES",
+"name": "Capra nubiana F.Cuvier, 1825",
+"match": "related",
+"via": "Nubian ibex (Capra nubiana)",
+"rat": "Same genus Capra; a different ibex species."
+},
+{
+"key": 2441052,
+"rank": "SPECIES",
+"name": "Capra sibirica (Pallas, 1776)",
+"match": "related",
+"via": "Siberian ibex (Capra sibirica)",
+"rat": "Same genus Capra; a different ibex species."
+},
+{
+"key": 2441048,
+"rank": "SPECIES",
+"name": "Capra walie R\u00fcppell, 1835",
+"match": "related",
+"via": "Walia ibex (Capra walie)",
+"rat": "Same genus Capra; a different ibex species."
+},
+{
+"key": 2441051,
+"rank": "SPECIES",
+"name": "Capra caucasica G\u00fcldenstaedt & Pallas, 1783",
+"match": "related",
+"via": "West Caucasian tur (Capra caucasica)",
+"rat": "Same genus Capra."
+},
+{
+"key": 2441050,
+"rank": "SPECIES",
+"name": "Capra falconeri (Wagner, 1839)",
+"match": "related",
+"via": "Markhor (Capra falconeri)",
+"rat": "Same genus Capra."
+}
+],
+"caribou": [
+{
+"key": 5220114,
+"rank": "SPECIES",
+"name": "Rangifer tarandus (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"walrus": [
+{
+"key": 5218819,
+"rank": "SPECIES",
+"name": "Odobenus rosmarus (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"musk_ox": [
+{
+"key": 2441108,
+"rank": "SPECIES",
+"name": "Ovibos moschatus (Zimmermann, 1780)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"armadillo": [
+{
+"key": 2440791,
+"rank": "GENUS",
+"name": "Tolypeutes Illiger, 1811",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2440775,
+"rank": "GENUS",
+"name": "Dasypus Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2440814,
+"rank": "GENUS",
+"name": "Chaetophractus Fitzinger, 1871",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2440799,
+"rank": "SPECIES",
+"name": "Euphractus sexcinctus (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2440805,
+"rank": "GENUS",
+"name": "Cabassous McMurtrie, 1831",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5220096,
+"rank": "SPECIES",
+"name": "Priodontes maximus (Kerr, 1792)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2440795,
+"rank": "SPECIES",
+"name": "Zaedyus pichiy (Desmarest, 1804)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5220098,
+"rank": "SPECIES",
+"name": "Chlamyphorus truncatus Harlan, 1825",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2440821,
+"rank": "SPECIES",
+"name": "Calyptophractus retusus (Burmeister, 1863)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"emu": [
+{
+"key": 2495134,
+"rank": "SPECIES",
+"name": "Dromaius novaehollandiae (Latham, 1790)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"lemur": [
+{
+"key": 2436412,
+"rank": "SPECIES",
+"name": "Lemur catta Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2436417,
+"rank": "GENUS",
+"name": "Eulemur Simons & Rumpler, 1988",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2436423,
+"rank": "GENUS",
+"name": "Varecia Gray, 1863",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2436413,
+"rank": "GENUS",
+"name": "Hapalemur I.Geoffroy Saint-Hilaire, 1851",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4266938,
+"rank": "SPECIES",
+"name": "Prolemur simus (Gray, 1870)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2436427,
+"rank": "GENUS",
+"name": "Propithecus Bennett, 1832",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2436446,
+"rank": "GENUS",
+"name": "Microcebus \u00c9.Geoffroy Saint-Hilaire, 1834",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2436450,
+"rank": "GENUS",
+"name": "Cheirogaleus \u00c9.Geoffroy Saint-Hilaire, 1812",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2436432,
+"rank": "SPECIES",
+"name": "Indri indri (Gmelin, 1788)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 5219587,
+"rank": "SPECIES",
+"name": "Daubentonia madagascariensis (Gmelin, 1788)",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 4266973,
+"rank": "GENUS",
+"name": "Mirza Gray, 1870",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2436489,
+"rank": "GENUS",
+"name": "Lepilemur I.Geoffroy Saint-Hilaire, 1851",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2436425,
+"rank": "GENUS",
+"name": "Avahi Jourdan, 1834",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2436442,
+"rank": "GENUS",
+"name": "Phaner Gray, 1870",
+"match": "exact",
+"via": null,
+"rat": null
+},
+{
+"key": 2436445,
+"rank": "SPECIES",
+"name": "Allocebus trichotis (G\u00fcnther, 1875)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"amur_tiger": [
+{
+"key": 5219416,
+"rank": "SPECIES",
+"name": "Panthera tigris (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"axolotl": [
+{
+"key": 2431950,
+"rank": "SPECIES",
+"name": "Ambystoma mexicanum (Shaw & Nodder, 1798)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"fruit_bat": [
+{
+"key": 5218644,
+"rank": "SPECIES",
+"name": "Pteropus vampyrus (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"cassowary": [
+{
+"key": 5231783,
+"rank": "SPECIES",
+"name": "Casuarius casuarius (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"clouded_leopard": [
+{
+"key": 2435079,
+"rank": "SPECIES",
+"name": "Neofelis nebulosa (Griffith, 1821)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"gibbon": [
+{
+"key": 5219553,
+"rank": "SPECIES",
+"name": "Hylobates lar (Linnaeus, 1771)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"pallas_cat": [
+{
+"key": 2435023,
+"rank": "SPECIES",
+"name": "Otocolobus manul (Pallas, 1776)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"harp_seal": [
+{
+"key": 2434801,
+"rank": "SPECIES",
+"name": "Pagophilus groenlandicus (Erxleben, 1777)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"west_indian_manatee": [
+{
+"key": 2435296,
+"rank": "SPECIES",
+"name": "Trichechus manatus Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"numbat": [
+{
+"key": 5219465,
+"rank": "SPECIES",
+"name": "Myrmecobius fasciatus Waterhouse, 1836",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"koala": [
+{
+"key": 2440012,
+"rank": "SPECIES",
+"name": "Phascolarctos cinereus (Goldfuss, 1817)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"wombat": [
+{
+"key": 2440301,
+"rank": "SPECIES",
+"name": "Vombatus ursinus (Shaw, 1800)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"bonobo": [
+{
+"key": 5219533,
+"rank": "SPECIES",
+"name": "Pan paniscus Schwarz, 1929",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"sea_otter": [
+{
+"key": 2433670,
+"rank": "SPECIES",
+"name": "Enhydra lutris (Linnaeus, 1758)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"pangolin": [
+{
+"key": 5219638,
+"rank": "SPECIES",
+"name": "Manis pentadactyla Linnaeus, 1758",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"galapagos_giant_tortoise": [
+{
+"key": 5220265,
+"rank": "GENUS",
+"name": "Chelonoidis Fitzinger, 1835",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"humpback_whale": [
+{
+"key": 5220086,
+"rank": "SPECIES",
+"name": "Megaptera novaeangliae (Borowski, 1781)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"arctic_tern": [
+{
+"key": 5229230,
+"rank": "SPECIES",
+"name": "Sterna paradisaea Pontoppidan, 1763",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"golden_snub_nosed_monkey": [
+{
+"key": 7262005,
+"rank": "SPECIES",
+"name": "Rhinopithecus roxellana (A.Milne-Edwards, 1870)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+],
+"quokka": [
+{
+"key": 2440110,
+"rank": "SPECIES",
+"name": "Setonix brachyurus (Quoy & Gaimard, 1830)",
+"match": "exact",
+"via": null,
+"rat": null
+}
+]
+}

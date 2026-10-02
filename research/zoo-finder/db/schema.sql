@@ -5,7 +5,7 @@
 CREATE TABLE IF NOT EXISTS places (
   id TEXT PRIMARY KEY,                 -- kebab slug
   name TEXT NOT NULL,
-  type TEXT NOT NULL CHECK (type IN ('zoo','aquarium','museum','farm','safari_park','sanctuary')),
+  type TEXT NOT NULL CHECK (type IN ('zoo','aquarium','museum','farm','safari_park','sanctuary'))  -- 'sanctuary' = IN THE WILD: government/UNESCO-designated national park, game reserve, wildlife refuge or nature reserve (no accreditation body; evidence = GBIF sightings),
   town TEXT, region TEXT, country TEXT, -- country = ISO2
   lat REAL, lng REAL, coord_source TEXT,
   wikidata_qid TEXT, osm_id TEXT,
@@ -15,7 +15,8 @@ CREATE TABLE IF NOT EXISTS places (
   image_file TEXT, image_license TEXT, image_author TEXT,
   status TEXT NOT NULL DEFAULT 'open' CHECK (status IN ('open','temporarily_closed','closed')),
   status_note TEXT,
-  first_seen TEXT NOT NULL, last_verified TEXT
+  first_seen TEXT NOT NULL, last_verified TEXT,
+  area_km2 REAL, unesco INTEGER NOT NULL DEFAULT 0
 );
 
 CREATE TABLE IF NOT EXISTS animals (

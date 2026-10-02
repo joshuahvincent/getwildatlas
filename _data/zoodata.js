@@ -19,11 +19,18 @@ module.exports = () => {
     const seen = new Set(), top = [];
     for (const p of pool) { if (!seen.has(p.id) && top.length < TIER_PLACES) { seen.add(p.id); top.push({ n: p.n, where: where(p) }); } }
     const total = d.e.length + d.r.length;
+    // top national parks / reserves by recorded sightings (the page lists them in their own section)
+    const wild = (d.w || []).filter((x) => !x[2]).slice(0, 6).map((x) => places[x[0]].n);
     const article = an(m.n);
     // prose uses a lowercase common name ("a hippopotamus", "an African elephant"); dinosaur names keep their scientific capitalisation
     const nm = m.k === "dino" ? m.n : m.n.toLowerCase().replace(/\b(african|asian|arctic|atlantic|american|burmese|komodo|gila|tasmanian|siberian)\b/g, (x) => x[0].toUpperCase() + x.slice(1));
     let title, desc, summary;
-    if (m.k === "dino") {
+    const wildOnly = d.e.length + d.r.length === 0 && (d.w || []).length > 0;   // GBIF-only animals (no zoo rows): national parks and reserves only
+    if (wildOnly) {
+      title = `Where to See ${article} ${m.n} in the Wild`;
+      desc = `Find national parks and reserves where ${article} ${nm} has been recorded in the wild. ${(d.w || []).length} places on a map with distance. Wildlife is never guaranteed.`;
+      summary = `National parks and reserves where ${article} ${nm} has been recorded in the wild. Wildlife is never guaranteed, so check with the park before you go.`;
+    } else if (m.k === "dino") {
       title = `Where to See ${article} ${m.n} Fossil Near You`;
       desc = `Find natural-history museums near you with ${article} ${nm} fossil or cast on display. ${total ? total + " places on a map" : "Places on a map"} with photos and distance. Check before you go.`;
       summary = `Museums with ${article} ${nm} on display, as a real fossil or a cast${d.r.length ? ", plus museums with a close relative" : ""}. Check with the museum before you go.`;
@@ -49,7 +56,7 @@ module.exports = () => {
           itemListElement: top.map((t, i) => { const p = pool.find((x) => x.n === t.n) || {}; return { "@type": "ListItem", position: i + 1, item: Object.assign({ "@type": LD_TYPE[p.t] || "TouristAttraction", name: t.n, address: { "@type": "PostalAddress", addressLocality: p.ci || undefined, addressRegion: p.rg || undefined, addressCountry: p.cc || undefined } }, p.la ? { geo: { "@type": "GeoCoordinates", latitude: p.la, longitude: p.lo } } : {}, p.u ? { url: p.u } : {}) }; }) },
       ],
     };
-    return { id: m.id, slug: slugOf(m.id), name: nm, title0: m.n, kind: m.k, pack: m.pack, article, title, description: desc, summary, top, total: d.e.length + d.r.length + d.g.length, hasData: total > 0, jsonld: JSON.stringify(ld), groupKey: d.group ? d.group.key : null, related: [] };
+    return { id: m.id, slug: slugOf(m.id), name: nm, title0: m.n, kind: m.k, pack: m.pack, article, title, description: desc, summary, top, total: d.e.length + d.r.length + d.g.length, hasData: total > 0, wild, wildTotal: (d.w || []).length, jsonld: JSON.stringify(ld), groupKey: d.group ? d.group.key : null, related: [] };
   });
   // internal links: other animals in the same curated group (max 8), else popular animals of the same kind
   const byGroup = {};
