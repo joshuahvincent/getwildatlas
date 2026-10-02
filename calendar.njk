@@ -1,0 +1,251 @@
+---
+layout: layouts/blog-base.njk
+title: Wild Atlas World Wildlife Calendar
+excerpt: "A year of real animal awareness days — World Hippo Day, World Octopus Day and dozens more — each with a read-aloud story, real facts, and where to see the animal."
+permalink: /calendar/
+eleventyExcludeFromCollections: true
+---
+{#- Days: _data/animalDays.json (mirrors the Notion calendar). A day links to its
+    /calendar/<slug>/ page once that page exists (collections.calendar). -#}
+{%- set months = animalDays.days | calendarYear(collections.calendar, collections.posts, animalDays.alsoCelebrated, liteAnimals) -%}
+<style>
+  :root { --max: 1120px; --bark: #5D4037; --sunny: #FFD166; --sunny-wash: #FFF4CC; --card: #FFFFFF; }
+  .cal-hero { padding: 1.25rem 0 0.25rem; max-width: 46rem; }
+  .cal-hero .eyebrow { font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin: 0 0 0.3rem; }
+  .cal-hero h1 { font-family: 'Fredoka', sans-serif; font-size: clamp(2rem, 5vw, 2.7rem); line-height: 1.1; margin: 0 0 0.35rem; color: var(--bark); }
+  .cal-hero p { color: var(--muted); font-size: 1.06rem; font-weight: 600; margin: 0; }
+  .cal-hero .dates-link { color: var(--accent); font-weight: 700; text-decoration: underline; text-underline-offset: 2px; }
+  .cal-layout { display: grid; grid-template-columns: 1fr; gap: 1.5rem; align-items: start; margin-top: 1.25rem; }
+  
+  .about-desktop { display: none; }
+  @media (min-width: 1000px) {
+    .about-desktop { display: block; position: sticky; top: 90px; background: var(--card); border: 2px solid var(--bark); border-radius: 14px; padding: 1.1rem 1.2rem; box-shadow: 0 6px 16px rgba(93, 64, 55, 0.12); font-size: 0.9rem; max-height: calc(100vh - 110px); overflow: auto; }
+    .about-mobile { display: none; }
+  }
+  .about-mobile { background: var(--card); border: 2px solid var(--bark); border-radius: 14px; padding: 0.8rem 1rem; font-size: 0.92rem; margin-bottom: 1.5rem; }
+  .about-mobile summary { font-family: 'Fredoka', sans-serif; font-weight: 600; color: var(--bark); cursor: pointer; }
+  .about-title { font-family: 'Fredoka', sans-serif; color: var(--bark); font-size: 1.15rem; margin: 0 0 0.6rem; }
+  .about-desktop h3, .about-mobile h3 { font-family: 'Fredoka', sans-serif; color: var(--bark); font-size: 0.98rem; margin: 1rem 0 0.3rem; }
+  .about-desktop p, .about-mobile p, .about-desktop li, .about-mobile li { line-height: 1.45; font-weight: 600; color: var(--ink); margin: 0 0 0.4rem; }
+  .about-desktop ul, .about-mobile ul { padding-left: 1.1rem; margin: 0; }
+  .about-stat { background: var(--sunny-wash); border-radius: 10px; padding: 0.6rem 0.8rem; }
+  .about-stat b { font-family: 'Fredoka', sans-serif; font-size: 1.6rem; color: var(--bark); }
+  .about-stat span { font-size: 0.85rem; color: var(--muted); }
+  .about-legend { font-size: 0.82rem; color: var(--muted) !important; margin-top: 0.8rem !important; }
+  .lg { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -1px; }
+  .lg-live { background: var(--bark); } .lg-soon { border: 2px dashed rgba(93, 64, 55, 0.5); } .lg-today { background: var(--sunny); }
+  .pick-badge { display: inline-block; font-family: 'Fredoka', sans-serif; font-size: 0.72rem; font-weight: 600; background: #FFD166; color: #5D4037; border-radius: 999px; padding: 0 8px; white-space: nowrap; }
+  .pick-badge::before { content: "\2605  "; }
+  /* Wild Atlas Spotlight weeks: ours, not an official awareness day — warm card, gold border, star tag. */
+  .bc-feat.spotlight, .ag-feat.spotlight { background: #FFF4CC; border-color: #E0A800; }
+  .bc-feat.spotlight .bc-day { color: #7a5a00; }
+  .bc-feat.spotlight .bc-day::before { content: "\2605 "; }
+  .cal-month { margin: 0 0 2.25rem; scroll-margin-top: 90px; }
+  .cal-month h2 { font-family: 'Fredoka', sans-serif; color: var(--bark); font-size: 1.55rem; margin: 0 0 0.8rem; }
+  .cal-month h2 .now { font-size: 0.75rem; background: var(--sunny); border-radius: 999px; padding: 2px 10px; vertical-align: middle; margin-left: 8px; }
+  .cal-body { display: grid; grid-template-columns: 1fr; gap: 1rem; align-items: start; }
+  @media (min-width: 760px) { .cal-body { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1.25rem; } }
+  .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; background: var(--card); border: 2px solid var(--bark); border-radius: 14px; padding: 8px; box-shadow: 0 6px 16px rgba(93, 64, 55, 0.12); }
+  .cal-dow { font-family: 'Fredoka', sans-serif; font-size: 0.72rem; text-align: center; color: rgba(93, 64, 55, 0.7); padding: 2px 0 4px; }
+  .cal-cell { aspect-ratio: 1 / 1; border-radius: 8px; position: relative; overflow: hidden; background: rgba(93, 64, 55, 0.04); }
+  .cal-cell.pad { background: transparent; }
+  .cal-num { position: absolute; top: 3px; left: 5px; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.72rem; color: rgba(93, 64, 55, 0.55); z-index: 2; }
+  .cal-cell.soon { background: #fff; outline: 2px dashed rgba(93, 64, 55, 0.45); outline-offset: -2px; }
+  .cal-cell.soon::after { content: ""; position: absolute; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); bottom: 6px; left: 50%; transform: translateX(-50%); }
+  a.cal-cell.live { display: block; outline: 2px solid var(--bark); outline-offset: -2px; }
+  a.cal-cell.live img { width: 100%; height: 100%; object-fit: cover; margin: 0; display: block; transition: transform 0.35s ease; }
+  a.cal-cell.live:hover img { transform: scale(1.07); }
+  a.cal-cell.live .cal-num { color: #fff; background: rgba(42, 33, 24, 0.55); border-radius: 999px; padding: 0 6px; top: 3px; left: 3px; }
+  .cal-cell.also::after { content: ""; position: absolute; width: 6px; height: 6px; border-radius: 50%; background: #7FB89A; bottom: 6px; left: 50%; transform: translateX(-50%); }
+  .cal-also { margin: 0.8rem 0 0; font-size: 0.86rem; font-weight: 600; color: var(--muted); line-height: 1.6; }
+  .cal-also-label { font-family: 'Fredoka', sans-serif; color: var(--bark); }
+  .cal-also-item { white-space: nowrap; }
+  .cal-also-item a { color: var(--bark); }
+  a.cal-cell.also-live { outline-width: 1px; opacity: 0.85; }
+  .cal-also-date { opacity: 0.75; }
+  .cal-cell.today { box-shadow: inset 0 0 0 3px var(--sunny); }
+  .cal-cell.today:not(.live):not(.soon) { background: var(--sunny-wash); }
+  .cal-events { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem; }
+  .cal-card { display: flex; gap: 0.75rem; align-items: center; padding: 0.55rem; background: var(--card); border: 2px solid var(--bark); border-radius: 14px; box-shadow: 0 3px 8px rgba(93, 64, 55, 0.08); text-decoration: none; color: var(--ink); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  a.cal-card:hover { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(93, 64, 55, 0.16); }
+  .cal-card.soon { border-style: dashed; border-color: rgba(93, 64, 55, 0.45); box-shadow: none; background: rgba(255, 255, 255, 0.6); }
+  .cal-card.is-today { background: var(--sunny-wash); }
+  .cal-card.past, .cal-cell.past { opacity: 0.55; }
+  .cal-card .thumb { width: 64px; height: 64px; border-radius: 10px; flex-shrink: 0; object-fit: cover; margin: 0; background: rgba(93, 64, 55, 0.06); display: flex; align-items: center; justify-content: center; font-family: 'Fredoka', sans-serif; font-size: 0.7rem; color: var(--muted); text-align: center; }
+  .cal-date { font-family: 'Fredoka', sans-serif; text-align: center; min-width: 2.4rem; color: var(--bark); }
+  .cal-date b { display: block; font-size: 1.45rem; line-height: 1; }
+  .cal-date span { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.75; }
+  .cal-card h3 { font-family: 'Fredoka', sans-serif; font-size: 1rem; margin: 0 0 0.1rem; color: var(--bark); }
+  .cal-card p { margin: 0; font-size: 0.86rem; color: var(--muted); font-weight: 600; }
+  .cal-card .status { font-size: 0.75rem; }
+  .today-pill { font-family: 'Fredoka', sans-serif; font-size: 0.68rem; background: var(--sunny); color: var(--bark); border-radius: 999px; padding: 0 7px; margin-left: 4px; vertical-align: 1px; }
+  @media (prefers-reduced-motion: reduce) { a.cal-cell.live img, .cal-card { transition: none; } a.cal-cell.live:hover img, a.cal-card:hover { transform: none; } }
+  .cal-key { font-size: 0.84rem; font-weight: 600; color: var(--muted); margin: 1rem 0 1.4rem; line-height: 1.8; }
+  .k-feat { display: inline-block; width: 12px; height: 12px; border-radius: 3px; background: var(--bark); vertical-align: -1px; }
+  .k-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #7FB89A; vertical-align: 0; }
+  .bigcal { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 5px; background: var(--card); border: 2px solid var(--bark); border-radius: 14px; padding: 8px; box-shadow: 0 6px 16px rgba(93, 64, 55, 0.12); }
+  .bc-dow { font-family: 'Fredoka', sans-serif; font-size: 0.75rem; text-align: center; color: rgba(93, 64, 55, 0.7); padding: 2px 0 4px; }
+  .bc { position: relative; min-height: 118px; border-radius: 10px; background: rgba(93, 64, 55, 0.035); padding: 22px 5px 5px; display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+  .bc.pad { background: transparent; }
+  .bc.today { box-shadow: inset 0 0 0 3px var(--sunny); background: var(--sunny-wash); }
+  .bc.past { opacity: 0.6; }
+  .bc-num { position: absolute; top: 4px; left: 7px; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.78rem; color: rgba(93, 64, 55, 0.6); }
+  .bc-feat { display: block; border-radius: 8px; overflow: hidden; background: #fff; border: 2px solid var(--bark); text-decoration: none; color: var(--ink); }
+  .bc-feat img { display: block; width: 100%; height: 58px; object-fit: cover; margin: 0; transition: transform 0.3s ease; }
+  a.bc-feat:hover img { transform: scale(1.06); }
+  .bc-feat.soon { border-style: dashed; border-color: rgba(93, 64, 55, 0.4); background: transparent; padding-top: 4px; }
+  .bc-name { display: block; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.76rem; line-height: 1.15; padding: 3px 5px 0; color: var(--bark); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .bc-day { display: block; font-size: 0.64rem; font-weight: 600; color: var(--muted); padding: 0 5px 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .bc-also, .bc-more { display: block; font-size: 0.68rem; font-weight: 600; line-height: 1.25; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-decoration: none; padding-left: 11px; position: relative; }
+  .bc-also::before { content: ""; position: absolute; left: 2px; top: 0.42em; width: 6px; height: 6px; border-radius: 50%; background: #7FB89A; }
+  a.bc-also { color: var(--bark); }
+  a.bc-also:hover { text-decoration: underline; }
+  /* Also-celebrated days with a page image: round thumbnail instead of the dot; on an otherwise empty day, a small (secondary) photo card. */
+  .bc-also.has-thumb { padding-left: 22px; min-height: 18px; line-height: 18px; }
+  .bc-also.has-thumb::before { display: none; }
+  .bc-thumb { position: absolute; left: 0; top: 0; width: 18px; height: 18px; border-radius: 50%; object-fit: cover; margin: 0; border: 1.5px solid #7FB89A; }
+  .bc-mini { display: block; border-radius: 8px; overflow: hidden; background: #fff; border: 1.5px solid #7FB89A; text-decoration: none; color: var(--bark); margin-bottom: 3px; }
+  .bc-mini img { display: block; width: 100%; height: 44px; object-fit: cover; margin: 0; transition: transform 0.3s ease; }
+  a.bc-mini:hover img { transform: scale(1.06); }
+  .bc-mini .bc-mini-name { display: block; font-size: 0.66rem; font-weight: 700; line-height: 1.2; padding: 3px 5px 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ag-also.has-thumb { display: flex; align-items: center; gap: 8px; padding-left: 0; }
+  .ag-also.has-thumb::before { display: none; }
+  .ag-thumb { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; margin: 0; flex: 0 0 auto; border: 1.5px solid #7FB89A; }
+  @media (prefers-reduced-motion: reduce) { .bc-mini img { transition: none; } a.bc-mini:hover img { transform: none; } }
+  .bc-more { color: var(--accent); }
+  .agenda { display: none; list-style: none; padding: 0; margin: 1rem 0 0; }
+  .ag-row { display: flex; gap: 0.7rem; padding: 0.55rem 0; border-bottom: 1px solid var(--rule); }
+  .ag-row.today { background: var(--sunny-wash); border-radius: 10px; padding-left: 0.4rem; }
+  .ag-body { display: flex; flex-direction: column; gap: 0.3rem; min-width: 0; }
+  .ag-feat { display: flex; gap: 0.6rem; align-items: center; text-decoration: none; color: var(--ink); font-size: 0.9rem; }
+  .ag-feat img { width: 56px; height: 56px; border-radius: 10px; object-fit: cover; margin: 0; border: 2px solid var(--bark); }
+  .ag-feat.soon { opacity: 0.7; }
+  .ag-feat strong { font-family: 'Fredoka', sans-serif; color: var(--bark); }
+  .ag-also { font-size: 0.85rem; font-weight: 600; color: var(--muted); padding-left: 12px; position: relative; text-decoration: none; }
+  .ag-also::before { content: ""; position: absolute; left: 1px; top: 0.45em; width: 7px; height: 7px; border-radius: 50%; background: #7FB89A; }
+  a.ag-also { color: var(--bark); }
+  @media (max-width: 760px) {
+    .bc { min-height: 0; aspect-ratio: 1 / 1; padding: 0; overflow: hidden; }
+    .bc-feat { position: absolute; inset: 0; border-radius: 8px; }
+    .bc-feat img { height: 100%; }
+    .bc-feat .bc-name, .bc-feat .bc-day, .bc-also, .bc-more, .bc-mini { display: none; }
+    .bc-feat.soon { display: block; }
+    .bc.has-also:not(.has-ev)::after { content: ""; position: absolute; left: 50%; bottom: 6px; width: 7px; height: 7px; margin-left: -3.5px; border-radius: 50%; background: #7FB89A; }
+    .bc-num { z-index: 2; }
+    .bc.has-ev .bc-num { color: #fff; background: rgba(42, 33, 24, 0.55); border-radius: 999px; padding: 0 5px; top: 3px; left: 3px; }
+    .agenda { display: block; }
+  }
+  @media (prefers-reduced-motion: reduce) { .bc-feat img { transition: none; } a.bc-feat:hover img { transform: none; } }
+  .month-strip { position: relative; display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 10px; margin: 0 0 1rem; scroll-snap-type: x proximity; scrollbar-width: thin; }
+  .ms-tab { flex: 0 0 auto; scroll-snap-align: center; min-width: 74px; text-align: center; padding: 8px 10px; border: 2px solid rgba(93, 64, 55, 0.25); border-radius: 14px; background: var(--card); text-decoration: none; color: var(--bark); line-height: 1.15; }
+  .ms-tab:hover { border-color: var(--bark); }
+  .ms-tab.active { border-color: var(--bark); background: var(--sunny-wash); box-shadow: 0 4px 10px rgba(93, 64, 55, 0.12); }
+  .ms-name { display: block; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 1.05rem; }
+  .ms-count { display: block; font-size: 0.68rem; font-weight: 600; color: var(--muted); margin-top: 2px; }
+  .cm-head { display: flex; align-items: center; gap: 0.6rem; margin: 0 0 0.8rem; }
+  .cm-head h2 { margin: 0 !important; flex: 1; }
+  .cm-nav { font-family: 'Fredoka', sans-serif; font-size: 1.6rem; line-height: 1; width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; border: 2px solid var(--bark); border-radius: 50%; background: var(--card); color: var(--bark); text-decoration: none; }
+  .cm-nav.off { opacity: 0.25; }
+  .cm-head .cm-nav:first-child { order: 0; } .cm-head h2 { order: 1; } .cm-head .cm-nav:last-child { order: 2; }
+  html:not(.cal-js) .month-strip, html:not(.cal-js) .cm-nav { display: none; }
+  html.cal-js .bc { min-height: 150px; }
+  html.cal-js .bc-feat img { height: 84px; }
+  @media (max-width: 760px) { html.cal-js .bc { min-height: 0; } html.cal-js .bc-feat img { height: 100%; } }
+</style>
+
+<header class="cal-hero">
+  <h1>Wild Atlas World Wildlife Calendar</h1>
+  <p>Animal lovers around the world already celebrate these days — we didn't make them up (see <a class="dates-link" href="/calendar/about/">date origins</a>). For each one, we've made a short read-aloud story to share with your kids.</p>
+</header>
+
+
+<nav class="month-strip" aria-label="Choose a month">
+  {%- for m in months %}
+  <a class="ms-tab{% if loop.first %} active{% endif %}" href="#m-{{ m.key }}" data-month="{{ m.key }}">
+    <span class="ms-name">{{ m.key | monthLabel | truncate(3, true, "") }}</span>
+    <span class="ms-count">{{ m.events.length + m.also.length }} days</span>
+  </a>
+  {%- endfor %}
+</nav>
+{%- for m in months %}
+<section class="cal-month" id="m-{{ m.key }}" aria-labelledby="h-{{ m.key }}">
+  <div class="cm-head">
+    {% if not loop.first %}<a class="cm-nav" href="#m-{{ months[loop.index0 - 1].key }}" aria-label="Previous month">‹</a>{% else %}<span class="cm-nav off">‹</span>{% endif %}
+    <h2 id="h-{{ m.key }}">{{ m.key | monthLabel }}{% if loop.first %}<span class="now">This month</span>{% endif %}</h2>
+    {% if not loop.last %}<a class="cm-nav" href="#m-{{ months[loop.index0 + 1].key }}" aria-label="Next month">›</a>{% else %}<span class="cm-nav off">›</span>{% endif %}
+  </div>
+  <div class="bigcal">
+    {%- for d in ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"] %}<div class="bc-dow">{{ d }}</div>{% endfor %}
+    {%- for c in m.cells %}
+      {%- if not c %}<div class="bc pad"></div>
+      {%- else %}
+      <div class="bc{% if c.ev %} has-ev{% endif %}{% if c.also.length %} has-also{% endif %}{% if c.isToday %} today{% endif %}{% if c.ev and c.ev.isPast %} past{% endif %}">
+        <span class="bc-num">{{ c.day }}</span>
+        {%- if c.ev %}
+          {%- set evLabel = c.ev.animal if c.ev.official else c.ev.animal %}
+          {%- if c.ev.url %}<a class="bc-feat{% if not c.ev.official %} spotlight{% endif %}" href="{{ c.ev.url }}" title="{{ c.ev.day }} — {{ c.ev.animal }}">{% if c.ev.image %}<img src="{{ c.ev.image }}" alt="" loading="lazy">{% endif %}<span class="bc-name">{{ evLabel }}</span><span class="bc-day">{% if c.ev.official %}{{ c.ev.day }}{% else %}Spotlight{% endif %}</span></a>
+          {%- else %}<div class="bc-feat soon{% if not c.ev.official %} spotlight{% endif %}" title="{{ c.ev.day }} — {{ c.ev.animal }}"><span class="bc-name">{{ evLabel }}</span><span class="bc-day">{% if c.ev.official %}{{ c.ev.day }}{% else %}Spotlight{% endif %}</span></div>{% endif %}
+        {%- endif %}
+        {%- for a in c.also %}{% if loop.index <= (1 if c.ev else 3) %}
+          {%- if loop.first and not c.ev and a.image and a.url %}<a class="bc-mini" href="{{ a.url }}" title="{{ a.day }}"><img src="{{ a.image }}" alt="" loading="lazy"><span class="bc-mini-name">{{ a.day }}</span></a>
+          {%- elif a.url %}<a class="bc-also{% if a.image %} has-thumb{% endif %}" href="{{ a.url }}" title="{{ a.day }}">{% if a.image %}<img class="bc-thumb" src="{{ a.image }}" alt="" loading="lazy">{% endif %}{{ a.day }}</a>{% else %}<span class="bc-also" title="{{ a.day }}">{{ a.day }}</span>{% endif %}
+        {%- endif %}{% endfor %}
+        {%- set cap = 1 if c.ev else 3 %}{% if c.also.length > cap %}<span class="bc-more" title="{% for a in c.also %}{{ a.day }}{% if not loop.last %} · {% endif %}{% endfor %}">+{{ c.also.length - cap }} more</span>{% endif %}
+      </div>
+      {%- endif %}
+    {%- endfor %}
+  </div>
+  <ul class="agenda">
+    {%- for c in m.agenda %}
+    <li class="ag-row{% if c.isToday %} today{% endif %}">
+      <span class="cal-date"><b>{{ c.day }}</b><span>{{ c.iso | weekday }}</span></span>
+      <div class="ag-body">
+        {%- if c.ev %}
+          {%- if c.ev.url %}<a class="ag-feat{% if not c.ev.official %} spotlight{% endif %}" href="{{ c.ev.url }}">{% if c.ev.image %}<img src="{{ c.ev.image }}" alt="" loading="lazy">{% endif %}<span><strong>{% if c.ev.official %}{{ c.ev.day }}{% else %}{{ c.ev.animal }}{% endif %}</strong><br>{% if c.ev.official %}{{ c.ev.animal }}{% else %}<span class="pick-badge">Wild Atlas Spotlight</span>{% endif %}</span></a>
+          {%- else %}<div class="ag-feat soon{% if not c.ev.official %} spotlight{% endif %}"><span><strong>{% if c.ev.official %}{{ c.ev.day }}{% else %}{{ c.ev.animal }}{% endif %}</strong><br>{% if c.ev.official %}{{ c.ev.animal }}{% else %}<span class="pick-badge">Wild Atlas Spotlight</span>{% endif %}</span></div>{% endif %}
+        {%- endif %}
+        {%- for a in c.also %}{% if a.url %}<a class="ag-also{% if a.image %} has-thumb{% endif %}" href="{{ a.url }}">{% if a.image %}<img class="ag-thumb" src="{{ a.image }}" alt="" loading="lazy">{% endif %}<span>{{ a.day }}</span></a>{% else %}<span class="ag-also">{{ a.day }}</span>{% endif %}{% endfor %}
+      </div>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endfor %}
+<p class="cal-key"><span class="k-feat"></span> Featured animal — tap for its page &nbsp;·&nbsp; <span class="k-dot"></span> Also celebrated that day &nbsp;·&nbsp; <span class="pick-badge">Wild Atlas Spotlight</span> a week with no official animal day, so we chose a favourite</p>
+<script>
+// One month at a time: current month by default, #m-YYYY-MM selects another.
+// Without JS every month simply shows in a long list.
+(function () {
+  var sections = [].slice.call(document.querySelectorAll('.cal-month'));
+  var tabs = [].slice.call(document.querySelectorAll('.ms-tab'));
+  if (!sections.length) return;
+  document.documentElement.classList.add('cal-js');
+  function show(key) {
+    var found = sections.some(function (s) { return s.id === 'm-' + key; });
+    if (!found) key = sections[0].id.slice(2);
+    sections.forEach(function (s) { s.hidden = s.id !== 'm-' + key; });
+    tabs.forEach(function (t) {
+      var on = t.getAttribute('data-month') === key;
+      t.classList.toggle('active', on);
+      if (on) {
+        t.setAttribute('aria-current', 'true');
+        // centre the tab in the strip by scrolling the strip only (scrollIntoView would also move the page)
+        strip.scrollLeft = t.offsetLeft - (strip.clientWidth - t.offsetWidth) / 2;
+      } else { t.removeAttribute('aria-current'); }
+    });
+  }
+  var strip = document.querySelector('.month-strip');
+  function fromHash() { show((location.hash || '').replace('#m-', '')); }
+  // Month tabs and ‹ › arrows switch months in place: no jump to the anchor, the page stays where it is.
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a.ms-tab, a.cm-nav');
+    if (!a || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    e.preventDefault();
+    var hash = a.getAttribute('href');
+    if (history.replaceState) history.replaceState(null, '', hash);
+    show(hash.replace('#m-', ''));
+  });
+  window.addEventListener('hashchange', fromHash);
+  fromHash();
+})();
+</script>

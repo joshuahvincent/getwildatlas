@@ -1,0 +1,31 @@
+name: Blog review reminders
+
+# Daily: opens a review issue (GitHub emails the reviewer) 5 days before each
+# scheduled post, a last call the day before, and marks it skipped if the date
+# passes without approval. See scripts/blog-review.mjs.
+on:
+  schedule:
+    - cron: "0 16 * * *" # 9am Pacific (daylight time)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: gh label create blog-review --color 0E8A16 --description "Scheduled blog post awaiting approval" 2>/dev/null || true
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - run: gh label create blog-skipped --color 8B4513 --description "Scheduled post passed its date without approval" 2>/dev/null || true
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - run: node scripts/blog-review.mjs
+        env:
+          GH_TOKEN: ${{ github.token }}

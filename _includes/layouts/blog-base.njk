@@ -7,7 +7,7 @@
   <title>{{ title }} — Wild Atlas</title>
   <meta name="description" content="{{ excerpt or 'The Wild Atlas blog — notes from the founder and team.' }}">
   <meta name="robots" content="{% if noindex %}noindex, nofollow{% else %}index, follow{% endif %}">
-  <link rel="canonical" href="https://wildatlasapp.com{{ page.url }}">
+  <link rel="canonical" href="{{ canonicalUrl or ('https://wildatlasapp.com' + page.url) }}">
 
   <meta name="theme-color" content="#FFF5E1">
 
@@ -136,6 +136,7 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="/#features">Features</a></li>
         <li><a href="/#parents">For Parents</a></li>
+        <li><a href="/calendar/"{% if page.url and page.url.startsWith("/calendar/") %} aria-current="page"{% endif %}>Calendar</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/press">Press</a></li>
         <li><a href="https://apps.apple.com/us/app/wild-atlas/id6761081031" class="nav-cta">Download Free</a></li>

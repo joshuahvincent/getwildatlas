@@ -1,0 +1,24 @@
+// Conservation calendar leaf pages: content/calendar/<slug>.md → /calendar/<slug>/
+//
+// Front-matter:
+//   status: draft          hidden (advisor gates not passed yet)
+//   (no status)            LIVE — Josh's standing decision (2026-09-30): calendar
+//                          pages publish as soon as the naturalist + child-psych
+//                          gates pass, no per-page approval.
+//
+// SHOW_HIDDEN_POSTS=1 shows drafts (local dev + preview deploy).
+
+module.exports = {
+  layout: "layouts/animal-day.njk",
+  tags: ["calendarPage"],
+  backLink: { url: "/calendar/", label: "World Wildlife Calendar" },
+  eleventyComputed: {
+    originSlug: (data) => data.page.fileSlug, // → _data/dayOrigins.json
+    permalink: (data) =>
+      data.status === "draft" && !process.env.SHOW_HIDDEN_POSTS
+        ? false
+        : `/calendar/${data.page.fileSlug}/`,
+    eleventyExcludeFromCollections: (data) =>
+      data.status === "draft" && !process.env.SHOW_HIDDEN_POSTS,
+  },
+};

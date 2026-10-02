@@ -4,7 +4,6 @@ title: "World Animal Day: See the World Through Their Eyes — A Read-Aloud Trip
 date: 2026-10-04
 author: Wild Atlas
 excerpt: "Happy World Animal Day! This year's theme is 'See the World Through Their Eyes.' Take a read-aloud trip across seven continents and one ocean to find out how animals feel, hear, and see the world."
-permalink: /blog/world-animal-day/
 coverImage: /assets/blog/world-animal-day-2026/african-elephant.jpg
 tags: [animals, read-aloud, conservation, family]
 ---
