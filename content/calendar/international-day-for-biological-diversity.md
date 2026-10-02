@@ -4,10 +4,14 @@ title: "International Day for Biological Diversity: What It Is and How Your Fami
 date: 2027-05-22
 author: Wild Atlas
 excerpt: "A day about all the different kinds of life on Earth, and easy ways for a family to celebrate it. A read-aloud and a grown-ups note."
+coverImage: /assets/calendar-days/international-day-for-biological-diversity/cover.jpg
 tags: [animals, conservation, family, calendar]
 simpleDay:
   campaign: day_international_day_for_biological_diversity
   greeting: "**Happy International Day for Biological Diversity!** It is a day to celebrate all the different plants and animals that share our planet."
+  image:
+    src: /assets/calendar-days/international-day-for-biological-diversity/cover.jpg
+    alt: "Strawberry poison dart frogs sit on a wet green leaf on the rainforest floor — rainforest floor of Central America"
   origin:
     text: "The United Nations General Assembly moved this day to May 22 in 2000, to mark the adopted text of the Convention on Biological Diversity."
     sourceUrl: "https://www.un.org/en/observances/biological-diversity-day"

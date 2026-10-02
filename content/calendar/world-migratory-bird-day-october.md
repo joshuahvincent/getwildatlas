@@ -4,10 +4,14 @@ title: "World Migratory Bird Day: What It Is and How Your Family Can Join In"
 date: 2026-10-10
 author: Wild Atlas
 excerpt: "Happy World Migratory Bird Day! Birds travel amazing distances every year. Here is what the day is about and easy ways to take part."
+coverImage: /assets/calendar-days/world-migratory-bird-day-october/cover.jpg
 tags: [animals, conservation, family]
 simpleDay:
   campaign: day_world_migratory_bird_day_october
   greeting: "**Happy World Migratory Bird Day!** Today we celebrate birds that fly far across the sky, and the places they rest along the way."
+  image:
+    src: /assets/calendar-days/world-migratory-bird-day-october/cover.jpg
+    alt: "Bar-tailed godwits fly in a flock low over shining mudflats — tidal mudflats and the open sky over the Pacific"
   origin:
     text: "A UN-backed campaign run by CMS, AEWA and Environment for the Americas. It is celebrated twice a year, on the second Saturday in May and the second Saturday in October."
     sourceUrl: "https://www.migratorybirdday.org/when-is-wmbd/"

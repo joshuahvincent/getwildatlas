@@ -4,10 +4,14 @@ title: "World Shorebirds Day: What It Is and How Your Family Can Join In"
 date: 2026-09-06
 author: Wild Atlas
 excerpt: "Tiny birds that run along the water's edge and fly across the world. Here is how families can spot shorebirds on World Shorebirds Day."
+coverImage: /assets/calendar-days/world-shorebirds-day/cover.jpg
 tags: [animals, conservation, family, calendar]
 simpleDay:
   campaign: day_world_shorebirds_day
   greeting: "**Happy World Shorebirds Day!** Today we cheer for the quick little birds that dash along beaches and muddy shores."
+  image:
+    src: /assets/calendar-days/world-shorebirds-day/cover.jpg
+    alt: "Sanderlings run along the wet sand at the edge of the waves — sandy ocean beaches at the edge of the waves"
   origin:
     text: "Bird conservationist Gyorgy Szimuly started this day in 2014, along with a Global Shorebird Count."
     sourceUrl: "https://earthsky.org/earth/first-ever-world-shorebirds-day-on-september-6/"

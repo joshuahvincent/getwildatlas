@@ -4,10 +4,14 @@ title: "Bird Day: How a School Day Became a Celebration of Birds"
 date: 2027-05-04
 author: Wild Atlas
 excerpt: "Happy Bird Day! The story of a school celebration for birds, and easy ways to join in."
+coverImage: /assets/calendar-days/bird-day/cover.jpg
 tags: [animals, conservation, family]
 simpleDay:
   campaign: day_bird_day
   greeting: "**Happy Bird Day!** Today is for all the birds, from tiny hummingbirds to giant ostriches."
+  image:
+    src: /assets/calendar-days/bird-day/cover.jpg
+    alt: "Eastern bluebirds perch on a wooden fence post in a spring field — open fields and orchards of eastern North America in spring"
   origin:
     text: "First held in 1894 in Oil City, Pennsylvania, started by school superintendent Charles Almanzo Babcock."
     sourceUrl: "https://www.loc.gov/item/today-in-history/may-04/"

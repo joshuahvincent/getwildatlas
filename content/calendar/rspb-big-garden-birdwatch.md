@@ -4,10 +4,14 @@ title: "RSPB Big Garden Birdwatch: What It Is and How Your Family Can Join In"
 date: 2027-01-29
 author: Wild Atlas
 excerpt: "For one hour, you watch the birds in your yard or park and count them. Here's how the RSPB Big Garden Birdwatch works and how your family can join in."
+coverImage: /assets/calendar-days/rspb-big-garden-birdwatch/cover.jpg
 tags: [birds, conservation, family]
 simpleDay:
   campaign: day_rspb_big_garden_birdwatch
   greeting: "**Happy Big Garden Birdwatch!** This weekend, kids and grown-ups settle in for one quiet hour to count the birds that visit them."
+  image:
+    src: /assets/calendar-days/rspb-big-garden-birdwatch/cover.jpg
+    alt: "European robins perch on a frosty garden fork handle — winter gardens of Britain"
   origin:
     text: "A UK bird survey run by the RSPB since 1979, when it began as an event for children. It's held over a weekend in late January; check the RSPB for the exact dates."
     sourceUrl: https://www.rspb.org.uk/whats-happening/big-garden-birdwatch

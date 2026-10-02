@@ -4,10 +4,14 @@ title: "World Aquatic Animal Day: What It Is and How Your Family Can Join In"
 date: 2027-04-03
 author: Wild Atlas
 excerpt: "Fish, whales, octopuses, and jellyfish all live in water. Here's what World Aquatic Animal Day is and how your family can celebrate it."
+coverImage: /assets/calendar-days/world-aquatic-animal-day/cover.jpg
 tags: [animals, conservation, family]
 simpleDay:
   campaign: day_world_aquatic_animal_day
   greeting: "**Happy World Aquatic Animal Day!** Today we say hello to every animal that lives in the water, from tiny fish to giant whales."
+  image:
+    src: /assets/calendar-days/world-aquatic-animal-day/cover.jpg
+    alt: "Clownfish swim among the waving tentacles of a sea anemone — warm coral reefs of the Indo-Pacific"
   origin:
     text: "Launched in 2020 by the Animal Law Clinic at Lewis & Clark Law School (Amy P. Wilson and Kathy Hessler)."
     sourceUrl: https://sustainability.gwu.edu/2024-world-aquatic-animal-day-animals-community

@@ -4,10 +4,14 @@ title: "Global Big Day: What It Is and How Your Family Can Join In"
 date: 2027-05-08
 author: Wild Atlas
 excerpt: "Happy Global Big Day! A worldwide bird count you can join from your own yard or park."
+coverImage: /assets/calendar-days/global-big-day/cover.jpg
 tags: [animals, conservation, family]
 simpleDay:
   campaign: day_global_big_day
   greeting: "**Happy Global Big Day!** People all over the world count birds on the same day. You can join in too."
+  image:
+    src: /assets/calendar-days/global-big-day/cover.jpg
+    alt: "European bee-eaters perch together on a branch in warm sunshine — warm open countryside of southern Europe"
   origin:
     text: "A yearly citizen-science birding day run by the Cornell Lab of Ornithology's eBird, since 2015."
     sourceUrl: "https://ebird.org/globalbigday"
