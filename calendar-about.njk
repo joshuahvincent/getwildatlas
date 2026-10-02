@@ -12,7 +12,10 @@ eleventyExcludeFromCollections: true
   .ab .back { font-weight: 700; }
   .ab h1 { font-family: 'Fredoka', sans-serif; color: var(--bark); font-size: clamp(1.9rem, 5vw, 2.5rem); margin: 0.6rem 0 1rem; }
   .ab h2 { font-family: 'Fredoka', sans-serif; color: var(--bark); font-size: 1.3rem; margin: 1.8rem 0 0.5rem; }
-  .ab p, .ab li { font-weight: 600; line-height: 1.55; }
+  .ab p, .ab li { font-weight: 400; line-height: 1.6; }
+  .ab li { margin: 0.35rem 0; }
+  .ab a:not(.back) { color: var(--bark); text-decoration: underline; text-underline-offset: 2px; }
+  .ab-stat span { font-weight: 600; }
   .ab-stat { background: var(--sunny-wash); border: 2px solid var(--bark); border-radius: 14px; padding: 0.9rem 1.1rem; display: flex; gap: 1rem; align-items: center; }
   .ab-stat b { font-family: 'Fredoka', sans-serif; font-size: 2.4rem; color: var(--bark); line-height: 1; }
   .pick-badge { display: inline-block; font-family: 'Fredoka', sans-serif; font-size: 0.78rem; font-weight: 600; background: #E4F4EC; color: #2F6B4F; border-radius: 999px; padding: 0 8px; }
@@ -23,28 +26,38 @@ eleventyExcludeFromCollections: true
 
   {#- Count both lists: the weekly featured days and the also-celebrated days on the grid. -#}
   {%- set alsoCount = animalDays.alsoCelebrated | length %}
-  <div class="ab-stat"><b>{{ (animalDays.days | length) + alsoCount }}</b><span>animal days a year: <strong>{{ officialCount + alsoCount }}</strong> real awareness days and <strong>{{ pickCount }}</strong> Wild Atlas picks.</span></div>
+  <div class="ab-stat"><b>{{ (animalDays.days | length) + alsoCount }}</b><span>animal days a year: {{ officialCount + alsoCount }} real awareness days and {{ pickCount }} Wild Atlas picks.</span></div>
 
   <h2>We didn't make them up</h2>
-  <p>Every official day on the calendar was started by someone else — and different days come from different places:</p>
+  <p>Every awareness day on the calendar was started by someone else. They come from different places:</p>
   <ul>
-    <li><strong>The United Nations</strong> declared some of them, like World Wildlife Day and World Oceans Day.</li>
-    <li><strong>Conservation groups, zoos and aquariums</strong> started many more, to help people care about one animal at a time.</li>
-    <li><strong>Animal fans</strong> started a few. World Octopus Day, for example, began in 2007 with an online community of octopus fans (the TONMO website).</li>
-    <li>A few are United States days. <strong>National Bison Day</strong>, for example, was first marked after the U.S. Senate passed a resolution for it.</li>
+    <li>The United Nations declared some of them, like <a href="https://wildlifeday.org/en/about" rel="noopener">World Wildlife Day</a> and <a href="https://www.un.org/en/observances/oceans-day/background" rel="noopener">World Oceans Day</a>.</li>
+    <li>Conservation groups, zoos and aquariums started many more, to help people care about one animal at a time. For example, <a href="https://www.internationalleopardday.org/" rel="noopener">International Leopard Day</a> was started by the Cape Leopard Trust, Panthera and Saving the Survivors, and <a href="https://www.acap.aq/world-albatross-day/introduction-to-world-albatross-day" rel="noopener">World Albatross Day</a> by the international agreement that protects albatrosses.</li>
+    <li>Animal fans started a few. <a href="https://tonmo.com/threads/its-world-octopus-day.94241/" rel="noopener">World Octopus Day</a> began in 2007 with an online community of octopus fans, who picked the 8th for an animal with eight arms.</li>
+    <li>A few are United States days. <a href="https://www.wcs.org/get-involved/updates/senate-passes-bison-day-resolution" rel="noopener">National Bison Day</a> was started in 2012 by a coalition of tribes, ranchers and conservationists, and the U.S. Senate has recognised it every year since 2013.</li>
   </ul>
-  <p>Most are celebrated in many countries, on the same date every year. A few move around (like "the third Friday in May"), so we check those dates again each year.</p>
+
+  <h2>When they happen</h2>
+  <ul>
+    <li>Most fall on the same date every year.</li>
+    <li>A few move around, like "the third Friday in May". The calendar works out the right date for each year automatically.</li>
+    <li>Each day's page says where the day came from, with a link to its source.</li>
+  </ul>
 
   <h2>How an animal gets on the calendar</h2>
   <ul>
-    <li><strong>One animal a week</strong>, matched to a real awareness day.</li>
-    <li>When several animal days land in the same week, we pick the one we think kids will love most.</li>
+    <li>One featured animal a week, matched to a real awareness day.</li>
+    <li>When several animal days land in the same week, we feature the one we think kids will love most. The others still show on the calendar as "also celebrated" days.</li>
     <li>In the few weeks with no animal day, we choose a favourite and label it a <span class="pick-badge">Wild Atlas pick</span>.</li>
-    <li>The year ends with <strong>Explorer's Choice</strong>, where families vote for a favourite.</li>
+    <li>The year ends with Explorer's Choice.</li>
   </ul>
 
-  <h2>What's on every animal's page</h2>
-  <p>A short story to read out loud together, how big the animal is next to a five-year-old, and where you can see one for real. Every fact is checked against trusted sources, like the IUCN Red List and the zoos and aquariums themselves.</p>
+  <h2>What's on each page</h2>
+  <ul>
+    <li>Featured animals get a short story to read out loud together, how big and how heavy the animal is next to a five-year-old, what its babies look like, and a map of where to see one, at zoos and aquariums and in the wild.</li>
+    <li>Also-celebrated days get a shorter page: where the day came from, what it celebrates, why it matters, and a few fun facts.</li>
+    <li>Facts are checked against trusted sources, like the <a href="https://www.iucnredlist.org/" rel="noopener">IUCN Red List</a> and the zoos, aquariums and groups behind each day.</li>
+  </ul>
 
   <p><a class="back" href="/calendar/">← Back to the calendar</a></p>
 </article>
