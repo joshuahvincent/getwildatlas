@@ -1,0 +1,19 @@
+/* General-purpose places map: see js/places-map.js and docs/places-map.md.
+   Colours match the zoo finder (css/zoos.css). */
+.places-map { position: relative; height: var(--places-map-h, 340px); border-radius: 16px; overflow: hidden; border: 1px solid rgba(93, 64, 55, 0.25); background: #dfeaf2; margin: 1rem 0 0.4rem; }
+.places-map[data-loading]::after { content: "Loading map…"; position: absolute; inset: 0; display: grid; place-items: center; color: #6b5d55; font-weight: 700; background: #dfeaf2; z-index: 2; }
+@media (max-width: 600px) { .places-map { height: var(--places-map-h-phone, 280px); } }
+
+.places-map-legend { list-style: none; display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; margin: 0 0 1rem; padding: 0; font-size: 0.82rem; font-weight: 600; color: #6b5d55; }
+.places-map-legend li { margin: 0; display: flex; align-items: center; gap: 0.4rem; }
+.pm-dot { width: 14px; height: 14px; border-radius: 50%; display: inline-block; box-sizing: border-box; flex: none; }
+.pm-dot.lists { background: #2E7D32; border: 2px solid #fff; box-shadow: 0 0 0 1.5px #17441a; }
+.pm-dot.unconfirmed { background: #FACC15; border: 2px solid #fff; box-shadow: 0 0 0 1.5px #6b5200; }
+.pm-dot.wild { background: #2F7F86; border: 2px solid #fff; box-shadow: 0 0 0 1.5px #1b4d52; }
+.pm-dot.relative { width: 9px; height: 9px; background: #2E7D32; border: 1.5px solid #fff; box-shadow: 0 0 0 1px #17441a; margin: 0 2px; }
+.pm-dot.similar { width: 9px; height: 9px; background: #fff; border: 2px solid #6b6b6b; margin: 0 2px; }
+
+.places-map .maplibregl-popup-content { font-family: "Nunito", system-ui, sans-serif; font-size: 14px; line-height: 1.4; padding: 14px 16px 12px; border-radius: 12px; max-width: 260px; color: #2A2118; }
+.places-map .maplibregl-popup-content h4 { margin: 0 0 2px; font-family: "Fredoka", system-ui, sans-serif; font-size: 15px; padding-right: 22px; }
+.places-map .maplibregl-popup-content p { margin: 2px 0; font-size: 13px; }
+.places-map .maplibregl-popup-close-button { width: 32px; height: 32px; font-size: 22px; line-height: 1; }

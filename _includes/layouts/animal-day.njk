@@ -9,18 +9,6 @@ layout: layouts/post.njk
 {%- set d = animalDay -%}
 {%- set origin = d.origin or (dayOrigins[originSlug] if originSlug else null) -%}
 <style>
-  .wts-map { position: relative; height: 340px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(93, 64, 55, 0.25); background: #dfeaf2; margin: 1rem 0 0.4rem; }
-  .wts-map[data-loading]::after { content: "Loading map…"; position: absolute; inset: 0; display: grid; place-items: center; color: #6b5d55; font-weight: 700; background: #dfeaf2; z-index: 2; }
-  .wts-legend { list-style: none; display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; margin: 0 0 1rem; padding: 0; font-size: 0.82rem; font-weight: 600; color: #6b5d55; }
-  .wts-legend li { margin: 0; display: flex; align-items: center; gap: 0.4rem; }
-  .wts-dot { width: 14px; height: 14px; border-radius: 50%; display: inline-block; box-sizing: border-box; flex: none; }
-  .wts-dot.e { background: #2E7D32; border: 2px solid #fff; box-shadow: 0 0 0 1.5px #17441a; }
-  .wts-dot.r { width: 9px; height: 9px; background: #2E7D32; border: 1.5px solid #fff; box-shadow: 0 0 0 1px #17441a; margin: 0 2px; }
-  .wts-map .maplibregl-popup-content { font-family: "Nunito", system-ui, sans-serif; font-size: 14px; line-height: 1.4; padding: 14px 16px 12px; border-radius: 12px; max-width: 260px; color: #2A2118; }
-  .wts-map .maplibregl-popup-content h4 { margin: 0 0 2px; font-family: "Fredoka", system-ui, sans-serif; font-size: 15px; padding-right: 22px; }
-  .wts-map .maplibregl-popup-content p { margin: 2px 0; font-size: 13px; }
-  .wts-map .maplibregl-popup-close-button { width: 32px; height: 32px; font-size: 22px; line-height: 1; }
-  @media (max-width: 600px) { .wts-map { height: 280px; } }
   .ad-greeting { font-size: 1.05rem; }
   .ad-readaloud { color: var(--muted); font-style: italic; }
   .ad-origin { font-size: 0.9rem; font-weight: 600; background: rgba(255, 209, 102, 0.22); border-left: 4px solid #FFD166; border-radius: 0 10px 10px 0; padding: 0.55rem 0.8rem; }
@@ -65,15 +53,7 @@ layout: layouts/post.njk
 {% if w.intro %}{{ w.intro | md | safe }}{% endif %}
 {% if zooFinderLive and d.animalId and w.findLabel %}<a class="find-zoo-link" href="/zoos/?animal={{ d.animalId }}">{{ w.findLabel }} →</a>{% endif %}
 {%- set wtsPins = w | whereToSeePins %}
-{%- if wtsPins.length %}
-<link rel="stylesheet" href="/js/vendor/maplibre/maplibre-gl.css">
-<div class="wts-map" role="region" aria-label="Map of places to see {{ d.animalArticle }} {{ d.animalName }}" data-pins="{{ wtsPins | dump | escape }}"></div>
-<ul class="wts-legend">
-  <li><span class="wts-dot e" aria-hidden="true"></span>Place to see one</li>
-  {%- if w.cousin %}<li><span class="wts-dot r" aria-hidden="true"></span>Close relative</li>{% endif %}
-</ul>
-<script type="module" src="/js/where-to-see-map.js?v=3"></script>
-{%- endif %}
+{% placesMap wtsPins, { label: "Map of places to see " + (d.animalArticle or "") + " " + (d.animalName or "this animal") } %}
 {%- for group in w.groups %}
 {% if group.label %}<h3>{{ group.label }}</h3>{% endif %}
 <div class="zoo-grid">
