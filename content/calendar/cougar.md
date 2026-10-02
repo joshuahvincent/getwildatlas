@@ -24,7 +24,6 @@ animalDay:
       sourceUrl: "https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/national-cougar-day/"
   readAloudNote: "Read this one out loud together — it's short, and it's best with a big, soft purr between the facts."
   whereToSee:
-    wildPlaces: false   # zoo finder reserves hidden (marine sanctuary at the top), 2026-10-02
     heading: Where to see a cougar
     intro: "In the wild, cougars live in mountains, forests, and rocky country across North and South America, but they're so quiet and shy that very few people ever spot one. For the rest of us, these zoos have cougars you can visit."
     findLabel: Find the nearest zoo with cougars

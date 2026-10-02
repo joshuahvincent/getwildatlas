@@ -20,7 +20,6 @@ animalDay:
       sourceUrl: https://arkbiodiv.com/2020/06/20/history-of-world-camel-day-22-june/
   readAloudNote: "Read this one out loud together. It's more fun with a slow, swaying camel-walk voice."
   whereToSee:
-    wildPlaces: false   # zoo finder reserves hidden (domestic camels), 2026-10-02
     heading: Where to see a camel
     intro: "In the wild, a few wild camels live in the deserts of China and Mongolia, far from most visitors. Most camels in the world live with people, as helpers on farms and desert trails. For the rest of us, these places around the world have camels you can visit."
     findLabel: Find the nearest zoo with camels

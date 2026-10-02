@@ -14,7 +14,7 @@ animalDay:
   greeting: "**Happy World Tapir Day!** Every April 27, people celebrate all four kinds of tapir in the world — and the Malayan tapir is the only one that lives in Asia."
   readAloudNote: "Read this one out loud together — it's short, and it's more fun with a snuffly tapir-nose voice."
   whereToSee:
-    wildPlaces: false   # zoo finder reserves hidden (species: American tapirs, page is the Malayan tapir), 2026-10-02
+    wildPlaces: false   # zoo finder reserves hidden (species: American tapirs, page is the Malayan tapir), rechecked 2026-10-02 after zoo finder fixes
     heading: Where to see a Malayan tapir
     intro: "In the wild, Malayan tapirs live in rainforests in Malaysia, Thailand, Myanmar, and on the island of Sumatra. They're shy, mostly come out at night, and are very hard to spot — scientists usually find them with hidden cameras. For the rest of us, these zoos around the world have Malayan tapirs you can visit."
     findLabel: Find the nearest zoo with tapirs

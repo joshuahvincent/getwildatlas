@@ -14,7 +14,7 @@ animalDay:
   greeting: "**Happy World Lemur Day!** It falls on the last Friday of every October, just before Halloween. Time to meet one of the sunniest animals on Earth: the ring-tailed lemur."
   readAloudNote: "Read this one out loud together — it's short, and it's more fun with arms spread wide."
   whereToSee:
-    wildPlaces: false   # zoo finder reserves hidden (species: parks without ring-tailed lemurs), 2026-10-02
+    wildPlaces: false   # zoo finder reserves hidden (species: parks without ring-tailed lemurs), rechecked 2026-10-02 after zoo finder fixes
     heading: Where to see a ring-tailed lemur
     intro: "In the wild, ring-tailed lemurs live in only one place on Earth — the dry forests and spiny bush of southern Madagascar. Some families visit habituated wild troops on guided walks at community-run reserves like Anja, near Ambalavao. For the rest of us, these zoos around the world have ring-tailed lemurs you can visit."
     findLabel: Find the nearest zoo with ring-tailed lemurs

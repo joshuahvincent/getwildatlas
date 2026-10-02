@@ -14,7 +14,7 @@ animalDay:
   greeting: "**Happy National Bird Day!** Every January 5, people are reminded to help wild birds stay wild — and today we're meeting one of the most spectacular parrots on Earth, the hyacinth macaw."
   readAloudNote: "Read this one out loud together — it's short, and it's even better with a big, squawky parrot voice."
   whereToSee:
-    wildPlaces: false   # zoo finder reserves hidden (species: all macaws, page is the hyacinth macaw), 2026-10-02
+    wildPlaces: false   # zoo finder reserves hidden (species: other macaws, page is the hyacinth macaw), rechecked 2026-10-02 after zoo finder fixes
     heading: Where to see a hyacinth macaw
     intro: "In the wild, hyacinth macaws live mostly in the Pantanal wetlands of Brazil, where they nest in the hollows of big old trees on cattle ranches. For the rest of us, these zoos and bird parks around the world have hyacinth macaws you can visit."
     findLabel: Find the nearest zoo

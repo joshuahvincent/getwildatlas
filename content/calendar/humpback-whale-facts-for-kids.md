@@ -14,7 +14,6 @@ animalDay:
   greeting: "**This week's Wild Atlas pick: the humpback whale.** We missed World Whale Day last month (it was February 21), so here's our make-up celebration — and once you hear about a male humpback's song, you'll understand the wait."
   readAloudNote: "Read this one out loud together — it's short, and it's even better with a long, low singing voice."
   whereToSee:
-    wildPlaces: false   # zoo finder reserves hidden (inland refuges), 2026-10-02
     heading: Where to see a humpback whale
     intro: "In the wild, humpback whales gather in places like Hawai'i's warm bays and Alaska's icy fjords to feed, breed, and raise their calves. For the rest of us, no zoo or aquarium anywhere keeps a humpback whale — they're much too big, and they swim across whole oceans. The only way to see a real one is from a boat or a beach, in places where whales visit every year. Most of us will meet a humpback through photos, videos, and stories like this one, and that's a real way to get to know them too."
     groups:

@@ -14,7 +14,6 @@ animalDay:
   greeting: "**Happy World Oceans Day!** Every June 8, people everywhere celebrate the ocean and everything that lives in it — and today, we're meeting an orca as our ambassador for the day."
   readAloudNote: "Read this one out loud together — it's short, and it's even better with a clicking, splashing voice."
   whereToSee:
-    wildPlaces: false   # zoo finder reserves hidden (inland refuges), 2026-10-02
     heading: Where to see an orca
     intro: "In the wild, orcas swim in every ocean on Earth and need a lot of room to roam — the best way to see one is from the shore or a boat, in a few special places where orca families visit. For the rest of us, Wild Atlas has an orca ready to explore anytime, with narrated facts and the full size comparison against a 5-year-old."
     groups:

@@ -24,7 +24,6 @@ animalDay:
       sourceUrl: https://defenders.org/blog/2023/10/howling-history-of-wolf-awareness-week
   readAloudNote: "Read this one out loud together. Save your best howl for the end."
   whereToSee:
-    wildPlaces: false   # zoo finder reserves hidden (species: Canis lupus incl. dingo records), 2026-10-02
     heading: Where to see an Arctic wolf
     intro: "In the wild, Arctic wolves live far up north in Canada and Greenland, where very few people go. For the rest of us, these zoos and parks have Arctic wolves you can visit."
     findLabel: Find the nearest zoo with Arctic wolves

@@ -20,7 +20,7 @@ animalDay:
       sourceUrl: https://www.awarenessdays.com/awareness-days-calendar/shark-awareness-day/
   readAloudNote: "Read this one out loud together — it's more fun with a slow, deep, ocean-narrator voice."
   whereToSee:
-    wildPlaces: false   # zoo finder reserves hidden (inland parks), 2026-10-02
+    wildPlaces: false   # zoo finder reserves hidden (range: tropical North Queensland parks), rechecked 2026-10-02 after zoo finder fixes
     heading: Where to meet a great white shark
     intro: "In the wild, great whites swim in cool coastal oceans around the world, and they're best left to scientists and trained guides. For the rest of us: great whites don't do well in aquariums, so no aquarium keeps one long-term. You can still meet other amazing sharks at an aquarium near you."
     findLabel: Find the nearest aquarium with sharks

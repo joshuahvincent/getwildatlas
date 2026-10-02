@@ -14,7 +14,6 @@ animalDay:
   greeting: "**Happy International Day of the Seal** (also called International Seal Day)! Every March 22, people celebrate seals — and right about now, far out on the frozen sea near Canada, fluffy white harp seal pups are resting on the ice."
   readAloudNote: "Read this one out loud together — it's short, and it's even better with your best seal-bark voice."
   whereToSee:
-    wildPlaces: false   # zoo finder reserves hidden (education centre, not a reserve), 2026-10-02
     heading: Where to see a harp seal
     intro: "In the wild, harp seals live in the icy North Atlantic and Arctic Ocean, and every late winter, mothers give birth to fluffy white pups on the floating sea ice near places like Québec's Magdalen Islands. For the rest of us, harp seals are very rare in aquariums — only a handful of places in the world care for one."
     findLabel: Find the nearest zoo or aquarium
