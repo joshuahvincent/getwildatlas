@@ -81,7 +81,7 @@ eleventyExcludeFromCollections: true
   .cal-card .status { font-size: 0.75rem; }
   .today-pill { font-family: 'Fredoka', sans-serif; font-size: 0.68rem; background: var(--sunny); color: var(--bark); border-radius: 999px; padding: 0 7px; margin-left: 4px; vertical-align: 1px; }
   @media (prefers-reduced-motion: reduce) { a.cal-cell.live img, .cal-card { transition: none; } a.cal-cell.live:hover img, a.cal-card:hover { transform: none; } }
-  .cal-key { font-size: 0.84rem; font-weight: 600; color: var(--muted); margin: 0.9rem 0 1.4rem; line-height: 1.8; }
+  .cal-key { font-size: 0.84rem; font-weight: 600; color: var(--muted); margin: 1rem 0 1.4rem; line-height: 1.8; }
   .k-feat { display: inline-block; width: 12px; height: 12px; border-radius: 3px; background: var(--bark); vertical-align: -1px; }
   .k-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #7FB89A; vertical-align: 0; }
   .bigcal { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 5px; background: var(--card); border: 2px solid var(--bark); border-radius: 14px; padding: 8px; box-shadow: 0 6px 16px rgba(93, 64, 55, 0.12); }
@@ -160,7 +160,6 @@ eleventyExcludeFromCollections: true
   <p>Animal lovers around the world already celebrate these days — we didn't make them up (see <a class="dates-link" href="/calendar/about/">date origins</a>). For each one, we've made a short read-aloud story to share with your kids.</p>
 </header>
 
-<p class="cal-key"><span class="k-feat"></span> Featured animal — tap for its page &nbsp;·&nbsp; <span class="k-dot"></span> Also celebrated that day &nbsp;·&nbsp; <span class="pick-badge">Wild Atlas Spotlight</span> a week with no official animal day, so we chose a favourite</p>
 
 <nav class="month-strip" aria-label="Choose a month">
   {%- for m in months %}
@@ -214,6 +213,7 @@ eleventyExcludeFromCollections: true
   </ul>
 </section>
 {%- endfor %}
+<p class="cal-key"><span class="k-feat"></span> Featured animal — tap for its page &nbsp;·&nbsp; <span class="k-dot"></span> Also celebrated that day &nbsp;·&nbsp; <span class="pick-badge">Wild Atlas Spotlight</span> a week with no official animal day, so we chose a favourite</p>
 <script>
 // One month at a time: current month by default, #m-YYYY-MM selects another.
 // Without JS every month simply shows in a long list.
