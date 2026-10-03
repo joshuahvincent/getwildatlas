@@ -39,6 +39,7 @@ animalDay:
   source:
     label: NOAA Fisheries
     url: https://www.fisheries.noaa.gov/species/harp-seal
+blogStatus: scheduled
 ---
 
 A baby harp seal is born on floating ice in a fluffy white coat. In less than two weeks, drinking its mom's super-rich milk, it grows to three times its birth weight!

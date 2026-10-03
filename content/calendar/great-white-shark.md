@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to meet a great white shark
     intro: "In the wild, great whites swim in cool coastal oceans around the world, and they're best left to scientists and trained guides. For the rest of us: great whites don't do well in aquariums, so no aquarium keeps one long-term. You can still meet other amazing sharks at an aquarium near you."
-    findLabel: Find the nearest aquarium with sharks
+    findLabel: Find the nearest places with sharks
     note: "Monterey Bay Aquarium in California has shown young great whites for a few months at a time, and each one was returned to the ocean. None is on display right now — check the aquarium's own website before you visit."
   grownups: |
     Great white sharks are listed as Vulnerable on the IUCN Red List. Their numbers have dropped mostly because of fishing — they're often caught by accident — and because they grow slowly and have few pups, so populations recover slowly.

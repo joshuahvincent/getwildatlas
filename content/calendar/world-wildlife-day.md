@@ -16,7 +16,7 @@ animalDay:
   whereToSee:
     heading: Where to see a lion
     intro: "In the wild, lions live on the grassy plains and savanna of sub-Saharan Africa (plus one small forest in India), where safari-goers can watch them from a vehicle with a guide. For the rest of us, these zoos around the world have lions you can visit."
-    findLabel: Find the nearest zoo with lions
+    findLabel: Find the nearest places with lions
     groups:
       - label: North America
         places:
@@ -71,6 +71,7 @@ animalDay:
   source:
     label: San Diego Zoo Wildlife Alliance
     url: https://animals.sandiegozoo.org/animals/lion
+blogStatus: scheduled
 ---
 
 A lion's roar is so loud it can be heard up to 8 kilometres away.

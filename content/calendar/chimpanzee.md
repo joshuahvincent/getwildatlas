@@ -26,7 +26,7 @@ animalDay:
   whereToSee:
     heading: Where to see a chimpanzee
     intro: "In the wild, chimpanzees live in forests and woodlands across Africa. For the rest of us, these zoos and sanctuaries around the world care for chimpanzees."
-    findLabel: Find the nearest zoo with chimpanzees
+    findLabel: Find the nearest places with chimpanzees
     groups:
       - label: North America
         places:

@@ -26,7 +26,7 @@ animalDay:
   whereToSee:
     heading: Where to see a poison dart frog
     intro: "In the wild, poison dart frogs live on rainforest floors in Central and South America. For the rest of us, these zoos have poison dart frogs you can visit."
-    findLabel: Find the nearest zoo with poison dart frogs
+    findLabel: Find the nearest places with poison dart frogs
     groups:
       - label: North America
         places:

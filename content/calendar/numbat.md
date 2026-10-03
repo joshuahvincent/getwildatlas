@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see a numbat
     intro: "In the wild, numbats live in a few small patches of eucalyptus woodland in Western Australia. For the rest of us: numbats are very rare in zoos, and the one place we could confirm you can visit them is Perth Zoo in Western Australia."
-    findLabel: Find the nearest zoo with numbats
+    findLabel: Find the nearest places with numbats
     groups:
       - label: Western Australia
         places:

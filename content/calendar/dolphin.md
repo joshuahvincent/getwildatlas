@@ -26,7 +26,7 @@ animalDay:
   whereToSee:
     heading: Where to see a dolphin
     intro: "In the wild, dolphins live in oceans and seas all around the world, and some kinds even live in rivers. For the rest of us, these zoos, aquariums, and marine centers care for bottlenose dolphins you can visit."
-    findLabel: Find the nearest zoo or aquarium with dolphins
+    findLabel: Find the nearest places with dolphins
     groups:
       - label: North America
         places:

@@ -16,7 +16,7 @@ animalDay:
   whereToSee:
     heading: Where to see a whale shark
     intro: "Whale sharks swim in warm oceans all around the world, and at a few special places — like Ningaloo Reef in Australia and Donsol in the Philippines — they gather close to shore each year, where licensed guides help visitors watch from a safe distance and never touch. For the rest of us, these aquariums have whale sharks you can visit all year round."
-    findLabel: Find the nearest aquarium with a whale shark
+    findLabel: Find the nearest places with whale sharks
     groups:
       - label: North America
         places:
@@ -50,6 +50,7 @@ animalDay:
   source:
     label: Georgia Aquarium
     url: https://www.georgiaaquarium.org/animal/whale-shark/
+blogStatus: scheduled
 ---
 
 The biggest fish in the whole ocean is as long as a school bus — but its throat is only about as wide as a coin, so it eats mostly teeny food.

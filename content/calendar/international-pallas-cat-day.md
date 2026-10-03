@@ -16,7 +16,7 @@ animalDay:
   whereToSee:
     heading: Where to see a Pallas's cat
     intro: "In the wild, Pallas's cats live in the cold, windy, rocky grasslands of Central Asia, in places like Mongolia and China. They're so shy and so well camouflaged that even scientists rarely spot one. For the rest of us, these zoos care for Pallas's cats — look carefully, because they're champion hiders!"
-    findLabel: Find the nearest zoo with Pallas's cats
+    findLabel: Find the nearest places with Pallas's cats
     groups:
       - label: North America
         places:
@@ -58,6 +58,7 @@ animalDay:
   source:
     label: the IUCN Red List assessment for the Pallas's cat
     url: https://doi.org/10.2305/IUCN.UK.2020-2.RLTS.T15640A180145377.en
+blogStatus: scheduled
 ---
 
 Meet the Pallas's cat: a wild cat about the size of a pet cat, with fur so thick it looks much bigger, and a flat, round face that makes it look grumpy, even when it isn't!

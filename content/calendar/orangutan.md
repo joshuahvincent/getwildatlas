@@ -26,7 +26,7 @@ animalDay:
   whereToSee:
     heading: Where to see an orangutan
     intro: "In the wild, orangutans live high in the rainforest trees of Borneo and Sumatra, two big islands in Southeast Asia. For the rest of us, these zoos around the world have orangutans you can visit."
-    findLabel: Find the nearest zoo with orangutans
+    findLabel: Find the nearest places with orangutans
     groups:
       - label: North America
         places:

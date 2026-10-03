@@ -16,7 +16,7 @@ animalDay:
   whereToSee:
     heading: Where to see a bonobo
     intro: "In the wild, bonobos live only in the rainforests of the Democratic Republic of the Congo, and very few people ever get to see one there. For the rest of us, these zoos around the world have bonobos you can visit, and one very special sanctuary in Congo looks after bonobos who need a new family."
-    findLabel: Find the nearest zoo with bonobos
+    findLabel: Find the nearest places with bonobos
     groups:
       - label: North America
         places:
@@ -64,6 +64,7 @@ animalDay:
   source:
     label: San Diego Zoo Wildlife Alliance
     url: https://animals.sandiegozoo.org/animals/bonobo
+blogStatus: scheduled
 ---
 
 Deep in the rainforests of the Democratic Republic of the Congo lives an ape that laughs when it's tickled.

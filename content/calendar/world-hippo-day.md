@@ -5,6 +5,7 @@ author: Wild Atlas
 excerpt: "Happy World Hippo Day! Meet the hippo — it doesn't swim, it makes its own sunscreen, and it's related to whales. A read-aloud, plus where to meet a real hippo."
 coverImage: /assets/blog/world-hippo-day/hippo-cover.jpg
 tags: [animals, conservation, family]
+blogStatus: scheduled
 animalDay:
   dayName: World Hippo Day
   animalId: hippopotamus
@@ -16,7 +17,7 @@ animalDay:
   whereToSee:
     heading: Where to see a hippo
     intro: "In the wild, hippos live in rivers and lakes in Africa, where lucky safari-goers can watch them. For the rest of us, these zoos around the world have hippos you can visit."
-    findLabel: Find the nearest zoo with hippos
+    findLabel: Find the nearest places with hippos
     groups:
       - label: North America
         places:

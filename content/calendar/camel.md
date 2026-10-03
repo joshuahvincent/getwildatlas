@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see a camel
     intro: "In the wild, a few wild camels live in the deserts of China and Mongolia, far from most visitors. Most camels in the world live with people, as helpers on farms and desert trails. For the rest of us, these places around the world have camels you can visit."
-    findLabel: Find the nearest zoo with camels
+    findLabel: Find the nearest places with camels
     groups:
       - label: North America
         places:

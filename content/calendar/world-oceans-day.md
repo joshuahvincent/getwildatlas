@@ -21,20 +21,24 @@ animalDay:
         places:
           - title: Whale Watch Park
             place: Lime Kiln Point State Park — San Juan Island, Washington
+            wild: true
             blurb: On this island, you can watch for orcas right from the rocky shore, next to an old lighthouse!
             url: https://parks.wa.gov/find-parks/state-parks/lime-kiln-point-state-park
           - title: A bay just for orcas
             place: Robson Bight (Michael Bigg) Ecological Reserve — Johnstone Strait, British Columbia
+            wild: true
             blurb: In Canada there's a special bay where orcas rub on smooth pebble beaches. Boats stay outside so the orcas can have it to themselves.
             url: https://bcparks.ca/robson-bight-michael-bigg-ecological-reserve/
           - title: Glaciers and orcas
             place: Kenai Fjords National Park — Alaska
+            wild: true
             blurb: In Alaska's icy fjords, orcas swim past glaciers, along with sea otters and humpback whales!
             url: https://www.nps.gov/kefj/learn/nature/animals.htm
       - label: Around the world
         places:
           - title: Orcas under the northern lights
             place: Fjords near Tromsø — Northern Norway
+            wild: true
             blurb: In the far north of Norway, orca families swim into the fjords in winter to chase herring, sometimes under the northern lights!
             url: https://www.visittromso.no/whale-watching
     note: Orca sightings depend on the season and can never be promised — check the park's own website before you visit.
@@ -53,6 +57,7 @@ animalDay:
   source:
     label: NOAA Fisheries
     url: https://www.fisheries.noaa.gov/species/killer-whale
+blogStatus: scheduled
 ---
 
 Orcas are the biggest dolphins in the world, and every orca family has its own special calls that only they use!
