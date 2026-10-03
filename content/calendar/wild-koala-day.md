@@ -54,6 +54,7 @@ animalDay:
   source:
     label: the Australian Museum
     url: https://australian.museum/learn/animals/mammals/koala/
+blogStatus: scheduled
 ---
 
 A brand-new koala baby is about the size of a jellybean — and it climbs into its mom's pouch all by itself!

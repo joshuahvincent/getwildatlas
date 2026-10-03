@@ -32,6 +32,7 @@ animalDay:
             url: https://www.montereybayaquarium.org/animals/animals-a-to-z/laysan-albatross
           - title: Nesting albatrosses
             place: Kīlauea Point National Wildlife Refuge — Kauaʻi, Hawaiʻi
+            wild: true
             blurb: Laysan albatrosses nest on the hillside here in winter, and you can watch them glide past the cliffs.
             url: https://www.fws.gov/refuge/kilauea-point
       - label: Around the world

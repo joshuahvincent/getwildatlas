@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see a hummingbird
     intro: "In the wild, hummingbirds live only in the Americas, from Alaska all the way down to Chile, wherever there are lots of flowers. For the rest of us: a few places keep hummingbirds in big walk-through gardens, and a flower pot by a window might bring a wild visitor, too."
-    findLabel: Find the nearest zoo with hummingbirds
+    findLabel: Find the nearest places with hummingbirds
     groups:
       - label: North America
         places:

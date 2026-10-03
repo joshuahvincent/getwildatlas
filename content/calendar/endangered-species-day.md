@@ -14,6 +14,7 @@ animalDay:
   greeting: "**Happy Endangered Species Day!** Every third Friday in May, people take a moment for animals that need our help — and today, we're taking that moment for the black rhino."
   readAloudNote: "Read this one out loud together — it's short, and it's even better in a big, huffy rhino voice."
   whereToSee:
+    wildAnimal: black_rhinoceros   # species-specific reserves (zoo finder hidden doc)
     heading: Where to see a black rhino
     intro: "In the wild, black rhinos live in the bushy grasslands and savanna of eastern and southern Africa — but they're shy and hide in thick bush, so even on a guided safari they're much harder to spot than elephants or zebras. For the rest of us, a number of zoos around the world care for black rhinos, and today is a good day to go say hello to one."
     findLabel: Find a zoo near you
@@ -58,6 +59,7 @@ animalDay:
   source:
     label: Save the Rhino
     url: https://www.savetherhino.org/rhino-info/rhino-species/black-rhino/
+blogStatus: scheduled
 ---
 
 A black rhino's top lip is pointy and bendy — it works almost like a finger, reaching out to grab its favorite leaves and twigs off a bush.

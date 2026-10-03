@@ -16,7 +16,7 @@ animalDay:
   whereToSee:
     heading: Where to see a three-toed sloth
     intro: "In the wild, three-toed sloths live high in the rainforest canopy of Central and South America — in Costa Rica and Panama, a guide can sometimes spot one curled up in a treetop, to look at, not touch. For the rest of us, three-toed sloths are hard to keep outside the rainforest, so almost no zoos have them — most sloths you'll meet at a zoo are two-toed sloths, close cousins, but a different kind. These rescue and rehabilitation centers in Costa Rica care for sloths and return them to the wild — visits are guided, and visitors never hold the sloths."
-    findLabel: Find the nearest zoo with sloths
+    findLabel: Find the nearest places with sloths
     groups:
       - label: Costa Rica
         places:
@@ -44,6 +44,7 @@ animalDay:
   source:
     label: IUCN SSC Anteater, Sloth & Armadillo Specialist Group
     url: https://xenarthrans.org/species/sloths/brown-throated-three-toed-sloth/
+blogStatus: scheduled
 ---
 
 A sloth's fur is like a tiny garden — green algae grows right in it, and little moths live there too!

@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see a cassowary
     intro: "In the wild, cassowaries live in the rainforests of northern Australia and New Guinea, where they stay hidden among the trees. For the rest of us, a few zoos around the world have cassowaries you can visit."
-    findLabel: Find the nearest zoo with cassowaries
+    findLabel: Find the nearest places with cassowaries
     groups:
       - label: North America
         places:

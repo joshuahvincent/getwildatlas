@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see a king cobra
     intro: "In the wild, king cobras live in the forests and swamps of South and Southeast Asia, where they keep out of sight. For the rest of us, these zoos have king cobras you can visit safely, from behind glass."
-    findLabel: Find the nearest zoo with king cobras
+    findLabel: Find the nearest places with king cobras
     groups:
       - label: North America
         places:

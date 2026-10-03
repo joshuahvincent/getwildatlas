@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see a grizzly bear
     intro: "In the wild, grizzly bears live in the forests, mountains, and river valleys of western North America. For the rest of us, these accredited zoos and sanctuaries have grizzlies you can visit."
-    findLabel: Find the nearest zoo with grizzly bears
+    findLabel: Find the nearest places with grizzly bears
     groups:
       - label: North America
         places:

@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see a hyena
     intro: "In the wild, spotted hyenas live on the grasslands and savannas of Africa south of the Sahara, where lucky safari-goers can hear them at dusk. For the rest of us, these zoos around the world have spotted hyenas you can visit."
-    findLabel: Find the nearest zoo with hyenas
+    findLabel: Find the nearest places with hyenas
     groups:
       - label: North America
         places:

@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see a raccoon
     intro: "In the wild, raccoons live in forests, wetlands, parks, and even towns across North America. For the rest of us, these zoos have raccoons you can visit."
-    findLabel: Find the nearest zoo with raccoons
+    findLabel: Find the nearest places with raccoons
     groups:
       - label: North America
         places:

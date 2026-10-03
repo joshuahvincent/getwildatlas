@@ -16,7 +16,7 @@ animalDay:
   whereToSee:
     heading: Where to see a cheetah
     intro: "In the wild, cheetahs live mostly in the open grasslands of eastern and southern Africa, where families on safari in places like Kenya, Tanzania, Namibia and Botswana can sometimes spot one. A very few still live in Iran. For the rest of us, these zoos around the world have cheetahs you can visit."
-    findLabel: Find the nearest zoo with cheetahs
+    findLabel: Find the nearest places with cheetahs
     groups:
       - label: North America
         places:
@@ -62,6 +62,7 @@ animalDay:
   source:
     label: Cheetah Conservation Fund
     url: https://cheetah.org/about/what-we-do/international-cheetah-day/
+blogStatus: scheduled
 ---
 
 The fastest runner on land can't roar — it chirps like a bird and purrs like a house cat.

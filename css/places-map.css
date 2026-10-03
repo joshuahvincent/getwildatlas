@@ -1,0 +1,44 @@
+/* General-purpose places map: see js/places-map.js and docs/places-map.md.
+   Colours match the zoo finder (css/zoos.css). */
+.places-map { position: relative; height: var(--places-map-h, 340px); border-radius: 16px; overflow: hidden; border: 1px solid rgba(93, 64, 55, 0.25); background: #dfeaf2; margin: 1rem 0 0.4rem; }
+.places-map[data-loading]::after { content: "Loading map…"; position: absolute; inset: 0; display: grid; place-items: center; color: #6b5d55; font-weight: 700; background: #dfeaf2; z-index: 2; }
+@media (max-width: 600px) { .places-map { height: var(--places-map-h-phone, 280px); } }
+
+.places-map-legend { list-style: none; display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; margin: 0 0 1rem; padding: 0; font-size: 0.82rem; font-weight: 600; color: #6b5d55; }
+.places-map-legend li { margin: 0; display: flex; align-items: center; gap: 0.4rem; }
+.pm-dot { width: 14px; height: 14px; border-radius: 50%; display: inline-block; box-sizing: border-box; flex: none; }
+.pm-dot.lists { background: #2E7D32; border: 2px solid #fff; box-shadow: 0 0 0 1.5px #17441a; }
+.pm-dot.unconfirmed { background: #FACC15; border: 2px solid #fff; box-shadow: 0 0 0 1.5px #6b5200; }
+.pm-dot.wild { background: #0E7C86; border: 2px solid #fff; box-shadow: 0 0 0 1.5px #08454A; }
+.pm-dot.relative { width: 9px; height: 9px; background: #2E7D32; border: 1.5px solid #fff; box-shadow: 0 0 0 1px #17441a; margin: 0 2px; }
+.pm-dot.similar { width: 9px; height: 9px; background: #fff; border: 2px solid #6b6b6b; margin: 0 2px; }
+
+.places-map .maplibregl-popup-content { font-family: "Nunito", system-ui, sans-serif; font-size: 14px; line-height: 1.4; padding: 14px 16px 12px; border-radius: 12px; max-width: 260px; color: #2A2118; }
+.places-map .maplibregl-popup-content h4 { margin: 0 0 2px; font-family: "Fredoka", system-ui, sans-serif; font-size: 15px; padding-right: 22px; }
+.places-map .maplibregl-popup-content p { margin: 2px 0; font-size: 13px; }
+.places-map .maplibregl-popup-content .pm-caveat { font-size: 12px; color: #6b5d55; font-style: italic; }
+.places-map .maplibregl-popup-close-button { width: 32px; height: 32px; font-size: 22px; line-height: 1; }
+
+/* Linked cards (data-cards): collapsed behind the map; the tapped pin's card shows in .places-map-detail. */
+.places-map-cards.pm-collapsed { display: none; }
+.places-map-detail { position: relative; margin: 0 0 0.8rem; }
+.places-map-detail > :not(.places-map-detail-close) { margin: 0; box-shadow: 0 6px 18px rgba(93, 64, 55, 0.14); border: 1.5px solid rgba(93, 64, 55, 0.25); }
+.places-map-detail-close { position: absolute; top: 6px; right: 8px; z-index: 1; width: 36px; height: 36px; border: 0; border-radius: 50%; background: transparent; color: #5D4037; font-size: 24px; line-height: 1; cursor: pointer; }
+.places-map-detail-close:hover, .places-map-detail-close:focus-visible { background: rgba(93, 64, 55, 0.1); }
+.places-map-toggle { display: inline-block; margin: 0 0 1rem; padding: 0.45rem 1rem; border: 1.5px solid #5D4037; border-radius: 999px; background: #fff; color: #5D4037; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.92rem; cursor: pointer; }
+.places-map-toggle:hover, .places-map-toggle:focus-visible { background: #FFF4CC; }
+
+/* Explore link (opts.link): bottom-right corner of the map; attribution sits bottom-left. */
+.places-map-explore { position: absolute; right: 10px; bottom: 10px; z-index: 1; max-width: calc(100% - 20px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; box-sizing: border-box; padding: 0.4rem 0.9rem; border: 1.5px solid #5D4037; border-radius: 999px; background: #fff; color: #5D4037; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.88rem; text-decoration: none; box-shadow: 0 2px 8px rgba(93, 64, 55, 0.18); }
+.places-map-explore:hover, .places-map-explore:focus-visible { background: #FFF4CC; }
+@media (max-width: 600px) { .places-map-explore { font-size: 0.78rem; padding: 0.3rem 0.7rem; } }
+/* Pin popups sit above the explore link (it's z-index 1). */
+.places-map .maplibregl-popup { z-index: 2; }
+
+/* List mode (data-cards-mode="list", the default): "See it in the list ↓" in a pin's popup
+   scrolls to its card and flashes this highlight. */
+.places-map .pm-jump { padding: 0; border: 0; background: none; color: #5D4037; font: inherit; font-weight: 800; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+[data-pin-key].pm-highlight { animation: pm-flash 2.4s ease-out; }
+@keyframes pm-flash { 0%, 40% { box-shadow: 0 0 0 4px #FFD166, 0 6px 18px rgba(93, 64, 55, 0.18); } 100% { box-shadow: 0 0 0 0 rgba(255, 209, 102, 0); } }
+@media (prefers-reduced-motion: reduce) { [data-pin-key].pm-highlight { animation: none; outline: 4px solid #FFD166; outline-offset: 2px; } }
+.places-map-explore.pm-below { position: static; display: inline-block; max-width: 100%; margin: 0 0 0.8rem; white-space: normal; }

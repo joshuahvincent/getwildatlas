@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see a gorilla
     intro: "In the wild, gorillas live in the rainforests and mountain forests of central Africa. For the rest of us, these accredited zoos have gorilla families you can visit."
-    findLabel: Find the nearest zoo with gorillas
+    findLabel: Find the nearest places with gorillas
     groups:
       - label: North America
         places:

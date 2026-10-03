@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see a gibbon
     intro: "In the wild, gibbons live high in the rainforest treetops of Southeast Asia, where they're very hard to spot. For the rest of us, these places have gibbons you can visit."
-    findLabel: Find the nearest zoo with gibbons
+    findLabel: Find the nearest places with gibbons
     groups:
       - label: North America
         places:

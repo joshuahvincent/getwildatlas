@@ -6,6 +6,7 @@ excerpt: "Happy Monkey Day! Meet the golden snub-nosed monkey — a golden, blue
 coverImage: /assets/blog/monkey-day/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
+  animalId: golden_snub_nosed_monkey
   dayName: Monkey Day
   animalName: golden snub-nosed monkey
   animalArticle: a
@@ -40,6 +41,7 @@ animalDay:
   source:
     label: the Wisconsin Primate Info Net fact sheet
     url: https://primate.wisc.edu/primate-info-net/pin-factsheets/pin-factsheet-golden-snub-nosed-monkey/
+blogStatus: scheduled
 ---
 
 High in China's snowy mountains lives a monkey with golden fur, a blue face and a tiny turned-up nose — and when it's cold, the whole family snuggles up together to stay warm.

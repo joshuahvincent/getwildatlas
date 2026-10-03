@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see an African wild dog
     intro: "In the wild, African wild dogs roam the grasslands and woodlands of Africa, south of the Sahara. For the rest of us, these zoos and wildlife parks have painted dog packs you can visit."
-    findLabel: Find the nearest zoo with African wild dogs
+    findLabel: Find the nearest places with African wild dogs
     groups:
       - label: North America
         places:

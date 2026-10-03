@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see a leopard
     intro: "In the wild, leopards live in forests, grasslands, and mountains across Africa and Asia, and they're very good at staying hidden. For the rest of us, these zoos have leopards you can visit."
-    findLabel: Find the nearest zoo with leopards
+    findLabel: Find the nearest places with leopards
     groups:
       - label: North America
         places:

@@ -66,6 +66,7 @@ animalDay:
   source:
     label: Polar Bears International
     url: https://polarbearsinternational.org/news-media/events/international-polar-bear-day/international-polar-bear-day-toolkit/
+blogStatus: scheduled
 ---
 
 A polar bear's fur isn't really white. Each hair is see-through — and underneath all that fluff, its skin is black!

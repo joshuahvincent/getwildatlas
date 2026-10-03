@@ -203,9 +203,37 @@ module.exports = function (eleventyConfig) {
     const next = all(0).filter((e) => e.iso > t0).sort((a, b) => (a.iso < b.iso ? -1 : a.iso > b.iso ? 1 : rank(a, b)));
     return { latest: past[0] || null, next: next[0] || null };
   });
-  // Flip to true when /zoos/ (getwildatlas#38) ships — shows "Find the nearest zoo" buttons.
-  eleventyConfig.addGlobalData("zooFinderLive", false);
+  // /zoos/ (getwildatlas#38) shipped 2026-10-03 (PR #44) — shows "Find the nearest places" buttons.
+  eleventyConfig.addGlobalData("zooFinderLive", true);
   eleventyConfig.addGlobalData("todayIso", () => new Date().toISOString().slice(0, 10));
+  // Places map (js/places-map.js, docs/places-map.md): general-purpose map with the zoo finder's look.
+  const placesLib = require("./lib/place-pins.js");
+  eleventyConfig.addFilter("placePins", (list, tier) => placesLib.placePins(list, tier));
+  eleventyConfig.addFilter("whereToSeePins", placesLib.whereToSeePins);
+  eleventyConfig.addFilter("pinKey", placesLib.pinKey);
+  // {% placesMap pins, { label, src, format, types, fit, maxZoom, legend, height, cards, cardsMode, animal, wildMax, link } %}
+  // link: { href, text } adds an explore link in the map's bottom-right corner.
+  // pins: an array from placePins/whereToSeePins, or null when using `src` (e.g. all zoo-finder places).
+  eleventyConfig.addShortcode("placesMap", (pins, opts = {}) => {
+    const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    const attrs = [`class="places-map"`, `role="region"`, `aria-label="${esc(opts.label || "Map of places")}"`];
+    if (pins && pins.length) attrs.push(`data-pins="${esc(JSON.stringify(pins))}"`);
+    if (opts.src) attrs.push(`data-src="${esc(opts.src)}"`);
+    if (opts.format) attrs.push(`data-format="${esc(opts.format)}"`);
+    if (opts.types) attrs.push(`data-types="${esc(opts.types)}"`);
+    if (opts.fit) attrs.push(`data-fit="${esc(opts.fit)}"`);
+    if (opts.maxZoom) attrs.push(`data-max-zoom="${esc(opts.maxZoom)}"`);
+    if (opts.legend) attrs.push(`data-legend="${esc(typeof opts.legend === "string" ? opts.legend : JSON.stringify(opts.legend))}"`);
+    if (opts.height) attrs.push(`style="--places-map-h: ${esc(opts.height)}"`);
+    if (opts.cards) attrs.push(`data-cards="${esc(opts.cards)}"`);
+    if (opts.cardsMode) attrs.push(`data-cards-mode="${esc(opts.cardsMode)}"`);
+    if (opts.animal) attrs.push(`data-animal="${esc(opts.animal)}"`);
+    if (opts.wildMax) attrs.push(`data-wild-max="${esc(opts.wildMax)}"`);
+    if (!(pins && pins.length) && !opts.src) return "";
+    const link = opts.link && opts.link.href ? `<a class="places-map-explore" href="${esc(opts.link.href)}">${esc(opts.link.text || "Explore the map")} →</a>` : "";
+    return `<link rel="stylesheet" href="/js/vendor/maplibre/maplibre-gl.css"><link rel="stylesheet" href="/css/places-map.css?v=8">` +
+      `<div ${attrs.join(" ")}>${link}</div><script type="module" src="/js/places-map.js?v=13"></script>`;
+  });
   eleventyConfig.addFilter("isoDay", (d) => new Date(d).toISOString().slice(0, 10));
   const { RenderPlugin } = require("@11ty/eleventy");
   eleventyConfig.addPlugin(RenderPlugin);

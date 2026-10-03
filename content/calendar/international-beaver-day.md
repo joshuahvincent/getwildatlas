@@ -14,6 +14,7 @@ animalDay:
   greeting: "**Happy International Beaver Day!** Every April 7, people celebrate all beavers everywhere — the date honors Dorothy Richards, a researcher who spent decades studying beavers and became known as the \"Beaver Woman.\" There are two kinds of beaver in the world, and today we're visiting one of them: the Eurasian beaver."
   readAloudNote: "Read this one out loud together — it's short, and it's even better with a big SMACK sound effect."
   whereToSee:
+    wildAnimal: eurasian_beaver   # species-specific reserves; UNESCO cultural sites removed upstream 2026-10-02
     heading: Where to see a Eurasian beaver
     intro: "In the wild, Eurasian beavers live along rivers and lakes all the way from Britain to Mongolia. They wake up at dusk, so the best way to spot one is to go quietly with a grown-up around sunset and watch from the riverbank for chewed-up tree stumps. For the rest of us, here's where to meet one in person — mostly in Europe, since North American zoos care for its cousin instead."
     findLabel: Find a zoo near you
@@ -39,11 +40,13 @@ animalDay:
         places:
           - title: Scotland's first wild beavers
             place: Knapdale Forest, Argyll — Scotland
+            wild: true
             blurb: Scotland's first official wild beavers were set free here in 2009. Walk the forest trails and look for signs of beavers, like chewed stumps, dams, and lodges.
             url: https://forestryandland.gov.scot/blog/meet-the-beavers-of-knapdale
             linkText: Learn about Knapdale's beavers
           - title: Beavers that came back on their own
             place: River Otter, East Devon — England
+            wild: true
             blurb: Wild beavers showed up along this river on their own, and they've built dam after dam ever since. It's a river to read about rather than a spot to visit.
             url: https://www.gov.uk/government/news/five-year-beaver-reintroduction-trial-successfully-completed
             linkText: Read the River Otter story
@@ -68,6 +71,7 @@ animalDay:
   source:
     label: the IUCN Red List
     url: https://www.iucnredlist.org/species/4007/197499749
+blogStatus: scheduled
 ---
 
 Beavers have bright orange teeth that never stop growing — and the front door to their home is underwater!

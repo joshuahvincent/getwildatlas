@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to meet a donkey
     intro: "In the wild, the donkey's cousins, the African wild asses, live in the hot, dry deserts of the Horn of Africa. For the rest of us: donkeys live on farms and in animal sanctuaries all over the world, and some sanctuaries welcome visitors."
-    findLabel: Find the nearest place with donkeys
+    findLabel: Find the nearest places with donkeys
     groups:
       - label: North America
         places:
