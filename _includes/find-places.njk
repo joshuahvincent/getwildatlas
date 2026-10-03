@@ -1,0 +1,11 @@
+{#- "Find places to see animals near me" → the zoo finder, for calendar pages with
+    no map or place list of their own (simple days, World Animal Day, animal pages
+    without whereToSee). Pages with a map carry an animal-specific button instead. -#}
+{%- if zooFinderLive %}
+<style>
+  .find-places { margin: 1.4rem 0; }
+  .find-places a { display: inline-block; padding: 0.55rem 1.1rem; border: 1.5px solid #5D4037; border-radius: 999px; background: #fff; color: #5D4037 !important; font-family: 'Fredoka', sans-serif; font-weight: 600; text-decoration: none; box-shadow: 0 2px 8px rgba(93, 64, 55, 0.18); }
+  .find-places a:hover, .find-places a:focus-visible { background: #FFF4CC; }
+</style>
+<p class="find-places"><a href="/zoos/">Find places to see animals near me →</a></p>
+{%- endif %}

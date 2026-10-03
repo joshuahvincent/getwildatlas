@@ -10,7 +10,7 @@ permalink: "/calendar/{{ lite.slug }}/"
 layout: layouts/animal-day.njk
 tags: [calendarLite]
 hideDate: true
-backLink: { url: "/calendar/", label: "Conservation calendar" }
+backLink: { url: "/calendar/", label: "World Wildlife Calendar" }
 ---
 {%- set a = lite.animal -%}{%- set t = a.text -%}
 {% if a.images.cover %}{% figure a.images.cover, "A " + a.name + " in the wild" %}{% endif %}

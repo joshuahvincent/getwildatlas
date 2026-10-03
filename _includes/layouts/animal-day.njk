@@ -55,8 +55,10 @@ layout: layouts/post.njk
 {%- set wtsPins = w | whereToSeePins %}
 {%- set findHref = ("/zoos/?animal=" + d.animalId) if (zooFinderLive and d.animalId and w.findLabel) else null %}
 {#- With a map, the zoo-finder link sits on the map (bottom-right); without one, it's a pill above the cards. #}
-{% if findHref and not (wtsPins | length) %}<a class="find-zoo-link" href="{{ findHref }}">{{ w.findLabel }} →</a>{% endif %}
-{% placesMap wtsPins, { label: "Map of places to see " + (d.animalArticle or "") + " " + (d.animalName or "this animal"), cards: "wts-cards", link: ({ href: findHref, text: w.findLabel } if findHref else null), animal: ((w.wildAnimal or d.animalId or appId) if w.wildPlaces !== false else null) } %}
+{#- No animal-specific label: fall back to the general zoo-finder button. #}
+{%- set findLink = ({ href: findHref, text: w.findLabel } if findHref else ({ href: "/zoos/", text: "Find places to see animals near me" } if zooFinderLive else null)) %}
+{% if findLink and not (wtsPins | length) %}<a class="find-zoo-link" href="{{ findLink.href }}">{{ findLink.text }} →</a>{% endif %}
+{% placesMap wtsPins, { label: "Map of places to see " + (d.animalArticle or "") + " " + (d.animalName or "this animal"), cards: "wts-cards", link: findLink, animal: ((w.wildAnimal or d.animalId or appId) if w.wildPlaces !== false else null) } %}
 <div id="wts-cards" class="places-map-cards">
 {%- for group in w.groups %}
 {% if group.label %}<h3>{{ group.label }}</h3>{% endif %}
@@ -80,6 +82,8 @@ layout: layouts/post.njk
 {%- endif %}
 </div>
 {% if w.note %}<p class="zoo-note">{{ w.note | mdInline | safe }}</p>{% endif %}
+{%- else %}
+{% include "find-places.njk" %}
 {%- endif %}
 
 {%- if d.grownups %}
