@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see a crocodile
     intro: "In the wild, crocodiles live in warm rivers, swamps, and wetlands in Africa, Asia, Australia, and Central and South America. For the rest of us, these zoos and wildlife parks have crocodiles you can visit from a safe distance."
-    findLabel: Find the nearest zoo with crocodiles
+    findLabel: Find the nearest places with crocodiles
     groups:
       - label: North America
         places:

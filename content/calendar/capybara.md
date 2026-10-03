@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see a capybara
     intro: "In the wild, capybaras live near rivers, lakes, and wetlands across South America. For the rest of us, these zoos have capybaras you can visit."
-    findLabel: Find the nearest zoo with capybaras
+    findLabel: Find the nearest places with capybaras
     groups:
       - label: North America
         places:

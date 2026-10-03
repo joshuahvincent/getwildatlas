@@ -30,7 +30,7 @@ animalDay:
   whereToSee:
     heading: Where to see an African elephant
     intro: "In the wild, African elephants live in grasslands, savannas, and forests across Africa, where lucky safari-goers can watch them. For the rest of us, these places around the world care for African elephants you can visit."
-    findLabel: Find the nearest zoo with elephants
+    findLabel: Find the nearest places with elephants
     groups:
       - label: North America
         places:

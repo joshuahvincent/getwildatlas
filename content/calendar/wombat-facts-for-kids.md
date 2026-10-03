@@ -16,7 +16,7 @@ animalDay:
   whereToSee:
     heading: Where to see a wombat
     intro: "In the wild, common wombats live only in the cool forests and grassy hills of south-eastern Australia and on the island of Tasmania, where they come out to graze at dusk — watch quietly, from a distance. For the rest of us, these zoos and sanctuaries have wombats you can visit."
-    findLabel: Find the nearest zoo with wombats
+    findLabel: Find the nearest places with wombats
     groups:
       - label: In Australia
         places:
@@ -67,6 +67,7 @@ animalDay:
   source:
     label: the Australian Museum
     url: https://australian.museum/learn/animals/mammals/common-wombat/
+blogStatus: scheduled
 ---
 
 Wombats are the only animals in the world known to make cube-shaped poop!

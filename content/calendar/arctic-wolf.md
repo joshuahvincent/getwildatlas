@@ -26,7 +26,7 @@ animalDay:
   whereToSee:
     heading: Where to see an Arctic wolf
     intro: "In the wild, Arctic wolves live far up north in Canada and Greenland, where very few people go. For the rest of us, these zoos and parks have Arctic wolves you can visit."
-    findLabel: Find the nearest zoo with Arctic wolves
+    findLabel: Find the nearest places with Arctic wolves
     groups:
       - label: North America
         places:

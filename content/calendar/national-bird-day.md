@@ -14,6 +14,7 @@ animalDay:
   greeting: "**Happy National Bird Day!** Every January 5, people are reminded to help wild birds stay wild — and today we're meeting one of the most spectacular parrots on Earth, the hyacinth macaw."
   readAloudNote: "Read this one out loud together — it's short, and it's even better with a big, squawky parrot voice."
   whereToSee:
+    wildAnimal: hyacinth_macaw   # species-specific reserves (zoo finder hidden doc)
     heading: Where to see a hyacinth macaw
     intro: "In the wild, hyacinth macaws live mostly in the Pantanal wetlands of Brazil, where they nest in the hollows of big old trees on cattle ranches. For the rest of us, these zoos and bird parks around the world have hyacinth macaws you can visit."
     findLabel: Find the nearest zoo
@@ -65,6 +66,7 @@ animalDay:
   source:
     label: Instituto Arara Azul
     url: https://www.institutoararaazul.org.br/en/species/hyacinth-macaw/
+blogStatus: scheduled
 ---
 
 The hyacinth macaw is the longest parrot in the world — from beak to tail, it's almost as long as a 5-year-old is tall!

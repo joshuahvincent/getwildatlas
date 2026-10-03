@@ -56,6 +56,7 @@ animalDay:
   source:
     label: NOAA Fisheries
     url: https://www.fisheries.noaa.gov/species/green-turtle
+blogStatus: scheduled
 ---
 
 A green sea turtle isn't green on the outside. It munches so much seagrass that the fat under its shell turns green — and that's how it got its name!

@@ -14,9 +14,10 @@ animalDay:
   greeting: "**Happy World Tapir Day!** Every April 27, people celebrate all four kinds of tapir in the world — and the Malayan tapir is the only one that lives in Asia."
   readAloudNote: "Read this one out loud together — it's short, and it's more fun with a snuffly tapir-nose voice."
   whereToSee:
+    wildAnimal: malayan_tapir   # species-specific reserves (zoo finder hidden doc)
     heading: Where to see a Malayan tapir
     intro: "In the wild, Malayan tapirs live in rainforests in Malaysia, Thailand, Myanmar, and on the island of Sumatra. They're shy, mostly come out at night, and are very hard to spot — scientists usually find them with hidden cameras. For the rest of us, these zoos around the world have Malayan tapirs you can visit."
-    findLabel: Find the nearest zoo with tapirs
+    findLabel: Find the nearest places with tapirs
     groups:
       - label: North America
         places:
@@ -66,6 +67,7 @@ animalDay:
   source:
     label: the IUCN SSC Tapir Specialist Group
     url: https://tapirs.org/tapirs/
+blogStatus: scheduled
 ---
 
 Baby Malayan tapirs are born wearing watermelon stripes — then they slowly change into black-and-white grown-ups that some zookeepers call "Oreo tapirs."

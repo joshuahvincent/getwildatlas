@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to meet a horse
     intro: "In the wild, a few herds of horse cousins roam the grasslands of Mongolia and China. For the rest of us: horses live on farms, ranches, and riding stables all over the world, and many animal sanctuaries and county fairs have them too."
-    findLabel: Find the nearest place with horses
+    findLabel: Find the nearest places with horses
     note: "Always ask a grown-up who looks after the horses before you pet one. A good rule is to wait for them to say hello first, and to stay calm and quiet. Check a farm or stable's own website for visiting hours."
   grownups: |
     The domestic horse isn't rated by the IUCN Red List, the way wild animals are. Its closest wild relative, Przewalski's horse, is rated Endangered. There's a hopeful story here: by the middle of the 1900s only a small number of these horses were left, all of them in zoos and breeding centers. Careful breeding rebuilt the herd, and since the 1990s, horses have been brought back to the grasslands of Mongolia and China. A few hundred now roam free there again, and the rest live in zoos and reserves.

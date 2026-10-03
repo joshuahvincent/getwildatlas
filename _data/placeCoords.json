@@ -1,0 +1,131 @@
+{
+ "_note": "Curated coordinates for calendar 'Where to see' places that the zoo finder's places/cities data can't resolve. Keyed by the exact `place` text. Approximate (site or town centre) — map pins only.",
+ "West Midland Safari Park — Worcestershire, England": [
+  52.375,
+  -2.278
+ ],
+ "Kīlauea Point National Wildlife Refuge — Kauaʻi, Hawaiʻi": [
+  22.231,
+  -159.402
+ ],
+ "Machias Seal Island, Gulf of Maine (boat from Cutler, Maine)": [
+  44.501,
+  -67.101
+ ],
+ "Maine Coastal Islands National Wildlife Refuge": [
+  44.41,
+  -67.9
+ ],
+ "Northumberland, England (boat from Seahouses)": [
+  55.63,
+  -1.63
+ ],
+ "Grassy Key — Florida Keys, Florida": [
+  24.765,
+  -80.955
+ ],
+ "Puslinch, Ontario": [
+  43.45,
+  -80.17
+ ],
+ "Sidmouth, Devon, England": [
+  50.69,
+  -3.2
+ ],
+ "Liscarroll, County Cork, Ireland": [
+  52.26,
+  -8.8
+ ],
+ "West Yellowstone, Montana": [
+  44.66,
+  -111.1
+ ],
+ "Hawaiian Islands Humpback Whale National Marine Sanctuary, Hawai'i": [
+  20.78,
+  -156.46
+ ],
+ "Glacier Bay National Park, Alaska": [
+  58.66,
+  -136.9
+ ],
+ "Húsavík, North Iceland": [
+  66.04,
+  -17.34
+ ],
+ "Knapdale Forest, Argyll — Scotland": [
+  56.03,
+  -5.55
+ ],
+ "River Otter, East Devon — England": [
+  50.68,
+  -3.3
+ ],
+ "Highland Wildlife Park — Kincraig, Scotland": [
+  57.13,
+  -3.94
+ ],
+ "Aquarium du Québec — Québec City, Québec, Canada": [
+  46.75,
+  -71.29
+ ],
+ "Jaguar Rescue Center — Puerto Viejo de Talamanca, Costa Rica": [
+  9.63,
+  -82.73
+ ],
+ "Toucan Rescue Ranch — San Isidro de Heredia, Costa Rica": [
+  10.02,
+  -84.06
+ ],
+ "Orange City, Florida": [
+  28.95,
+  -81.34
+ ],
+ "Pond Inlet, Arctic Bay & Lancaster Sound, Nunavut, Canada": [
+  72.7,
+  -77.96
+ ],
+ "Qaanaaq, North Greenland": [
+  77.47,
+  -69.23
+ ],
+ "Georgia Sea Turtle Center — Jekyll Island, Georgia": [
+  31.06,
+  -81.42
+ ],
+ "Okinawa Churaumi Aquarium — Motobu, Okinawa, Japan": [
+  26.69,
+  127.88
+ ],
+ "Lime Kiln Point State Park — San Juan Island, Washington": [
+  48.52,
+  -123.15
+ ],
+ "Robson Bight (Michael Bigg) Ecological Reserve — Johnstone Strait, British Columbia": [
+  50.48,
+  -126.58
+ ],
+ "Kenai Fjords National Park — Alaska": [
+  59.92,
+  -149.65
+ ],
+ "Fjords near Tromsø — Northern Norway": [
+  69.65,
+  18.96
+ ],
+ "Kastrup, Denmark": [
+  55.64,
+  12.66
+ ],
+ "Loggerhead Marinelife Center — Juno Beach, Florida, USA": [
+  26.88,
+  -80.06
+ ],
+ "Alaska Wildlife Conservation Center — Portage, Alaska": [
+  60.822,
+  -148.979
+ ],
+ "Royal Albatross Centre — Taiaroa Head, Dunedin, New Zealand": [
+  -45.774,
+  170.729
+ ]
+}

@@ -16,7 +16,7 @@ animalDay:
   whereToSee:
     heading: Where to see a manatee
     intro: "In the wild, manatees live in warm, shallow water — rivers, springs, and coasts from Florida through the Caribbean to Brazil. In winter, Florida's manatees gather in warm springs, where families can watch them from a boardwalk. For the rest of us, these zoos and parks around the world have manatees you can visit too."
-    findLabel: Find the nearest zoo with manatees
+    findLabel: Find the nearest places with manatees
     groups:
       - label: North America
         places:
@@ -34,6 +34,7 @@ animalDay:
             url: https://zootampa.org/conservation/florida-conservation/manatees/
           - title: Blue Spring State Park
             place: Orange City, Florida
+            wild: true
             blurb: In winter, hundreds of wild manatees swim into this warm spring to stay cosy, and you can watch them from a long boardwalk. Manatee season runs from about mid-November to late March, so plan a winter visit.
             url: https://www.floridastateparks.org/parks-and-trails/blue-spring-state-park
             linkText: Visit Blue Spring State Park
@@ -67,6 +68,7 @@ animalDay:
   source:
     label: the U.S. Fish & Wildlife Service
     url: https://www.fws.gov/species/west-indian-manatee-trichechus-manatus
+blogStatus: scheduled
 ---
 
 A brand-new baby manatee is already longer than a five-year-old is tall — and it weighs more, too!

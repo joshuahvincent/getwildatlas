@@ -26,7 +26,7 @@ animalDay:
   whereToSee:
     heading: Where to see a cougar
     intro: "In the wild, cougars live in mountains, forests, and rocky country across North and South America, but they're so quiet and shy that very few people ever spot one. For the rest of us, these zoos have cougars you can visit."
-    findLabel: Find the nearest zoo with cougars
+    findLabel: Find the nearest places with cougars
     groups:
       - label: North America
         places:

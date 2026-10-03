@@ -22,7 +22,7 @@ animalDay:
   whereToSee:
     heading: Where to see a clouded leopard
     intro: "In the wild, clouded leopards live in the forests of Southeast Asia and the foothills of the Himalayas, and they are so shy that hardly anyone ever spots one. For the rest of us, these zoos and parks have clouded leopards to learn about and visit."
-    findLabel: Find the nearest zoo with clouded leopards
+    findLabel: Find the nearest places with clouded leopards
     groups:
       - label: North America
         places:

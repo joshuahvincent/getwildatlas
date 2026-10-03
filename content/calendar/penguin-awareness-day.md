@@ -51,6 +51,7 @@ animalDay:
   source:
     label: WWF's facts about emperor penguins
     url: https://www.wwf.org.uk/learn/fascinating-facts/emperor-penguins
+blogStatus: scheduled
 ---
 
 An emperor penguin dad keeps his egg warm on top of his feet for about two months — through the dark Antarctic winter — without eating a single bite.

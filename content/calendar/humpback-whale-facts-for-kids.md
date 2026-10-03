@@ -6,6 +6,7 @@ excerpt: "This week's Wild Atlas Spotlight is the humpback whale — the singer 
 coverImage: /assets/blog/humpback-whale-facts-for-kids/cover.jpg
 tags: [animals, conservation, family]
 animalDay:
+  animalId: humpback_whale
   dayName: Wild Atlas Wildcard
   animalName: humpback whale
   animalArticle: a
@@ -20,20 +21,24 @@ animalDay:
         places:
           - title: Winter calving waters
             place: Hawaiian Islands Humpback Whale National Marine Sanctuary, Hawai'i
+            wild: true
             blurb: Every winter, thousands of humpbacks swim to warm Hawaiian waters to have their babies — and in March, many are still there. Sometimes you can spot one right from the beach!
             url: https://hawaiihumpbackwhale.noaa.gov/
           - title: Summer feeding grounds
             place: Glacier Bay National Park, Alaska
+            wild: true
             blurb: In summer, humpbacks travel to these icy Alaskan waters to feast on krill and little fish. The park has special rules that make boats slow down to help keep the whales safe.
             url: https://www.nps.gov/glba/learn/nature/whales.htm
       - label: Around the world
         places:
           - title: A resting stop for travelers
             place: Hervey Bay, Queensland, Australia
+            wild: true
             blurb: On the far side of the world, humpbacks rest in this calm bay with their calves partway through their long journey.
             url: https://www.queensland.com/au/en/places-to-see/destinations/fraser-coast/hervey-bay
           - title: Cold northern feeding waters
             place: Húsavík, North Iceland
+            wild: true
             blurb: Far up north, humpbacks visit Iceland's cold waters each summer to feed before heading south again.
             url: https://www.visithusavik.is/
     note: "Humpback whales visit different oceans in different seasons, so where and when you might see one changes through the year — check before you plan a trip."
@@ -52,6 +57,7 @@ animalDay:
   source:
     label: NOAA Fisheries
     url: https://www.fisheries.noaa.gov/species/humpback-whale
+blogStatus: scheduled
 ---
 
 Humpback whales are the singers of the sea. The males sing long, beautiful songs that travel for miles underwater!
