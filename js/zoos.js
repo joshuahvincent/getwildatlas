@@ -693,7 +693,7 @@ async function init() {
   if (saved) { S.origin = saved; $('zf-q').value = saved.label === 'your location' ? '' : saved.label; $('zf-q').placeholder = saved.fromGeo ? 'Using your location' : 'City or postcode'; $('zf-forgetwrap').hidden = false; }
   $('zf-forget').addEventListener('click', forgetLocation);
   // "Don't see your place?" form: stored for review by a person (functions/api/suggest-place.js); the animal field starts as the animal being viewed
-  const sdlg = $('zf-suggest'), sform = $('zf-suggest-form'), smsg = $('zf-suggest-msg');
+  const sdlg = $('zf-suggest-dialog'), sform = $('zf-suggest-form'), smsg = $('zf-suggest-msg');
   $('zf-suggest-open').addEventListener('click', () => {
     smsg.textContent = ''; smsg.className = 'zf-suggest-msg'; $('zf-suggest-send').disabled = false;
     $('zf-suggest-animal').value = S.cur ? S.cur.name : '';
