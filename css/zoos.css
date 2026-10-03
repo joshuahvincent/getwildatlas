@@ -248,3 +248,7 @@
 .zf-suggest-msg.err { color: #9b1c1c; font-weight: 700; }
 .zf-suggest-msg.ok { color: #1e6b2a; font-weight: 700; }
 .zf-suggest-dlg { max-height: 92vh; overflow: auto; }
+
+/* dialogs: centred on screen (the site reset removes the default auto margins) and given the page colour tokens */
+.zf-dialog { margin: auto; inset: 0; --zf-edge: #8F7F66; }
+.zf-fl input { border-color: #8F7F66; }
