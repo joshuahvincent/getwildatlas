@@ -1,0 +1,1897 @@
+[
+{
+"id": "baku-zoo-q2452280",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "beijing-zoo-q220083",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "osaka-aquarium-kaiyukan-q1191885",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "jigokudani-monkey-park-q5302436",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "karagandy-zoo-q290283",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tbilisi-zoo-q4453139",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "korea-central-zoo-q708915",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "aquaria-klcc-q29168",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "kabul-zoo-q833625",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "taipei-zoo-q591131",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "national-zoo-of-malaysia-q1142942",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "dusit-zoo-q1267646",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "shanghai-zoo-q3182046",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "bangladesh-national-zoo-q3350326",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "chengdu-research-base-of-giant-panda-breeding-q1067861",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "giza-zoo-q2509245",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "chiang-mai-zoo-q3034913",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "saigon-zoo-and-botanical-gardens-q3162430",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "baghdad-zoo-q2349688",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "pinnawala-elephant-orphanage-q2672104",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "yangon-zoological-gardens-q1136334",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "melaka-zoo-and-bird-park-q4802284",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "dubai-zoo-q5310637",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "hong-kong-zoological-and-botanical-gardens-q220207",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "zhuhai-chimelong-ocean-kingdom-q16258099",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "alexandria-zoo-q2392126",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "surabaya-zoo-q4250220",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "padmaja-naidu-himalayan-zoological-park-q3495905",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "toba-aquarium-q1073067",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "safari-world-q2033070",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "alipore-zoological-gardens-q3346440",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "national-zoological-park-delhi-q3364809",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "higashiyama-zoo-and-botanical-gardens-q3295344",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "botanical-and-zoological-garden-of-tsimbazaza-q7849674",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "karachi-zoo-q7569286",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "national-museum-of-marine-biology-and-aquarium-q697507",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "bali-bird-park-q16744229",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "assam-state-zoo-cum-botanical-garden-q3276955",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "jijamata-udyaan-q647766",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "nehru-zoological-park-q3493970",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "rajiv-gandhi-zoological-park-q2723997",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "iwatayama-monkey-park-q15229013",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "kyoto-city-zoo-q6452176",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "yokohama-hakkeijima-sea-paradise-q863153",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "naypyidaw-zoological-gardens-q862533",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "yadanabon-zoological-gardens-q8046515",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "johor-zoo-q28219616",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "manila-zoological-and-botanical-garden-q2307982",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "qalqilya-zoo-q2891853",
+"why": "home 500, pages 0",
+"kept": true
+},
+{
+"id": "khao-kheow-open-zoo-q3576017",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "leofoo-village-theme-park-q3229621",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "mvog-betsi-zoo-q6356988",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "siberian-tiger-park-q3959995",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "indira-gandhi-zoological-park-q6025038",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "izu-shaboten-zoo-q11380531",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "miyagi-zao-fox-village-q11454001",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "shymkent-zoo-q1046034",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "national-zoological-gardens-of-sri-lanka-q1144452",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "kuala-lumpur-butterfly-park-q6440990",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "lahore-zoo-q3695337",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "marine-life-park-q3082977",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "pata-zoo-q13022377",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "dushanbe-zoo-q5316871",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "friguia-park-q3087852",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "parc-du-belvedere-q3364339",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tashkent-zoo-q4167605",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "dubai-aquarium-and-underwater-zoo-q4059427",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "alice-springs-reptile-centre-q2836667",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "koala-park-sanctuary-q6424208",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "chongqing-zoo-q10563866",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "hangzhou-zoo-q11102420",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "shanghai-ocean-aquarium-q2859205",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tianjin-zoo-q4467974",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "maitri-baagh-zoo-q24945533",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "sakkarbaug-zoological-garden-q2774335",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "sri-venkateswara-zoological-park-q7586332",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "thiruvananthapuram-zoo-q7785508",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "hiroshima-city-asa-zoological-park-q81821",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "takasakiyama-natural-zoological-garden-q11669751",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "giraffe-centre-q5564103",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "avilon-zoo-q4828854",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "underwater-world-singapore-q2125883",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "sea-life-bangkok-ocean-world-q6636970",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "sriracha-tiger-zoo-q4923810",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "dubai-butterfly-garden-q110471376",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "cohunu-koala-park-q4236423",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "chittagong-zoo-q18987429",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "dulhazra-safari-park-q5313401",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "mohamed-bin-zayed-nature-reserve-q4703495",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "changsha-ecological-zoo-q59255587",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "nanjing-hongshan-forest-zoo-q6963658",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "nanjing-underwater-world-q577921",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "alexandria-aquarium-q31689",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "aquarium-grotto-garden-q6392353",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "hurghada-grand-aquarium-q28419476",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "kumasi-zoo-q18344049",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "sea-world-indonesia-q40493",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "bengaluru-aquarium-q31502",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "chhatbir-zoo-q5087827",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "kanpur-zoological-park-q4731647",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "tata-steel-zoological-park-q48725172",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "aqua-world-q4782624",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "chitose-aquarium-q11405627",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "marine-world-uminonakamichi-q6764266",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "matsue-vogel-park-q6788091",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "miyajima-public-aquarium-q6764196",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "naypyidaw-safari-park-q861893",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "port-harcourt-zoo-q18343760",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "bahawalpur-zoo-q4842512",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "rani-bagh-hyderabad-q7292958",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "hann-forest-and-zoological-park-q3364375",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "fonghuanggu-bird-and-ecology-park-q10927153",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "shoushan-zoo-q9097841",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "gazipur-safari-park-q16345864",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "recreation-park-and-rangpur-zoo-q13059506",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "jardin-zoologique-de-kinshasa-q113557320",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "chengdu-zoo-q20669929",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "qingdao-aquarium-q14594862",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "shenzhen-safari-park-q25058046",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "negevzoo-q2896297",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "tel-aviv-dolphinarium-q7061713",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "utopia-park-israel-q4345206",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "etawah-safari-park-q93969065",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "gulab-bagh-and-zoo-q5617187",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "jaipur-zoo-q15229182",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "jungle-mahal-zoological-park-q128034611",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "parassinikkadavu-snake-park-q7136009",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "rohtak-zoo-q19893153",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tyavarekoppa-lion-and-tiger-safari-q7859688",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "eram-zoo-q94465",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "kish-dolphinarium-q96473886",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "akita-city-omoriyama-zoo-q11595312",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "himeji-city-aquarium-q2584900",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "ice-museum-q7741262",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "izu-mito-sea-paradise-q3156501",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "kyushu-african-safari-q11370332",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "muroto-schoolhouse-aquarium-q56739393",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "rakuju-en-q11541603",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "shibetsu-salmon-science-museum-q11542208",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "shikoku-aquarium-q66432954",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "shinagawa-aquarium-q11254393",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "wakayama-prefectural-museum-of-natural-history-q11417475",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "yamanashi-prefectural-fuji-spring-fed-village--q11469706",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "pinnawala-open-zoo-q19820001",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tripoli-zoo-q7843680",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "crocoparc-agadir-q27919299",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "the-green-connection-q29208",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "kano-zoo-q79412447",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "karachi-safari-park-q778531",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "lahore-zoo-safari-q6473423",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "peshawar-zoo-q42530840",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "nakhon-ratchasima-zoo-q14469669",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "hsinchu-zoo-q11084009",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "wanpi-world-zoo-q16242379",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "xpark-q124514449",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "yehliu-ocean-world-q16929389",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "armadale-reptile-centre-q4792522",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "chimelong-safari-park-q10566319",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "guangzhou-zoo-q11062008",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "ben-aknoun-park-q3364125",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "batumi-dolphinarium-q25542775",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "batu-secret-zoo-q4251753",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "taman-margasatwa-dan-budaya-kinantan-q12518848",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "taman-safari-indonesia-2-q29129",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "bhagwan-birsa-biological-park-q81036087",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "kamla-nehru-prani-sangrahalay-q24038908",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "maharajbagh-zoo-q15243715",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "nagaland-zoological-park-q47462824",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "nawab-wajid-ali-shah-prani-udyan-q6697780",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "pt-g-b-pant-high-altitude-zoo-nainital-q7256608",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "sajjangarh-biological-park-q22080053",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "voc-park-and-zoo-q21930126",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "warangal-zoo-q16999992",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "isfahan-aquarium-q63022404",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "aquatotto-gifu-q11282869",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "crab-aquarium-q11264065",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "echizen-matsushima-aquarium-q11636428",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "edogawa-ward-natural-zoo-q11551063",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "enoshima-aquarium-q11502657",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "gokatsura-pond-furusato-village-q5578056",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "hanshin-park-q11577719",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "himeji-city-zoo-q11447486",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "iyoboya-hall-q61721910",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "katsurahama-aquarium-q11536832",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "kushiro-crane-reserve-q22677838",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "noboribetsu-marine-park-nixe-q11579106",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "notojima-aquarium-q11275197",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "otaru-aquarium-q11261729",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "shimane-aquarium-aquas-q11476470",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "shimonoseki-marine-science-museum-kaikyokan-q11361443",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "shinjiko-nature-museum-gobius-q47164008",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tochigi-nakagawa-aquatic-park-q11535182",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "tsushima-wildlife-conservation-center-q38278109",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "uozu-aquarium-q11674044",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "osaki-park-q11435011",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "banteay-srey-butterfly-centre-q28146533",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "phnom-tamao-wildlife-rescue-centre-q7186583",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "lok-kawi-wildlife-park-q7445905",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "ogba-zoo-nature-park-q14468312",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "baluarte-zoo-q27963566",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "crocolandia-foundation-q5187417",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "jungle-world-q6312921",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "the-tortoise-village-q2945389",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "chai-nat-bird-park-q2530020",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "samphran-elephant-ground-zoo-q48797664",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "songkhla-zoo-q3576027",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "antalya-aquarium-q20470397",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "konya-tropical-butterfly-garden-q60776627",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "jiannan-butterfly-garden-q140940145",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "dar-es-salaam-zoo-q16954216",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "mitchell-park-zoo-q6881335",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "ocean-park-aquarium-q109236782",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "abidjan-zoo-q110988745",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "beijing-wildlife-park-q10902457",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "ningbo-wildlife-park-q10946033",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "faiyum-zoo-q12207361",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "bali-butterfly-park-q30672224",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "bali-zoo-q75331465",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "gita-persada-butterfly-park-q5565036",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "kemenuh-butterfly-park-q60768800",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "pematang-siantar-zoo-q12490160",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "hai-kef-q16132548",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "petah-tikva-zoo-q38882839",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tel-aviv-university-zoo-q16132554",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "zoo-botanical-garden-nahariya-q41636597",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "amirthi-zoological-park-q4746784",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "gopalpur-zoo-q18125200",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "kanan-pendari-zoo-q130365128",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "menjor-multipurpose-research-centre-and-unity--q118107423",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "nandanvan-jungle-safari-q107079912",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "siddharth-garden-and-zoo-q61368132",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "shiraz-zoo-q120715772",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "vakilabad-zoo-q5939541",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "adachi-park-of-living-things-q11636941",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "akiyoshidai-safari-land-q11594892",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "amami-islands-botanical-garden-q4739454",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "aquapia-akutagawa-q11257046",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "art-aquarium-museum-q116921556",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "awajishima-monkey-center-q138936537",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "awashima-marine-park-q83789636",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "bear-garden-q11657210",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "fukuchiyama-city-zoo-q11594327",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "hitachi-kamine-zoo-q11510043",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "ichikawa-zoological-botanical-garden-q11480258",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "ishikawa-zoo-q11259212",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "itozu-no-mori-zoological-park-q11396953",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "japan-snake-center-q11309982",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "kasumigaura-city-aquarium-q21652750",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "kiryu-ga-oka-park-q11537258",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "komoro-city-zoo-q11463704",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "kuragaike-park-q11663873",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "kusatsu-tropical-wonderland-q11618188",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "kushiro-zoo-q11648278",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "kochi-prefectural-ashizuri-aquarium-satoumi-q99611864",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "machida-squirrel-garden-q11578268",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "minami-chita-beach-land-q11408304",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "minatoyama-aquarium-q123566518",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "moguranpia-q11279914",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "mollusco-mugi-q11344566",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "muroran-aquarium-q11480658",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "nagano-chausuyama-zoo-q11654197",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "nagisa-aquarium-q48752477",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "nifrel-q21654084",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "obihiro-zoo-q11262347",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "ojiya-nishikigoi-no-sato-q11650572",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "okazaki-city-higashi-park-q11526061",
+"why": "home 503, pages 0",
+"kept": true
+},
+{
+"id": "okuhida-bear-park-q11446176",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "osaka-water-museum-q11549303",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "sahoro-resort-bear-mountain-q11305053",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "saitama-aquarium-q11267523",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "saitama-children-s-zoo-q11266568",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "sapporo-salmon-museum-q11521425",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "shima-marineland-q11490912",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "sunpiazza-aquaruim-q11305917",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tateshina-amusement-aquarium-q11621781",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "teradomari-aquarium-q61722200",
+"why": "home 500, pages 0",
+"kept": true
+},
+{
+"id": "tohoku-safari-park-q11526117",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "izoo-q11224474",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "omiya-park-zoo-q11434398",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "aqua-planet-jeju-q107008851",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "ridiyagama-safari-park-q25247987",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "underwater-world-langkawi-q48769612",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "sanda-kyarimi-park-zoo-q109356031",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "unilorin-zoo-q107247858",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "albay-park-and-wildlife-q25663373",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "ninoy-aquino-parks-wildlife-center-q7039114",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "kund-park-q6444237",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "landhi-korangi-zoo-q6484561",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "vehari-wildlife-park-q7918400",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "lopburi-zoo-q13022372",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "safari-park-open-zoo-q13014565",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "penghu-aquarium-q22031680",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "taichung-aquarium-q135927744",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "drakenstein-lion-park-q55609994",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "east-london-zoo-q16511778",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "the-elephant-sanctuary-hartbeespoort-dam-q7731760",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "australian-wildlife-park-albany-q111821178",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "radiant-fish-world-q55232305",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "agoualand-q130240731",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "badaling-zoo-q15938016",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "dolphin-world-egypt-q131673270",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "el-mansoura-zoo-q12207362",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "red-sea-aquarium-q125030690",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "zoo-el-zagazig-q20419098",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "zoo-of-beni-suef-q12207363",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "jakarta-aquarium-q64438207",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "medan-zoo-q136687552",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "gandhi-zoological-park-q107094445",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "lalithodyana-aquarium-dharmasthala-q137207883",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "machia-biological-park-q113011987",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "marine-kingdom-q132296427",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "arak-zoo-q123617553",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "city-park-aquarium-tehran-q123659140",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "isfahan-reptiles-garden-q123616743",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "mellat-park-zoo-q123823450",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "milad-tower-dolphinarium-q124315744",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "qom-bird-garden-q140317636",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "aquaterrace-nishikigaoka-q21652335",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "hagachizaki-monkey-bay-q107012272",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "higashiyama-zoo-main-park-q115470771",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "higashiyama-zoo-medaka-world-q115283045",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "higashiyama-zoo-north-park-q115470712",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "kawasui-kawasaki-aquarium-q97169050",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "kinkazan-squirrel-village-q11647835",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "misaki-marine-biological-station-the-universit-q11524680",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "nasu-safari-park-q28068900",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "roadside-station-kihocho-umigame-park-q11641448",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "sea-life-nagoya-q53997414",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "takaoka-kojo-zoo-q11669487",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tamano-marine-museum-q11572836",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tokushima-zoo-q11273093",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "uda-animal-park-q56349389",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "wakayama-castle-park-zoo-q11417307",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "the-aquarium-of-shimantogawa-river-osakanakan-q11419591",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "oshima-park-zoo-q109361701",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "nairobi-safari-walk-q109084332",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "dream-village-q131293881",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "entopia-q137938768",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "penang-bird-park-q133274431",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "poring-butterfly-farm-q135227930",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "gsu-zoological-garden-q112066364",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "kiwi-valley-farm-park-q117801742",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "west-lynn-garden-q137660417",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "dg-khan-zoo-q48732995",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "dhodial-pheasantry-q5269661",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "snake-house-q132560669",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "nakhon-pathom-municipality-zoo-q16304402",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "the-sixth-cycle-birthday-anniversary-celebrati-q123662912",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "aqua-vega-q20470439",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "sincan-zoo-q137767184",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tuan-chau-aquarium-q7850623",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "exotic-animal-world-q108652547",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "monkey-sanctuary-q138802901",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "umgeni-river-bird-park-q7881537",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "munda-wanga-environmental-park-q59551749",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "the-lost-chambers-aquarium-q124451882",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "bribie-island-butterfly-house-q141606010",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "waratah-park-q60227907",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "chimelong-spaceship-q137970396",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "kunming-zoo-q137571107",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "taizhou-ocean-world-q134992292",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "yunnan-wildlife-park-q137571140",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "mazotos-camel-park-q126883523",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "lembang-park-zoo-q136031635",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "suraloka-interactive-zoo-q136446602",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "falconry-of-kenya-q66092198",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "rungna-dolphinarium-q107455617",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "lemur-island-q125961779",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "firefly-valley-leisure-park-q95708949",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "audu-bako-zoo-q109342221",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "imo-state-zoological-garden-q109342315",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "makurdi-zoo-q135420902",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "oopl-wildlife-park-q108927358",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "national-kiwi-centre-q99675884",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "baja-wildlife-park-q58061574",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "tiger-kingdom-phuket-q123162540",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "sahara-zoo-q97321288",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "giraffe-house-q131412803",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "natal-lion-park-q127425278",
+"why": "not crawled",
+"kept": true
+}
+]

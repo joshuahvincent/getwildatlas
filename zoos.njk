@@ -1,0 +1,16 @@
+---
+layout: layouts/blog-base.njk
+title: "Where to See Real Animals Near You"
+excerpt: "Find zoos, aquariums, museums and farms near you where your family can see a real lion, hippo, penguin, dinosaur fossil and more. Search by animal, see the closest places on a map."
+permalink: /zoos/
+ogType: website
+jsonld: '{"@context":"https://schema.org","@type":"CollectionPage","name":"Where to see real animals near you","url":"https://wildatlasapp.com/zoos/","description":"Find zoos, aquariums, museums and farms near you where your family can see real animals.","isPartOf":{"@type":"WebSite","name":"Wild Atlas","url":"https://wildatlasapp.com/"}}'
+---
+{% include "zoos-app.njk" %}
+<section class="zf-seo zf-directory" aria-labelledby="zf-dir-h">
+  <h2 id="zf-dir-h">Browse by animal</h2>
+  {%- for g in zoodata.directory %}
+  <h3>{{ g.label }}</h3>
+  <ul class="zf-seo-links">{% for r in g.animals %}<li><a href="/zoos/{{ r.slug }}/">{{ r.name }}</a></li>{% endfor %}</ul>
+  {%- endfor %}
+</section>

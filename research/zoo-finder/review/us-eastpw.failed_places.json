@@ -1,0 +1,62 @@
+[
+{
+"id": "adventure-aquarium",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "aquarium-of-niagara",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "connecticuts-beardsley-zoo",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "fort-wayne-zoo",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "jenkinsons-aquarium",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "newport-aquarium",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "oglebays-good-zoo",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "seaworld-orlando",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "seneca-park-zoo",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "south-carolina-aquarium",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "trevor-lovejoy-zoo",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "turtle-back-zoo",
+"why": "home None, pages 0",
+"kept": true
+}
+]

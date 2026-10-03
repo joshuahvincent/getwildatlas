@@ -1,0 +1,289 @@
+[
+ {
+  "id": "amur_tiger",
+  "name": "Amur Tiger",
+  "sci": "Panthera tigris",
+  "note": "subspecies altaica; matched at species level"
+ },
+ {
+  "id": "axolotl",
+  "name": "Axolotl",
+  "sci": "Ambystoma mexicanum"
+ },
+ {
+  "id": "fruit_bat",
+  "name": "Fruit Bat (large flying fox)",
+  "sci": "Pteropus vampyrus"
+ },
+ {
+  "id": "cassowary",
+  "name": "Southern Cassowary",
+  "sci": "Casuarius casuarius"
+ },
+ {
+  "id": "clouded_leopard",
+  "name": "Clouded Leopard",
+  "sci": "Neofelis nebulosa"
+ },
+ {
+  "id": "gibbon",
+  "name": "Lar Gibbon",
+  "sci": "Hylobates lar"
+ },
+ {
+  "id": "pallas_cat",
+  "name": "Pallas's Cat",
+  "sci": "Otocolobus manul"
+ },
+ {
+  "id": "harp_seal",
+  "name": "Harp Seal",
+  "sci": "Pagophilus groenlandicus"
+ },
+ {
+  "id": "west_indian_manatee",
+  "name": "West Indian Manatee",
+  "sci": "Trichechus manatus"
+ },
+ {
+  "id": "numbat",
+  "name": "Numbat",
+  "sci": "Myrmecobius fasciatus"
+ },
+ {
+  "id": "koala",
+  "name": "Koala",
+  "sci": "Phascolarctos cinereus"
+ },
+ {
+  "id": "wombat",
+  "name": "Common Wombat",
+  "sci": "Vombatus ursinus"
+ },
+ {
+  "id": "bonobo",
+  "name": "Bonobo",
+  "sci": "Pan paniscus"
+ },
+ {
+  "id": "sea_otter",
+  "name": "Sea Otter",
+  "sci": "Enhydra lutris"
+ },
+ {
+  "id": "pangolin",
+  "name": "Chinese Pangolin",
+  "sci": "Manis pentadactyla"
+ },
+ {
+  "id": "galapagos_giant_tortoise",
+  "name": "Galápagos Giant Tortoise",
+  "sci": "Chelonoidis *",
+  "note": "species complex; genus level"
+ },
+ {
+  "id": "humpback_whale",
+  "name": "Humpback Whale",
+  "sci": "Megaptera novaeangliae"
+ },
+ {
+  "id": "arctic_tern",
+  "name": "Arctic Tern",
+  "sci": "Sterna paradisaea"
+ },
+ {
+  "id": "golden_snub_nosed_monkey",
+  "name": "Golden Snub-nosed Monkey",
+  "sci": "Rhinopithecus roxellana"
+ },
+ {
+  "id": "quokka",
+  "name": "Quokka",
+  "sci": "Setonix brachyurus"
+ },
+ {
+  "id": "black_rhinoceros",
+  "name": "Black Rhinoceros",
+  "sci": "Diceros bicornis"
+ },
+ {
+  "id": "eurasian_beaver",
+  "name": "Eurasian Beaver",
+  "sci": "Castor fiber"
+ },
+ {
+  "id": "hyacinth_macaw",
+  "name": "Hyacinth Macaw",
+  "sci": "Anodorhynchus hyacinthinus"
+ },
+ {
+  "id": "malayan_tapir",
+  "name": "Malayan Tapir",
+  "sci": "Tapirus indicus"
+ },
+ {
+  "id": "giant_pacific_octopus",
+  "name": "Giant Pacific Octopus",
+  "sci": "Enteroctopus dofleini"
+ },
+ {
+  "id": "ring_tailed_lemur",
+  "name": "Ring-tailed Lemur",
+  "sci": "Lemur catta"
+ },
+ {
+  "id": "sand_tiger_shark",
+  "name": "Sand Tiger Shark",
+  "sci": "Carcharias taurus"
+ },
+ {
+  "id": "blacktip_reef_shark",
+  "name": "Blacktip Reef Shark",
+  "sci": "Carcharhinus melanopterus"
+ },
+ {
+  "id": "whitetip_reef_shark",
+  "name": "Whitetip Reef Shark",
+  "sci": "Triaenodon obesus"
+ },
+ {
+  "id": "nurse_shark",
+  "name": "Nurse Shark",
+  "sci": "Ginglymostoma cirratum"
+ },
+ {
+  "id": "zebra_shark",
+  "name": "Zebra Shark",
+  "sci": "Stegostoma tigrinum"
+ },
+ {
+  "id": "epaulette_shark",
+  "name": "Epaulette Shark",
+  "sci": "Hemiscyllium *"
+ },
+ {
+  "id": "bamboo_shark",
+  "name": "Bamboo Shark",
+  "sci": "Chiloscyllium *"
+ },
+ {
+  "id": "wobbegong",
+  "name": "Wobbegong",
+  "sci": "Orectolobus *"
+ },
+ {
+  "id": "leopard_shark",
+  "name": "Leopard Shark",
+  "sci": "Triakis semifasciata"
+ },
+ {
+  "id": "tiger_shark",
+  "name": "Tiger Shark",
+  "sci": "Galeocerdo cuvier"
+ },
+ {
+  "id": "bull_shark",
+  "name": "Bull Shark",
+  "sci": "Carcharhinus leucas"
+ },
+ {
+  "id": "lemon_shark",
+  "name": "Lemon Shark",
+  "sci": "Negaprion *"
+ },
+ {
+  "id": "sandbar_shark",
+  "name": "Sandbar Shark",
+  "sci": "Carcharhinus plumbeus"
+ },
+ {
+  "id": "sevengill_shark",
+  "name": "Sevengill Shark",
+  "sci": "Notorynchus cepedianus"
+ },
+ {
+  "id": "horn_shark",
+  "name": "Horn / Port Jackson Shark",
+  "sci": "Heterodontus *"
+ },
+ {
+  "id": "catshark",
+  "name": "Catshark",
+  "sci": "Scyliorhinus *"
+ },
+ {
+  "id": "cownose_ray",
+  "name": "Cownose Ray",
+  "sci": "Rhinoptera *"
+ },
+ {
+  "id": "southern_stingray",
+  "name": "Stingray",
+  "sci": "Hypanus *"
+ },
+ {
+  "id": "eagle_ray",
+  "name": "Eagle Ray",
+  "sci": "Aetobatus *"
+ },
+ {
+  "id": "skate_ray",
+  "name": "Skate",
+  "sci": "Raja *"
+ },
+ {
+  "id": "guitarfish",
+  "name": "Guitarfish",
+  "sci": "Rhinobatos *"
+ },
+ {
+  "id": "sawfish",
+  "name": "Sawfish",
+  "sci": "Pristis *"
+ },
+ {
+  "id": "freshwater_stingray",
+  "name": "Freshwater Stingray",
+  "sci": "Potamotrygon *"
+ },
+ {
+  "id": "humboldt_penguin",
+  "name": "Humboldt Penguin",
+  "sci": "Spheniscus humboldti"
+ },
+ {
+  "id": "african_penguin",
+  "name": "African Penguin",
+  "sci": "Spheniscus demersus"
+ },
+ {
+  "id": "magellanic_penguin",
+  "name": "Magellanic Penguin",
+  "sci": "Spheniscus magellanicus"
+ },
+ {
+  "id": "king_penguin",
+  "name": "King Penguin",
+  "sci": "Aptenodytes patagonicus"
+ },
+ {
+  "id": "gentoo_penguin",
+  "name": "Gentoo Penguin",
+  "sci": "Pygoscelis papua"
+ },
+ {
+  "id": "adelie_chinstrap_penguin",
+  "name": "Adélie / Chinstrap Penguin",
+  "sci": "Pygoscelis *"
+ },
+ {
+  "id": "rockhopper_macaroni_penguin",
+  "name": "Rockhopper / Macaroni Penguin",
+  "sci": "Eudyptes *"
+ },
+ {
+  "id": "little_blue_penguin",
+  "name": "Little Blue Penguin",
+  "sci": "Eudyptula minor"
+ }
+]

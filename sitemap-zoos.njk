@@ -1,0 +1,15 @@
+---
+permalink: /sitemap-zoos.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for a in zoodata.animals %}
+  <url>
+    <loc>https://wildatlasapp.com/zoos/{{ a.slug }}/</loc>
+    <lastmod>{{ zoodata.generated }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+{%- endfor %}
+</urlset>

@@ -18,3 +18,10 @@ name = "wildatlaswebsite"
 pages_build_output_dir = "_site"
 compatibility_date = "2025-09-27"
 compatibility_flags = ["nodejs_compat"]
+
+# "Add your place" form on /zoos/ (functions/api/suggest-place.js) stores suggestions here.
+# Read/write only through the function; the same database serves Production and Preview.
+[[d1_databases]]
+binding = "PLACES_DB"
+database_name = "wildatlas-places"
+database_id = "8fbaa98a-5ae1-4161-94d8-297a584b0756"

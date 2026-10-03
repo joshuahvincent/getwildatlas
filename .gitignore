@@ -34,3 +34,10 @@ _site/
 # (HFS+/APFS are case-insensitive). Un-ignore so brand icons commit.
 !assets/icons/
 .wrangler/
+research/zoo-finder/cache_local/
+research/zoo-finder/db/chunks/
+research/zoo-finder/db/load.sql
+research/zoo-finder/db/images_only.sql
+research/zoo-finder/db/uploaded_keys.txt
+research/zoo-finder/raw/haiku_trial*/
+!assets/zoos/icons/

@@ -1,0 +1,128 @@
+[
+ {
+  "id": "bison",
+  "common_name": "Bison",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "grizzly_bear",
+  "common_name": "Grizzly Bear",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "black_bear",
+  "common_name": "Black Bear",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "moose",
+  "common_name": "Moose",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "elk",
+  "common_name": "Elk",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "cougar",
+  "common_name": "Cougar",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "bobcat",
+  "common_name": "Bobcat",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "red_fox",
+  "common_name": "Red Fox",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "coyote",
+  "common_name": "Coyote",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "raccoon",
+  "common_name": "Raccoon",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "beaver",
+  "common_name": "Beaver",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "mountain_goat",
+  "common_name": "Mountain Goat",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "arctic_fox",
+  "common_name": "Arctic Fox",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "wolverine",
+  "common_name": "Wolverine",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "prairie_dog",
+  "common_name": "Prairie Dog",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "alligator_snapping_turtle",
+  "common_name": "Alligator Snapping Turtle",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "roadrunner",
+  "common_name": "Roadrunner",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ },
+ {
+  "id": "ocelot",
+  "common_name": "Ocelot",
+  "scientific_name": null,
+  "family": null,
+  "genus": null
+ }
+]

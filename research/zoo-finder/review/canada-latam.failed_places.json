@@ -1,0 +1,87 @@
+[
+{
+"id": "atlantis-paradise-island",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "aquarium-du-quebec",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "cochrane-polar-bear-habitat",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "greater-vancouver-zoo",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "little-rays-nature-centre-ottawa",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "montreal-biodome",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "parc-omega",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "reptilia-zoo-london",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "reptilia-zoo-vaughan",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "reptilia-zoo-whitby",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "ripleys-aquarium-of-canada",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "science-north",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "vancouver-aquarium",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "zoologico-de-cali",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "zoo-de-guyane",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "dolphin-discovery-cozumel",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "dolphin-discovery-isla-mujeres",
+"why": "not crawled",
+"kept": true
+}
+]

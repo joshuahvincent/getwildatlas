@@ -11,7 +11,7 @@
 
   <meta name="theme-color" content="#FFF5E1">
 
-  <meta property="og:type" content="article">
+  <meta property="og:type" content="{{ ogType or 'article' }}">
   <meta property="og:url" content="https://wildatlasapp.com{{ page.url }}">
   <meta property="og:title" content="{{ title }} — Wild Atlas">
   <meta property="og:description" content="{{ excerpt or 'The Wild Atlas blog.' }}">
@@ -22,6 +22,10 @@
   <meta name="twitter:title" content="{{ title }} — Wild Atlas">
   <meta name="twitter:description" content="{{ excerpt or 'The Wild Atlas blog.' }}">
   <meta name="twitter:image" content="https://wildatlasapp.com/assets/og-image.png">
+
+  {%- if jsonld %}
+  <script type="application/ld+json">{{ jsonld | safe }}</script>
+  {%- endif %}
 
   <link rel="icon" type="image/png" href="/assets/app-icon.png">
   <link rel="apple-touch-icon" href="/assets/app-icon.png">

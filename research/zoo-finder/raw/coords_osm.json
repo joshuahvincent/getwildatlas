@@ -1,0 +1,464 @@
+{
+"atlantis-paradise-island": {
+"lat": 25.0850469,
+"lng": -77.3225869,
+"coord_source": "osm:node/7672253983",
+"matched": "Atlantis Paradise Island, 1, Casino Drive, Nassau, New Providence, The Bahamas",
+"by": "name"
+},
+"little-rays-nature-centre-ottawa": {
+"lat": 45.4396158,
+"lng": -75.350272,
+"coord_source": "osm:way/1002466485",
+"matched": "Little Ray's Nature Centre, 2781, Colonial Road, Orl\u00e9ans South-Navan, Ottawa, Eastern Ontario, Ontario, K0A 3E0, Canada",
+"by": "name"
+},
+"marine-life-at-west-edmonton-mall": {
+"lat": 53.5462055,
+"lng": -113.491241,
+"coord_source": "osm-town-centroid:relation/2564500",
+"matched": "Edmonton, Alberta, Canada",
+"by": "town-centroid"
+},
+"reptilia-zoo-london": {
+"lat": 42.9480354,
+"lng": -81.29382,
+"coord_source": "osm:node/13755229080",
+"matched": "Reptilia London, 785, Wonderland Road South, Westmount, London, Southwestern Ontario, Ontario, N6K 3C2, Canada",
+"by": "name"
+},
+"reptilia-zoo-vaughan": {
+"lat": 43.8335306,
+"lng": -79.5196273,
+"coord_source": "osm:node/4030048964",
+"matched": "Reptilia, 2501, Rutherford Road, Vaughan, York Region, Ontario, L4K 2N6, Canada",
+"by": "name"
+},
+"reptilia-zoo-whitby": {
+"lat": 43.866432,
+"lng": -78.9111922,
+"coord_source": "osm:node/6191440200",
+"matched": "Reptilia, 1400, Victoria Street East, Whitby, Durham Region, Ontario, L1N 9S2, Canada",
+"by": "name"
+},
+"safari-niagara": {
+"lat": 42.9506332,
+"lng": -79.062444,
+"coord_source": "osm:way/786402688",
+"matched": "Safari Niagara, 2821, Stevensville Road, Stevensville, Fort Erie, Niagara Region, Ontario, L0S 1S1, Canada",
+"by": "name"
+},
+"yukon-wildlife-preserve": {
+"lat": 60.8816972,
+"lng": -135.3266378,
+"coord_source": "osm:way/1215469655",
+"matched": "Yukon Wildlife Preserve, Takhini Hot Springs Road, Whitehorse, Yukon, Y1A 7A2, Canada",
+"by": "name"
+},
+"dolphin-discovery-cozumel": {
+"lat": 20.4320599,
+"lng": -86.9206906,
+"coord_source": "osm-town-centroid:relation/11914633",
+"matched": "Isla Cozumel, Cozumel, Quintana Roo, M\u00e9xico",
+"by": "town-centroid"
+},
+"dolphin-discovery-isla-mujeres": {
+"lat": 21.2346238,
+"lng": -86.7416712,
+"coord_source": "osm:node/4390358597",
+"matched": "Dolphin Discovery, Carrera Sac Bajo, Isla Mujeres, Quintana Roo, 77400, M\u00e9xico",
+"by": "name"
+},
+"reserve-danimaux-sauvages": {
+"lat": 50.6402809,
+"lng": 4.6667145,
+"coord_source": "osm-town-centroid:relation/52411",
+"matched": "Belgi\u00eb / Belgique / Belgien",
+"by": "town-centroid"
+},
+"malmo-aquarium": {
+"lat": 55.6841444,
+"lng": 13.1860445,
+"coord_source": "osm-town-centroid:way/23358339",
+"matched": "Malm\u00f6v\u00e4gen, R\u00e5byholm, S\u00f6der, Lund, Lunds kommun, Sk\u00e5ne l\u00e4n, 222 70, Sverige",
+"by": "town-centroid"
+},
+"myskoxcentrum": {
+"lat": 62.4411906,
+"lng": 12.6851505,
+"coord_source": "osm:node/11018366003",
+"matched": "Myskoxcentrum, Bygatan, T\u00e4nn\u00e4s, H\u00e4rjedalens kommun, J\u00e4mtlands l\u00e4n, Sverige",
+"by": "name"
+},
+"tallinn-zoo": {
+"lat": 59.4206609,
+"lng": 24.6610438,
+"coord_source": "osm:relation/4114592",
+"matched": "Tallinna loomaaed, 145, Paldiski mnt, Veskimetsa, Haabersti linnaosa, Tallinn, Harju maakond, 13522, Eesti",
+"by": "name"
+},
+"debrecen-zoo-nagyerdei-kulturpark": {
+"lat": 47.1817585,
+"lng": 19.5060937,
+"coord_source": "osm-town-centroid:relation/21335",
+"matched": "Magyarorsz\u00e1g",
+"by": "town-centroid"
+},
+"parco-zoo-falconara": {
+"lat": 43.6083658,
+"lng": 13.4041285,
+"coord_source": "osm:way/39042118",
+"matched": "Parco Zoo, Via Castello di Barcaglione, Palombina, Barcaglione, Falconara Marittima, Ancona, Marche, 60015, Italia",
+"by": "name"
+},
+"zoomarine-italia": {
+"lat": 42.6384261,
+"lng": 12.674297,
+"coord_source": "osm-town-centroid:relation/365331",
+"matched": "Italia",
+"by": "town-centroid"
+},
+"poznan-zoo": {
+"lat": 52.4082663,
+"lng": 16.9335199,
+"coord_source": "osm-town-centroid:relation/2456294",
+"matched": "Pozna\u0144, wojew\u00f3dztwo wielkopolskie, Polska",
+"by": "town-centroid"
+},
+"santo-inacio-zoo": {
+"lat": 41.0980132,
+"lng": -8.5367098,
+"coord_source": "osm:way/109604628",
+"matched": "Zoo Santo In\u00e1cio, 4503, Rua 5 de Outubro, Avintes, Vila Nova de Gaia, Porto, 4430-809, Portugal",
+"by": "name"
+},
+"arabias-wildlife-centre": {
+"lat": 25.2832548,
+"lng": 55.6971148,
+"coord_source": "osm:node/11766010820",
+"matched": "Arabia's Wildlife Centre, \u0637\u0631\u064a\u0642 \u0627\u0644\u0630\u064a\u062f, \u0627\u0644\u0628\u0637\u0627\u0626\u062d, \u0627\u0644\u0634\u0627\u0631\u0642\u0629, \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0645\u062a\u062d\u062f\u0629",
+"by": "name"
+},
+"atlantis-the-palm": {
+"lat": 25.132955,
+"lng": 55.1186685,
+"coord_source": "osm:node/6358632786",
+"matched": "Big bus 22 Atlantis the Palm, \u0634\u0627\u0631\u0639 \u0627\u0644\u0647\u0644\u0627\u0644 \u0627\u0644\u0634\u0631\u0642\u064a, \u0646\u062e\u0644\u0629 \u062c\u0645\u064a\u0631\u0627, \u062f\u0628\u064a, \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0645\u062a\u062d\u062f\u0629",
+"by": "name"
+},
+"aussie-ark": {
+"lat": -30.2927067,
+"lng": 153.124048,
+"coord_source": "osm-town-centroid:way/1416678447",
+"matched": "New South Wales, Coffs Harbour, New South Wales, 2450, Australia",
+"by": "town-centroid"
+},
+"australian-wildlife-sanctuary": {
+"lat": -32.1629594,
+"lng": 147.0320469,
+"coord_source": "osm-town-centroid:relation/2316593",
+"matched": "New South Wales, Australia",
+"by": "town-centroid"
+},
+"bunbury-wildlife-park": {
+"lat": -33.3422271,
+"lng": 115.6295973,
+"coord_source": "osm:way/960980582",
+"matched": "Bunbury Wildlife Park, Prince Philip Drive, Bunbury, South Bunbury, Bunbury, Western Australia, 6230, Australia",
+"by": "name"
+},
+"coffs-coast-wildlife-sanctuary": {
+"lat": -30.2987633,
+"lng": 153.1363922,
+"coord_source": "osm:way/1029876114",
+"matched": "Coffs Coast Wildlife Sanctuary, Coffs Harbour, New South Wales, Australia",
+"by": "name"
+},
+"devils-at-cradle": {
+"lat": -41.5902102,
+"lng": 145.9327894,
+"coord_source": "osm:way/1505008232",
+"matched": "devils@cradle, 3950, Cradle Mountain Road, Pencil Pine, Cradle Mountain, Tasmania, 7306, Australia",
+"by": "name"
+},
+"hamilton-island-wildlife": {
+"lat": -20.3460569,
+"lng": 148.9536761,
+"coord_source": "osm:node/1392002517",
+"matched": "Hamilton Island Wildlife Park, Resort Drive, Whitsundays, Hamilton Island, Queensland, 4802, Australia",
+"by": "name"
+},
+"hidden-vale-wildlife-centre": {
+"lat": -22.1646782,
+"lng": 144.5844903,
+"coord_source": "osm-town-centroid:relation/2316595",
+"matched": "Queensland, Australia",
+"by": "town-centroid"
+},
+"maru-koala-and-animal-park": {
+"lat": -36.5986096,
+"lng": 144.6780052,
+"coord_source": "osm-town-centroid:relation/2316741",
+"matched": "Victoria, Australia",
+"by": "town-centroid"
+},
+"paradise-country": {
+"lat": -27.9127304,
+"lng": 153.3045412,
+"coord_source": "osm:way/344186667",
+"matched": "Paradise Country, Production Drive, Oxenford, Queensland, 4210, Australia",
+"by": "name"
+},
+"potoroo-palace": {
+"lat": -36.8571083,
+"lng": 149.8358668,
+"coord_source": "osm:node/13971739145",
+"matched": "Potoroo Palace, Princes Hwy, Princes Highway, New South Wales, Australia",
+"by": "name"
+},
+"snakes-downunder-reptile-park-and-zoo": {
+"lat": -25.2391298,
+"lng": 152.3014581,
+"coord_source": "osm:way/256312848",
+"matched": "Snakes Downunder Reptile Park & Zoo, 51, Lucketts Road, Doolbi, Childers, Queensland, 4660, Australia",
+"by": "name"
+},
+"walkabout-creek-discovery-centre": {
+"lat": -20.6686285,
+"lng": 140.5089053,
+"coord_source": "osm-town-centroid:way/338711469",
+"matched": "Queensland And Northern Territory Aerial Service Historical Hangar, Sir Hudson Fysh Drive, Cloncurry, Queensland, 4824, ",
+"by": "town-centroid"
+},
+"ramat-gan-safari-zoological-center-tel-aviv-ramat-gan": {
+"lat": 30.8124247,
+"lng": 34.8594762,
+"coord_source": "osm-town-centroid:relation/1473946",
+"matched": "\u05d9\u05e9\u05e8\u05d0\u05dc",
+"by": "town-centroid"
+},
+"international-antarctic-centre": {
+"lat": -43.4886183,
+"lng": 172.5472178,
+"coord_source": "osm:way/83461742",
+"matched": "International Antarctic Centre, Roy Place, Christchurch Airport, Christchurch, Christchurch City, Canterbury, 8053, New ",
+"by": "name"
+},
+"national-kiwi-hatchery": {
+"lat": -38.0858935,
+"lng": 176.1852042,
+"coord_source": "osm:way/1245893260",
+"matched": "National Kiwi Hatchery, Dansey Road, Mamaku, Rotorua Lakes District, Bay of Plenty, 3072, New Zealand / Aotearoa",
+"by": "name"
+},
+"natureland-wildlife-trust": {
+"lat": -43.586562,
+"lng": 171.2123294,
+"coord_source": "osm-town-centroid:relation/3986157",
+"matched": "South Island / Te Waipounamu, New Zealand / Aotearoa",
+"by": "town-centroid"
+},
+"ti-point-reptile-park": {
+"lat": -38.0035304,
+"lng": 175.957821,
+"coord_source": "osm-town-centroid:relation/6571744",
+"matched": "North Island / Te Ika-a-M\u0101ui, New Zealand / Aotearoa",
+"by": "town-centroid"
+},
+"all-things-wild": {
+"lat": 52.0968199,
+"lng": -1.8347281,
+"coord_source": "osm:way/1093588034",
+"matched": "All Things Wild, Clun Forest Way, Honeybourne, Wychavon, Worcestershire, England, WR11 7AP, United Kingdom",
+"by": "name"
+},
+"fife-zoo": {
+"lat": 56.2987422,
+"lng": -3.155558,
+"coord_source": "osm:way/674121858",
+"matched": "Fife Zoo, B937, Collessie, Fife, Alba / Scotland, KY15 7UT, United Kingdom",
+"by": "name"
+},
+"kirkleatham-owl-centre": {
+"lat": 54.5877311,
+"lng": -1.0841818,
+"coord_source": "osm:way/1135576185",
+"matched": "Kirkleatham Owl Centre, Kirkleatham Lane, Yearby, Redcar, Redcar and Cleveland, Tees Valley, England, TS10 4QT, United K",
+"by": "name"
+},
+"old-macdonalds-farm": {
+"lat": 51.6258833,
+"lng": 0.2375653,
+"coord_source": "osm:node/1333615707",
+"matched": "Old Macdonald Farm, Old MacDonald's Farm, Weald Road, Brook Street, South Weald, Brentwood, Essex, England, CM14 5QU, Un",
+"by": "name"
+},
+"raptor-foundation": {
+"lat": 52.3641361,
+"lng": -0.0397224,
+"coord_source": "osm:way/35390173",
+"matched": "The Raptor Foundation, St. Ives Road, Woodhurst, Huntingdonshire, Cambridgeshire, Cambridgeshire and Peterborough, Engla",
+"by": "name"
+},
+"reaseheath-mini-zoo": {
+"lat": 53.0671376,
+"lng": -2.5221184,
+"coord_source": "osm-town-centroid:relation/358433",
+"matched": "Nantwich, Cheshire East, England, United Kingdom",
+"by": "town-centroid"
+},
+"sea-life-centre-weymouth": {
+"lat": 50.6096257,
+"lng": -2.4543424,
+"coord_source": "osm-town-centroid:relation/9450921",
+"matched": "Weymouth, Dorset, England, United Kingdom",
+"by": "town-centroid"
+},
+"sea-life-great-yarmouth": {
+"lat": 52.6071742,
+"lng": 1.7314845,
+"coord_source": "osm-town-centroid:node/17945850",
+"matched": "Great Yarmouth, Norfolk, England, NR30 2AH, United Kingdom",
+"by": "town-centroid"
+},
+"the-big-cat-sanctuary": {
+"lat": 51.1614162,
+"lng": 0.6635545,
+"coord_source": "osm:way/94831143",
+"matched": "The Big Cat Sanctuary, Marley Lane, Smarden, Ashford, Kent, England, TN27 8PJ, United Kingdom",
+"by": "name"
+},
+"the-deep": {
+"lat": 53.7387201,
+"lng": -0.3304863,
+"coord_source": "osm:way/15422279",
+"matched": "The Deep, Millennium Bridge, Garrison Side, Old Town, Hull, Kingston upon Hull, Hull and East Yorkshire, England, HU1 4D",
+"by": "name"
+},
+"waddesdon-manor-aviary": {
+"lat": 54.7023545,
+"lng": -3.2765753,
+"coord_source": "osm-town-centroid:relation/62149",
+"matched": "United Kingdom",
+"by": "town-centroid"
+},
+"watatunga-wildlife-reserve": {
+"lat": 52.6821347,
+"lng": 0.4192041,
+"coord_source": "osm:node/8009970990",
+"matched": "Watatunga Wildlife Reserve (Entrance), Watatunga Wildlife Reserve Driveway, Tottenhill Row, Tottenhill, King's Lynn and ",
+"by": "name"
+},
+"wild-discovery": {
+"lat": 53.7769629,
+"lng": -2.8990957,
+"coord_source": "osm:way/1557952644",
+"matched": "Wild Discovery Zoo, Ribby Road, Ribby, Ribby-with-Wrea, Wrea Green, Preston, Lancashire, England, PR4 2PR, United Kingdo",
+"by": "name"
+},
+"wild-zoological-park": {
+"lat": 52.5118504,
+"lng": -2.2850494,
+"coord_source": "osm-town-centroid:relation/6921627",
+"matched": "Bobbington, Halfpenny Green, South Staffordshire, Staffordshire, England, United Kingdom",
+"by": "town-centroid"
+},
+"ardmore-open-farm-and-mini-zoo": {
+"lat": 51.9508055,
+"lng": -7.7255148,
+"coord_source": "osm-town-centroid:relation/14609053",
+"matched": "Ardmore, County Waterford, Munster, \u00c9ire / Ireland",
+"by": "town-centroid"
+},
+"tropical-world-at-alcorns": {
+"lat": 54.9517941,
+"lng": -7.7354368,
+"coord_source": "osm-town-centroid:relation/9313498",
+"matched": "Letterkenny Municipal District, County Donegal, Ulster, \u00c9ire / Ireland",
+"by": "town-centroid"
+},
+"baylor-university-bear-habitat": {
+"lat": 31.5545147,
+"lng": -97.1325618,
+"coord_source": "osm-town-centroid:relation/113870",
+"matched": "Waco, McLennan County, Texas, United States",
+"by": "town-centroid"
+},
+"johnny-morris-wonders-of-wildlife-national-museum-and-aquarium": {
+"lat": 37.2081729,
+"lng": -93.2922715,
+"coord_source": "osm-town-centroid:relation/141244",
+"matched": "Springfield, Greene County, Missouri, United States",
+"by": "town-centroid"
+},
+"longneck-manor": {
+"lat": 30.2752011,
+"lng": -98.8719843,
+"coord_source": "osm-town-centroid:relation/4725287",
+"matched": "Fredericksburg, Gillespie County, Texas, United States",
+"by": "town-centroid"
+},
+"sunset-zoological-park": {
+"lat": 39.1836082,
+"lng": -96.5716694,
+"coord_source": "osm-town-centroid:relation/129869",
+"matched": "Manhattan, Riley County, Kansas, United States",
+"by": "town-centroid"
+},
+"jenkinsons-aquarium": {
+"lat": 40.0947273,
+"lng": -74.0364873,
+"coord_source": "osm:way/267831648",
+"matched": "Jenkinson's Aquarium, Point Pleasant Boardwalk, Point Pleasant Beach, Ocean County, New Jersey, 08742, United States",
+"by": "name"
+},
+"oglebays-good-zoo": {
+"lat": 40.0639616,
+"lng": -80.7209149,
+"coord_source": "osm-town-centroid:relation/239989",
+"matched": "Wheeling, Ohio County, West Virginia, 26003, United States",
+"by": "town-centroid"
+},
+"ripleys-aquarium-of-the-smokies": {
+"lat": 35.7141943,
+"lng": -83.5131587,
+"coord_source": "osm:way/263700850",
+"matched": "Ripley's Aquarium of the Smokies, Greystone Heights Road, Gatlinburg, Sevier County, East Tennessee, Tennessee, 37738, U",
+"by": "name"
+},
+"trevor-lovejoy-zoo": {
+"lat": 41.7865038,
+"lng": -73.6921867,
+"coord_source": "osm-town-centroid:relation/175938",
+"matched": "Village of Millbrook, Town of Washington, Dutchess County, New York, 12545, United States",
+"by": "town-centroid"
+},
+"virginia-aquarium-and-marine-science-center": {
+"lat": 36.8496579,
+"lng": -75.9760751,
+"coord_source": "osm-town-centroid:relation/206670",
+"matched": "Virginia Beach, Virginia, United States",
+"by": "town-centroid"
+},
+"idaho-falls-zoo": {
+"lat": 43.4722395,
+"lng": -112.0422337,
+"coord_source": "osm:way/957725462",
+"matched": "Idaho Falls Zoo at Tautphaus Park, Carnival Way, Idaho Falls, Bonneville County, Idaho, 83403, United States",
+"by": "name"
+},
+"sea-life-aquarium-at-legoland-california-resort": {
+"lat": 33.1352045,
+"lng": -117.329126,
+"coord_source": "osm-town-centroid:relation/2305279",
+"matched": "Carlsbad, San Diego County, California, United States",
+"by": "town-centroid"
+},
+"steinhart-aquarium": {
+"lat": 37.7694853,
+"lng": -122.465976,
+"coord_source": "osm:node/368173914",
+"matched": "Steinhart Aquarium, Nancy Pelosi Drive, Inner Richmond, Richmond District, San Francisco, California, 94122, United Stat",
+"by": "name"
+}
+}

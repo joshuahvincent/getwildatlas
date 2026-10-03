@@ -1,0 +1,47 @@
+[
+{
+"id": "aquarium-du-quebec",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "atlantis-paradise-island",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "dolphin-discovery-cozumel",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "dolphin-discovery-isla-mujeres",
+"why": "not crawled",
+"kept": true
+},
+{
+"id": "greater-vancouver-zoo",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "parc-omega",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "vancouver-aquarium",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "zoo-de-guyane",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "zoologico-de-cali",
+"why": "home 200, pages 1",
+"kept": true
+}
+]
