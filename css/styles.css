@@ -2155,3 +2155,9 @@ body { padding-top: var(--promo-h); }
   .zoofind-card { transition: none; }
   .zoofind-card:hover, .zoofind-card:focus-visible { transform: none; }
 }
+
+
+/* ── Tell the games section and the "How Big? How Heavy?" showcase apart (both were plain white, back to back) ──
+   Games get a soft mint wash; a rule separates them from the white showcase below. */
+.games-section { background: #EAF7EF; }
+.showcase-scale { border-top: 2px solid rgba(93, 64, 55, 0.14); }
