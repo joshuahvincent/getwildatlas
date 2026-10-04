@@ -3,6 +3,10 @@ import json, os, re, sys, unicodedata, glob
 from urllib.parse import urlparse, unquote
 from bs4 import BeautifulSoup
 import taxa
+try:
+    import taxa_i18n
+except ImportError:
+    taxa_i18n = None
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import WORK as HERE, RAW
@@ -13,10 +17,22 @@ def strip_acc(s):
 
 def norm(s):
     s = strip_acc(s.lower()).replace('’', "'").replace('‘', "'")
-    s = re.sub(r"[^a-z0-9' ]+", ' ', s.replace('-', ' '))
+    s = re.sub(r"[^\w' ]+", ' ', s.replace('-', ' '))
     return re.sub(r'\s+', ' ', s).strip()
 
 # ---- common-name phrase table (longest first) ----
+CJK_RX = re.compile(r'[\u3040-\u30ff\u3400-\u9fff\uf900-\ufaff\uac00-\ud7af]')
+KATA = re.compile(r'^[\u30a1-\u30fa\u30fc]+$')
+CJK_PHR = {}   # phrase (NFKC) -> aid, for Japanese / Chinese / Korean names: matched as substrings because those scripts have no spaces
+if taxa_i18n:
+    for _aid, _names in taxa_i18n.I.items():
+        if _aid not in taxa.T: continue
+        for _n in _names:
+            if CJK_RX.search(_n): CJK_PHR.setdefault(unicodedata.normalize('NFKC', _n), _aid)
+            else: taxa.T[_aid]['names'].append(_n)   # Cyrillic goes through the normal word matcher
+_kata = sorted([p for p in CJK_PHR if KATA.match(p)], key=lambda k: -len(k)); _oth = sorted([p for p in CJK_PHR if not KATA.match(p)], key=lambda k: -len(k))
+CJK_KATA_RX = re.compile(r'(?<![\u30a1-\u30fa\u30fc])(' + '|'.join(re.escape(p) for p in _kata) + r')(?![\u30a1-\u30fa\u30fc])') if _kata else None
+CJK_OTH_RX = re.compile('(' + '|'.join(re.escape(p) + ('(?!터)' if p == '하마' else '') for p in _oth) + ')') if _oth else None
 PHR = {}
 for aid, t in taxa.T.items():
     for n in t['names']:
@@ -32,7 +48,7 @@ for n in taxa.NEG:
         PHR[k] = (None, None, None, None)
 PHR.pop('', None)
 PKEYS = sorted(PHR, key=lambda k: -len(k))
-PRE = re.compile(r"(?<![a-z0-9'])(" + '|'.join(re.escape(k) for k in PKEYS) + r")(?![a-z0-9])")
+PRE = re.compile(r"(?<![\w'])(" + '|'.join(re.escape(k) for k in PKEYS) + r")(?![\w])")
 
 def name_hits(text):
     """return list of (aid, match, via, rat, phrase) using longest-first, non-overlapping."""
@@ -41,6 +57,13 @@ def name_hits(text):
         v = PHR[m.group(1)]
         if v[0]:
             out.append((*v, m.group(1)))
+    if CJK_PHR and CJK_RX.search(text):
+        t = unicodedata.normalize('NFKC', text); seen = set()
+        for rx in (CJK_KATA_RX, CJK_OTH_RX):
+            if rx is None: continue
+            for m in rx.finditer(t):
+                aid = CJK_PHR.get(m.group(1))
+                if aid and aid not in seen: seen.add(aid); out.append((aid, 'exact', None, None, m.group(1)))
     return out
 
 # ---- scientific names ----
@@ -109,6 +132,7 @@ def title_parts(soup):
     return [x for x in h1 if x][:2], [x.strip() for x in tseg if x.strip()][:1]
 
 ANIMAL_PATH = re.compile(taxa.__dict__.get('ANIMAL_PATH', r'(animal|animaux|animales|animais|animali|especie|espece|specie|species|fauna|zvir|zv%c3%ad%c5%99|zvíř|zwierz|allat|%c3%a1llat|állat|zivotinj|životinj|zvierat|hayvan|tiere|fiche|ficha|scheda|bestiar|lexikon|encyklop|atlas|pensionnaire|chovan|gatun|druh|residents|mammi|mamif|oiseau|aves|uccell|ptac|ptak|madar|reptil|plaz|gady|amphib|poisson|peces|pesci|peix|ryby|halak|sisavc|ptice|gmaz|memeli|kus|loomad|dzivniek|gyvun|zival)'), re.I)
+ANIMAL_PATH = re.compile(ANIMAL_PATH.pattern + r'|dobutsu|doubutsu|ikimono|zukan|dongwu|dongmul|exhibit|動物|动物|生き物|生物|동물|животн')
 
 def analyze_place(pid):
     d = os.path.join(HERE, 'html', pid)

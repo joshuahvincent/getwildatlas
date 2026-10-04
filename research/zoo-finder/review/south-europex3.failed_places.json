@@ -1,0 +1,442 @@
+[
+{
+"id": "tirana-zoo-q3302134",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "festa-dolphinarium-q19850452",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "stara-zagora-zoo-q18639777",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "varna-aquarium-q3657749",
+"why": "home 444, pages 0",
+"kept": true
+},
+{
+"id": "grodno-zoo-q3918688",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "farmapark-muchomurka-q108545050",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "parrot-zoo-in-bosovice-q81891890",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "tabor-zoo-q11756334",
+"why": "home 401, pages 0",
+"kept": true
+},
+{
+"id": "zlin-lesna-zoo",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "zoo-hluboka",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "zoo-plasy-q42878518",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "zoopark-milicov-q129998568",
+"why": "home 400, pages 0",
+"kept": true
+},
+{
+"id": "zoopark-vyskov-q10861328",
+"why": "home 401, pages 0",
+"kept": true
+},
+{
+"id": "acuario-do-grove-q113435736",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "aquarium-river-of-zaragoza-q5657014",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "aquarium-de-donostia-san-sebastian-q12256355",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "avifauna-q8210478",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "castellar-zoo-q63993040",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "el-jardi-dels-ocells-q18216083",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "lanzarote-aquarium-q1805628",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "mundomar-q5408775",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "palma-aquarium-q1656431",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "selwo-marina",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "terra-natura-benidorm",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "zoo-de-guadalajara-q64006794",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "aquarium-d-allex-q111049191",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "aquarium-de-paris-q2973092",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "aquarium-of-tregastel-q2859190",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "cleres-zoological-park",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "domaine-zoologique-de-pescheray-q16507751",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "grand-aquarium-de-touraine-q2859186",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "jardin-zoologique-de-la-ville-de-lyon",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "la-serre-aux-papillons-q16964707",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "le-parc-australien-q107558758",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "micro-zoo-de-saint-malo-q116024970",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "parc-animalier-de-charleville-mezieres-q17347161",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "parc-disle",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "parc-des-felins",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "parc-zoologique-de-bordeaux-pessac-q3364781",
+"why": "home 503, pages 0",
+"kept": true
+},
+{
+"id": "parc-zoologique-de-fort-mardyck-dunkerque-grand-littoral",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "parc-zoologique-de-plaisance-du-touch",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "planet-ocean-montpellier-q3290344",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "rocamadour-monkey-forest-q64875484",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "village-des-tortues-q3558984",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "zoo-la-barben",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "zoo-de-mescoules-q100942885",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "zoodyssee",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "aquarium-of-rhodes-q31833",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "aquaworld-aquarium-q4782841",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "jaszbereny-zoo",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "kittenberger-kalman-zoo-and-botanical-garden",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "zoo-gyor",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "abruzzo-zoo-q20010227",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "aquarium-of-genoa",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "collodi-butterfly-house-q55761417",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "faunistic-park-cappeller-q3895597",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "parco-natura-viva",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "stazione-zoologica-anton-dohrn-q220221",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "latgale-zoo-q4254924",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "skopje-zoo-q3133681",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "malta-national-aquarium-q97126855",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "krakow-zoo",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "lodz-zoo",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "sea-life-porto-q1439061",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "zoomarine",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "jagodina-zoo-q10952800",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "belgorod-zoo-q4081722",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "dolphinarium-q50435441",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "dolphinarium-in-naberezhnye-chelny-q4311179",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "kara-dag-dolphinarium-q16700961",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "karelian-zoo-q104601172",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "krasnodar-safari-park-q109887602",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "moscow-zoo-q613676",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "murmansk-oceanarium-q4308114",
+"why": "home 403, pages 0",
+"kept": true
+},
+{
+"id": "ocean-park-krasnodar-q18590217",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "oceanarium-in-saint-petersburg-q4332495",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "oceanarium-of-vladivostok-q4112966",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "primorsky-aquarium-q16688355",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "seversk-zoo-q4412623",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "yekaterinburg-zoo-q4174319",
+"why": "home None, pages 0",
+"kept": true
+},
+{
+"id": "aquarium-piran-q121296332",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "zoo-stropkov-q3077125",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "zoo-kontakt-q101063224",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "izmir-wildlife-park",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "cherkasy-zoo-q10698900",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "kharkiv-dolphinarium-q12166962",
+"why": "home 404, pages 0",
+"kept": true
+},
+{
+"id": "mena-zoo-q12122625",
+"why": "home 200, pages 1",
+"kept": true
+},
+{
+"id": "podilskyi-zoo-q4111612",
+"why": "home 200, pages 1",
+"kept": true
+}
+]
