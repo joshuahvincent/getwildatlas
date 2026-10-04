@@ -2155,3 +2155,18 @@ body { padding-top: var(--promo-h); }
   .zoofind-card { transition: none; }
   .zoofind-card:hover, .zoofind-card:focus-visible { transform: none; }
 }
+
+
+/* ── "So Much to Discover": all six tiles on one horizontal line ──
+   Desktop: six equal columns. Tablet and phone: the same single row, scrolled sideways (snaps tile by tile). */
+@media (min-width: 901px) {
+  .features-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: var(--space-md); }
+  .features-grid .feature-item { padding: var(--space-lg) var(--space-sm); }
+  .features-grid .feature-item img { width: 64px; height: 64px; }
+  .features-grid .feature-item h4 { font-size: 1rem; }
+  .features-grid .feature-item p { font-size: 0.82rem; }
+}
+@media (max-width: 900px) {
+  .features-grid { display: flex; flex-wrap: nowrap; overflow-x: auto; gap: var(--space-md); padding: 4px 2px 12px; scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch; }
+  .features-grid .feature-item { flex: 0 0 200px; scroll-snap-align: start; }
+}
