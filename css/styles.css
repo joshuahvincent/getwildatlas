@@ -2175,3 +2175,8 @@ body { padding-top: var(--promo-h); }
   .features-grid { display: flex; flex-wrap: nowrap; overflow-x: auto; gap: var(--space-md); padding: 4px 2px 12px; scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch; }
   .features-grid .feature-item { flex: 0 0 200px; scroll-snap-align: start; }
 }
+
+
+/* "Available in 5 Languages": its own sky-blue band with a rule, so it reads as a new section after the cream World Explorer one above it
+   (it used `var(--white)`, which is not defined, so it fell back to the same cream page background). */
+.showcase-languages { background: var(--sky-wash); border-top: 2px solid rgba(93, 64, 55, 0.14); }
