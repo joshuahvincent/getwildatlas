@@ -240,7 +240,9 @@ const FLY_ZOOM = 5.3;   // "Show on map": the city and the region around it
 const TEAL = '#0E7C86', TEAL_DARK = '#08454A', GREEN = '#2E7D32', GREEN_DARK = '#17441a', YELLOW = '#FACC15', YELLOW_DARK = '#6b5200', YOU = '#2563EB';
 let map = null, mapLib = null, popup = null, mapReady = null, lastCands = [];
 const TIER_OF = (rank) => (rank === 0 ? 0 : rank === 1 ? 1 : rank <= 3 ? 2 : rank === 4 ? 3 : 4);
-const zoomR = (a, b, c) => ['interpolate', ['linear'], ['zoom'], 1, a, 5, b, 9, c];
+// pin sizes shrink a lot when the map is zoomed out (thousands of places at world level), and reach their full size by zoom 5
+const zoomR = (a, b, c) => ['interpolate', ['linear'], ['zoom'], 0, a * 0.28, 2, a * 0.4, 4, b * 0.75, 5, b, 9, c];
+const zoomW = (w) => ['interpolate', ['linear'], ['zoom'], 0, w * 0.35, 3, w * 0.6, 5, w];
 function mapStyle() {
   const pin = (id, tier, radius, paint) => ({ id, type: 'circle', source: 'pins', filter: ['==', ['get', 'tier'], tier], paint: Object.assign({ 'circle-radius': radius }, paint) });
   return {
@@ -255,13 +257,13 @@ function mapStyle() {
       { id: 'land', type: 'fill', source: 'countries', paint: { 'fill-color': '#f7efdc' } },
       { id: 'borders', type: 'line', source: 'countries', paint: { 'line-color': '#a8946a', 'line-width': 1.1 } },
       // tier 3 similar animals: small grey ring; tier 2 close relative: small green dot; tier 1 unconfirmed: yellow dot; tier 0 lists it: large green dot with white halo
-      pin('pins-g', 3, zoomR(3.5, 5, 7), { 'circle-color': '#ffffff', 'circle-stroke-color': '#6b6b6b', 'circle-stroke-width': 1.6 }),
-      pin('pins-r', 2, zoomR(3.5, 5, 7), { 'circle-color': GREEN, 'circle-stroke-color': '#ffffff', 'circle-stroke-width': 1.5 }),
+      pin('pins-g', 3, zoomR(3.5, 5, 7), { 'circle-color': '#ffffff', 'circle-stroke-color': '#6b6b6b', 'circle-stroke-width': zoomW(1.6) }),
+      pin('pins-r', 2, zoomR(3.5, 5, 7), { 'circle-color': GREEN, 'circle-stroke-color': '#ffffff', 'circle-stroke-width': zoomW(1.5) }),
       { id: 'halo', type: 'circle', source: 'pins', filter: ['any', ['<=', ['get', 'tier'], 1], ['==', ['get', 'tier'], 4]], paint: { 'circle-radius': zoomR(7, 9.5, 12.5), 'circle-color': '#ffffff' } },
-      pin('pins-w', 1, zoomR(5, 7, 9.5), { 'circle-color': YELLOW, 'circle-stroke-color': YELLOW_DARK, 'circle-stroke-width': 2 }),
-      pin('pins-d', 4, zoomR(5, 7, 9.5), { 'circle-color': TEAL, 'circle-stroke-color': TEAL_DARK, 'circle-stroke-width': 1.5 }),   // in the wild: national parks / reserves
-      pin('pins-e', 0, zoomR(5, 7, 9.5), { 'circle-color': GREEN, 'circle-stroke-color': GREEN_DARK, 'circle-stroke-width': 1.5 }),
-      { id: 'active', type: 'circle', source: 'pins', filter: ['==', ['get', 'pi'], -1], paint: { 'circle-radius': 15, 'circle-color': 'rgba(0,0,0,0)', 'circle-stroke-color': '#2A2118', 'circle-stroke-width': 3 } },
+      pin('pins-w', 1, zoomR(5, 7, 9.5), { 'circle-color': YELLOW, 'circle-stroke-color': YELLOW_DARK, 'circle-stroke-width': zoomW(2) }),
+      pin('pins-d', 4, zoomR(5, 7, 9.5), { 'circle-color': TEAL, 'circle-stroke-color': TEAL_DARK, 'circle-stroke-width': zoomW(1.5) }),   // in the wild: national parks / reserves
+      pin('pins-e', 0, zoomR(5, 7, 9.5), { 'circle-color': GREEN, 'circle-stroke-color': GREEN_DARK, 'circle-stroke-width': zoomW(1.5) }),
+      { id: 'active', type: 'circle', source: 'pins', filter: ['==', ['get', 'pi'], -1], paint: { 'circle-radius': 15, 'circle-color': 'rgba(0,0,0,0)', 'circle-stroke-color': '#2A2118', 'circle-stroke-width': zoomW(3) } },
       // "You": a big blue dot with a white halo and a soft ring so it reads on any background
       { id: 'me-ring', type: 'circle', source: 'me', paint: { 'circle-radius': 18, 'circle-color': YOU, 'circle-opacity': 0.18 } },
       { id: 'me-halo', type: 'circle', source: 'me', paint: { 'circle-radius': 11, 'circle-color': '#ffffff' } },
@@ -322,7 +324,8 @@ function fbWebglOk() { try { const c = document.createElement('canvas'); return 
 function fbApply() {
   const v = FB.vb, k = FB.cw ? v.w / FB.cw : 1;
   FB.svg.setAttribute('viewBox', [v.x, v.y, v.w, v.w * FB.ch / FB.cw].join(' '));
-  FB.pins.forEach((p) => { p.g.setAttribute('transform', 'translate(' + p.x + ' ' + p.y + ') scale(' + k + ')'); });
+  const f = Math.max(0.35, Math.min(1, 0.35 + 0.16 * Math.log2(360 * FB_K / v.w)));   // smaller pins when zoomed out
+  FB.pins.forEach((p) => { p.g.setAttribute('transform', 'translate(' + p.x + ' ' + p.y + ') scale(' + (k * f) + ')'); });
   FB.gMe.setAttribute('transform', FB.meXY ? 'translate(' + FB.meXY[0] + ' ' + FB.meXY[1] + ') scale(' + k + ')' : 'translate(-999 -999)');
   FB.ring.setAttribute('transform', FB.ringXY ? 'translate(' + FB.ringXY[0] + ' ' + FB.ringXY[1] + ') scale(' + k + ')' : 'translate(-999 -999)');
   if (FB.popFor) fbPlacePop();
