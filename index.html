@@ -50,7 +50,7 @@
   <!-- Preconnect to Formspree -->
   <link rel="preconnect" href="https://formspree.io">
 
-  <link rel="stylesheet" href="css/styles.css?v=13">
+  <link rel="stylesheet" href="css/styles.css?v=14">
 
   <!-- Structured Data: SoftwareApplication -->
   <script type="application/ld+json">
@@ -168,6 +168,7 @@
         <li><a href="#features" data-i18n="nav.features">Features</a></li>
         <li><a href="#parents" data-i18n="nav.parents">For Parents</a></li>
         <li><a href="/calendar/">Calendar</a></li>
+        <li><a href="/zoos/">Zoo Finder</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="press.html">Press</a></li>
         <li class="nav-lang-picker-item">
@@ -313,6 +314,20 @@
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- ZOO FINDER: one short row like the calendar one, links to /zoos/ -->
+  <section class="zoofind" id="zoo-finder" aria-labelledby="zoofind-heading">
+    <div class="container">
+      <a class="zoofind-card" href="/zoos/">
+        <img class="zoofind-img" src="/assets/zoos/icons/place-zoo.png" alt="" width="64" height="64" loading="lazy">
+        <span class="zoofind-text">
+          <span class="zoofind-eyebrow">Real animals, real places</span>
+          <span class="zoofind-line" id="zoofind-heading">Find a place to see animals near me</span>
+        </span>
+        <span class="zoofind-cta">Open the finder <span aria-hidden="true">&rarr;</span></span>
+      </a>
     </div>
   </section>
 
@@ -867,6 +882,7 @@
         <div class="footer-links">
           <a href="about.html" data-i18n="footer.about">About</a>
           <a href="/calendar/">World Wildlife Calendar</a>
+          <a href="/zoos/">Zoo Finder</a>
           <a href="/blog/">Blog</a>
           <a href="#newsletter" data-i18n="footer.newsletter">Newsletter</a>
           <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
