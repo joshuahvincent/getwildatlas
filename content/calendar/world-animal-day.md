@@ -32,9 +32,9 @@ So let's try it. Grab a small explorer, read this one out loud together, and tak
   <img src="/assets/blog/world-animal-day-2026/african-elephant.jpg" alt="An African elephant striding across dry golden grassland">
 </figure>
 
-Meet the **African elephant**. Elephants talk in deep, low rumbles — some so low that people can't hear them at all. And scientists think elephants can *feel* those rumbles through the ground, with their big, soft feet.
+Meet the **African elephant**. Elephants talk in deep, low rumbles — some so deep that people can't hear them. And scientists think elephants can *feel* those rumbles through the ground, with their big, soft feet.
 
-Can you put your hands flat on the floor and feel for a rumble?
+Can you put your hands flat on the floor and imagine feeling a faraway rumble?
 
 <p class="stop-label">Stop 2 · North America</p>
 
@@ -88,7 +88,7 @@ Can you imagine finding your snack with your eyes closed?
   <img src="/assets/blog/world-animal-day-2026/emperor-penguin-chick.jpg" alt="A fluffy grey emperor penguin chick standing on the ice">
 </figure>
 
-In the coldest place on Earth, thousands of **emperor penguins** huddle together. Every chick has its own special call, and a penguin parent can find *their* chick in the crowd just by listening for its voice.
+In the coldest place on Earth, thousands of **emperor penguins** huddle together. Every chick has its own special call, and a penguin parent uses those calls to find *their* chick in the huddle.
 
 Does your family have a special way of calling you?
 
