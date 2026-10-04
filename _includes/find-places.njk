@@ -1,0 +1,19 @@
+{#- "Find places to see animals near me" → the zoo finder, for calendar pages with
+    no map or place list of their own (simple days, World Animal Day, animal pages
+    without whereToSee). Pages with a map carry an animal-specific button instead.
+    A full-width pale-blue band like the home page's calendar row (--sky-wash):
+    the box-shadow + clip-path pair bleeds the background edge to edge without
+    widening the page. -#}
+{%- if zooFinderLive %}
+<style>
+  .find-places { margin: 2rem 0; padding: 1.6rem 1rem; text-align: center; background: #DDEEFF; box-shadow: 0 0 0 100vmax #DDEEFF; clip-path: inset(0 -100vmax); }
+  .find-places-lead { margin: 0 0 0.8rem; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 1.2rem; color: #5D4037; }
+  .find-places a { display: inline-block; padding: 0.7rem 1.4rem; border-radius: 999px; background: #5D4037; color: #fff !important; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 1.05rem; text-decoration: none; box-shadow: 0 4px 14px rgba(93, 64, 55, 0.2); transition: transform 0.2s ease; }
+  .find-places a:hover, .find-places a:focus-visible { transform: translateY(-2px); background: #4a3229; }
+  @media (prefers-reduced-motion: reduce) { .find-places a { transition: none; } .find-places a:hover { transform: none; } }
+</style>
+<section class="find-places" aria-label="Find places to see animals">
+  <p class="find-places-lead">Want to see animals in real life?</p>
+  <a href="/zoos/">Find places to see animals near me →</a>
+</section>
+{%- endif %}

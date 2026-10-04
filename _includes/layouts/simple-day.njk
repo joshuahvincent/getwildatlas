@@ -41,6 +41,8 @@ layout: layouts/post.njk
 {% if s.joinIn %}<h2>How to join in</h2>
 {{ s.joinIn | md | safe }}{% endif %}
 
+{% include "find-places.njk" %}
+
 {% if s.relatedApp %}<h2>Keep exploring</h2>
 {{ s.relatedApp.text | md | safe }}
 <p><a href="https://apps.apple.com/us/app/wild-atlas/id6761081031?ct={{ s.campaign }}&amp;utm_source=blog&amp;utm_medium=owned&amp;utm_campaign={{ s.campaign }}">Explore Wild Atlas →</a></p>{% endif %}

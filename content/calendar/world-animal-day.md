@@ -100,6 +100,8 @@ That's the whole trip. Seven continents, one ocean — and every animal noticing
 
 <div class="grownup-box">
 
+{% include "find-places.njk" %}
+
 ## For grown-ups: why we made Wild Atlas
 
 The World Animal Day theme asks us to slow down and see the world from an animal's point of view. That's a big idea, but children do it naturally. Ask a four-year-old what an elephant hears, and they might just put their ear to the floor.
