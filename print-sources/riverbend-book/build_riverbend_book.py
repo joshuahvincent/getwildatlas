@@ -106,14 +106,15 @@ def claim_page(F, logo):
     for t in lines:
         y = text_block(d, (M + 40, y), t, F.nunito(44, True), W - 2 * M - 80, align="center") + 20
     qs = 520; qx = (W - qs) // 2; qy = y + 50
-    rbox(d, [qx, qy, qx + qs, qy + qs], r=24, width=6, dash=True)
-    center_text(d, qy + qs // 2 - 40, "SAMPLE QR", F.fredoka(60, 600), fill=GREY)
-    center_text(d, qy + qs // 2 + 30, "not scannable", F.nunito(34), fill=GREY)
+    import qrcode
+    qr = qrcode.QRCode(border=2, box_size=10); qr.add_data("https://riverbendaquarium.example/wild-atlas-free-pack"); qr.make(fit=True)
+    qi = qr.make_image(fill_color="black", back_color="white").convert("RGB").resize((qs, qs), Image.NEAREST)
+    d.rectangle([qx - 20, qy - 20, qx + qs + 20, qy + qs + 20], outline=INK, width=6); p.img.paste(qi, (qx, qy))
     cy = qy + qs + 70; f = F.fredoka(92, 650); txt = "RIVERBEND"; tw = d.textlength(txt, font=f)
     d.rounded_rectangle([(W - tw) / 2 - 70, cy, (W + tw) / 2 + 70, cy + 150], radius=75, width=6, outline=INK)
     d.text((W / 2, cy + 75), txt, font=f, fill=INK, anchor="mm")
     center_text(d, cy + 200, "Free: no ads, no sign-up, works offline.", F.nunito(40, True))
-    text_block(d, (M + 40, cy + 300), "Example page. “Riverbend Aquarium” and the code RIVERBEND are fictional and unlock nothing. "
+    text_block(d, (M + 40, cy + 300), "Example page. This QR code, “Riverbend Aquarium” and the code RIVERBEND are made up and unlock nothing. "
                "A real venue gets its own code and QR.", F.nunito(30), W - 2 * M - 80, fill=(110, 110, 110), align="center")
     return p.img
 
@@ -172,12 +173,13 @@ def cover_page(F, logo_color):
     yy = ty + 300
     d.rounded_rectangle([(W - sw_) / 2 - 40, yy - 44, (W + sw_) / 2 + 40, yy + 44], radius=44, fill="white")
     d.text((W / 2, yy), sub, font=f, fill=NAVY, anchor="mm")
-    pill = F.fredoka(44, 650); pt = "Ages 3–8"; pw2 = d.textlength(pt, font=pill)
-    d.rounded_rectangle([(W - pw2) / 2 - 40, yy + 80, (W + pw2) / 2 + 40, yy + 160], radius=40, fill=(255, 217, 125))
-    d.text((W / 2, yy + 120), pt, font=pill, fill=NAVY, anchor="mm")
     ft = "Example book. Riverbend Aquarium is a fictional venue."; ff = F.nunito(28, True); fw = d.textlength(ft, font=ff)
-    d.rounded_rectangle([(W - fw) / 2 - 30, H - 86, (W + fw) / 2 + 30, H - 30], radius=28, fill=NAVY)
-    d.text((W / 2, H - 58), ft, font=ff, fill="white", anchor="mm")
+    d.rounded_rectangle([60, H - 86, 60 + fw + 60, H - 30], radius=28, fill=NAVY)
+    d.text((90, H - 58), ft, font=ff, fill="white", anchor="lm")
+    lk = wa_lockup(F, 84); tag_w, tag_h = lk.width + 70, lk.height + 40       # Wild Atlas attribution, bottom right
+    tx0, ty0 = W - 60 - tag_w, H - 40 - tag_h
+    d.rounded_rectangle([tx0, ty0, tx0 + tag_w, ty0 + tag_h], radius=36, fill="white")
+    cov.paste(lk, (tx0 + 35, ty0 + 20), lk)
     return cov
 
 def wa_lockup(F, height=190):
@@ -192,12 +194,10 @@ def wa_lockup(F, height=190):
 
 def welcome_page(F, logo_color, logo_small):
     img = Image.new("RGB", (W, H), "white"); d = ImageDraw.Draw(img)
-    d.text((M, 70), "Animals, facts & puzzles by", font=F.nunito(30, True), fill=(120, 120, 120))
-    lk = wa_lockup(F, 170); img.paste(lk, (M, 115), lk)
-    y = 360
+    y = 150
     d.text((M, y), f"Welcome to {VENUE}!", font=F.fredoka(84, 700), fill=NAVY); y += 125
-    paras = [("How this book works", "Every animal gets two pages: a puzzle or something to draw on the left, and the animal to color on the right, "
-                                    "with real facts to read aloud. Read each one-line instruction once; the little picture reminds your explorer what to do."),
+    paras = [("How this book works", "Every animal gets two pages: the animal to color on the left, with real facts to read aloud, and a puzzle or something to draw on the right. "
+                                    "Read each one-line instruction once; the little picture reminds your explorer what to do."),
              ("Crayons and colored pencils work best", "Markers may show through to the next page. Most answers are printed upside down on the page; the rest are in the answer key."),
              ("A free animal pack", "This book includes a free animal pack for the Wild Atlas app, a safe, ad-free animal encyclopedia for kids. The claim page is near the back of the book.")]
     for h, t in paras:
@@ -226,6 +226,18 @@ def welcome_page(F, logo_color, logo_small):
             d.rounded_rectangle([x0, sy, x0 + tw, sy + th], radius=18, outline=(170, 170, 170), width=4, fill=(238, 244, 246))
             d.text((x0 + tw / 2, sy + th / 2), "photo", font=F.nunito(34), fill=(150, 150, 150), anchor="mm")
         d.text((x0 + tw / 2, sy + th + 30), cap, font=F.nunito(30, True), fill=(60, 60, 60), anchor="mm")
+    # footer: Wild Atlas lockup + QR to install the app
+    import qrcode
+    qr = qrcode.QRCode(border=2, box_size=10); qr.add_data("https://apps.apple.com/us/app/wild-atlas/id6761081031"); qr.make(fit=True)
+    qi = qr.make_image(fill_color="black", back_color="white").convert("RGB").resize((250, 250), Image.NEAREST)
+    fy = H - 330
+    d.line([(M, fy - 30), (W - M, fy - 30)], fill=(200, 200, 200), width=3)
+    d.text((M, fy + 6), "Animals, facts & puzzles by", font=F.nunito(30, True), fill=(120, 120, 120))
+    lk = wa_lockup(F, 130); img.paste(lk, (M, fy + 50), lk)
+    d.text((M, fy + 205), "A safe, ad-free animal app for kids.", font=F.nunito(34), fill=(70, 70, 70))
+    img.paste(qi, (W - M - 250, fy + 10))
+    d.text((W - M - 265, fy + 90), "Scan to install", font=F.fredoka(40, 650), fill=(30, 30, 30), anchor="rm")
+    d.text((W - M - 265, fy + 140), "Wild Atlas, free on iPhone & iPad", font=F.nunito(28), fill=(90, 90, 90), anchor="rm")
     return img
 
 def _glyph_cup(d, x, y, s):
@@ -255,14 +267,12 @@ def map_page(F, A, logo):
                 d.ellipse([x - 6, y - 6, x + 6, y + 6], fill=INK)
     cx = mx0 + mw * .5
     dotted([(cx, my0 + mh * .88), (cx, my0 + mh * .035)])
-    ZONES = [  # name, rect(frac), animals
-        ("Reef Gallery", (0.0, 0.015, 0.47, 0.24), ["octopus", "clownfish", "seahorse", "starfish"]),
-        ("Jellyfish Hall", (0.53, 0.015, 1.0, 0.24), ["jellyfish", "manta_ray"]),
-        ("Otter & Sea Lion Cove", (0.0, 0.26, 0.47, 0.43), ["sea_otter", "sea_lion"]),
-        ("Shark Tunnel", (0.53, 0.26, 1.0, 0.43), ["great_white_shark", "hammerhead_shark"]),
-        ("Penguin Point", (0.0, 0.45, 0.47, 0.675), ["emperor_penguin", "atlantic_puffin"]),
-        ("River Walk", (0.53, 0.45, 1.0, 0.675), ["capybara", "hippopotamus", "alligator", "platypus"]),
-        ("Frog & Axolotl Corner", (0.0, 0.695, 0.47, 0.865), ["axolotl", "poison_dart_frog"]),
+    ZONES = [  # name, rect(frac), animals -- only animals that live at Vancouver Aquarium (vanaqua.org) AND are in Wild Atlas
+        ("Octopus & Sea Star Cove", (0.0, 0.015, 0.47, 0.285), ["octopus", "starfish"]),
+        ("Jellyfish Hall", (0.53, 0.015, 1.0, 0.285), ["jellyfish"]),
+        ("Otter & Sea Lion Bay", (0.0, 0.315, 0.47, 0.585), ["sea_otter", "sea_lion"]),
+        ("Rainforest Gallery", (0.53, 0.315, 1.0, 0.585), ["sloth", "poison_dart_frog"]),
+        ("Axolotl Corner", (0.0, 0.615, 0.47, 0.865), ["axolotl"]),
     ]
     nm = lambda k: k.replace("_", " ").title()
     for name, fr, ks in ZONES:
@@ -270,20 +280,23 @@ def map_page(F, A, logo):
         f = F.fredoka(34, 650); tw = d.textlength(name, font=f)
         d.rounded_rectangle([x0 + 22, y0 - 4, x0 + 22 + tw + 30, y0 + 50], radius=24, fill="white", outline=INK, width=4)
         d.text((x0 + 37, y0 + 4), name, font=f, fill=INK)
-        n = len(ks); cols = n if n <= 2 else 2; rows = (n + cols - 1) // cols
+        n = len(ks); cols = n
         gx0, gy0, gx1, gy1 = x0 + 16, y0 + 66, x1 - 16, y1 - 12
-        cw, chh = (gx1 - gx0) / cols, (gy1 - gy0) / rows
+        cw, chh = (gx1 - gx0) / cols, (gy1 - gy0)
         for i, k in enumerate(ks):
-            c0 = gx0 + (i % cols) * cw; r0 = gy0 + (i // cols) * chh
-            paste_fit(p.img, A.lineart(k, 3), (c0 + 8, r0, c0 + cw - 8, r0 + chh - 34))
-            d.text((c0 + cw / 2, r0 + chh - 16), nm(k), font=F.nunito(24, True), fill=(70, 70, 70), anchor="mm")
-    # cafe + gift shop (not animals: nothing to circle)
-    x0, y0, x1, y1 = R(0.53, 0.695, 1.0, 0.865); rbox(d, [x0, y0, x1, y1], r=34, width=6, dash=True)
+            c0 = gx0 + i * cw
+            paste_fit(p.img, A.lineart(k, 3), (c0 + 8, gy0, c0 + cw - 8, gy0 + chh - 40))
+            d.text((c0 + cw / 2, gy0 + chh - 18), nm(k), font=F.nunito(28, True), fill=(70, 70, 70), anchor="mm")
+    # cafe + gift shop (Gemini icons; nothing to circle here)
+    x0, y0, x1, y1 = R(0.53, 0.615, 1.0, 0.865); rbox(d, [x0, y0, x1, y1], r=34, width=6, dash=True)
     f = F.fredoka(34, 650); d.rounded_rectangle([x0 + 22, y0 - 4, x0 + 22 + d.textlength("Café & Gift Shop", font=f) + 30, y0 + 50], radius=24, fill="white", outline=INK, width=4)
     d.text((x0 + 37, y0 + 4), "Café & Gift Shop", font=f, fill=INK)
-    gs = 120; _glyph_cup(d, x0 + (x1 - x0) * .25 - gs / 2, y0 + 80, gs); _glyph_bag(d, x0 + (x1 - x0) * .72 - gs / 2, y0 + 80, gs)
-    d.text((x0 + (x1 - x0) * .25 + 5, y0 + (y1 - y0) - 28), "Café", font=F.nunito(26, True), fill=(70, 70, 70), anchor="mm")
-    d.text((x0 + (x1 - x0) * .72 + 5, y0 + (y1 - y0) - 28), "Gift Shop", font=F.nunito(26, True), fill=(70, 70, 70), anchor="mm")
+    cw = (x1 - x0 - 32) / 2
+    for i, (fn, lab) in enumerate((("icon-cafe.jpg", "Café"), ("icon-giftshop.jpg", "Gift Shop"))):
+        ic = Image.open(os.path.join(HERE, "icons", fn)).convert("L").point(lambda v: 255 if v > 200 else 0 if v < 90 else v)
+        c0 = x0 + 16 + i * cw
+        paste_fit(p.img, ic.convert("RGB"), (c0 + 10, y0 + 66, c0 + cw - 10, y1 - 56))
+        d.text((c0 + cw / 2, y1 - 28), lab, font=F.nunito(28, True), fill=(70, 70, 70), anchor="mm")
     # entrance + you are here
     x0, y0, x1, y1 = R(0.27, 0.9, 0.73, 1.0)
     d.rounded_rectangle([x0, y0, x1, y1], radius=40, fill=INK)
@@ -385,6 +398,30 @@ def act_howmany(F, A, logo):
     g.upside_down(p.img, (W / 2, bottom + 28), "Answers: " + ans, F.nunito(28))
     return p.img, dict(kind="text", text=ans)
 
+def act_maze2(F, D, A, logo, k, prompt, seed):
+    """Maze with a clearly smaller baby at the start (heart + label) and a big mom at the finish."""
+    cols, rows = 9, 9; walls = bf.build_maze(cols, rows, seed)
+    p = bf.page(F, "Amazing Maze", prompt, D.name(k), D.pack(k), logo, "draw")
+    d = p.d; cell = 118; mx = (W - cols * cell) / 2 + 60; my = p.y + 210
+    for (c, r), ws in walls.items():
+        x, y = mx + c * cell, my + r * cell
+        if "N" in ws and not (c == 0 and r == 0): d.line([(x, y), (x + cell, y)], fill=INK, width=7)
+        if "S" in ws and not (c == cols - 1 and r == rows - 1): d.line([(x, y + cell), (x + cell, y + cell)], fill=INK, width=7)
+        if "W" in ws: d.line([(x, y), (x, y + cell)], fill=INK, width=7)
+        if "E" in ws: d.line([(x + cell, y), (x + cell, y + cell)], fill=INK, width=7)
+    paste_fit(p.img, A.lineart(k, 3), (mx + 4, my - 128, mx + cell - 4, my - 40))                 # baby: small
+    d.text((mx - 14, my - 84), "Baby", font=F.fredoka(46, 650), fill=INK, anchor="rm")
+    hx, hy = mx + cell + 24, my - 84                                                            # a heart beside the baby
+    d.polygon([(hx, hy + 22), (hx - 24, hy - 4), (hx - 16, hy - 20), (hx, hy - 8), (hx + 16, hy - 20), (hx + 24, hy - 4)], outline=INK, width=5)
+    mom = ImageOps.mirror(A.lineart(k, 3))
+    paste_fit(p.img, mom, (mx + cols * cell - 300, my + rows * cell + 8, mx + cols * cell + 170, my + rows * cell + 185))   # mom: big
+    d.text((mx + cols * cell - 320, my + rows * cell + 96), "Mom", font=F.fredoka(60, 700), fill=INK, anchor="rm")
+    key = p.img.crop((int(mx - 20), int(my - 20), int(mx + cols * cell + 20), int(my + rows * cell + 20))).copy()
+    kd = ImageDraw.Draw(key)
+    pts = [(c * cell + cell / 2 + 20, r * cell + cell / 2 + 20) for c, r in bf.maze_path(walls, cols, rows)]
+    kd.line(pts, fill=(90, 90, 90), width=22, joint="curve")
+    return p.img, dict(kind="maze", img=key)
+
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--out", required=True); ap.add_argument("--dpi-jpeg", type=int, default=70)
     a = ap.parse_args(); os.makedirs(a.out, exist_ok=True)
@@ -414,17 +451,23 @@ def main():
     fns = {"shadow": bf.act_shadow, "odd": bf.act_odd, "next": bf.act_next, "count": bf.act_count, "big": bf.act_big,
            "safe": bf.act_safe, "finish": bf.act_finish, "dots": bf.act_dots, "maze": bf.act_maze, "home": bf.act_home,
            "trace": bf.act_trace, "scramble": bf.act_scramble}
+    fns["maze"] = act_maze2
     for i, (k, act, prm) in enumerate(BOOK):
         pl, pr = 4 + 2 * i, 5 + 2 * i
         img, info = (bf.act_spot(F, D, S, logo_small, k, **prm) if act == "spot" else fns[act](F, D, A, logo_small, k, **prm))
-        pages[pl] = img; pages[pr] = coloring_page(S, k, logo_bw_full)
-        keys.append((pl, D.name(k), act, info)); print(f"p{pl:>3} {act:8s} {k}")
+        pages[pr] = img; pages[pl] = coloring_page(S, k, logo_bw_full)          # coloring page first (left), puzzle right
+        keys.append((pr, D.name(k), act, info)); print(f"p{pl:>3} {act:8s} {k}")
     pages[44] = act_numbers(F, logo_small)
     pages[45], info45 = act_howmany(F, A, logo_small); keys.append((45, "How Many?", "count", info45))
     pages[46] = bf.invent_page(F, logo_small)
     pages[47], pages[48] = bf.answer_pages(F, logo_small, keys)
     pages[49] = claim_page(F, logo_small); pages[50] = colophon_page(F)
-    for n in range(3, 50): bf.number(pages[n], n, F)
+    footer_lk = wa_lockup(F, 54)
+    for n in range(2, 51):
+        im = pages[n]
+        if n >= 3:                                                           # page 2 has its own larger footer
+            im.paste(footer_lk, (70, H - 175), footer_lk)
+        dd = ImageDraw.Draw(im); dd.text((W / 2, H - 70), str(n), font=F.nunito(40, True), fill=(50, 50, 50), anchor="mm")
 
     import fitz
     pdf = fitz.open()
