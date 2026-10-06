@@ -67,6 +67,13 @@
     .pp-tier dd { margin: 0; }
     .pp-when { margin-top: auto; font-family: var(--font-heading); font-weight: 600; background: var(--mint-light); border-radius: var(--radius-sm); padding: 8px 12px; text-align: center; font-size: .92rem; }
     .pp-tier.run .pp-when { background: var(--yellow-light); }
+    .pp-example { display: flex; align-items: center; gap: var(--space-sm); margin-top: auto; background: var(--creamy-coat); border: var(--stroke) solid rgba(93, 64, 55, .12); border-radius: var(--radius-sm); padding: 8px 12px 8px 8px; font-family: var(--font-heading); font-weight: 600; font-size: .95rem; line-height: 1.2; transition: transform .2s, box-shadow .2s; }
+    .pp-example:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(93, 64, 55, .12); }
+    .pp-example img { height: 76px; width: 56px; object-fit: cover; object-position: top; border-radius: 6px; flex: none; }
+    .pp-example img.thumb-phone { object-fit: contain; object-position: center; }
+    .pp-example small { display: block; font-family: var(--font-body); font-weight: 400; font-size: .78rem; opacity: .75; margin-top: 2px; }
+    #book, #run, #how, #faq { scroll-margin-top: 130px; }
+    .pp-example + .pp-when { margin-top: 0; }
     .pp-mechanic { margin-top: var(--space-lg); background: #fff; border: var(--stroke) dashed rgba(93, 64, 55, .15); border-radius: var(--radius-sm); padding: var(--space-md) var(--space-lg); font-size: .98rem; }
     .pp-mechanic code { background: var(--yellow-light); padding: 2px 8px; border-radius: 6px; font-weight: 700; font-family: var(--font-body); }
 
@@ -246,6 +253,7 @@
               <dt>Get</dt><dd>A generous send-off that costs you nothing. Families get a free animal pack ($3.99 value), the printable coloring book for that pack, and the coloring books for our other free packs.</dd>
               <dt>Cost</dt><dd>$0.</dd>
             </dl>
+            <a class="pp-example" href="assets/downloads/wild-atlas-coloring-book-cozy-critters.pdf" target="_blank" rel="noopener"><img src="assets/partners/crawl-cozy-critters-cover.jpg" alt="" loading="lazy"><span>See a free coloring book<small>Cozy Critters, printable PDF</small></span></a>
             <div class="pp-when">Live this week</div>
           </div>
           <div class="pp-tier">
@@ -256,6 +264,7 @@
               <dt>Get</dt><dd>Everything in Crawl, plus a keepsake that&rsquo;s yours. If you sell it, we can share the revenue, or keep it free.</dd>
               <dt>Cost</dt><dd>Low to none.</dd>
             </dl>
+            <a class="pp-example" href="#book"><img src="assets/partners/riverbend-cover.jpg" alt="" loading="lazy"><span>See an example book<small>Riverbend Aquarium &darr;</small></span></a>
             <div class="pp-when">Live in weeks</div>
           </div>
           <div class="pp-tier run">
@@ -266,6 +275,7 @@
               <dt>Get</dt><dd>A branded experience &mdash; your animals, your map, your colors &mdash; to give members free. If we turn it into a paid product together, we share the revenue.</dd>
               <dt>Cost</dt><dd>On us &mdash; we build it.</dd>
             </dl>
+            <a class="pp-example" href="#run"><img class="thumb-phone" src="assets/partners/run-pack-thumb.png" alt="" loading="lazy"><span>See what it looks like<small>Your zoo in the app &darr;</small></span></a>
             <div class="pp-when">A project, together</div>
           </div>
         </div>
