@@ -92,7 +92,7 @@ def grownups_page(F, logo):
         ("Crayons and colored pencils work best", "Markers may show through to the next page."),
         ("Answers", "Many answers are printed upside down at the bottom of the page. The rest are in the answer key near the back."),
         ("A free animal pack!", "This book includes a free animal pack for the Wild Atlas app, a safe, ad-free animal "
-         "encyclopedia for kids. Turn to the last page to claim it."),
+         "encyclopedia for kids. Turn to the claim page near the back."),
     ]
     for h, t in paras:
         d.text((M + 40, y), h, font=F.fredoka(56, 650), fill=INK); y += 80
@@ -199,7 +199,7 @@ def welcome_page(F, logo_color, logo_small):
     paras = [("How this book works", "Every animal gets two pages: a puzzle or something to draw on the left, and the animal to color on the right, "
                                     "with real facts to read aloud. Read each one-line instruction once; the little picture reminds your explorer what to do."),
              ("Crayons and colored pencils work best", "Markers may show through to the next page. Most answers are printed upside down on the page; the rest are in the answer key."),
-             ("A free animal pack", "This book includes a free animal pack for the Wild Atlas app, a safe, ad-free animal encyclopedia for kids. The claim page is the last page.")]
+             ("A free animal pack", "This book includes a free animal pack for the Wild Atlas app, a safe, ad-free animal encyclopedia for kids. The claim page is near the back of the book.")]
     for h, t in paras:
         d.text((M, y), h, font=F.fredoka(46, 650), fill=(30, 30, 30)); y += 64
         y = text_block(d, (M, y), t, F.nunito(37), W - 2 * M, spacing=1.32) + 34
@@ -295,6 +295,96 @@ def map_page(F, A, logo):
     d.text((kx, ky - 72), "N", font=F.fredoka(40, 700), fill=INK, anchor="mm")
     return p.img
 
+# ------------------------------------------------------------------------------------------------ math & writing pages
+import math as _m
+
+def _arc(cx, cy, rx, ry, a0, a1, n=48):
+    """Points on an ellipse; angles in degrees, 0=right, 90=top (y up), counterclockwise positive."""
+    return [(cx + rx * _m.cos(_m.radians(a0 + (a1 - a0) * i / n)), cy - ry * _m.sin(_m.radians(a0 + (a1 - a0) * i / n))) for i in range(n + 1)]
+
+def _line(*pts, n=24):
+    out = []
+    for (x0, y0), (x1, y1) in zip(pts, pts[1:]):
+        out += [(x0 + (x1 - x0) * i / n, y0 + (y1 - y0) * i / n) for i in range(n)]
+    out.append(pts[-1]); return out
+
+# stroke-order centerlines in a unit box (x right, y down); each digit is a list of strokes
+DIGITS = {
+  "0": [_arc(.5, .5, .3, .45, 90, 450, 72)],
+  "1": [_line((.2, .3), (.62, .07)), _line((.62, .07), (.62, .97))],
+  "2": [_arc(.5, .3, .34, .24, 160, -40) + _line((.76, .46), (.12, .95))[1:], _line((.12, .95), (.92, .95))],
+  "3": [_arc(.45, .27, .32, .21, 150, -90), _arc(.45, .72, .36, .24, 90, -150)],
+  "4": [_line((.62, .05), (.08, .68), (.93, .68)), _line((.62, .05), (.62, .97))],
+  "5": [_line((.24, .07), (.2, .45)) + _arc(.48, .67, .36, .3, 130, -140)[1:], _line((.24, .07), (.86, .07))],
+  "6": [_line((.78, .06), (.32, .38), (.2, .72), n=18) + _arc(.5, .72, .3, .25, 180, 540, 72)[1:]],
+  "7": [_line((.1, .07), (.9, .07)), _line((.9, .07), (.32, .97))],
+  "8": [[(.5 + .3 * _m.sin(2 * t), .5 - .45 * _m.cos(t)) for t in [2 * _m.pi * i / 90 for i in range(91)]]],
+  "9": [_arc(.5, .3, .27, .24, 0, 360, 64) + _line((.77, .3), (.74, .6), (.55, .88), (.28, .95))[1:]],
+}
+
+def _draw_digit(d, strokes, ox, oy, w, h, F):
+    pw = int(min(w, h) * .27)                       # corridor width
+    P = [[(ox + x * w, oy + y * h) for x, y in st] for st in strokes]
+    r = pw // 2
+    for width, col in ((pw, INK), (pw - 18, "white")):
+        for st in P:
+            d.line(st, fill=col, width=width, joint="curve")
+            for x, y in st[::3] + [st[-1]]: d.ellipse([x - width / 2, y - width / 2, x + width / 2, y + width / 2], fill=col)
+    for i, st in enumerate(P):                       # dashed centerline
+        run, on = 0, True
+        for (x0, y0), (x1, y1) in zip(st, st[1:]):
+            seg = _m.hypot(x1 - x0, y1 - y0)
+            if on: d.line([(x0, y0), (x1, y1)], fill=(110, 110, 110), width=4)
+            run += seg
+            if run > (18 if on else 14): on, run = (not on), 0
+        # arrow at the end
+        (xa, ya), (xb, yb) = st[-4] if len(st) > 4 else st[0], st[-1]; ang = _m.atan2(yb - ya, xb - xa)
+        d.polygon([(xb + 22 * _m.cos(ang), yb + 22 * _m.sin(ang)),
+                   (xb + 10 * _m.cos(ang + 2.2), yb + 10 * _m.sin(ang + 2.2)), (xb + 10 * _m.cos(ang - 2.2), yb + 10 * _m.sin(ang - 2.2))], fill=INK)
+    seen = []
+    for i, st in enumerate(P):                       # numbered start dots
+        x, y = st[0]
+        while any(abs(x - sx) < 34 and abs(y - sy) < 34 for sx, sy in seen): x += 38
+        seen.append((x, y)); d.ellipse([x - 21, y - 21, x + 21, y + 21], fill=INK)
+        d.text((x, y), str(i + 1), font=F.nunito(26, True), fill="white", anchor="mm")
+
+def _name_date(d, F):
+    d.text((M, 36), "Name:", font=F.nunito(32, True), fill=INK); d.line([(M + 130, 74), (M + 760, 74)], fill=INK, width=4)
+    d.text((M + 830, 36), "Date:", font=F.nunito(32, True), fill=INK); d.line([(M + 940, 74), (W - M, 74)], fill=INK, width=4)
+
+def act_numbers(F, logo):
+    p = bf.page(F, "Write the Numbers", "Trace each number. Start at the dot and follow the arrows!", "", "", logo, "trace")
+    d = p.d; _name_date(d, F)
+    top = p.y + 40; avail = p.body_bottom + 80 - top; rowh = avail / 3; colw = (W - 2 * M) / 4
+    layout = [("0", 0, 0, 1), ("1", 1, 0, 1), ("2", 2, 0, 1), ("3", 3, 0, 1),
+              ("4", 0, 1, 1), ("5", 1, 1, 1), ("6", 2, 1, 1), ("7", 3, 1, 1), ("8", 0, 2, 1), ("9", 1, 2, 1)]
+    dh = rowh - 95; dw = colw - 80
+    for ch, c, r, _ in layout:
+        _draw_digit(d, DIGITS[ch], M + c * colw + 35, top + r * rowh + 10, dw, dh, F)
+    # "10" spans the last two cells: a one and a zero
+    ox = M + 2 * colw + 35
+    _draw_digit(d, DIGITS["1"], ox, top + 2 * rowh + 10, dw * .85, dh, F)
+    _draw_digit(d, DIGITS["0"], ox + colw * .78, top + 2 * rowh + 10, dw, dh, F)
+    return p.img
+
+def act_howmany(F, A, logo):
+    p = bf.page(F, "How Many?", "Count the animals. Write the number in the box.", "", "", logo, "count")
+    d = p.d; _name_date(d, F)
+    rows = [("clownfish", 4), ("sea_turtle", 1), ("jellyfish", 3), ("seahorse", 2), ("starfish", 5)]
+    top = p.y + 30; bottom = p.body_bottom + 70; rowh = (bottom - top) / len(rows)
+    d.rectangle([M, top, W - M, bottom], outline=INK, width=8)
+    bx = 260                                         # write-in box width
+    for i, (k, n) in enumerate(rows):
+        y0 = top + i * rowh
+        if i: d.line([(M, y0), (W - M, y0)], fill=INK, width=7)
+        d.rounded_rectangle([W - M - bx - 20, y0 + 25, W - M - 20, y0 + rowh - 25], radius=18, outline=INK, width=7)
+        cell = (W - 2 * M - bx - 90) / 5; ih = rowh - 70
+        for j in range(n):
+            paste_fit(p.img, A.lineart(k, 3), (M + 30 + j * cell, y0 + 35, M + 30 + j * cell + cell - 14, y0 + 35 + ih))
+    ans = ", ".join(str(n) for _, n in rows)
+    g.upside_down(p.img, (W / 2, bottom + 28), "Answers: " + ans, F.nunito(28))
+    return p.img, dict(kind="text", text=ans)
+
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--out", required=True); ap.add_argument("--dpi-jpeg", type=int, default=70)
     a = ap.parse_args(); os.makedirs(a.out, exist_ok=True)
@@ -329,14 +419,16 @@ def main():
         img, info = (bf.act_spot(F, D, S, logo_small, k, **prm) if act == "spot" else fns[act](F, D, A, logo_small, k, **prm))
         pages[pl] = img; pages[pr] = coloring_page(S, k, logo_bw_full)
         keys.append((pl, D.name(k), act, info)); print(f"p{pl:>3} {act:8s} {k}")
-    pages[44] = bf.invent_page(F, logo_small)
-    pages[45], pages[46] = bf.answer_pages(F, logo_small, keys)
-    pages[47] = claim_page(F, logo_small); pages[48] = colophon_page(F)
-    for n in range(3, 48): bf.number(pages[n], n, F)
+    pages[44] = act_numbers(F, logo_small)
+    pages[45], info45 = act_howmany(F, A, logo_small); keys.append((45, "How Many?", "count", info45))
+    pages[46] = bf.invent_page(F, logo_small)
+    pages[47], pages[48] = bf.answer_pages(F, logo_small, keys)
+    pages[49] = claim_page(F, logo_small); pages[50] = colophon_page(F)
+    for n in range(3, 50): bf.number(pages[n], n, F)
 
     import fitz
     pdf = fitz.open()
-    for n in range(1, 49):
+    for n in range(1, 51):
         buf = io.BytesIO(); (pages[n].convert("RGB") if n <= 2 else pages[n].convert("L")).save(buf, "JPEG", quality=(82 if n <= 2 else a.dpi_jpeg), optimize=True)
         pg = pdf.new_page(width=612, height=792); pg.insert_image(pg.rect, stream=buf.getvalue())
         (pages[n].convert("RGB") if n <= 2 else pages[n].convert("L")).save(os.path.join(a.out, f"p{n:02d}.png"))
