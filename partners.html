@@ -40,10 +40,6 @@
     .pp-trust span { display: inline-flex; align-items: center; gap: 6px; }
     .pp-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--sunny-sounds); border: 2px solid var(--warm-bark); }
 
-    /* Marked art placeholders — Anna replaces with Wild Atlas mascot art */
-    .pp-placeholder { position: relative; border: 3px dashed var(--peach-pop); border-radius: var(--radius-md); background: var(--sky-wash); padding: var(--space-lg); }
-    .pp-placeholder-tag { position: absolute; top: -13px; left: 16px; background: var(--peach-pop); color: #fff; font-family: var(--font-heading); font-weight: 700; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; padding: 3px 10px; border-radius: var(--radius-full); }
-
     .pp-section { padding: var(--space-2xl) 0; }
     .pp-head { max-width: 62ch; }
     .pp-head h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 700; }
@@ -110,43 +106,20 @@
     .pp-book-grid > * { min-width: 0; }
     /* Book example strip */
     .pp-strip { display: flex; gap: var(--space-md); overflow-x: auto; scroll-snap-type: x mandatory; padding: var(--space-xs) 2px var(--space-sm); -webkit-overflow-scrolling: touch; }
-    .pp-strip figure { flex: 0 0 min(62%, 240px); scroll-snap-align: start; margin: 0; }
+    .pp-strip figure { flex: 0 0 min(62%, 250px); scroll-snap-align: start; margin: 0; }
     .pp-strip img { width: 100%; aspect-ratio: 8.5 / 11; object-fit: cover; border: var(--stroke) solid rgba(93, 64, 55, .12); border-radius: var(--radius-sm); background: #fff; }
     .pp-strip figcaption { font-size: .8rem; font-weight: 700; text-align: center; margin-top: 6px; }
     .pp-strip:focus-visible { outline: 3px solid var(--peach-pop); outline-offset: 2px; }
 
     /* Run example: phone mockups drawn in the app's look */
     .pp-phones { display: flex; flex-wrap: wrap; gap: var(--space-xl); justify-content: center; margin-top: var(--space-xl); }
-    .pp-phone-wrap { margin: 0; text-align: center; }
-    .pp-phone-wrap figcaption { margin-top: var(--space-sm); font-weight: 700; font-size: .92rem; }
-    .phone { position: relative; width: 270px; height: 560px; background: var(--warm-bark); border-radius: 40px; padding: 10px; box-shadow: 0 16px 40px rgba(93, 64, 55, .22); margin: 0 auto; }
-    .phone-notch { position: absolute; top: 18px; left: 50%; width: 76px; height: 20px; background: #1d1412; border-radius: 12px; transform: translateX(-50%); z-index: 2; }
-    .ph-screen { height: 100%; border-radius: 31px; overflow: hidden; padding: 48px 12px 12px; text-align: left; background: linear-gradient(180deg, #FFF8EA, #FFF1D6); }
-    .ph-hello { font-family: var(--font-heading); font-weight: 700; font-size: 1.15rem; color: var(--peach-pop); text-align: center; }
-    .ph-sub { font-size: .7rem; text-align: center; opacity: .75; margin-bottom: 10px; }
-    .ph-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-    .ph-tile { border-radius: 14px; padding: 10px 6px 8px; text-align: center; border-bottom: 4px solid rgba(93, 64, 55, .12); }
-    .ph-tile b { display: block; font-family: var(--font-heading); font-size: .78rem; line-height: 1.15; }
-    .ph-tile small { display: block; font-size: .6rem; opacity: .75; line-height: 1.25; margin-top: 2px; }
-    .ph-emoji { display: block; font-size: 1.9rem; line-height: 1.2; }
-    .t-peach { background: linear-gradient(160deg, #FFE3D6, #F8C9B4); }
-    .t-lilac { background: linear-gradient(160deg, #F6E8F4, #E8D3EE); }
-    .t-yellow { background: linear-gradient(160deg, #FFF6D0, #F3E6A8); }
-    .t-sky { background: linear-gradient(160deg, #E3F1FF, #BFDDF7); }
-    .ph-section { font-family: var(--font-heading); font-weight: 700; font-size: .95rem; margin: 14px 0 6px; }
-    .ph-zoo { grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; outline: 2px dashed var(--peach-pop); outline-offset: 2px; }
-    .ph-logo { display: inline-block; font-size: .65rem; font-weight: 700; border: 2px dashed var(--warm-bark); border-radius: 8px; padding: 6px 12px; margin-bottom: 6px; background: rgba(255, 255, 255, .6); }
-    .ph-pack { background: linear-gradient(180deg, #EAF4FF, #F7FBFF); }
-    .ph-back { width: 26px; height: 26px; border-radius: 50%; background: var(--sunny-sounds); border: 2px solid var(--warm-bark); text-align: center; line-height: 21px; font-weight: 700; position: absolute; top: 46px; left: 20px; }
-    .ph-title { font-weight: 700; font-size: .8rem; text-align: center; margin-bottom: 8px; }
-    .ph-hero { display: flex; gap: 8px; align-items: center; background: linear-gradient(160deg, #D5E9FB, #EAF4FF); border-radius: 14px; padding: 8px; }
-    .ph-hero img { width: 84px; height: 66px; object-fit: cover; border-radius: 10px; flex: 0 0 auto; }
-    .ph-hero b { display: block; font-family: var(--font-heading); font-size: .95rem; line-height: 1.1; }
-    .ph-hero small { display: block; font-size: .58rem; line-height: 1.3; margin-top: 3px; opacity: .8; }
-    .ph-animals { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; }
-    .ph-animals div { background: #fff; border: 2px solid rgba(93, 64, 55, .1); border-radius: 12px; padding: 5px 4px 6px; text-align: center; }
-    .ph-animals img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 8px; }
-    .ph-animals span { display: block; font-size: .56rem; font-weight: 700; margin-top: 3px; line-height: 1.15; }
+    .pp-hero-art { margin: 0; }
+    .pp-hero-art img { display: block; width: 100%; height: auto; border-radius: var(--radius-md); box-shadow: 0 16px 40px rgba(93, 64, 55, .18); }
+    .pp-hero-art figcaption { margin-top: var(--space-xs); font-size: .78rem; opacity: .75; text-align: center; }
+    .pp-phone-wrap { margin: 0; text-align: center; width: min(100%, 300px); }
+    .pp-phone-wrap img { display: block; width: 100%; height: auto; }
+    .pp-phone-wrap figcaption { margin-top: var(--space-xs); font-weight: 700; font-size: .92rem; }
+    .pp-strip-wrap { min-width: 0; }
     .pp-run-note { text-align: center; margin-top: var(--space-xl); font-size: .85rem; opacity: .85; }
 
     /* The shared footer row doesn't wrap on phones; wrap it here so nothing scrolls sideways. */
@@ -207,15 +180,10 @@
             <span><i class="pp-dot"></i>COPPA-compliant</span>
           </div>
         </div>
-        <!-- PLACEHOLDER ART: Anna to replace with Wild Atlas mascot illustration -->
-        <div class="pp-placeholder" role="img" aria-label="Placeholder illustration: a family leaves the aquarium gate and keeps exploring on a phone">
-          <span class="pp-placeholder-tag">Placeholder art &middot; Anna</span>
-          <svg viewBox="0 0 400 300" width="100%" aria-hidden="true">
-            <path d="M20 250 Q 140 250 200 200 T 380 150" fill="none" stroke="#5D4037" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
-            <g transform="translate(30,150)"><rect width="70" height="100" rx="8" fill="#fff" stroke="#5D4037" stroke-opacity=".25" stroke-width="3"/><path d="M8 0 Q35 -26 62 0" fill="none" stroke="#5D4037" stroke-width="4"/><text x="35" y="58" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="12" fill="#5D4037">ENTRANCE</text></g>
-            <g transform="translate(280,70)"><rect width="90" height="170" rx="16" fill="#5D4037"/><rect x="7" y="9" width="76" height="152" rx="9" fill="#FFF5E1"/><circle cx="45" cy="60" r="24" fill="#FFD97D"/><circle cx="45" cy="52" r="7" fill="#fff"/><rect x="20" y="104" width="50" height="7" rx="3.5" fill="#5D4037" opacity=".5"/><rect x="20" y="118" width="38" height="7" rx="3.5" fill="#5D4037" opacity=".3"/></g>
-          </svg>
-        </div>
+        <figure class="pp-hero-art">
+          <img src="assets/partners/hero-riverbend.jpg" width="1200" height="896" alt="A family walking up to the glass-and-timber entrance of Riverbend Aquarium, with the Wild Atlas app on a phone in the foreground">
+          <figcaption>Illustrative example. Riverbend Aquarium is a fictional venue; the scene is AI-generated.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -264,7 +232,7 @@
               <dt>Get</dt><dd>Everything in Crawl, plus a keepsake that&rsquo;s yours. If you sell it, we can share the revenue, or keep it free.</dd>
               <dt>Cost</dt><dd>Low to none.</dd>
             </dl>
-            <a class="pp-example" href="#book"><img src="assets/partners/riverbend-cover.jpg" alt="" loading="lazy"><span>See an example book<small>Riverbend Aquarium &darr;</small></span></a>
+            <a class="pp-example" href="#book"><img src="assets/partners/book-cover.jpg" alt="" loading="lazy"><span>See an example book<small>Riverbend Aquarium &darr;</small></span></a>
             <div class="pp-when">Live in weeks</div>
           </div>
           <div class="pp-tier run">
@@ -275,7 +243,7 @@
               <dt>Get</dt><dd>A branded experience &mdash; your animals, your map, your colors &mdash; to give members free. If we turn it into a paid product together, we share the revenue.</dd>
               <dt>Cost</dt><dd>On us &mdash; we build it.</dd>
             </dl>
-            <a class="pp-example" href="#run"><img class="thumb-phone" src="assets/partners/run-pack-thumb.png" alt="" loading="lazy"><span>See what it looks like<small>Your zoo in the app &darr;</small></span></a>
+            <a class="pp-example" href="#run"><img class="thumb-phone" src="assets/partners/run-pack-phone.png" alt="" loading="lazy"><span>See what it looks like<small>Your zoo in the app &darr;</small></span></a>
             <div class="pp-when">A project, together</div>
           </div>
         </div>
@@ -293,16 +261,18 @@
           <p>We re-skin our puzzle &amp; activity book for your venue &mdash; your hero animals, your logo &mdash; with a &ldquo;claim your free pack&rdquo; page in the back. Kids solve puzzles about the animals they just met; a QR unlocks the matching pack in the app.</p>
         </div>
         <div class="pp-book-grid">
-          <!-- Example pages from the fictional Riverbend book. Art inside is placeholder (Anna). -->
-          <div class="pp-placeholder">
-            <span class="pp-placeholder-tag">Example book &middot; placeholder art</span>
-            <div class="pp-strip" tabindex="0" role="group" aria-label="Example pages from the Riverbend Aquarium book. Scroll sideways to see more.">
-              <figure><img src="assets/partners/riverbend-cover.jpg" alt="Riverbend Puzzle Book cover with a logo placeholder, an octopus, a jellyfish and a sea turtle" loading="lazy"><figcaption>Cover &mdash; your name and logo</figcaption></figure>
-              <figure><img src="assets/partners/riverbend-residents.jpg" alt="Page of 30 Riverbend animals with make-believe names" loading="lazy"><figcaption>Your animals, by name</figcaption></figure>
-              <figure><img src="assets/partners/riverbend-dots.jpg" alt="Connect-the-dots starfish page" loading="lazy"><figcaption>Connect the dots</figcaption></figure>
-              <figure><img src="assets/partners/riverbend-spot.jpg" alt="Spot-the-difference page" loading="lazy"><figcaption>Spot the difference</figcaption></figure>
-              <figure><img src="assets/partners/riverbend-maze.jpg" alt="Maze page" loading="lazy"><figcaption>Mazes</figcaption></figure>
-              <figure><img src="assets/partners/riverbend-claim.jpg" alt="Back page: claim your free pack with a sample QR and code" loading="lazy"><figcaption>Claim page &mdash; QR + code</figcaption></figure>
+          <!-- Pages from the example book PDF (print-sources/riverbend-book). -->
+          <div class="pp-strip-wrap">
+            <div class="pp-strip" tabindex="0" role="group" aria-label="Pages from the Riverbend Aquarium example book. Scroll sideways to see more.">
+              <figure><img src="assets/partners/book-cover.jpg" alt="Color cover of the Riverbend Aquarium Animal Coloring and Activity Book" loading="lazy"><figcaption>Cover with your name and logo</figcaption></figure>
+              <figure><img src="assets/partners/book-welcome.jpg" alt="Welcome page with the venue's address, contact details and photos" loading="lazy"><figcaption>Welcome page with your details</figcaption></figure>
+              <figure><img src="assets/partners/book-map.jpg" alt="Explorer map of the aquarium with animals for kids to circle" loading="lazy"><figcaption>A map to circle what they saw</figcaption></figure>
+              <figure><img src="assets/partners/book-coloring.jpg" alt="Octopus coloring page with real facts" loading="lazy"><figcaption>A coloring page per animal</figcaption></figure>
+              <figure><img src="assets/partners/book-puzzle.jpg" alt="Spot-the-difference puzzle page" loading="lazy"><figcaption>Puzzles on every spread</figcaption></figure>
+              <figure><img src="assets/partners/book-maze.jpg" alt="Maze page where a baby capybara finds its mom" loading="lazy"><figcaption>Mazes</figcaption></figure>
+              <figure><img src="assets/partners/book-numbers.jpg" alt="Number tracing page, 0 to 10" loading="lazy"><figcaption>Write the numbers</figcaption></figure>
+              <figure><img src="assets/partners/book-howmany.jpg" alt="Counting page with write-in boxes" loading="lazy"><figcaption>Count the animals</figcaption></figure>
+              <figure><img src="assets/partners/book-claim.jpg" alt="Claim page with a QR code and the code RIVERBEND" loading="lazy"><figcaption>Claim page with your QR and code</figcaption></figure>
             </div>
           </div>
           <div>
@@ -314,10 +284,9 @@
               <li><b>Pre-reader friendly.</b> Mostly visual puzzles and tracing, light on spelling &mdash; made for ages 3&ndash;9.</li>
             </ul>
             <div class="pp-book-links">
-              <a class="btn btn-primary" href="riverbend-puzzle-book.html">Flip through the example book</a>
-              <a class="btn btn-ghost" href="assets/downloads/riverbend-puzzle-book.pdf" download>Print-ready PDF</a>
+              <a class="btn btn-primary" href="assets/downloads/riverbend-coloring-activity-book.pdf" target="_blank" rel="noopener">Open the example book (PDF)</a>
             </div>
-            <p style="margin-top: var(--space-md); font-size: .85rem; opacity: .8;"><span class="pp-note">Illustrative example</span> &ldquo;Riverbend Aquarium&rdquo; is a fictional venue, not a real partner. Names in the book are make-believe; the animals are real Wild Atlas animals.</p>
+            <p style="margin-top: var(--space-md); font-size: .85rem; opacity: .8;"><span class="pp-note">Illustrative example</span> &ldquo;Riverbend Aquarium&rdquo; is a fictional venue, not a real partner. The animals and puzzles are Wild Atlas; the aquarium photos are AI-generated.</p>
           </div>
         </div>
       </div>
@@ -333,49 +302,15 @@
         </div>
         <div class="pp-phones">
           <figure class="pp-phone-wrap">
-            <div class="phone" role="img" aria-label="Mockup of the Wild Atlas home screen with a My Zoo section and a Riverbend Aquarium tile">
-              <div class="phone-notch"></div>
-              <div class="ph-screen ph-home">
-                <p class="ph-hello">Good afternoon!</p>
-                <p class="ph-sub">Start exploring to discover amazing animals!</p>
-                <div class="ph-grid">
-                  <div class="ph-tile t-peach"><span class="ph-emoji">&#128054;</span><b>Happy Hounds</b><small>Dogs you might meet!</small></div>
-                  <div class="ph-tile t-lilac"><span class="ph-emoji">&#128049;</span><b>Cool Cats</b><small>Cats with cool coats!</small></div>
-                  <div class="ph-tile t-yellow"><span class="ph-emoji">&#129428;</span><b>Cozy Critters</b><small>Small pets and gentle pals</small></div>
-                </div>
-                <p class="ph-section">My Zoo</p>
-                <div class="ph-grid">
-                  <div class="ph-tile t-sky ph-zoo"><span class="ph-logo">[ logo ]</span><b>Riverbend Aquarium</b><small>Meet the animals you saw today</small></div>
-                </div>
-              </div>
-            </div>
-            <figcaption>Home screen &mdash; a &ldquo;My Zoo&rdquo; section with your tile</figcaption>
+            <img src="assets/partners/run-home-phone.png" width="718" height="1161" alt="The Wild Atlas home screen with a My Zoo section and a Riverbend Aquarium tile" loading="lazy">
+            <figcaption>Home screen: a &ldquo;My Zoo&rdquo; section with your tile</figcaption>
           </figure>
           <figure class="pp-phone-wrap">
-            <div class="phone" role="img" aria-label="Mockup of a Riverbend Aquarium pack page showing six animals">
-              <div class="phone-notch"></div>
-              <div class="ph-screen ph-pack">
-                <div class="ph-back">&lsaquo;</div>
-                <p class="ph-title">Riverbend Aquarium</p>
-                <div class="ph-hero">
-                  <img src="assets/animals/octopus/cover.jpg" alt="" loading="lazy">
-                  <div><b>Riverbend Aquarium</b><small>Presented by Riverbend Aquarium. The animals you met today, and a few more to discover at home.</small></div>
-                </div>
-                <p class="ph-section">Meet the Animals</p>
-                <div class="ph-animals">
-                  <div><img src="assets/animals/octopus/cover.jpg" alt="" loading="lazy"><span>Octopus</span></div>
-                  <div><img src="assets/animals/sea_turtle/cover.jpg" alt="" loading="lazy"><span>Sea Turtle</span></div>
-                  <div><img src="assets/animals/emperor_penguin/cover.jpg" alt="" loading="lazy"><span>Penguin</span></div>
-                  <div><img src="assets/animals/poison_dart_frog/cover.jpg" alt="" loading="lazy"><span>Poison Dart Frog</span></div>
-                  <div><img src="assets/animals/crocodile/cover.jpg" alt="" loading="lazy"><span>Crocodile</span></div>
-                  <div><img src="assets/animals/capybara/cover.jpg" alt="" loading="lazy"><span>Capybara</span></div>
-                </div>
-              </div>
-            </div>
-            <figcaption>Pack page &mdash; your animals, your name</figcaption>
+            <img src="assets/partners/run-pack-phone.png" width="718" height="1161" alt="A Riverbend Aquarium pack page with eight animals" loading="lazy">
+            <figcaption>Pack page: your animals, your name</figcaption>
           </figure>
         </div>
-        <p class="pp-run-note"><span class="pp-note">Illustrative mockup</span> &ldquo;Riverbend Aquarium&rdquo; is a fictional venue. The venue tile and pack page are a design example of what we&rsquo;d build together, not a feature in the app today. Animal photos are from the Wild Atlas app.</p>
+        <p class="pp-run-note"><span class="pp-note">Illustrative mockup</span> &ldquo;Riverbend Aquarium&rdquo; is a fictional venue. The venue tile and pack page are a design example of what we&rsquo;d build together, not a feature in the app today. Screens are illustrative mockups made from real Wild Atlas app screenshots.</p>
       </div>
     </section>
 

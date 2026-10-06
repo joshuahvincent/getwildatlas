@@ -138,7 +138,7 @@ CONTACT = dict(name=VENUE, addr1="100 Harbour Walk", addr2="Riverbend Point", ph
 def cover_page(F, logo_color):
     """Full-color front cover: water gradient with a surface at the top, the octopus/jellyfish/turtle scene at the bottom."""
     import numpy as np
-    scene = Image.open(os.path.join(SITE, "assets", "partners", "candidates", "cover-b.jpg")).convert("RGB")
+    scene = Image.open(os.path.join(HERE, "candidates", "cover-b.jpg")).convert("RGB")
     scene = scene.resize((W, int(scene.height * W / scene.width)), Image.LANCZOS)
     top_rgb = np.array(scene.crop((0, 0, W, 8))).reshape(-1, 3).mean(0)
     sy = H - scene.height

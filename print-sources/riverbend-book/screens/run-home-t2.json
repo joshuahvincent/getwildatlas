@@ -1,0 +1,10 @@
+{
+  "file": "run-home-t2.jpg",
+  "model": "gemini-3.1-flash-image-preview",
+  "prompt": "The first image is a real screenshot of the Wild Atlas kids' animal app home screen. The second image is the round Riverbend Aquarium emblem (a white octopus in a navy circle). Produce the same screen with exactly one change: below the three existing pack tiles (Happy Hounds, Cool Cats, Cozy Critters) add a new section with the heading \"My Zoo\" set in the same bold rounded font as the \"Explore More Animal Worlds\" heading, and under it one wide tile in the same card style (soft pastel blue gradient, rounded corners, soft thick bottom edge) that shows the round Riverbend emblem from the second image at left, the title \"Riverbend Aquarium\" and the smaller caption \"Meet the animals you saw today\". Remove the \"Explore More Animal Worlds\" section to make room. Keep the greeting, mascot and top icons unchanged. Keep the exact same visual style, fonts, colors, card shapes, shadows, status bar and proportions as the reference app screenshot; it must look like a genuine screenshot of the same iPhone app. Only the app screen itself, edge to edge, no phone frame, no extra marketing text. ",
+  "refs": [
+    "refs/home-ref.png",
+    "riverbend-emblem.png"
+  ],
+  "generated_at": "2026-10-06T21:39:20.528077Z"
+}
