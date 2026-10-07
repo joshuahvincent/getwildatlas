@@ -119,8 +119,9 @@
     .pp-hero-art { margin: 0; }
     .pp-hero-art img { display: block; width: 100%; height: auto; border-radius: var(--radius-md); box-shadow: 0 16px 40px rgba(93, 64, 55, .18); }
     .pp-hero-art figcaption { margin-top: var(--space-xs); font-size: .78rem; opacity: .75; text-align: center; }
-    .pp-phone-wrap { margin: 0; text-align: center; width: min(100%, 270px); }
+    .pp-phone-wrap { margin: 0; text-align: center; width: min(100%, 250px); }
     .pp-phone-wrap img { display: block; width: 100%; height: auto; }
+    .pp-video video { display: block; width: 100%; height: auto; border: 7px solid #1c1c1e; border-radius: 38px; background: #1c1c1e; box-shadow: 0 16px 40px rgba(93, 64, 55, .22); box-sizing: border-box; }
     .pp-phone-wrap figcaption { margin-top: var(--space-xs); font-weight: 700; font-size: .92rem; }
     .pp-strip-wrap { min-width: 0; }
     .pp-run-note { text-align: center; margin-top: var(--space-xl); font-size: .85rem; opacity: .85; }
@@ -314,10 +315,17 @@
           </figure>
           <figure class="pp-phone-wrap">
             <img src="assets/partners/run-pack2-phone.png" width="718" height="1161" alt="The lower part of the Riverbend Aquarium page with facts about the aquarium and a row of top exhibits" loading="lazy">
+            <!-- COPY REVIEW (Cole): round 2 replaced the "For grown-ups" card with a "Learn more" button behind the grown-up check; this caption and the image alt text above may need new wording. Not rewritten by Wes. -->
             <figcaption>Facts and top exhibits, with a grown-up gate</figcaption>
           </figure>
+          <figure class="pp-phone-wrap pp-video">
+            <video id="flowVideo" controls muted loop playsinline preload="metadata" poster="assets/partners/riverbend-flow-poster.jpg" width="604" height="1312" aria-label="Concept walkthrough, 24 seconds: the Home screen scrolls to My Places, the Riverbend Aquarium page opens, and a sea otter page follows." aria-describedby="flowCap">
+              <source src="assets/partners/riverbend-flow.mp4" type="video/mp4">
+            </video>
+            <figcaption id="flowCap">Concept walkthrough (24 seconds): Home, My Places, the Riverbend page, then a sea otter</figcaption>
+          </figure>
         </div>
-        <p class="pp-run-note"><span class="pp-note">Concept screens</span> &ldquo;Riverbend Aquarium&rdquo; is a fictional venue. These screens show what we would build together; the venue experience is not in the app today. Animal art is from the Wild Atlas app; the exhibit photos are AI-generated.</p>
+        <p class="pp-run-note"><span class="pp-note">Concept screens</span> &ldquo;Riverbend Aquarium&rdquo; is a fictional venue. These screens and the walkthrough show what we would build together; the venue experience is not in the app today. Part of the walkthrough is real app footage and part is drawn. Animal art is from the Wild Atlas app; the exhibit photos are AI-generated.</p>
       </div>
     </section>
 
@@ -381,6 +389,25 @@
       </div>
     </section>
   </main>
+
+  <script>
+    // Concept video: it loads and plays only when scrolled into view (so phones don't download it up front), never autoplays for people who prefer
+    // reduced motion, and stays paused if the viewer pauses it.
+    (function () {
+      var v = document.getElementById('flowVideo'); if (!v) return;
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce) { v.removeAttribute('autoplay'); v.pause(); return; }
+      var visible = false, userPaused = false, autoPausing = false;
+      v.addEventListener('pause', function () { if (visible && !autoPausing && !v.ended) userPaused = true; });
+      v.addEventListener('play', function () { userPaused = false; });
+      if (!('IntersectionObserver' in window)) return;
+      new IntersectionObserver(function (es) {
+        visible = es[0].isIntersecting;
+        if (visible && !userPaused) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+        else if (!visible) { autoPausing = true; v.pause(); autoPausing = false; }
+      }, { threshold: 0.35 }).observe(v);
+    })();
+  </script>
 
   <!-- FOOTER -->
   <footer class="footer">
