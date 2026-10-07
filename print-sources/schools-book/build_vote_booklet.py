@@ -32,7 +32,7 @@ ANIMALS = ["lion", "panda", "dolphin", "golden_retriever", "tyrannosaurus_rex", 
            "african_elephant", "polar_bear", "sea_turtle", "horse", "triceratops", "red_panda", "koala", "rabbit",
            "amur_tiger", "hedgehog", "orca", "pig", "snowy_owl", "capybara", "gorilla", "border_collie",
            "zebra", "sea_otter", "cow", "stegosaurus", "arctic_wolf", "ragdoll", "hippopotamus", "parrot",
-           "leopard", "guinea_pig", "blue_whale", "duck", "bald_eagle", "axolotl", "grizzly_bear", "beagle",
+           "leopard", "guinea_pig", "cheetah", "duck", "bald_eagle", "axolotl", "grizzly_bear", "beagle",
            "velociraptor", "red_fox", "crocodile", "persian", "labrador_retriever", "german_shepherd", "british_shorthair", "great_white_shark"]
 assert len(ANIMALS) == 48 and len(set(ANIMALS)) == 48
 EXAMPLE_WINNERS = ["lion", "panda", "dolphin", "golden_retriever", "tyrannosaurus_rex", "emperor_penguin", "giraffe", "maine_coon", "african_elephant",
@@ -109,7 +109,7 @@ def back(F):
     pw, ph = 1360, 1120; px, py = (W - pw) // 2, 260
     d.rounded_rectangle([px, py, px + pw, py + ph], radius=70, fill="white")
     em = emblem(210); img.paste(em, (W // 2 - 105, py + 50), em)
-    d.text((W / 2, py + 330), "Your school pack, free.", font=F.fredoka(96, 700), fill=bf.BRAND["bark"], anchor="mm")
+    d.text((W / 2, py + 330), "Your school pack.", font=F.fredoka(96, 700), fill=bf.BRAND["bark"], anchor="mm")
     steps = ["1  Count the ticks. Send us your top 18 animals.", "2  We build the pack and send it back to you.", "3  Share the free code with your families."]
     y = py + 440
     for s_ in steps:
@@ -122,7 +122,7 @@ def back(F):
     bk.text_block(d, (px + 150 + qs + 70, py + 975), "Or open the App Store, tap your picture and choose Redeem Gift Card or Code.", F.nunito(32), pw - 150 - qs - 70 - 100, fill=(60, 60, 60))
     lk = bk.wa_lockup(F, 110); tw, th = lk.width + 110, lk.height + 70; tx, ty = (W - tw) // 2, py + ph + 70
     d.rounded_rectangle([tx, ty, tx + tw, ty + th], radius=48, fill="white"); img.paste(lk, (tx + 55, ty + 35), lk)
-    d.text((W / 2, ty + th + 60), "We never ask for student names or accounts.", font=F.nunito(38, True), fill=GREEN, anchor="mm")
+    d.text((W / 2, ty + th + 60), "Our school program doesn't ask for student names.", font=F.nunito(38, True), fill=GREEN, anchor="mm")
     d.text((W / 2, ty + th + 120), f"Example booklet. {SCHOOL} and the code {CODE} are fictional. The QR code unlocks nothing.", font=F.nunito(28), fill=GREEN, anchor="mm")
     return img
 
@@ -133,7 +133,7 @@ def grownups(F):
                                       "The teacher counts the ticks on the tally sheet. The 18 animals with the most ticks become your school pack."),
               ("Not here? Write it in.", "Use the write-in page for any animal that isn't in the booklet. The school pack uses animals that are in Wild Atlas. "
                                          "If a favorite isn't in Wild Atlas yet, we'll tell you."),
-              ("Please keep it anonymous", "Don't write your child's name on this booklet. We never ask for student names or accounts. "
+              ("Please keep it anonymous", "Don't write your child's name on this booklet. This program doesn't ask for student names, and booklets stay with your school. "
                                            "The only thing we need from your school is the final list of 18 animals."),
               ("Then what?", "We build a Wild Atlas pack of those 18 animals, just for your school, and send it back for your OK. Every class can use it, now and in future years. "
                              "Families get a free code to unlock it in the Wild Atlas app, a narrated, ad-free animal encyclopedia for kids.")]
