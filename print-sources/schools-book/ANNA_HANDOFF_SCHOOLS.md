@@ -13,9 +13,9 @@ The schools page (`wildatlasapp.com/schools`, getwildatlas PR #58) mirrors the z
 The school works with its students to find 18 animals (one class, a grade or everyone, often with a picture vote booklet and a tally). Those 18 become one custom Wild Atlas pack for the school, redeemed by families with a school code (`PEBBLEBROOK`). It sits on the child's Home screen like a "My Places" tile, but for a school.
 
 ## Screens (iPhone portrait, 9:41, 1206x2622, screen only)
-1. `school-home.png` Home, scrolled so the class tile sits mid-screen. Show the tile for **Room 4 at Pebble Brook** (school emblem as the art: `print-sources/schools-book/school-emblem*.png`), caption like "The 18 animals our class picked", pills "18 animals" and a NEW! capsule. Decide the section label (e.g. "My Class" vs "My Places") and flag it.
+1. `school-home.png` Home, scrolled so the school tile sits mid-screen. Show the tile for **Pebble Brook Elementary** (school emblem as the art: `print-sources/schools-book/school-emblem*.png`), caption like "The 18 animals our school picked", pills "18 animals" and a NEW! capsule. Decide the section label (e.g. "My School" vs "My Places") and flag it.
 2. `school-pack-top.png` The school pack page, top: back button, title, header card (emblem, "Pebble Brook Pack", one kid-friendly line), **Meet the Animals** 3x3 grid with page buttons 1 and 2 (18 animals = 2 pages of 9). Use the real app animal art. The 18 are in `print-sources/schools-book/build_vote_booklet.py` as `EXAMPLE_WINNERS`; page 1 can be the first nine.
-3. `school-animal.png` One animal page from that pack (use the lion or the golden retriever) with a small "From Room 4's pack" cue, so it is clear the class chose it.
+3. `school-animal.png` One animal page from that pack (use the lion or the golden retriever) with a small "From our school's pack" cue, so it is clear the school chose it.
 
 Video: ~20-25 seconds in the style of `riverbend-flow.mp4`: Home scrolls to the school tile, the pack opens, an animal page follows. Say which parts are real app footage and which are drawn.
 
