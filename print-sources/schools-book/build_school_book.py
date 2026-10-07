@@ -23,7 +23,7 @@ VENUE = "Pebble Brook Elementary"
 
 # (animal, activity, params). Never the same activity twice in a row.
 BOOK = [
-  ("lion", "spot", dict(hide=[(0.655, 0.695, 0.775, 0.805)], hide_label="the lion's back front paw")),
+  ("lion", "spot2", dict(removes=[(1964,1237),(130,1480)], holes=[(1851,814,32)], adds=[("rabbit",1250,640,170,False)], text="Four differences: a clump of grass on the right, a clump of grass on the left, the lion's eye and the little rabbit by the rock.")),
   ("panda", "trace", dict(word="Panda")),
   ("dolphin", "count", dict(counts={"dolphin": 3, "clownfish": 5, "starfish": 4}, sizes={"dolphin": 330, "clownfish": 190, "starfish": 190}, scene="ocean")),
   ("golden_retriever", "spot", dict(hide=[(0.855, 0.205, 0.975, 0.345)], hide_label="the end of the stick")),
@@ -588,25 +588,25 @@ def main():
 
     pages = {}
     pages[1] = cover_page(F, logo_color)
-    pages[2] = welcome_page(F, logo_color, logo_small); pages[3] = map_page(F, A, logo_small)
+    pages[2] = welcome_page(F, logo_color, logo_small)
     keys = []
     fns = {"shadow": bf.act_shadow, "odd": bf.act_odd, "next": bf.act_next, "count": bf.act_count, "big": bf.act_big,
            "safe": bf.act_safe, "finish": bf.act_finish, "dots": bf.act_dots, "maze": bf.act_maze, "home": bf.act_home,
            "trace": bf.act_trace, "scramble": bf.act_scramble}
     fns["maze"] = act_maze2; fns["dots_outline"] = act_dots_outline; fns["dots_rich"] = act_dots_rich
     for i, (k, act, prm) in enumerate(BOOK):
-        pl, pr = 4 + 2 * i, 5 + 2 * i
+        pl, pr = 3 + 2 * i, 4 + 2 * i
         img, info = (bf.act_spot(F, D, S, logo_small, k, **prm) if act == "spot" else
                      act_spot2(F, D, S, A, logo_small, k, **prm) if act == "spot2" else fns[act](F, D, A, logo_small, k, **prm))
         pages[pr] = img; pages[pl] = coloring_page(S, k, logo_bw_full)          # coloring page first (left), puzzle right
         keys.append((pr, D.name(k), act, info)); print(f"p{pl:>3} {act:8s} {k}")
-    pages[40] = act_numbers(F, logo_small)
-    pages[41], info41 = act_howmany(F, A, logo_small); keys.append((41, "How Many?", "count", info41))
-    pages[42] = bf.invent_page(F, logo_small)
-    pages[43], pages[44] = bf.answer_pages(F, logo_small, keys)
-    pages[45] = claim_page(F, logo_small); pages[46] = colophon_page(F, logo_color)
+    pages[39] = act_numbers(F, logo_small)
+    pages[40], info41 = act_howmany(F, A, logo_small); keys.append((40, "How Many?", "count", info41))
+    pages[41] = bf.invent_page(F, logo_small)
+    pages[42], pages[43] = bf.answer_pages(F, logo_small, keys)
+    pages[44] = claim_page(F, logo_small); pages[45] = colophon_page(F, logo_color)
     footer_lk = wa_lockup(F, 54)
-    for n in range(2, 46):                                                  # the back page (46) carries no number or footer lockup
+    for n in range(2, 45):                                                  # the back page (45) carries no number or footer lockup
         im = pages[n]
         if n >= 3:                                                           # page 2 has its own larger footer
             yc = H - 150                                                     # one shared baseline for both footer logos
@@ -616,10 +616,10 @@ def main():
 
     import fitz
     pdf = fitz.open()
-    for n in range(1, 47):
-        buf = io.BytesIO(); (pages[n].convert("RGB") if n in (1, 2, 46) else pages[n].convert("L")).save(buf, "JPEG", quality=(82 if n in (1, 2, 46) else a.dpi_jpeg), optimize=True)
+    for n in range(1, 46):
+        buf = io.BytesIO(); (pages[n].convert("RGB") if n in (1, 2, 45) else pages[n].convert("L")).save(buf, "JPEG", quality=(82 if n in (1, 2, 45) else a.dpi_jpeg), optimize=True)
         pg = pdf.new_page(width=612, height=792); pg.insert_image(pg.rect, stream=buf.getvalue())
-        (pages[n].convert("RGB") if n in (1, 2, 46) else pages[n].convert("L")).save(os.path.join(a.out, f"p{n:02d}.png"))
+        (pages[n].convert("RGB") if n in (1, 2, 45) else pages[n].convert("L")).save(os.path.join(a.out, f"p{n:02d}.png"))
     pdf.set_metadata({"title": f"{VENUE} Class Activity Book (example)", "author": "Wild Atlas"})
     out = os.path.join(a.out, "pebble-brook-class-activity-book.pdf"); pdf.save(out, deflate=True, garbage=3)
     print("wrote", out, os.path.getsize(out) // 1024, "KB", len(pdf), "pages")
