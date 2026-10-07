@@ -1569,10 +1569,6 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   .nav-links a { font-size: 0.86rem; }
   .nav-brand { gap: 8px; }
 }
-@media (min-width: 769px) and (max-width: 860px) {
-  .nav-title { display: none; }
-  .nav-links { gap: 10px; }
-}
 
 /* Mobile */
 @media (max-width: 768px) {

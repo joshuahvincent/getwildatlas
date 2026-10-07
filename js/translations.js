@@ -37,10 +37,11 @@ window.WILD_ATLAS_I18N = {
 
       // Nav
       'nav.features': 'Features',
+      'nav.app': 'App',
       'nav.games': 'Games',
       'nav.packs': 'Animal Packs',
       'nav.parents': 'For Parents',
-      'nav.cta': 'Be First',
+      'nav.cta': 'Get App',
 
       // Hero
       'hero.title': 'Discover the Animal Kingdom', // legacy key, kept for safety
@@ -240,10 +241,11 @@ window.WILD_ATLAS_I18N = {
       'gate.error': 'Falscher Code. Bitte versuche es erneut.',
 
       'nav.features': 'Funktionen',
+      'nav.app': 'App',
       'nav.games': 'Spiele',
       'nav.packs': 'Tierpakete',
       'nav.parents': 'F\u00fcr Eltern',
-      'nav.cta': 'Sei zuerst',
+      'nav.cta': 'App holen',
 
       'hero.title': 'Entdecke das Tierreich',
       'hero.eyebrow': 'Entdecke das Tierreich',
@@ -434,10 +436,11 @@ window.WILD_ATLAS_I18N = {
       'gate.error': 'C\u00f3digo incorrecto. Int\u00e9ntalo de nuevo.',
 
       'nav.features': 'Funciones',
+      'nav.app': 'App',
       'nav.games': 'Juegos',
       'nav.packs': 'Paquetes',
       'nav.parents': 'Para Padres',
-      'nav.cta': 'Sé primero',
+      'nav.cta': 'Obtener app',
 
       'hero.title': 'Descubre el Reino Animal',
       'hero.eyebrow': 'Descubre el Reino Animal',
@@ -628,10 +631,11 @@ window.WILD_ATLAS_I18N = {
       'gate.error': 'Code incorrect. Veuillez r\u00e9essayer.',
 
       'nav.features': 'Fonctions',
+      'nav.app': 'App',
       'nav.games': 'Jeux',
       'nav.packs': 'Packs',
       'nav.parents': 'Pour les Parents',
-      'nav.cta': 'Soyez premier',
+      'nav.cta': 'Obtenir l\'app',
 
       'hero.title': 'D\u00e9couvrez le R\u00e8gne Animal',
       'hero.eyebrow': 'D\u00e9couvrez le R\u00e8gne Animal',
@@ -828,10 +832,11 @@ window.WILD_ATLAS_I18N = {
 
       // Nav
       'nav.features': '\u529f\u80fd',
+      'nav.app': '\u5e94\u7528',
       'nav.games': '\u6e38\u620f',
       'nav.packs': '\u52a8\u7269\u5305',
       'nav.parents': '\u5bb6\u957f\u4e13\u533a',
-      'nav.cta': '抢先体验',
+      'nav.cta': '获取应用',
 
       // Hero
       'hero.title': '\u63a2\u7d22\u52a8\u7269\u738b\u56fd',
