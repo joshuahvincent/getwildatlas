@@ -1,0 +1,7 @@
+{
+  "file": "entrance.jpg",
+  "model": "gemini-3.1-flash-image-preview",
+  "aspectRatio": "4:3",
+  "prompt": "Photorealistic, natural light, high detail, warm and welcoming, editorial photography. The front entrance of a small friendly elementary school on a bright morning: a low brick building with big windows, a covered entrance with double doors, a paved path, trees and flower beds, a bike rack. No people. No text, no letters, no numbers, no signage with writing, no logos, no watermarks, no real brands, no identifiable faces. ",
+  "generated_at": "2026-10-07T16:18:03.542356Z"
+}

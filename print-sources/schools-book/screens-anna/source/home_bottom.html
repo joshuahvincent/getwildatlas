@@ -1,0 +1,62 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Fredoka;src:url(Fredoka.ttf);font-weight:300 700}
+@font-face{font-family:Nunito;src:url(Nunito-Regular.ttf);font-weight:400}
+@font-face{font-family:Nunito;src:url(Nunito-Bold.ttf);font-weight:600 800}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased}
+html,body{width:402px;background:transparent}
+body{font-family:Nunito;color:#5D4037}
+.fr{font-family:Fredoka;font-weight:700}
+#screen{position:relative;width:402px;height:874px;overflow:hidden}
+#scroll{position:absolute;left:0;top:0;width:402px}
+.dots{background-color:#FFF8EC;background-image:radial-gradient(circle,rgba(93,64,55,.09) 1.6px,transparent 1.7px);background-size:36px 36px;background-position:10px 10px}
+.status{position:absolute;left:0;top:0;width:402px;height:54px;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:6px 34px 0 46px;font-family:-apple-system,'SF Pro Text',Helvetica,Arial;font-weight:600;font-size:17px;color:#1b1b1b}
+.status .r{display:flex;gap:6px;align-items:center}
+.island{position:absolute;left:50%;top:11px;width:124px;height:36px;margin-left:-62px;background:#000;border-radius:20px;z-index:51}
+.home-ind{position:absolute;left:50%;bottom:8px;width:134px;height:5px;margin-left:-67px;background:rgba(0,0,0,.85);border-radius:3px;z-index:60}
+.pad{padding:0 16px}
+.tile{position:relative;height:122px}
+.tile .base{position:absolute;inset:0;border-radius:10px;transform:translateY(5px)}
+.tile .face{position:relative;height:100%;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6px 10px}
+.tile img.m{height:68px;width:68px;object-fit:contain}
+.tile .t{font-family:Fredoka;font-weight:700;font-size:19px;line-height:1.1;margin-top:4px;white-space:nowrap}
+.tile .s{font-weight:700;font-size:11px;line-height:1.2;text-align:center;margin-top:3px;color:rgba(93,64,55,.92)}
+.tile .lock{position:absolute;right:9px;top:8px;width:19px;height:24px;object-fit:contain}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px 12px}
+.divider{height:0;border-top:2px dashed rgba(93,64,55,.28);margin:0 16px;border-radius:2px}
+.h-sec{text-align:center}
+.h-sec .ttl{font-family:Fredoka;font-weight:700;font-size:27px;line-height:1.15;color:#5D4037}
+.h-sec .sub{font-weight:700;font-size:14px;color:rgba(93,64,55,.9);margin-top:2px}
+.pill{display:inline-flex;align-items:center;height:24px;padding:0 11px;border-radius:99px;font-weight:700;font-size:12px;white-space:nowrap}
+
+body{background:transparent}#wrap{width:402px}</style></head><body><div id="wrap" class="dots" style=""><div style="height:14px"></div><div class="divider" style="margin-top:34px"></div><div class="pad" style="margin-top:26px"><div class="h-sec" style="display:flex;flex-direction:column;align-items:center">
+  <div style="display:flex;align-items:center;gap:8px"><img src="icon-map-pin.png" style="width:24px;height:33px;object-fit:contain"><span class="fr" style="font-size:27px;line-height:1.15">My Places</span></div>
+  <div style="font-weight:700;font-size:14px;color:rgba(93,64,55,.9);margin-top:2px">Zoos, aquariums and schools</div></div>
+  <div style="position:relative;margin-top:18px;filter:drop-shadow(0 4px 10px rgba(93,64,55,.12))">
+  <div style="position:relative;border-radius:20px;background:linear-gradient(135deg,#FFFFFF,#EAF6FB);border:2px solid #1F6A85;padding:16px;display:flex;gap:14px;align-items:center;min-height:128px">
+    <div style="width:92px;height:92px;flex:none;border-radius:50%;background:#fff;padding:3px;box-shadow:0 0 0 2px #5D4037"><img src="riverbend-emblem.svg" style="width:100%;height:100%;display:block"></div>
+    <div style="flex:1;min-width:0"><div class="fr" style="font-size:22px;line-height:1.12">Riverbend Aquarium</div>
+      <div style="font-weight:700;font-size:14px;line-height:1.25;margin-top:4px;color:rgba(93,64,55,.92)">Meet the animals that live here</div>
+      <div style="display:flex;gap:6px;margin-top:9px"><span class="pill" style="background:#1F6A851f;color:#1F6A85">Visited</span><span class="pill" style="background:#1F6A851f;color:#1F6A85">9 animals</span></div></div></div></div>
+  <div style="position:relative;margin-top:18px;filter:drop-shadow(0 4px 10px rgba(93,64,55,.12))">
+  <div id="rbcard" style="position:relative;border-radius:20px;background:linear-gradient(135deg,#FFFFFF,#EAF5EE);border:2px solid #2F6B4F;padding:16px;display:flex;gap:14px;align-items:center;min-height:128px">
+    <div style="width:92px;height:92px;flex:none;border-radius:50%;background:#fff;padding:3px;box-shadow:0 0 0 2px #5D4037"><img src="school-emblem.svg" style="width:100%;height:100%;display:block"></div>
+    <div style="flex:1;min-width:0"><div class="fr" style="font-size:22px;line-height:1.12">Pebble Brook's Pack</div>
+      <div style="font-weight:700;font-size:14px;line-height:1.25;margin-top:4px;color:rgba(93,64,55,.92)">The 18 animals our school picked</div>
+      <div style="display:flex;gap:6px;margin-top:9px"><span class="pill" style="background:#2F6B4F1f;color:#2F6B4F">Our school</span><span class="pill" style="background:#2F6B4F1f;color:#2F6B4F">18 animals</span></div></div></div><div style="position:absolute;right:14px;top:-11px;display:flex;align-items:center;gap:4px;height:24px;padding:0 12px;border-radius:99px;background:#FFD97D;border:1.5px solid #fff;box-shadow:0 2px 4px rgba(93,64,55,.18)"><svg width="11" height="11" viewBox="0 0 24 24"><path d="M12 2l3 6.6 7.200.8-5.400 4.900 1.500 7.100L12 17.800 5.700 21.400l1.500-7.100L1.800 9.400 9 8.600z" fill="#5D4037"/></svg><span class="fr" style="font-size:12px;letter-spacing:.2px">NEW!</span></div></div>
+  <div style="margin-top:14px;height:58px;border-radius:16px;border:2px dashed rgba(93,64,55,.45);background:rgba(255,255,255,.55);display:flex;align-items:center;justify-content:center;gap:12px">
+   <div style="position:relative;width:26px;height:32px"><img src="icon-map-pin.png" style="width:26px;height:32px;object-fit:contain">
+     <svg style="position:absolute;right:-8px;bottom:-3px" width="18" height="18" viewBox="0 0 22 22"><circle cx="11" cy="11" r="10" fill="#fff" stroke="#5D4037" stroke-width="2"/><path d="M11 6v10M6 11h10" stroke="#5D4037" stroke-width="2.4" stroke-linecap="round"/></svg></div>
+   <div><div class="fr" style="font-size:17px;line-height:1.1">Add a place</div><div style="font-weight:700;font-size:12.5px;margin-top:1px;color:rgba(93,64,55,.92)">Ask a grown-up to help</div></div></div></div><div class="divider" style="margin-top:28px"></div><div class="pad h-sec" style="margin-top:30px"><div class="ttl">Explore More Animal Worlds</div><div class="sub">Dinosaurs • Ocean • Safari • Rainforest</div></div>
+<div class="pad grid2" style="margin-top:20px"><div class="tile" style="filter:drop-shadow(0 2px 4px rgba(93,64,55,.08))">
+<div class="base" style="background:#9B78C885"></div>
+<div class="face" style="opacity:.82;background:linear-gradient(135deg,#F5EEFF,#D9C2F3db);border:1.2px solid #9B78C859">
+<img class="m" src="pk_dino_roars.png"><div class="t">Dino Roars</div><div class="s">Dinosaurs from long ago</div></div><img class="lock" src="icon-locked-pack.png"></div><div class="tile" style="filter:drop-shadow(0 2px 4px rgba(93,64,55,.08))">
+<div class="base" style="background:#3BB4E785"></div>
+<div class="face" style="opacity:.82;background:linear-gradient(135deg,#EAF9FF,#A9E4FFdb);border:1.2px solid #3BB4E759">
+<img class="m" src="pk_ocean_creatures.png"><div class="t">Ocean Creatures</div><div class="s">Life in the big blue</div></div><img class="lock" src="icon-locked-pack.png"></div><div class="tile" style="filter:drop-shadow(0 2px 4px rgba(93,64,55,.08))">
+<div class="base" style="background:#E79A3B85"></div>
+<div class="face" style="opacity:.82;background:linear-gradient(135deg,#FFF6D9,#F6D76Bdb);border:1.2px solid #E79A3B59">
+<img class="m" src="pk_safari_stars.png"><div class="t">Safari Stars</div><div class="s">Wild animals of Africa</div></div><img class="lock" src="icon-locked-pack.png"></div><div class="tile" style="filter:drop-shadow(0 2px 4px rgba(93,64,55,.08))">
+<div class="base" style="background:#3FAF5A85"></div>
+<div class="face" style="opacity:.82;background:linear-gradient(135deg,#E9F9EC,#7BCB77db);border:1.2px solid #3FAF5A59">
+<img class="m" src="pk_rainforest_explorers.png"><div class="t">Rainforest Explorers</div><div class="s">Life under the leaves</div></div><img class="lock" src="icon-locked-pack.png"></div></div><div style="margin:22px 16px 0;height:50px;border-radius:14px;background:#FF9E7D;display:flex;align-items:center;justify-content:center;font-family:Fredoka;font-weight:700;font-size:18px;color:#5D4037;box-shadow:0 3px 8px rgba(93,64,55,.14)">Unlock more worlds</div><div style="height:150px"></div><script>var o={};['rbcard','t3','d1','d2','t1'].forEach(function(i){var e=document.getElementById(i);if(e){var r=e.getBoundingClientRect();o[i]=[r.left,r.top,r.width,r.height]}});document.body.insertAdjacentHTML('beforeend','<pre id=o>'+JSON.stringify(o)+'</pre>')</script></div></body></html>
