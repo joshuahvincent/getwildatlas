@@ -69,8 +69,6 @@ def coloring_page(S, k, logo_bw):
     src = S.page(k).convert("RGB"); sw, sh = src.size; d = ImageDraw.Draw(src)
     d.rectangle([int(sw * .05), int(sh * .862), int(sw * .15), int(sh * .935)], fill="white")   # QR
     d.rectangle([int(sw * .785), int(sh * .862), int(sw * .97), int(sh * .94)], fill="white")   # Wild Atlas logo
-    lw = int(sw * .155); lg = logo_bw.resize((lw, int(logo_bw.height * lw / logo_bw.width)), Image.LANCZOS)
-    src.paste(lg, (int(sw * .955) - lw, int(sh * .90) - lg.height // 2))
     s = H / sh; im = src.resize((int(sw * s), H), Image.LANCZOS)
     out = bf.blank(); out.paste(im, ((W - im.width) // 2, 0)); return out
 
@@ -120,16 +118,28 @@ def claim_page(F, logo):
                "A real venue gets its own code and QR.", F.nunito(30), W - 2 * M - 80, fill=(110, 110, 110), align="center")
     return p.img
 
-def colophon_page(F):
-    img = bf.blank(); d = ImageDraw.Draw(img); y = H - 900
+def colophon_page(F, logo_color):
+    """Back cover: the front cover's ocean water (sampled row by row), both logos on white panels above the credits."""
+    import numpy as np
+    cov = np.array(Image.open(os.path.join(HERE, "candidates", "cover-full.jpg")).convert("RGB").resize((W, H), Image.LANCZOS)).astype(float)
+    water = cov[: int(H * .60), 40:W - 40].mean(1)                                   # per-row average of the water-only part
+    grad = np.stack([np.interp(np.linspace(0, len(water) - 1, H), np.arange(len(water)), water[:, c]) for c in range(3)], 1)
+    img = Image.fromarray(np.repeat(grad[:, None, :], W, 1).astype("uint8")); d = ImageDraw.Draw(img)
+    # Riverbend logo panel
+    pw = 1100; lg = logo_color.resize((pw - 140, int(logo_color.height * (pw - 140) / logo_color.width)), Image.LANCZOS)
+    ph = lg.height + 110; px = (W - pw) // 2; py = H - 1280
+    d.rounded_rectangle([px, py, px + pw, py + ph], radius=64, fill="white"); img.paste(lg, (px + 70, py + 55))
+    # Wild Atlas panel
+    lk = wa_lockup(F, 110); tw_ = lk.width + 110; th_ = lk.height + 70; tx = (W - tw_) // 2; ty = py + ph + 60
+    d.rounded_rectangle([tx, ty, tx + tw_, ty + th_], radius=48, fill="white"); img.paste(lk, (tx + 55, ty + 35), lk)
+    d.text((W / 2, ty + th_ + 52), "Animals, facts & puzzles by Wild Atlas", font=F.nunito(34, True), fill=NAVY, anchor="mm")
     lines = [f"{VENUE} Animal Coloring & Activity Book", "", "Example book for the Wild Atlas partner program.",
              "Riverbend Aquarium is a fictional venue and is not a real organization.", "",
-             "Illustrations, animal facts and puzzles by Wild Atlas.", "© 2026 Wild Atlas. All rights reserved.", "",
-             "wildatlasapp.com/partners"]
+             "© 2026 Wild Atlas. All rights reserved.", "wildatlasapp.com/partners"]
+    y = H - 450
     for ln in lines:
-        center_text(d, y, ln, F.nunito(34, ln.startswith(VENUE))); y += 50
+        d.text((W / 2, y), ln, font=F.nunito(34, ln.startswith(VENUE)), fill=NAVY, anchor="mm"); y += 50
     return img
-
 
 # ------------------------------------------------------------------------------------------------ color cover, welcome, map
 NAVY = (14, 58, 85)
@@ -617,6 +627,8 @@ def main():
     missing = [k for k in used if k in D.A and not os.path.exists(os.path.join(masters, k + ".png"))]
     assert not missing, missing
     logo_small = load_logo("riverbend-logo-bw.png", 520); logo_color = load_logo("riverbend-logo.png")
+    footer_rb = logo_small.resize((int(logo_small.width * 64 / logo_small.height), 64), Image.LANCZOS)
+    logo_small = None                                   # page templates no longer paste a logo; the footer below does
     logo_color = Image.open(os.path.join(HERE, "riverbend-logo.png")).convert("RGB")
     logo_color = logo_color.crop(ImageOps.invert(logo_color.convert("L")).point(lambda v: 255 if v > 12 else 0).getbbox())
     logo_bw_full = load_logo("riverbend-logo-bw.png")
@@ -639,20 +651,22 @@ def main():
     pages[45], info45 = act_howmany(F, A, logo_small); keys.append((45, "How Many?", "count", info45))
     pages[46] = bf.invent_page(F, logo_small)
     pages[47], pages[48] = bf.answer_pages(F, logo_small, keys)
-    pages[49] = claim_page(F, logo_small); pages[50] = colophon_page(F)
+    pages[49] = claim_page(F, logo_small); pages[50] = colophon_page(F, logo_color)
     footer_lk = wa_lockup(F, 54)
-    for n in range(2, 51):
+    for n in range(2, 50):                                                  # the back page (50) carries no number or footer lockup
         im = pages[n]
         if n >= 3:                                                           # page 2 has its own larger footer
-            im.paste(footer_lk, (70, H - 175), footer_lk)
+            yc = H - 150                                                     # one shared baseline for both footer logos
+            im.paste(footer_lk, (70, yc - footer_lk.height // 2), footer_lk)
+            im.paste(footer_rb, (W - 70 - footer_rb.width, yc - footer_rb.height // 2))
         dd = ImageDraw.Draw(im); dd.text((W / 2, H - 70), str(n), font=F.nunito(40, True), fill=(50, 50, 50), anchor="mm")
 
     import fitz
     pdf = fitz.open()
     for n in range(1, 51):
-        buf = io.BytesIO(); (pages[n].convert("RGB") if n <= 2 else pages[n].convert("L")).save(buf, "JPEG", quality=(82 if n <= 2 else a.dpi_jpeg), optimize=True)
+        buf = io.BytesIO(); (pages[n].convert("RGB") if n in (1, 2, 50) else pages[n].convert("L")).save(buf, "JPEG", quality=(82 if n in (1, 2, 50) else a.dpi_jpeg), optimize=True)
         pg = pdf.new_page(width=612, height=792); pg.insert_image(pg.rect, stream=buf.getvalue())
-        (pages[n].convert("RGB") if n <= 2 else pages[n].convert("L")).save(os.path.join(a.out, f"p{n:02d}.png"))
+        (pages[n].convert("RGB") if n in (1, 2, 50) else pages[n].convert("L")).save(os.path.join(a.out, f"p{n:02d}.png"))
     pdf.set_metadata({"title": f"{VENUE} Animal Coloring & Activity Book (example)", "author": "Wild Atlas"})
     out = os.path.join(a.out, "riverbend-coloring-activity-book.pdf"); pdf.save(out, deflate=True, garbage=3)
     print("wrote", out, os.path.getsize(out) // 1024, "KB", len(pdf), "pages")
