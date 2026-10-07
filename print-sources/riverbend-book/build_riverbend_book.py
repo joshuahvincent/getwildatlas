@@ -40,7 +40,7 @@ BOOK = [
   ("manta_ray", "trace", dict(word="Manta")),
   ("sea_lion", "spot", dict(hide=[(0.70, 0.67, 0.84, 0.92)], hide_label="the sea lion's flipper")),
   ("glass_frog", "big", dict(rows=[("glass_frog", "sea_otter"), ("clownfish", "sea_turtle"), ("starfish", "octopus")])),
-  ("starfish", "dots", {}),
+  ("starfish", "dots_outline", {}),
   ("moray_eel", "odd", dict(rows=[("moray_eel", "seahorse"), ("clownfish", "jellyfish"), ("starfish", "moray_eel")])),
   ("atlantic_puffin", "scramble", dict(items=[("atlantic_puffin", "PUFFIN"), ("octopus", "OCTOPUS"), ("sea_otter", "OTTER"),
                                               ("clownfish", "CLOWNFISH"), ("starfish", "STARFISH")])),
@@ -402,6 +402,28 @@ def act_maze2(F, D, A, logo, k, prompt, seed):
     kd.line(pts, fill=(90, 90, 90), width=22, joint="curve")
     return p.img, dict(kind="maze", img=key)
 
+def act_dots_outline(F, D, A, logo, k, N=60):
+    """Dot-to-dot with the outline dots only (no inside lines): cleaner for animals with busy texture, like the starfish."""
+    import numpy as np, cv2
+    p = bf.page(F, "Dot-to-Dot", "Connect the dots from 1 to the end. Then color me in!", D.name(k), D.pack(k), logo, "connect")
+    c = A.contour(k)
+    closed = np.vstack([c, c[:1]]); seg = np.r_[0, np.cumsum(np.hypot(*np.diff(closed, axis=0).T))]
+    pts = np.array([closed[np.searchsorted(seg, t, side="right") - 1] for t in np.linspace(0, seg[-1], N, endpoint=False)])
+    approx = cv2.approxPolyDP(c.astype(np.int32).reshape(-1, 1, 2), seg[-1] * .004, True)[:, 0, :]
+    for q in approx:                                                       # snap dots onto the sharp tips (the arms)
+        i = np.argmin(np.hypot(*(pts - q).T))
+        if np.hypot(*(pts[i] - q)) < seg[-1] / N * .6: pts[i] = q
+    pts = np.roll(pts, -int(np.argmax(pts[:, 0])), axis=0)
+    iw, ih = A.size(k); bx0, by0, bx1, by1 = M + 60, p.y + 60, W - M - 60, p.body_bottom - 40
+    s = min((bx1 - bx0) / iw, (by1 - by0) / ih); ox, oy = bx0 + ((bx1 - bx0) - iw * s) / 2, by0 + ((by1 - by0) - ih * s) / 2
+    f = F.nunito(28, True); cxm, cym = pts[:, 0].mean(), pts[:, 1].mean()
+    for i, (x, y) in enumerate(pts, 1):
+        X, Y = ox + x * s, oy + y * s
+        p.d.ellipse([X - 9, Y - 9, X + 9, Y + 9], fill=INK)
+        vx, vy = x - cxm, y - cym; nr = max(np.hypot(vx, vy), 1)
+        p.d.text((X + vx / nr * 34, Y + vy / nr * 34), str(i), font=f, fill=INK, anchor="mm")
+    return p.img, None
+
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--out", required=True); ap.add_argument("--dpi-jpeg", type=int, default=70)
     a = ap.parse_args(); os.makedirs(a.out, exist_ok=True)
@@ -431,7 +453,7 @@ def main():
     fns = {"shadow": bf.act_shadow, "odd": bf.act_odd, "next": bf.act_next, "count": bf.act_count, "big": bf.act_big,
            "safe": bf.act_safe, "finish": bf.act_finish, "dots": bf.act_dots, "maze": bf.act_maze, "home": bf.act_home,
            "trace": bf.act_trace, "scramble": bf.act_scramble}
-    fns["maze"] = act_maze2
+    fns["maze"] = act_maze2; fns["dots_outline"] = act_dots_outline
     for i, (k, act, prm) in enumerate(BOOK):
         pl, pr = 4 + 2 * i, 5 + 2 * i
         img, info = (bf.act_spot(F, D, S, logo_small, k, **prm) if act == "spot" else fns[act](F, D, A, logo_small, k, **prm))
