@@ -77,7 +77,7 @@
     .pp-mechanic code { background: var(--yellow-light); padding: 2px 8px; border-radius: 6px; font-weight: 700; font-family: var(--font-body); }
 
     .pp-book { background: #fff; border-top: var(--stroke) solid rgba(93, 64, 55, .08); border-bottom: var(--stroke) solid rgba(93, 64, 55, .08); }
-    .pp-book-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl); align-items: center; margin-top: var(--space-xl); }
+    .pp-book-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-xl); align-items: center; margin-top: var(--space-xl); }
     .pp-book ul { margin-top: var(--space-md); padding-left: 1.2em; list-style: disc; }
     .pp-book li { margin-bottom: var(--space-xs); }
     .pp-book-links { display: flex; flex-wrap: wrap; gap: var(--space-sm); margin-top: var(--space-lg); }
@@ -104,6 +104,7 @@
     .pp-closing h2 { font-size: clamp(1.9rem, 4vw, 2.6rem); font-weight: 700; }
     .pp-closing p { margin: var(--space-sm) auto 0; max-width: 48ch; }
     .pp-closing .pp-cta-row { justify-content: center; margin-top: var(--space-lg); }
+    .pp-proof { margin-top: var(--space-md); font-weight: 700; font-size: .95rem; }
     .pp-email { margin-top: var(--space-md); font-weight: 700; }
     .pp-email a { text-decoration: underline; }
 
@@ -198,7 +199,7 @@
         <div class="pp-head">
           <p class="pp-eyebrow">Why families trust it</p>
           <h2>An animal app you can hand a family without a second thought.</h2>
-          <p>Wild Atlas is a narrated, documentary-style animal encyclopedia for ages 3&ndash;9, founded by Josh Vincent, who grew up in a conservation documentary filmmaking family. We just launched, so we&rsquo;re not bringing you traffic. We&rsquo;re giving your families something trustworthy to take home &mdash; something you&rsquo;re glad to put your name behind.</p>
+          <p>Wild Atlas is a narrated, documentary-style animal encyclopedia for ages 3&ndash;9, founded by Josh Vincent, who grew up in a conservation documentary filmmaking family. We&rsquo;re a take-home gift for your families, not a lead-generation tool: something you&rsquo;re glad to put your name behind.</p>
         </div>
         <div class="pp-badges">
           <div class="pp-badge"><b>200+ animals</b><small>across 13 packs &mdash; 3 always free</small></div>
@@ -223,7 +224,7 @@
             <h3>A free member perk</h3>
             <dl>
               <dt>You</dt><dd>Hand departing families a free unlock code with your venue&rsquo;s name on it &mdash; an exit poster, a QR, or one line in a member email.</dd>
-              <dt>Get</dt><dd>A generous send-off that costs you nothing. Families get a free animal pack ($3.99 value), the printable coloring book for that pack, and the coloring books for our other free packs.</dd>
+              <dt>Get</dt><dd>A perk your members use on the way out, at no cost to you. Families get a free animal pack ($3.99 value), the printable coloring book for that pack, and the coloring books for our other free packs.</dd>
               <dt>Cost</dt><dd>$0.</dd>
             </dl>
             <a class="pp-example" href="/assets/downloads/riverbend-crawl-kit.pdf" target="_blank" rel="noopener"><img src="/assets/partners/crawl-poster.jpg" alt="" loading="lazy"><span>See the Crawl kit<small>Poster, desk card, member email</small></span></a>
@@ -234,8 +235,8 @@
             <h3>Perks + a take-home book</h3>
             <dl>
               <dt>You</dt><dd>A coloring and puzzle book made for your venue &mdash; your animals, their names, your logo. Email it to members as a printable PDF, hand it out at exhibits, or give it away or sell it in the gift shop. Add a members&rsquo; discount.</dd>
-              <dt>Get</dt><dd>Everything in Crawl, plus a keepsake that&rsquo;s yours. If you sell it, we can share the revenue, or keep it free.</dd>
-              <dt>Cost</dt><dd>Low to none.</dd>
+              <dt>Get</dt><dd>Everything in Crawl, plus a keepsake that&rsquo;s yours.</dd>
+              <dt>Cost</dt><dd>$0 to start. You print the book; if you sell it, we can share revenue, or keep it free.</dd>
             </dl>
             <a class="pp-example" href="#book"><img src="/assets/partners/book-cover.jpg" alt="" loading="lazy"><span>See an example book<small>Riverbend Aquarium &darr;</small></span></a>
             <div class="pp-when">Live in weeks</div>
@@ -249,6 +250,7 @@
               <dt>Cost</dt><dd>On us &mdash; we build it.</dd>
             </dl>
             <a class="pp-example" href="#run"><img class="thumb-phone" src="/assets/partners/run-pack-phone.png" alt="" loading="lazy"><span>See what it looks like<small>Your zoo in the app &darr;</small></span></a>
+            <!-- TODO (Josh): add a real timeline chip for Run (Crawl says "Live this week", Walk "Live in weeks"). Not invented here. -->
             <div class="pp-when">A project, together</div>
           </div>
         </div>
@@ -263,32 +265,25 @@
         <div class="pp-head">
           <p class="pp-eyebrow">The co-branded book</p>
           <h2>A keepsake with your name on the cover.</h2>
-          <p>We re-skin our puzzle &amp; activity book for your venue &mdash; your hero animals, your logo &mdash; with a &ldquo;claim your free pack&rdquo; page in the back. Kids solve puzzles about the animals they just met; a QR unlocks the matching pack in the app.</p>
+          <p>We re-skin our puzzle &amp; activity book for your venue: your animals, your logo, and a claim page in the back that unlocks a free pack.</p>
         </div>
         <div class="pp-book-grid">
           <!-- Pages from the example book PDF (print-sources/riverbend-book). -->
           <div class="pp-strip-wrap">
             <div class="pp-strip" tabindex="0" role="group" aria-label="Pages from the Riverbend Aquarium example book. Scroll sideways to see more.">
-              <figure><img src="/assets/partners/book-cover.jpg" alt="Color cover of the Riverbend Aquarium Animal Coloring and Activity Book" loading="lazy"><figcaption>Cover with your name and logo</figcaption></figure>
-              <figure><img src="/assets/partners/book-welcome.jpg" alt="Welcome page with the venue's address, contact details and photos" loading="lazy"><figcaption>Welcome page with your details</figcaption></figure>
-              <figure><img src="/assets/partners/book-map.jpg" alt="Explorer map of the aquarium with animals for kids to circle" loading="lazy"><figcaption>A map to circle what they saw</figcaption></figure>
-              <figure><img src="/assets/partners/book-coloring.jpg" alt="Octopus coloring page with real facts" loading="lazy"><figcaption>A coloring page per animal</figcaption></figure>
-              <figure><img src="/assets/partners/book-puzzle.jpg" alt="Spot-the-difference puzzle page" loading="lazy"><figcaption>Puzzles on every spread</figcaption></figure>
+              <figure><img src="/assets/partners/book-cover.jpg" alt="Color cover of the Riverbend Aquarium Animal Coloring and Activity Book" loading="lazy"><figcaption>Your cover</figcaption></figure>
+              <figure><img src="/assets/partners/book-welcome.jpg" alt="Welcome page with the venue's address, contact details and photos" loading="lazy"><figcaption>Your details and photos</figcaption></figure>
+              <figure><img src="/assets/partners/book-map.jpg" alt="Explorer map of the aquarium with animals for kids to circle" loading="lazy"><figcaption>A map to circle</figcaption></figure>
+              <figure><img src="/assets/partners/book-coloring.jpg" alt="Octopus coloring page with real facts" loading="lazy"><figcaption>Color each animal</figcaption></figure>
+              <figure><img src="/assets/partners/book-puzzle.jpg" alt="Spot-the-difference puzzle page" loading="lazy"><figcaption>A puzzle each</figcaption></figure>
               <figure><img src="/assets/partners/book-maze.jpg" alt="Maze page where a baby capybara finds its mom" loading="lazy"><figcaption>Mazes</figcaption></figure>
               <figure><img src="/assets/partners/book-numbers.jpg" alt="Number tracing page, 0 to 10" loading="lazy"><figcaption>Write the numbers</figcaption></figure>
               <figure><img src="/assets/partners/book-howmany.jpg" alt="Counting page with write-in boxes" loading="lazy"><figcaption>Count the animals</figcaption></figure>
-              <figure><img src="/assets/partners/book-claim.jpg" alt="Claim page with a QR code and the code RIVERBEND" loading="lazy"><figcaption>Claim page with your QR and code</figcaption></figure>
+              <figure><img src="/assets/partners/book-claim.jpg" alt="Claim page with a QR code and the code RIVERBEND" loading="lazy"><figcaption>Your QR and code</figcaption></figure>
             </div>
           </div>
           <div>
-            <ul>
-              <li><b>Your hero animals.</b> We pull the species your families just saw into connect-the-dots, mazes and spot-the-difference pages.</li>
-              <li><b>Your cover.</b> Logo and colors up front, so it reads as yours, not ours.</li>
-              <li><b>A built-in bridge to the app.</b> The claim page turns a quiet car ride into a free, ad-free unlock.</li>
-              <li><b>Print it, email it, sell it.</b> It&rsquo;s a print-ready PDF: email it to your member list, hand copies out at exhibits, or give it away or sell it in the gift shop.</li>
-              <li><b>Pre-reader friendly.</b> Mostly visual puzzles and tracing, light on spelling &mdash; made for ages 3&ndash;9.</li>
-            </ul>
-            <div class="pp-book-links">
+            <div class="pp-book-links" style="justify-content:center">
               <a class="btn btn-primary" href="/assets/downloads/riverbend-coloring-activity-book.pdf" target="_blank" rel="noopener">Open the example book (PDF)</a>
             </div>
             <p style="margin-top: var(--space-md); font-size: .85rem; opacity: .8;"><span class="pp-note">Illustrative example</span> &ldquo;Riverbend Aquarium&rdquo; is a fictional venue, not a real partner. The animals and puzzles are Wild Atlas; the aquarium photos are AI-generated.</p>
@@ -363,13 +358,14 @@
     </section>
 
     <!-- FAQ -->
+    <!-- COPY REVIEW (Cole + advisors): FAQ, "Why families trust it", the Walk cost line and the Crawl "Get" line were reworded after the Gemini critique. Advisor memo items still open: COPPA wording, "fully offline", "more kids playing". -->
     <section class="pp-section pp-faq" id="faq">
       <div class="container" style="max-width: 820px;">
         <div class="pp-head"><p class="pp-eyebrow">Questions</p><h2>The quick answers.</h2></div>
-        <details open><summary>Does it cost us anything?</summary><p>No. It&rsquo;s free right now. You give your families a perk, and what we get in return is more kids playing with Wild Atlas and learning about animals. Even a custom-built pack (Run) is on us to build. If we later turn it into a paid product together, we share the revenue.</p></details>
-        <details><summary>How do families redeem?</summary><p>One tap. Each venue gets a unique code that works from a link, on the App Store, or in the app&rsquo;s &ldquo;Redeem a Code&rdquo; sheet. No instructions to print.</p></details>
-        <details><summary>Is it safe for kids and our brand?</summary><p>Yes &mdash; no ads, no algorithm, works fully offline, and COPPA-compliant. It&rsquo;s the kind of thing an education team can recommend without reputational risk.</p></details>
-        <details><summary>Can we make it exclusive to members?</summary><p>Yes. The per-venue code is what makes an offer member-only, with a redemption cap and optional expiry you set.</p></details>
+        <details open><summary>Does it cost us anything?</summary><p>No, it&rsquo;s free right now. In return we get more kids playing with Wild Atlas and learning about animals. Run is on us to build; if we later make a paid product together, we share the revenue.</p></details>
+        <details><summary>How do families redeem?</summary><p>One tap. Each venue gets its own code, redeemed from a link, on the App Store, or in the app&rsquo;s &ldquo;Redeem a Code&rdquo; sheet.</p></details>
+        <details><summary>Is it safe for kids and our brand?</summary><p>No ads, no algorithm, works offline, and COPPA-compliant.</p></details>
+        <details><summary>Can we make it exclusive to members?</summary><p>Yes. The per-venue code makes it member-only, with a redemption cap and optional expiry you set.</p></details>
         <details><summary>We already have our own app &mdash; does this compete?</summary><p>No. Wild Atlas is the take-home animal encyclopedia, not a visit-planning or ticketing app. It complements what you run on-site.</p></details>
       </div>
     </section>
@@ -380,6 +376,8 @@
         <div class="pp-closing">
           <h2>Let&rsquo;s find your first rung.</h2>
           <p>A 15-minute call is enough to pick a tier, set up a code, and get something in your families&rsquo; hands.</p>
+          <!-- Rating verified against the live App Store lookup 2026-10-06: 5.0, 17 ratings. Re-check before publish. -->
+          <p class="pp-proof">&#9733; 5.0 on the App Store &middot; 17 ratings, as of October 2026</p>
           <div class="pp-cta-row">
             <!-- SCHEDULING LINK: replace this mailto with the real booking URL once Josh confirms it. -->
             <a class="btn btn-primary" href="mailto:partners@wildatlasapp.com?subject=15-min%20partner%20call">Book a 15-min call</a>
