@@ -1,0 +1,11 @@
+{
+  "file": "final-pack-top-t1.jpg",
+  "model": "gemini-3.1-flash-image-preview",
+  "prompt": "Image 1 is a REAL screenshot of the Wild Atlas kids' animal iPhone app: it defines the exact visual language (fonts, thick dark-brown outlines, pastel card gradients, soft shadows, cream dotted background, rounded shapes). Image 2 is the design layout of a NEW screen. Recreate Image 2 faithfully: the same sections, order, text (keep every word exactly as written), icons and artwork, but drawn in precisely the visual language of Image 1 so it looks like a genuine screenshot of the same app. Reuse the animal pictures and photos from Image 2 exactly as they are. Output only the app screen, edge to edge, a full phone screen with no phone frame, no extra captions. No dolphins or whales. Show the status bar and the top bar with a yellow back button and the title, the venue header card with the round emblem, the heading Meet the Animals, a 3x3 grid of animal cards (Octopus, Sea Otter, Jellyfish, Sea Lion, Starfish, Sloth, Poison Dart Frog, Axolotl, Green Anaconda), and three round page buttons numbered 1, 2 and 3 (1 selected, light blue). ",
+  "refs": [
+    "refs/pack-ref.png",
+    "refs/layout-pack-top.png",
+    "riverbend-emblem.png"
+  ],
+  "generated_at": "2026-10-07T01:43:58.656612Z"
+}

@@ -1,0 +1,10 @@
+{
+  "file": "final-pack-lower-t2.jpg",
+  "model": "gemini-3.1-flash-image-preview",
+  "prompt": "Image 1 is a REAL screenshot of the Wild Atlas kids' animal iPhone app: it defines the exact visual language (fonts, thick dark-brown outlines, pastel card gradients, soft shadows, cream dotted background, rounded shapes). Image 2 is the design layout of a NEW screen. Recreate Image 2 faithfully: the same sections, order, text (keep every word exactly as written), icons and artwork, but drawn in precisely the visual language of Image 1 so it looks like a genuine screenshot of the same app. Reuse the animal pictures and photos from Image 2 exactly as they are. Output only the app screen, edge to edge, a full phone screen with no phone frame, no extra captions. No dolphins or whales. This is the lower part of the same page, scrolled: the paw-print progress card, the section About Riverbend with four fact tiles (27, 9, 1, 365), the section Top Exhibits with a horizontal row of exhibit cards, and a teal For grown-ups card. Show the iOS status bar at the top. ",
+  "refs": [
+    "refs/pack-ref.png",
+    "refs/layout-pack-lower.png"
+  ],
+  "generated_at": "2026-10-07T01:44:35.284150Z"
+}

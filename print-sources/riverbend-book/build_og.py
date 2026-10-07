@@ -15,7 +15,7 @@ hero = Image.open(clean).convert("RGB"); clean.unlink()
 s = H / hero.height; hero = hero.resize((int(hero.width * s), H), Image.LANCZOS)          # 844 x 630
 pw = 660; x0 = max(0, int((hero.width - pw) * 0.62)); hero = hero.crop((x0, 0, x0 + pw, H)); img.paste(hero, (W - pw, 0))
 d.rectangle([W - pw - 8, 0, W - pw, H], fill=(255, 217, 125))                                # sunny edge between panel and photo
-d.text((56, 64), "FOR ZOOS & AQUARIUMS", font=F.fredoka(25, 650), fill=PEACH)
+d.text((56, 64), "FOR ZOOS, AQUARIUMS & MUSEUMS", font=F.fredoka(24, 650), fill=PEACH)
 for i, ln in enumerate(("Partner with", "Wild Atlas")):
     d.text((56, 130 + i * 78), ln, font=F.fredoka(68, 700), fill=BARK)
 d.text((56, 320), "Extend the visit home.", font=F.fredoka(38, 650), fill=PEACH)

@@ -1,0 +1,294 @@
+<title>Venue Screens Review</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap">
+<style>
+/* Layout: page chrome in the viewer's theme; the two phone screens are drawn in the app's own light palette (AppTheme tokens) and flow at full length so the whole page scrolls and every part can take a comment. */
+:root{
+  --bg:#F6EFE3; --card:#FFFFFF; --fg:#4a352d; --muted:#7d675d; --line:rgba(93,64,55,.16); --accent:#E0795A;
+  --font-head:'Fredoka',system-ui,sans-serif; --font-body:'Nunito',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#231916; --card:#33261f; --fg:#f6e9d6; --muted:#c3aa98; --line:rgba(246,233,214,.16); --accent:#ff9e7d; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#231916; --card:#33261f; --fg:#f6e9d6; --muted:#c3aa98; --line:rgba(246,233,214,.16); --accent:#ff9e7d; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:16px;line-height:1.5;margin:0;padding-inline:16px;padding-block:28px 72px}
+.wrap{max-width:1000px;margin-inline:auto;display:flex;flex-direction:column;gap:36px}
+h1,h2,h3{font-family:var(--font-head);margin:0;line-height:1.15;text-wrap:balance}
+h1{font-size:clamp(1.9rem,5vw,2.5rem);font-weight:700}
+.eyebrow{font-family:var(--font-head);font-weight:600;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.lede{max-width:64ch;color:var(--muted);margin:8px 0 0}
+.stage{display:flex;flex-wrap:wrap;gap:48px;justify-content:center;align-items:flex-start}
+.col{display:flex;flex-direction:column;gap:14px;align-items:center;min-width:0;flex:0 1 390px}
+.col h2{font-size:1.25rem;font-weight:600}
+.col > .sub{margin:-8px 0 0;color:var(--muted);font-size:.9rem;text-align:center;max-width:36ch}
+
+/* ===== the phone ===== */
+.phone{width:min(100%,390px);background:#2a2220;border-radius:54px;padding:12px;box-shadow:0 18px 44px rgba(40,24,16,.28);box-sizing:border-box}
+.screen{--bark:#5D4037;--peach:#FF9E7D;--sunny:#FFD97D;--mint:#A8E6CF;--cream:#FFF8EC;--sky:#A2D2FF;--pastel:#EAF6FF;--teal-wash:#D5EDEC;--teal:#2FA7A0;
+  background-color:var(--cream);background-image:radial-gradient(rgba(93,64,55,.07) 1.6px,transparent 1.8px);background-size:26px 26px;
+  border-radius:42px;overflow:hidden;color:var(--bark);font-family:var(--font-body);color-scheme:light;position:relative;padding-bottom:28px}
+.screen *{box-sizing:border-box}
+.status{display:flex;justify-content:space-between;align-items:center;padding:16px 28px 6px;font-weight:800;font-size:15px}
+.status .isl{width:104px;height:30px;background:#111;border-radius:20px;position:absolute;left:50%;top:10px;transform:translateX(-50%)}
+.status .r{display:flex;gap:6px;align-items:center}
+.status .r i{display:block;width:22px;height:11px;border:2px solid var(--bark);border-radius:4px;position:relative}
+.status .r i::after{content:"";position:absolute;inset:1.5px;right:5px;background:var(--bark);border-radius:1px}
+.pad{padding-inline:16px}
+.fh{font-family:var(--font-head)}
+.sec{display:flex;align-items:center;gap:10px;margin:24px 0 10px}
+.sec h3{font-size:19px;font-weight:600}
+.sec .sub{font-size:12px;opacity:.75;font-weight:600}
+.sec svg{width:26px;height:26px;flex:none}
+.rule{height:0;border:0;border-top:2px dashed rgba(93,64,55,.22);margin:24px 16px 0}
+
+/* home */
+.hero{position:relative;text-align:center;padding:6px 0 0}
+.rail{position:absolute;top:30px;display:flex;flex-direction:column;gap:18px}
+.rail.l{left:16px}.rail.r{right:16px}
+.rbtn{width:44px;height:44px;border-radius:14px;background:#fff;border:2px solid var(--bark);display:grid;place-items:center}
+.rbtn svg{width:26px;height:26px;stroke:var(--bark);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.mascot{width:190px;height:190px;margin:0 auto;display:grid;place-items:center;border-radius:50%;background:radial-gradient(circle,rgba(255,217,125,.55),rgba(255,217,125,0) 68%)}
+.mascot img{width:158px;height:auto;display:block}
+.title{font-family:var(--font-head);font-size:34px;font-weight:700;margin-top:2px}
+.greet{font-family:var(--font-head);font-size:21px;font-weight:700;color:var(--peach);margin-top:2px}
+.lead{font-size:13px;opacity:.78;font-weight:600;margin-top:2px}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tile{position:relative;border-radius:18px;padding:12px 8px 12px;text-align:center;border-bottom:5px solid rgba(93,64,55,.14);border-top:2px solid rgba(93,64,55,.06);border-inline:2px solid rgba(93,64,55,.06);min-height:128px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.tile img{width:68px;height:68px;object-fit:contain}
+.tile b{font-family:var(--font-head);font-size:15px;font-weight:600;line-height:1.1}
+.tile small{display:block;font-size:11px;font-weight:600;opacity:.78;line-height:1.2}
+.t1{background:linear-gradient(160deg,#FFE3D6,#F8C9B4)}.t2{background:linear-gradient(160deg,#F6E8F4,#E8D3EE)}.t3{background:linear-gradient(160deg,#FFF6D0,#F3E6A8)}.t4{background:linear-gradient(160deg,#E3F1FF,#BFDDF7)}
+.t5{background:linear-gradient(160deg,#EBE2FB,#D6C8F2)}.t6{background:linear-gradient(160deg,#DDF5E6,#BFE7CF)}.t7{background:linear-gradient(160deg,#FFEBC9,#F7D6A0)}.t8{background:linear-gradient(160deg,#D8F1E6,#B6E3CF)}
+.lock{position:absolute;top:8px;right:8px;width:24px;height:24px}
+.lock svg{width:24px;height:24px}
+.badge{position:absolute;top:-9px;right:8px;background:var(--sunny);color:var(--bark);font-family:var(--font-head);font-weight:700;font-size:11px;padding:4px 11px;border-radius:99px;display:flex;gap:4px;align-items:center;border:2px solid #fff}
+.place{grid-column:1/-1;flex-direction:row;gap:14px;text-align:left;padding:14px 16px;min-height:0;border-radius:20px;background:linear-gradient(160deg,#E3F1FF,#BFDDF7)}
+.place img{width:78px;height:78px;flex:none}
+.place b{font-size:19px;display:block}
+.place small{display:block;font-size:12px;margin-top:2px}
+.pills{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+.pill{font-weight:800;font-size:11px;padding:4px 10px;border-radius:99px;background:rgba(255,255,255,.7);border:1.5px solid rgba(93,64,55,.25)}
+.add{grid-column:1/-1;min-height:84px;border:3px dashed rgba(93,64,55,.35);background:rgba(255,255,255,.55);border-bottom:3px dashed rgba(93,64,55,.35);flex-direction:row;gap:12px;border-radius:20px}
+.add svg{width:38px;height:38px}
+.cta{display:block;margin:22px 16px 0;background:var(--peach);color:var(--bark);text-align:center;font-family:var(--font-head);font-weight:700;font-size:19px;border-radius:18px;padding:16px;border-bottom:5px solid #E68A6A}
+
+/* pack page */
+.bar{display:grid;grid-template-columns:48px 1fr 48px;align-items:center;padding:4px 16px 6px}
+.bar .t{text-align:center;font-weight:700;font-size:16px}
+.back{width:44px;height:44px;border-radius:50%;background:var(--sunny);border:2px solid var(--bark);display:grid;place-items:center}
+.back svg{width:22px;height:22px;stroke:var(--bark);fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.chest{width:44px;height:44px;display:grid;place-items:center}
+.chest svg{width:30px;height:30px}
+.phero{margin:8px 16px 0;border-radius:22px;padding:14px;display:flex;gap:14px;align-items:center;background:linear-gradient(160deg,#CFE7EE,#EAF6FF);border:2px solid rgba(93,64,55,.14)}
+.phero img{width:108px;height:108px;flex:none;border-radius:50%;box-shadow:0 6px 14px rgba(93,64,55,.18)}
+.phero h1{font-family:var(--font-head);font-size:28px;font-weight:700;line-height:1.05;margin:0}
+.phero p{margin:6px 0 0;font-size:13px;font-weight:600;opacity:.85;line-height:1.3}
+.phero .pills{margin-top:8px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.at{background:#fff;border:2px solid var(--bark);border-radius:10px;aspect-ratio:1/1.08;padding:6px 6px 4px;display:flex;flex-direction:column;align-items:center;min-width:0}
+.at .im{flex:1;width:100%;min-height:0;display:grid;place-items:center}
+.at img{max-width:100%;max-height:100%;object-fit:contain}
+.at span{font-weight:800;font-size:12px;text-align:center;line-height:1.1;padding-bottom:3px}
+.at.seen{background:#FFFDF6}
+.pager{display:flex;justify-content:center;gap:14px;margin:14px 0 0}
+.pg{width:48px;height:48px;border-radius:50%;border:3px solid var(--bark);display:grid;place-items:center;font-family:var(--font-head);font-weight:700;font-size:19px;background:#fff}
+.pg.on{background:var(--sky)}
+.prog{margin:14px 16px 0;background:rgba(255,255,255,.9);border:2px solid rgba(93,64,55,.18);border-radius:16px;padding:12px 14px;text-align:center}
+.paws{display:grid;grid-template-columns:repeat(9,1fr);gap:7px;justify-items:center;margin-bottom:8px}
+.paws i{width:20px;height:20px;border-radius:50%;border:2px solid rgba(93,64,55,.35);display:block;position:relative}
+.paws i.f{background:var(--peach);border-color:var(--bark)}
+.prog p{margin:0;font-size:12px;font-weight:700;opacity:.8}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fact{background:#fff;border:2px solid var(--bark);border-radius:14px;padding:12px 10px;text-align:center}
+.fact .n{font-family:var(--font-head);font-weight:700;font-size:30px;line-height:1;color:var(--bark)}
+.fact .l{font-weight:800;font-size:12px;margin-top:4px;line-height:1.2}
+.note{margin:8px 0 0;font-size:11px;font-weight:700;opacity:.65;text-align:center}
+.rail-x{display:flex;gap:12px;overflow-x:auto;padding:2px 16px 8px;scroll-snap-type:x mandatory;margin-inline:-16px}
+.ex{flex:0 0 232px;scroll-snap-align:start;background:#fff;border:2px solid var(--bark);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.ex .ph{height:122px;background:var(--pastel);display:grid;place-items:center;overflow:hidden}
+.ex .ph img{width:100%;height:100%;object-fit:cover}
+.ex .ph.two{display:flex;gap:6px;padding:8px;background:linear-gradient(160deg,#D8F1E6,#EAF6FF)}
+.ex .ph.two img{width:50%;height:100%;object-fit:contain;background:#fff;border-radius:10px;border:2px solid var(--bark)}
+.ex .b{padding:10px 12px 12px;display:flex;flex-direction:column;gap:4px}
+.ex h4{font-family:var(--font-head);font-size:17px;font-weight:600;margin:0;line-height:1.1}
+.ex p{margin:0;font-size:12px;font-weight:600;opacity:.8;line-height:1.3}
+.ex .pin{margin-top:6px;align-self:flex-start;display:flex;gap:6px;align-items:center;font-weight:800;font-size:12px;background:var(--mint);border:2px solid var(--bark);border-radius:99px;padding:6px 12px;min-height:36px}
+.ex .pin svg{width:16px;height:16px}
+.grown{margin:22px 16px 0;background:var(--teal-wash);border:2px solid var(--teal);border-radius:18px;padding:14px;display:flex;gap:12px;align-items:center}
+.grown svg{width:34px;height:34px;flex:none}
+.grown b{font-family:var(--font-head);font-size:16px;font-weight:600;display:block}
+.grown small{font-size:12px;font-weight:700;opacity:.85;line-height:1.3;display:block;margin-top:2px}
+
+/* notes */
+.notes{background:var(--card);border:2px solid var(--line);border-radius:20px;padding:20px 22px;display:flex;flex-direction:column;gap:14px}
+.notes h2{font-size:1.4rem}
+.notes ul{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:6px}
+.notes .tag{font-family:var(--font-head);font-weight:600;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.foot{font-size:.82rem;color:var(--muted)}
+@media (max-width:520px){.stage{gap:32px}.phone{padding:8px;border-radius:44px}.screen{border-radius:36px}}
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Wild Atlas · Run tier · design review</span>
+    <h1>Venue Screens Review</h1>
+    <p class="lede">The home screen with a My Places section, and the pack page for a venue (Riverbend Aquarium, fictional). Built to Anna's design system. Scroll through both and comment anywhere.</p>
+  </header>
+
+  <div class="stage">
+    <!-- ================= HOME ================= -->
+    <section class="col" id="home">
+      <h2>Home screen</h2>
+      <p class="sub">Wild Atlas, my packs, my places, then the shop.</p>
+      <div class="phone"><div class="screen">
+        <div class="status"><span>9:41</span><span class="isl"></span><span class="r"><i></i></span></div>
+
+        <div class="hero">
+          <div class="rail l">
+            <div class="rbtn" aria-label="Slideshow"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="3"/><path d="M10 10l5 2.5-5 2.5z"/><path d="M8 3l4 3 4-3"/></svg></div>
+            <div class="rbtn" aria-label="Games"><svg viewBox="0 0 24 24"><rect x="3" y="12" width="18" height="7" rx="3"/><path d="M12 12V6"/><circle cx="12" cy="5" r="2"/></svg></div>
+            <div class="rbtn" aria-label="Achievements"><svg viewBox="0 0 24 24"><path d="M7 4h10v5a5 5 0 01-10 0z"/><path d="M7 6H4v2a3 3 0 003 3M17 6h3v2a3 3 0 01-3 3M12 14v4M8 20h8"/></svg></div>
+          </div>
+          <div class="rail r">
+            <div class="rbtn" aria-label="Settings"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg></div>
+            <div class="rbtn" aria-label="Shop"><svg viewBox="0 0 24 24"><path d="M3 4h3l2 11h10l2-8H7"/><circle cx="9" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg></div>
+            <div class="rbtn" aria-label="About"><svg viewBox="0 0 24 24"><path d="M6 3h11a1 1 0 011 1v16H7a2 2 0 01-2-2V4a1 1 0 011-1z"/><path d="M12 10v5M12 7v.5"/></svg></div>
+          </div>
+          <div class="mascot"><img src="img/mascot.png" alt="Wild Atlas mascot standing on a globe"></div>
+          <div class="title">Wild Atlas</div>
+          <div class="greet">Good afternoon, Zuzu!</div>
+          <div class="lead">Start exploring to discover amazing animals!</div>
+        </div>
+
+        <div class="pad">
+          <div class="sec"><h3>My Packs</h3></div>
+          <div class="tiles">
+            <div class="tile t1"><img src="img/m-happy-hounds.png" alt=""><b>Happy Hounds</b><small>Dogs you might meet!</small></div>
+            <div class="tile t2"><img src="img/m-cool-cats.png" alt=""><b>Cool Cats</b><small>Cats with cool coats!</small></div>
+            <div class="tile t3"><img src="img/m-cozy-critters.png" alt=""><b>Cozy Critters</b><small>Small pets and gentle pals</small></div>
+            <div class="tile t4"><img src="img/m-ocean-wonders.png" alt=""><b>Ocean Creatures</b><small>Life in the big blue</small></div>
+          </div>
+        </div>
+
+        <hr class="rule">
+
+        <div class="pad" id="places">
+          <div class="sec">
+            <svg viewBox="0 0 28 28"><path d="M14 26s-8-7.5-8-14a8 8 0 0116 0c0 6.500-8 14-8 14z" fill="#FF9E7D" stroke="#5D4037" stroke-width="2.4" stroke-linejoin="round"/><circle cx="14" cy="12" r="3.2" fill="#fff" stroke="#5D4037" stroke-width="2"/></svg>
+            <div><h3>My Places</h3><div class="sub">Zoos and aquariums I've visited</div></div>
+          </div>
+          <div class="tiles">
+            <div class="tile place" id="riverbend-tile">
+              <span class="badge"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M12 2l3 7 7 .8-5.200 4.700 1.500 7.200L12 18l-6.300 3.700 1.500-7.200L2 9.800 9 9z"/></svg>NEW!</span>
+              <img src="img/emblem.png" alt="Riverbend Aquarium emblem">
+              <div><b>Riverbend Aquarium</b><small>Meet the animals you saw today</small>
+                <div class="pills"><span class="pill">Visited today</span><span class="pill">9 animals</span></div></div>
+            </div>
+            <div class="tile add">
+              <svg viewBox="0 0 38 38"><path d="M19 35s-12-11-12-20a12 12 0 0124 0c0 9-12 20-12 20z" fill="none" stroke="#5D4037" stroke-width="3" stroke-linejoin="round"/><path d="M19 12v10M14 17h10" stroke="#5D4037" stroke-width="3.200" stroke-linecap="round"/></svg>
+              <div><b style="font-size:16px">Add a place</b><small>Ask a grown-up to help</small></div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="rule">
+
+        <div class="pad">
+          <div class="sec" style="flex-direction:column;align-items:center;gap:2px;text-align:center;margin-top:22px">
+            <h3 style="font-size:22px">Explore More Animal Worlds</h3>
+            <div class="sub">Dinosaurs • Safari • Rainforest • Reptiles</div>
+          </div>
+          <div class="tiles">
+            <div class="tile t5"><span class="lock"><svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="3" fill="#FFD97D" stroke="#5D4037" stroke-width="2"/><path d="M8 10V8a4 4 0 018 0v2" fill="none" stroke="#5D4037" stroke-width="2"/></svg></span><img src="img/m-dino-discoveries.png" alt=""><b>Dino Roars</b><small>Dinosaurs from long ago</small></div>
+            <div class="tile t6"><span class="lock"><svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="3" fill="#FFD97D" stroke="#5D4037" stroke-width="2"/><path d="M8 10V8a4 4 0 018 0v2" fill="none" stroke="#5D4037" stroke-width="2"/></svg></span><img src="img/m-reptile-realm.png" alt=""><b>Reptile World</b><small>Reptiles with scales and tails</small></div>
+            <div class="tile t7"><span class="lock"><svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="3" fill="#FFD97D" stroke="#5D4037" stroke-width="2"/><path d="M8 10V8a4 4 0 018 0v2" fill="none" stroke="#5D4037" stroke-width="2"/></svg></span><img src="img/m-safari-stars.png" alt=""><b>Safari Stars</b><small>Wild animals of Africa</small></div>
+            <div class="tile t8"><span class="lock"><svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="3" fill="#FFD97D" stroke="#5D4037" stroke-width="2"/><path d="M8 10V8a4 4 0 018 0v2" fill="none" stroke="#5D4037" stroke-width="2"/></svg></span><img src="img/m-jungle-giants.png" alt=""><b>Rainforest Explorers</b><small>Life under the leaves</small></div>
+          </div>
+          <a class="cta">Unlock more worlds</a>
+        </div>
+      </div></div>
+    </section>
+
+    <!-- ================= PACK PAGE ================= -->
+    <section class="col" id="pack">
+      <h2>Riverbend Aquarium page</h2>
+      <p class="sub">The venue pack: animals, facts and top exhibits.</p>
+      <div class="phone"><div class="screen">
+        <div class="status"><span>9:41</span><span class="isl"></span><span class="r"><i></i></span></div>
+        <div class="bar">
+          <div class="back" aria-label="Back"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></div>
+          <div class="t">Riverbend Aquarium</div>
+          <div class="chest" aria-label="Treasures"><svg viewBox="0 0 32 32"><rect x="4" y="12" width="24" height="15" rx="3" fill="#FFD97D" stroke="#5D4037" stroke-width="2.200"/><path d="M4 16c0-7 24-7 24 0" fill="#FF9E7D" stroke="#5D4037" stroke-width="2.200"/><rect x="13" y="16" width="6" height="7" rx="1.500" fill="#fff" stroke="#5D4037" stroke-width="2"/></svg></div>
+        </div>
+
+        <div class="phero">
+          <img src="img/emblem.png" alt="Riverbend Aquarium emblem">
+          <div>
+            <h1>Riverbend Aquarium</h1>
+            <p>The animals you met today, and a few more to discover at home.</p>
+            <div class="pills"><span class="pill">27 animals</span><span class="pill">9 exhibits</span></div>
+          </div>
+        </div>
+
+        <div class="pad">
+          <div class="sec"><h3 style="font-size:24px">Meet the Animals</h3></div>
+          <div class="grid">
+            <div class="at seen"><div class="im"><img src="img/a-octopus.jpg" alt=""></div><span>Octopus</span></div>
+            <div class="at seen"><div class="im"><img src="img/a-sea_otter.jpg" alt=""></div><span>Sea Otter</span></div>
+            <div class="at"><div class="im"><img src="img/a-jellyfish.jpg" alt=""></div><span>Jellyfish</span></div>
+            <div class="at seen"><div class="im"><img src="img/a-sea_lion.jpg" alt=""></div><span>Sea Lion</span></div>
+            <div class="at"><div class="im"><img src="img/a-starfish.jpg" alt=""></div><span>Starfish</span></div>
+            <div class="at"><div class="im"><img src="img/a-sloth.jpg" alt=""></div><span>Sloth</span></div>
+            <div class="at"><div class="im"><img src="img/a-poison_dart_frog.jpg" alt=""></div><span>Poison Dart Frog</span></div>
+            <div class="at seen"><div class="im"><img src="img/a-axolotl.jpg" alt=""></div><span>Axolotl</span></div>
+            <div class="at"><div class="im"><img src="img/a-green_anaconda.jpg" alt=""></div><span>Green Anaconda</span></div>
+          </div>
+          <div class="pager" role="group" aria-label="Pages of animals"><div class="pg on">1</div><div class="pg">2</div><div class="pg">3</div></div>
+        </div>
+
+        <div class="prog">
+          <div class="paws"><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <p>Visit every animal in this pack to unlock the slideshow.</p>
+        </div>
+
+        <div class="pad">
+          <div class="sec"><h3 style="font-size:24px">About Riverbend</h3></div>
+          <div class="facts">
+            <div class="fact"><div class="n">27</div><div class="l">kinds of animals live here</div></div>
+            <div class="fact"><div class="n">9</div><div class="l">exhibits to explore</div></div>
+            <div class="fact"><div class="n">1</div><div class="l">giant ocean tank</div></div>
+            <div class="fact"><div class="n">365</div><div class="l">days a year, open every day</div></div>
+          </div>
+          <p class="note">Sample facts for a fictional venue.</p>
+
+          <div class="sec"><h3 style="font-size:24px">Top Exhibits</h3></div>
+          <div class="rail-x">
+            <div class="ex"><div class="ph two"><img src="img/a-sea_otter.jpg" alt=""><img src="img/a-sea_lion.jpg" alt=""></div><div class="b"><h4>Otter &amp; Sea Lion Bay</h4><p>Watch the otters float and the sea lions zoom past the glass.</p><span class="pin"><svg viewBox="0 0 16 16"><path d="M8 15s-5-4.500-5-8.500a5 5 0 0110 0C13 10.500 8 15 8 15z" fill="#fff" stroke="#5D4037" stroke-width="1.600"/></svg>Find it on the map</span></div></div>
+            <div class="ex"><div class="ph"><img src="img/p-jellies.jpg" alt="A glowing round tank of moon jellyfish"></div><div class="b"><h4>Jellyfish Hall</h4><p>A glowing tank full of moon jellies, drifting like little moons.</p><span class="pin"><svg viewBox="0 0 16 16"><path d="M8 15s-5-4.500-5-8.500a5 5 0 0110 0C13 10.500 8 15 8 15z" fill="#fff" stroke="#5D4037" stroke-width="1.600"/></svg>Find it on the map</span></div></div>
+            <div class="ex"><div class="ph two"><img src="img/a-sloth.jpg" alt=""><img src="img/a-poison_dart_frog.jpg" alt=""></div><div class="b"><h4>Rainforest Gallery</h4><p>Sloths, bright frogs and leafy green hiding places.</p><span class="pin"><svg viewBox="0 0 16 16"><path d="M8 15s-5-4.500-5-8.500a5 5 0 0110 0C13 10.500 8 15 8 15z" fill="#fff" stroke="#5D4037" stroke-width="1.600"/></svg>Find it on the map</span></div></div>
+            <div class="ex"><div class="ph"><img src="img/p-touchpool.jpg" alt="Children's hands touching a starfish in a touch pool"></div><div class="b"><h4>Touch Pool</h4><p>Gentle hands only! Say hello to a starfish.</p><span class="pin"><svg viewBox="0 0 16 16"><path d="M8 15s-5-4.500-5-8.500a5 5 0 0110 0C13 10.500 8 15 8 15z" fill="#fff" stroke="#5D4037" stroke-width="1.600"/></svg>Find it on the map</span></div></div>
+            <div class="ex"><div class="ph"><img src="img/p-tunnel.jpg" alt="A curved glass tunnel with fish and rays overhead"></div><div class="b"><h4>Ocean Tunnel</h4><p>Walk under the water and look up at the fish above you.</p><span class="pin"><svg viewBox="0 0 16 16"><path d="M8 15s-5-4.500-5-8.500a5 5 0 0110 0C13 10.500 8 15 8 15z" fill="#fff" stroke="#5D4037" stroke-width="1.600"/></svg>Find it on the map</span></div></div>
+          </div>
+        </div>
+
+        <div class="grown">
+          <svg viewBox="0 0 34 34"><rect x="6" y="15" width="22" height="15" rx="4" fill="#fff" stroke="#2FA7A0" stroke-width="2.400"/><path d="M11 15v-3a6 6 0 0112 0v3" fill="none" stroke="#2FA7A0" stroke-width="2.400"/><circle cx="17" cy="22.500" r="2.200" fill="#2FA7A0"/></svg>
+          <div><b>For grown-ups</b><small>Plan your visit: hours, address and tickets. Opens after a grown-up check.</small></div>
+        </div>
+      </div></div>
+    </section>
+  </div>
+
+  <section class="notes" id="notes">
+    <span class="tag">Anna's review · wild-atlas-design checklist</span>
+    <h2>Design notes</h2>
+    <ul>
+      <li><b>Home order</b> follows your brief: hero and rails, My Packs, a dashed rule, My Places, a second rule, then Explore More Animal Worlds and the one peachPop CTA (DESIGN_SYSTEM §7 Home; peachPop on one action only, §1).</li>
+      <li><b>My Places</b> reuses the pack tile idiom (pastel gradient, soft thick bottom edge) with the venue emblem as the art, a NEW! capsule (GameDenCardBadge look) and meta pills. The pin glyph and the dashed "Add a place" tile carry meaning without reading (NN-4, TC-1).</li>
+      <li><b>Pack page</b> keeps the canon: back button, tinted hero header, Meet the Animals in 3x3 AnimalTiles (white, radius 10, 2pt warmBark stroke), round page buttons, paw progress card. With 27 animals there are three page buttons; each is 48pt (AX-1).</li>
+      <li><b>New sections</b> (About, Top Exhibits) use the same card language: 2pt warmBark outlines, Fredoka headings, Nunito body. Facts are kid-editorial: big number, short label (TC-6). Exhibit cards link to the map with a pin pill, no reading needed beyond the name.</li>
+      <li><b>Compliance:</b> hours, address and tickets are link-out content, so they sit behind the parental gate in a utility-teal "For grown-ups" card (AR-1; utility pair is the F11 wash, warmBark ink). No mascot there (TC-4b). No third-party links or data on this page (AR-2).</li>
+      <li><b>Known deviation carried over:</b> the greeting is peachPop text on cream, the same low-contrast pair as the shipped Home (register F1). Not extended anywhere new; the CTA uses warmBark text on peachPop (not white) to avoid adding another F1 pair.</li>
+      <li><b>Needs Josh:</b> (1) Is "My Places" the right label, or "My Visits"? (2) Should the venue pack page show an exhibit map preview card above Top Exhibits? (3) The exhibit and fact copy is placeholder; it must route through the i18n skill before any build.</li>
+    </ul>
+    <p class="foot">Illustrative design for a fictional venue. Animal art is from the Wild Atlas app. Sample facts and exhibit copy are placeholders.</p>
+  </section>
+</div>
