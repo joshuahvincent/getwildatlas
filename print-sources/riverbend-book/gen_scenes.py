@@ -16,6 +16,8 @@ JOBS = {  # name: (aspect, folder, prompt)
   "tunnel": ("4:3", "aquarium", "Inside an aquarium: a curved acrylic walk-through tunnel with sharks and a manta ray gliding overhead in deep blue water, soft rippling light on the floor, small silhouettes of visitors looking up. "),
   "jellies": ("4:3", "aquarium", "An aquarium gallery with a large round tank of glowing translucent moon jellyfish drifting in deep blue water, softly lit, a couple of visitor silhouettes in the foreground. "),
   "touchpool": ("4:3", "aquarium", "An aquarium touch pool: children's hands (no faces) gently touching a starfish in shallow clear water in a rock-lined pool, bright natural light, a few orange and purple sea stars visible. "),
+  "otterbay": ("4:3", "aquarium", "An aquarium marine-mammal gallery: a big glass viewing window onto a rocky pool where a sea otter floats on its back at the surface and a sea lion glides past underwater, bright natural light, a couple of visitor silhouettes in the foreground. "),
+  "rainforest": ("4:3", "aquarium", "An aquarium indoor rainforest gallery: lush green plants and a mossy log in a glass-fronted habitat with a bright blue poison dart frog on a leaf and a sloth hanging from a branch, warm humid light, a couple of visitor silhouettes in the foreground. "),
   "hero-bg": ("4:3", "hero", "A wide scene of the front plaza of an imaginary modern public aquarium: a curved glass-and-timber facade with a wave-shaped roof and wide entrance doors on the left, a smooth paved path curving from the foreground toward the right of the frame, planters and low greenery, clear blue sky with a few soft clouds, golden-hour light, open uncluttered space on the right side and in the lower right for overlaying a phone. "),
 }
 def call(prompt, ar):

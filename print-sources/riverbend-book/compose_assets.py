@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Compose the web assets for /partners from generated + real imagery:
   assets/partners/hero-riverbend.jpg   realistic aquarium + the real marketing screenshot in an iPhone
-  assets/partners/run-home-phone.png   Gemini-edited real home screen (My Zoo tile) in an iPhone
-  assets/partners/run-pack-phone.png   Gemini-edited real pack page in an iPhone
+  assets/partners/run-home-phone.png   Anna's concept Home screen (My Places) in an iPhone
+  assets/partners/run-pack-phone.png   Anna's concept pack page, top, in an iPhone
+  assets/partners/run-pack2-phone.png  Anna's concept pack page, facts and exhibits, in an iPhone
   assets/partners/book-*.jpg           pages of the example book PDF"""
 import math, sys
 from pathlib import Path
@@ -41,7 +42,7 @@ def dotted(img, pts, color=(255, 217, 125), step=30, rad=9):
 
 def hero():
     base = Image.open(HERE / "hero" / "hero-bg.jpg").convert("RGB")
-    shot = Image.open(SITE / "assets" / "press" / "ss-home.jpg").convert("RGB")      # real marketing screenshot
+    shot = Image.open(HERE / "screens-anna" / "run-home-places.png").convert("RGB")      # Anna's My Places home screen
     ph = make_phone(shot, 380, tilt=-4)
     base = base.convert("RGBA")
     dotted(base, [(380, 640), (470, 830), (620, 860), (760, 770)])
@@ -50,12 +51,12 @@ def hero():
     tag = tag.crop(ImageOps.invert(tag.convert("L")).point(lambda v: 255 if v > 12 else 0).getbbox())
     tw = 330; tag = tag.resize((tw, int(tag.height * tw / tag.width)), Image.LANCZOS)
     pill = Image.new("RGBA", (tw + 50, tag.height + 40), (0, 0, 0, 0)); ImageDraw.Draw(pill).rounded_rectangle([0, 0, pill.width - 1, pill.height - 1], 26, fill=(255, 255, 255, 235))
-    pill.paste(tag, (25, 20)); base.alpha_composite(pill, (base.width - pill.width - 36, 34))
+    pill.paste(tag, (25, 20)); base.alpha_composite(pill, (36, base.height - pill.height - 36))
     base.convert("RGB").save(OUT / "hero-riverbend.jpg", quality=90); print("hero ok")
 
 def phones():
-    for src, name in (("screens/run-home-t1.jpg", "run-home-phone.png"), ("screens/run-pack-t3.jpg", "run-pack-phone.png")):
-        make_phone(Image.open(HERE / src), 560).save(OUT / name, optimize=True); print(name, "ok")
+    for src, name in (("run-home-places.png", "run-home-phone.png"), ("run-pack-top.png", "run-pack-phone.png"), ("run-pack-lower.png", "run-pack2-phone.png")):
+        make_phone(Image.open(HERE / "screens-anna" / src).convert("RGB"), 560).save(OUT / name, optimize=True); print(name, "ok")
 
 def book_pages(pdf):
     import pymupdf
