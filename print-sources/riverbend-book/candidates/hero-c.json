@@ -1,0 +1,13 @@
+{
+  "file": "hero-c.jpg",
+  "model": "gemini-3.1-flash-image-preview",
+  "aspectRatio": "4:3",
+  "prompt": "Using the attached reference images as exact style anchors (and the explorer puppy character design where relevant), create a landscape illustration. Symmetric wide scene: on the left a cream-and-peach arched zoo/aquarium gate with a mint wavy roof (no sign, no lettering); on the right a big friendly phone-and-tablet pair standing like a little house, the screen showing a smiling cartoon octopus; between them a gently S-curved dotted gold path with the Young Explorer puppy from the reference (cream safari hat with teal band, gold compass pin, teal scarf) skipping along it with a small explorer satchel. A few tiny cartoon bubbles and stars float above. Flat solid pale sky-blue background color #DDEEFF edge to edge. Wild Atlas mascot illustration style, matching the reference images exactly: clean thick dark warm-brown outlines of consistent weight, flat illustration with simple flat color fills and only subtle soft tonal shading, no gloss, no specular highlights, no 3D rendering, no gradients. Rounded chibi plush proportions, large round dark eyes with a single white highlight dot, soft warm pastel palette (cream, peach, mint, soft teal, pale gold). Premium storybook family-animation charm, child-friendly. NO text, NO letters, NO numbers, NO signs with writing, NO logos, NO watermark, NO real brands, NO dolphins, NO whales, NO belugas, NO realism, NO 3D render, NO photo.",
+  "references": [
+    "/Users/joshuahv/Documents/Codex Projects/PetPeeper/WildAtlas_Icons/sheet-character-young-explorer.png",
+    "/Users/joshuahv/Documents/Codex Projects/PetPeeper/WildAtlas_Icons/wild_atlas_mascot_dog.png"
+  ],
+  "seed": "not set (API default)",
+  "generated_at": "2026-10-06T01:55:16.428730Z",
+  "mime": "image/jpeg"
+}

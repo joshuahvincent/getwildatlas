@@ -1,0 +1,7 @@
+{
+  "file": "hero-bg.jpg",
+  "model": "gemini-3.1-flash-image-preview",
+  "aspectRatio": "4:3",
+  "prompt": "Photorealistic, natural lighting, high detail, professional editorial photography, shallow depth of field where it suits, warm and welcoming, family-friendly. A wide scene of the front plaza of an imaginary modern public aquarium: a curved glass-and-timber facade with a wave-shaped roof and wide entrance doors on the left, a smooth paved path curving from the foreground toward the right of the frame, planters and low greenery, clear blue sky with a few soft clouds, golden-hour light, open uncluttered space on the right side and in the lower right for overlaying a phone. No text, no letters, no numbers, no signage with writing, no logos, no watermarks, no real brands, no dolphins, no whales, no belugas, no identifiable faces. ",
+  "generated_at": "2026-10-06T21:38:04.039572Z"
+}

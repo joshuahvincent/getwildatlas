@@ -1,0 +1,10 @@
+{
+  "file": "run-pack-t2.jpg",
+  "model": "gemini-3.1-flash-image-preview",
+  "prompt": "The first image is a real screenshot of a pack page in the Wild Atlas kids' animal app (the Dino Roars pack). The second image is the round Riverbend Aquarium emblem. Produce the equivalent page for a venue pack: the top bar title reads \"Riverbend Aquarium\"; the large header card shows the round emblem from the second image where the dinosaur mascot was, with the title \"Riverbend Aquarium\" and the description \"The animals you met today, and a few more to discover at home.\"; below it the heading \"Meet the Animals\" and a grid of rounded white animal cards in the same style as the dinosaur cards, each with a realistic cut-out animal photo and its name: Octopus, Sea Otter, Jellyfish, Sea Lion, Starfish, Sloth, Poison Dart Frog, Axolotl (two rows of three, then a last row of two). Keep the page-dot buttons and the paw-print progress panel at the bottom as in the reference. Keep the exact same visual style, fonts, colors, card shapes, shadows, status bar and proportions as the reference app screenshot; it must look like a genuine screenshot of the same iPhone app. Only the app screen itself, edge to edge, no phone frame, no extra marketing text. ",
+  "refs": [
+    "refs/pack-ref.png",
+    "riverbend-emblem.png"
+  ],
+  "generated_at": "2026-10-06T21:39:41.012370Z"
+}

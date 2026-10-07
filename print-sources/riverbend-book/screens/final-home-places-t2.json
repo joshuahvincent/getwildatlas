@@ -1,0 +1,11 @@
+{
+  "file": "final-home-places-t2.jpg",
+  "model": "gemini-3.1-flash-image-preview",
+  "prompt": "Image 1 is a REAL screenshot of the Wild Atlas kids' animal iPhone app: it defines the exact visual language (fonts, thick dark-brown outlines, pastel card gradients, soft shadows, cream dotted background, rounded shapes). Image 2 is the design layout of a NEW screen. Recreate Image 2 faithfully: the same sections, order, text (keep every word exactly as written), icons and artwork, but drawn in precisely the visual language of Image 1 so it looks like a genuine screenshot of the same app. Reuse the animal pictures and photos from Image 2 exactly as they are. Output only the app screen, edge to edge, a full phone screen with no phone frame, no extra captions. No dolphins or whales. This screen is the home screen scrolled down: it shows the lower row of pack tiles (Cozy Critters, Ocean Creatures), a dashed divider, the section My Places with the Riverbend Aquarium tile (round Riverbend emblem, a NEW! badge, the pills Visited today and 9 animals) and a dashed Add a place tile, another dashed divider, and the start of Explore More Animal Worlds with its tiles. Show the iOS status bar (9:41, Dynamic Island) at the top. Keep My Places and the Riverbend tile clearly in the middle of the screen. ",
+  "refs": [
+    "refs/home-ref.png",
+    "refs/layout-home-places.png",
+    "riverbend-emblem.png"
+  ],
+  "generated_at": "2026-10-07T01:43:42.971344Z"
+}

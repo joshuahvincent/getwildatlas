@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Partner with Wild Atlas — Zoos, Aquariums &amp; Museums</title>
+  <meta name="description" content="Give your families a safe, ad-free way to keep exploring after the visit. Wild Atlas partners with zoos, aquariums and museums: a free member perk, a co-branded puzzle book, or your own animals in the app.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.wildatlasapp.com/partners">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.wildatlasapp.com/partners">
+  <meta property="og:title" content="Partner with Wild Atlas — Zoos, Aquariums &amp; Museums">
+  <meta property="og:description" content="Extend the visit home. A free member perk, a co-branded puzzle book, or your own animals in the app.">
+  <meta property="og:image" content="https://www.wildatlasapp.com/assets/partners/og-partners.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Wild Atlas">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Partner with Wild Atlas — Zoos, Aquariums &amp; Museums">
+  <meta name="twitter:description" content="Extend the visit home. A free member perk, a co-branded puzzle book, or your own animals in the app.">
+  <meta name="twitter:image" content="https://www.wildatlasapp.com/assets/partners/og-partners.jpg">
+
+  <meta name="theme-color" content="#FFF5E1">
+  <link rel="icon" type="image/png" href="/assets/app-icon.png">
+  <link rel="apple-touch-icon" href="/assets/app-icon.png">
+
+  <link rel="preload" href="/fonts/Fredoka-VariableFont_wdth,wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/fonts/Nunito-Regular.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link rel="stylesheet" href="/css/styles.css?v=5">
+  <style>
+    /* Partner page — uses the site's tokens only (see css/styles.css :root). */
+    .pp-hero { padding: calc(72px + var(--space-2xl)) 0 var(--space-2xl); }
+    .pp-hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: var(--space-2xl); align-items: center; }
+    .pp-eyebrow { font-family: var(--font-heading); font-size: .85rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--peach-dark); margin-bottom: var(--space-xs); }
+    .pp-hero h1 { font-size: clamp(2.4rem, 6vw, 3.75rem); font-weight: 700; line-height: 1.08; }
+    .pp-lede { font-size: 1.2rem; opacity: .85; margin-top: var(--space-md); max-width: 36ch; }
+    .pp-cta-row { display: flex; flex-wrap: wrap; gap: var(--space-sm); margin-top: var(--space-lg); }
+    .btn-ghost { background: transparent; color: var(--warm-bark); border: var(--stroke) solid var(--warm-bark); padding: 11px 29px; }
+    .pp-trust { display: flex; flex-wrap: wrap; gap: var(--space-xs) var(--space-md); margin-top: var(--space-lg); font-size: .92rem; font-weight: 700; }
+    .pp-trust span { display: inline-flex; align-items: center; gap: 6px; }
+    .pp-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--sunny-sounds); border: 2px solid var(--warm-bark); }
+
+    .pp-section { padding: var(--space-2xl) 0; }
+    .pp-head { max-width: 62ch; }
+    .pp-head h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 700; }
+    .pp-head p { margin-top: var(--space-sm); font-size: 1.08rem; opacity: .85; }
+
+    .pp-why { background: var(--minty-fresh); }
+    .pp-badges { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-md); margin-top: var(--space-xl); }
+    .pp-badge { background: #fff; border: var(--stroke) solid rgba(93, 64, 55, .1); border-radius: var(--radius-sm); padding: var(--space-md); }
+    .pp-badge b { display: block; font-family: var(--font-heading); font-size: 1.15rem; }
+    .pp-badge small { font-size: .9rem; opacity: .8; }
+    .pp-badge { display: flex; gap: var(--space-md); align-items: center; }
+    .pp-badge img { width: 64px; height: 64px; object-fit: contain; flex: none; }
+    .pp-badge { min-width: 0; }
+    .pp-badge > div { min-width: 0; }
+    .pp-badge small { display: block; margin-top: 2px; line-height: 1.3; }
+    .pp-rating-strip { margin-top: var(--space-md); background: #fff; border: var(--stroke) solid rgba(93, 64, 55, .1); border-radius: var(--radius-sm); padding: var(--space-sm) var(--space-lg); display: flex; align-items: center; gap: var(--space-lg); }
+    .pp-rating-head { flex: none; }
+    .pp-stars-row { display: flex; gap: 2px; }
+    .pp-stars-row img { width: 24px; height: 24px; object-fit: contain; }
+    .pp-rating-text { display: flex; flex-direction: column; line-height: 1.2; margin-top: 2px; }
+    .pp-rating-text b { font-family: var(--font-heading); font-size: 1.05rem; }
+    .pp-rating-text span { font-size: .8rem; opacity: .75; }
+    .pp-rating-quote { margin: 0; font-size: .92rem; line-height: 1.4; min-width: 0; border-left: 3px solid var(--sunny-sounds); padding-left: var(--space-md); }
+    .pp-rating-quote cite { display: block; margin-top: 2px; font-size: .8rem; font-weight: 700; font-style: normal; opacity: .85; }
+    .pp-rating-link { text-decoration: underline; }
+    @media (max-width: 760px) { .pp-rating-strip { flex-direction: column; align-items: flex-start; gap: var(--space-sm); } .pp-rating-quote { border-left: 0; padding-left: 0; } }
+    @media (max-width: 560px) {  .pp-badge { gap: var(--space-sm); } .pp-badge img { width: 52px; height: 52px; } }
+
+    .pp-tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-lg); margin-top: var(--space-xl); }
+    .pp-tier { background: #fff; border: var(--stroke) solid rgba(93, 64, 55, .1); border-radius: var(--radius-md); padding: var(--space-lg); display: flex; flex-direction: column; gap: var(--space-md); }
+    .pp-step { display: flex; align-items: center; gap: var(--space-sm); }
+    .pp-num { width: 36px; height: 36px; border-radius: 50%; background: var(--mint-light); font-family: var(--font-heading); font-weight: 700; display: grid; place-items: center; flex: 0 0 auto; }
+    .pp-tier.run .pp-num { background: var(--yellow-light); }
+    .pp-kick { font-family: var(--font-heading); font-weight: 600; font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; color: var(--peach-dark); }
+    .pp-tier h3 { font-size: 1.5rem; font-weight: 700; }
+    .pp-tier dl { display: grid; grid-template-columns: auto 1fr; gap: var(--space-xs) var(--space-md); font-size: .96rem; }
+    .pp-tier dt { font-weight: 700; opacity: .65; }
+    .pp-tier dd { margin: 0; }
+    .pp-when { margin-top: auto; font-family: var(--font-heading); font-weight: 600; background: var(--mint-light); border-radius: var(--radius-sm); padding: 8px 12px; text-align: center; font-size: .92rem; }
+    .pp-tier.run .pp-when { background: var(--yellow-light); }
+    .pp-example { display: flex; align-items: center; gap: var(--space-sm); margin-top: auto; background: var(--creamy-coat); border: var(--stroke) solid rgba(93, 64, 55, .12); border-radius: var(--radius-sm); padding: 8px 12px 8px 8px; font-family: var(--font-heading); font-weight: 600; font-size: .95rem; line-height: 1.2; transition: transform .2s, box-shadow .2s; }
+    .pp-example:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(93, 64, 55, .12); }
+    .pp-example img { height: 76px; width: 56px; object-fit: cover; object-position: top; border-radius: 6px; flex: none; }
+    .pp-example img.thumb-phone { object-fit: contain; object-position: center; }
+    .pp-example small { display: block; font-family: var(--font-body); font-weight: 400; font-size: .78rem; opacity: .75; margin-top: 2px; }
+    #book, #run, #how, #faq { scroll-margin-top: 130px; }
+    .pp-example + .pp-when { margin-top: 0; }
+    .pp-mechanic { margin-top: var(--space-lg); background: #fff; border: var(--stroke) dashed rgba(93, 64, 55, .15); border-radius: var(--radius-sm); padding: var(--space-md) var(--space-lg); font-size: .98rem; }
+    .pp-mechanic code { background: var(--yellow-light); padding: 2px 8px; border-radius: 6px; font-weight: 700; font-family: var(--font-body); }
+
+    .pp-book { background: #fff; border-top: var(--stroke) solid rgba(93, 64, 55, .08); border-bottom: var(--stroke) solid rgba(93, 64, 55, .08); }
+    .pp-book-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-xl); align-items: center; margin-top: var(--space-xl); }
+    .pp-book ul { margin-top: var(--space-md); padding-left: 1.2em; list-style: disc; }
+    .pp-book li { margin-bottom: var(--space-xs); }
+    .pp-book-links { display: flex; flex-wrap: wrap; gap: var(--space-sm); margin-top: var(--space-lg); }
+    .pp-note { display: inline-block; background: var(--yellow-light); font-size: .8rem; font-weight: 700; padding: 3px 9px; border-radius: 6px; }
+
+    .pp-reviews { background: var(--sky-wash); border-top: var(--stroke) solid rgba(93, 64, 55, .08); border-bottom: var(--stroke) solid rgba(93, 64, 55, .08); margin-top: var(--space-2xl); }
+    .pp-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-md); margin-top: var(--space-xl); }
+    .pp-quote { background: #fff; border: var(--stroke) solid rgba(93, 64, 55, .1); border-radius: var(--radius-md); padding: var(--space-lg); margin: 0; }
+    .pp-stars { color: var(--peach-pop); font-size: 1.1rem; letter-spacing: 2px; }
+    .pp-quote .t { font-family: var(--font-heading); font-weight: 600; margin-top: var(--space-xs); }
+    .pp-quote p { margin-top: var(--space-xs); font-size: .98rem; }
+    .pp-quote cite { display: block; margin-top: var(--space-sm); font-size: .85rem; font-weight: 700; font-style: normal; opacity: .7; }
+    .pp-rating { margin-top: var(--space-md); font-weight: 700; }
+    .pp-rating small { font-weight: 400; opacity: .7; }
+
+    .pp-faq details { background: #fff; border: var(--stroke) solid rgba(93, 64, 55, .1); border-radius: var(--radius-sm); padding: 4px var(--space-lg); margin-top: var(--space-sm); }
+    .pp-faq summary { cursor: pointer; font-family: var(--font-heading); font-weight: 600; font-size: 1.15rem; padding: 14px 0; list-style: none; }
+    .pp-faq summary::-webkit-details-marker { display: none; }
+    .pp-faq summary::after { content: "+"; float: right; color: var(--peach-dark); font-weight: 700; }
+    .pp-faq details[open] summary::after { content: "\2013"; }
+    .pp-faq details p { padding-bottom: var(--space-md); opacity: .85; }
+
+    .pp-closing { background: var(--yellow-light); border-radius: var(--radius-lg); padding: var(--space-2xl) var(--space-lg); text-align: center; }
+    .pp-closing h2 { font-size: clamp(1.9rem, 4vw, 2.6rem); font-weight: 700; }
+    .pp-closing p { margin: var(--space-sm) auto 0; max-width: 48ch; }
+    .pp-closing .pp-cta-row { justify-content: center; margin-top: var(--space-lg); }
+    .pp-proof { margin-top: var(--space-md); font-weight: 700; font-size: .95rem; }
+    .pp-email { margin-top: var(--space-md); font-weight: 700; }
+    .pp-email a { text-decoration: underline; }
+
+    .pp-book-grid > * { min-width: 0; }
+    /* Book example strip */
+    .pp-strip { display: flex; gap: var(--space-md); overflow-x: auto; scroll-snap-type: x mandatory; padding: var(--space-xs) 2px var(--space-sm); -webkit-overflow-scrolling: touch; }
+    .pp-strip figure { flex: 0 0 min(62%, 250px); scroll-snap-align: start; margin: 0; }
+    .pp-strip img { width: 100%; aspect-ratio: 8.5 / 11; object-fit: cover; border: var(--stroke) solid rgba(93, 64, 55, .12); border-radius: var(--radius-sm); background: #fff; }
+    .pp-strip figcaption { font-size: .8rem; font-weight: 700; text-align: center; margin-top: 6px; }
+    .pp-strip:focus-visible { outline: 3px solid var(--peach-pop); outline-offset: 2px; }
+
+    /* Run example: phone mockups drawn in the app's look */
+    .pp-phones { display: flex; flex-wrap: wrap; gap: var(--space-lg); justify-content: center; margin-top: var(--space-xl); }
+    .pp-hero-art { margin: 0; }
+    .pp-hero-art img { display: block; width: 100%; height: auto; border-radius: var(--radius-md); box-shadow: 0 16px 40px rgba(93, 64, 55, .18); }
+    .pp-hero-art figcaption { margin-top: var(--space-xs); font-size: .78rem; opacity: .75; text-align: center; }
+    .pp-phone-wrap { margin: 0; text-align: center; width: min(100%, 250px); }
+    .pp-phone-wrap img { display: block; width: 100%; height: auto; }
+    .pp-video video { display: block; width: 100%; height: auto; border: 7px solid #1c1c1e; border-radius: 38px; background: #1c1c1e; box-shadow: 0 16px 40px rgba(93, 64, 55, .22); box-sizing: border-box; }
+    .pp-phone-wrap figcaption { margin-top: var(--space-xs); font-weight: 700; font-size: .92rem; }
+    .pp-strip-wrap { min-width: 0; }
+    .pp-run-note { text-align: center; margin-top: var(--space-xl); font-size: .85rem; opacity: .85; }
+
+    /* The shared footer row doesn't wrap on phones; wrap it here so nothing scrolls sideways. */
+    body[data-page="partners"] .footer-links { flex-wrap: wrap; justify-content: center; gap: var(--space-xs) var(--space-lg); }
+
+    @media (max-width: 860px) {
+      .pp-hero-grid, .pp-book-grid { grid-template-columns: 1fr; }
+      .pp-tiers, .pp-cards { grid-template-columns: 1fr; }
+      .pp-badges { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) { .pp-badges { grid-template-columns: 1fr; } }
+    @media (max-width: 480px) {
+      .pp-hero { padding-top: calc(72px + var(--space-xl)); }
+      .pp-cta-row .btn { width: 100%; text-align: center; }
+      .pp-closing { padding: var(--space-xl) var(--space-md); }
+    }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZQB7WVQJ1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3ZQB7WVQJ1');
+  </script>
+</head>
+<body data-page="partners">
+  <!-- PROMO BAR -->
+  <div class="promo-bar"><a href="/#newsletter"><img class="promo-bar-icon" src="/assets/newsletter-gift.png" alt="">Free Farm Friends pack for newsletter subscribers &rarr;</a></div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-brand">
+        <img src="/assets/mascot-logo.png" alt="Wild Atlas" class="nav-icon">
+        <span class="nav-title">Wild Atlas</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <!-- SCHEDULING LINK: replace this mailto with the real booking URL once Josh confirms it. -->
+        <li><a href="mailto:partners@wildatlasapp.com?subject=15-min%20partner%20call" class="nav-cta">Book a 15-min call</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="pp-hero">
+      <div class="container pp-hero-grid">
+        <div>
+          <p class="pp-eyebrow">For zoos, aquariums &amp; museums</p>
+          <h1>Extend the visit home.</h1>
+          <p class="pp-lede">A child who just met an octopus wants more the second they&rsquo;re in the car. Give your families a safe, ad-free way to keep exploring &mdash; with your name on it.</p>
+          <div class="pp-cta-row">
+            <a class="btn btn-primary" href="mailto:partners@wildatlasapp.com?subject=15-min%20partner%20call">Book a 15-min call</a>
+            <a class="btn btn-ghost" href="#book">See the co-branded book</a>
+          </div>
+          <div class="pp-trust">
+            <span><i class="pp-dot"></i>No ads</span>
+            <span><i class="pp-dot"></i>Offline after download</span>
+            <span><i class="pp-dot"></i>Designed to follow COPPA</span>
+          </div>
+        </div>
+        <figure class="pp-hero-art">
+          <img src="/assets/partners/hero-riverbend.jpg" width="1200" height="896" alt="A family walking up to the glass-and-timber entrance of Riverbend Aquarium, with the Wild Atlas app on a phone in the foreground">
+          <figcaption>Illustrative example. Riverbend Aquarium is a fictional venue; the scene is AI-generated.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="pp-section pp-why">
+      <div class="container">
+        <div class="pp-head">
+          <p class="pp-eyebrow">Why families trust it</p>
+          <h2>Built for kids. Easy for grown-ups to say yes to.</h2>
+          <p>Wild Atlas is a narrated, documentary-style animal encyclopedia for ages 3&ndash;9, founded by Josh Vincent, who grew up in a conservation documentary filmmaking family. We&rsquo;re a take-home gift for your families, not a lead-generation tool: something you&rsquo;re glad to put your name behind.</p>
+        </div>
+        <div class="pp-badges">
+          <div class="pp-badge"><img src="/assets/partners/trust-animals.png" alt="" width="64" height="64" loading="lazy"><div><b>200+ animals</b><small>across 13 packs &mdash; 3 always free</small></div></div>
+          <div class="pp-badge"><img src="/assets/partners/trust-audio.png" alt="" width="64" height="52" loading="lazy"><div><b>Read aloud</b><small>warm narration in 5 languages for pre-readers</small></div></div>
+          <div class="pp-badge"><img src="/assets/partners/trust-habitat.png" alt="" width="64" height="64" loading="lazy"><div><b>10% pledged</b><small>of proceeds to conservation</small></div></div>
+          <div class="pp-badge"><img src="/assets/partners/trust-safety.png" alt="" width="64" height="64" loading="lazy"><div><b>Clear and simple</b><small>no ads, no algorithm, works offline after download</small></div></div>
+        </div>
+        <!-- Rating verified against the live App Store lookup 2026-10-06 (5.0, 17 ratings); the quote is verbatim from the App Store (also in the reviews section below). Re-check before publish. -->
+        <div class="pp-rating-strip">
+          <div class="pp-rating-head">
+            <div class="pp-stars-row" role="img" aria-label="Rated 5 out of 5 stars on the App Store">
+              <img src="/assets/partners/star.png" alt="" width="24" height="24" loading="lazy"><img src="/assets/partners/star.png" alt="" width="24" height="24" loading="lazy"><img src="/assets/partners/star.png" alt="" width="24" height="24" loading="lazy"><img src="/assets/partners/star.png" alt="" width="24" height="24" loading="lazy"><img src="/assets/partners/star.png" alt="" width="24" height="24" loading="lazy">
+            </div>
+            <div class="pp-rating-text"><b>5.0 on the App Store</b><span>17 ratings, as of October 2026</span></div>
+          </div>
+          <blockquote class="pp-rating-quote">&ldquo;This is actually a good game that teaches kids facts about animals without a bunch of addictive tricks many games use to compensate for being otherwise boring.&rdquo;<cite>&mdash; Happy Campering &middot; App Store &middot; <a class="pp-rating-link" href="#reviews">More reviews &darr;</a></cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CRAWL / WALK / RUN -->
+    <section class="pp-section" id="how">
+      <div class="container">
+        <div class="pp-head">
+          <p class="pp-eyebrow">How we work together</p>
+          <h2>Start small, grow as it works: crawl, walk, run.</h2>
+          <p>Every partnership can begin this week at zero cost and go as far as you want it to. You pick the rung.</p>
+        </div>
+        <div class="pp-tiers">
+          <div class="pp-tier">
+            <div class="pp-step"><span class="pp-num">1</span><span class="pp-kick">Crawl &middot; Give</span></div>
+            <h3>A free member perk</h3>
+            <dl>
+              <dt>You</dt><dd>Hand departing families a free unlock code with your venue&rsquo;s name on it &mdash; an exit poster, a QR, or one line in a member email.</dd>
+              <dt>Get</dt><dd>A perk your members use on the way out, at no cost to you. Families get a free animal pack ($3.99 value), the printable coloring book for that pack, and the coloring books for our other free packs.</dd>
+              <dt>Cost</dt><dd>$0.</dd>
+            </dl>
+            <a class="pp-example" href="/assets/downloads/riverbend-crawl-kit.pdf" target="_blank" rel="noopener"><img src="/assets/partners/crawl-poster.jpg" alt="" loading="lazy"><span>See the Crawl kit<small>Poster, desk card, member email</small></span></a>
+            <div class="pp-when">Live this week</div>
+          </div>
+          <div class="pp-tier">
+            <div class="pp-step"><span class="pp-num">2</span><span class="pp-kick">Walk &middot; Co-market</span></div>
+            <h3>Perks + a take-home book</h3>
+            <dl>
+              <dt>You</dt><dd>A coloring and puzzle book made for your venue &mdash; your animals, their names, your logo. Email it to members as a printable PDF, hand it out at exhibits, or give it away or sell it in the gift shop. Add a members&rsquo; discount.</dd>
+              <dt>Get</dt><dd>Everything in Crawl, plus a keepsake that&rsquo;s yours.</dd>
+              <dt>Cost</dt><dd>$0 to start. You print the book; if you sell it, we can share revenue, or keep it free.</dd>
+            </dl>
+            <a class="pp-example" href="#book"><img src="/assets/partners/book-cover.jpg" alt="" loading="lazy"><span>See an example book<small>Riverbend Aquarium &darr;</small></span></a>
+            <div class="pp-when">Live in weeks</div>
+          </div>
+          <div class="pp-tier run">
+            <div class="pp-step"><span class="pp-num">3</span><span class="pp-kick">Run &middot; Build</span></div>
+            <h3>Your own animals</h3>
+            <dl>
+              <dt>You</dt><dd>Co-create a venue pack &mdash; your animals, your branding, a map of your grounds.</dd>
+              <dt>Get</dt><dd>A branded experience &mdash; your animals, your map, your colors &mdash; to give members free. If we turn it into a paid product together, we share the revenue.</dd>
+              <dt>Cost</dt><dd>On us &mdash; we build it.</dd>
+            </dl>
+            <a class="pp-example" href="#run"><img class="thumb-phone" src="/assets/partners/run-pack-phone.png" alt="" loading="lazy"><span>See what it looks like<small>Your zoo in the app &darr;</small></span></a>
+            <!-- TODO (Josh): add a real timeline chip for Run (Crawl says "Live this week", Walk "Live in weeks"). Not invented here. -->
+            <div class="pp-when">A project, together</div>
+          </div>
+        </div>
+        <!-- Example code is the fictional Riverbend one — never a real partner's code. -->
+        <p class="pp-mechanic">It all runs on Apple&rsquo;s offer codes &mdash; one custom code per venue, e.g. <code>RIVERBEND</code>, that members redeem with a single tap by link or in the app&rsquo;s &ldquo;Redeem a Code&rdquo; sheet. Member-exclusive, nothing to build on your side.</p>
+      </div>
+    </section>
+
+    <!-- CO-BRANDED BOOK -->
+    <section class="pp-section pp-book" id="book">
+      <div class="container">
+        <div class="pp-head">
+          <p class="pp-eyebrow">The co-branded book</p>
+          <h2>A keepsake with your name on the cover.</h2>
+          <p>We re-skin our puzzle &amp; activity book for your venue: your animals, your logo, and a claim page in the back that unlocks a free pack.</p>
+        </div>
+        <div class="pp-book-grid">
+          <!-- Pages from the example book PDF (print-sources/riverbend-book). -->
+          <div class="pp-strip-wrap">
+            <div class="pp-strip" tabindex="0" role="group" aria-label="Pages from the Riverbend Aquarium example book. Scroll sideways to see more.">
+              <figure><img src="/assets/partners/book-cover.jpg" alt="Color cover of the Riverbend Aquarium Animal Coloring and Activity Book" loading="lazy"><figcaption>Your cover</figcaption></figure>
+              <figure><img src="/assets/partners/book-welcome.jpg" alt="Welcome page with the venue's address, contact details and photos" loading="lazy"><figcaption>Your details and photos</figcaption></figure>
+              <figure><img src="/assets/partners/book-map.jpg" alt="Explorer map of the aquarium with animals for kids to circle" loading="lazy"><figcaption>A map to circle</figcaption></figure>
+              <figure><img src="/assets/partners/book-coloring.jpg" alt="Octopus coloring page with real facts" loading="lazy"><figcaption>Color each animal</figcaption></figure>
+              <figure><img src="/assets/partners/book-puzzle.jpg" alt="Spot-the-difference puzzle page" loading="lazy"><figcaption>A puzzle each</figcaption></figure>
+              <figure><img src="/assets/partners/book-maze.jpg" alt="Maze page where a baby capybara finds its mom" loading="lazy"><figcaption>Mazes</figcaption></figure>
+              <figure><img src="/assets/partners/book-numbers.jpg" alt="Number tracing page, 0 to 10" loading="lazy"><figcaption>Write the numbers</figcaption></figure>
+              <figure><img src="/assets/partners/book-howmany.jpg" alt="Counting page with write-in boxes" loading="lazy"><figcaption>Count the animals</figcaption></figure>
+              <figure><img src="/assets/partners/book-claim.jpg" alt="Claim page with a QR code and the code RIVERBEND" loading="lazy"><figcaption>Your QR and code</figcaption></figure>
+            </div>
+          </div>
+          <div>
+            <div class="pp-book-links" style="justify-content:center">
+              <a class="btn btn-primary" href="/assets/downloads/riverbend-coloring-activity-book.pdf" target="_blank" rel="noopener">Open the example book (PDF)</a>
+            </div>
+            <p style="margin-top: var(--space-md); font-size: .85rem; opacity: .8;"><span class="pp-note">Illustrative example</span> &ldquo;Riverbend Aquarium&rdquo; is a fictional venue, not a real partner. The animals and puzzles are Wild Atlas; the aquarium photos are AI-generated.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RUN EXAMPLE: illustrative app mockups -->
+    <section class="pp-section" id="run">
+      <div class="container">
+        <div class="pp-head">
+          <p class="pp-eyebrow">Run &middot; what it looks like</p>
+          <h2>Your zoo, inside the app.</h2>
+          <p>A place for your venue on families&rsquo; home screens, and a page of your animals, facts and top exhibits. Same narrated, ad-free Wild Atlas experience, with your name on it. We build it at no cost to you.</p>
+        </div>
+        <div class="pp-phones">
+          <figure class="pp-phone-wrap">
+            <img src="/assets/partners/run-home-phone.png" width="718" height="1161" alt="The Wild Atlas home screen with a My Places section showing a Riverbend Aquarium tile" loading="lazy">
+            <figcaption>Home: a &ldquo;My Places&rdquo; section with your tile</figcaption>
+          </figure>
+          <figure class="pp-phone-wrap">
+            <img src="/assets/partners/run-pack-phone.png" width="718" height="1161" alt="The Riverbend Aquarium page with a grid of nine animals and page buttons 1, 2 and 3" loading="lazy">
+            <figcaption>Your page: your animals, your name</figcaption>
+          </figure>
+          <figure class="pp-phone-wrap">
+            <img src="/assets/partners/run-pack2-phone.png" width="718" height="1161" alt="The lower part of the Riverbend Aquarium page with facts about the aquarium and a row of top exhibits" loading="lazy">
+            <!-- COPY REVIEW (Cole): round 2 replaced the "For grown-ups" card with a "Learn more" button behind the grown-up check; this caption and the image alt text above may need new wording. Not rewritten by Wes. -->
+            <figcaption>Facts and top exhibits, with a grown-up gate</figcaption>
+          </figure>
+          <figure class="pp-phone-wrap pp-video">
+            <video id="flowVideo" controls muted loop playsinline preload="metadata" poster="/assets/partners/riverbend-flow-poster.jpg" width="604" height="1312" aria-label="Concept walkthrough, 24 seconds: the Home screen scrolls to My Places, the Riverbend Aquarium page opens, and a sea otter page follows." aria-describedby="flowCap">
+              <source src="/assets/partners/riverbend-flow.mp4" type="video/mp4">
+            </video>
+            <figcaption id="flowCap">Concept walkthrough (24 seconds): Home, My Places, the Riverbend page, then a sea otter</figcaption>
+          </figure>
+        </div>
+        <p class="pp-run-note"><span class="pp-note">Concept screens</span> &ldquo;Riverbend Aquarium&rdquo; is a fictional venue. These screens and the walkthrough show what we would build together; the venue experience is not in the app today. Part of the walkthrough is real app footage and part is drawn. Animal art is from the Wild Atlas app; the exhibit photos are AI-generated.</p>
+      </div>
+    </section>
+
+    <!-- REAL REVIEWS (verbatim from the App Store; same three as press-fact-sheet.html) -->
+    <section class="pp-section pp-reviews" id="reviews">
+      <div class="container">
+        <div class="pp-head">
+          <p class="pp-eyebrow">What parents say</p>
+          <h2>Real reviews from the App Store.</h2>
+        </div>
+        <div class="pp-cards">
+          <figure class="pp-quote">
+            <div class="pp-stars" aria-label="Rated 5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="t">Educational excellence</p>
+            <p>&ldquo;This app has such a wide variety of features that are both engaging and fun for children! Love the dinosaur pack&rdquo;</p>
+            <cite>&mdash; kula131 &middot; App Store</cite>
+          </figure>
+          <figure class="pp-quote">
+            <div class="pp-stars" aria-label="Rated 5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="t">Wonderful app</p>
+            <p>&ldquo;In a world where apps are meant for mindless scrolling, Wild Atlas stands apart. It is fun, educational, and beautiful. It&rsquo;s not really a game, it&rsquo;s more of an animal encyclopedia for kids. It&rsquo;s the only app I let my 3 year old play.&rdquo;</p>
+            <cite>&mdash; chu.c.me &middot; App Store</cite>
+          </figure>
+          <figure class="pp-quote">
+            <div class="pp-stars" aria-label="Rated 5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="t">Not brain rot!</p>
+            <p>&ldquo;This is actually a good game that teaches kids facts about animals without a bunch of addictive tricks many games use to compensate for being otherwise boring.&rdquo;</p>
+            <cite>&mdash; Happy Campering &middot; App Store</cite>
+          </figure>
+        </div>
+        <!-- Rating verified against the live App Store lookup on 2026-10-05: 5.0, 17 ratings. Refresh before each publish. -->
+        <p class="pp-rating">5.0 on the App Store <small>&middot; 17 ratings, as of October 2026. Reviews shown verbatim.</small></p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <!-- COPY REVIEW (Cole + advisors): FAQ, "Why families trust it", the Walk cost line and the Crawl "Get" line were reworded after the Gemini critique. Josh/Didi chose: headline #2, card (e), "designed to follow COPPA", cost FAQ without "more kids playing". Still open: legal sign-off on COPPA, advisor items on jellyfish/touch-pool/booklet wording. -->
+    <section class="pp-section pp-faq" id="faq">
+      <div class="container" style="max-width: 820px;">
+        <div class="pp-head"><p class="pp-eyebrow">Questions</p><h2>The quick answers.</h2></div>
+        <details open><summary>Does it cost us anything?</summary><p>No, it&rsquo;s free right now. In return, more families get to enjoy Wild Atlas and learn about animals together. Run is on us to build; if we later make a paid product together, we share the revenue.</p></details>
+        <details><summary>How do families redeem?</summary><p>One tap. Each venue gets its own code, redeemed from a link, on the App Store, or in the app&rsquo;s &ldquo;Redeem a Code&rdquo; sheet.</p></details>
+        <details><summary>Is it safe for kids and our brand?</summary><p>No ads, no algorithm, works offline after download, and designed to follow COPPA.</p></details>
+        <details><summary>Can we make it exclusive to members?</summary><p>Yes. The per-venue code makes it member-only, with a redemption cap and optional expiry you set.</p></details>
+        <details><summary>We already have our own app &mdash; does this compete?</summary><p>No. Wild Atlas is the take-home animal encyclopedia, not a visit-planning or ticketing app. It complements what you run on-site.</p></details>
+      </div>
+    </section>
+
+    <!-- CLOSING CTA -->
+    <section class="pp-section" id="start">
+      <div class="container">
+        <div class="pp-closing">
+          <h2>Let&rsquo;s find your first rung.</h2>
+          <p>A 15-minute call is enough to pick a tier, set up a code, and get something in your families&rsquo; hands.</p>
+          <!-- Rating verified against the live App Store lookup 2026-10-06: 5.0, 17 ratings. Re-check before publish. -->
+          <p class="pp-proof">&#9733; 5.0 on the App Store &middot; 17 ratings, as of October 2026</p>
+          <div class="pp-cta-row">
+            <!-- SCHEDULING LINK: replace this mailto with the real booking URL once Josh confirms it. -->
+            <a class="btn btn-primary" href="mailto:partners@wildatlasapp.com?subject=15-min%20partner%20call">Book a 15-min call</a>
+            <a class="btn btn-ghost" href="/assets/downloads/wild-atlas-partner-one-pager.pdf" download>Download the one-pager (PDF)</a>
+          </div>
+          <p class="pp-email">or email <a href="mailto:partners@wildatlasapp.com">partners@wildatlasapp.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Concept video: it loads and plays only when scrolled into view (so phones don't download it up front), never autoplays for people who prefer
+    // reduced motion, and stays paused if the viewer pauses it.
+    (function () {
+      var v = document.getElementById('flowVideo'); if (!v) return;
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce) { v.removeAttribute('autoplay'); v.pause(); return; }
+      var visible = false, userPaused = false, autoPausing = false;
+      v.addEventListener('pause', function () { if (visible && !autoPausing && !v.ended) userPaused = true; });
+      v.addEventListener('play', function () { userPaused = false; });
+      if (!('IntersectionObserver' in window)) return;
+      new IntersectionObserver(function (es) {
+        visible = es[0].isIntersecting;
+        if (visible && !userPaused) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+        else if (!visible) { autoPausing = true; v.pause(); autoPausing = false; }
+      }, { threshold: 0.35 }).observe(v);
+    })();
+  </script>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="/assets/mascot-sitting.png" alt="Wild Atlas" class="footer-mascot" loading="lazy">
+          <span class="footer-title">Wild Atlas</span>
+        </div>
+        <div class="footer-links">
+          <a href="/about">About</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+          <a href="/age-suitability">Age Suitability</a>
+          <a href="/support">Support</a>
+          <a href="/press">Press</a>
+          <a href="/partners">Partners</a>
+          <a href="mailto:info@wildatlasapp.com">Contact</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Wild Atlas. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

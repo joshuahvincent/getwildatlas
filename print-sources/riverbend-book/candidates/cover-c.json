@@ -1,0 +1,14 @@
+{
+  "file": "cover-c.jpg",
+  "model": "gemini-3.1-flash-image-preview",
+  "aspectRatio": "16:9",
+  "prompt": "Using the attached reference images as exact style anchors (and the explorer puppy character design where relevant), create a landscape illustration. Cozy low scene on the seabed: a plush Giant Pacific octopus in soft peach-coral hugging a little round cream rock on the left, a moon jellyfish in pale lavender floating above-center, a mint sea turtle resting near the right, all smiling with big round eyes in the same style as the references. Sandy cream seabed, a few starfish-free simple shells, soft bubbles. Flat pale aqua water. The TOP 30 percent of the picture is empty flat pale aqua, no objects, reserved for a logo and title. Wild Atlas mascot illustration style, matching the reference images exactly: clean thick dark warm-brown outlines of consistent weight, flat illustration with simple flat color fills and only subtle soft tonal shading, no gloss, no specular highlights, no 3D rendering, no gradients. Rounded chibi plush proportions, large round dark eyes with a single white highlight dot, soft warm pastel palette (cream, peach, mint, soft teal, pale gold). Premium storybook family-animation charm, child-friendly. NO text, NO letters, NO numbers, NO signs with writing, NO logos, NO watermark, NO real brands, NO dolphins, NO whales, NO belugas, NO realism, NO 3D render, NO photo.",
+  "references": [
+    "/Users/joshuahv/Documents/Codex Projects/PetPeeper/GeneratedPackMascots/reptile-realm_mascot.png",
+    "/Users/joshuahv/Documents/Codex Projects/getwildatlas-wt-partners/assets/mascots/ocean-wonders.png",
+    "/Users/joshuahv/Documents/Codex Projects/PetPeeper/WildAtlas_Icons/wild_atlas_mascot_dog.png"
+  ],
+  "seed": "not set (API default)",
+  "generated_at": "2026-10-06T01:56:06.355087Z",
+  "mime": "image/jpeg"
+}
