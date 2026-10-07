@@ -91,7 +91,7 @@ def cover(F, masters):
     y = py + ph + 130
     d.text((W / 2, y), "Pick Our", font=F.fredoka(190, 700), fill=bf.BRAND["bark"], anchor="mm", stroke_width=10, stroke_fill="white")
     d.text((W / 2, y + 190), "Animals!", font=F.fredoka(190, 700), fill=bf.BRAND["peach"], anchor="mm", stroke_width=10, stroke_fill="white")
-    sub = f"{CLASS}'s class pack vote"; f = F.nunito(56, True); sw_ = d.textlength(sub, font=f); yy = y + 400
+    sub = f"{SCHOOL} pack vote"; f = F.nunito(56, True); sw_ = d.textlength(sub, font=f); yy = y + 400
     d.rounded_rectangle([(W - sw_) / 2 - 44, yy - 48, (W + sw_) / 2 + 44, yy + 48], radius=48, fill="white"); d.text((W / 2, yy), sub, font=f, fill=bf.BRAND["bark"], anchor="mm")
     pill = F.fredoka(46, 650); pt = "Pre-K to Grade 1"; pw2 = d.textlength(pt, font=pill)
     d.rounded_rectangle([(W - pw2) / 2 - 44, yy + 76, (W + pw2) / 2 + 44, yy + 160], radius=42, fill=bf.BRAND["sun"]); d.text((W / 2, yy + 118), pt, font=pill, fill=bf.BRAND["bark"], anchor="mm")
@@ -109,7 +109,7 @@ def back(F):
     pw, ph = 1360, 1120; px, py = (W - pw) // 2, 260
     d.rounded_rectangle([px, py, px + pw, py + ph], radius=70, fill="white")
     em = emblem(210); img.paste(em, (W // 2 - 105, py + 50), em)
-    d.text((W / 2, py + 330), "Your class pack, free.", font=F.fredoka(96, 700), fill=bf.BRAND["bark"], anchor="mm")
+    d.text((W / 2, py + 330), "Your school pack, free.", font=F.fredoka(96, 700), fill=bf.BRAND["bark"], anchor="mm")
     steps = ["1  Count the ticks. Send us your top 18 animals.", "2  We build the pack and send it back to you.", "3  Share the free code with your families."]
     y = py + 440
     for s_ in steps:
@@ -130,12 +130,12 @@ def back(F):
 def grownups(F):
     p = page(F, "Hello, Grown-Ups!", "", None); d = p.d; y = p.y + 10; bw = W - 2 * M - 40
     blocks = [("How the vote works", "Each child ticks their 6 favorite animals in this booklet, with a grown-up reading the animal names aloud. "
-                                      "The teacher counts the ticks on the tally sheet. The 18 animals with the most ticks become your class pack."),
-              ("Not here? Write it in.", "Use the write-in page for any animal that isn't in the booklet. The class pack uses animals that are in Wild Atlas. "
+                                      "The teacher counts the ticks on the tally sheet. The 18 animals with the most ticks become your school pack."),
+              ("Not here? Write it in.", "Use the write-in page for any animal that isn't in the booklet. The school pack uses animals that are in Wild Atlas. "
                                          "If a favorite isn't in Wild Atlas yet, we'll tell you."),
               ("Please keep it anonymous", "Don't write your child's name on this booklet. We never ask for student names or accounts. "
-                                           "The only thing we need from your class is the final list of 18 animals."),
-              ("Then what?", "We build a Wild Atlas pack of those 18 animals, just for your class, and send it back for your OK. "
+                                           "The only thing we need from your school is the final list of 18 animals."),
+              ("Then what?", "We build a Wild Atlas pack of those 18 animals, just for your school, and send it back for your OK. Every class can use it, now and in future years. "
                              "Families get a free code to unlock it in the Wild Atlas app, a narrated, ad-free animal encyclopedia for kids.")]
     for h, t in blocks:
         d.text((M + 20, y), h, font=F.fredoka(54, 650), fill=GREEN); y += 78
@@ -144,7 +144,7 @@ def grownups(F):
     d.rounded_rectangle([M + 20, y, W - M - 20, y + 270], radius=34, outline=GREEN, width=6)
     lg = logo_color(); lgr = lg.resize((520, int(lg.height * 520 / lg.width)), Image.LANCZOS); p.img.paste(lgr, (M + 60, y + (270 - lgr.height) // 2))
     x = M + 640
-    for i, ln in enumerate((f"{SCHOOL}, {CLASS}", "200 Brookside Lane, Pebble Brook", "Phone: (555) 010-0188", "Email: room4@pebblebrook.example")):
+    for i, ln in enumerate((f"{SCHOOL}", "200 Brookside Lane, Pebble Brook", "Phone: (555) 010-0188", "Email: office@pebblebrook.example")):
         d.text((x, y + 40 + i * 52), ln, font=F.fredoka(46, 700) if i == 0 else F.nunito(34, True), fill=GREEN if i == 0 else (40, 40, 40))
     return p.img
 
@@ -166,11 +166,11 @@ def write_in(F):
     center_text(d, p.y + 1110, "My animal is called:", F.fredoka(60, 600))
     d.line([(M + 120, p.y + 1290), (W - M - 120, p.y + 1290)], fill=INK, width=6)
     bk.text_block(d, (M + 60, p.y + 1350), "Please don't write names of children or families on this page. Write only the animal. "
-                  "The class pack uses animals that are in Wild Atlas, and we'll tell you if a favorite isn't there yet.", F.nunito(34), W - 2 * M - 120, fill=(90, 90, 90), align="center")
+                  "The school pack uses animals that are in Wild Atlas, and we'll tell you if a favorite isn't there yet.", F.nunito(34), W - 2 * M - 120, fill=(90, 90, 90), align="center")
     return p.img
 
 def tally(F, A, D):
-    p = page(F, "Teacher Tally Sheet", "Count the ticks for each animal. The 18 with the most ticks become the class pack.", None); d = p.d
+    p = page(F, "Teacher Tally Sheet", "Count the ticks for each animal. The 18 with the most ticks become the school pack.", None); d = p.d
     top = p.y + 30; bottom = H - 250; per = 24; rh = (bottom - top - 50) / per; colw = (W - 2 * M - 30) / 2
     for c in range(2):
         x0 = M + c * (colw + 30)
@@ -187,8 +187,8 @@ def tally(F, A, D):
 def example_pack(F, masters):
     img = Image.new("RGB", (W, H), bf.BRAND["cream"]); d = ImageDraw.Draw(img)
     em = emblem(150); img.paste(em, (M, 70), em)
-    d.text((M + 190, 112), f"{CLASS}'s Pack", font=F.fredoka(110, 700), fill=bf.BRAND["bark"], anchor="lm")
-    d.text((M + 190, 200), "18 animals, picked by the class", font=F.nunito(44, True), fill=bf.BRAND["bark"], anchor="lm")
+    d.text((M + 190, 112), "Pebble Brook Pack", font=F.fredoka(88, 700), fill=bf.BRAND["bark"], anchor="lm")
+    d.text((M + 190, 200), "18 animals, picked by our school", font=F.nunito(44, True), fill=bf.BRAND["bark"], anchor="lm")
     d.rounded_rectangle([W - M - 420, 78, W - M, 150], radius=36, fill=bf.BRAND["sun"]); d.text((W - M - 210, 114), "EXAMPLE", font=F.fredoka(42, 700), fill=bf.BRAND["bark"], anchor="mm")
     cols, rows = 3, 6; gap = 24; top = 280; bottom = H - 300
     cw = (W - 2 * M - gap * (cols - 1)) / cols; ch = (bottom - top - gap * (rows - 1)) / rows
@@ -198,7 +198,7 @@ def example_pack(F, masters):
         m = Image.open(os.path.join(masters, k + ".png")).convert("RGBA"); m = m.crop(m.getbbox()); s = min((cw - 50) / m.width, (ch - 92) / m.height); m = m.resize((int(m.width * s), int(m.height * s)), Image.LANCZOS)
         img.paste(m, (int(x0 + (cw - m.width) / 2), int(y0 + 14 + (ch - 92 - m.height) / 2)), m)
         d.text((x0 + cw / 2, y0 + ch - 36), D_NAME(k), font=F.nunito(30, True), fill=bf.BRAND["bark"], anchor="mm")
-    d.text((W / 2, H - 215), "This is the kind of pack your class gets. Yours will hold the 18 animals your class picks.", font=F.nunito(34, True), fill=bf.BRAND["bark"], anchor="mm")
+    d.text((W / 2, H - 215), "This is the kind of pack your school gets. Yours will hold the 18 animals your school picks.", font=F.nunito(34, True), fill=bf.BRAND["bark"], anchor="mm")
     return img
 
 D_NAME = None
@@ -226,7 +226,7 @@ def main():
         (pages[n].convert("RGB") if color else pages[n].convert("L")).save(buf, "JPEG", quality=84 if color else 74, optimize=True)
         pg = pdf.new_page(width=612, height=792); pg.insert_image(pg.rect, stream=buf.getvalue())
         (pages[n].convert("RGB") if color else pages[n].convert("L")).save(os.path.join(a.out, f"p{n:02d}.png"))
-    pdf.set_metadata({"title": f"{CLASS} Pick Our Animals vote booklet (example)", "author": "Wild Atlas"})
+    pdf.set_metadata({"title": f"{SCHOOL} Pick Our Animals vote booklet (example)", "author": "Wild Atlas"})
     out = os.path.join(a.out, "pick-our-animals-vote-booklet.pdf"); pdf.save(out, deflate=True, garbage=3)
     print("wrote", out, os.path.getsize(out) // 1024, "KB", len(pdf), "pages")
 

@@ -63,20 +63,20 @@ def coloring_page(S, k, logo_bw):
     out = bf.blank(); out.paste(im, ((W - im.width) // 2, 0)); return out
 
 def claim_page(F, logo):
-    p = bf.page(F, "Your Free Class Pack!", "", "", "", logo, None); d = p.d; y = p.y + 10
-    lines = ["Scan with a grown-up to unlock a free Wild Atlas pack with the 18 animals our class picked.",
+    p = bf.page(F, "Your Free School Pack!", "", "", "", logo, None); d = p.d; y = p.y + 10
+    lines = ["Scan with a grown-up to unlock a free Wild Atlas pack with the 18 animals our school picked.",
              "Or open the App Store, tap your picture, tap “Redeem Gift Card or Code”, and type the code."]
     for t in lines:
         y = text_block(d, (M + 40, y), t, F.nunito(44, True), W - 2 * M - 80, align="center") + 20
     qs = 520; qx = (W - qs) // 2; qy = y + 50
     import qrcode
-    qr = qrcode.QRCode(border=2, box_size=10); qr.add_data("https://pebblebrook.example/wild-atlas-class-pack"); qr.make(fit=True)
+    qr = qrcode.QRCode(border=2, box_size=10); qr.add_data("https://pebblebrook.example/wild-atlas-school-pack"); qr.make(fit=True)
     qi = qr.make_image(fill_color="black", back_color="white").convert("RGB").resize((qs, qs), Image.NEAREST)
     d.rectangle([qx - 20, qy - 20, qx + qs + 20, qy + qs + 20], outline=INK, width=6); p.img.paste(qi, (qx, qy))
     cy = qy + qs + 70; f = F.fredoka(92, 650); txt = "PEBBLEBROOK"; tw = d.textlength(txt, font=f)
     d.rounded_rectangle([(W - tw) / 2 - 70, cy, (W + tw) / 2 + 70, cy + 150], radius=75, width=6, outline=INK)
     d.text((W / 2, cy + 75), txt, font=f, fill=INK, anchor="mm")
-    center_text(d, cy + 200, "Free for our class and families. No ads.", F.nunito(40, True))
+    center_text(d, cy + 200, "Free for our school and families. No ads.", F.nunito(40, True))
     text_block(d, (M + 40, cy + 300), "Example page. This QR code, “Pebble Brook Elementary” and the code PEBBLEBROOK are made up and unlock nothing. "
                "A real school gets its own code and QR.", F.nunito(30), W - 2 * M - 80, fill=(110, 110, 110), align="center")
     return p.img
@@ -96,7 +96,7 @@ def colophon_page(F, logo_color):
     lk = wa_lockup(F, 110); tw_ = lk.width + 110; th_ = lk.height + 70; tx = (W - tw_) // 2; ty = py + ph + 60
     d.rounded_rectangle([tx, ty, tx + tw_, ty + th_], radius=48, fill="white"); img.paste(lk, (tx + 55, ty + 35), lk)
     d.text((W / 2, ty + th_ + 52), "Animals, facts & puzzles by Wild Atlas", font=F.nunito(34, True), fill=NAVY, anchor="mm")
-    lines = [f"{VENUE} Class Activity Book", "", "Example book for the Wild Atlas schools program.",
+    lines = [f"{VENUE} School Activity Book", "", "Example book for the Wild Atlas schools program.",
              "Pebble Brook Elementary is a fictional school and is not a real organization.", "",
              "© 2026 Wild Atlas. All rights reserved.", "wildatlasapp.com/schools"]
     y = H - 450
@@ -107,8 +107,8 @@ def colophon_page(F, logo_color):
 # ------------------------------------------------------------------------------------------------ color cover, welcome, map
 NAVY = (31, 74, 55)
 SITE = os.path.join(HERE, "..", "..")          # website repo root (assets/)
-CONTACT = dict(name="Pebble Brook Elementary, Room 4", addr1="200 Brookside Lane", addr2="Pebble Brook", phone="(555) 010-0188",
-               email="room4@pebblebrook.example", web="pebblebrook.example")   # all fictional (.example, 555-01xx)
+CONTACT = dict(name="Pebble Brook Elementary", addr1="200 Brookside Lane", addr2="Pebble Brook", phone="(555) 010-0188",
+               email="office@pebblebrook.example", web="pebblebrook.example")   # all fictional (.example, 555-01xx)
 
 def cover_page(F, logo_color):
     """Full-color front cover: one seamless Gemini illustration of the school and the class animals, with the logo and title in the open sky."""
@@ -123,7 +123,7 @@ def cover_page(F, logo_color):
     ty = py + ph + 95
     for i, ln in enumerate(("Animal Coloring", "& Activity Book")):
         d.text((W / 2, ty + i * 135), ln, font=F.fredoka(116, 700), fill=NAVY, anchor="mm", stroke_width=7, stroke_fill="white")
-    sub = "18 Animals Our Class Picked to Color & Solve"; f = F.nunito(50, True)
+    sub = "18 Animals Our School Picked to Color & Solve"; f = F.nunito(50, True)
     sw_ = d.textlength(sub, font=f)
     yy = ty + 275
     d.rounded_rectangle([(W - sw_) / 2 - 40, yy - 44, (W + sw_) / 2 + 40, yy + 44], radius=44, fill="white")
@@ -152,10 +152,10 @@ def welcome_page(F, logo_color, logo_small):
     y = 105
     d.text((M, y), f"Welcome to {VENUE}!", font=F.fredoka(78, 700), fill=NAVY); y += 112
     paras = [("Our school", "Pebble Brook Elementary is a neighborhood school for children from pre-kindergarten to fifth grade. We learn together, play outside, and love our school garden and our library. "
-                           "Room 4 made this book to share a little of our school with your family. We voted for our 18 favorite animals, and they are all inside."),
+                           "We made this book to share a little of our school with your family. Our students chose their 18 favorite animals, and they are all inside."),
              ("How this book works", "Every animal gets two pages: the animal to color on the left, with real facts to read aloud, and a puzzle or something to draw on the right. "
                                      "Read each one-line instruction once; the little picture reminds your explorer what to do. Crayons and colored pencils work best. Most answers are printed upside down on the page; the rest are in the answer key."),
-             ("A free class pack", "Your family gets a free Wild Atlas pack with the 18 animals our class picked, in the Wild Atlas app, an ad-free animal app for kids. The claim page is near the back of the book.")]
+             ("A free school pack", "Your family gets a free Wild Atlas pack with the 18 animals our school picked, in the Wild Atlas app, an ad-free animal app for kids. The claim page is near the back of the book.")]
     for h, t in paras:
         d.text((M, y), h, font=F.fredoka(46, 650), fill=(30, 30, 30)); y += 62
         y = text_block(d, (M, y), t, F.nunito(36), W - 2 * M, spacing=1.3) + 28
@@ -620,8 +620,8 @@ def main():
         buf = io.BytesIO(); (pages[n].convert("RGB") if n in (1, 2, 45) else pages[n].convert("L")).save(buf, "JPEG", quality=(82 if n in (1, 2, 45) else a.dpi_jpeg), optimize=True)
         pg = pdf.new_page(width=612, height=792); pg.insert_image(pg.rect, stream=buf.getvalue())
         (pages[n].convert("RGB") if n in (1, 2, 45) else pages[n].convert("L")).save(os.path.join(a.out, f"p{n:02d}.png"))
-    pdf.set_metadata({"title": f"{VENUE} Class Activity Book (example)", "author": "Wild Atlas"})
-    out = os.path.join(a.out, "pebble-brook-class-activity-book.pdf"); pdf.save(out, deflate=True, garbage=3)
+    pdf.set_metadata({"title": f"{VENUE} School Activity Book (example)", "author": "Wild Atlas"})
+    out = os.path.join(a.out, "pebble-brook-school-activity-book.pdf"); pdf.save(out, deflate=True, garbage=3)
     print("wrote", out, os.path.getsize(out) // 1024, "KB", len(pdf), "pages")
 
 if __name__ == "__main__":
