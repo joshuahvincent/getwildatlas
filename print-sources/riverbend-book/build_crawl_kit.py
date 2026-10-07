@@ -67,7 +67,7 @@ def card():
     ph = lgr.height + 70; px = (W - pw) // 2; py = 60
     d.rounded_rectangle([px, py, px + pw, py + ph], radius=46, fill="white"); img.paste(lgr, (px + 50, py + 35))
     d.text((W / 2, py + ph + 85), "Keep exploring", font=F.fredoka(84, 700), fill=NAVY, anchor="mm", stroke_width=6, stroke_fill="white")
-    d.text((W / 2, py + ph + 170), "at home. It's free!", font=F.fredoka(84, 700), fill=NAVY, anchor="mm", stroke_width=6, stroke_fill="white")
+    d.text((W / 2, py + ph + 170), "with a free pack", font=F.fredoka(84, 700), fill=NAVY, anchor="mm", stroke_width=6, stroke_fill="white")
     qs = 330; qy = py + ph + 285; d.rounded_rectangle([W / 2 - qs / 2 - 40, qy - 36, W / 2 + qs / 2 + 40, qy + qs + 150], radius=44, fill="white")
     img.paste(qr_img(qs), (int(W / 2 - qs / 2), qy)); f2 = F.fredoka(58, 700); tw = d.textlength(CODE, font=f2)
     d.rounded_rectangle([W / 2 - tw / 2 - 36, qy + qs + 22, W / 2 + tw / 2 + 36, qy + qs + 118], radius=48, outline=NAVY, width=5); d.text((W / 2, qy + qs + 70), CODE, font=f2, fill=NAVY, anchor="mm")

@@ -76,7 +76,7 @@ def title_page(F, logo_color):
     img = bf.blank(); d = ImageDraw.Draw(img)
     paste_fit(img, logo_color, (M + 40, 330, W - M - 40, 760))
     center_text(d, 900, "Animal Coloring", F.fredoka(120, 650)); center_text(d, 1040, "& Activity Book", F.fredoka(120, 650))
-    center_text(d, 1220, "20 Ocean & River Animals to Color, Solve & Draw", F.nunito(48, True))
+    center_text(d, 1220, "20 Animals from Oceans, Rivers & Rainforests", F.nunito(48, True))
     center_text(d, 1300, "For explorers ages 3–8", F.nunito(44))
     center_text(d, H - 330, "Animals, facts and puzzles by Wild Atlas", F.nunito(36, True), fill=(90, 90, 90))
     center_text(d, H - 270, "Example book. Riverbend Aquarium is a fictional venue.", F.nunito(30), fill=(120, 120, 120))
@@ -160,7 +160,7 @@ def cover_page(F, logo_color):
     ty = py + ph + 110
     for i, ln in enumerate(("Animal Coloring", "& Activity Book")):
         d.text((W / 2, ty + i * 150), ln, font=F.fredoka(128, 700), fill=NAVY, anchor="mm", stroke_width=7, stroke_fill="white")
-    sub = "20 Ocean & River Animals to Color, Solve & Draw"; f = F.nunito(50, True)
+    sub = "20 Animals from Oceans, Rivers & Rainforests to Color & Solve"; f = F.nunito(50, True)
     sw_ = d.textlength(sub, font=f)
     yy = ty + 300
     d.rounded_rectangle([(W - sw_) / 2 - 40, yy - 44, (W + sw_) / 2 + 40, yy + 44], radius=44, fill="white")
@@ -189,7 +189,7 @@ def welcome_page(F, logo_color, logo_small):
     y = 105
     d.text((M, y), f"Welcome to {VENUE}!", font=F.fredoka(78, 700), fill=NAVY); y += 112
     paras = [("Our story", "Riverbend Aquarium opened in 1987, started by teachers, fishers and neighbors who wanted every child in town to meet the animals of the water up close. "
-                           "Today we care for more than 60 kinds of animals and give rescued otters and sea lions a safe home. Every visit helps fund animal care, rescue work and free school programs. "
+                           "Today we care for more than 25 kinds of animals and give rescued otters and sea lions a safe home. Every visit helps fund animal care, rescue work and free school programs. "
                            "We hope this book keeps the wonder going long after you leave."),
              ("How this book works", "Every animal gets two pages: the animal to color on the left, with real facts to read aloud, and a puzzle or something to draw on the right. "
                                      "Read each one-line instruction once; the little picture reminds your explorer what to do. Crayons and colored pencils work best. Most answers are printed upside down on the page; the rest are in the answer key."),
