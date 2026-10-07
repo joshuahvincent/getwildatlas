@@ -34,18 +34,18 @@ BOOK = [
   ("jellyfish", "shadow", dict(ks=["jellyfish", "octopus", "seahorse", "starfish"])),
   ("sea_otter", "next", dict(pats=[(["sea_otter", "starfish"], "ABAB"), (["seahorse", "sea_otter"], "AABAA"),
                                    (["clownfish", "octopus", "sea_otter"], "ABCAB"), (["sea_otter", "jellyfish"], "ABBAB")])),
-  ("great_white_shark", "safe", dict(ks=["great_white_shark", "clownfish", "sea_turtle", "jellyfish", "seahorse", "sea_otter"])),
+  ("sea_turtle", "safe", dict(ks=["sea_turtle", "clownfish", "jellyfish", "poison_dart_frog", "seahorse", "sea_otter"])),
   ("seahorse", "finish", dict(prompt="Oh no! Part of me is missing. Draw my tail and my back fin. Then color me in!")),
   ("hippopotamus", "home", dict(prompt="I live in rivers and lakes in Africa. Draw my home: add water and reeds!")),
   ("manta_ray", "trace", dict(word="Manta")),
   ("sea_lion", "spot", dict(hide=[(0.70, 0.67, 0.84, 0.92)], hide_label="the sea lion's flipper")),
-  ("whale_shark", "big", dict(rows=[("whale_shark", "clownfish"), ("great_white_shark", "seahorse"), ("sea_turtle", "starfish")])),
-  ("sea_turtle", "dots", {}),
+  ("glass_frog", "big", dict(rows=[("glass_frog", "sea_otter"), ("clownfish", "sea_turtle"), ("starfish", "octopus")])),
+  ("starfish", "dots", {}),
   ("moray_eel", "odd", dict(rows=[("moray_eel", "seahorse"), ("clownfish", "jellyfish"), ("starfish", "moray_eel")])),
   ("atlantic_puffin", "scramble", dict(items=[("atlantic_puffin", "PUFFIN"), ("octopus", "OCTOPUS"), ("sea_otter", "OTTER"),
                                               ("clownfish", "CLOWNFISH"), ("starfish", "STARFISH")])),
   ("emperor_penguin", "dots", {}),
-  ("hammerhead_shark", "shadow", dict(ks=["hammerhead_shark", "great_white_shark", "whale_shark", "manta_ray"])),
+  ("tree_frog", "shadow", dict(ks=["tree_frog", "glass_frog", "poison_dart_frog", "axolotl"])),
   ("axolotl", "odd", dict(rows=[("axolotl", "sea_otter"), ("walrus", "atlantic_puffin"), ("axolotl", "platypus")])),
   ("alligator", "home", dict(prompt="I live in rivers and swamps. Draw my home: add water, reeds and maybe a fish!")),
   ("platypus", "maze", dict(prompt="Help the little platypus find its mom!", seed=21)),
@@ -137,29 +137,9 @@ CONTACT = dict(name=VENUE, addr1="100 Harbour Walk", addr2="Riverbend Point", ph
 
 def cover_page(F, logo_color):
     """Full-color front cover: water gradient with a surface at the top, the octopus/jellyfish/turtle scene at the bottom."""
-    import numpy as np
-    scene = Image.open(os.path.join(HERE, "candidates", "cover-b.jpg")).convert("RGB")
-    scene = scene.resize((W, int(scene.height * W / scene.width)), Image.LANCZOS)
-    top_rgb = np.array(scene.crop((0, 0, W, 8))).reshape(-1, 3).mean(0)
-    sy = H - scene.height
-    # vertical gradient: bright surface -> the scene's own top color at the seam
-    ys = np.linspace(0, 1, sy + 140)[:, None]
-    surf = np.array((205, 238, 240), float); mid = np.array((120, 205, 205), float)
-    grad = np.where(ys < .55, surf + (mid - surf) * (ys / .55), mid + (top_rgb - mid) * ((ys - .55) / .45))
-    bg = Image.fromarray(np.repeat(grad[:, None, :], W, 1).astype("uint8"))
-    cov = Image.new("RGB", (W, H), tuple(int(v) for v in top_rgb)); cov.paste(bg, (0, 0))
-    # blend the scene's flat top band into the gradient
-    mask = Image.new("L", scene.size, 255); md = ImageDraw.Draw(mask)
-    for y in range(160): md.line([(0, y), (W, y)], fill=int(255 * y / 160))
-    cov.paste(scene, (0, sy), mask)
-    ov = Image.new("RGBA", (W, H), (0, 0, 0, 0)); od = ImageDraw.Draw(ov)
-    for x0, wd in ((180, 150), (520, 110), (860, 170), (1250, 120)):                  # soft light rays
-        od.polygon([(x0, 0), (x0 + wd, 0), (x0 + wd + 330, sy + 120), (x0 - 160, sy + 120)], fill=(255, 255, 255, 26))
-    import math
-    for k, (yy, a) in enumerate(((46, 255), (86, 140), (122, 80))):                  # the water surface
-        pts = [(x, yy + 14 * math.sin(x / 95 + k)) for x in range(0, W + 20, 20)]
-        od.line(pts, fill=(255, 255, 255, a), width=9 - 2 * k, joint="curve")
-    cov = Image.alpha_composite(cov.convert("RGBA"), ov).convert("RGB"); d = ImageDraw.Draw(cov)
+    # one seamless Gemini illustration (candidates/cover-full.jpg), water rising to the surface; no procedural layers
+    cov = Image.open(os.path.join(HERE, "candidates", "cover-full.jpg")).convert("RGB").resize((W, H), Image.LANCZOS)
+    d = ImageDraw.Draw(cov)
     # logo on a white panel, title, subtitle
     pw = 1360; lg = logo_color.resize((pw - 120, int(logo_color.height * (pw - 120) / logo_color.width)), Image.LANCZOS)
     ph = lg.height + 100; px = (W - pw) // 2; py = 190
@@ -215,7 +195,7 @@ def welcome_page(F, logo_color, logo_small):
     # image strip: imaginary aquarium views
     sy = cy + ch + 60
     d.text((M, sy), "Around the aquarium", font=F.fredoka(46, 650), fill=(30, 30, 30)); sy += 80
-    names = [("entrance", "The entrance"), ("tunnel", "Shark Tunnel"), ("jellies", "Jellyfish Hall"), ("touchpool", "Touch Pool")]
+    names = [("entrance", "The entrance"), ("tunnel", "Ocean Tunnel"), ("jellies", "Jellyfish Hall"), ("touchpool", "Touch Pool")]
     gap = 22; tw = (W - 2 * M - 3 * gap) // 4; th = int(tw * 1.12)
     for i, (key, cap) in enumerate(names):
         x0 = M + i * (tw + gap); fp = os.path.join(HERE, "aquarium", key + ".jpg")

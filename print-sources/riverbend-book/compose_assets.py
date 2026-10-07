@@ -42,10 +42,10 @@ def dotted(img, pts, color=(255, 217, 125), step=30, rad=9):
 def hero():
     base = Image.open(HERE / "hero" / "hero-bg.jpg").convert("RGB")
     shot = Image.open(SITE / "assets" / "press" / "ss-home.jpg").convert("RGB")      # real marketing screenshot
-    ph = make_phone(shot, 300, tilt=-4)
+    ph = make_phone(shot, 380, tilt=-4)
     base = base.convert("RGBA")
-    dotted(base, [(380, 640), (470, 830), (650, 860), (820, 760)])
-    base.alpha_composite(ph, (base.width - ph.width - 30, base.height - ph.height + 70))
+    dotted(base, [(380, 640), (470, 830), (620, 860), (760, 770)])
+    base.alpha_composite(ph, (base.width - ph.width - 10, base.height - ph.height + 95))
     tag = Image.open(HERE / "riverbend-logo.png").convert("RGB")
     tag = tag.crop(ImageOps.invert(tag.convert("L")).point(lambda v: 255 if v > 12 else 0).getbbox())
     tw = 330; tag = tag.resize((tw, int(tag.height * tw / tag.width)), Image.LANCZOS)
