@@ -40,19 +40,20 @@ def dotted(img, pts, color=(255, 217, 125), step=30, rad=9):
             acc = 0; d.ellipse([p[0] - rad - 3, p[1] - rad - 3, p[0] + rad + 3, p[1] + rad + 3], fill=(60, 40, 30, 150))
             d.ellipse([p[0] - rad, p[1] - rad, p[0] + rad, p[1] + rad], fill=color + (255,))
 
-def hero():
+def hero(tag=True, out=None):
     base = Image.open(HERE / "hero" / "hero-bg.jpg").convert("RGB")
     shot = Image.open(HERE / "screens-anna" / "run-home-places.png").convert("RGB")      # Anna's My Places home screen
     ph = make_phone(shot, 380, tilt=-4)
     base = base.convert("RGBA")
     dotted(base, [(380, 640), (470, 830), (620, 860), (760, 770)])
     base.alpha_composite(ph, (base.width - ph.width - 10, base.height - ph.height + 95))
-    tag = Image.open(HERE / "riverbend-logo.png").convert("RGB")
-    tag = tag.crop(ImageOps.invert(tag.convert("L")).point(lambda v: 255 if v > 12 else 0).getbbox())
-    tw = 330; tag = tag.resize((tw, int(tag.height * tw / tag.width)), Image.LANCZOS)
-    pill = Image.new("RGBA", (tw + 50, tag.height + 40), (0, 0, 0, 0)); ImageDraw.Draw(pill).rounded_rectangle([0, 0, pill.width - 1, pill.height - 1], 26, fill=(255, 255, 255, 235))
-    pill.paste(tag, (25, 20)); base.alpha_composite(pill, (36, base.height - pill.height - 36))
-    base.convert("RGB").save(OUT / "hero-riverbend.jpg", quality=90); print("hero ok")
+    if tag:
+        tg = Image.open(HERE / "riverbend-logo.png").convert("RGB")
+        tg = tg.crop(ImageOps.invert(tg.convert("L")).point(lambda v: 255 if v > 12 else 0).getbbox())
+        tw = 330; tg = tg.resize((tw, int(tg.height * tw / tg.width)), Image.LANCZOS)
+        pill = Image.new("RGBA", (tw + 50, tg.height + 40), (0, 0, 0, 0)); ImageDraw.Draw(pill).rounded_rectangle([0, 0, pill.width - 1, pill.height - 1], 26, fill=(255, 255, 255, 235))
+        pill.paste(tg, (25, 20)); base.alpha_composite(pill, (36, base.height - pill.height - 36))
+    base.convert("RGB").save(out or (OUT / "hero-riverbend.jpg"), quality=90); print("hero ok")
 
 def phones():
     for src, name in (("run-home-places.png", "run-home-phone.png"), ("run-pack-top.png", "run-pack-phone.png"), ("run-pack-lower.png", "run-pack2-phone.png")):

@@ -9,60 +9,67 @@
 :root{--cream:#FFF5E1;--bark:#5D4037;--peach:#FF9E7D;--peach-d:#E68A6A;--mint:#A8E6CF;--mint-l:#C8F3DC;--sun:#FFD97D;--yl:#FFE6A0;--sky:#DDEEFF}
 @page{size:8.5in 11in;margin:0}
 *{box-sizing:border-box;margin:0}
-body{width:8.5in;height:11in;background:var(--cream);color:var(--bark);font-family:'Nunito',sans-serif;font-size:10pt;line-height:1.4;padding:.42in .55in;overflow:hidden;-webkit-print-color-adjust:exact;print-color-adjust:exact;display:flex;flex-direction:column;gap:.13in}
-h1,h2,h3{font-family:'Fredoka',sans-serif;line-height:1.12}
+body{width:8.5in;height:11in;background:var(--cream);color:var(--bark);font-family:'Nunito',sans-serif;font-size:9.6pt;line-height:1.38;padding:.38in .5in;overflow:hidden;-webkit-print-color-adjust:exact;print-color-adjust:exact;display:flex;flex-direction:column;gap:.12in}
+h1,h2,h3{font-family:'Fredoka',sans-serif;line-height:1.1}
 .top{display:flex;align-items:center;justify-content:space-between}
-.brand{display:flex;align-items:center;gap:10px;font-family:'Fredoka';font-weight:700;font-size:17pt}
-.brand img{width:38px;height:38px;border-radius:10px}
-.tag{font-family:'Fredoka';font-weight:600;font-size:8.5pt;letter-spacing:.08em;text-transform:uppercase;color:var(--peach-d)}
-h1{font-size:30pt;font-weight:700}
-.lede{font-size:12pt;margin-top:6px;max-width:6.6in}
-.trust{display:flex;gap:16px;font-weight:700;font-size:9.5pt;margin-top:8px}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Fredoka';font-weight:700;font-size:16pt}
+.brand img{width:34px;height:34px;border-radius:9px}
+.tag{font-family:'Fredoka';font-weight:600;font-size:8pt;letter-spacing:.08em;text-transform:uppercase;color:var(--peach-d)}
+.head{display:grid;grid-template-columns:1.25fr 1fr;gap:.22in;align-items:center}
+h1{font-size:28pt;font-weight:700}
+.lede{font-size:11pt;margin-top:5px}
+.trust{display:flex;gap:12px;font-weight:700;font-size:9pt;margin-top:7px;flex-wrap:wrap}
 .trust span::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--sun);border:2px solid var(--bark);margin-right:5px;vertical-align:-1px}
-.why{background:var(--mint);border-radius:16px;padding:.15in .2in}
-.why p{margin-top:4px}
-.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:.14in}
-.tier{background:#fff;border:2px solid rgba(93,64,55,.12);border-radius:16px;padding:.14in .16in;display:flex;flex-direction:column;gap:5px}
-.tier h3{font-size:13pt;font-weight:700}
-.kick{font-family:'Fredoka';font-weight:600;font-size:8pt;letter-spacing:.08em;text-transform:uppercase;color:var(--peach-d)}
-.tier p{font-size:9.5pt}
-.tier b{font-weight:700}
-.when{margin-top:auto;font-family:'Fredoka';font-weight:600;background:var(--mint-l);border-radius:10px;padding:4px 8px;text-align:center;font-size:9pt}
+.hero{width:100%;height:2.05in;object-fit:cover;object-position:60% 55%;border-radius:16px;border:2px solid rgba(93,64,55,.12)}
+.why{background:var(--mint);border-radius:14px;padding:.1in .16in}
+.why p{margin-top:2px;font-size:9.2pt}
+.sec{font-family:'Fredoka';font-weight:700;font-size:15pt}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:.12in}
+.tier{background:#fff;border:2px solid rgba(93,64,55,.12);border-radius:14px;padding:.11in .13in;display:flex;flex-direction:column;gap:4px}
+.kick{font-family:'Fredoka';font-weight:600;font-size:7.6pt;letter-spacing:.08em;text-transform:uppercase;color:var(--peach-d)}
+.tier h3{font-size:12.5pt;font-weight:700}
+.tier p{font-size:9pt}
+.ex{display:flex;align-items:center;gap:8px;background:var(--cream);border:2px solid rgba(93,64,55,.12);border-radius:10px;padding:5px 8px 5px 5px;margin-top:3px;font-family:'Fredoka';font-weight:600;font-size:8.6pt;line-height:1.15}
+.ex img{height:.82in;width:.6in;object-fit:cover;object-position:top;border-radius:5px;flex:none}
+.ex img.ph{object-fit:contain}
+.ex small{display:block;font-family:'Nunito';font-weight:400;font-size:7.6pt;opacity:.8}
+.when{margin-top:auto;font-family:'Fredoka';font-weight:600;background:var(--mint-l);border-radius:9px;padding:3px 8px;text-align:center;font-size:8.6pt}
 .tier.run .when{background:var(--yl)}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:.14in}
-.box{background:#fff;border:2px dashed rgba(93,64,55,.18);border-radius:14px;padding:.12in .16in}
-.box h3{font-size:11.5pt;margin-bottom:3px}
-.cta{background:var(--yl);border-radius:18px;padding:.17in .22in;text-align:center;margin-top:auto}
-.cta h2{font-size:17pt}
-.cta p{margin-top:3px}
-.cta .big{font-family:'Fredoka';font-weight:700;font-size:12pt;margin-top:6px}
-.fine{font-size:8pt;opacity:.75;text-align:center}
+.mech{background:#fff;border:2px dashed rgba(93,64,55,.18);border-radius:12px;padding:.09in .15in;font-size:9.2pt}
+.cta{background:var(--yl);border-radius:16px;padding:.13in .2in;text-align:center;margin-top:auto}
+.cta h2{font-size:16pt}
+.cta p{margin-top:2px}
+.cta .big{font-family:'Fredoka';font-weight:700;font-size:11.5pt;margin-top:5px}
+.fine{font-size:7.6pt;opacity:.75;text-align:center}
 </style></head><body>
 <div class="top"><div class="brand"><img src="../assets/mascot-logo.png" alt="">Wild Atlas</div><span class="tag">For zoos &amp; aquariums</span></div>
-<div>
-  <h1>Extend the visit home.</h1>
-  <p class="lede">A child who just met an octopus wants more the second they&rsquo;re in the car. Give your families a safe, ad-free way to keep exploring &mdash; with your name on it.</p>
-  <div class="trust"><span>No ads</span><span>Works offline</span><span>COPPA-compliant</span></div>
+<div class="head">
+  <div>
+    <h1>Extend the visit home.</h1>
+    <p class="lede">A child who just met an octopus wants more the second they&rsquo;re in the car. Give your families a safe, ad-free way to keep exploring &mdash; with your name on it.</p>
+    <div class="trust"><span>No ads</span><span>Works offline</span><span>COPPA-compliant</span></div>
+  </div>
+  <img class="hero" src="../assets/partners/hero-riverbend.jpg" alt="">
 </div>
-<div class="why"><h3>Why families trust it</h3>
-  <p>Wild Atlas is a narrated, documentary-style animal encyclopedia for ages 3&ndash;9: 200+ animals across 13 packs (3 always free), read aloud in 5 languages. Founded by Josh Vincent, who grew up in a conservation documentary filmmaking family. 10% of proceeds are pledged to conservation. We just launched, so we&rsquo;re not bringing you traffic &mdash; we&rsquo;re giving your families something trustworthy to take home.</p></div>
-<div><p class="tag">Start small, grow as it works</p><h2 style="font-size:17pt;margin:2px 0 8px">Crawl, walk, run.</h2>
+<div class="why"><b style="font-family:Fredoka;font-size:11pt">Why families trust it</b>
+  <p>A narrated, documentary-style animal encyclopedia for ages 3&ndash;9: 200+ animals across 13 packs (3 always free), read aloud in 5 languages. Founded by Josh Vincent, who grew up in a conservation documentary filmmaking family. 10% of proceeds are pledged to conservation. We just launched, so we&rsquo;re not bringing you traffic &mdash; we&rsquo;re giving your families something trustworthy to take home.</p></div>
+<div><p class="tag">Start small, grow as it works</p><h2 class="sec">Crawl, walk, run.</h2></div>
 <div class="tiers">
   <div class="tier"><span class="kick">1 &middot; Crawl &middot; Give</span><h3>A free member perk</h3>
-    <p><b>You:</b> hand departing families a free unlock code with your venue&rsquo;s name on it &mdash; exit poster, QR, or a line in a member email.</p>
-    <p><b>Get:</b> a send-off that costs nothing. Families get a free animal pack ($3.99 value), its printable coloring book, and the books for our other free packs.</p><p><b>Cost:</b> $0.</p><div class="when">Live this week</div></div>
+    <p>Hand departing families a free unlock code with your venue&rsquo;s name on it, on an exit poster, a QR, or a line in a member email. Families get a free animal pack ($3.99 value), its printable coloring book, and the books for our other free packs. <b>Cost: $0.</b></p>
+    <div class="ex"><img src="../assets/partners/crawl-poster.jpg" alt=""><span>Crawl kit<small>Poster, desk card, member email</small></span></div>
+    <div class="when">Live this week</div></div>
   <div class="tier"><span class="kick">2 &middot; Walk &middot; Co-market</span><h3>Perks + a take-home book</h3>
-    <p><b>You:</b> a coloring and puzzle book made for your venue. Email it to members as a PDF, hand it out, or give away or sell it. Plus a members&rsquo; discount.</p>
-    <p><b>Get:</b> everything in Crawl, plus a keepsake that&rsquo;s yours. Sell it and we can share revenue, or keep it free.</p><p><b>Cost:</b> low to none.</p><div class="when">Live in weeks</div></div>
+    <p>A coloring and puzzle book made for your venue: your animals, their names, your logo. Email it to members as a PDF, hand it out, or give it away or sell it. Plus a members&rsquo; discount. If you sell it, we can share revenue, or keep it free. <b>Cost: low to none.</b></p>
+    <div class="ex"><img src="../assets/partners/book-cover.jpg" alt=""><span>Example book<small>50 pages: color, puzzles, map</small></span></div>
+    <div class="when">Live in weeks</div></div>
   <div class="tier run"><span class="kick">3 &middot; Run &middot; Build</span><h3>Your own animals</h3>
-    <p><b>You:</b> co-create a venue pack &mdash; your animals, branding and a map of your grounds.</p>
-    <p><b>Get:</b> a branded experience to give members free. If we turn it into a paid product together, we share the revenue.</p><p><b>Cost:</b> on us &mdash; we build it.</p><div class="when">A project, together</div></div>
-</div></div>
-<div class="row">
-  <div class="box"><h3>How redemption works</h3><p>Apple offer codes: one custom code per venue (e.g. RIVERBEND), redeemed in one tap by link or the app&rsquo;s &ldquo;Redeem a Code&rdquo; sheet. Member-exclusive, with a redemption cap and optional expiry. Nothing to build on your side.</p></div>
-  <div class="box"><h3>The co-branded book</h3><p>Your hero animals in connect-the-dots, mazes and spot-the-difference pages, your logo on the cover, and a &ldquo;claim your free pack&rdquo; page in the back. Pre-reader friendly, ages 3&ndash;9. See the example at wildatlasapp.com/partners.</p></div>
+    <p>Co-create a venue pack: your animals, your branding, a map of your grounds. A place for your venue on every child&rsquo;s home screen, free to give members. If we turn it into a paid product together, we share the revenue. <b>Cost: on us.</b></p>
+    <div class="ex"><img class="ph" src="../assets/partners/run-home-phone.png" alt=""><span>Concept screens<small>My Places, your page, top exhibits</small></span></div>
+    <div class="when">A project, together</div></div>
 </div>
+<div class="mech"><b>How redemption works:</b> Apple offer codes. One custom code per venue (e.g. RIVERBEND), redeemed in one tap by link or in the app&rsquo;s &ldquo;Redeem a Code&rdquo; sheet. Member-exclusive, with a redemption cap and optional expiry. Nothing to build on your side.</div>
 <div class="cta"><h2>Let&rsquo;s find your first rung.</h2><p>A 15-minute call is enough to pick a tier, set up a code, and get something in your families&rsquo; hands.</p>
   <p class="big">partners@wildatlasapp.com &nbsp;&middot;&nbsp; wildatlasapp.com/partners</p></div>
-<p class="fine">&ldquo;Riverbend Aquarium&rdquo; is a fictional example venue. &copy; 2026 Wild Atlas.</p>
+<p class="fine">&ldquo;Riverbend Aquarium&rdquo; is a fictional example venue; the examples are concepts. &copy; 2026 Wild Atlas.</p>
 </body></html>
