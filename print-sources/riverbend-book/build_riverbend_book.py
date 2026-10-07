@@ -27,9 +27,9 @@ VENUE = "Riverbend Aquarium"
 
 # (animal, activity, params). Never the same activity twice in a row.
 BOOK = [
-  ("octopus", "spot2", dict(removes=[(250, 1037), (436, 1484)], hide=[(0.635, 0.04, 0.715, 0.125)],
+  ("octopus", "spot2", dict(removes=[(250, 1037), (436, 1484)], holes=[(1464, 160, 44)],
                              adds=[("clownfish", 800, 1010, 190, False), ("seahorse", 1500, 1040, 270, False)],
-                             hide_label="", text="{n} differences: the octopus's eye is gone, the left coral and the sponge are gone, and a clownfish and a seahorse have appeared.")),
+                             text="{n} things missing in the bottom picture: the octopus's eye, the left coral, the sponge, the clownfish and the seahorse.")),
   ("capybara", "maze", dict(prompt="Help the little capybara find its mom!", seed=5)),
   ("clownfish", "count", dict(counts={"clownfish": 5, "starfish": 4, "seahorse": 3},
                               sizes={"clownfish": 230, "starfish": 190, "seahorse": 210}, scene="ocean")),
@@ -558,44 +558,43 @@ def act_dots_rich(F, D, A, logo, k, N=84, masters=None):
     for j, (x, y) in enumerate(extra, len(pts) + 1): put(j, x, y, cxm, cym)
     return p.img, None
 
-def act_spot2(F, D, S, A, logo, k, removes, hide, adds, hide_label, text):
-    """Spot the Difference with a mix of changes in the bottom picture: things removed (coral, sponge, an eye) and things added
-    (animals from the Wild Atlas line art). removes/adds use art pixel coordinates; hide boxes are fractions of the art."""
+def act_spot2(F, D, S, A, logo, k, removes, holes, adds, text):
+    """Spot the Difference. The TOP picture is the complete original (including the added animals). The BOTTOM picture has
+    things missing: removed coral/sponge components, round holes (the eye) and the animals that appear only on top.
+    removes/holes/adds use art pixel coordinates; holes are (cx, cy, radius)."""
     import numpy as np, cv2
     from PIL import ImageChops
     base = S.art(k).point(lambda v: 0 if v < 150 else 255); a = np.array(base); h_, w_ = a.shape
     n, lab, st, cen = cv2.connectedComponentsWithStats((a == 0).astype(np.uint8), 8)
     big = max(range(1, n), key=lambda i: st[i, cv2.CC_STAT_AREA])
     b = a.copy(); marks = []
-    for cx, cy in removes:                                                   # remove the nearest sizeable component
+    for cx, cy in removes:                                                   # remove the nearest sizeable component + its residue
         cand = [i for i in range(1, n) if i != big and st[i, cv2.CC_STAT_AREA] > 1200]
         i = min(cand, key=lambda i: np.hypot(cen[i][0] - cx, cen[i][1] - cy))
         x0_, y0_, ww_, hh_ = st[i, 0], st[i, 1], st[i, 2], st[i, 3]
-        inside_box = np.isin(lab, [j for j in range(1, n) if j != big and st[j, 0] >= x0_ - 20 and st[j, 1] >= y0_ - 20
-                                   and st[j, 0] + st[j, 2] <= x0_ + ww_ + 20 and st[j, 1] + st[j, 3] <= y0_ + hh_ + 20])
+        inside_box = np.isin(lab, [j for j in range(1, n) if j != big and x0_ - 70 <= cen[j][0] <= x0_ + ww_ + 70
+                                   and y0_ - 70 <= cen[j][1] <= y0_ + hh_ + 70 and st[j, 2] < 700 and st[j, 3] < 700])
         b[inside_box] = 255; marks.append((cen[i][0], cen[i][1], max(ww_, hh_) / 2))
-    for x0, y0, x1, y1 in hide:
-        bx = (int(x0 * w_), int(y0 * h_), int(x1 * w_), int(y1 * h_)); b[bx[1]:bx[3], bx[0]:bx[2]] = 255
-        marks.append(((bx[0] + bx[2]) / 2, (bx[1] + bx[3]) / 2, max(bx[2] - bx[0], bx[3] - bx[1]) / 2))
-    bimg = Image.fromarray(b)
-    for animal, cx, cy, hpx, flip in adds:                                    # add small animals (line art)
+    for cx, cy, rad in holes:                                                # a round, neat hole (the eye)
+        cv2.circle(b, (int(cx), int(cy)), int(rad), 255, -1); marks.append((cx, cy, rad * 1.5))
+    top = Image.fromarray(a)
+    for animal, cx, cy, hpx, flip in adds:                                    # animals present on top only
         la = A.lineart(animal, 4).convert("L")
         if flip: la = ImageOps.mirror(la)
         la = la.crop(ImageOps.invert(la).getbbox()); la = la.resize((int(la.width * hpx / la.height), hpx), Image.LANCZOS)
-        pad = Image.new("L", bimg.size, 255); pad.paste(la, (int(cx - la.width / 2), int(cy - la.height / 2)))
-        bimg = ImageChops.darker(bimg, pad); marks.append((cx, cy, max(la.width, la.height) / 2))
-    n_d = len(marks)
-    p = bf.page(F, "Spot the Difference", f"Find {n_d} differences in the bottom picture. Circle them!", D.name(k), D.pack(k), logo, "find")
-    top = p.y + 10; gap = 40; ph = (p.body_bottom - top - gap) / 2
-    crop_h = int(.82 * h_)
-    for j, im in enumerate((Image.fromarray(a).crop((0, 0, w_, crop_h)), bimg.crop((0, 0, w_, crop_h)))):
-        r = paste_fit(p.img, im, (M, top + j * (ph + gap), W - M, top + j * (ph + gap) + ph))
+        pad = Image.new("L", top.size, 255); pad.paste(la, (int(cx - la.width / 2), int(cy - la.height / 2)))
+        top = ImageChops.darker(top, pad); marks.append((cx, cy, max(la.width, la.height) / 2))
+    bottom = Image.fromarray(b); n_d = len(marks)
+    p = bf.page(F, "Spot the Difference", f"Find {n_d} things missing in the bottom picture. Circle them!", D.name(k), D.pack(k), logo, "find")
+    t0 = p.y + 10; gap = 40; ph = (p.body_bottom - t0 - gap) / 2; crop_h = int(.82 * h_)
+    r = None
+    for j, im in enumerate((top.crop((0, 0, w_, crop_h)), bottom.crop((0, 0, w_, crop_h)))):
+        r = paste_fit(p.img, im, (M, t0 + j * (ph + gap), W - M, t0 + j * (ph + gap) + ph))
         rbox(p.d, [r[0] - 8, r[1] - 8, r[2] + 8, r[3] + 8], r=24, width=5)
-    fr = r  # last frame rect from paste_fit
     for x in range(n_d):
-        cx = fr[2] + 62 + x * 54
-        p.d.ellipse([cx - 20, top + ph + gap / 2 - 20, cx + 20, top + ph + gap / 2 + 20], outline=INK, width=4)
-    key = bimg.convert("RGB"); kd = ImageDraw.Draw(key)
+        cx = r[2] + 62 + x * 54
+        p.d.ellipse([cx - 20, t0 + ph + gap / 2 - 20, cx + 20, t0 + ph + gap / 2 + 20], outline=INK, width=4)
+    key = bottom.convert("RGB"); kd = ImageDraw.Draw(key)
     for cx, cy, rr in marks:
         rr = max(rr * 1.2, 70); kd.ellipse([cx - rr, cy - rr, cx + rr, cy + rr], outline=INK, width=14)
     return p.img, dict(kind="spot", img=key, text=text.format(n=n_d))
