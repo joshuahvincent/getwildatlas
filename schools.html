@@ -280,7 +280,7 @@
               <dt>Get</dt><dd>A Wild Atlas pack in the app with those 18 animals, free for your school and families. One pack for the whole school, so every class can use it, now and in future years. Kids play with the animals your school chose and learn about them.</dd>
               <dt>Cost</dt><dd>On us &mdash; we build it. Free right now.</dd>
             </dl>
-            <a class="pp-example" href="#run"><img class="thumb-phone" src="/assets/partners/schools-app-pack.png" alt="" loading="lazy"><span>See what a pack is<small>In the app, with your 18 animals &darr;</small></span></a>
+            <a class="pp-example" href="#run"><img class="thumb-phone" src="/assets/partners/school-pack-phone.png" alt="" loading="lazy"><span>See what a pack is<small>In the app, with your 18 animals &darr;</small></span></a>
             <!-- TODO (Josh): add a real timeline chip for Run. Not invented here. -->
             <div class="pp-when">A project, together</div>
           </div>
@@ -319,8 +319,9 @@
       </div>
     </section>
 
-    <!-- RUN EXAMPLE: what a pack is (real app screens for now) -->
-    <!-- TODO (Anna): replace these real-app screens with school concept screens (Pebble Brook school pack: Home tile, pack page, animal page) and a walkthrough video, like /partners. Handoff prompt: print-sources/schools-book/ANNA_HANDOFF_SCHOOLS.md -->
+    <!-- RUN EXAMPLE: Anna's concept screens (print-sources/schools-book/screens-anna). Part real app capture, part drawn; see DESIGN_NOTE.md. -->
+    <!-- COPY REVIEW (Cole + advisors): captions, the Concept note, and the pack copy below. Still class-first elsewhere on the page: the offer-code paragraph says "one custom code per class or school" (Anna recommends one code per school). -->
+    <!-- JOSH TO OK: the Home screen shows the fictional Riverbend Aquarium card next to the school card (to show places include schools). If no, ask Anna for a version without it; do not crop. -->
     <section class="pp-section" id="run">
       <div class="container">
         <div class="pp-head">
@@ -330,19 +331,25 @@
         </div>
         <div class="pp-phones" id="pack">
           <figure class="pp-phone-wrap">
-            <img src="/assets/partners/schools-app-pack.png" width="676" height="1286" alt="A pack page in the Wild Atlas app showing a grid of animals" loading="lazy">
+            <img src="/assets/partners/school-home-phone.png" width="718" height="1375" alt="The Wild Atlas home screen with a My Places section showing a Pebble Brook&rsquo;s Pack card next to a Riverbend Aquarium card" loading="lazy">
+            <figcaption>Your school&rsquo;s place on every child&rsquo;s Home screen</figcaption>
+          </figure>
+          <figure class="pp-phone-wrap">
+            <img src="/assets/partners/school-pack-phone.png" width="718" height="1375" alt="The Pebble Brook&rsquo;s Pack page with a grid of nine animals and page buttons 1 and 2" loading="lazy">
             <figcaption>Your 18 animals, together in one pack</figcaption>
           </figure>
           <figure class="pp-phone-wrap">
-            <img src="/assets/partners/schools-app-animal.png" width="676" height="1286" alt="An animal page in the Wild Atlas app with a picture, a safety guide and a world map showing where the animal lives" loading="lazy">
-            <figcaption>Each animal has a picture, facts read aloud, and a map of where it lives</figcaption>
+            <img src="/assets/partners/school-animal-phone.png" width="718" height="1375" alt="A golden retriever page in the Wild Atlas app with a cue that it comes from Pebble Brook&rsquo;s pack" loading="lazy">
+            <figcaption>Each animal shows it came from your school&rsquo;s pack</figcaption>
           </figure>
-          <figure class="pp-phone-wrap">
-            <img src="/assets/partners/schools-app-quiz.png" width="676" height="1286" alt="A picture quiz question in the Wild Atlas app" loading="lazy">
-            <figcaption>Quizzes to play</figcaption>
+          <figure class="pp-phone-wrap pp-video">
+            <video id="flowVideo" controls muted loop playsinline preload="metadata" poster="/assets/partners/school-flow-poster.jpg" width="604" height="1312" aria-label="Concept walkthrough, 23 seconds: the Home screen scrolls to My Places, Pebble Brook&rsquo;s Pack opens, and a golden retriever page follows." aria-describedby="flowCap">
+              <source src="/assets/partners/school-flow.mp4" type="video/mp4">
+            </video>
+            <figcaption id="flowCap">Concept walkthrough (23 seconds): Home, My Places, the school pack, then a golden retriever</figcaption>
           </figure>
         </div>
-        <p class="pp-run-note"><span class="pp-note">From the app</span> These are real Wild Atlas screens, from the Dino Roars pack and the orca page. Your school pack works the same way, with your 18 animals. School-specific screens are coming.</p>
+        <p class="pp-run-note"><span class="pp-note">Concept screens</span> Pebble Brook Elementary is a fictional school. These show what we would build, not what ships today. Part of the screens and walkthrough is real app capture and part is drawn. Animal art is from the Wild Atlas app.</p>
       </div>
     </section>
 
@@ -425,6 +432,25 @@
       </div>
     </section>
   </main>
+
+  <script>
+    // Concept video: it loads and plays only when scrolled into view (so phones don't download it up front), never autoplays for people who prefer
+    // reduced motion, and stays paused if the viewer pauses it.
+    (function () {
+      var v = document.getElementById('flowVideo'); if (!v) return;
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce) { v.removeAttribute('autoplay'); v.pause(); return; }
+      var visible = false, userPaused = false, autoPausing = false;
+      v.addEventListener('pause', function () { if (visible && !autoPausing && !v.ended) userPaused = true; });
+      v.addEventListener('play', function () { userPaused = false; });
+      if (!('IntersectionObserver' in window)) return;
+      new IntersectionObserver(function (es) {
+        visible = es[0].isIntersecting;
+        if (visible && !userPaused) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+        else if (!visible) { autoPausing = true; v.pause(); autoPausing = false; }
+      }, { threshold: 0.35 }).observe(v);
+    })();
+  </script>
 
 
   <!-- FOOTER -->
