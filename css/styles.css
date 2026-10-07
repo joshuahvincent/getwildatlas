@@ -1555,6 +1555,21 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   .trust-pillars { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* Mid-width header: seven links plus the language picker and CTA need tighter spacing before the mobile menu takes over (769-1180px) */
+@media (min-width: 769px) and (max-width: 1180px) {
+  .nav-links { gap: var(--space-md); }
+  .nav-links a { font-size: 0.92rem; white-space: nowrap; }
+  .nav-cta { padding: 9px 16px; }
+  .nav-title { font-size: 1.3rem; white-space: nowrap; }
+  .nav-icon { width: 38px; height: 38px; }
+}
+@media (min-width: 769px) and (max-width: 940px) {
+  .nav-container { padding: 0 var(--space-md); }
+  .nav-links { gap: 12px; }
+  .nav-links a { font-size: 0.86rem; }
+  .nav-brand { gap: 8px; }
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .nav-toggle { display: flex; }
