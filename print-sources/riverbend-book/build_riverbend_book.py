@@ -174,29 +174,30 @@ def wa_lockup(F, height=190):
 
 def welcome_page(F, logo_color, logo_small):
     img = Image.new("RGB", (W, H), "white"); d = ImageDraw.Draw(img)
-    y = 150
-    d.text((M, y), f"Welcome to {VENUE}!", font=F.fredoka(84, 700), fill=NAVY); y += 125
-    paras = [("How this book works", "Every animal gets two pages: the animal to color on the left, with real facts to read aloud, and a puzzle or something to draw on the right. "
-                                    "Read each one-line instruction once; the little picture reminds your explorer what to do."),
-             ("Crayons and colored pencils work best", "Markers may show through to the next page. Most answers are printed upside down on the page; the rest are in the answer key."),
+    y = 105
+    d.text((M, y), f"Welcome to {VENUE}!", font=F.fredoka(78, 700), fill=NAVY); y += 112
+    paras = [("Our story", "Riverbend Aquarium opened in 1987, started by teachers, fishers and neighbors who wanted every child in town to meet the animals of the water up close. "
+                           "Today we care for more than 60 kinds of animals and give rescued otters and sea lions a safe home. Every visit helps fund animal care, rescue work and free school programs. "
+                           "We hope this book keeps the wonder going long after you leave."),
+             ("How this book works", "Every animal gets two pages: the animal to color on the left, with real facts to read aloud, and a puzzle or something to draw on the right. "
+                                     "Read each one-line instruction once; the little picture reminds your explorer what to do. Crayons and colored pencils work best. Most answers are printed upside down on the page; the rest are in the answer key."),
              ("A free animal pack", "This book includes a free animal pack for the Wild Atlas app, a safe, ad-free animal encyclopedia for kids. The claim page is near the back of the book.")]
     for h, t in paras:
-        d.text((M, y), h, font=F.fredoka(46, 650), fill=(30, 30, 30)); y += 64
-        y = text_block(d, (M, y), t, F.nunito(37), W - 2 * M, spacing=1.32) + 34
+        d.text((M, y), h, font=F.fredoka(46, 650), fill=(30, 30, 30)); y += 62
+        y = text_block(d, (M, y), t, F.nunito(36), W - 2 * M, spacing=1.3) + 28
     # venue card
-    ch = 330; cy = y + 6
+    ch = 300; cy = y + 4
     d.rounded_rectangle([M, cy, W - M, cy + ch], radius=34, outline=NAVY, width=6, fill="white")
     lg = logo_color.resize((520, int(logo_color.height * 520 / logo_color.width)), Image.LANCZOS)
     img.paste(lg, (M + 40, cy + (ch - lg.height) // 2))
     x = M + 640; yy = cy + 44
-    d.text((x, yy), CONTACT["name"], font=F.fredoka(52, 700), fill=NAVY); yy += 74
+    d.text((x, yy), CONTACT["name"], font=F.fredoka(50, 700), fill=NAVY); yy += 66
     for ln in (f"{CONTACT['addr1']}, {CONTACT['addr2']}", f"Phone: {CONTACT['phone']}", f"Email: {CONTACT['email']}", CONTACT["web"]):
-        d.text((x, yy), ln, font=F.nunito(36, True), fill=(40, 40, 40)); yy += 52
+        d.text((x, yy), ln, font=F.nunito(34, True), fill=(40, 40, 40)); yy += 46
     # image strip: imaginary aquarium views
-    sy = cy + ch + 60
-    d.text((M, sy), "Around the aquarium", font=F.fredoka(46, 650), fill=(30, 30, 30)); sy += 80
+    sy = cy + ch + 44
     names = [("entrance", "The entrance"), ("tunnel", "Ocean Tunnel"), ("jellies", "Jellyfish Hall"), ("touchpool", "Touch Pool")]
-    gap = 22; tw = (W - 2 * M - 3 * gap) // 4; th = int(tw * 1.12)
+    gap = 22; tw = (W - 2 * M - 3 * gap) // 4; th = int(tw * .85)
     for i, (key, cap) in enumerate(names):
         x0 = M + i * (tw + gap); fp = os.path.join(HERE, "aquarium", key + ".jpg")
         if os.path.exists(fp):
