@@ -1,0 +1,7 @@
+{
+  "file": "classroom.jpg",
+  "model": "gemini-3.1-flash-image-preview",
+  "aspectRatio": "4:3",
+  "prompt": "Photorealistic, natural light, high detail, warm and welcoming, editorial photography. A bright pre-kindergarten classroom: low round tables with small chairs, a rug with a reading corner, shelves of picture books and baskets of toys, big sunny windows, colorful drawings pinned on a wall (no readable writing). No people. No text, no letters, no numbers, no signage with writing, no logos, no watermarks, no real brands, no identifiable faces. ",
+  "generated_at": "2026-10-07T16:18:13.973813Z"
+}

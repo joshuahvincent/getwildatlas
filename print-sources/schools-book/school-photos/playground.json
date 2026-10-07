@@ -1,0 +1,7 @@
+{
+  "file": "playground.jpg",
+  "model": "gemini-3.1-flash-image-preview",
+  "aspectRatio": "4:3",
+  "prompt": "Photorealistic, natural light, high detail, warm and welcoming, editorial photography. A school playground on a sunny day: a wooden climbing frame with a small slide, raised garden beds with sunflowers, a grassy field behind, trees. No people. No text, no letters, no numbers, no signage with writing, no logos, no watermarks, no real brands, no identifiable faces. ",
+  "generated_at": "2026-10-07T16:18:24.171483Z"
+}
