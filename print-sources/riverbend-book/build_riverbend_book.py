@@ -27,7 +27,9 @@ VENUE = "Riverbend Aquarium"
 
 # (animal, activity, params). Never the same activity twice in a row.
 BOOK = [
-  ("octopus", "spot", dict(hide=[(0.635, 0.04, 0.715, 0.125)], hide_label="the octopus's eye")),
+  ("octopus", "spot2", dict(removes=[(250, 1037), (436, 1484)], hide=[(0.635, 0.04, 0.715, 0.125)],
+                             adds=[("clownfish", 800, 1010, 190, False), ("seahorse", 1500, 1040, 270, False)],
+                             hide_label="", text="{n} differences: the octopus's eye is gone, the left coral and the sponge are gone, and a clownfish and a seahorse have appeared.")),
   ("capybara", "maze", dict(prompt="Help the little capybara find its mom!", seed=5)),
   ("clownfish", "count", dict(counts={"clownfish": 5, "starfish": 4, "seahorse": 3},
                               sizes={"clownfish": 230, "starfish": 190, "seahorse": 210}, scene="ocean")),
@@ -40,11 +42,11 @@ BOOK = [
   ("manta_ray", "trace", dict(word="Manta")),
   ("sea_lion", "spot", dict(hide=[(0.70, 0.67, 0.84, 0.92)], hide_label="the sea lion's flipper")),
   ("glass_frog", "big", dict(rows=[("glass_frog", "sea_otter"), ("clownfish", "sea_turtle"), ("starfish", "octopus")])),
-  ("starfish", "dots_outline", {}),
+  ("starfish", "dots_rich", dict(N=64)),
   ("moray_eel", "odd", dict(rows=[("moray_eel", "seahorse"), ("clownfish", "jellyfish"), ("starfish", "moray_eel")])),
   ("atlantic_puffin", "scramble", dict(items=[("atlantic_puffin", "PUFFIN"), ("octopus", "OCTOPUS"), ("sea_otter", "OTTER"),
                                               ("clownfish", "CLOWNFISH"), ("starfish", "STARFISH")])),
-  ("emperor_penguin", "dots", {}),
+  ("emperor_penguin", "dots_rich", dict(N=68)),
   ("tree_frog", "shadow", dict(ks=["tree_frog", "glass_frog", "poison_dart_frog", "axolotl"])),
   ("axolotl", "odd", dict(rows=[("axolotl", "sea_otter"), ("walrus", "atlantic_puffin"), ("axolotl", "platypus")])),
   ("alligator", "home", dict(prompt="I live in rivers and swamps. Draw my home: add water, reeds and maybe a fish!")),
@@ -425,6 +427,179 @@ def act_dots_outline(F, D, A, logo, k, N=60):
         p.d.text((X + vx / nr * 34, Y + vy / nr * 34), str(i), font=f, fill=INK, anchor="mm")
     return p.img, None
 
+# ------------------------------------------------------------------------------------------------ richer dot-to-dots, bigger spot-the-difference
+def _master_crop(k, masters):
+    """The RGBA master cropped exactly like Masters._load (alpha bbox + 12px pad), so contours line up with A.contour/A.size."""
+    import numpy as np
+    im = np.array(Image.open(os.path.join(masters, f"{k}.png")).convert("RGBA")); a = im[:, :, 3]
+    ys, xs = np.where(a > 20); pad = 12
+    y0, y1, x0, x1 = max(ys.min() - pad, 0), ys.max() + pad, max(xs.min() - pad, 0), xs.max() + pad
+    return im[y0:y1, x0:x1]
+
+def _resample(c, spacing):
+    import numpy as np
+    closed = np.vstack([c, c[:1]]); seg = np.r_[0, np.cumsum(np.hypot(*np.diff(closed, axis=0).T))]
+    n = max(6, int(seg[-1] // spacing))
+    return np.array([closed[np.searchsorted(seg, t, side="right") - 1] for t in np.linspace(0, seg[-1], n, endpoint=False)])
+
+def _closed_mask(rgba, k=41):
+    import numpy as np, cv2
+    m = (rgba[:, :, 3] > 20).astype(np.uint8) * 255
+    return cv2.morphologyEx(m, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k)))
+
+def _largest_contour(mask):
+    import numpy as np, cv2
+    cs, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+    return max(cs, key=cv2.contourArea)[:, 0, :].astype(float)
+
+def _penguin_features(rgba):
+    """Closed contours (master px) of the head, orange collar, wings and the face marks, found by color."""
+    import numpy as np, cv2
+    rgb = rgba[:, :, :3].astype(int); a = rgba[:, :, 3] > 20; h, w = a.shape
+    dark = ((rgb.sum(2) < 210) & a).astype(np.uint8)
+    orange = (((rgb[:, :, 0] > 170) & (rgb[:, :, 0] - rgb[:, :, 2] > 70)) & a).astype(np.uint8)
+    cs = []
+    def add(m, minpts=8):
+        m = cv2.morphologyEx(m, cv2.MORPH_CLOSE, np.ones((7, 7), np.uint8))
+        found, _ = cv2.findContours(m, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+        if found:
+            c = max(found, key=cv2.contourArea)[:, 0, :].astype(float)
+            if len(c) >= minpts: cs.append(c)
+    n, lab, st, cen = cv2.connectedComponentsWithStats(dark, 8)
+    for i in range(1, n):
+        if st[i, cv2.CC_STAT_AREA] > 0.004 * h * w and cen[i][1] < 0.82 * h: add((lab == i).astype(np.uint8))
+    n3, lab3, st3, _ = cv2.connectedComponentsWithStats(orange, 8)
+    for i in range(1, n3):
+        if st3[i, cv2.CC_STAT_AREA] > 0.0004 * h * w: add((lab3 == i).astype(np.uint8), 5)
+    light = ((rgb.sum(2) > 690) & a).astype(np.uint8)                       # the white belly
+    n4, lab4, st4, _ = cv2.connectedComponentsWithStats(light, 8)
+    if n4 > 1:
+        big = 1 + int(np.argmax(st4[1:, cv2.CC_STAT_AREA])); add((lab4 == big).astype(np.uint8))
+    # face marks: light spots inside the dark head
+    head = np.zeros_like(dark); ys, xs = np.where(dark[: int(.2 * h)] > 0)
+    if len(xs):
+        x0, x1, y0, y1 = xs.min(), xs.max(), ys.min(), ys.max()
+        spot = ((rgb.sum(2) > 330) & a); spot[:, :x0] = False; spot[:, x1:] = False; spot[:y0] = False; spot[y1:] = False
+        n2, lab2, st2, _ = cv2.connectedComponentsWithStats(spot.astype(np.uint8), 8)
+        for i in range(1, n2):
+            if 20 < st2[i, cv2.CC_STAT_AREA] < 0.004 * h * w: add((lab2 == i).astype(np.uint8), 4)
+    return cs
+
+def _starfish_features(A, k):
+    """Peaks (tips) and valleys of the starfish outline, in master px, plus its center."""
+    import numpy as np
+    c = A.contour(k); cen = c.mean(0); v = c - cen; r = np.hypot(v[:, 0], v[:, 1]); th = np.arctan2(v[:, 1], v[:, 0])
+    order = np.argsort(th); th, r, c = th[order], r[order], c[order]
+    rs = np.convolve(np.r_[r[-9:], r, r[:9]], np.ones(19) / 19, mode="same")[9:-9]
+    peaks = []
+    for i in np.argsort(-rs):
+        if all(min(abs(th[i] - th[j]), 2 * np.pi - abs(th[i] - th[j])) > np.radians(50) for j in peaks): peaks.append(i)
+        if len(peaks) == 5: break
+    peaks.sort(key=lambda i: th[i])
+    tips = [(c[i], th[i]) for i in peaks]
+    return tips, cen, float(np.median(rs))
+
+def act_dots_rich(F, D, A, logo, k, N=84, masters=None):
+    """Dot-to-dot with a finer outline plus extra inside definition.
+    penguin: head, collar, wings and face marks as dotted guide lines; starfish: a numbered inner star plus ring 'nodules'."""
+    import numpy as np, cv2
+    masters = masters or os.path.join(REPO, "GeneratedStyleAssetsMaster", "animals")
+    rgba = _master_crop(k, masters)
+    ink = "Connect the dots from 1 to the end. Then trace the dotted lines inside!" if k == "emperor_penguin" else "Connect the dots from 1 to the end, even the star inside. Then color me in!"
+    p = bf.page(F, "Dot-to-Dot", ink, D.name(k), D.pack(k), logo, "connect")
+    closed = _closed_mask(rgba, 29 if k == "emperor_penguin" else 15)
+    c = _largest_contour(closed)
+    cl = np.vstack([c, c[:1]]); seg = np.r_[0, np.cumsum(np.hypot(*np.diff(cl, axis=0).T))]
+    pts = np.array([cl[np.searchsorted(seg, t, side="right") - 1] for t in np.linspace(0, seg[-1], N, endpoint=False)])
+    approx = cv2.approxPolyDP(c.astype(np.int32).reshape(-1, 1, 2), seg[-1] * .006, True)[:, 0, :]
+    for q in approx:
+        i = np.argmin(np.hypot(*(pts - q).T))
+        if np.hypot(*(pts[i] - q)) < seg[-1] / N * .6: pts[i] = q
+    pts = np.roll(pts, -int(np.argmax(pts[:, 0])), axis=0)
+    h0, w0 = rgba.shape[:2]
+    bx0, by0, bx1, by1 = M + 60, p.y + 60, W - M - 60, p.body_bottom - 40
+    s = min((bx1 - bx0) / w0, (by1 - by0) / h0); ox, oy = bx0 + ((bx1 - bx0) - w0 * s) / 2, by0 + ((by1 - by0) - h0 * s) / 2
+    X = lambda x, y: (ox + x * s, oy + y * s)
+    DOT = (80, 80, 80); f = F.nunito(28, True)
+    cxm, cym = pts[:, 0].mean(), pts[:, 1].mean()
+    extra = []                                                         # numbered inner points (starfish)
+    if k == "emperor_penguin":
+        inside = cv2.distanceTransform(closed, cv2.DIST_L2, 5)
+        for cont in _penguin_features(rgba):
+            tiny = cv2.contourArea(cont.astype(np.float32)) < 900
+            for x, y in _resample(cont, (14 if tiny else 30) / s):
+                xi, yi = int(min(max(x, 0), w0 - 1)), int(min(max(y, 0), h0 - 1))
+                if inside[yi, xi] > 12 or tiny:
+                    a_, b_ = X(x, y); r_ = 4 if tiny else 6; p.d.ellipse([a_ - r_, b_ - r_, a_ + r_, b_ + r_], fill=DOT)
+        # a dotted line down the middle of each wing (split by side, since the wings join the head in the color mask)
+        rgb_ = rgba[:, :, :3].astype(int); dark_ = ((rgb_.sum(2) < 210) & (rgba[:, :, 3] > 20))
+        for x_lo, x_hi in ((0, int(w0 * .36)), (int(w0 * .64), w0)):
+            for yy_ in range(int(h0 * .24), int(h0 * .80), max(int(30 / s), 6)):
+                xs_ = np.where(dark_[yy_, x_lo:x_hi])[0]
+                if len(xs_) > 6:
+                    a_, b_ = X(x_lo + xs_.mean(), yy_); p.d.ellipse([a_ - 5, b_ - 5, a_ + 5, b_ + 5], fill=DOT)
+    elif k == "starfish":
+        tips, cen, Rm = _starfish_features(A, k)
+        inner = []
+        for n_, (tp, th) in enumerate(tips):
+            inner.append(cen + (tp - cen) * 0.52)
+            nxt = tips[(n_ + 1) % len(tips)][1]; mid = (th + (nxt if nxt > th else nxt + 2 * np.pi)) / 2
+            inner.append(cen + Rm * 0.22 * np.array([np.cos(mid), np.sin(mid)]))
+        extra = inner
+        for tp, th in tips:                                            # printed ring "nodules" along each arm
+            for f_ in (0.68, 0.84):
+                a_, b_ = X(*(cen + (tp - cen) * f_)); p.d.ellipse([a_ - 13, b_ - 13, a_ + 13, b_ + 13], outline=INK, width=5)
+        a_, b_ = X(*cen); p.d.ellipse([a_ - 16, b_ - 16, a_ + 16, b_ + 16], outline=INK, width=5)
+    def put(i, x, y, cx, cy):
+        a_, b_ = X(x, y); p.d.ellipse([a_ - 9, b_ - 9, a_ + 9, b_ + 9], fill=INK)
+        vx, vy = x - cx, y - cy; nr = max(np.hypot(vx, vy), 1)
+        p.d.text((a_ + vx / nr * 34, b_ + vy / nr * 34), str(i), font=f, fill=INK, anchor="mm")
+    for i, (x, y) in enumerate(pts, 1): put(i, x, y, cxm, cym)
+    for j, (x, y) in enumerate(extra, len(pts) + 1): put(j, x, y, cxm, cym)
+    return p.img, None
+
+def act_spot2(F, D, S, A, logo, k, removes, hide, adds, hide_label, text):
+    """Spot the Difference with a mix of changes in the bottom picture: things removed (coral, sponge, an eye) and things added
+    (animals from the Wild Atlas line art). removes/adds use art pixel coordinates; hide boxes are fractions of the art."""
+    import numpy as np, cv2
+    from PIL import ImageChops
+    base = S.art(k).point(lambda v: 0 if v < 150 else 255); a = np.array(base); h_, w_ = a.shape
+    n, lab, st, cen = cv2.connectedComponentsWithStats((a == 0).astype(np.uint8), 8)
+    big = max(range(1, n), key=lambda i: st[i, cv2.CC_STAT_AREA])
+    b = a.copy(); marks = []
+    for cx, cy in removes:                                                   # remove the nearest sizeable component
+        cand = [i for i in range(1, n) if i != big and st[i, cv2.CC_STAT_AREA] > 1200]
+        i = min(cand, key=lambda i: np.hypot(cen[i][0] - cx, cen[i][1] - cy))
+        x0_, y0_, ww_, hh_ = st[i, 0], st[i, 1], st[i, 2], st[i, 3]
+        inside_box = np.isin(lab, [j for j in range(1, n) if j != big and st[j, 0] >= x0_ - 20 and st[j, 1] >= y0_ - 20
+                                   and st[j, 0] + st[j, 2] <= x0_ + ww_ + 20 and st[j, 1] + st[j, 3] <= y0_ + hh_ + 20])
+        b[inside_box] = 255; marks.append((cen[i][0], cen[i][1], max(ww_, hh_) / 2))
+    for x0, y0, x1, y1 in hide:
+        bx = (int(x0 * w_), int(y0 * h_), int(x1 * w_), int(y1 * h_)); b[bx[1]:bx[3], bx[0]:bx[2]] = 255
+        marks.append(((bx[0] + bx[2]) / 2, (bx[1] + bx[3]) / 2, max(bx[2] - bx[0], bx[3] - bx[1]) / 2))
+    bimg = Image.fromarray(b)
+    for animal, cx, cy, hpx, flip in adds:                                    # add small animals (line art)
+        la = A.lineart(animal, 4).convert("L")
+        if flip: la = ImageOps.mirror(la)
+        la = la.crop(ImageOps.invert(la).getbbox()); la = la.resize((int(la.width * hpx / la.height), hpx), Image.LANCZOS)
+        pad = Image.new("L", bimg.size, 255); pad.paste(la, (int(cx - la.width / 2), int(cy - la.height / 2)))
+        bimg = ImageChops.darker(bimg, pad); marks.append((cx, cy, max(la.width, la.height) / 2))
+    n_d = len(marks)
+    p = bf.page(F, "Spot the Difference", f"Find {n_d} differences in the bottom picture. Circle them!", D.name(k), D.pack(k), logo, "find")
+    top = p.y + 10; gap = 40; ph = (p.body_bottom - top - gap) / 2
+    crop_h = int(.82 * h_)
+    for j, im in enumerate((Image.fromarray(a).crop((0, 0, w_, crop_h)), bimg.crop((0, 0, w_, crop_h)))):
+        r = paste_fit(p.img, im, (M, top + j * (ph + gap), W - M, top + j * (ph + gap) + ph))
+        rbox(p.d, [r[0] - 8, r[1] - 8, r[2] + 8, r[3] + 8], r=24, width=5)
+    fr = r  # last frame rect from paste_fit
+    for x in range(n_d):
+        cx = fr[2] + 62 + x * 54
+        p.d.ellipse([cx - 20, top + ph + gap / 2 - 20, cx + 20, top + ph + gap / 2 + 20], outline=INK, width=4)
+    key = bimg.convert("RGB"); kd = ImageDraw.Draw(key)
+    for cx, cy, rr in marks:
+        rr = max(rr * 1.2, 70); kd.ellipse([cx - rr, cy - rr, cx + rr, cy + rr], outline=INK, width=14)
+    return p.img, dict(kind="spot", img=key, text=text.format(n=n_d))
+
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--out", required=True); ap.add_argument("--dpi-jpeg", type=int, default=70)
     a = ap.parse_args(); os.makedirs(a.out, exist_ok=True)
@@ -454,10 +629,11 @@ def main():
     fns = {"shadow": bf.act_shadow, "odd": bf.act_odd, "next": bf.act_next, "count": bf.act_count, "big": bf.act_big,
            "safe": bf.act_safe, "finish": bf.act_finish, "dots": bf.act_dots, "maze": bf.act_maze, "home": bf.act_home,
            "trace": bf.act_trace, "scramble": bf.act_scramble}
-    fns["maze"] = act_maze2; fns["dots_outline"] = act_dots_outline
+    fns["maze"] = act_maze2; fns["dots_outline"] = act_dots_outline; fns["dots_rich"] = act_dots_rich
     for i, (k, act, prm) in enumerate(BOOK):
         pl, pr = 4 + 2 * i, 5 + 2 * i
-        img, info = (bf.act_spot(F, D, S, logo_small, k, **prm) if act == "spot" else fns[act](F, D, A, logo_small, k, **prm))
+        img, info = (bf.act_spot(F, D, S, logo_small, k, **prm) if act == "spot" else
+                     act_spot2(F, D, S, A, logo_small, k, **prm) if act == "spot2" else fns[act](F, D, A, logo_small, k, **prm))
         pages[pr] = img; pages[pl] = coloring_page(S, k, logo_bw_full)          # coloring page first (left), puzzle right
         keys.append((pr, D.name(k), act, info)); print(f"p{pl:>3} {act:8s} {k}")
     pages[44] = act_numbers(F, logo_small)
