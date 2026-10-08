@@ -260,3 +260,10 @@
 /* country names on the outline map */
 .zf-clabel { pointer-events: none; font: 700 11px/1 "Nunito", system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #6f5f43; opacity: .78; white-space: nowrap; text-shadow: 0 0 3px #f7efdc, 0 0 3px #f7efdc, 0 0 2px #f7efdc; }
 .zf-clabel[hidden] { display: none; }
+
+/* desktop: the result list scrolls inside its own pane next to the map, so the rest of the page (and the footer) is always reachable */
+@media (min-width: 900px) {
+  .zf-listpane { position: sticky; top: 84px; align-self: start; max-height: calc(100vh - 110px); overflow-y: auto; padding-right: 6px; scrollbar-width: thin; scrollbar-color: #c9b894 transparent; overscroll-behavior: contain; }
+  .zf-listpane::-webkit-scrollbar { width: 8px; }
+  .zf-listpane::-webkit-scrollbar-thumb { background: #c9b894; border-radius: 4px; }
+}
