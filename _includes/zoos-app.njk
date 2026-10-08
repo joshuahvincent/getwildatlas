@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/js/vendor/maplibre/maplibre-gl.css">
-<link rel="stylesheet" href="/css/zoos.css?v=27">
+<link rel="stylesheet" href="/css/zoos.css?v=28">
 
 <div class="zf" id="zf" data-animal="{{ a.id if a else '' }}">
   <h1 class="zf-title">Find a place to see real animals</h1>
@@ -25,7 +25,8 @@
       </div>
       <div class="zf-metaline">
         <button type="button" class="zf-advbtn" id="zf-adv-sum" aria-expanded="false" aria-controls="zf-advbody">More filters</button>
-        <p class="zf-notice" id="zf-notice"><span class="zf-notice-i" aria-hidden="true">i</span>Animals move around, so check with the place before you visit.<span class="zf-forgetwrap" id="zf-forgetwrap" hidden> · <button type="button" class="zf-linkbtn" id="zf-forget">Forget my location</button></span></p>
+        <p class="zf-notice" id="zf-notice"><span class="zf-notice-i" aria-hidden="true">i</span>Animals move around, so check with the place before you visit.</p>
+        <span class="zf-forgetwrap" id="zf-forgetwrap" hidden><button type="button" class="zf-linkbtn" id="zf-forget">Forget my location</button></span>
       </div>
       <div class="zf-advbody" id="zf-advbody" hidden>
         <fieldset class="zf-dist zf-types" id="zf-dist"><legend>How far</legend><div class="zf-chips" id="zf-chips"></div></fieldset>
@@ -67,6 +68,7 @@
       <div class="zf-maptools"><button type="button" class="zf-sizebtn" id="zf-size" aria-pressed="true">Smaller map</button></div>
       <div class="zf-map" id="zf-map" role="region" aria-label="Map of the places in the list. The list has the same places."></div>
       <ul class="zf-legend" id="zf-legend"></ul>
+      <p class="zf-notice zf-notice-map"><span class="zf-notice-i" aria-hidden="true">i</span>Animals move around, so check with the place before you visit.</p>
       <div class="zf-missing"><button type="button" class="zf-btn zf-btn-add" id="zf-suggest-open">Can't find your place here? Add it</button></div>
     </div>
   </div>
@@ -116,5 +118,5 @@
   </form>
 </dialog>
 
-<script type="module" src="/js/zoos.js?v=52"></script>
+<script type="module" src="/js/zoos.js?v=53"></script>
 <noscript><p>This page needs JavaScript to find places near you. The list above shows some places to start with, and you can browse the <a href="/blog/">Wild Atlas blog</a> in the meantime.</p></noscript>

@@ -242,10 +242,12 @@ let map = null, mapLib = null, popup = null, mapReady = null, lastCands = [];
 // when a place is searched (or located) the map opens about 30 miles / 50 km across, centred on it; if no result is inside that box it widens to take in the closest three
 const NEAR_KM = IMPERIAL ? 24.1 : 25;
 function nearBox(o, cands) {
-  const dLa = NEAR_KM / 111, dLo = NEAR_KM / (111 * Math.max(0.2, Math.cos(o.la * Math.PI / 180)));
+  // on a phone the map is small, so open closer (about 10 miles / 18 km across) to show streets rather than a bare outline
+  const phone = window.matchMedia('(max-width: 899px)').matches, R = phone ? 9 : NEAR_KM;
+  const dLa = R / 111, dLo = R / (111 * Math.max(0.2, Math.cos(o.la * Math.PI / 180)));
   const b = [[o.lo - dLo, o.la - dLa], [o.lo + dLo, o.la + dLa]];
   if (!cands.some((c) => Math.abs(c.p.la - o.la) <= dLa && Math.abs(c.p.lo - o.lo) <= dLo)) {
-    cands.filter((c) => c.km !== null).sort((x, y) => x.km - y.km).slice(0, 3).forEach((c) => { b[0][0] = Math.min(b[0][0], c.p.lo); b[0][1] = Math.min(b[0][1], c.p.la); b[1][0] = Math.max(b[1][0], c.p.lo); b[1][1] = Math.max(b[1][1], c.p.la); });
+    cands.filter((c) => c.km !== null).sort((x, y) => x.km - y.km).slice(0, phone ? 1 : 3).forEach((c) => { b[0][0] = Math.min(b[0][0], c.p.lo); b[0][1] = Math.min(b[0][1], c.p.la); b[1][0] = Math.max(b[1][0], c.p.lo); b[1][1] = Math.max(b[1][1], c.p.la); });
   }
   return b;
 }
@@ -836,7 +838,10 @@ async function init() {
   };
   $('zf-results').addEventListener('click', clicked);
   $('zf-map').addEventListener('click', clicked);
-  $('zf-main').dataset.view = 'list';
+  // phones open on the map (the list is one tap away); desktop shows both side by side
+  const narrow = window.matchMedia('(max-width: 899px)').matches;
+  S.view = narrow ? 'map' : 'list'; $('zf-main').dataset.view = S.view;
+  $('zf-tab-list').setAttribute('aria-pressed', String(!narrow)); $('zf-tab-map').setAttribute('aria-pressed', String(narrow));
   // which animal? a landing page (/zoos/<animal>/) sets data-animal; the old /zoos/?animal=<id> links redirect to the landing page
   const root = $('zf'), legacy = new URLSearchParams(location.search).get('animal');
   const fromPath = root.dataset.animal, fromLegacy = legacy && (ALIASES[legacy] || legacy.replace(/-/g, '_'));

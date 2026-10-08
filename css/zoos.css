@@ -267,3 +267,19 @@
   .zf-listpane::-webkit-scrollbar { width: 8px; }
   .zf-listpane::-webkit-scrollbar-thumb { background: #c9b894; border-radius: 4px; }
 }
+
+/* phones: map first. Less above it, the map defaults on, no size toggle, the "animals move around" note sits under the map */
+.zf-notice-map { display: none; }
+@media (max-width: 899px) {
+  .zf-title { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .zf { padding-top: .6rem; }
+  #zf-quick, .zf-quick { display: none !important; }
+  #zf-notice { display: none; }
+  .zf-notice-map { display: flex; margin: .6rem 0 0; }
+  .zf-maptools { display: none; }
+  .zf-metaline { gap: .1rem 1.1rem; margin: .15rem 0; }
+  .zf-status:empty { display: none; }
+  .zf-tabs { margin: .35rem 0 .45rem; }
+  .zf-tabs button { min-height: 40px; }
+  .zf-main[data-size] .zf-map, .zf-main .zf-map { aspect-ratio: auto; height: calc(100dvh - 330px); min-height: 340px; max-height: none; }
+}
