@@ -255,13 +255,14 @@ const TIER_OF = (rank) => (rank === 0 ? 0 : rank === 1 ? 1 : rank <= 3 ? 2 : ran
 // pin sizes shrink a lot when the map is zoomed out (thousands of places at world level), and reach their full size by zoom 5
 const zoomR = (a, b, c) => ['interpolate', ['linear'], ['zoom'], 0, a * 0.28, 2, a * 0.4, 4, b * 0.75, 5, b, 9, c];
 const zoomW = (w) => ['interpolate', ['linear'], ['zoom'], 0, w * 0.35, 3, w * 0.6, 5, w];
+const CLUSTER_MAX_ZOOM = 4;   // zoomed out further than this, nearby places merge into a numbered circle
 function mapStyle() {
   const pin = (id, tier, radius, paint) => ({ id, type: 'circle', source: 'pins', filter: ['==', ['get', 'tier'], tier], paint: Object.assign({ 'circle-radius': radius }, paint) });
   return {
     version: 8,
     sources: {
       countries: { type: 'geojson', data: '/assets/zoos/geo/countries.json', maxzoom: 7, tolerance: 0.6 },
-      pins: { type: 'geojson', data: { type: 'FeatureCollection', features: [] } },
+      pins: { type: 'geojson', data: { type: 'FeatureCollection', features: [] }, cluster: true, clusterMaxZoom: CLUSTER_MAX_ZOOM, clusterRadius: 46, clusterProperties: { best: ['min', ['get', 'tier']] } },
       me: { type: 'geojson', data: { type: 'FeatureCollection', features: [] } },
     },
     layers: [
@@ -327,6 +328,28 @@ async function ensureMap() {
     const layers = ['pins-e', 'pins-d', 'pins-w', 'pins-r', 'pins-g'];
     map.on('click', layers, (e) => { const f = e.features && e.features[0]; if (f) setActive(f.properties.pi, { popup: true, scroll: true }); });
     layers.forEach((l) => { map.on('mouseenter', l, () => (map.getCanvas().style.cursor = 'pointer')); map.on('mouseleave', l, () => (map.getCanvas().style.cursor = '')); });
+    // clusters are HTML circles (no font files needed): rebuilt from the clustered source whenever the view changes
+    const cm = new Map();
+    const drawClusters = () => {
+      if (!map.getSource('pins') || !map.isStyleLoaded()) return;
+      const seen = new Set();
+      map.querySourceFeatures('pins', { filter: ['has', 'point_count'] }).forEach((f) => {
+        const id = f.properties.cluster_id; if (seen.has(id)) return; seen.add(id);
+        const n = f.properties.point_count, ll = f.geometry.coordinates;
+        let m = cm.get(id);
+        if (!m) {
+          const b = el('button', { type: 'button', class: 'zf-cluster', 'aria-label': n + ' places, zoom in' });
+          b.addEventListener('click', async () => { try { const z = await map.getSource('pins').getClusterExpansionZoom(id); map.easeTo({ center: b._ll, zoom: Math.min(z + 0.3, 13), duration: reducedMotion() ? 0 : 500 }); } catch (e) { /* ignore */ } });
+          m = new mapLib.Marker({ element: b }).setLngLat(ll).addTo(map); m._b = b; cm.set(id, m);
+        }
+        m._b._ll = ll; m._b.textContent = n >= 1000 ? Math.round(n / 100) / 10 + 'k' : String(n);
+        const d = n < 10 ? 26 : n < 100 ? 32 : n < 500 ? 40 : 48;
+        m._b.style.width = m._b.style.height = d + 'px'; m._b.dataset.t = f.properties.best <= 1 ? 'a' : 'b';
+      });
+      cm.forEach((m, id) => { if (!seen.has(id)) { m.remove(); cm.delete(id); } });
+    };
+    map.on('render', () => { if (map.loaded()) drawClusters(); });
+    map.on('moveend', drawClusters); map.on('sourcedata', (e) => { if (e.sourceId === 'pins' && e.isSourceLoaded) drawClusters(); });
     if (!map.getSource('pins')) await new Promise((res) => map.once('styledata', res));
     return map;
   })();
