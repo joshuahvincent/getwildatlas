@@ -348,13 +348,13 @@ async function addCountryLabels() {
       const e = el('div', { class: 'zf-clabel', text: it.n }); const m = new mapLib.Marker({ element: e, anchor: 'center' }).setLngLat(it.at).addTo(map);
       return { e, rank };
     });
-    const sync = () => { const z = map.getZoom(), lim = z < 2 ? 14 : z < 3 ? 38 : z < 4.2 ? 85 : 999; marks.forEach((m) => { m.e.hidden = z >= 8 || m.rank >= lim; }); };
+    const sync = () => { const z = map.getZoom(), lim = z < 2 ? 14 : z < 3 ? 38 : z < 4.2 ? 85 : 999; marks.forEach((m) => { m.e.hidden = z >= 5.2 || m.rank >= lim; }); };
     map.on('zoom', sync); sync();
   } catch (e) { console.warn('[zoos map] country names unavailable', e); }
 }
 // Street detail (roads, buildings, water, parks, place names) from OpenFreeMap (OpenStreetMap data). Nothing is requested from them until the map is
-// zoomed to city level (zoom 8+); until then every request stays on our own site. Their style supplies the layers; we add them under the pins.
-const STREET_ZOOM = 8;
+// zoomed in to about state level (zoom 5+); until then every request stays on our own site. Their style supplies the layers; we add them under the pins.
+const STREET_ZOOM = 5;   // about a state or region on screen
 let streets = 0;   // 0 not asked yet, 1 loading, 2 on, 3 failed (outlines only)
 async function addStreets() {
   if (streets || !map || map.getZoom() < STREET_ZOOM) return;
@@ -367,13 +367,13 @@ async function addStreets() {
       if (l.type === 'raster' || (icon && !label) || (l.paint && (l.paint['fill-pattern'] || l.paint['line-pattern']))) continue;   // no sprite sheet: skip icon and pattern layers
       const layer = JSON.parse(JSON.stringify(l));
       if (label) { delete layer.layout['icon-image']; delete layer.layout['icon-size']; delete layer.layout['icon-anchor']; }
-      if (l.type === 'background') layer.paint = Object.assign({}, l.paint, { 'background-opacity': ['interpolate', ['linear'], ['zoom'], 8, 0, 9.5, 1] });
-      else layer.minzoom = Math.max(l.minzoom || 0, 8.5);
+      if (l.type === 'background') layer.paint = Object.assign({}, l.paint, { 'background-opacity': ['interpolate', ['linear'], ['zoom'], 5, 0, 6.5, 1] });
+      else layer.minzoom = Math.max(l.minzoom || 0, 5.5);
       map.addLayer(layer, 'borders');
     }
     // our simplified outlines fade out as the detailed street map fades in (they would not line up with real borders)
-    map.setPaintProperty('land', 'fill-opacity', ['interpolate', ['linear'], ['zoom'], 8, 1, 9.5, 0]);
-    ['borders', 'admin1'].forEach((id) => { if (map.getLayer(id)) map.setPaintProperty(id, 'line-opacity', ['interpolate', ['linear'], ['zoom'], 8, 1, 9.5, 0]); });
+    map.setPaintProperty('land', 'fill-opacity', ['interpolate', ['linear'], ['zoom'], 5, 1, 6.5, 0]);
+    ['borders', 'admin1'].forEach((id) => { if (map.getLayer(id)) map.setPaintProperty(id, 'line-opacity', ['interpolate', ['linear'], ['zoom'], 5, 1, 6.5, 0]); });
     streets = 2;
   } catch (e) { streets = 3; console.warn('[zoos map] street detail unavailable', e); }
 }
