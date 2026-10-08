@@ -256,3 +256,7 @@
 /* the add-a-place call to action: a real button under the map key */
 .zf-missing { margin: .7rem 0 0; }
 .zf-btn-add { font-size: .95rem; min-height: 44px; }
+
+/* country names on the outline map */
+.zf-clabel { pointer-events: none; font: 700 11px/1 "Nunito", system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #6f5f43; opacity: .78; white-space: nowrap; text-shadow: 0 0 3px #f7efdc, 0 0 3px #f7efdc, 0 0 2px #f7efdc; }
+.zf-clabel[hidden] { display: none; }

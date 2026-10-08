@@ -264,8 +264,10 @@ function mapStyle() {
     },
     layers: [
       { id: 'bg', type: 'background', paint: { 'background-color': '#dbe9f3' } },
+      // a soft shoreline halo on the water side (the land fill below covers the inland half), then land, then bolder country borders
+      { id: 'coast', type: 'line', source: 'countries', paint: { 'line-color': '#bcd3e5', 'line-width': ['interpolate', ['linear'], ['zoom'], 0, 3, 4, 8, 8, 14], 'line-blur': ['interpolate', ['linear'], ['zoom'], 0, 2, 4, 5, 8, 8] } },
       { id: 'land', type: 'fill', source: 'countries', paint: { 'fill-color': '#f7efdc' } },
-      { id: 'borders', type: 'line', source: 'countries', paint: { 'line-color': '#a8946a', 'line-width': 1.1 } },
+      { id: 'borders', type: 'line', source: 'countries', layout: { 'line-join': 'round' }, paint: { 'line-color': '#8a7650', 'line-width': ['interpolate', ['linear'], ['zoom'], 0, 0.8, 3, 1.3, 6, 2] } },
       // tier 3 similar animals: small grey ring; tier 2 close relative: small green dot; tier 1 unconfirmed: yellow dot; tier 0 lists it: large green dot with white halo
       pin('pins-g', 3, zoomR(3.5, 5, 7), { 'circle-color': '#ffffff', 'circle-stroke-color': '#6b6b6b', 'circle-stroke-width': zoomW(1.6) }),
       pin('pins-r', 2, zoomR(3.5, 5, 7), { 'circle-color': GREEN, 'circle-stroke-color': '#ffffff', 'circle-stroke-width': zoomW(1.5) }),
@@ -306,12 +308,13 @@ async function ensureMap() {
     console.debug('[zoos map] ready in ' + Math.round(performance.now() - t0) + ' ms');
     // state/province outlines (1 MB) are only fetched once the visitor zooms in, so the first view starts faster
     const addAdmin1 = () => {
-      if (map.getSource('admin1') || map.getZoom() < 3) return;
+      if (map.getSource('admin1') || map.getZoom() < 2.5) return;
       map.addSource('admin1', { type: 'geojson', data: '/assets/zoos/geo/admin1.json', maxzoom: 7, tolerance: 0.6 });
-      map.addLayer({ id: 'admin1', type: 'line', source: 'admin1', paint: { 'line-color': '#d3c3a0', 'line-width': 0.7 } }, 'borders');
+      map.addLayer({ id: 'admin1', type: 'line', source: 'admin1', paint: { 'line-color': '#c4b085', 'line-width': 0.8, 'line-opacity': ['interpolate', ['linear'], ['zoom'], 2.5, 0.35, 4.5, 1] } }, 'borders');
     };
     map.on('zoomend', addAdmin1); addAdmin1();
     map.on('zoomend', addStreets); map.on('moveend', addStreets); addStreets();
+    addCountryLabels();
     const layers = ['pins-e', 'pins-d', 'pins-w', 'pins-r', 'pins-g'];
     map.on('click', layers, (e) => { const f = e.features && e.features[0]; if (f) setActive(f.properties.pi, { popup: true, scroll: true }); });
     layers.forEach((l) => { map.on('mouseenter', l, () => (map.getCanvas().style.cursor = 'pointer')); map.on('mouseleave', l, () => (map.getCanvas().style.cursor = '')); });
@@ -319,6 +322,26 @@ async function ensureMap() {
     return map;
   })();
   return mapReady;
+}
+// Country names on the outline map: plain HTML labels in the site font (no font files from anywhere else). Bigger countries show first as you zoom in;
+// they step aside at city zoom, where the street map has its own labels.
+let labelsOn = false;
+async function addCountryLabels() {
+  if (labelsOn) return; labelsOn = true;
+  try {
+    const gj = await (await fetch('/assets/zoos/geo/countries.json')).json();
+    const items = gj.features.map((f) => {
+      const g = f.geometry, polys = g.type === 'Polygon' ? [g.coordinates] : g.coordinates; let best = null, bestA = -1;
+      polys.forEach((poly) => { const r = poly[0]; let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9; r.forEach(([x, y]) => { x0 = Math.min(x0, x); x1 = Math.max(x1, x); y0 = Math.min(y0, y); y1 = Math.max(y1, y); }); const a = (x1 - x0) * (y1 - y0) * Math.cos(((y0 + y1) / 2) * Math.PI / 180); if (a > bestA) { bestA = a; best = [(x0 + x1) / 2, (y0 + y1) / 2]; } });
+      return { n: f.properties.n, at: best, a: bestA };
+    }).filter((i) => i.at && i.n).sort((a, b) => b.a - a.a);
+    const marks = items.map((it, rank) => {
+      const e = el('div', { class: 'zf-clabel', text: it.n }); const m = new mapLib.Marker({ element: e, anchor: 'center' }).setLngLat(it.at).addTo(map);
+      return { e, rank };
+    });
+    const sync = () => { const z = map.getZoom(), lim = z < 2 ? 14 : z < 3 ? 38 : z < 4.2 ? 85 : 999; marks.forEach((m) => { m.e.hidden = z >= 8 || m.rank >= lim; }); };
+    map.on('zoom', sync); sync();
+  } catch (e) { console.warn('[zoos map] country names unavailable', e); }
 }
 // Street detail (roads, buildings, water, parks, place names) from OpenFreeMap (OpenStreetMap data). Nothing is requested from them until the map is
 // zoomed to city level (zoom 8+); until then every request stays on our own site. Their style supplies the layers; we add them under the pins.
