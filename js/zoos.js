@@ -293,6 +293,13 @@ async function ensureMap() {
     map.on('error', (e) => console.error('[zoos map]', e && e.error ? e.error.message : e));
     map.touchZoomRotate.disableRotation();
     map.addControl(new mapLib.NavigationControl({ showCompass: false }), 'top-right');
+    // with a location set, the + button homes in on the blue dot: each press zooms one level and slides the view most of the way toward it (zoom out stays centred)
+    const nav = document.querySelector('#zf-map .maplibregl-ctrl-group');
+    if (nav) nav.addEventListener('click', (e) => {
+      const b = e.target.closest && e.target.closest('button'); if (!b || !S.origin) return;
+      const o = S.origin, c = map.getCenter(), z = map.getZoom(), d = reducedMotion() ? 0 : 400;
+      if (b.classList.contains('maplibregl-ctrl-zoom-in')) { e.stopImmediatePropagation(); e.preventDefault(); map.easeTo({ center: [c.lng + (o.lo - c.lng) * 0.6, c.lat + (o.la - c.lat) * 0.6], zoom: Math.min(z + 1, 18), duration: d }); }
+    }, true);
     map.addControl(new mapLib.AttributionControl({ compact: true, customAttribution: 'Outlines: Natural Earth' }));
     await new Promise((res) => (map.loaded() ? res() : map.once('load', res)));
     delete $('zf-map').dataset.loading;
@@ -425,7 +432,10 @@ async function fbInit() {
     box.append(svg);
     FB.pop = el('div', { class: 'zf-fbpop', hidden: '' }); box.append(FB.pop);
     const ctl = el('div', { class: 'zf-fbctl' }, el('button', { type: 'button', 'aria-label': 'Zoom in', text: '+' }), el('button', { type: 'button', 'aria-label': 'Zoom out', text: '−' }));
-    ctl.children[0].addEventListener('click', () => fbZoom(1.6, FB.cw / 2, FB.ch / 2)); ctl.children[1].addEventListener('click', () => fbZoom(1 / 1.6, FB.cw / 2, FB.ch / 2));
+    ctl.children[0].addEventListener('click', () => {
+      if (FB.meXY) { const v = FB.vb, h = v.w * FB.ch / FB.cw, cx = v.x + v.w / 2, cy = v.y + h / 2; v.x += (FB.meXY[0] - cx) * 0.6; v.y += (FB.meXY[1] - cy) * 0.6; fbClamp(); }
+      fbZoom(1.6, FB.cw / 2, FB.ch / 2);
+    }); ctl.children[1].addEventListener('click', () => fbZoom(1 / 1.6, FB.cw / 2, FB.ch / 2));
     box.append(ctl, el('div', { class: 'zf-fbcred', text: 'Outlines: Natural Earth' }));
     box.addEventListener('wheel', (e) => { e.preventDefault(); const r = box.getBoundingClientRect(); fbZoom(e.deltaY < 0 ? 1.25 : 0.8, e.clientX - r.left, e.clientY - r.top); }, { passive: false });
     box.addEventListener('pointerdown', (e) => { if (e.target.closest('.zf-fbctl,.zf-fbpop')) return; FB.drag = { x: e.clientX, y: e.clientY, vx: FB.vb.x, vy: FB.vb.y, moved: false, id: e.pointerId }; });
