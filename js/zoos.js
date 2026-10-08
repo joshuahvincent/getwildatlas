@@ -459,7 +459,9 @@ async function drawMap(cands) {
   if (S.mapFailed) return;
   if (!fbWebglOk()) { try { await fbDraw(cands); } catch (e) { S.mapFailed = true; mapProblem(e && e.message); } return; }   // no WebGL (Safari with it off, some locked-down machines): plain SVG map
   try {
-    await Promise.race([ensureMap(), new Promise((_, rej) => setTimeout(() => rej(new Error('map took too long to start')), 25000))]);
+    // the start timer only runs while the tab is visible: a background tab does not paint, so its map cannot finish loading until the visitor switches to it
+    const giveUp = new Promise((_, rej) => { const arm = () => setTimeout(() => { if (document.hidden) document.addEventListener('visibilitychange', arm, { once: true }); else rej(new Error('map took too long to start')); }, 25000); arm(); });
+    await Promise.race([ensureMap(), giveUp]);
   } catch (e) { S.mapFailed = true; mapProblem(e && e.message); return; }
   const feats = cands.map((c) => ({ type: 'Feature', properties: { pi: c.pi, tier: TIER_OF(c.rank) }, geometry: { type: 'Point', coordinates: [c.p.lo, c.p.la] } }));
   map.getSource('pins').setData({ type: 'FeatureCollection', features: feats });
