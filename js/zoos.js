@@ -239,6 +239,16 @@ function render() {
 const FLY_ZOOM = 5.3;   // "Show on map": the city and the region around it
 const TEAL = '#0E7C86', TEAL_DARK = '#08454A', GREEN = '#2E7D32', GREEN_DARK = '#17441a', YELLOW = '#FACC15', YELLOW_DARK = '#6b5200', YOU = '#2563EB';
 let map = null, mapLib = null, popup = null, mapReady = null, lastCands = [];
+// when a place is searched (or located) the map opens about 30 miles / 50 km across, centred on it; if no result is inside that box it widens to take in the closest three
+const NEAR_KM = IMPERIAL ? 24.1 : 25;
+function nearBox(o, cands) {
+  const dLa = NEAR_KM / 111, dLo = NEAR_KM / (111 * Math.max(0.2, Math.cos(o.la * Math.PI / 180)));
+  const b = [[o.lo - dLo, o.la - dLa], [o.lo + dLo, o.la + dLa]];
+  if (!cands.some((c) => Math.abs(c.p.la - o.la) <= dLa && Math.abs(c.p.lo - o.lo) <= dLo)) {
+    cands.filter((c) => c.km !== null).sort((x, y) => x.km - y.km).slice(0, 3).forEach((c) => { b[0][0] = Math.min(b[0][0], c.p.lo); b[0][1] = Math.min(b[0][1], c.p.la); b[1][0] = Math.max(b[1][0], c.p.lo); b[1][1] = Math.max(b[1][1], c.p.la); });
+  }
+  return b;
+}
 const TIER_OF = (rank) => (rank === 0 ? 0 : rank === 1 ? 1 : rank <= 3 ? 2 : rank === 4 ? 3 : 4);
 // pin sizes shrink a lot when the map is zoomed out (thousands of places at world level), and reach their full size by zoom 5
 const zoomR = (a, b, c) => ['interpolate', ['linear'], ['zoom'], 0, a * 0.28, 2, a * 0.4, 4, b * 0.75, 5, b, 9, c];
@@ -301,6 +311,7 @@ async function ensureMap() {
       map.addLayer({ id: 'admin1', type: 'line', source: 'admin1', paint: { 'line-color': '#d3c3a0', 'line-width': 0.7 } }, 'borders');
     };
     map.on('zoomend', addAdmin1); addAdmin1();
+    map.on('zoomend', addStreets); map.on('moveend', addStreets); addStreets();
     const layers = ['pins-e', 'pins-d', 'pins-w', 'pins-r', 'pins-g'];
     map.on('click', layers, (e) => { const f = e.features && e.features[0]; if (f) setActive(f.properties.pi, { popup: true, scroll: true }); });
     layers.forEach((l) => { map.on('mouseenter', l, () => (map.getCanvas().style.cursor = 'pointer')); map.on('mouseleave', l, () => (map.getCanvas().style.cursor = '')); });
@@ -308,6 +319,31 @@ async function ensureMap() {
     return map;
   })();
   return mapReady;
+}
+// Street detail (roads, buildings, water, parks, place names) from OpenFreeMap (OpenStreetMap data). Nothing is requested from them until the map is
+// zoomed to city level (zoom 8+); until then every request stays on our own site. Their style supplies the layers; we add them under the pins.
+const STREET_ZOOM = 8;
+let streets = 0;   // 0 not asked yet, 1 loading, 2 on, 3 failed (outlines only)
+async function addStreets() {
+  if (streets || !map || map.getZoom() < STREET_ZOOM) return;
+  streets = 1;
+  try {
+    const st = await (await fetch('https://tiles.openfreemap.org/styles/liberty')).json();
+    map.addSource('openmaptiles', st.sources.openmaptiles); map.setGlyphs(st.glyphs);
+    for (const l of st.layers) {
+      const icon = l.type === 'symbol' && l.layout && l.layout['icon-image'], label = icon && /^label_/.test(l.id);   // town / city names carry a dot icon: keep the name, drop the dot
+      if (l.type === 'raster' || (icon && !label) || (l.paint && (l.paint['fill-pattern'] || l.paint['line-pattern']))) continue;   // no sprite sheet: skip icon and pattern layers
+      const layer = JSON.parse(JSON.stringify(l));
+      if (label) { delete layer.layout['icon-image']; delete layer.layout['icon-size']; delete layer.layout['icon-anchor']; }
+      if (l.type === 'background') layer.paint = Object.assign({}, l.paint, { 'background-opacity': ['interpolate', ['linear'], ['zoom'], 8, 0, 9.5, 1] });
+      else layer.minzoom = Math.max(l.minzoom || 0, 8.5);
+      map.addLayer(layer, 'borders');
+    }
+    // our simplified outlines fade out as the detailed street map fades in (they would not line up with real borders)
+    map.setPaintProperty('land', 'fill-opacity', ['interpolate', ['linear'], ['zoom'], 8, 1, 9.5, 0]);
+    ['borders', 'admin1'].forEach((id) => { if (map.getLayer(id)) map.setPaintProperty(id, 'line-opacity', ['interpolate', ['linear'], ['zoom'], 8, 1, 9.5, 0]); });
+    streets = 2;
+  } catch (e) { streets = 3; console.warn('[zoos map] street detail unavailable', e); }
 }
 function mapProblem(why) {
   const box = $('zf-map'); if (!box || box.dataset.failed) return; box.dataset.failed = '1'; delete box.dataset.loading;
@@ -402,7 +438,7 @@ async function fbDraw(cands) {
 function fbFit(cands) {
   const prim = cands.filter((c) => c.rank <= 3); let use = prim.length ? prim : cands;
   if (S.cur && !S.origin && HOME_CC && use.some((c) => c.p.cc === HOME_CC)) use = use.filter((c) => c.p.cc === HOME_CC);
-  if (!S.cur && S.origin) { fbFitBounds([[-170, -58], [180, 80]], 0); return; }
+  if (S.origin) { fbFitBounds(nearBox(S.origin, cands), 28); return; }
   if (!S.cur && !S.origin) { fbFitBounds(START_VIEW, 10); return; }
   const pts = (S.origin ? use.slice(0, 8) : use).map((c) => [c.p.lo, c.p.la]); if (S.origin) pts.push([S.origin.lo, S.origin.la]);
   if (!pts.length) { fbFitBounds(START_VIEW, 10); return; }
@@ -436,7 +472,7 @@ function fit(cands) {
   const prim = cands.filter((c) => c.rank <= 3);
   let use = prim.length ? prim : cands;
   if (S.cur && !S.origin && HOME_CC && use.some((c) => c.p.cc === HOME_CC)) use = use.filter((c) => c.p.cc === HOME_CC);
-  if (!S.cur && S.origin) { map.resize(); map.fitBounds([[-170, -58], [180, 80]], { padding: 0, duration: 0 }); return; }   // all animals + a location: the whole world, with the pin showing where you are
+  if (S.origin) { map.resize(); map.fitBounds(nearBox(S.origin, cands), { padding: 28, maxZoom: 13, duration: reducedMotion() ? 0 : 600 }); return; }   // all animals + a location: the whole world, with the pin showing where you are
   if (!S.cur && !S.origin) { map.resize(); map.fitBounds(START_VIEW, { padding: 10, duration: 0 }); return; }   // North America (or Europe / Oceania) to start; the visitor can pan out to the world
   (S.origin ? use.slice(0, 8) : use).forEach((c) => pts.push([c.p.lo, c.p.la]));
   if (S.origin) pts.push([S.origin.lo, S.origin.la]);
