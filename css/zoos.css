@@ -288,3 +288,4 @@
 .zf-cluster { border-radius: 50%; border: 2px solid #fff; background: #5aa469; color: #fff; font: 700 12px/1 inherit; font-family: inherit; display: grid; place-items: center; padding: 0; cursor: pointer; box-shadow: 0 1px 4px rgba(42,33,24,.35); opacity: .92; }
 .zf-cluster[data-t="b"] { background: #8d8272; }
 .zf-cluster:hover, .zf-cluster:focus-visible { opacity: 1; outline: 2px solid #2A2118; outline-offset: 1px; }
+.zf-fbclu { cursor: pointer; }

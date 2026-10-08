@@ -412,11 +412,32 @@ const FB_K = 2;   // svg units per degree
 function fbProject(lo, la) { return [(lo + 180) * FB_K, (90 - la) * FB_K]; }
 function fbSvg(tag, attrs) { const n = document.createElementNS('http://www.w3.org/2000/svg', tag); for (const k in attrs) n.setAttribute(k, attrs[k]); return n; }
 function fbWebglOk() { try { const c = document.createElement('canvas'); return !!(c.getContext('webgl2') || c.getContext('webgl')); } catch (e) { return false; } }
+// zoomed out, nearby pins merge into numbered circles (same idea as the WebGL map): grid cells of ~46 screen px, only below about state level
+function fbClusters(k) {
+  if (!FB.gClu) { FB.gClu = fbSvg('g', {}); FB.svg.insertBefore(FB.gClu, FB.gPins.nextSibling); }
+  FB.gClu.textContent = '';
+  const z = Math.log2((FB.cw / (FB.vb.w / FB_K)) * 360 / 512);
+  if (z >= CLUSTER_MAX_ZOOM + 0.5 || !FB.cw) return;
+  const cell = 46 * k, cells = new Map();
+  FB.pins.forEach((p) => { const key = Math.floor(p.x / cell) + ':' + Math.floor(p.y / cell); let c = cells.get(key); if (!c) cells.set(key, (c = [])); c.push(p); });
+  cells.forEach((ps) => {
+    if (ps.length < 2) return;
+    ps.forEach((p) => { p.g.style.display = 'none'; });
+    const x = ps.reduce((a, p) => a + p.x, 0) / ps.length, y = ps.reduce((a, p) => a + p.y, 0) / ps.length, n = ps.length;
+    const r = (n < 10 ? 13 : n < 100 ? 16 : n < 500 ? 20 : 24) * k, best = Math.min(...ps.map((p) => p.t));
+    const g = fbSvg('g', { class: 'zf-fbclu', transform: 'translate(' + x + ' ' + y + ')', role: 'button', 'aria-label': n + ' places, zoom in' });
+    g.append(fbSvg('circle', { r, fill: best <= 1 ? '#5aa469' : '#8d8272', stroke: '#fff', 'stroke-width': 2 * k }));
+    const t = fbSvg('text', { 'text-anchor': 'middle', y: 4 * k, fill: '#fff', 'font-size': 12 * k, 'font-weight': 700 }); t.textContent = n >= 1000 ? Math.round(n / 100) / 10 + 'k' : n; g.append(t);
+    g.addEventListener('click', () => { const v = FB.vb, w = v.w / 2.6; FB.vb = { x: x - w / 2, y: y - w * FB.ch / FB.cw / 2, w }; fbClamp(); fbApply(); });
+    FB.gClu.append(g);
+  });
+}
 function fbApply() {
   const v = FB.vb, k = FB.cw ? v.w / FB.cw : 1;
   FB.svg.setAttribute('viewBox', [v.x, v.y, v.w, v.w * FB.ch / FB.cw].join(' '));
   const f = Math.max(0.35, Math.min(1, 0.35 + 0.16 * Math.log2(360 * FB_K / v.w)));   // smaller pins when zoomed out
-  FB.pins.forEach((p) => { p.g.setAttribute('transform', 'translate(' + p.x + ' ' + p.y + ') scale(' + (k * f) + ')'); });
+  FB.pins.forEach((p) => { p.g.setAttribute('transform', 'translate(' + p.x + ' ' + p.y + ') scale(' + (k * f) + ')'); p.g.style.display = ''; });
+  fbClusters(k);
   FB.gMe.setAttribute('transform', FB.meXY ? 'translate(' + FB.meXY[0] + ' ' + FB.meXY[1] + ') scale(' + k + ')' : 'translate(-999 -999)');
   FB.ring.setAttribute('transform', FB.ringXY ? 'translate(' + FB.ringXY[0] + ' ' + FB.ringXY[1] + ') scale(' + k + ')' : 'translate(-999 -999)');
   if (FB.popFor) fbPlacePop();
@@ -488,7 +509,7 @@ async function fbDraw(cands) {
     const [fill, stroke, r] = style[t], g = fbSvg('g', { 'data-pi': c.pi, class: 'zf-fbpin' });
     if (t === 0 || t === 1 || t === 4) g.append(fbSvg('circle', { r: r + 2.5, fill: '#fff' }));
     g.append(fbSvg('circle', { r, fill, stroke, 'stroke-width': 1.5 }), fbSvg('circle', { r: Math.max(r + 5, 11), fill: 'transparent' }));
-    const [x, y] = fbProject(c.p.lo, c.p.la); FB.pins.push({ g, x, y }); FB.gPins.append(g);
+    const [x, y] = fbProject(c.p.lo, c.p.la); FB.pins.push({ g, x, y, t }); FB.gPins.append(g);
   });
   FB.meXY = S.origin ? fbProject(S.origin.lo, S.origin.la) : null;
   if (S.keep) { S.keep = false; fbApply(); } else fbFit(cands);
