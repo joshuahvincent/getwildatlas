@@ -239,23 +239,38 @@ function render() {
 const FLY_ZOOM = 5.3;   // "Show on map": the city and the region around it
 const TEAL = '#0E7C86', TEAL_DARK = '#08454A', GREEN = '#2E7D32', GREEN_DARK = '#17441a', YELLOW = '#FACC15', YELLOW_DARK = '#6b5200', YOU = '#2563EB';
 let map = null, mapLib = null, popup = null, mapReady = null, lastCands = [];
+// when a place is searched (or located) the map opens about 30 miles / 50 km across, centred on it; if no result is inside that box it widens to take in the closest three
+const NEAR_KM = IMPERIAL ? 24.1 : 25;
+function nearBox(o, cands) {
+  // on a phone the map is small, so open closer (about 10 miles / 18 km across) to show streets rather than a bare outline
+  const phone = window.matchMedia('(max-width: 899px)').matches, R = phone ? 9 : NEAR_KM;
+  const dLa = R / 111, dLo = R / (111 * Math.max(0.2, Math.cos(o.la * Math.PI / 180)));
+  const b = [[o.lo - dLo, o.la - dLa], [o.lo + dLo, o.la + dLa]];
+  if (!cands.some((c) => Math.abs(c.p.la - o.la) <= dLa && Math.abs(c.p.lo - o.lo) <= dLo)) {
+    cands.filter((c) => c.km !== null).sort((x, y) => x.km - y.km).slice(0, phone ? 1 : 3).forEach((c) => { b[0][0] = Math.min(b[0][0], c.p.lo); b[0][1] = Math.min(b[0][1], c.p.la); b[1][0] = Math.max(b[1][0], c.p.lo); b[1][1] = Math.max(b[1][1], c.p.la); });
+  }
+  return b;
+}
 const TIER_OF = (rank) => (rank === 0 ? 0 : rank === 1 ? 1 : rank <= 3 ? 2 : rank === 4 ? 3 : 4);
 // pin sizes shrink a lot when the map is zoomed out (thousands of places at world level), and reach their full size by zoom 5
 const zoomR = (a, b, c) => ['interpolate', ['linear'], ['zoom'], 0, a * 0.28, 2, a * 0.4, 4, b * 0.75, 5, b, 9, c];
 const zoomW = (w) => ['interpolate', ['linear'], ['zoom'], 0, w * 0.35, 3, w * 0.6, 5, w];
+const CLUSTER_MAX_ZOOM = 4;   // zoomed out further than this, nearby places merge into a numbered circle
 function mapStyle() {
   const pin = (id, tier, radius, paint) => ({ id, type: 'circle', source: 'pins', filter: ['==', ['get', 'tier'], tier], paint: Object.assign({ 'circle-radius': radius }, paint) });
   return {
     version: 8,
     sources: {
       countries: { type: 'geojson', data: '/assets/zoos/geo/countries.json', maxzoom: 7, tolerance: 0.6 },
-      pins: { type: 'geojson', data: { type: 'FeatureCollection', features: [] } },
+      pins: { type: 'geojson', data: { type: 'FeatureCollection', features: [] }, cluster: true, clusterMaxZoom: CLUSTER_MAX_ZOOM, clusterRadius: 46, clusterProperties: { best: ['min', ['get', 'tier']] } },
       me: { type: 'geojson', data: { type: 'FeatureCollection', features: [] } },
     },
     layers: [
       { id: 'bg', type: 'background', paint: { 'background-color': '#dbe9f3' } },
+      // a soft shoreline halo on the water side (the land fill below covers the inland half), then land, then bolder country borders
+      { id: 'coast', type: 'line', source: 'countries', paint: { 'line-color': '#bcd3e5', 'line-width': ['interpolate', ['linear'], ['zoom'], 0, 3, 4, 8, 8, 14], 'line-blur': ['interpolate', ['linear'], ['zoom'], 0, 2, 4, 5, 8, 8] } },
       { id: 'land', type: 'fill', source: 'countries', paint: { 'fill-color': '#f7efdc' } },
-      { id: 'borders', type: 'line', source: 'countries', paint: { 'line-color': '#a8946a', 'line-width': 1.1 } },
+      { id: 'borders', type: 'line', source: 'countries', layout: { 'line-join': 'round' }, paint: { 'line-color': '#8a7650', 'line-width': ['interpolate', ['linear'], ['zoom'], 0, 0.8, 3, 1.3, 6, 2] } },
       // tier 3 similar animals: small grey ring; tier 2 close relative: small green dot; tier 1 unconfirmed: yellow dot; tier 0 lists it: large green dot with white halo
       pin('pins-g', 3, zoomR(3.5, 5, 7), { 'circle-color': '#ffffff', 'circle-stroke-color': '#6b6b6b', 'circle-stroke-width': zoomW(1.6) }),
       pin('pins-r', 2, zoomR(3.5, 5, 7), { 'circle-color': GREEN, 'circle-stroke-color': '#ffffff', 'circle-stroke-width': zoomW(1.5) }),
@@ -281,6 +296,13 @@ async function ensureMap() {
     map.on('error', (e) => console.error('[zoos map]', e && e.error ? e.error.message : e));
     map.touchZoomRotate.disableRotation();
     map.addControl(new mapLib.NavigationControl({ showCompass: false }), 'top-right');
+    // with a location set, the + button homes in on the blue dot: each press zooms one level and slides the view most of the way toward it (zoom out stays centred)
+    const nav = document.querySelector('#zf-map .maplibregl-ctrl-group');
+    if (nav) nav.addEventListener('click', (e) => {
+      const b = e.target.closest && e.target.closest('button'); if (!b || !S.origin) return;
+      const o = S.origin, c = map.getCenter(), z = map.getZoom(), d = reducedMotion() ? 0 : 400;
+      if (b.classList.contains('maplibregl-ctrl-zoom-in')) { e.stopImmediatePropagation(); e.preventDefault(); map.easeTo({ center: [c.lng + (o.lo - c.lng) * 0.6, c.lat + (o.la - c.lat) * 0.6], zoom: Math.min(z + 1, 18), duration: d }); }
+    }, true);
     map.addControl(new mapLib.AttributionControl({ compact: true, customAttribution: 'Outlines: Natural Earth' }));
     await new Promise((res) => (map.loaded() ? res() : map.once('load', res)));
     delete $('zf-map').dataset.loading;
@@ -296,18 +318,87 @@ async function ensureMap() {
     console.debug('[zoos map] ready in ' + Math.round(performance.now() - t0) + ' ms');
     // state/province outlines (1 MB) are only fetched once the visitor zooms in, so the first view starts faster
     const addAdmin1 = () => {
-      if (map.getSource('admin1') || map.getZoom() < 3) return;
+      if (map.getSource('admin1') || map.getZoom() < 2.5) return;
       map.addSource('admin1', { type: 'geojson', data: '/assets/zoos/geo/admin1.json', maxzoom: 7, tolerance: 0.6 });
-      map.addLayer({ id: 'admin1', type: 'line', source: 'admin1', paint: { 'line-color': '#d3c3a0', 'line-width': 0.7 } }, 'borders');
+      map.addLayer({ id: 'admin1', type: 'line', source: 'admin1', paint: { 'line-color': '#c4b085', 'line-width': 0.8, 'line-opacity': ['interpolate', ['linear'], ['zoom'], 2.5, 0.35, 4.5, 1] } }, 'borders');
     };
     map.on('zoomend', addAdmin1); addAdmin1();
+    map.on('zoomend', addStreets); map.on('moveend', addStreets); addStreets();
+    addCountryLabels();
     const layers = ['pins-e', 'pins-d', 'pins-w', 'pins-r', 'pins-g'];
     map.on('click', layers, (e) => { const f = e.features && e.features[0]; if (f) setActive(f.properties.pi, { popup: true, scroll: true }); });
     layers.forEach((l) => { map.on('mouseenter', l, () => (map.getCanvas().style.cursor = 'pointer')); map.on('mouseleave', l, () => (map.getCanvas().style.cursor = '')); });
+    // clusters are HTML circles (no font files needed): rebuilt from the clustered source whenever the view changes
+    const cm = new Map();
+    const drawClusters = () => {
+      if (!map.getSource('pins') || !map.isStyleLoaded()) return;
+      const seen = new Set();
+      map.querySourceFeatures('pins', { filter: ['has', 'point_count'] }).forEach((f) => {
+        const id = f.properties.cluster_id; if (seen.has(id)) return; seen.add(id);
+        const n = f.properties.point_count, ll = f.geometry.coordinates;
+        let m = cm.get(id);
+        if (!m) {
+          const b = el('button', { type: 'button', class: 'zf-cluster', 'aria-label': n + ' places, zoom in' });
+          b.addEventListener('click', async () => { try { const z = await map.getSource('pins').getClusterExpansionZoom(id); map.easeTo({ center: b._ll, zoom: Math.min(z + 0.3, 13), duration: reducedMotion() ? 0 : 500 }); } catch (e) { /* ignore */ } });
+          m = new mapLib.Marker({ element: b }).setLngLat(ll).addTo(map); m._b = b; cm.set(id, m);
+        }
+        m._b._ll = ll; m._b.textContent = n >= 1000 ? Math.round(n / 100) / 10 + 'k' : String(n);
+        const d = n < 10 ? 26 : n < 100 ? 32 : n < 500 ? 40 : 48;
+        m._b.style.width = m._b.style.height = d + 'px'; m._b.dataset.t = f.properties.best <= 1 ? 'a' : 'b';
+      });
+      cm.forEach((m, id) => { if (!seen.has(id)) { m.remove(); cm.delete(id); } });
+    };
+    map.on('render', () => { if (map.loaded()) drawClusters(); });
+    map.on('moveend', drawClusters); map.on('sourcedata', (e) => { if (e.sourceId === 'pins' && e.isSourceLoaded) drawClusters(); });
     if (!map.getSource('pins')) await new Promise((res) => map.once('styledata', res));
     return map;
   })();
   return mapReady;
+}
+// Country names on the outline map: plain HTML labels in the site font (no font files from anywhere else). Bigger countries show first as you zoom in;
+// they step aside at city zoom, where the street map has its own labels.
+let labelsOn = false;
+async function addCountryLabels() {
+  if (labelsOn) return; labelsOn = true;
+  try {
+    const gj = await (await fetch('/assets/zoos/geo/countries.json')).json();
+    const items = gj.features.map((f) => {
+      const g = f.geometry, polys = g.type === 'Polygon' ? [g.coordinates] : g.coordinates; let best = null, bestA = -1;
+      polys.forEach((poly) => { const r = poly[0]; let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9; r.forEach(([x, y]) => { x0 = Math.min(x0, x); x1 = Math.max(x1, x); y0 = Math.min(y0, y); y1 = Math.max(y1, y); }); const a = (x1 - x0) * (y1 - y0) * Math.cos(((y0 + y1) / 2) * Math.PI / 180); if (a > bestA) { bestA = a; best = [(x0 + x1) / 2, (y0 + y1) / 2]; } });
+      return { n: f.properties.n, at: best, a: bestA };
+    }).filter((i) => i.at && i.n).sort((a, b) => b.a - a.a);
+    const marks = items.map((it, rank) => {
+      const e = el('div', { class: 'zf-clabel', text: it.n }); const m = new mapLib.Marker({ element: e, anchor: 'center' }).setLngLat(it.at).addTo(map);
+      return { e, rank };
+    });
+    const sync = () => { const z = map.getZoom(), lim = z < 2 ? 14 : z < 3 ? 38 : z < 4.2 ? 85 : 999; marks.forEach((m) => { m.e.hidden = z >= 5.2 || m.rank >= lim; }); };
+    map.on('zoom', sync); sync();
+  } catch (e) { console.warn('[zoos map] country names unavailable', e); }
+}
+// Street detail (roads, buildings, water, parks, place names) from OpenFreeMap (OpenStreetMap data). Nothing is requested from them until the map is
+// zoomed in to about state level (zoom 5+); until then every request stays on our own site. Their style supplies the layers; we add them under the pins.
+const STREET_ZOOM = 5;   // about a state or region on screen
+let streets = 0;   // 0 not asked yet, 1 loading, 2 on, 3 failed (outlines only)
+async function addStreets() {
+  if (streets || !map || map.getZoom() < STREET_ZOOM) return;
+  streets = 1;
+  try {
+    const st = await (await fetch('https://tiles.openfreemap.org/styles/liberty')).json();
+    map.addSource('openmaptiles', st.sources.openmaptiles); map.setGlyphs(st.glyphs);
+    for (const l of st.layers) {
+      const icon = l.type === 'symbol' && l.layout && l.layout['icon-image'], label = icon && /^label_/.test(l.id);   // town / city names carry a dot icon: keep the name, drop the dot
+      if (l.type === 'raster' || (icon && !label) || (l.paint && (l.paint['fill-pattern'] || l.paint['line-pattern']))) continue;   // no sprite sheet: skip icon and pattern layers
+      const layer = JSON.parse(JSON.stringify(l));
+      if (label) { delete layer.layout['icon-image']; delete layer.layout['icon-size']; delete layer.layout['icon-anchor']; }
+      if (l.type === 'background') layer.paint = Object.assign({}, l.paint, { 'background-opacity': ['interpolate', ['linear'], ['zoom'], 5, 0, 6.5, 1] });
+      else layer.minzoom = Math.max(l.minzoom || 0, 5.5);
+      map.addLayer(layer, 'borders');
+    }
+    // our simplified outlines fade out as the detailed street map fades in (they would not line up with real borders)
+    map.setPaintProperty('land', 'fill-opacity', ['interpolate', ['linear'], ['zoom'], 5, 1, 6.5, 0]);
+    ['borders', 'admin1'].forEach((id) => { if (map.getLayer(id)) map.setPaintProperty(id, 'line-opacity', ['interpolate', ['linear'], ['zoom'], 5, 1, 6.5, 0]); });
+    streets = 2;
+  } catch (e) { streets = 3; console.warn('[zoos map] street detail unavailable', e); }
 }
 function mapProblem(why) {
   const box = $('zf-map'); if (!box || box.dataset.failed) return; box.dataset.failed = '1'; delete box.dataset.loading;
@@ -321,11 +412,32 @@ const FB_K = 2;   // svg units per degree
 function fbProject(lo, la) { return [(lo + 180) * FB_K, (90 - la) * FB_K]; }
 function fbSvg(tag, attrs) { const n = document.createElementNS('http://www.w3.org/2000/svg', tag); for (const k in attrs) n.setAttribute(k, attrs[k]); return n; }
 function fbWebglOk() { try { const c = document.createElement('canvas'); return !!(c.getContext('webgl2') || c.getContext('webgl')); } catch (e) { return false; } }
+// zoomed out, nearby pins merge into numbered circles (same idea as the WebGL map): grid cells of ~46 screen px, only below about state level
+function fbClusters(k) {
+  if (!FB.gClu) { FB.gClu = fbSvg('g', {}); FB.svg.insertBefore(FB.gClu, FB.gPins.nextSibling); }
+  FB.gClu.textContent = '';
+  const z = Math.log2((FB.cw / (FB.vb.w / FB_K)) * 360 / 512);
+  if (z >= CLUSTER_MAX_ZOOM + 0.5 || !FB.cw) return;
+  const cell = 46 * k, cells = new Map();
+  FB.pins.forEach((p) => { const key = Math.floor(p.x / cell) + ':' + Math.floor(p.y / cell); let c = cells.get(key); if (!c) cells.set(key, (c = [])); c.push(p); });
+  cells.forEach((ps) => {
+    if (ps.length < 2) return;
+    ps.forEach((p) => { p.g.style.display = 'none'; });
+    const x = ps.reduce((a, p) => a + p.x, 0) / ps.length, y = ps.reduce((a, p) => a + p.y, 0) / ps.length, n = ps.length;
+    const r = (n < 10 ? 13 : n < 100 ? 16 : n < 500 ? 20 : 24) * k, best = Math.min(...ps.map((p) => p.t));
+    const g = fbSvg('g', { class: 'zf-fbclu', transform: 'translate(' + x + ' ' + y + ')', role: 'button', 'aria-label': n + ' places, zoom in' });
+    g.append(fbSvg('circle', { r, fill: best <= 1 ? '#5aa469' : '#8d8272', stroke: '#fff', 'stroke-width': 2 * k }));
+    const t = fbSvg('text', { 'text-anchor': 'middle', y: 4 * k, fill: '#fff', 'font-size': 12 * k, 'font-weight': 700 }); t.textContent = n >= 1000 ? Math.round(n / 100) / 10 + 'k' : n; g.append(t);
+    g.addEventListener('click', () => { const v = FB.vb, w = v.w / 2.6; FB.vb = { x: x - w / 2, y: y - w * FB.ch / FB.cw / 2, w }; fbClamp(); fbApply(); });
+    FB.gClu.append(g);
+  });
+}
 function fbApply() {
   const v = FB.vb, k = FB.cw ? v.w / FB.cw : 1;
   FB.svg.setAttribute('viewBox', [v.x, v.y, v.w, v.w * FB.ch / FB.cw].join(' '));
   const f = Math.max(0.35, Math.min(1, 0.35 + 0.16 * Math.log2(360 * FB_K / v.w)));   // smaller pins when zoomed out
-  FB.pins.forEach((p) => { p.g.setAttribute('transform', 'translate(' + p.x + ' ' + p.y + ') scale(' + (k * f) + ')'); });
+  FB.pins.forEach((p) => { p.g.setAttribute('transform', 'translate(' + p.x + ' ' + p.y + ') scale(' + (k * f) + ')'); p.g.style.display = ''; });
+  fbClusters(k);
   FB.gMe.setAttribute('transform', FB.meXY ? 'translate(' + FB.meXY[0] + ' ' + FB.meXY[1] + ') scale(' + k + ')' : 'translate(-999 -999)');
   FB.ring.setAttribute('transform', FB.ringXY ? 'translate(' + FB.ringXY[0] + ' ' + FB.ringXY[1] + ') scale(' + k + ')' : 'translate(-999 -999)');
   if (FB.popFor) fbPlacePop();
@@ -366,7 +478,10 @@ async function fbInit() {
     box.append(svg);
     FB.pop = el('div', { class: 'zf-fbpop', hidden: '' }); box.append(FB.pop);
     const ctl = el('div', { class: 'zf-fbctl' }, el('button', { type: 'button', 'aria-label': 'Zoom in', text: '+' }), el('button', { type: 'button', 'aria-label': 'Zoom out', text: '−' }));
-    ctl.children[0].addEventListener('click', () => fbZoom(1.6, FB.cw / 2, FB.ch / 2)); ctl.children[1].addEventListener('click', () => fbZoom(1 / 1.6, FB.cw / 2, FB.ch / 2));
+    ctl.children[0].addEventListener('click', () => {
+      if (FB.meXY) { const v = FB.vb, h = v.w * FB.ch / FB.cw, cx = v.x + v.w / 2, cy = v.y + h / 2; v.x += (FB.meXY[0] - cx) * 0.6; v.y += (FB.meXY[1] - cy) * 0.6; fbClamp(); }
+      fbZoom(1.6, FB.cw / 2, FB.ch / 2);
+    }); ctl.children[1].addEventListener('click', () => fbZoom(1 / 1.6, FB.cw / 2, FB.ch / 2));
     box.append(ctl, el('div', { class: 'zf-fbcred', text: 'Outlines: Natural Earth' }));
     box.addEventListener('wheel', (e) => { e.preventDefault(); const r = box.getBoundingClientRect(); fbZoom(e.deltaY < 0 ? 1.25 : 0.8, e.clientX - r.left, e.clientY - r.top); }, { passive: false });
     box.addEventListener('pointerdown', (e) => { if (e.target.closest('.zf-fbctl,.zf-fbpop')) return; FB.drag = { x: e.clientX, y: e.clientY, vx: FB.vb.x, vy: FB.vb.y, moved: false, id: e.pointerId }; });
@@ -394,7 +509,7 @@ async function fbDraw(cands) {
     const [fill, stroke, r] = style[t], g = fbSvg('g', { 'data-pi': c.pi, class: 'zf-fbpin' });
     if (t === 0 || t === 1 || t === 4) g.append(fbSvg('circle', { r: r + 2.5, fill: '#fff' }));
     g.append(fbSvg('circle', { r, fill, stroke, 'stroke-width': 1.5 }), fbSvg('circle', { r: Math.max(r + 5, 11), fill: 'transparent' }));
-    const [x, y] = fbProject(c.p.lo, c.p.la); FB.pins.push({ g, x, y }); FB.gPins.append(g);
+    const [x, y] = fbProject(c.p.lo, c.p.la); FB.pins.push({ g, x, y, t }); FB.gPins.append(g);
   });
   FB.meXY = S.origin ? fbProject(S.origin.lo, S.origin.la) : null;
   if (S.keep) { S.keep = false; fbApply(); } else fbFit(cands);
@@ -402,7 +517,7 @@ async function fbDraw(cands) {
 function fbFit(cands) {
   const prim = cands.filter((c) => c.rank <= 3); let use = prim.length ? prim : cands;
   if (S.cur && !S.origin && HOME_CC && use.some((c) => c.p.cc === HOME_CC)) use = use.filter((c) => c.p.cc === HOME_CC);
-  if (!S.cur && S.origin) { fbFitBounds([[-170, -58], [180, 80]], 0); return; }
+  if (S.origin) { fbFitBounds(nearBox(S.origin, cands), 28); return; }
   if (!S.cur && !S.origin) { fbFitBounds(START_VIEW, 10); return; }
   const pts = (S.origin ? use.slice(0, 8) : use).map((c) => [c.p.lo, c.p.la]); if (S.origin) pts.push([S.origin.lo, S.origin.la]);
   if (!pts.length) { fbFitBounds(START_VIEW, 10); return; }
@@ -423,7 +538,9 @@ async function drawMap(cands) {
   if (S.mapFailed) return;
   if (!fbWebglOk()) { try { await fbDraw(cands); } catch (e) { S.mapFailed = true; mapProblem(e && e.message); } return; }   // no WebGL (Safari with it off, some locked-down machines): plain SVG map
   try {
-    await Promise.race([ensureMap(), new Promise((_, rej) => setTimeout(() => rej(new Error('map took too long to start')), 25000))]);
+    // the start timer only runs while the tab is visible: a background tab does not paint, so its map cannot finish loading until the visitor switches to it
+    const giveUp = new Promise((_, rej) => { const arm = () => setTimeout(() => { if (document.hidden) document.addEventListener('visibilitychange', arm, { once: true }); else rej(new Error('map took too long to start')); }, 25000); arm(); });
+    await Promise.race([ensureMap(), giveUp]);
   } catch (e) { S.mapFailed = true; mapProblem(e && e.message); return; }
   const feats = cands.map((c) => ({ type: 'Feature', properties: { pi: c.pi, tier: TIER_OF(c.rank) }, geometry: { type: 'Point', coordinates: [c.p.lo, c.p.la] } }));
   map.getSource('pins').setData({ type: 'FeatureCollection', features: feats });
@@ -436,7 +553,7 @@ function fit(cands) {
   const prim = cands.filter((c) => c.rank <= 3);
   let use = prim.length ? prim : cands;
   if (S.cur && !S.origin && HOME_CC && use.some((c) => c.p.cc === HOME_CC)) use = use.filter((c) => c.p.cc === HOME_CC);
-  if (!S.cur && S.origin) { map.resize(); map.fitBounds([[-170, -58], [180, 80]], { padding: 0, duration: 0 }); return; }   // all animals + a location: the whole world, with the pin showing where you are
+  if (S.origin) { map.resize(); map.fitBounds(nearBox(S.origin, cands), { padding: 28, maxZoom: 13, duration: reducedMotion() ? 0 : 600 }); return; }   // all animals + a location: the whole world, with the pin showing where you are
   if (!S.cur && !S.origin) { map.resize(); map.fitBounds(START_VIEW, { padding: 10, duration: 0 }); return; }   // North America (or Europe / Oceania) to start; the visitor can pan out to the world
   (S.origin ? use.slice(0, 8) : use).forEach((c) => pts.push([c.p.lo, c.p.la]));
   if (S.origin) pts.push([S.origin.lo, S.origin.la]);
@@ -765,7 +882,10 @@ async function init() {
   };
   $('zf-results').addEventListener('click', clicked);
   $('zf-map').addEventListener('click', clicked);
-  $('zf-main').dataset.view = 'list';
+  // phones open on the map (the list is one tap away); desktop shows both side by side
+  const narrow = window.matchMedia('(max-width: 899px)').matches;
+  S.view = narrow ? 'map' : 'list'; $('zf-main').dataset.view = S.view;
+  $('zf-tab-list').setAttribute('aria-pressed', String(!narrow)); $('zf-tab-map').setAttribute('aria-pressed', String(narrow));
   // which animal? a landing page (/zoos/<animal>/) sets data-animal; the old /zoos/?animal=<id> links redirect to the landing page
   const root = $('zf'), legacy = new URLSearchParams(location.search).get('animal');
   const fromPath = root.dataset.animal, fromLegacy = legacy && (ALIASES[legacy] || legacy.replace(/-/g, '_'));
