@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy World Wildlife Day! This year we're meeting the lion — a roar you can hear up to 8 kilometres away, a family called a pride, and real lions coming home to a park in Rwanda."
 coverImage: /assets/blog/world-wildlife-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "A lion's roar is so loud it can be heard up to 8 kilometres away."
+    - "Lions roar to tell their family, \"Here I am, this is our home\" — and the sound can travel as far as 80 football fields."
+    - "Lions spend most of the day resting in the shade — up to 20 hours!"
 animalDay:
   dayName: World Wildlife Day
   animalId: lion

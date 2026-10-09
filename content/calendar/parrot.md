@@ -6,6 +6,11 @@ excerpt: "Happy World Parrot Day! Meet the parrot — it can copy words, it hold
 coverImage: /assets/animals/parrot/cover.jpg
 tags: [animals, conservation, family]
 appId: parrot
+social:
+  facts:
+    - "Some parrots can learn over 100 different words!"
+    - "A parrot weighs about 1.5 kilograms (3 pounds). It would take about 13 parrots to weigh as much as one 5-year-old."
+    - "Many parrots are smaller, and some are bigger!"
 animalDay:
   dayName: World Parrot Day
   animalId: parrot

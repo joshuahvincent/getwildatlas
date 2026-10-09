@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Last Saturday was World Migratory Bird Day, so this week we're following the record-holder: a bird that weighs about as much as a stick of butter and flies from the top of the world to the bottom and back, every year. A read-aloud, plus where to catch a glimpse of one in the wild."
 coverImage: /assets/blog/arctic-tern-facts-for-kids/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "Every year, a bird that weighs about as much as a stick of butter flies from the top of the world to the bottom — and back again. That's the longest trip of any animal scientists have ever tracked!"
+    - "Stretch its wings out wide, and they're about three-quarters as wide as a 5-year-old is tall."
+    - "But the bird itself is tiny — it would take about 170 Arctic terns on a scale to weigh as much as one 5-year-old!"
 animalDay:
   animalId: arctic_tern
   dayName: null

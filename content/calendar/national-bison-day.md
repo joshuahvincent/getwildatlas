@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy National Bison Day! Meet the American bison — North America's biggest land animal, with a giant snowplow head, a talent for jumping fences, and babies born a bright orange-red. A read-aloud, plus real zoos where you can go meet one."
 coverImage: /assets/blog/national-bison-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "Baby bison are born a bright orange-red — people call them \"red dogs\" — and just a couple of hours later, they can keep up with the whole herd."
+    - "A big bull bison's shoulders reach higher than most grown-ups' heads — stand next to one, and a 5-year-old's head would only reach partway up its side! Nose to tail, it's about as long as three 5-year-olds lying head to toe."
+    - "And it's heavy, too — a big bull can weigh as much as 49 five-year-olds, all standing on one big scale together!"
 animalDay:
   dayName: National Bison Day
   animalId: bison

@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy World Oceans Day! Meet the orca — our ambassador for the whole ocean today, and really the biggest dolphin in the world, with a family accent all its own. A read-aloud, plus where to (maybe) spot one in the wild."
 coverImage: /assets/blog/world-oceans-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "A grown-up orca is about 6 times as long as a 5-year-old is tall — stretched all the way out, that's about 7 meters (23 feet)!"
+    - "One orca can weigh as much as about 300 five-year-olds, all standing on one giant scale together."
+    - "A newborn baby orca is already about twice as long as a 5-year-old is tall, and it weighs as much as about 10 five-year-olds!"
 animalDay:
   dayName: World Oceans Day
   animalId: orca

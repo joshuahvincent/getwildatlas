@@ -6,6 +6,11 @@ excerpt: "Meet the king cobra — the world's longest venomous snake, a snake-ea
 coverImage: /assets/animals/king_cobra/cover.jpg
 tags: [animals, reptiles, conservation, family]
 appId: king_cobra
+social:
+  facts:
+    - "A big king cobra can stretch about 4.5 meters (14 feet 10 inches)."
+    - "That's about as long as a small car — or four 5-year-olds lying head to toe!"
+    - "Can you stretch your arms out wide and picture it?"
 animalDay:
   dayName: World Snake Day
   animalId: king_cobra

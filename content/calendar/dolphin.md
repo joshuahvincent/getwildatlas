@@ -6,6 +6,11 @@ excerpt: "Meet the dolphin — it sleeps with half its brain awake, calls its fr
 coverImage: /assets/animals/dolphin/cover.jpg
 tags: [animals, conservation, family]
 appId: dolphin
+social:
+  facts:
+    - "A bottlenose dolphin is about 2.5 meters (8 feet 3 inches) long."
+    - "That's about twice as long as a 5-year-old is tall!"
+    - "A dolphin weighs about 200 kilograms (441 pounds)."
 animalDay:
   dayName: National Dolphin Day
   animalId: dolphin

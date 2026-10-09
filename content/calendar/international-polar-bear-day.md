@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy International Polar Bear Day! Meet the polar bear — its fur isn't really white, it's one of the biggest meat-eaters on land, and right now its cubs are peeking out of their snow dens for the very first time. A read-aloud, plus real places where you can meet one."
 coverImage: /assets/blog/international-polar-bear-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "Even standing on all four feet, a grown-up polar bear's back — about 1.3 meters (4 feet 5 inches) tall at the shoulder — is taller than the top of a 5-year-old's head."
+    - "Nose to tail, a big bear stretches 2.5 meters (8 feet 3 inches) long: longer than two kids lying down in a row!"
+    - "That's about how much one big dad polar bear weighs — 500 kilograms (1,102 pounds)!"
 animalDay:
   dayName: International Polar Bear Day
   animalId: polar_bear

@@ -6,6 +6,11 @@ excerpt: "Meet the barn owl — a heart-faced hunter that finds its dinner by so
 coverImage: /assets/animals/barn_owl/cover.jpg
 tags: [animals, conservation, family]
 appId: barn_owl
+social:
+  facts:
+    - "Barn owls can find a mouse in the dark using only their ears!"
+    - "With its wings open, it measures about 95 centimeters (3 feet 2 inches) from tip to tip."
+    - "A barn owl weighs about half a kilogram (1 pound), about as much as a loaf of bread."
 animalDay:
   dayName: International Owl Awareness Day
   animalId: barn_owl

@@ -6,6 +6,11 @@ excerpt: "Happy World Albatross Day! Meet the albatross — it can glide for hou
 coverImage: /assets/animals/albatross/cover.jpg
 tags: [animals, conservation, family]
 appId: albatross
+social:
+  facts:
+    - "An albatross can glide over the ocean for hours without flapping its wings once!"
+    - "Its wings are the longest of any bird. The biggest albatross can stretch them about 3.4 meters (11 feet) wide."
+    - "That's about three 5-year-olds, lying head to toe!"
 animalDay:
   dayName: World Albatross Day
   animalId: albatross

@@ -6,6 +6,11 @@ excerpt: "Meet the axolotl — it wears a frilly pink crown, always seems to smi
 coverImage: /assets/animals/axolotl/cover.jpg
 tags: [animals, conservation, family]
 appId: axolotl
+social:
+  facts:
+    - "An axolotl is about 25 centimeters (10 inches) long."
+    - "An axolotl weighs about 100 grams (about 3.5 ounces), a bit like a small apple."
+    - "A 5-year-old weighs about as much as 185 axolotls!"
 animalDay:
   dayName: Wild Atlas Spotlight
   animalId: axolotl

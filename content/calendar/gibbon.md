@@ -6,6 +6,11 @@ excerpt: "Happy International Gibbon Day! Meet the gibbon — a small ape that s
 coverImage: /assets/animals/gibbon/cover.jpg
 tags: [animals, conservation, family]
 appId: gibbon
+social:
+  facts:
+    - "Gibbons sing songs that echo across the whole rainforest!"
+    - "Standing up, a gibbon is about 75 centimeters (2 feet 6 inches) tall."
+    - "It weighs only about 6 kilograms (13 pounds) — less than a big house cat."
 animalDay:
   dayName: International Gibbon Day
   animalId: gibbon

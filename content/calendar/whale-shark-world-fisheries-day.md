@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy World Fisheries Day! It's a day to thank the people who fish — including the fishers in India who cut their own nets to set whale sharks free. Meet the whale shark: the biggest fish in the sea, with a throat only about as wide as a coin. A read-aloud, plus where to see one."
 coverImage: /assets/blog/whale-shark-world-fisheries-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "The biggest fish in the whole ocean is as long as a school bus — but its throat is only about as wide as a coin, so it eats mostly teeny food."
+    - "A grown-up whale shark can be as long as 11 five-year-olds lying head to toe — about 12 meters (39 feet), or the length of a school bus."
+    - "It can weigh as much as 973 five-year-olds, all standing on one enormous scale together."
 animalDay:
   dayName: World Fisheries Day
   animalId: whale_shark

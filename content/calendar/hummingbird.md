@@ -6,6 +6,11 @@ excerpt: "Meet the hummingbird — it weighs less than a coin, flaps its wings t
 coverImage: /assets/animals/hummingbird/cover.jpg
 tags: [animals, conservation, family]
 appId: hummingbird
+social:
+  facts:
+    - "Some hummingbirds flap about 80 times every second."
+    - "And they weigh next to nothing: about 4 grams (0.14 ounces), less than a coin."
+    - "It would take around 4,600 hummingbirds to weigh as much as one 5-year-old!"
 animalDay:
   dayName: National Hummingbird Day
   animalId: hummingbird

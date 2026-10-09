@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy International Jaguar Day! Meet the jaguar — the biggest cat in the Americas, with spots that have spots, a love of swimming, and cubs that stay glued to mom for a year and a half. A read-aloud, plus real zoos where you can go meet one."
 coverImage: /assets/blog/international-jaguar-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "The jaguar is a big cat that loves to swim — and its spots have spots!"
+    - "Standing on all four paws, a jaguar's back reaches about a 5-year-old's shoulders."
+    - "Nose to the end of its body, a big jaguar is almost as long as two 5-year-olds lying head to toe — and then there's the tail!"
 animalDay:
   dayName: International Jaguar Day
   animalId: jaguar

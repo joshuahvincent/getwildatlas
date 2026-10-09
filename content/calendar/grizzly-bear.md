@@ -6,6 +6,11 @@ excerpt: "Happy World Bear Day! Meet the grizzly bear — it can smell food from
 coverImage: /assets/animals/grizzly_bear/cover.jpg
 tags: [animals, conservation, family]
 appId: grizzly_bear
+social:
+  facts:
+    - "A grizzly can run as fast as a horse, up to 55 kilometers per hour (about 34 miles per hour)."
+    - "On all fours, a grizzly's shoulders come up to about as high as you are: around 1 meter (3 feet 4 inches)."
+    - "A big grizzly weighs about 270 kilograms (595 pounds)."
 animalDay:
   dayName: World Bear Day
   animalId: grizzly_bear

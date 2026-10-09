@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "This week's Wild Atlas Spotlight: the reindeer! Meet the only deer where the girls grow antlers too, plus a read-aloud story and where to see a real one."
 coverImage: /assets/blog/reindeer-facts-for-kids/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "Boy and girl reindeer both grow antlers — and a big male's antlers can stretch longer than a 5-year-old is tall."
+    - "A big reindeer stands taller than a 5-year-old at the shoulder — and nose to tail, it's almost twice as long as a 5-year-old is tall."
+    - "A grown-up reindeer weighs a little less than nine 5-year-olds put together!"
 animalDay:
   dayName: "Wild Atlas Wildcard"
   animalId: caribou

@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy World Tapir Day! Meet the Malayan tapir — it has a bendy mini-trunk, cousins who are horses and rhinos, and babies born in watermelon stripes. A read-aloud, plus where to meet a real tapir."
 coverImage: /assets/blog/world-tapir-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "Baby Malayan tapirs are born wearing watermelon stripes — then they slowly change into black-and-white grown-ups that some zookeepers call \"Oreo tapirs.\""
+    - "The Malayan tapir is the biggest of the four tapir kinds in the world, and the only one that lives in Asia. Standing on all fours, its back is about as tall as you are, and nose to tail it's nearly as long as two 5-year-olds lying head to toe."
+    - "A big Malayan tapir weighs about as much as 14 five-year-olds — all standing on one big scale together!"
 animalDay:
   dayName: World Tapir Day
   animalId: tapir

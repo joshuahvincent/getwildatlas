@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy Bat Appreciation Day! Meet the flying fox — a giant fruit bat that finds its way by sight and smell, not echoes. A read-aloud, plus where to meet a real one."
 coverImage: /assets/blog/bat-appreciation-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "If a large flying fox stretched out its wings right next to you, they'd reach farther than you are tall — it's one of the biggest bats in the whole world!"
+    - "Its furry body is only about as long as a school ruler — it's the wings that are huge."
+    - "Every night, a flying fox eats about half its own weight in fruit and flowers — imagine eating half your weight in snacks!"
 animalDay:
   dayName: International Bat Appreciation Day
   animalId: fruit_bat

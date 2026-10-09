@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy World Bonobo Day! Meet the bonobo — it laughs when it's tickled, builds a brand-new bed every night, and lives in families led by the moms. A read-aloud, plus where to meet one."
 coverImage: /assets/blog/world-bonobo-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "Deep in the rainforests of the Democratic Republic of the Congo lives an ape that laughs when it's tickled."
+    - "Every single night, a grown-up bonobo builds a brand-new bed. It bends leafy branches high up in a tree into a cozy nest — and tomorrow night, it builds a whole new one."
+    - "A grown-up bonobo weighs about as much as two 5-year-olds put together."
 animalDay:
   dayName: World Bonobo Day
   animalId: bonobo

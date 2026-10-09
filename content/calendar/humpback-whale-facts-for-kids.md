@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "This week's Wild Atlas Spotlight is the humpback whale — the singer of the sea, with flippers so big its name means \"big-winged.\" A read-aloud, plus real places to see one in the wild."
 coverImage: /assets/blog/humpback-whale-facts-for-kids/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "Humpback whales are the singers of the sea. The males sing long, beautiful songs that travel for miles underwater!"
+    - "A grown-up humpback is about as long as 14 five-year-olds lying head to toe — around 15 meters (49 feet)!"
+    - "A humpback doesn't have teeth. It has hundreds of bristly plates called baleen, and it uses them like a strainer to catch tiny krill and small fish."
 animalDay:
   animalId: humpback_whale
   dayName: Wild Atlas Wildcard

@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "To finish the year, we're heading to the top of the world to meet the narwhal — the whale with a twisty 'horn' that isn't a horn at all. It's a tooth. A read-aloud, plus where narwhals really live."
 coverImage: /assets/blog/narwhal-facts-for-kids/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "A grown-up narwhal is about 4 times as long as a 5-year-old is tall — and that's before you even add the tusk!"
+    - "A big narwhal weighs about as much as 82 five-year-olds, all balanced on one enormous scale."
+    - "A brand-new baby narwhal is already longer than a 5-year-old is tall!"
 animalDay:
   dayName: null
   animalId: narwhal

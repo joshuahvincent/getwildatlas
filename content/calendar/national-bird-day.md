@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy National Bird Day! Meet the hyacinth macaw — the longest parrot in the world, almost as long as a 5-year-old is tall. A read-aloud, plus where to meet a real hyacinth macaw."
 coverImage: /assets/blog/national-bird-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "The hyacinth macaw is the longest parrot in the world — from beak to tail, it's almost as long as a 5-year-old is tall!"
+    - "That beak is no joke. It's strong enough to crack palm nuts so tough that people would need a hammer to open them."
+    - "It would take about a dozen hyacinth macaws to weigh as much as one 5-year-old."
 animalDay:
   dayName: National Bird Day
   animalId: macaw

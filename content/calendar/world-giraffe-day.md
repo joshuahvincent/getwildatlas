@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy World Giraffe Day! Meet the tallest animal on Earth — whose newborn calf is already about as tall as an adult, and standing within the hour. A read-aloud, plus where to meet a real giraffe."
 coverImage: /assets/blog/world-giraffe-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "Meet the giraffe — the tallest animal on Earth, with a long, dark tongue and a coat of patches that's all its own."
+    - "A big giraffe is as tall as five five-year-olds standing on each other's shoulders! And it's heavy too — about as much as 65 five-year-olds, all standing on one big scale together!"
+    - "Here's a surprise: a giraffe has the very same number of neck bones as you do — seven!"
 animalDay:
   dayName: World Giraffe Day
   animalId: giraffe

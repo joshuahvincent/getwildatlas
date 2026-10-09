@@ -6,6 +6,11 @@ excerpt: "Meet the red panda! It wraps itself in its own bushy tail, grips bambo
 coverImage: /assets/animals/red_panda/cover.jpg
 tags: [animals, conservation, family]
 appId: red_panda
+social:
+  facts:
+    - "When it's cold, a red panda wraps its long, bushy, striped tail around itself like a blanket. A built-in blanket!"
+    - "It is about 65 centimeters (2 feet 2 inches) long, and it stands about 29 centimeters (1 foot) tall at the shoulder."
+    - "A red panda weighs about 5 kilograms (11 pounds)."
 animalDay:
   dayName: International Red Panda Day
   animalId: red_panda

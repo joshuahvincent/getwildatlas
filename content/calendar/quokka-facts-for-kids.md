@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Quokkas look like they're always smiling, and a whole island is named after them because an explorer mistook them for giant rats. A read-aloud quokka story, plus the real Rottnest Island, where families can see one in the wild."
 coverImage: /assets/blog/quokka-facts-for-kids/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "Quokkas look like they're always smiling — and a whole island got its name because of them!"
+    - "Even a big quokka, from its nose all the way to the tip of its tail, is shorter than you are tall — and without its tail, it's only about half as long!"
+    - "It would take about six quokkas, all stacked up, to weigh a little more than one 5-year-old!"
 animalDay:
   animalId: quokka
   dayName: Wild Atlas Wildcard

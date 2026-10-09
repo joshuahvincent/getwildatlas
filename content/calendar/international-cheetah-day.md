@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy International Cheetah Day! Meet the cheetah — the fastest land animal on Earth, a cat that chirps instead of roars, with a stride as long as six 5-year-olds lying head to toe. A read-aloud, plus real zoos where you can go meet one."
 coverImage: /assets/blog/international-cheetah-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "Standing on all four paws, a cheetah's back reaches up to about a 5-year-old's chin."
+    - "Nose to tail tip, a cheetah is about as long as two 5-year-olds lying head to toe."
+    - "A cheetah can zoom faster than 90 km/h (about 60 mph) — faster than a car on a city street!"
 animalDay:
   dayName: International Cheetah Day
   animalId: cheetah

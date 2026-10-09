@@ -6,6 +6,11 @@ excerpt: "Meet the Amur tiger! It walks silently through snowy forests, swims in
 coverImage: /assets/animals/amur_tiger/cover.jpg
 tags: [animals, conservation, family]
 appId: amur_tiger
+social:
+  facts:
+    - "No two tigers have the same pattern."
+    - "A big Amur tiger can be about 3 meters (almost 10 feet) long from nose to tail."
+    - "An Amur tiger can weigh about 200 kilograms (441 pounds)."
 animalDay:
   dayName: International Tiger Day
   animalId: amur_tiger

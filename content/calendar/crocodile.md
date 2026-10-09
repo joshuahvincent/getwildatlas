@@ -6,6 +6,11 @@ excerpt: "Happy World Croc Day! Meet the crocodile — its eyes sit on top of it
 coverImage: /assets/animals/crocodile/cover.jpg
 tags: [animals, reptiles, conservation, family]
 appId: crocodile
+social:
+  facts:
+    - "Crocodile relatives have been around for over 200 million years."
+    - "A big crocodile can be about 5 meters (17 feet) long."
+    - "A big crocodile can weigh about 700 kilograms (1,543 pounds)."
 animalDay:
   dayName: World Croc Day
   animalId: crocodile

@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy International Pallas's Cat Day! Meet the Pallas's cat — a wild cat the size of a house cat, with fur so thick that up to 9,000 hairs fit on a spot the size of your fingernail, and a face that only looks grumpy. A read-aloud, plus where to meet a real one."
 coverImage: /assets/blog/international-pallas-cat-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "Meet the Pallas's cat: a wild cat about the size of a pet cat, with fur so thick it looks much bigger, and a flat, round face that makes it look grumpy, even when it isn't!"
+    - "Standing next to a 5-year-old, a Pallas's cat's body is only about 60 centimeters (2 feet) long, and it stands about 31 centimeters (1 foot) tall at the shoulder — it would only come up to about a 5-year-old's knee!"
+    - "Can you picture five Pallas's cats on one big scale? Together, they'd weigh about 20 kilograms (44 pounds) — about as much as one 5-year-old, at around 19 kilograms (41 pounds)."
 animalDay:
   dayName: International Pallas's Cat Day
   animalId: pallas_cat

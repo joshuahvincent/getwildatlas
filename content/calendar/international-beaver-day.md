@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy International Beaver Day! Meet the Eurasian beaver — its orange teeth never stop growing, and the front door to its home is underwater. A read-aloud, plus where to meet one in Europe (and its American cousin closer to home)."
 coverImage: /assets/blog/international-beaver-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "Beavers have bright orange teeth that never stop growing — and the front door to their home is underwater!"
+    - "Its body alone is almost as long as you are tall — and add its big, flat tail, and it's even longer!"
+    - "A grown-up beaver weighs about as much as one 5-year-old — a really big one weighs about as much as one and a half 5-year-olds!"
 animalDay:
   dayName: International Beaver Day
   animalId: beaver

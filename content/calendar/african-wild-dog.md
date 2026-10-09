@@ -6,6 +6,11 @@ excerpt: "African wild dogs have coats like no other, they sneeze to vote, and t
 coverImage: /assets/animals/african_wild_dog/cover.jpg
 tags: [animals, conservation, family]
 appId: african_wild_dog
+social:
+  facts:
+    - "African wild dogs vote by sneezing!"
+    - "A wild dog stands about 70 centimetres (2 feet 4 inches) tall at the shoulder."
+    - "A wild dog weighs about 25 kilograms (55 pounds)."
 animalDay:
   dayName: World Painted Dog Day
   animalId: african_wild_dog

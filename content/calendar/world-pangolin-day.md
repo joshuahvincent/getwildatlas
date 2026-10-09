@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy World Pangolin Day! Meet the pangolin — the only mammal covered head to tail in scales, with no teeth at all. A read-aloud, plus where to meet a real pangolin."
 coverImage: /assets/blog/world-pangolin-day/baby.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "A grown-up Chinese pangolin's body is about 45 centimeters (1 foot 6 inches) long, nose to tail-start."
+    - "That's much shorter than a 5-year-old is tall!"
+    - "Can you picture four big pangolins on one scale? Together, they'd weigh about 24 kilograms (53 pounds) — a little more than one 5-year-old, at about 19 kilograms (41 pounds)."
 animalDay:
   dayName: World Pangolin Day
   animalId: pangolin

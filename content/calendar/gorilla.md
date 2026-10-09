@@ -6,6 +6,11 @@ excerpt: "Happy World Gorilla Day! Meet the gorilla — it builds a brand new ne
 coverImage: /assets/animals/gorilla/cover.jpg
 tags: [animals, conservation, family]
 appId: gorilla
+social:
+  facts:
+    - "A big gorilla standing up is about 1.7 meters (5 feet 7 inches) tall."
+    - "That's about 60 centimeters (2 feet) taller than a 5-year-old, and about as tall as many grown-ups."
+    - "A big gorilla can weigh around 180 kilograms (397 pounds)."
 animalDay:
   dayName: World Gorilla Day
   animalId: gorilla

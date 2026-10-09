@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy Endangered Species Day! Meet the black rhino — its bendy top lip works almost like a finger, a little bird rides on its back as a lookout, and people are working hard to help it recover. A read-aloud, plus real places where you can meet one."
 coverImage: /assets/blog/endangered-species-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "A grown-up black rhino's shoulder is still way up above your head — about 1.6 meters, or 5 feet 3 inches high."
+    - "Now picture 55 five-year-olds all climbing onto one giant scale together."
+    - "That's about how much one black rhino weighs — around 1,000 kilograms, or 2,205 pounds!"
 animalDay:
   dayName: Endangered Species Day
   animalId: rhinoceros

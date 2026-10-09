@@ -6,6 +6,11 @@ excerpt: "Meet the cougar — it has more names than almost any other animal, it
 coverImage: /assets/animals/cougar/cover.jpg
 tags: [animals, conservation, family]
 appId: cougar
+social:
+  facts:
+    - "A cougar has more names than almost any other animal — more than 40 in English alone!"
+    - "A grown-up cougar is about as high as a 5-year-old's chest at the shoulder."
+    - "It weighs about 70 kilograms (154 pounds) — about the same as four 5-year-olds, all standing on one big scale together!"
 animalDay:
   dayName: Save the Florida Panther Day
   animalId: cougar

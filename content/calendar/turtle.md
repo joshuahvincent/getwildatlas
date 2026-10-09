@@ -6,6 +6,11 @@ excerpt: "Happy World Turtle Day! A turtle's shell is part of its skeleton, it c
 coverImage: /assets/animals/turtle/cover.jpg
 tags: [animals, ocean, family]
 appId: turtle
+social:
+  facts:
+    - "Turtles come in all sizes."
+    - "A pet-sized turtle is about 30 centimeters (1 foot) long."
+    - "A pet-sized turtle weighs about 0.5 kilograms (1 pound)."
 animalDay:
   dayName: World Turtle Day
   animalId: turtle

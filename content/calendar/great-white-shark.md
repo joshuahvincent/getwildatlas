@@ -6,6 +6,11 @@ excerpt: "Happy Shark Awareness Day! Meet the great white shark — it has about
 coverImage: /assets/animals/great_white_shark/cover.jpg
 tags: [animals, conservation, family]
 appId: great_white_shark
+social:
+  facts:
+    - "A great white shark has about 300 teeth — and when one falls out, a new one moves forward to take its place!"
+    - "The biggest great whites are about 6 meters (almost 20 feet) long — as long as a minibus."
+    - "A big great white can weigh about 1,900 kilograms (4,190 pounds)."
 animalDay:
   dayName: Shark Awareness Day
   animalId: great_white_shark

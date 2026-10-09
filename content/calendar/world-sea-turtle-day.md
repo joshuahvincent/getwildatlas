@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy World Sea Turtle Day! Meet the green sea turtle — it isn't green on the outside, it's named for the color of the fat under its shell. A read-aloud, plus where to (maybe) meet a real one."
 coverImage: /assets/blog/world-sea-turtle-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "A green sea turtle isn't green on the outside. It munches so much seagrass that the fat under its shell turns green — and that's how it got its name!"
+    - "A grown-up green sea turtle is about as long as you are tall, and it can weigh as much as seven five-year-olds standing on one big scale together."
+    - "A brand-new hatchling is only about as long as your finger, and weighs about as much as a chocolate-chip cookie."
 animalDay:
   dayName: World Sea Turtle Day
   animalId: sea_turtle

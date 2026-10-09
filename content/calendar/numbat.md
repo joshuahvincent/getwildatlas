@@ -6,6 +6,11 @@ excerpt: "Happy World Numbat Day! Meet the numbat — a striped little marsupial
 coverImage: /assets/animals/numbat/cover.jpg
 tags: [animals, conservation, family]
 appId: numbat
+social:
+  facts:
+    - "A numbat can eat up to 20,000 termites in one day!"
+    - "Next to a 5-year-old, who is about 109 centimeters (3 feet 7 inches) tall, a numbat looks very tiny!"
+    - "A numbat weighs about half a kilogram (1 pound)."
 animalDay:
   dayName: World Numbat Day
   animalId: numbat

@@ -6,6 +6,11 @@ excerpt: "Happy International Leopard Day! Meet the leopard: spots shaped like r
 coverImage: /assets/animals/leopard/cover.jpg
 tags: [animals, conservation, family]
 appId: leopard
+social:
+  facts:
+    - "Leopards can leap more than 6 metres (20 feet) forward."
+    - "On all fours, a leopard stands about 79 centimetres (2 feet 7 inches) tall at the shoulder."
+    - "From nose to tail, it can be about 1.9 metres (6 feet 3 inches) long."
 animalDay:
   dayName: International Leopard Day
   animalId: leopard

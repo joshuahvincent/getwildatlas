@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy International Zebra Day! Meet the zebra — no two of them share a stripe pattern, a newborn foal is walking within 20 minutes, and a baby learns its own mom's stripes so it can find her. A read-aloud, plus real places where you can meet one."
 coverImage: /assets/blog/international-zebra-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "A grown-up zebra's back is still higher than the top of your head — about 1.3 meters (4 feet 4 inches) at the shoulder, taller than a 5-year-old."
+    - "Can you picture 19 five-year-olds all standing on one giant scale?"
+    - "That's about how much one big zebra weighs — 350 kilograms, or 772 pounds!"
 animalDay:
   dayName: International Zebra Day
   animalId: zebra

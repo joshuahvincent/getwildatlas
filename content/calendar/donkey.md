@@ -6,6 +6,11 @@ excerpt: "Happy World Donkey Day! Donkeys have giant ears, a loud hee-haw, and a
 coverImage: /assets/animals/donkey/cover.jpg
 tags: [animals, farm, family]
 appId: donkey
+social:
+  facts:
+    - "At the shoulder, it stands about 1.1 meters (3 feet 8 inches) tall."
+    - "That's just about as tall as a 5-year-old, who is about 1.09 meters (3 feet 7 inches)."
+    - "One donkey weighs about 180 kilograms (397 pounds)."
 animalDay:
   dayName: World Donkey Day
   animalId: donkey

@@ -6,6 +6,11 @@ excerpt: "Happy World Cassowary Day! Meet the cassowary — a giant rainforest b
 coverImage: /assets/animals/cassowary/cover.jpg
 tags: [animals, conservation, family]
 appId: cassowary
+social:
+  facts:
+    - "A big cassowary can stand about 1.6 meters (5 feet 3 inches) tall."
+    - "That's about one and a half times as tall as you are, if you're five!"
+    - "A cassowary weighs about 59 kilograms (130 pounds)."
 animalDay:
   dayName: World Cassowary Day
   animalId: cassowary

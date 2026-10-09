@@ -6,6 +6,11 @@ excerpt: "Happy International Clouded Leopard Day! Meet the shy forest cat with 
 coverImage: /assets/animals/clouded_leopard/cover.jpg
 tags: [animals, conservation, family]
 appId: clouded_leopard
+social:
+  facts:
+    - "How big is it? About 1 meter (3 feet 4 inches) from nose to rump, with a tail almost as long again."
+    - "At the shoulder it stands about 56 centimeters (1 foot 10 inches) tall, about half as tall as a 5-year-old."
+    - "And it weighs about 18 kilograms (40 pounds), about the same as a 5-year-old."
 animalDay:
   dayName: International Clouded Leopard Day
   animalId: clouded_leopard

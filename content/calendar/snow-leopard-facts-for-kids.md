@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Meet the snow leopard — a big cat that can't roar, wraps its own tail around itself like a scarf, and lives high in Asia's snowy mountains. A read-aloud, plus real zoos where you can go meet one."
 coverImage: /assets/blog/snow-leopard-facts-for-kids/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "Snow leopards are big cats that can't roar, and their fluffy tail is so long they wrap it around themselves like a scarf!"
+    - "Standing on all fours, a snow leopard comes up to about your tummy — but nose to tail, it's almost as long as two kids lying head to toe!"
+    - "About two or three five-year-olds, all standing on one big scale together, would weigh as much as one grown-up snow leopard."
 animalDay:
   dayName: Wild Atlas Wildcard
   animalId: snow_leopard

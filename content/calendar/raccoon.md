@@ -6,6 +6,11 @@ excerpt: "Happy International Raccoon Appreciation Day! Meet the raccoon — it 
 coverImage: /assets/animals/raccoon/cover.jpg
 tags: [animals, conservation, family]
 appId: raccoon
+social:
+  facts:
+    - "On all fours, it comes up to about 30 centimetres (1 foot) at the shoulder."
+    - "A raccoon weighs about 8 kilograms (18 pounds)."
+    - "Three raccoons together would weigh a bit more than one 5-year-old."
 animalDay:
   dayName: International Raccoon Appreciation Day
   animalId: raccoon

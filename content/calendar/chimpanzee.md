@@ -6,6 +6,11 @@ excerpt: "Meet the chimpanzee — it fishes for termites with a stick, cracks nu
 coverImage: /assets/animals/chimpanzee/cover.jpg
 tags: [animals, conservation, family]
 appId: chimpanzee
+social:
+  facts:
+    - "A chimpanzee stands about 1.2 meters (4 feet) tall."
+    - "That's a little taller than a 5-year-old, who stands about 109 centimeters (3 feet 7 inches)."
+    - "A chimpanzee weighs about 50 kilograms (110 pounds)."
 animalDay:
   dayName: World Chimpanzee Day
   animalId: chimpanzee

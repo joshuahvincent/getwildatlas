@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy Wild Koala Day! Meet the koala — a pouch animal (a marsupial, not a bear!) that naps up to 20 hours a day and starts life the size of a jellybean. A read-aloud, plus where to meet a real koala."
 coverImage: /assets/blog/wild-koala-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "A grown-up koala is about 75 centimeters (2 feet 6 inches) long from nose to bottom — about two-thirds as long as a 5-year-old is tall."
+    - "Picture two grown-up koalas together on one big scale. Together, the two koalas would weigh about 20 kilograms (44 pounds) — about as much as one 5-year-old."
+    - "When a koala joey is born, it's about 2 centimeters long — smaller than your thumb — and weighs less than a gram."
 animalDay:
   dayName: Wild Koala Day
   animalId: koala

@@ -6,6 +6,11 @@ excerpt: "Happy World Octopus Day! A five-minute read-aloud about the giant Paci
 coverImage: /assets/blog/world-octopus-day/cover.jpg
 tags: [animals, ocean, read-aloud]
 blogStatus: scheduled
+social:
+  facts:
+    - "Meet the giant Pacific octopus. It lives in the cold, rocky part of the ocean — the North Pacific, all the way from Japan to Alaska to California."
+    - "It has three hearts. Two little ones, and one big one."
+    - "Every arm is covered in suckers, and every sucker can taste."
 animalDay:
   dayName: World Octopus Day
   animalId: giant-pacific-octopus

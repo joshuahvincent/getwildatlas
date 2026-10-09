@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy World Otter Day! Meet the sea otter — one of the fluffiest animals in the ocean, who naps on its back and cracks dinner open with a rock. A read-aloud, plus where to meet a real sea otter."
 coverImage: /assets/blog/world-otter-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "Here's a surprise: a sea otter has no blubber at all to keep it warm. Instead, it has the thickest fur of any animal in the world — more hairs on one tiny patch of its back than you have on your whole head!"
+    - "Stretched out from nose to tail, a big sea otter is a little longer than you are tall."
+    - "And a big sea otter is heavy, too — about as much as a five-year-old and a little toddler standing on a scale together."
 animalDay:
   dayName: World Otter Day
   animalId: sea_otter

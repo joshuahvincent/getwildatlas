@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy World Okapi Day! Meet the okapi — it looks like a zebra, but it's really the giraffe's only living cousin, hidden deep in the rainforest. A read-aloud, plus real zoos where you can go meet one."
 coverImage: /assets/blog/world-okapi-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "Here's a wow fact: an okapi's tongue is so long and so blue, it can lick its own eyes and ears clean!"
+    - "An okapi's back is taller than a 5-year-old — and its head, held high on that long neck, reaches even higher."
+    - "A grown-up okapi weighs about as much as 14 five-year-olds — all standing on one big scale together!"
 animalDay:
   dayName: World Okapi Day
   animalId: okapi

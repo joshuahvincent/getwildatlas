@@ -6,6 +6,11 @@ excerpt: "Happy American Eagle Day! Meet the bald eagle — it isn't bald, its w
 coverImage: /assets/animals/bald_eagle/cover.jpg
 tags: [animals, birds, conservation, family]
 appId: bald_eagle
+social:
+  facts:
+    - "An eagle's wings stretch about 2.1 meters (6 feet 11 inches) from tip to tip."
+    - "That's about twice as wide as a 5-year-old is tall!"
+    - "Those big wings are made for gliding."
 animalDay:
   dayName: American Eagle Day
   animalId: bald_eagle

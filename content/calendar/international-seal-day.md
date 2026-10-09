@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy International Day of the Seal! Meet the harp seal — a baby that triples its weight in under two weeks, and a grown-up with a harp-shaped mark on its back. A read-aloud, plus where to (maybe) meet a real one."
 coverImage: /assets/blog/international-seal-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "In less than two weeks, drinking its mom's super-rich milk, it grows to three times its birth weight!"
+    - "A grown-up harp seal is about as long as one and a half kids lying head to toe in a row, and it weighs about as much as seven or eight five-year-olds put together."
+    - "Harp seals can hold their breath for about as long as a whole cartoon episode, and dive about 400 meters (1,300 feet) down — deeper than most skyscrapers are tall."
 animalDay:
   dayName: International Day of the Seal
   animalId: harp_seal

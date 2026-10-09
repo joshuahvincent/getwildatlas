@@ -6,6 +6,11 @@ excerpt: "Happy World Hippo Day! Meet the hippo — it doesn't swim, it makes it
 coverImage: /assets/blog/world-hippo-day/hippo-cover.jpg
 tags: [animals, conservation, family]
 blogStatus: scheduled
+social:
+  facts:
+    - "A big male hippo can weigh more than 100 five-year-olds — all standing on one big scale together!"
+    - "Hippos live together in family groups, usually 10 to 15 hippos."
+    - "At night, hippos climb out of the river and munch grass — about 40 kilograms (88 pounds) of it."
 animalDay:
   dayName: World Hippo Day
   animalId: hippopotamus

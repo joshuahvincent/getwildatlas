@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy National Panda Day! Meet the giant panda — a real bear that almost only eats bamboo, born about the size of a stick of butter and grown up to weigh as much as seven five-year-olds. A read-aloud, plus where to meet a real panda."
 coverImage: /assets/blog/national-panda-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "More than 99 out of 100 bites a panda takes are bamboo!"
+    - "Bamboo isn't very filling, so a panda eats for up to 16 hours a day — that's most of the whole day!"
+    - "Because bamboo is hard to digest, a panda can poop up to 40 times a day!"
 animalDay:
   dayName: National Panda Day
   animalId: panda

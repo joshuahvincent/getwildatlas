@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy World Ostrich Day! Meet the ostrich — the biggest bird alive, with an egg as heavy as two dozen chicken eggs. A read-aloud story, plus where to meet a real ostrich."
 coverImage: /assets/blog/world-ostrich-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "An ostrich egg is the biggest egg of any bird alive — just one weighs about as much as two dozen chicken eggs!"
+    - "A big ostrich is taller than a grown-up — about as tall as two and a half five-year-olds standing on each other's heads!"
+    - "Ostriches have just two toes on each foot."
 animalDay:
   dayName: World Ostrich Day
   animalId: ostrich

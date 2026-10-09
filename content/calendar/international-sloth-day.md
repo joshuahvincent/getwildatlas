@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy International Sloth Day! Meet the three-toed sloth — one of the slowest-moving mammals on Earth, with a tiny garden growing in its fur and a head that turns about three-quarters of the way around. A read-aloud story, plus real places where you can (gently) meet one."
 coverImage: /assets/blog/international-sloth-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "A sloth's fur is like a tiny garden — green algae grows right in it, and little moths live there too!"
+    - "A grown-up sloth is about as long as your arm and shoulder together — around 60 centimeters."
+    - "Here's a wow fact: most animals with fur, like us, have seven bones in their necks — but a sloth can have up to nine!"
 animalDay:
   dayName: International Sloth Day
   animalId: sloth

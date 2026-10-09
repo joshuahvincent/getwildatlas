@@ -6,6 +6,11 @@ excerpt: "Happy World Camel Day! Meet the camel — its hump is full of fat, not
 coverImage: /assets/animals/camel/cover.jpg
 tags: [animals, conservation, family]
 appId: camel
+social:
+  facts:
+    - "A camel stands about 1.9 meters (6 feet 3 inches) tall at the hump."
+    - "That's much taller than you, and a little taller than most grown-ups."
+    - "From nose to tail it's about 3 meters (almost 10 feet) long."
 animalDay:
   dayName: World Camel Day
   animalId: camel

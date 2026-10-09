@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy World Environment Day! Meet the Galápagos giant tortoise — it walks slower than you do, but it helps new plants grow as it goes. A read-aloud, plus where to meet a real one."
 coverImage: /assets/blog/world-environment-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "Here's a wow fact: the Galápagos Islands are named after these tortoises!"
+    - "A big tortoise can be about as long as you are tall. And a big one can weigh as much as about 14 five-year-olds, all standing on one enormous scale together!"
+    - "Galápagos giant tortoises can live more than 100 years — longer than almost any other animal on Earth."
 animalDay:
   dayName: World Environment Day
   animalId: galapagos_giant_tortoise

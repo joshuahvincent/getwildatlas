@@ -6,6 +6,11 @@ excerpt: "Happy National Day of the Horse! Horses sleep standing up, foals walk 
 coverImage: /assets/animals/horse/cover.jpg
 tags: [animals, farm, family]
 appId: horse
+social:
+  facts:
+    - "At the shoulder, it stands about 1.6 meters (5 feet 2 inches) tall."
+    - "That's a lot taller than a 5-year-old, who is about 1.1 meters (3 feet 7 inches)."
+    - "One horse weighs about 500 kilograms (1,100 pounds)."
 animalDay:
   dayName: National Day of the Horse
   animalId: horse

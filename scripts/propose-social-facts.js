@@ -12,10 +12,13 @@ const { plain } = require("../lib/calendar-social.js");
 const dir = path.join(__dirname, "..", "content", "calendar");
 const out = path.join(__dirname, "social-facts-proposals.json");
 
+// Sentences that lean on the previous one ("Together, they'd weigh…") mislead standalone.
+const DANGLING = /^(and|but|so|together|that|those|these|this|they|them|their|it|its|he|she|then|now|also)\b/i;
+
 function propose(raw) {
   const body = raw.replace(/^---[\s\S]*?\n---\n/, "").replace(/\{%[\s\S]*?%\}/g, "");
-  const sentences = body.split(/\n+/).flatMap((l) => l.match(/[^.!?]+[.!?]+["')\]*]*/g) || []).map((s) => s.trim());
-  const pick = sentences.filter((s) => s.length >= 12 && s.length <= 140 && !s.endsWith("?") && (/\*\*/.test(s) || /\d/.test(s)));
+  const sentences = body.split(/\n+/).flatMap((l) => l.match(/.+?[.!?]+["')\]*]*(?=\s|$)/g) || []).map((s) => s.trim());
+  const pick = sentences.filter((s) => s.length >= 12 && s.length <= 140 && !s.endsWith("?") && !DANGLING.test(s) && (/\*\*/.test(s) || /\d/.test(s)));
   return [...new Set(pick.map(plain))].slice(0, 3);
 }
 

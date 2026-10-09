@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy Manatee Appreciation Day! Meet the manatee — a newborn calf is already bigger than a five-year-old, its closest land cousin is the elephant, and its back teeth march forward for life. A read-aloud, plus where to meet a real manatee."
 coverImage: /assets/blog/manatee-appreciation-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "A brand-new baby manatee is already longer than a five-year-old is tall — and it weighs more, too!"
+    - "A grown-up manatee is almost as long as three five-year-olds lying head to toe in a row. And it weighs about as much as 30 five-year-olds — all standing together on one big scale."
+    - "Manatees munch sea grass for hours every single day — a giant salad pile!"
 animalDay:
   dayName: Manatee Appreciation Day
   animalId: west_indian_manatee

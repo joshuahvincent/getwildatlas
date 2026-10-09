@@ -6,6 +6,11 @@ excerpt: "Capybaras are the biggest rodents on Earth, they nap in the water with
 coverImage: /assets/animals/capybara/cover.jpg
 tags: [animals, conservation, family]
 appId: capybara
+social:
+  facts:
+    - "A capybara is about 1.3 meters (4 feet 4 inches) long."
+    - "That's longer than a 5-year-old is tall!"
+    - "A grown-up capybara weighs about 60 kilograms (132 pounds)."
 animalDay:
   dayName: Wild Atlas Spotlight
   animalId: capybara

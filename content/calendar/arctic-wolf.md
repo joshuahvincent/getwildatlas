@@ -6,6 +6,11 @@ excerpt: "Meet the Arctic wolf: it has furry paws, hunts as a team, and lives wh
 coverImage: /assets/animals/arctic_wolf/cover.jpg
 tags: [animals, conservation, family]
 appId: arctic_wolf
+social:
+  facts:
+    - "A big one is about 80 centimeters (2 feet 8 inches) tall at the shoulder."
+    - "From nose to tail tip, it's about 1.6 meters (5 feet 3 inches) long."
+    - "A big Arctic wolf weighs about 45 kilograms (99 pounds)."
 animalDay:
   dayName: International Wolf Day
   animalId: arctic_wolf

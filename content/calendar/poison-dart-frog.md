@@ -6,6 +6,11 @@ excerpt: "Meet the poison dart frog — tinier than your hand, brighter than a c
 coverImage: /assets/animals/poison_dart_frog/cover.jpg
 tags: [animals, conservation, family]
 appId: poison_dart_frog
+social:
+  facts:
+    - "Poison dart frogs are tiny."
+    - "A big one, like the blue one in our picture, is only about 4 centimeters (1.5 inches) long."
+    - "That's shorter than your finger!"
 animalDay:
   dayName: World Frog Day
   animalId: poison_dart_frog

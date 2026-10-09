@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy World Lemur Day! Meet the ring-tailed lemur — it sits up every sunny morning, spreads its arms wide and sunbathes like it's doing yoga. A read-aloud, plus real zoos where you can go meet one."
 coverImage: /assets/blog/world-lemur-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "Every sunny morning, ring-tailed lemurs sit up, spread their arms wide, and sunbathe — like they're doing yoga!"
+    - "When a ring-tailed lemur sits up, it's less than half as tall as a 5-year-old!"
+    - "It would take about seven lemurs on a scale to outweigh one five-year-old!"
 animalDay:
   dayName: World Lemur Day
   animalId: lemur

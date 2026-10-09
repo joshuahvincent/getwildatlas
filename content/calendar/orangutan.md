@@ -6,6 +6,11 @@ excerpt: "Meet the orangutan! It builds a brand new leafy bed every night, swing
 coverImage: /assets/animals/orangutan/cover.jpg
 tags: [animals, conservation, family]
 appId: orangutan
+social:
+  facts:
+    - "An orangutan is about 1.4 meters (4 and a half feet) tall when it stands up."
+    - "That's a little taller than a 5-year-old!"
+    - "They can stretch about 2 meters (7 feet) from fingertip to fingertip."
 animalDay:
   dayName: International Orangutan Day
   animalId: orangutan

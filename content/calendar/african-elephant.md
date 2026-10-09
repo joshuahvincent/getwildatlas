@@ -6,6 +6,11 @@ excerpt: "Meet the African elephant — the biggest animal that walks on land, w
 coverImage: /assets/animals/african_elephant/cover.jpg
 tags: [animals, conservation, family]
 appId: african_elephant
+social:
+  facts:
+    - "A grown-up elephant stands about 3.3 meters (10 feet 10 inches) tall at the shoulder."
+    - "You are about 109 centimeters (3 feet 7 inches)."
+    - "So an elephant is about three of you, stacked up!"
 animalDay:
   dayName: Save the Elephant Day
   animalId: african_elephant

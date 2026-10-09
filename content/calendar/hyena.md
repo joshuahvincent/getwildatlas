@@ -6,6 +6,11 @@ excerpt: "Meet the hyena — it giggles, it's led by moms, and its bite can crac
 coverImage: /assets/animals/hyena/cover.jpg
 tags: [animals, conservation, family]
 appId: hyena
+social:
+  facts:
+    - "Some spotted hyena clans have up to 80 members!"
+    - "A spotted hyena stands about 80 centimeters (2 feet 8 inches) tall at the shoulder."
+    - "Stretched out nose to tail, it's about 1.5 meters (5 feet) long."
 animalDay:
   dayName: International Hyena Day
   animalId: hyena

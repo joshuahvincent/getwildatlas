@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy Monkey Day! Meet the golden snub-nosed monkey — a golden, blue-faced monkey that lives high in China's snowy mountains, where the whole family huddles together to stay warm, and babies get help from grandmas and aunties too. A read-aloud, plus the two zoos in Europe that welcomed golden monkey babies in 2026."
 coverImage: /assets/blog/monkey-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "High in China's snowy mountains lives a monkey with golden fur, a blue face and a tiny turned-up nose — and when it's cold, the whole family snuggles up together to stay warm."
+    - "A big boy golden monkey's body alone is a little more than half as long as a 5-year-old is tall."
+    - "And here's a surprise: a full-grown male golden monkey weighs about as much as one 5-year-old child!"
 animalDay:
   animalId: golden_snub_nosed_monkey
   dayName: Monkey Day

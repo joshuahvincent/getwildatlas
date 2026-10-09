@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Happy Penguin Awareness Day! Meet the emperor penguin — the dad who keeps an egg warm on his feet for about two months without eating, and stands eye-to-eye with a 5-year-old. A read-aloud, plus where to meet a real emperor penguin."
 coverImage: /assets/blog/penguin-awareness-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "An emperor penguin dad keeps his egg warm on top of his feet for about two months — through the dark Antarctic winter — without eating a single bite."
+    - "A grown-up emperor penguin stands about as tall as a 5-year-old — a 5-year-old could look one right in the eye!"
+    - "It weighs about as much as a 5-year-old and a 2-year-old put together."
 animalDay:
   dayName: Penguin Awareness Day
   animalId: emperor_penguin

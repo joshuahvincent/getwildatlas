@@ -5,6 +5,11 @@ author: Wild Atlas
 excerpt: "Meet the wombat — the only animal known to make cube-shaped poop, with a backwards baby pouch, jellybean-sized newborns, and real sanctuaries where you can go see one."
 coverImage: /assets/blog/wombat-facts-for-kids/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "Wombats are the only animals in the world known to make cube-shaped poop!"
+    - "A grown-up wombat's body is almost as long as a 5-year-old is tall — but low and round, built for squeezing through tunnels, not for standing tall."
+    - "The kids would be just a little heavier — a wombat weighs almost as much as the two of them together!"
 animalDay:
   dayName: Wild Atlas Wildcard
   animalId: wombat
