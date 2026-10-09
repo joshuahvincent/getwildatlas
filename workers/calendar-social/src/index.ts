@@ -118,6 +118,28 @@ export default {
       await log(env, `${date} skip requested`);
       return new Response(`Skipped ${date}. Nothing will post.`, { status: 200 });
     }
+    // One-off posts (newsletters etc.): POST /post?key=…[&dry=1]
+    // body: {"platforms":["fb","ig","x"],"captions":{"fb":"…","ig":"…","x":"…"},"images":{"fb":["https://…"],"ig":[…],"x":[…]},"alt":"…"}
+    // Same pre-flight (banned vocab, X length, no URLs on IG) and platform code as calendar posts.
+    if (u.pathname === "/post" && req.method === "POST") {
+      if (u.searchParams.get("key") !== env.KILL_KEY) return new Response("forbidden", { status: 403 });
+      const b = (await req.json()) as { platforms: Platform[]; captions: Partial<Record<Platform, string>>; images: Partial<Record<Platform, string[]>>; alt?: string };
+      const dry = env.DRY_RUN === "1" || u.searchParams.get("dry") === "1";
+      const results: Result[] = [];
+      for (const p of (["fb", "ig", "x"] as Platform[]).filter((x) => b.platforms?.includes(x))) {
+        const text = b.captions?.[p] ?? "";
+        const imgs = b.images?.[p] ?? [];
+        const bad = checkText(text) ?? (p === "x" && xLength(text) > X_LIMIT ? `x: ${xLength(text)} > ${X_LIMIT}` : null) ?? (p === "ig" && /https?:\/\//.test(text) ? "ig: URL in caption" : null) ?? (!text || !imgs.length ? "missing text or image" : null);
+        if (bad) { results.push({ platform: p, ok: false, error: bad }); continue; }
+        if (dry) { results.push({ platform: p, ok: true, id: "dry-run" }); continue; }
+        const social = { images: imgs.map((src) => ({ src, alt: b.alt ?? "" })), video: null } as unknown as Social;
+        try {
+          results.push(await (p === "fb" ? postFacebook : p === "ig" ? postInstagram : postX)(env, social, text));
+        } catch (e) { results.push({ platform: p, ok: false, error: String((e as Error).message) }); }
+      }
+      await log(env, `adhoc post ${dry ? "DRY " : ""}${results.map((r) => `${r.platform}=${r.ok ? "ok" : "FAIL"}`).join(" ")}`);
+      return new Response(JSON.stringify({ dry, results }, null, 2), { headers: { "content-type": "application/json" } });
+    }
     // Manual trigger for testing: /run?key=…&step=preview|publish&slug=world-okapi-day
     // Uses its own KV date key (test-<slug>) so it can never block or fake a real day. Honors DRY_RUN.
     if (u.pathname === "/run") {
