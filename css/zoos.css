@@ -289,3 +289,19 @@
 .zf-cluster[data-t="b"] { background: #8d8272; }
 .zf-cluster:hover, .zf-cluster:focus-visible { opacity: 1; outline: 2px solid #2A2118; outline-offset: 1px; }
 .zf-fbclu { cursor: pointer; }
+
+/* phones: search, location and locate button on ONE line; filters under it; a minimal List | Map toggle; map as high as possible */
+@media (max-width: 640px) {
+  .zf-bar { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; gap: .35rem; }
+  .zf-animalfield { grid-column: auto; }
+  .zf-bar .zf-input { min-height: 40px; padding: .35rem .6rem; font-size: 16px; }
+  .zf-animalfield .zf-input { padding-right: 1.9rem; }
+  .zf-clear { width: 28px; height: 28px; font-size: 1.2rem; right: .2rem; }
+  .zf-locate { min-height: 40px; min-width: 40px; width: 40px; padding: 0; display: grid; place-items: center; }
+  .zf-metaline { margin: .1rem 0 0; }
+  .zf-advbtn { min-height: 32px !important; font-size: .9rem; }
+  .zf-tabs { display: inline-flex; width: auto; gap: 0; margin: .15rem 0 .3rem auto; padding: 0; border: 1.5px solid var(--zf-edge); border-radius: 999px; overflow: hidden; background: #fff; position: static; float: right; }
+  .zf-tabs button { flex: none; min-height: 28px !important; padding: 0 .9rem; border: 0; border-radius: 0; font-size: .85rem; }
+  .zf-main { clear: both; }
+  .zf-main[data-size] .zf-map, .zf-main .zf-map { height: calc(100dvh - 255px); min-height: 340px; }
+}
