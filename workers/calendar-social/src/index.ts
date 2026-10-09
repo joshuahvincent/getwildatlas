@@ -19,8 +19,8 @@ async function getJson<T>(url: string): Promise<T | null> {
 }
 
 /** Decide what (if anything) to post today. Returns a reason string when skipping. */
-async function todaysSocial(env: Env, date: string): Promise<{ social?: Social; skip?: string; alert?: string }> {
-  let slug = env.FORCE_SLUG;
+async function todaysSocial(env: Env, date: string, forceSlug?: string): Promise<{ social?: Social; skip?: string; alert?: string }> {
+  let slug = forceSlug ?? env.FORCE_SLUG;
   if (!slug) {
     // Compare iso to the Pacific date ourselves: `isToday` is baked at (UTC) build time.
     const feed = await getJson<{ latest: LatestDay | null }>(`${env.SITE}/calendar/latest.json`);
@@ -38,9 +38,10 @@ async function todaysSocial(env: Env, date: string): Promise<{ social?: Social; 
 
 const PLATFORMS: Platform[] = ["fb", "ig", "x"];
 
-function captionsFor(social: Social, date: string): { captions: Partial<Record<Platform, string>>; problems: string[] } {
+function captionsFor(social: Social, key: string): { captions: Partial<Record<Platform, string>>; problems: string[] } {
   const captions: Partial<Record<Platform, string>> = {};
   const problems: string[] = [];
+  const date = /^\d{4}-/.test(key) ? key : pacificNow().date; // test runs use key `test-<slug>`
   for (const p of PLATFORMS) {
     const text = buildCaption(p, social, date);
     const bad = checkText(text);
@@ -52,9 +53,9 @@ function captionsFor(social: Social, date: string): { captions: Partial<Record<P
   return { captions, problems };
 }
 
-async function preview(env: Env, date: string, origin: string): Promise<void> {
-  if (await env.CALENDAR_SOCIAL.get(`preview:${date}`)) return;
-  const t = await todaysSocial(env, date);
+async function preview(env: Env, date: string, origin: string, forceSlug?: string): Promise<void> {
+  if (!forceSlug && (await env.CALENDAR_SOCIAL.get(`preview:${date}`))) return;
+  const t = await todaysSocial(env, date, forceSlug);
   if (t.alert) { await notify(env, `⚠️ Calendar social: ${date}`, `<p>${t.alert}</p>`); await env.CALENDAR_SOCIAL.put(`preview:${date}`, "alerted"); return; }
   if (!t.social) { console.log(`preview ${date}: ${t.skip}`); return; }
   const { captions, problems } = captionsFor(t.social, date);
@@ -67,10 +68,10 @@ async function preview(env: Env, date: string, origin: string): Promise<void> {
   await env.CALENDAR_SOCIAL.put(`preview:${date}`, JSON.stringify({ slug: t.social.slug, problems }));
 }
 
-async function publish(env: Env, date: string): Promise<void> {
+async function publish(env: Env, date: string, forceSlug?: string): Promise<void> {
   if (await env.CALENDAR_SOCIAL.get(`posted:${date}`)) return; // idempotent
   if (await env.CALENDAR_SOCIAL.get(`skip:${date}`)) { await log(env, `${date} skipped by kill switch`); return; }
-  const t = await todaysSocial(env, date);
+  const t = await todaysSocial(env, date, forceSlug);
   if (t.alert) { await notify(env, `⚠️ Calendar social: ${date}`, `<p>${t.alert}</p>`); await env.CALENDAR_SOCIAL.put(`posted:${date}`, JSON.stringify({ alert: t.alert })); return; }
   if (!t.social) return;
   const dry = env.DRY_RUN === "1";
@@ -116,6 +117,21 @@ export default {
       await env.CALENDAR_SOCIAL.put(`skip:${date}`, "1", { expirationTtl: 60 * 60 * 24 * 7 });
       await log(env, `${date} skip requested`);
       return new Response(`Skipped ${date}. Nothing will post.`, { status: 200 });
+    }
+    // Manual trigger for testing: /run?key=…&step=preview|publish&slug=world-okapi-day
+    // Uses its own KV date key (test-<slug>) so it can never block or fake a real day. Honors DRY_RUN.
+    if (u.pathname === "/run") {
+      if (u.searchParams.get("key") !== env.KILL_KEY) return new Response("forbidden", { status: 403 });
+      const slug = u.searchParams.get("slug") ?? "";
+      if (!/^[a-z0-9-]+$/.test(slug)) return new Response("bad slug", { status: 400 });
+      const key = `test-${slug}`;
+      if (u.searchParams.get("step") === "publish") {
+        await env.CALENDAR_SOCIAL.delete(`posted:${key}`);
+        await publish(env, key, slug);
+        return new Response((await env.CALENDAR_SOCIAL.get(`posted:${key}`)) ?? "no result", { headers: { "content-type": "application/json" } });
+      }
+      await preview(env, key, env.WORKER_ORIGIN, slug);
+      return new Response(`preview stored: ${env.WORKER_ORIGIN}/preview?key=…&date=${key}`);
     }
     if (u.pathname === "/preview") {
       if (u.searchParams.get("key") !== env.KILL_KEY) return new Response("forbidden", { status: 403 });

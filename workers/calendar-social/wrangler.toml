@@ -18,7 +18,7 @@ SITE = "https://wildatlasapp.com"
 # Fill in after first deploy (shown by `wrangler deploy`), e.g. https://calendar-social.<account>.workers.dev
 WORKER_ORIGIN = "https://calendar-social.joshuahv.workers.dev"
 # SAFE DEFAULT: builds everything (preview + log), posts nothing. Flip to "0" only for go-live.
-DRY_RUN = "1"
+DRY_RUN = "0"
 
 # Secrets (npx wrangler secret put <NAME>) — never in the repo:
 #   META_PAGE_TOKEN  META_PAGE_ID  IG_USER_ID
