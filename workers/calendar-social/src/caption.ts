@@ -44,8 +44,10 @@ export function buildCaption(p: Platform, s: Social, iso: string): string {
   const withUtm = (u: string, medium: string) => `${u}&utm_source=${p}&utm_medium=${medium}&utm_campaign=${s.campaign}`;
   const link = withUtm(s.appUrl, "social");
   const line = fill(s.pack ? templates.appLine : templates.appLineNoPack, base);
+  // No real awareness day ("Wild Atlas Spotlight"): don't imply a holiday in the day-name frames.
+  const spotlight = s.official === false || /spotlight/i.test(s.day);
   const greet = (pageGreeting: string) =>
-    fill(templates.greetings[v], { ...base, PAGE_GREETING: pageGreeting });
+    fill(spotlight && v !== 0 ? templates.greetingSpotlight : templates.greetings[v], { ...base, PAGE_GREETING: pageGreeting });
 
   const build = (pageGreeting: string) => fill(templates[p][v], {
     ...base, GREETING: greet(pageGreeting), LINK: link, APPLINE: line,

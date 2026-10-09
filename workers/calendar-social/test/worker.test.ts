@@ -49,3 +49,16 @@ test("OAuth1 header carries every required field", async () => {
   assert.match(h, /^OAuth /);
   for (const k of ["oauth_consumer_key", "oauth_nonce", "oauth_signature", "oauth_signature_method", "oauth_timestamp", "oauth_token", "oauth_version"]) assert.ok(h.includes(k));
 });
+
+test("spotlight days never claim a holiday; official days use the day-name frames", () => {
+  const spot = { ...social, day: "Wild Atlas Spotlight", official: false };
+  // variantIndex: 10-08 → 1, 10-09 → 2, 10-10 → 0 (page greeting)
+  for (const iso of ["2026-10-08", "2026-10-09"]) {
+    const t = buildCaption("fb", spot, iso);
+    assert.ok(t.startsWith("Meet the giant Pacific octopus."), t);
+    assert.ok(!t.includes("Spotlight"));
+  }
+  const official = [buildCaption("fb", social, "2026-10-08"), buildCaption("fb", social, "2026-10-09")];
+  assert.ok(official[0].startsWith("World Octopus Day belongs to the giant Pacific octopus."));
+  assert.ok(official[1].startsWith("On World Octopus Day, say hello to the giant Pacific octopus."));
+});
