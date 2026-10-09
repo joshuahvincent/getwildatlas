@@ -11,12 +11,12 @@ crons = ["*/30 * * * *"]
 [[kv_namespaces]]
 binding = "CALENDAR_SOCIAL"
 # Create with: npx wrangler kv namespace create CALENDAR_SOCIAL  → paste the id
-id = "REPLACE_WITH_KV_NAMESPACE_ID"
+id = "5afb51fe0ed049db981552a109e70eba"
 
 [vars]
 SITE = "https://wildatlasapp.com"
 # Fill in after first deploy (shown by `wrangler deploy`), e.g. https://calendar-social.<account>.workers.dev
-WORKER_ORIGIN = "REPLACE_AFTER_FIRST_DEPLOY"
+WORKER_ORIGIN = "https://calendar-social.joshuahv.workers.dev"
 # SAFE DEFAULT: builds + emails everything, posts nothing. Flip to "0" only for go-live.
 DRY_RUN = "1"
 EMAIL_FROM = "Wild Atlas Social <social@wildatlasapp.com>"
