@@ -8,9 +8,6 @@ workers_dev = true
 [triggers]
 crons = ["*/30 * * * *"]
 
-[[send_email]]
-name = "EMAIL"
-
 [[kv_namespaces]]
 binding = "CALENDAR_SOCIAL"
 # Create with: npx wrangler kv namespace create CALENDAR_SOCIAL  → paste the id
@@ -20,12 +17,11 @@ id = "5afb51fe0ed049db981552a109e70eba"
 SITE = "https://wildatlasapp.com"
 # Fill in after first deploy (shown by `wrangler deploy`), e.g. https://calendar-social.<account>.workers.dev
 WORKER_ORIGIN = "https://calendar-social.joshuahv.workers.dev"
-# SAFE DEFAULT: builds + emails everything, posts nothing. Flip to "0" only for go-live.
+# SAFE DEFAULT: builds everything (preview + log), posts nothing. Flip to "0" only for go-live.
 DRY_RUN = "1"
-EMAIL_FROM = "Wild Atlas Social <social@wildatlasapp.com>"
 
 # Secrets (npx wrangler secret put <NAME>) — never in the repo:
 #   META_PAGE_TOKEN  META_PAGE_ID  IG_USER_ID
 #   X_API_KEY  X_API_SECRET  X_ACCESS_TOKEN  X_ACCESS_SECRET
-#   KILL_KEY  EMAIL_TO
+#   KILL_KEY
 # Optional (testing only): FORCE_SLUG — post this calendar page regardless of date.

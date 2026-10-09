@@ -1,11 +1,8 @@
 export interface Env {
   CALENDAR_SOCIAL: KVNamespace;
   SITE: string;
-  WORKER_ORIGIN: string; // public origin of this Worker, used in the email's skip link
+  WORKER_ORIGIN: string; // public origin of this Worker, used in the preview page's skip link
   DRY_RUN: string;
-  EMAIL_FROM: string;
-  EMAIL_TO: string;
-  EMAIL: SendEmail; // Cloudflare Email Service binding
   KILL_KEY: string;
   FORCE_SLUG?: string;
   META_PAGE_TOKEN: string;

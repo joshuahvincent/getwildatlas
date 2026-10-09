@@ -1,5 +1,5 @@
 import { buildCaption, checkText, X_LIMIT, xLength } from "./caption";
-import { previewHtml, resultsHtml, sendEmail } from "./email";
+import { notify, previewHtml, resultsHtml } from "./email";
 import { MetaTokenError, postFacebook, postInstagram } from "./meta";
 import type { Env, LatestDay, Platform, Result, Social } from "./types";
 import { postX } from "./x";
@@ -55,13 +55,15 @@ function captionsFor(social: Social, date: string): { captions: Partial<Record<P
 async function preview(env: Env, date: string, origin: string): Promise<void> {
   if (await env.CALENDAR_SOCIAL.get(`preview:${date}`)) return;
   const t = await todaysSocial(env, date);
-  if (t.alert) { await sendEmail(env, `⚠️ Calendar social: ${date}`, `<p>${t.alert}</p>`); await env.CALENDAR_SOCIAL.put(`preview:${date}`, "alerted"); return; }
+  if (t.alert) { await notify(env, `⚠️ Calendar social: ${date}`, `<p>${t.alert}</p>`); await env.CALENDAR_SOCIAL.put(`preview:${date}`, "alerted"); return; }
   if (!t.social) { console.log(`preview ${date}: ${t.skip}`); return; }
   const { captions, problems } = captionsFor(t.social, date);
   const skipUrl = `${origin}/skip?date=${date}&key=${env.KILL_KEY}`;
-  await sendEmail(env, `Calendar social preview: ${t.social.day}`,
-    previewHtml(t.social, captions as Record<string, string>, skipUrl, env.DRY_RUN === "1") +
-    (problems.length ? `<p><b>Blocked:</b> ${problems.join("; ")}</p>` : ""));
+  const html = previewHtml(t.social, captions as Record<string, string>, skipUrl, env.DRY_RUN === "1") +
+    (problems.length ? `<p><b>Blocked:</b> ${problems.join("; ")}</p>` : "");
+  // No email: the day's preview lives at <worker>/preview?key=… (with the skip link inside).
+  await env.CALENDAR_SOCIAL.put(`previewhtml:${date}`, html, { expirationTtl: 60 * 60 * 24 * 3 });
+  await log(env, `${date} preview ready for ${t.social.slug}${problems.length ? " BLOCKED: " + problems.join("; ") : ""}`);
   await env.CALENDAR_SOCIAL.put(`preview:${date}`, JSON.stringify({ slug: t.social.slug, problems }));
 }
 
@@ -69,7 +71,7 @@ async function publish(env: Env, date: string): Promise<void> {
   if (await env.CALENDAR_SOCIAL.get(`posted:${date}`)) return; // idempotent
   if (await env.CALENDAR_SOCIAL.get(`skip:${date}`)) { await log(env, `${date} skipped by kill switch`); return; }
   const t = await todaysSocial(env, date);
-  if (t.alert) { await sendEmail(env, `⚠️ Calendar social: ${date}`, `<p>${t.alert}</p>`); await env.CALENDAR_SOCIAL.put(`posted:${date}`, JSON.stringify({ alert: t.alert })); return; }
+  if (t.alert) { await notify(env, `⚠️ Calendar social: ${date}`, `<p>${t.alert}</p>`); await env.CALENDAR_SOCIAL.put(`posted:${date}`, JSON.stringify({ alert: t.alert })); return; }
   if (!t.social) return;
   const dry = env.DRY_RUN === "1";
   const { captions, problems } = captionsFor(t.social, date);
@@ -85,12 +87,12 @@ async function publish(env: Env, date: string): Promise<void> {
     try { results.push(await run[p]()); }
     catch (e) {
       results.push({ platform: p, ok: false, error: String((e as Error).message) });
-      if (e instanceof MetaTokenError) await sendEmail(env, "🔑 Meta token expired", `<p>${(e as Error).message}</p>`);
+      if (e instanceof MetaTokenError) await notify(env, "🔑 Meta token expired", `<p>${(e as Error).message}</p>`);
     }
   }
   await env.CALENDAR_SOCIAL.put(`posted:${date}`, JSON.stringify({ dry, slug: t.social.slug, results }));
   await log(env, `${date} ${t.social.slug} ${dry ? "DRY " : ""}${results.map((r) => `${r.platform}=${r.ok ? "ok" : "FAIL"}`).join(" ")}`);
-  await sendEmail(env, `${results.some((r) => !r.ok) ? "⚠️ " : ""}Calendar social posted: ${t.social.day}`, resultsHtml(t.social, results, dry));
+  await notify(env, `${results.some((r) => !r.ok) ? "⚠️ " : ""}Calendar social posted: ${t.social.day}`, resultsHtml(t.social, results, dry));
 }
 
 async function log(env: Env, line: string): Promise<void> {
@@ -114,6 +116,12 @@ export default {
       await env.CALENDAR_SOCIAL.put(`skip:${date}`, "1", { expirationTtl: 60 * 60 * 24 * 7 });
       await log(env, `${date} skip requested`);
       return new Response(`Skipped ${date}. Nothing will post.`, { status: 200 });
+    }
+    if (u.pathname === "/preview") {
+      if (u.searchParams.get("key") !== env.KILL_KEY) return new Response("forbidden", { status: 403 });
+      const date = u.searchParams.get("date") ?? pacificNow().date;
+      const html = await env.CALENDAR_SOCIAL.get(`previewhtml:${date}`);
+      return new Response(html ?? `<p>No preview stored for ${date}.</p>`, { headers: { "content-type": "text/html; charset=utf-8" } });
     }
     return new Response("calendar-social", { status: 200 });
   },
