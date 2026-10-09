@@ -1,3 +1,4 @@
 node_modules
 .wrangler
 .test-bundle.mjs
+.dev.vars
