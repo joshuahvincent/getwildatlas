@@ -20,7 +20,7 @@ A platform failing never blocks the others and is not retried.
 cd workers/calendar-social && npm install
 npx wrangler kv namespace create CALENDAR_SOCIAL   # paste id into wrangler.toml
 npx wrangler deploy                                 # then set WORKER_ORIGIN to the printed URL, redeploy
-for s in META_PAGE_TOKEN META_PAGE_ID IG_USER_ID X_API_KEY X_API_SECRET X_ACCESS_TOKEN X_ACCESS_SECRET KILL_KEY EMAIL_TO RESEND_API_KEY; do npx wrangler secret put $s; done
+for s in META_PAGE_TOKEN META_PAGE_ID IG_USER_ID X_API_KEY X_API_SECRET X_ACCESS_TOKEN X_ACCESS_SECRET KILL_KEY EMAIL_TO; do npx wrangler secret put $s; done
 npm test && npm run typecheck
 ```
 Test a day end-to-end: `FORCE_SLUG=world-okapi-day npx wrangler dev --test-scheduled`, then
@@ -31,5 +31,5 @@ Test a day end-to-end: `FORCE_SLUG=world-okapi-day npx wrangler dev --test-sched
 - **Banned-vocab list** in `src/caption.ts` is the subset named in `MARKETING_SOCIAL_DISTRIBUTION_AGENT.md`; extend from the Brand Bible.
 - **`social.facts`** must be backfilled on each calendar page (`node scripts/propose-social-facts.js`, from the site root) — the Worker refuses to post a day without 3.
 - X media upload uses the v1.1 endpoint per the spec; not yet exercised live (X has been migrating media upload to v2 — verify in the dry run).
-- Resend needs `wildatlasapp.com` verified as a sending domain (or swap `src/email.ts`).
+- Email uses Cloudflare Email Service: onboard `wildatlasapp.com` for Email Sending (dashboard → Email Service) before the preview emails can send.
 - Video path (IG first-item, X video-only) is implemented but untested until `assets/calendar-videos/<appId>.mp4` exists.

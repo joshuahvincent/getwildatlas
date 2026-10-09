@@ -2,13 +2,21 @@ import type { Env, Result, Social } from "./types";
 
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
+/** Cloudflare Email Service binding (`send_email` → env.EMAIL). Failures are logged, never thrown:
+ *  a broken preview email must not stop (or fake) a post. */
 export async function sendEmail(env: Env, subject: string, html: string): Promise<void> {
-  const res = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ from: env.EMAIL_FROM, to: [env.EMAIL_TO], subject, html }),
-  });
-  if (!res.ok) console.error("email failed", res.status, await res.text());
+  try {
+    const m = env.EMAIL_FROM.match(/^(.*)<(.+)>$/);
+    await env.EMAIL.send({
+      to: env.EMAIL_TO,
+      from: m ? { email: m[2].trim(), name: m[1].trim() } : env.EMAIL_FROM,
+      subject,
+      html,
+      text: html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim(),
+    });
+  } catch (e) {
+    console.error("email failed", String((e as Error).message ?? e));
+  }
 }
 
 export function previewHtml(s: Social, captions: Record<string, string>, skipUrl: string, dry: boolean): string {

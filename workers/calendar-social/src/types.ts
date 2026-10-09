@@ -5,7 +5,7 @@ export interface Env {
   DRY_RUN: string;
   EMAIL_FROM: string;
   EMAIL_TO: string;
-  RESEND_API_KEY: string;
+  EMAIL: SendEmail; // Cloudflare Email Service binding
   KILL_KEY: string;
   FORCE_SLUG?: string;
   META_PAGE_TOKEN: string;
