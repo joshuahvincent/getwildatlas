@@ -8,8 +8,8 @@ tags: [animals, ocean, read-aloud]
 blogStatus: scheduled
 social:
   facts:
-    - "Meet the giant Pacific octopus. It lives in the cold, rocky part of the ocean — the North Pacific, all the way from Japan to Alaska to California."
     - "It has three hearts. Two little ones, and one big one."
+    - "Its blood is blue, not red like ours. That's because it carries oxygen with copper instead of iron, and that copper turns blue when it's carrying oxygen."
     - "Every arm is covered in suckers, and every sucker can taste."
 animalDay:
   dayName: World Octopus Day

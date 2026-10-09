@@ -7,7 +7,7 @@ coverImage: /assets/blog/world-giraffe-day/cover.jpg
 tags: [animals, conservation, family]
 social:
   facts:
-    - "Meet the giraffe — the tallest animal on Earth, with a long, dark tongue and a coat of patches that's all its own."
+    - "A baby giraffe arrives already enormous — about as tall as a grown-up — and it's up on its wobbly legs within an hour!"
     - "A big giraffe is as tall as five five-year-olds standing on each other's shoulders! And it's heavy too — about as much as 65 five-year-olds, all standing on one big scale together!"
     - "Here's a surprise: a giraffe has the very same number of neck bones as you do — seven!"
 animalDay:
