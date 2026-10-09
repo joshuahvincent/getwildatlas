@@ -852,7 +852,7 @@ async function init() {
     S.animals = meta.animals.map((a) => Object.assign({}, a, { gl: gl[a.id] || '' })); S.animals.forEach((a) => { S.byId[a.id] = a; S.bySlug[slugOf(a.id)] = a; });
     S.places.forEach((p) => { p.nn = norm(p.n); p.nc = p.ci ? norm(p.ci) : ''; });   // normalised once for the place-name search
   } catch (e) { $('zf-status').textContent = 'Sorry, we could not load the places just now. Please try again in a moment.'; return; }
-  if (window.matchMedia('(max-width: 640px)').matches) { $('zf-animal').placeholder = 'Animal or place'; }   // short, so both search boxes fit on one line
+  if (window.matchMedia('(max-width: 640px)').matches) { $('zf-animal').placeholder = 'Animal, place'; }   // short, so both search boxes fit on one line
   renderQuick();
   const saved = loadSaved();
   if (saved) { S.origin = saved; $('zf-q').value = saved.label === 'your location' ? '' : saved.label; $('zf-q').placeholder = saved.fromGeo ? 'Using your location' : 'City or postcode'; $('zf-forgetwrap').hidden = false; }
