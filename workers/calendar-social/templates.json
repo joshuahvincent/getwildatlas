@@ -1,0 +1,26 @@
+{
+  "_note": "PLACEHOLDER frames assembled only from the literal options in Social_Post_Routine_Strategy.md §5. Cole replaces the three greeting variants with real voice before go-live (strategy: 'Greeting variants are where the voice lives'). Variant = dayIndex % 3. {GREETING} resolves to the per-variant lead below.",
+  "greetings": [
+    "Happy {DAY}!",
+    "Meet the {ANIMAL}.",
+    "{PAGE_GREETING}"
+  ],
+  "fb": [
+    "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nRead-aloud story + where to see one → {PAGE}\n{APPLINE} {LINK}",
+    "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nRead-aloud story + where to see one → {PAGE}\n{APPLINE} {LINK}",
+    "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nRead-aloud story + where to see one → {PAGE}\n{APPLINE} {LINK}"
+  ],
+  "ig": [
+    "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nRead-aloud story + where to see one: link in bio.\n{APPLINE_IG}\n\n{HASHTAGS}",
+    "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nRead-aloud story + where to see one: link in bio.\n{APPLINE_IG}\n\n{HASHTAGS}",
+    "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nRead-aloud story + where to see one: link in bio.\n{APPLINE_IG}\n\n{HASHTAGS}"
+  ],
+  "x": [
+    "{GREETING} {FACT_1}\nStory + where to see one: {PAGE}\n{LINK}",
+    "{GREETING} {FACT_1}\nStory + where to see one: {PAGE}\n{LINK}",
+    "{GREETING} {FACT_1}\nStory + where to see one: {PAGE}\n{LINK}"
+  ],
+  "appLine": "{ANIMAL_CAP} is in Wild Atlas, in {PACK}.",
+  "appLineNoPack": "{ANIMAL_CAP} is in Wild Atlas.",
+  "hashtagsFixed": ["#WildAtlas", "#RaiseExplorers", "#AnimalFacts"]
+}

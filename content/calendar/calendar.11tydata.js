@@ -13,6 +13,8 @@ module.exports = {
   tags: ["calendarPage"],
   backLink: { url: "/calendar/", label: "World Wildlife Calendar" },
   eleventyComputed: {
+    // Share cards show the page's cover instead of the generic site image.
+    ogImage: (data) => data.coverImage ? `https://wildatlasapp.com${data.coverImage}` : undefined,
     originSlug: (data) => data.page.fileSlug, // → _data/dayOrigins.json
     permalink: (data) =>
       data.status === "draft" && !process.env.SHOW_HIDDEN_POSTS

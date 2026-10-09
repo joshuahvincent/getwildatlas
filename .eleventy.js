@@ -288,7 +288,7 @@ module.exports = function (eleventyConfig) {
       includes: "_includes",
       output: "_site",
     },
-    templateFormats: ["njk", "md", "html"],
+    templateFormats: ["njk", "md", "html", "11ty.js"],
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     // dataTemplateEngine: false, // keep default

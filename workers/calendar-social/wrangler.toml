@@ -1,0 +1,28 @@
+name = "calendar-social"
+main = "src/index.ts"
+compatibility_date = "2025-09-01"
+workers_dev = true
+
+# Every 30 min; the handler works out Pacific time itself (DST-proof) and acts
+# only in the 06:00 PT preview window and the 17:30 PT publish window.
+[triggers]
+crons = ["*/30 * * * *"]
+
+[[kv_namespaces]]
+binding = "CALENDAR_SOCIAL"
+# Create with: npx wrangler kv namespace create CALENDAR_SOCIAL  → paste the id
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+[vars]
+SITE = "https://wildatlasapp.com"
+# Fill in after first deploy (shown by `wrangler deploy`), e.g. https://calendar-social.<account>.workers.dev
+WORKER_ORIGIN = "REPLACE_AFTER_FIRST_DEPLOY"
+# SAFE DEFAULT: builds + emails everything, posts nothing. Flip to "0" only for go-live.
+DRY_RUN = "1"
+EMAIL_FROM = "Wild Atlas Social <social@wildatlasapp.com>"
+
+# Secrets (npx wrangler secret put <NAME>) — never in the repo:
+#   META_PAGE_TOKEN  META_PAGE_ID  IG_USER_ID
+#   X_API_KEY  X_API_SECRET  X_ACCESS_TOKEN  X_ACCESS_SECRET
+#   KILL_KEY  EMAIL_TO  RESEND_API_KEY
+# Optional (testing only): FORCE_SLUG — post this calendar page regardless of date.
