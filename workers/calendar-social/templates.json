@@ -11,9 +11,9 @@
     "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nRead-aloud story + where to see one → {PAGE}\n{APPLINE} {LINK}"
   ],
   "ig": [
-    "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nRead-aloud story + where to see one: link in bio.\n{APPLINE_IG}\n\n{HASHTAGS}",
-    "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nRead-aloud story + where to see one: link in bio.\n{APPLINE_IG}\n\n{HASHTAGS}",
-    "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nRead-aloud story + where to see one: link in bio.\n{APPLINE_IG}\n\n{HASHTAGS}"
+    "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nRead-aloud story + where to see one: {PAGE} (link in bio)\n{APPLINE_IG}\n\n{HASHTAGS}",
+    "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nRead-aloud story + where to see one: {PAGE} (link in bio)\n{APPLINE_IG}\n\n{HASHTAGS}",
+    "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nRead-aloud story + where to see one: {PAGE} (link in bio)\n{APPLINE_IG}\n\n{HASHTAGS}"
   ],
   "x": [
     "{GREETING} {FACT_1}\nStory + where to see one: {PAGE}\n{LINK}",

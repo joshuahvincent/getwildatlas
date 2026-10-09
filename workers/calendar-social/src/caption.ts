@@ -37,7 +37,7 @@ export function buildCaption(p: Platform, s: Social, iso: string): string {
   const hashtags = [tag(s.day), tag(s.animal), ...templates.hashtagsFixed].slice(0, 5).join(" ");
   const base: Record<string, string> = {
     DAY: s.day, ANIMAL: s.animal, ANIMAL_CAP: cap(s.animal), PACK: s.pack ?? "",
-    PAGE: p === "fb" ? s.pageUrl.replace(/^https?:\/\//, "") : s.pageUrl,
+    PAGE: p !== "x" ? s.pageUrl.replace(/^https?:\/\//, "") : s.pageUrl,
     FACT_1: s.facts[0] ?? "", FACT_2: s.facts[1] ?? "", FACT_3: s.facts[2] ?? "",
     HASHTAGS: hashtags,
   };

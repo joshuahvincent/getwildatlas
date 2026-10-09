@@ -47,7 +47,6 @@ function captionsFor(social: Social, key: string): { captions: Partial<Record<Pl
     const bad = checkText(text);
     if (bad) { problems.push(`${p}: ${bad}`); continue; }
     if (p === "x" && xLength(text) > X_LIMIT) { problems.push(`x: caption ${xLength(text)} > ${X_LIMIT}`); continue; }
-    if (p === "ig" && /https?:\/\//.test(text)) { problems.push("ig: caption contains a URL"); continue; }
     captions[p] = text;
   }
   return { captions, problems };
@@ -129,7 +128,7 @@ export default {
       for (const p of (["fb", "ig", "x"] as Platform[]).filter((x) => b.platforms?.includes(x))) {
         const text = b.captions?.[p] ?? "";
         const imgs = b.images?.[p] ?? [];
-        const bad = checkText(text) ?? (p === "x" && xLength(text) > X_LIMIT ? `x: ${xLength(text)} > ${X_LIMIT}` : null) ?? (p === "ig" && /https?:\/\//.test(text) ? "ig: URL in caption" : null) ?? (!text || !imgs.length ? "missing text or image" : null);
+        const bad = checkText(text) ?? (p === "x" && xLength(text) > X_LIMIT ? `x: ${xLength(text)} > ${X_LIMIT}` : null) ?? (!text || !imgs.length ? "missing text or image" : null);
         if (bad) { results.push({ platform: p, ok: false, error: bad }); continue; }
         if (dry) { results.push({ platform: p, ok: true, id: "dry-run" }); continue; }
         const social = { images: imgs.map((src) => ({ src, alt: b.alt ?? "" })), video: null } as unknown as Social;

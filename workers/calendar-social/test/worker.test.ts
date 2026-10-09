@@ -18,8 +18,8 @@ const social: Social = {
 test("captions respect platform rules for all three variants", () => {
   for (const iso of ["2026-10-08", "2026-10-09", "2026-10-10"]) {
     const ig = buildCaption("ig", social, iso);
-    assert.ok(!/https?:\/\//.test(ig), "IG has no URL");
-    assert.ok(ig.includes("link in bio"));
+    assert.ok(!/https?:\/\//.test(ig), "IG prints addresses as plain text, no scheme");
+    assert.ok(ig.includes("wildatlasapp.com/calendar/world-octopus-day/") && ig.includes("link in bio"));
     assert.ok(ig.split("#").length - 1 <= 5);
     assert.ok(ig.includes("#WorldOctopusDay"));
     const x = buildCaption("x", social, iso);
