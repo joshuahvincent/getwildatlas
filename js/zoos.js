@@ -187,7 +187,7 @@ function render() {
     if (zoosAll.length) box.append(section('All places', '(' + zoosAll.length.toLocaleString('en') + ')', zoosAll));
     if (parksAll.length) box.append(section('See it in the wild', '(' + parksAll.length.toLocaleString('en') + ' national parks and reserves)', parksAll));
     if (!everyone.length) box.append(el('div', { class: 'zf-empty' }, el('p', { text: filtered() ? 'No places match these filters.' : 'Nothing within that distance.' }), filtered() ? el('button', { type: 'button', class: 'zf-btn', id: 'zf-resetf', text: 'Show everything again' }) : null, Number.isFinite(S.maxKm) ? el('button', { type: 'button', class: 'zf-btn', id: 'zf-widen', text: 'Search any distance' }) : null));
-    const where = S.origin ? '' : 'Add your location to put the closest first.';
+    const where = '';
     $('zf-status').textContent = (S.unknown ? 'We can\u2019t find \u201c' + S.unknown + '\u201d yet, so here are animal places ' + (S.origin ? 'near you' : 'to start with') + '. ' : '') + (S.unknown ? '' : where);
     lastCands = everyone; return drawMap(everyone);
   }
@@ -219,7 +219,7 @@ function render() {
   let msg = '';
   if (!S.origin) {
     const home = HOME_CC && primary.some((c) => c.p.cc === HOME_CC);
-    msg = all.length ? (home ? 'Showing places in ' + countryName(HOME_CC) + ' first. Add your location to put the closest first.' : 'Add your location to put the closest first.') : '';
+    msg = all.length ? (home ? 'Showing places in ' + countryName(HOME_CC) + ' first.' : '') : '';
   } else {
     const near = (primary[0] || all[0]), nearWild = wild[0];
     msg = '';   // sorted by distance already; the cards say how far
