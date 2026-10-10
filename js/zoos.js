@@ -238,7 +238,8 @@ function render() {
 }
 
 // ---------- map ----------
-const FLY_ZOOM = 5.3;   // "Show on map": the city and the region around it
+const FLY_ZOOM = 5.3;   // plain SVG fallback map (no streets): the city and the region around it
+const STREET_FLY_ZOOM = 16;   // "Show on map" on the real map: street level, with the place's own streets and buildings
 const TEAL = '#0E7C86', TEAL_DARK = '#08454A', GREEN = '#2E7D32', GREEN_DARK = '#17441a', YELLOW = '#FACC15', YELLOW_DARK = '#6b5200', YOU = '#2563EB';
 let map = null, mapLib = null, popup = null, mapReady = null, lastCands = [];
 // when a place is searched (or located) the map opens about 30 miles / 50 km across, centred on it; if no result is inside that box it widens to take in the closest three
@@ -582,7 +583,7 @@ async function setActive(pi, opts) {
   await ensureMap();
   map.setFilter('active', ['==', ['get', 'pi'], pi]);
   const c = lastCands.find((x) => x.pi === pi); if (!c) return;
-  if (opts && opts.fly) map.easeTo({ center: [c.p.lo, c.p.la], zoom: FLY_ZOOM, duration: reducedMotion() ? 0 : 500 });   // the city plus its region: the outline-only map has no streets or labels, so closer in shows empty land
+  if (opts && opts.fly) map.easeTo({ center: [c.p.lo, c.p.la], zoom: STREET_FLY_ZOOM, duration: reducedMotion() ? 0 : 900 });
   if (popup) popup.remove();
   if (opts && opts.popup) popup = new mapLib.Popup({ offset: 12, closeButton: true, maxWidth: '280px' }).setLngLat([c.p.lo, c.p.la]).setDOMContent(popupNode(c)).addTo(map);
 }
