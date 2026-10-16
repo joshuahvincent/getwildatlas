@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/js/vendor/maplibre/maplibre-gl.css">
-<link rel="stylesheet" href="/css/zoos.css?v=32">
+<link rel="stylesheet" href="/css/zoos.css?v=33">
 
 <div class="zf" id="zf" data-animal="{{ a.id if a else '' }}">
   <h1 class="zf-title">Find a place to see real animals</h1>
@@ -12,7 +12,7 @@
       <div class="zf-bar" role="search">
         <div class="zf-field zf-animalfield">
           <label for="zf-animal" class="sr-only">Animal or place</label>
-          <input type="text" id="zf-animal" class="zf-input" role="combobox" aria-expanded="false" aria-controls="zf-animal-list" aria-autocomplete="list" placeholder="Search an animal or a place (lion, T. rex, Point Defiance…)" autocomplete="off" autocapitalize="off" spellcheck="false">
+          <input type="text" id="zf-animal" class="zf-input" role="combobox" aria-expanded="false" aria-controls="zf-animal-list" aria-autocomplete="list" placeholder="Animal or place (lion, Point Defiance…)" autocomplete="off" autocapitalize="off" spellcheck="false">
           <button type="button" class="zf-clear" id="zf-animal-clear" aria-label="Clear animal" hidden>×</button>
           <ul id="zf-animal-list" class="zf-suggest" role="listbox" aria-label="Animals and places" hidden></ul>
         </div>
