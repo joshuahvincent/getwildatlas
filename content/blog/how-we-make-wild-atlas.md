@@ -61,6 +61,11 @@ Then a person takes over. **A real person reviews every image and every piece of
 
 Sometimes the system surprises us in a good way. A friend of ours told us his six-year-old was thrilled to learn that the iguana has an eye on top of its head. He was sure that was wrong until he looked it up. It's true: iguanas have a third eye on top of the head that senses light and shadow. Scientists think it may help them notice a shadow passing overhead, like a bird of prey. Hearing that a fact we'd checked was one a parent doubted, and then confirmed, is the best kind of feedback.
 
+<figure>
+  <img src="/assets/blog/how-made-parent-note.png" alt="A WhatsApp message from a parent: the nine- and six-year-old boys played for over 30 minutes and loved it, the six-year-old was excited about the iguana's third eye, and the four-year-old girl is now asking for the game.">
+  <figcaption>A note from a parent</figcaption>
+</figure>
+
 ## How the pictures are made
 
 Our animal pictures are made with AI image tools, and each one starts from the animal itself. The prompt for an "animal in action" photo is built from what we know about that animal. If its facts say it's known for leaping, the picture shows it leaping, in the sort of place it actually lives. We ask for the right adult anatomy, natural colouring and a true-to-life pose, and we rule out things that don't belong: cartoons, text, people and extra animals.
