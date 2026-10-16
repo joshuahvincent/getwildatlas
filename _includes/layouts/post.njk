@@ -10,10 +10,10 @@ layout: layouts/blog-base.njk
   /* Small list thumbnail beside the title (posts that have a thumbImage). */
   .blog-post-titlerow { display: flex; gap: 1.1rem; align-items: flex-start; }
   .blog-post-titles { min-width: 0; flex: 1; }
-  .blog-post-thumb { flex: none; width: 108px; height: 72px; object-fit: cover; border-radius: 10px; margin: 0.5rem 0 0; }
+  .blog-post-thumb { flex: none; width: 162px; height: 108px; object-fit: cover; border-radius: 10px; margin: 0.5rem 0 0; }
   @media (max-width: 600px) {
     .blog-post-titlerow { gap: 0.8rem; }
-    .blog-post-thumb { width: 72px; height: 48px; border-radius: 8px; }
+    .blog-post-thumb { width: 108px; height: 72px; border-radius: 8px; }
   }
 </style>
 <article class="blog-post">
@@ -30,7 +30,7 @@ layout: layouts/blog-base.njk
     {%- endif %}
     <div class="blog-post-titlerow">
       {%- if thumbImage %}
-      <img class="blog-post-thumb" src="{{ thumbImage }}" alt="" width="108" height="72">
+      <img class="blog-post-thumb" src="{{ thumbImage }}" alt="" width="162" height="108">
       {%- endif %}
       <div class="blog-post-titles">
         <h1>{{ title }}</h1>
