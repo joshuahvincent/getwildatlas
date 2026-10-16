@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sources — Wild Atlas</title>
+  <meta name="description" content="Where the animal facts in Wild Atlas come from: the zoos, museums, labs and conservation bodies we draw on, and how we use each one.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.wildatlasapp.com/sources">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.wildatlasapp.com/sources">
+  <meta property="og:title" content="Sources — Wild Atlas">
+  <meta property="og:description" content="Where the animal facts in Wild Atlas come from: the zoos, museums, labs and conservation bodies we draw on, and how we use each one.">
+  <meta property="og:image" content="https://www.wildatlasapp.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Wild Atlas">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sources — Wild Atlas">
+  <meta name="twitter:description" content="Where the animal facts in Wild Atlas come from: the zoos, museums, labs and conservation bodies we draw on, and how we use each one.">
+  <meta name="twitter:image" content="https://www.wildatlasapp.com/assets/og-image.png">
+
+  <meta name="theme-color" content="#FFF5E1">
+  <link rel="icon" type="image/png" href="/assets/app-icon.png">
+  <link rel="apple-touch-icon" href="/assets/app-icon.png">
+
+  <link rel="preload" href="/fonts/Fredoka-VariableFont_wdth,wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/fonts/Nunito-Regular.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link rel="stylesheet" href="/css/styles.css?v=5">
+  <style>
+    /* Sources page — uses the site's tokens only (see css/styles.css :root). */
+    body[data-page="sources"] { --sp-green: #2F7D5C; --sp-green-bg: var(--mint-light); }
+    .sp-page { padding: 120px 0 80px; background: var(--creamy-coat); min-height: 70vh; }
+    .sp-container { max-width: 760px; }
+    .sp-eyebrow { font-family: var(--font-heading); font-size: .95rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--peach-dark); margin-bottom: var(--space-md); text-align: center; }
+    .sp-page h1 { font-size: 2.6rem; line-height: 1.1; color: var(--warm-bark); text-align: center; margin-bottom: var(--space-lg); }
+    .sp-intro { font-size: 1.15rem; line-height: 1.65; }
+    .sp-reviewed { margin-top: var(--space-sm); font-size: .85rem; opacity: .75; }
+    .sp-page h2 { font-size: 1.8rem; line-height: 1.2; margin: var(--space-2xl) 0 var(--space-md); }
+
+    .sp-list { list-style: none; display: grid; gap: var(--space-md); padding: 0; }
+    .sp-card { background: #fff; border: var(--stroke) solid rgba(93, 64, 55, .08); border-radius: var(--radius-md); padding: var(--space-md) var(--space-lg); min-width: 0; }
+    .sp-card-head { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-xs) var(--space-sm); }
+    .sp-card-name { font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: var(--warm-bark); text-decoration: underline; text-decoration-color: var(--peach-pop); text-decoration-thickness: 2px; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    .sp-card-name:hover { color: var(--peach-dark); }
+    .sp-tag { font-family: var(--font-heading); font-size: .72rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; background: var(--yellow-light); border-radius: var(--radius-full); padding: 2px 10px; white-space: nowrap; }
+    .sp-card p { margin-top: var(--space-xs); font-size: 1rem; line-height: 1.55; }
+
+    .sp-note { margin-top: var(--space-lg); background: var(--sky-wash); border-radius: var(--radius-md); padding: var(--space-md) var(--space-lg); font-size: 1rem; line-height: 1.55; }
+    .sp-note strong { font-family: var(--font-heading); }
+
+    .sp-promise { margin: var(--space-lg) 0 var(--space-xl); background: var(--sp-green-bg); border-left: 8px solid var(--sp-green); border-radius: var(--radius-sm); padding: var(--space-lg); font-family: var(--font-heading); font-size: 1.45rem; font-weight: 600; line-height: 1.4; color: var(--warm-bark); }
+    .sp-promise span { display: block; }
+    .sp-how p { margin-bottom: var(--space-md); font-size: 1.05rem; line-height: 1.65; }
+
+    .sp-feedback { margin-top: var(--space-2xl); background: var(--sp-green-bg); border: var(--stroke) solid var(--sp-green); border-radius: var(--radius-md); padding: var(--space-lg); font-size: 1.05rem; line-height: 1.6; }
+    .sp-feedback strong { font-family: var(--font-heading); }
+    .sp-feedback a { font-weight: 700; text-decoration: underline; color: var(--warm-bark); }
+
+    /* The shared footer row doesn't wrap on phones; wrap it here so nothing scrolls sideways. */
+    body[data-page="sources"] .footer-links { flex-wrap: wrap; justify-content: center; gap: var(--space-xs) var(--space-lg); }
+
+    @media (max-width: 600px) {
+      .sp-page { padding: 100px 0 60px; }
+      .sp-page h1 { font-size: 2rem; }
+      .sp-page h2 { font-size: 1.5rem; }
+      .sp-card { padding: var(--space-md); }
+      .sp-promise { font-size: 1.25rem; padding: var(--space-md); }
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZQB7WVQJ1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3ZQB7WVQJ1');
+  </script>
+</head>
+<body data-page="sources">
+  <!-- PROMO BAR -->
+  <div class="promo-bar"><a href="/#newsletter"><img class="promo-bar-icon" src="/assets/newsletter-gift.png" alt="">Free Farm Friends pack for newsletter subscribers &rarr;</a></div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-brand">
+        <img src="/assets/mascot-logo.png" alt="Wild Atlas" class="nav-icon">
+        <span class="nav-title">Wild Atlas</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/" class="nav-cta">Back to Wild Atlas</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="sp-page">
+    <div class="container sp-container">
+      <p class="sp-eyebrow">Behind the facts</p>
+      <h1>Where our animal facts come from</h1>
+      <p class="sp-intro">Every animal in Wild Atlas starts with named, public sources, not with an AI&rsquo;s memory. Here are the organisations we draw on, and what we use each one for. And a real person reviews every image and every piece of text in the app before it goes out.</p>
+      <p class="sp-reviewed">Last reviewed: October 16, 2026</p>
+
+      <h2>The sources</h2>
+      <ul class="sp-list">
+        <li class="sp-card">
+          <div class="sp-card-head"><a class="sp-card-name" href="https://www.iucnredlist.org/" target="_blank" rel="noopener">IUCN Red List of Threatened Species</a><span class="sp-tag">Conservation</span></div>
+          <p>How at-risk each animal is, its population trend, and the year it was assessed.</p>
+        </li>
+        <li class="sp-card">
+          <div class="sp-card-head"><a class="sp-card-name" href="https://animals.sandiegozoo.org/animals" target="_blank" rel="noopener">San Diego Zoo Wildlife Alliance</a><span class="sp-tag">Zoo</span></div>
+          <p>Scientific names, size, lifespan, diet, habitat, range and how animals live together.</p>
+        </li>
+        <li class="sp-card">
+          <div class="sp-card-head"><a class="sp-card-name" href="https://ocean.si.edu/" target="_blank" rel="noopener">Smithsonian Institution</a><span class="sp-tag">Museum</span></div>
+          <p>Diet, range and scientific names, especially for ocean animals.</p>
+        </li>
+        <li class="sp-card">
+          <div class="sp-card-head"><a class="sp-card-name" href="https://www.allaboutbirds.org/" target="_blank" rel="noopener">Cornell Lab of Ornithology, All About Birds</a><span class="sp-tag">Birds</span></div>
+          <p>Diet, habitat and range for our feathered friends.</p>
+        </li>
+        <li class="sp-card">
+          <div class="sp-card-head"><a class="sp-card-name" href="https://amphibiaweb.org/" target="_blank" rel="noopener">AmphibiaWeb</a><span class="sp-tag">Amphibians</span></div>
+          <p>Diet and habitat for frogs, toads and salamanders.</p>
+        </li>
+        <li class="sp-card">
+          <div class="sp-card-head"><a class="sp-card-name" href="https://ecos.fws.gov/ecp/" target="_blank" rel="noopener">U.S. Fish &amp; Wildlife Service</a><span class="sp-tag">Wildlife agency</span></div>
+          <p>Range and legal protection status for North American species.</p>
+        </li>
+        <li class="sp-card">
+          <div class="sp-card-head"><a class="sp-card-name" href="https://speciesplus.net/" target="_blank" rel="noopener">CITES Species+ (UNEP-WCMC)</a><span class="sp-tag">Trade protection</span></div>
+          <p>Which animals are protected from international trade.</p>
+        </li>
+        <li class="sp-card">
+          <div class="sp-card-head"><a class="sp-card-name" href="https://www.akc.org/dog-breeds/" target="_blank" rel="noopener">American Kennel Club</a><span class="sp-tag">Dogs</span></div>
+          <p>Dog breeds: size, lifespan, energy and how they behave with people and other dogs.</p>
+        </li>
+        <li class="sp-card">
+          <div class="sp-card-head"><a class="sp-card-name" href="https://cfa.org/breeds/" target="_blank" rel="noopener">Cat Fanciers&rsquo; Association</a><span class="sp-tag">Cats</span></div>
+          <p>Cat breeds: size, lifespan, energy and how they behave.</p>
+        </li>
+        <li class="sp-card">
+          <div class="sp-card-head"><a class="sp-card-name" href="https://www.gbif.org/" target="_blank" rel="noopener">GBIF, the Global Biodiversity Information Facility</a><span class="sp-tag">Classification</span></div>
+          <p>The scientific family tree, so every animal means the same species in every language.</p>
+        </li>
+        <li class="sp-card">
+          <div class="sp-card-head"><a class="sp-card-name" href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a><span class="sp-tag">Identifiers</span></div>
+          <p>A stable ID for each species, so the right animal is always matched to the right facts.</p>
+        </li>
+        <li class="sp-card">
+          <div class="sp-card-head"><a class="sp-card-name" href="https://www.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a><span class="sp-tag">Cross-reference</span></div>
+          <p>Used to confirm we have the right species and as a starting point for reading more. It is never the final word on a fact.</p>
+        </li>
+      </ul>
+
+      <aside class="sp-note">
+        <strong>About the made-up animals.</strong> Our Mythical Menagerie pack features creatures from folklore and legend. They aren&rsquo;t science facts, and we don&rsquo;t present them as science.
+      </aside>
+
+      <h2>How we check it</h2>
+      <p class="sp-promise">A real person reviews every image and every piece of text in Wild Atlas before it goes out. <span>Every picture. Every word the app shows or says. Nothing is published because an AI said it was fine.</span></p>
+
+      <div class="sp-how">
+        <p>We use AI tools to help us find the data, then turn it into child-friendly language and writing. Alongside our human reviewers, we have two AI agents we&rsquo;ve trained for specific jobs.</p>
+        <p><strong>Dr. Attenborough</strong> checks biological accuracy. He&rsquo;s named in tribute to our favorite naturalist, Sir David Attenborough.</p>
+        <p><strong>Dr. Witt</strong> checks anything to do with kids. He works from a written rulebook: we don&rsquo;t claim anything about how children learn or grow unless it can be backed up or carefully hedged, and every claim is matched to the right age group, younger explorers (about 2 to 5) or older explorers (about 6 to 10).</p>
+        <p>They are our additional eyes. They do the first pass, before a person looks at anything, and they often filter out incorrect facts or flag issues for us to look at and approve one way or the other. Every image and every piece of text we create goes through them. There is never a time when they don&rsquo;t look at the content before it goes out.</p>
+      </div>
+
+      <div class="sp-feedback">
+        <strong>Found something that looks wrong? Tell us.</strong> Use the feedback button in the app, or email <a href="mailto:info@wildatlasapp.com">info@wildatlasapp.com</a>. We&rsquo;ll check it against the source and fix it.
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-promo">
+        <a class="footer-promo-bar" href="/#newsletter">
+          <img class="footer-promo-icon" src="/assets/newsletter-gift.png" alt="" width="46" height="46">
+          <span class="footer-promo-text">Get the <strong>Farm Friends</strong> pack <strong>free</strong> when you join our newsletter</span>
+          <span class="footer-promo-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="/assets/mascot-sitting.png" alt="Wild Atlas" class="footer-mascot" loading="lazy">
+          <span class="footer-title">Wild Atlas</span>
+        </div>
+        <div class="footer-links">
+          <a href="/about">About</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+          <a href="/age-suitability">Age Suitability</a>
+          <a href="/support">Support</a>
+          <a href="/press">Press</a>
+          <a href="/sources">Sources</a>
+          <a href="/partners">Partners</a>
+          <a href="mailto:info@wildatlasapp.com">Contact</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Wild Atlas. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FoldBack feedback button (public site key, bound to wildatlasapp.com) -->
+  <script src="https://api.foldback.co/sdk/foldback-sdk.js"
+          data-server="https://api.foldback.co"
+          data-project="2aadd1de-714c-437f-bb07-b242d4a6133b"
+          data-key="fb_pub_production_2aadd1de_f200ab68f3e932cc30662cff"></script>
+</body>
+</html>
