@@ -144,7 +144,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 56px;
 }
 .nav-brand {
   display: flex;
@@ -152,14 +152,14 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   gap: var(--space-sm);
 }
 .nav-icon {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   border-radius: var(--radius-sm);
 }
 .nav-title {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .nav-links {
   display: flex;
@@ -176,7 +176,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
 .nav-cta {
   background: var(--peach-pop);
   color: #fff !important;
-  padding: 10px 24px;
+  padding: 7px 20px;
   border-radius: var(--radius-full);
   font-weight: 700 !important;
 }
@@ -1576,7 +1576,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
   .nav-links {
     display: none;
     position: absolute;
-    top: 72px;
+    top: 56px;
     left: 0;
     right: 0;
     background: rgba(255, 245, 225, 0.98);
@@ -1913,7 +1913,8 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
 }
 
 /* Site-wide promo bar (fixed, above the nav) */
-:root { --promo-h: 40px; }
+:root { --promo-h: 0px; }
+html.has-promo { --promo-h: 40px; }   /* the newsletter bar shows on the home page only */
 body { padding-top: var(--promo-h); }
 .navbar { top: var(--promo-h); }
 .promo-bar {
@@ -1944,7 +1945,7 @@ body { padding-top: var(--promo-h); }
   margin: -2px 8px 0 0;
 }
 @media (max-width: 600px) {
-  :root { --promo-h: 52px; }
+  html.has-promo { --promo-h: 52px; }
   .promo-bar { font-size: 0.78rem; }
 }
 
