@@ -7,6 +7,7 @@ excerpt: "A look behind the scenes for parents: how we use the latest technology
 permalink: /blog/how-we-make-wild-atlas/
 noindex: true
 coverImage: /assets/blog/how-made-fox-action.jpg
+thumbImage: /assets/blog/thumbs/how-we-make-wild-atlas.jpg
 tags: [behind-the-scenes, accuracy, ai]
 ---
 
