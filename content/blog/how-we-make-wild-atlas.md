@@ -73,7 +73,7 @@ Then a person checks every picture. Every single one. If the species looks off, 
 
 Kids love comparing themselves to animals, and these are the easiest pictures to get wrong. AI tools are good at making a picture of a brachiosaurus, but not at knowing how big one is next to a child. Left to guess, they get scale badly wrong.
 
-So we don't let them guess. For each animal we build an exact layout from its measurements first. Then an image model paints over that layout in our house style, holding the shapes and proportions fixed. A person reviews each result for the right body shape and the right size comparison before it goes in. For the dinosaurs, the true sizes surprised even us (and because a dinosaur like Brachiosaurus is known from incomplete fossils, its length is a careful estimate, not an exact measurement), so we double-checked about ten of them a second way, with measurements outside our own image tools.
+So we don't let them guess. For each animal we build an exact layout from its measurements first. Then an image model paints over that layout in our house style, holding the shapes and proportions fixed. A person reviews each result for the right body shape and the right size comparison before it goes in. For the dinosaurs, the true sizes surprised even us (and because a dinosaur like Brachiosaurus is known from incomplete fossils, its length is a careful estimate, not an exact measurement), so we double-checked with measurements outside our own image tools.
 
 ![A brachiosaurus next to a tiny explorer, drawn to scale from measurements](/assets/blog/how-made-brachiosaurus-scale.jpg)
 
