@@ -28,6 +28,8 @@ simpleDay:
     - "It is shy, and is most active at dusk and at night."
     - "Wildcats hunt small animals like rabbits and mice."
     - "It is bigger and sturdier than most pet cats."
+    - "The Scottish wildcat is Britain's only native wild cat."
+    - "Scottish wildcats usually live alone and keep to their own patch of land."
   joinIn: |
     Draw a Scottish wildcat with its ringed tail and stripes. Then play 'shy wildcat', a quiet game of tiptoeing and hiding. You can also look at a map of Scotland and find the Highlands together. Remember, wildcats are wild animals, so we only watch them from far away.
   relatedApp:

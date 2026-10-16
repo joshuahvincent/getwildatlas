@@ -28,6 +28,8 @@ simpleDay:
     - "They live in family groups, and the dads help carry the babies."
     - "They often sleep in tree holes at night."
     - "Their bright orange fur and mane give them their name."
+    - "Golden lion tamarins often have twin babies."
+    - "Golden lion tamarins use their long, thin fingers to reach into leafy plants and cracks to find insects."
   joinIn: |
     Draw your own golden lion tamarin, with a big orange mane and long hands. Then pretend to be a tamarin family, climbing through the forest and carrying the babies. You can also learn about the forest near you and think of a small way to look after it, like picking up litter at a park.
   relatedApp:
