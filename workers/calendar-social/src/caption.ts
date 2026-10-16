@@ -34,7 +34,8 @@ function fill(tpl: string, vars: Record<string, string>): string {
 
 export function buildCaption(p: Platform, s: Social, iso: string): string {
   const v = variantIndex(iso);
-  const hashtags = [tag(s.day), tag(s.animal), ...templates.hashtagsFixed].slice(0, 5).join(" ");
+  const lite = s.kind === "lite";
+  const hashtags = [tag(s.day), ...(lite ? [] : [tag(s.animal)]), ...templates.hashtagsFixed].slice(0, 5).join(" ");
   const base: Record<string, string> = {
     DAY: s.day, ANIMAL: s.animal, ANIMAL_CAP: cap(s.animal), PACK: s.pack ?? "",
     PAGE: p !== "x" ? s.pageUrl.replace(/^https?:\/\//, "") : s.pageUrl,
@@ -43,13 +44,14 @@ export function buildCaption(p: Platform, s: Social, iso: string): string {
   };
   const withUtm = (u: string, medium: string) => `${u}&utm_source=${p}&utm_medium=${medium}&utm_campaign=${s.campaign}`;
   const link = withUtm(s.appUrl, "social");
-  const line = fill(s.pack ? templates.appLine : templates.appLineNoPack, base);
+  const line = lite ? (s.appLine ?? "") : fill(s.pack ? templates.appLine : templates.appLineNoPack, base);
   // No real awareness day ("Wild Atlas Spotlight"): don't imply a holiday in the day-name frames.
   const spotlight = s.official === false || /spotlight/i.test(s.day);
-  const greet = (pageGreeting: string) =>
+  // Lite days have no animal to name, so the page's own greeting always leads.
+  const greet = (pageGreeting: string) => lite ? pageGreeting :
     fill(spotlight && v !== 0 ? templates.greetingSpotlight : templates.greetings[v], { ...base, PAGE_GREETING: pageGreeting });
 
-  const build = (pageGreeting: string) => fill(templates[p][v], {
+  const build = (pageGreeting: string) => fill((lite ? templates.lite[p] : templates[p])[v], {
     ...base, GREETING: greet(pageGreeting), LINK: link, APPLINE: line,
     APPLINE_IG: line, // IG: no URLs allowed in captions
   }).replace(/\n{3,}/g, "\n\n").replace(/[ \t]+\n/g, "\n").trim();

@@ -15,19 +15,25 @@ export function pacificNow(d = new Date()) {
 
 async function getJson<T>(url: string): Promise<T | null> {
   const r = await fetch(url, { cf: { cacheTtl: 0 } } as RequestInit);
-  return r.ok ? ((await r.json()) as T) : null;
+  if (!r.ok) return null;
+  try { return (await r.json()) as T; } catch { return null; } // the site's SPA fallback serves HTML with a 200
 }
 
 /** Decide what (if anything) to post today. Returns a reason string when skipping. */
-async function todaysSocial(env: Env, date: string, forceSlug?: string): Promise<{ social?: Social; skip?: string; alert?: string }> {
+export async function todaysSocial(env: Env, date: string, forceSlug?: string): Promise<{ social?: Social; skip?: string; alert?: string }> {
   let slug = forceSlug ?? env.FORCE_SLUG;
   if (!slug) {
     // Compare iso to the Pacific date ourselves: `isToday` is baked at (UTC) build time.
     const feed = await getJson<{ latest: LatestDay | null }>(`${env.SITE}/calendar/latest.json`);
     const latest = feed?.latest;
     if (!latest || latest.iso !== date) return { skip: "no calendar day today" };
-    if (!latest.featured) return { skip: `${latest.day} is a lite/not-featured day` };
     slug = latest.url.replace(/^\/calendar\/|\/$/g, "");
+    // Not-featured days post only when their page publishes a lite social.json
+    // (kind "lite"); an animal page that lost the same-date tie never posts.
+    if (!latest.featured) {
+      const lite = await getJson<Social>(`${env.SITE}/calendar/${slug}/social.json`);
+      if (lite?.kind !== "lite") return { skip: `${latest.day} is a not-featured day with no lite social.json` };
+    }
   }
   const social = await getJson<Social>(`${env.SITE}/calendar/${slug}/social.json`);
   if (!social) return { alert: `social.json missing for ${slug} — not posting` };

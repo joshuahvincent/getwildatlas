@@ -17,6 +17,10 @@ export interface Env {
 /** /calendar/<slug>/social.json — see docs/CALENDAR_SOCIAL_WORKER.md Phase 1. */
 export interface Social {
   slug: string;
+  /** "lite" = awareness-day page with no app animal (no pack/appId); absent = animal page. */
+  kind?: "lite";
+  /** Lite pages only: the page's own relatedApp sentence(s), used as the app line. */
+  appLine?: string;
   day: string;
   official: boolean | null;
   animal: string;
