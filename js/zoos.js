@@ -604,7 +604,7 @@ function forgetLocation() {
   S.origin = null; S.editing = false; $('zf-q').value = ''; $('zf-q').placeholder = 'City or postcode'; $('zf-forgetwrap').hidden = true; render();
 }
 function setOrigin(o) {
-  saveOrigin(o); $('zf-forgetwrap').hidden = false;
+  saveOrigin(o); $('zf-forgetwrap').hidden = !o.fromGeo;   // "Forget my location" only after the red locate button was used
   track('zoo_location_used', { method: o.method || 'geolocation' });
   S.origin = o; S.editing = false; $('zf-q').value = o.label === 'your location' ? '' : o.label; $('zf-q').placeholder = o.fromGeo ? 'Using your location' : 'City or postcode';
   closeSuggest(); render();
@@ -856,7 +856,7 @@ async function init() {
   if (window.matchMedia('(max-width: 640px)').matches) { $('zf-animal').placeholder = 'Animal, place'; }   // short, so both search boxes fit on one line
   renderQuick();
   const saved = loadSaved();
-  if (saved) { S.origin = saved; $('zf-q').value = saved.label === 'your location' ? '' : saved.label; $('zf-q').placeholder = saved.fromGeo ? 'Using your location' : 'City or postcode'; $('zf-forgetwrap').hidden = false; }
+  if (saved) { S.origin = saved; $('zf-q').value = saved.label === 'your location' ? '' : saved.label; $('zf-q').placeholder = saved.fromGeo ? 'Using your location' : 'City or postcode'; $('zf-forgetwrap').hidden = !saved.fromGeo; }
   $('zf-forget').addEventListener('click', forgetLocation);
   // "Don't see your place?" form: stored for review by a person (functions/api/suggest-place.js); the animal field starts as the animal being viewed
   const sdlg = $('zf-suggest-dialog'), sform = $('zf-suggest-form'), smsg = $('zf-suggest-msg');

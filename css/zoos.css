@@ -327,3 +327,7 @@ main:has(> .zf), main:has(.zf) { padding-top: .5rem; }
   .zf-quick button { font-size: .8rem; font-weight: 600; min-height: 26px; padding: .1rem .65rem; border: 0; background: #e6efdc; color: #3b5a2a; }
   .zf-quick button:hover { background: #d6e5c6; }
 }
+
+/* the locate button is just the symbol; the words stay for screen readers */
+.zf-locate .zf-locate-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+@media (min-width: 641px) { .zf-locate { padding: 0; width: 44px; min-width: 44px; min-height: 44px; display: grid; place-items: center; } }
