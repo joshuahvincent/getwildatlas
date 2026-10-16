@@ -6,6 +6,11 @@ author: Wild Atlas
 excerpt: "Meet the basking shark: the second-biggest fish in the sea, and a gentle one that only eats tiny floating food. A read-aloud page for families."
 coverImage: /assets/calendar-days/world-basking-shark-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "The basking shark is the second-biggest fish in the world. Only the whale shark is bigger."
+    - "Basking sharks are named for the way they swim slowly near the surface, as if they were soaking up the sun."
+    - "A basking shark's gill openings reach almost all the way around its head."
 simpleDay:
   campaign: day_world_basking_shark_day
   greeting: "**Happy World Basking Shark Day!** Today we say hello to a shark as long as a bus that only eats the tiniest food in the ocean."
@@ -27,6 +32,8 @@ simpleDay:
     - "They don't chew. They sieve plankton from the water through special comb-like filters in their mouths."
     - "Their mouths can open about a meter (3 feet) wide, as they swim along."
     - "Even though they're giant sharks, basking sharks are gentle and don't eat people. They only want plankton."
+    - "Basking sharks are named for the way they swim slowly near the surface, as if they were soaking up the sun."
+    - "A basking shark's gill openings reach almost all the way around its head."
   joinIn: |
     Draw a basking shark with a great big open mouth, then add some tiny plankton dots floating in. Can you make your own plankton snack out of sprinkles in a bowl of water?
 

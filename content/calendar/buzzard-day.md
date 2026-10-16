@@ -6,6 +6,11 @@ author: Wild Atlas
 excerpt: "Happy Buzzard Day! Every March 15, a town in Ohio welcomes back its turkey vultures, big gliding birds that tidy up the countryside."
 coverImage: /assets/calendar-days/buzzard-day/cover.jpg
 tags: [animals, conservation, family]
+social:
+  facts:
+    - "Turkey vultures hold their wings in a shallow V and wobble a little as they glide."
+    - "A group of turkey vultures riding warm air upward together is called a kettle."
+    - "Baby turkey vultures hatch covered in soft white fluff."
 simpleDay:
   campaign: day_buzzard_day
   greeting: "**Happy Buzzard Day!** Today we look to the sky and welcome back the big, gliding turkey vultures."
@@ -27,6 +32,8 @@ simpleDay:
     - "Turkey vultures have a very good sense of smell, which is rare for birds."
     - "Their heads have no feathers, which helps keep them clean."
     - "They don't build nests. They lay eggs on the ground in a quiet cave, hollow log, or rocky ledge."
+    - "A group of turkey vultures riding warm air upward together is called a kettle."
+    - "Baby turkey vultures hatch covered in soft white fluff."
   joinIn: |
     Be a sky-watcher. On a sunny day, look up and watch for big birds gliding in slow circles without flapping. Can you spot the V shape of their wings? Then draw a turkey vulture with its red head and wide wings.
 
