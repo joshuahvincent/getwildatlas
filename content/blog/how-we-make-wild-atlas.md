@@ -59,7 +59,7 @@ They are our additional eyes. They do the first pass, before a person looks at a
 
 Then a person takes over. **A real person reviews every image and every piece of text in Wild Atlas before it goes out.** The reviewers are a second pair of eyes. The person always has the final say.
 
-Sometimes the system surprises us in a good way. A friend of ours, Jack Couch, told us his six-year-old was thrilled to learn that the iguana has an eye on top of its head. Jack was sure that was wrong until he looked it up. It's true: iguanas have a third eye on top of the head that senses light and shadow. Scientists think it may help them notice a shadow passing overhead, like a bird of prey. Hearing that a fact we'd checked was one a parent doubted, and then confirmed, is the best kind of feedback.
+Sometimes the system surprises us in a good way. A friend of ours told us his six-year-old was thrilled to learn that the iguana has an eye on top of its head. He was sure that was wrong until he looked it up. It's true: iguanas have a third eye on top of the head that senses light and shadow. Scientists think it may help them notice a shadow passing overhead, like a bird of prey. Hearing that a fact we'd checked was one a parent doubted, and then confirmed, is the best kind of feedback.
 
 ## How the pictures are made
 
