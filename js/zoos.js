@@ -604,7 +604,7 @@ function forgetLocation() {
   S.origin = null; S.editing = false; $('zf-q').value = ''; $('zf-q').placeholder = 'City or postcode'; $('zf-forgetwrap').hidden = true; render();
 }
 function setOrigin(o) {
-  saveOrigin(o); $('zf-forgetwrap').hidden = false;
+  saveOrigin(o); $('zf-forgetwrap').hidden = !o.fromGeo;   // "Forget my location" only after the red locate button was used
   track('zoo_location_used', { method: o.method || 'geolocation' });
   S.origin = o; S.editing = false; $('zf-q').value = o.label === 'your location' ? '' : o.label; $('zf-q').placeholder = o.fromGeo ? 'Using your location' : 'City or postcode';
   closeSuggest(); render();
@@ -856,7 +856,7 @@ async function init() {
   if (window.matchMedia('(max-width: 640px)').matches) { $('zf-animal').placeholder = 'Animal, place'; }   // short, so both search boxes fit on one line
   renderQuick();
   const saved = loadSaved();
-  if (saved) { S.origin = saved; $('zf-q').value = saved.label === 'your location' ? '' : saved.label; $('zf-q').placeholder = saved.fromGeo ? 'Using your location' : 'City or postcode'; $('zf-forgetwrap').hidden = false; }
+  if (saved) { S.origin = saved; $('zf-q').value = saved.label === 'your location' ? '' : saved.label; $('zf-q').placeholder = saved.fromGeo ? 'Using your location' : 'City or postcode'; $('zf-forgetwrap').hidden = !saved.fromGeo; }
   $('zf-forget').addEventListener('click', forgetLocation);
   // "Don't see your place?" form: stored for review by a person (functions/api/suggest-place.js); the animal field starts as the animal being viewed
   const sdlg = $('zf-suggest-dialog'), sform = $('zf-suggest-form'), smsg = $('zf-suggest-msg');
@@ -883,15 +883,6 @@ async function init() {
     } catch (x) { $('zf-suggest-send').disabled = false; bad('Sorry, that did not go through. Please email info@wildatlasapp.com.'); }
   });
   $('zf-adv-sum').addEventListener('click', () => { const open = $('zf-advbody').hidden; $('zf-advbody').hidden = !open; $('zf-adv-sum').setAttribute('aria-expanded', String(open)); });
-  // "Larger map": the map takes most of the width and the list shrinks to compact rows; remembered on this device
-  const setSize = (big, save) => {
-    $('zf-main').dataset.size = big ? 'large' : 'normal'; $('zf-size').setAttribute('aria-pressed', String(big)); $('zf-size').textContent = big ? 'Smaller map' : 'Larger map';
-    if (save) { try { localStorage.setItem('wa_zoo_size', big ? 'large' : 'normal'); } catch (e) {} track('zoo_map_size', { state: big ? 'large' : 'normal' }); }
-    setTimeout(() => { if (map) { map.resize(); if (lastCands.length) fit(lastCands); } else if (FB.svg) { FB.cw = $('zf-map').clientWidth; FB.ch = $('zf-map').clientHeight; fbClamp(); fbApply(); } }, 60);
-  };
-  $('zf-size').addEventListener('click', () => setSize($('zf-main').dataset.size !== 'large', true));
-  let pref = ''; try { pref = localStorage.getItem('wa_zoo_size') || ''; } catch (e) {}
-  if (pref === 'normal') setSize(false, false);   // the larger map is the default; only an explicit "Smaller map" is remembered
   const input = $('zf-animal');
   input.addEventListener('focus', () => showAnimalList(input.value === (S.cur && S.cur.name) || (S.place !== null && S.place !== undefined && input.value === S.places[S.place].n) ? '' : input.value));
   input.addEventListener('input', () => { $('zf-animal-clear').hidden = !input.value; if (S.unknown) S.unknown = ''; showAnimalList(input.value); });
