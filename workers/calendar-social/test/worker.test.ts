@@ -80,11 +80,14 @@ test("lite days: page greeting leads, no animal/pack claims, platform rules hold
     assert.ok(fb.startsWith("Happy International Sawfish Day!"), fb);
     assert.ok(fb.includes("Sawfish are not in Wild Atlas yet.") && fb.includes("apps.apple.com"));
     assert.ok(!/where to see one|belongs to the|Meet the/.test(fb));
+    assert.ok(fb.includes("The story + things to try together → wildatlasapp.com/"), fb);
     const ig = buildCaption("ig", lite, iso);
     assert.ok(!/https?:\/\//.test(ig) && ig.includes("link in bio") && ig.includes("wildatlasapp.com/calendar/international-sawfish-day/"));
+    assert.ok(ig.includes("The story + things to try together: wildatlasapp.com/"), ig);
     assert.ok(ig.includes("#InternationalSawfishDay") && ig.split("#").length - 1 <= 5);
     const x = buildCaption("x", lite, iso);
     assert.ok(xLength(x) <= 280, `x ${xLength(x)}`);
+    assert.ok(x.includes("The story + things to try together: https://"), x);
     for (const t of [fb, ig, x]) assert.equal(checkText(t), null);
   }
 });
