@@ -311,19 +311,18 @@
 main:has(> .zf), main:has(.zf) { padding-top: .5rem; }
 .zf-maptools, .zf-sizebtn { display: none; }
 
-/* desktop: ONE slim line (animal search, city, locate, then More filters + Forget my location at the far right); the fields shrink before anything wraps; the "Try" chips look different from the inputs */
+/* desktop: row 1 = animal search, city, locate button; row 2 = More filters, then the "Animals move around" note, then Forget my location (only after the locate button was used); the fields shrink before anything wraps; the "Try" chips look different from the inputs */
 @media (min-width: 900px) {
-  .zf-panel { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; column-gap: .9rem; align-items: center; }
-  .zf-bar { display: flex; align-items: center; gap: .5rem; min-width: 0; grid-row: 1; grid-column: 1; }
+  .zf-panel { display: block; }
+  .zf-bar { display: flex; align-items: center; gap: .5rem; min-width: 0; }
   .zf-animalfield { flex: 0 1 392px; min-width: 0; }
   .zf-locfield { flex: 0 1 288px; min-width: 0; }
   .zf-locate { flex: none; white-space: nowrap; }
-  .zf-metaline { display: contents; }
-  .zf-advbtn { grid-row: 1; grid-column: 2; white-space: nowrap; margin: 0; }
-  .zf-forgetwrap { grid-row: 1; grid-column: 3; white-space: nowrap; font-size: .9rem; }
-  .zf-metaline .zf-notice { grid-row: 2; grid-column: 1 / -1; margin: .3rem 0 0; }
-  .zf-advbody { grid-row: 3; grid-column: 1 / -1; }
-  .zf-quick { margin: .5rem 0 0; }
+  .zf-metaline { display: flex; flex-wrap: wrap; align-items: center; gap: .1rem .9rem; margin: .3rem 0 0; }
+  .zf-advbtn { white-space: nowrap; min-height: 26px; font-size: .85rem; }
+  .zf-metaline .zf-notice { margin: 0; font-size: .82rem; }
+  .zf-forgetwrap { white-space: nowrap; font-size: .85rem; }
+  .zf-quick { margin: .4rem 0 0; }
   .zf-quick button { font-size: .8rem; font-weight: 600; min-height: 26px; padding: .1rem .65rem; border: 0; background: #e6efdc; color: #3b5a2a; }
   .zf-quick button:hover { background: #d6e5c6; }
 }
