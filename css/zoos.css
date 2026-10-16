@@ -311,17 +311,18 @@
 main:has(> .zf), main:has(.zf) { padding-top: .5rem; }
 .zf-maptools, .zf-sizebtn { display: none; }
 
-/* desktop: one slim line (animal search, city, locate, then More filters + Forget my location at the right); the "Try" chips look different from the inputs */
+/* desktop: ONE slim line (animal search, city, locate, then More filters + Forget my location at the far right); the fields shrink before anything wraps; the "Try" chips look different from the inputs */
 @media (min-width: 900px) {
-  .zf-panel { display: flex; flex-wrap: wrap; align-items: center; column-gap: .6rem; }
-  .zf-bar { display: flex; align-items: center; gap: .5rem; flex: 0 0 auto; }
-  .zf-animalfield { width: 392px; }
-  .zf-locfield { width: 288px; }
+  .zf-panel { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; column-gap: .9rem; align-items: center; }
+  .zf-bar { display: flex; align-items: center; gap: .5rem; min-width: 0; grid-row: 1; grid-column: 1; }
+  .zf-animalfield { flex: 0 1 392px; min-width: 0; }
+  .zf-locfield { flex: 0 1 288px; min-width: 0; }
+  .zf-locate { flex: none; white-space: nowrap; }
   .zf-metaline { display: contents; }
-  .zf-advbtn { margin-left: auto; }
-  .zf-forgetwrap { white-space: nowrap; font-size: .9rem; }
-  .zf-metaline .zf-notice { order: 5; flex-basis: 100%; margin: .3rem 0 0; }
-  .zf-advbody { order: 6; flex-basis: 100%; }
+  .zf-advbtn { grid-row: 1; grid-column: 2; white-space: nowrap; margin: 0; }
+  .zf-forgetwrap { grid-row: 1; grid-column: 3; white-space: nowrap; font-size: .9rem; }
+  .zf-metaline .zf-notice { grid-row: 2; grid-column: 1 / -1; margin: .3rem 0 0; }
+  .zf-advbody { grid-row: 3; grid-column: 1 / -1; }
   .zf-quick { margin: .5rem 0 0; }
   .zf-quick button { font-size: .8rem; font-weight: 600; min-height: 26px; padding: .1rem .65rem; border: 0; background: #e6efdc; color: #3b5a2a; }
   .zf-quick button:hover { background: #d6e5c6; }
