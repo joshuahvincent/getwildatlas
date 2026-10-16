@@ -13,6 +13,7 @@ eleventyExcludeFromCollections: true
   .cal-hero { padding: 0 0 0.1rem; max-width: 52rem; }
   .cal-hero .eyebrow { font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin: 0 0 0.3rem; }
   .cal-hero h1 { font-family: 'Fredoka', sans-serif; font-size: clamp(1.6rem, 4vw, 2.1rem); line-height: 1.1; margin: 0 0 0.2rem; color: var(--bark); }
+  .cal-hero h1 .cal-ico { width: .85em; height: .85em; vertical-align: -.1em; margin-right: .2em; color: var(--accent); }
   .cal-hero p { color: var(--muted); font-size: 0.92rem; font-weight: 400; line-height: 1.4; margin: 0; }
   .cal-hero .dates-link { color: var(--accent); font-weight: 700; text-decoration: underline; text-underline-offset: 2px; }
   .cal-layout { display: grid; grid-template-columns: 1fr; gap: 1.5rem; align-items: start; margin-top: 1.25rem; }
@@ -148,7 +149,7 @@ eleventyExcludeFromCollections: true
   .cm-nav.off { opacity: 0.25; }
   .cm-head .cm-nav:first-child { order: 0; } .cm-head h2 { order: 1; } .cm-head .cm-nav:last-child { order: 2; }
   html:not(.cal-js) .month-strip, html:not(.cal-js) .cm-nav { display: none; }
-  html.cal-js .bc { min-height: 84px; padding-top: 17px; }
+  html.cal-js .bc { min-height: 86px; padding-top: 21px; }
   html.cal-js .bc-feat img { height: 38px; }
   @media (max-width: 760px) { html.cal-js .bc { min-height: 0; } html.cal-js .bc-feat img { height: 100%; } }
   /* the month should sit mostly above the fold: tighter title block, month tabs and month heading */
@@ -162,7 +163,7 @@ eleventyExcludeFromCollections: true
 </style>
 
 <header class="cal-hero">
-  <h1>Wild Atlas World Wildlife Calendar</h1>
+  <h1><svg class="cal-ico" aria-hidden="true" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg> Wild Atlas World Wildlife Calendar</h1>
   <p>Animal lovers around the world already celebrate these days — we didn't make them up (see <a class="dates-link" href="/calendar/about/">date origins</a>). For each one, we've made a short read-aloud story to share with your kids.</p>
 </header>
 
