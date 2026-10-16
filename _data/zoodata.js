@@ -67,5 +67,13 @@ module.exports = () => {
   });
   const kinds = [["wild", "Wild animals"], ["dino", "Dinosaurs"], ["farm", "Farm animals"]];
   const directory = kinds.map(([k, label]) => ({ label, animals: animals.filter((a) => a.kind === k).sort((x, y) => x.name.localeCompare(y.name)).map((a) => ({ slug: a.slug, name: a.name })) }));
-  return { generated: meta.generated, animals, directory };
+  // "Browse by Wild Atlas animal": one container per app pack (mascot + its animals); animals that are not in an app pack go in a last group
+  const appAn = require("./appAnimals.json").animals || {};
+  const PACKS = [["happy_hounds", "Happy Hounds", "happy-hounds"], ["cool_cats", "Cool Cats", "cool-cats"], ["cozy_critters", "Cozy Critters", "cozy-critters"], ["feathered_friends", "Feathered Friends", "bird-buddies"], ["safari_stars", "Safari Stars", "safari-stars"], ["ocean_creatures", "Ocean Creatures", "ocean-wonders"], ["dino_roars", "Dino Roars!", "dino-discoveries"], ["wild_americas", "Wild Americas", "forest-friends"], ["rainforest_explorers", "Rainforest Explorers", "hoppy-amphibians"], ["farm_friends", "Farm Friends", "farm-friends"], ["reptile_world", "Reptile World", "reptile-realm"], ["planet_pioneers", "Planet Pioneers", "arctic-adventures"], ["legends_of_the_wild", "Legends of the Wild", "legends-of-the-wild"]];
+  const link = (a) => ({ slug: a.slug, name: a.name });
+  const byName = (x, y) => x.name.localeCompare(y.name);
+  const packs = PACKS.map(([id, name, img]) => ({ id, name, img, animals: animals.filter((a) => appAn[a.id] && appAn[a.id].pack === id).sort(byName).map(link) })).filter((p) => p.animals.length);
+  const rest = animals.filter((a) => !(appAn[a.id] && PACKS.some((p) => p[0] === appAn[a.id].pack))).sort(byName).map(link);
+  if (rest.length) packs.push({ id: "more", name: "More animals", img: "", animals: rest });
+  return { generated: meta.generated, animals, directory, packs };
 };

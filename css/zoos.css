@@ -330,3 +330,18 @@ main:has(> .zf), main:has(.zf) { padding-top: .5rem; }
 /* the locate button is just the symbol; the words stay for screen readers */
 .zf-locate .zf-locate-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
 @media (min-width: 641px) { .zf-locate { padding: 0; width: 44px; min-width: 44px; min-height: 44px; display: grid; place-items: center; } }
+
+/* Browse by Wild Atlas animal: one container per pack (mascot, name, its animals as buttons) */
+.zf { padding-bottom: .5rem; }
+.zf-directory { margin-top: 1rem; }
+.zf-directory h2 { font-size: 1.3rem; margin: 0 0 .8rem; }
+.zf-packs { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; align-items: start; }
+.zf-pack { background: #fff8e7; border: 2px solid #e6d5ae; border-radius: 18px; padding: .8rem .9rem 1rem; }
+.zf-pack-head { display: flex; align-items: center; gap: .7rem; margin: 0 0 .6rem; }
+.zf-pack-head img { width: 64px; height: 64px; object-fit: contain; flex: none; }
+.zf-pack-head h3 { margin: 0; font-size: 1.1rem; flex: 1; }
+.zf-pack-n { font-size: .8rem; font-weight: 700; color: var(--muted); background: #f1e3bd; border-radius: 999px; padding: .05rem .6rem; }
+.zf-pack-links { list-style: none; display: flex; flex-wrap: wrap; gap: .35rem .4rem; padding: 0; margin: 0; }
+.zf-pack-links a { display: inline-block; padding: .28rem .75rem; border-radius: 999px; background: #e6efdc; color: #2f4a21; font-weight: 700; font-size: .85rem; text-decoration: none; border: 0; }
+.zf-pack-links a:hover { background: #d3e4c0; }
+.zf-pack-links a:focus-visible { outline: 3px solid var(--zf-focus); outline-offset: 2px; }

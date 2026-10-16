@@ -8,9 +8,17 @@ jsonld: '{"@context":"https://schema.org","@type":"CollectionPage","name":"Where
 ---
 {% include "zoos-app.njk" %}
 <section class="zf-seo zf-directory" aria-labelledby="zf-dir-h">
-  <h2 id="zf-dir-h">Browse by animal</h2>
-  {%- for g in zoodata.directory %}
-  <h3>{{ g.label }}</h3>
-  <ul class="zf-seo-links">{% for r in g.animals %}<li><a href="/zoos/{{ r.slug }}/">{{ r.name }}</a></li>{% endfor %}</ul>
-  {%- endfor %}
+  <h2 id="zf-dir-h">Browse by Wild Atlas animal</h2>
+  <div class="zf-packs">
+    {%- for pk in zoodata.packs %}
+    <section class="zf-pack" aria-labelledby="zf-pack-{{ pk.id }}">
+      <header class="zf-pack-head">
+        {%- if pk.img %}<img src="/assets/mascots/{{ pk.img }}.png" alt="" width="64" height="64" loading="lazy">{% endif %}
+        <h3 id="zf-pack-{{ pk.id }}">{{ pk.name }}</h3>
+        <span class="zf-pack-n">{{ pk.animals.length }}</span>
+      </header>
+      <ul class="zf-pack-links">{% for r in pk.animals %}<li><a href="/zoos/{{ r.slug }}/">{{ r.name }}</a></li>{% endfor %}</ul>
+    </section>
+    {%- endfor %}
+  </div>
 </section>
