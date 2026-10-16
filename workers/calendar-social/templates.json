@@ -31,19 +31,19 @@
   "lite": {
     "_note": "Lite (awareness-day, no app animal) frames. No 'where to see one' claim; APPLINE is the page's own relatedApp text, verbatim.",
     "fb": [
-      "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nThe story + ways to join in → {PAGE}\n{APPLINE} {LINK}",
-      "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nThe story + ways to join in → {PAGE}\n{APPLINE} {LINK}",
-      "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nThe story + ways to join in → {PAGE}\n{APPLINE} {LINK}"
+      "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nThe story + things to try together → {PAGE}\n{APPLINE} {LINK}",
+      "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nThe story + things to try together → {PAGE}\n{APPLINE} {LINK}",
+      "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nThe story + things to try together → {PAGE}\n{APPLINE} {LINK}"
     ],
     "ig": [
-      "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nThe story + ways to join in: {PAGE} (link in bio)\n{APPLINE_IG}\n\n{HASHTAGS}",
-      "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nThe story + ways to join in: {PAGE} (link in bio)\n{APPLINE_IG}\n\n{HASHTAGS}",
-      "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nThe story + ways to join in: {PAGE} (link in bio)\n{APPLINE_IG}\n\n{HASHTAGS}"
+      "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nThe story + things to try together: {PAGE} (link in bio)\n{APPLINE_IG}\n\n{HASHTAGS}",
+      "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nThe story + things to try together: {PAGE} (link in bio)\n{APPLINE_IG}\n\n{HASHTAGS}",
+      "{GREETING}\n{FACT_1}\n{FACT_2}\n{FACT_3}\nThe story + things to try together: {PAGE} (link in bio)\n{APPLINE_IG}\n\n{HASHTAGS}"
     ],
     "x": [
-      "{GREETING} {FACT_1}\nThe story + ways to join in: {PAGE}\n{LINK}",
-      "{GREETING} {FACT_1}\nThe story + ways to join in: {PAGE}\n{LINK}",
-      "{GREETING} {FACT_1}\nThe story + ways to join in: {PAGE}\n{LINK}"
+      "{GREETING} {FACT_1}\nThe story + things to try together: {PAGE}\n{LINK}",
+      "{GREETING} {FACT_1}\nThe story + things to try together: {PAGE}\n{LINK}",
+      "{GREETING} {FACT_1}\nThe story + things to try together: {PAGE}\n{LINK}"
     ]
   }
 }
