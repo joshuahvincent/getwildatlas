@@ -16,7 +16,7 @@ function walk(dir, out) {
 let bad = 0, n = 0;
 for (const file of walk(root, [])) {
   const text = fs.readFileSync(file, 'utf8');
-  for (const m of text.matchAll(/\/zoos\/\?animal=([A-Za-z0-9_%-]+)/g)) {
+  for (const m of text.matchAll(/\/(?:zoos|animal-finder)\/\?animal=([A-Za-z0-9_%-]+)/g)) {
     n++;
     const id = aliases[m[1]] || m[1];
     if (!fs.existsSync(path.join(root, 'assets', 'zoos', 'a', id + '.json'))) { console.error('DEAD ZOO LINK: ' + path.relative(root, file) + ' -> animal "' + m[1] + '" has no data in assets/zoos/a/'); bad++; }

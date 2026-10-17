@@ -1,4 +1,4 @@
-// Build-time data for the /zoos/ landing pages (SEO). Reads the same static JSON the page uses (assets/zoos/), so the pre-rendered HTML always matches the app.
+// Build-time data for the /animal-finder/ landing pages (SEO). Reads the same static JSON the page uses (assets/zoos/), so the pre-rendered HTML always matches the app.
 const fs = require("fs"), path = require("path");
 const root = path.resolve(__dirname, "..");
 const read = (p) => JSON.parse(fs.readFileSync(path.join(root, "assets", "zoos", p), "utf8"));
@@ -44,13 +44,13 @@ module.exports = () => {
       summary = `Zoos, aquariums and parks that list ${article} ${nm}${d.r.length ? ", plus places with a close relative" : ""}. Animals move around, so check with the place before you visit.`;
     }
     if (desc.length > 158) desc = desc.slice(0, 155).replace(/\s+\S*$/, "") + "…";
-    const url = `${SITE}/zoos/${slugOf(m.id)}/`;
+    const url = `${SITE}/animal-finder/${slugOf(m.id)}/`;
     const ld = {
       "@context": "https://schema.org",
       "@graph": [
         { "@type": "BreadcrumbList", itemListElement: [
           { "@type": "ListItem", position: 1, name: "Wild Atlas", item: SITE + "/" },
-          { "@type": "ListItem", position: 2, name: "Where to see real animals", item: SITE + "/zoos/" },
+          { "@type": "ListItem", position: 2, name: "Where to see real animals", item: SITE + "/animal-finder/" },
           { "@type": "ListItem", position: 3, name: m.n, item: url } ] },
         { "@type": "ItemList", name: `Places to see ${article} ${nm}`, url,
           itemListElement: top.map((t, i) => { const p = pool.find((x) => x.n === t.n) || {}; return { "@type": "ListItem", position: i + 1, item: Object.assign({ "@type": LD_TYPE[p.t] || "TouristAttraction", name: t.n, address: { "@type": "PostalAddress", addressLocality: p.ci || undefined, addressRegion: p.rg || undefined, addressCountry: p.cc || undefined } }, p.la ? { geo: { "@type": "GeoCoordinates", latitude: p.la, longitude: p.lo } } : {}, p.u ? { url: p.u } : {}) }; }) },

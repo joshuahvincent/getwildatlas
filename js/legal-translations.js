@@ -38,7 +38,7 @@ Wild Atlas offers in-app purchases. All payment transactions are processed exclu
 
 2.4 Animal Finder (website only)
 
-If you use the Animal Finder page on our Site (wildatlasapp.com/zoos/):
+If you use the Animal Finder page on our Site (wildatlasapp.com/animal-finder/):
 
 - Your location: If you tap "Use my location" or type a city or postcode, that location is used only inside your browser to sort places by distance. It is not sent to us, it is not added to the web address, and it is not included in our analytics. To save you typing it again, the page remembers an approximate version of your location on your own device (in your browser's local storage) until you choose "Forget my location". The place you pick when searching by name is not stored anywhere.
 - Street map: The world and country map is served from our own website. When you zoom in to about state or region level, or closer, the street detail is loaded from OpenFreeMap (openfreemap.org), an open-map service. OpenFreeMap receives your IP address and the map area you are viewing, which may be near your location if you have set one. Under its own privacy policy, OpenFreeMap does not use cookies or tracking and does not store IP addresses in its access logs.
@@ -129,7 +129,7 @@ Wild Atlas bietet In-App-Käufe an. Alle Zahlungsvorgänge werden ausschließlic
 
 2.4 Tierfinder (nur Website)
 
-Wenn Sie die Tierfinder-Seite auf unserer Website (wildatlasapp.com/zoos/) nutzt:
+Wenn Sie die Tierfinder-Seite auf unserer Website (wildatlasapp.com/animal-finder/) nutzt:
 
 - Ihr Standort: Wenn Sie auf „Meinen Standort verwenden“ tippen oder eine Stadt oder Postleitzahl eingeben, wird dieser Standort nur in Ihrem Browser verwendet, um Orte nach Entfernung zu sortieren. Er wird nicht an uns gesendet, nicht in die Webadresse aufgenommen und nicht in unsere Analysen einbezogen. Damit Sie ihn nicht erneut eingeben müssen, merkt sich die Seite eine ungefähre Version Ihres Standorts auf Ihrem eigenen Gerät (im lokalen Speicher Ihres Browsers), bis Sie „Meinen Standort vergessen“ wählen. Der Ort, den Sie bei der Suche nach Namen auswählen, wird nirgends gespeichert.
 - Straßenkarte: Die Welt- und Länderkarte wird von unserer eigenen Website ausgeliefert. Wenn Sie auf etwa Bundesland- oder Regionsebene oder näher hineinzoomen, werden die Straßendetails von OpenFreeMap (openfreemap.org), einem Open-Map-Dienst, geladen. OpenFreeMap erhält Ihre IP-Adresse und den Kartenausschnitt, den Sie ansehen; dieser kann in der Nähe Ihres Standorts liegen, wenn Sie einen festgelegt haben. Laut eigener Datenschutzerklärung verwendet OpenFreeMap keine Cookies und kein Tracking und speichert keine IP-Adressen in seinen Zugriffsprotokollen.
@@ -219,7 +219,7 @@ Wild Atlas ofrece compras dentro de la aplicación. Todas las transacciones de p
 
 2.4 Buscador de animales (solo sitio web)
 
-Si usa la página del Buscador de animales de nuestro Sitio (wildatlasapp.com/zoos/):
+Si usa la página del Buscador de animales de nuestro Sitio (wildatlasapp.com/animal-finder/):
 
 - Su ubicación: Si toca «Usar mi ubicación» o escribe una ciudad o un código postal, esa ubicación se usa solo dentro de su navegador para ordenar los lugares por distancia. No se nos envía, no se añade a la dirección web y no se incluye en nuestras analíticas. Para que no tenga que escribirla de nuevo, la página recuerda una versión aproximada de su ubicación en su propio dispositivo (en el almacenamiento local de su navegador) hasta que elija «Olvidar mi ubicación». El lugar que elija al buscar por nombre no se guarda en ningún sitio.
 - Mapa de calles: El mapa del mundo y de los países se sirve desde nuestro propio sitio web. Cuando acerca el mapa hasta aproximadamente el nivel de estado o región, o más, el detalle de calles se carga desde OpenFreeMap (openfreemap.org), un servicio de mapas abiertos. OpenFreeMap recibe su dirección IP y la zona del mapa que está viendo, que puede estar cerca de su ubicación si ha indicado una. Según su propia política de privacidad, OpenFreeMap no usa cookies ni rastreo y no almacena direcciones IP en sus registros de acceso.
@@ -309,7 +309,7 @@ Wild Atlas propose des achats intégrés. Toutes les transactions de paiement so
 
 2.4 Trouveur d'animaux (site web uniquement)
 
-Si vous utilisez la page du Trouveur d'animaux de notre Site (wildatlasapp.com/zoos/) :
+Si vous utilisez la page du Trouveur d'animaux de notre Site (wildatlasapp.com/animal-finder/) :
 
 - Votre position : si vous touchez « Utiliser ma position » ou saisissez une ville ou un code postal, cette position est utilisée uniquement dans votre navigateur pour trier les lieux par distance. Elle ne nous est pas envoyée, n'est pas ajoutée à l'adresse web et n'est pas incluse dans nos statistiques. Pour vous éviter de la ressaisir, la page mémorise une version approximative de votre position sur votre propre appareil (dans le stockage local de votre navigateur) jusqu'à ce que vous choisissiez « Oublier ma position ». Le lieu que vous choisissez en cherchant par nom n'est enregistré nulle part.
 - Plan des rues : la carte du monde et des pays est servie par notre propre site web. Lorsque vous zoomez jusqu'à environ l'échelle d'un État ou d'une région, ou plus près, le détail des rues est chargé depuis OpenFreeMap (openfreemap.org), un service de cartes ouvertes. OpenFreeMap reçoit votre adresse IP et la zone de carte que vous consultez, qui peut se trouver près de votre position si vous en avez défini une. Selon sa propre politique de confidentialité, OpenFreeMap n'utilise ni cookies ni suivi et ne conserve pas d'adresses IP dans ses journaux d'accès.
@@ -399,7 +399,7 @@ Wild Atlas 提供应用内购买。所有支付交易均通过 Apple App Store �
 
 2.4 动物查找器（仅限网站）
 
-如果您使用我们网站（wildatlasapp.com/zoos/）上的动物查找器页面：
+如果您使用我们网站（wildatlasapp.com/animal-finder/）上的动物查找器页面：
 
 - 您的位置：如果您点击“使用我的位置”，或输入城市或邮政编码，该位置仅在您的浏览器中用于按距离对地点排序。它不会发送给我们，不会添加到网址中，也不会计入我们的分析数据。为了免去您重复输入，页面会在您自己的设备上（浏览器的本地存储中）记住一个大致的位置，直到您选择“忘记我的位置”。您按名称搜索时选择的地点不会被存储在任何地方。
 - 街道地图：世界和国家地图由我们自己的网站提供。当您放大到大约州或地区级别或更近时，街道细节会从开放地图服务 OpenFreeMap（openfreemap.org）加载。OpenFreeMap 会收到您的 IP 地址和您正在查看的地图区域；如果您设置了位置，该区域可能在您的位置附近。根据其自身的隐私政策，OpenFreeMap 不使用 Cookie 或跟踪，也不在其访问日志中存储 IP 地址。

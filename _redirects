@@ -6,3 +6,8 @@
 # World Animal Day moved from the blog to its calendar page (Josh, 2026-10-02)
 /blog/world-animal-day/  /calendar/world-animal-day/  301
 /blog/world-animal-day  /calendar/world-animal-day/  301
+
+# Zoo Finder is now the Animal Finder (Josh, 2026-10-17): old /zoos/ links keep working
+/zoos  /animal-finder/  301
+/zoos/  /animal-finder/  301
+/zoos/*  /animal-finder/:splat  301

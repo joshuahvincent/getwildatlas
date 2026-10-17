@@ -75,8 +75,8 @@
   {%- if a and a.related.length %}
   <nav class="zf-seo" aria-label="Related animals">
     <h2>More animals to find</h2>
-    <ul class="zf-seo-links">{% for r in a.related %}<li><a href="/zoos/{{ r.slug }}/">{{ r.name }}</a></li>{% endfor %}</ul>
-    <p><a href="/zoos/">Browse all animals</a></p>
+    <ul class="zf-seo-links">{% for r in a.related %}<li><a href="/animal-finder/{{ r.slug }}/">{{ r.name }}</a></li>{% endfor %}</ul>
+    <p><a href="/animal-finder/">Browse all animals</a></p>
   </nav>
   {%- endif %}
 
