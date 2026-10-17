@@ -75,8 +75,8 @@
   {%- if a and a.related.length %}
   <nav class="zf-seo" aria-label="Related animals">
     <h2>More animals to find</h2>
-    <ul class="zf-seo-links">{% for r in a.related %}<li><a href="/animal-finder/{{ r.slug }}/">{{ r.name }}</a></li>{% endfor %}</ul>
-    <p><a href="/animal-finder/">Browse all animals</a></p>
+    <ul class="zf-seo-links">{% for r in a.related %}<li><a href="/finder/{{ r.slug }}/">{{ r.name }}</a></li>{% endfor %}</ul>
+    <p><a href="/finder/">Browse all animals</a></p>
   </nav>
   {%- endif %}
 
@@ -117,5 +117,5 @@
   </form>
 </dialog>
 
-<script type="module" src="/js/zoos.js?v=63"></script>
+<script type="module" src="/js/zoos.js?v=64"></script>
 <noscript><p>This page needs JavaScript to find places near you. The list above shows some places to start with, and you can browse the <a href="/blog/">Wild Atlas blog</a> in the meantime.</p></noscript>

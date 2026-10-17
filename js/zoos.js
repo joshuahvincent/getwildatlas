@@ -1,6 +1,6 @@
-// /animal-finder/ — find a place to see a real animal.
+// /finder/ — find a place to see a real animal.
 // Privacy: the visitor's location (geolocation or a typed city/postcode) lives only in memory in this tab.
-// It is never put in the URL, storage, cookies, analytics, or any request. The URL carries only the animal (/animal-finder/<animal>/).
+// It is never put in the URL, storage, cookies, analytics, or any request. The URL carries only the animal (/finder/<animal>/).
 const PLACES_URL = '/assets/zoos/places.json';
 const ANIMALS_URL = '/assets/zoos/animals.json';
 const ALIASES = { 'giant-pacific-octopus': 'octopus', hippo: 'hippopotamus' };
@@ -773,7 +773,7 @@ async function choosePlace(pi) {
   S.types.add(typeKey(p.t)); const tc = $('zf-type-' + typeKey(p.t)); if (tc) tc.checked = true;
   S.hidden.clear(); document.querySelectorAll('.zf-key').forEach((b) => b.setAttribute('aria-pressed', 'true')); filterLabel();
   $('zf-animal').value = p.n; $('zf-animal-clear').hidden = false;
-  document.title = DEFAULT_TITLE; history.replaceState(null, '', '/animal-finder/');
+  document.title = DEFAULT_TITLE; history.replaceState(null, '', '/finder/');
   track('zoo_place_selected', { place_type: p.t });
   if (window.matchMedia('(max-width: 899px)').matches) setView('map');
   S.keep = true; await render();
@@ -782,11 +782,11 @@ async function choosePlace(pi) {
 // an animal we have not indexed: say so plainly and show animal places anyway
 function unknownAnimal(q) {
   closeAnimalList(); S.cur = null; S.unknown = q.slice(0, 40); S.editing = false;
-  document.title = DEFAULT_TITLE; history.replaceState(null, '', '/animal-finder/');
+  document.title = DEFAULT_TITLE; history.replaceState(null, '', '/finder/');
   track('zoo_animal_not_found', { query: norm(q).replace(/[^a-z ]/g, '').slice(0, 30) });   // an animal name only; helps us decide what to add next
   render();
 }
-function clearAnimal() { S.unknown = ''; S.cur = null; S.place = null; S.editing = true; $('zf-animal').value = ''; $('zf-animal-clear').hidden = true; document.title = DEFAULT_TITLE; history.replaceState(null, '', '/animal-finder/'); render(); $('zf-animal').focus(); showAnimalList(''); }
+function clearAnimal() { S.unknown = ''; S.cur = null; S.place = null; S.editing = true; $('zf-animal').value = ''; $('zf-animal-clear').hidden = true; document.title = DEFAULT_TITLE; history.replaceState(null, '', '/finder/'); render(); $('zf-animal').focus(); showAnimalList(''); }
 
 // ---------- animal + distance controls ----------
 const DEFAULT_TITLE = document.title;
@@ -797,7 +797,7 @@ async function selectAnimal(id, source) {
   if (!S.cache[id]) S.cache[id] = await loadJson('/assets/zoos/a/' + id + '.json');
   S.cur = S.cache[id]; $('zf-animal').value = S.cur.name; $('zf-animal-clear').hidden = false;
   if (source !== 'landing') {
-    history.replaceState(null, '', '/animal-finder/' + slugOf(id) + '/');
+    history.replaceState(null, '', '/finder/' + slugOf(id) + '/');
     document.title = 'Where to see ' + (/^[aeiou]/i.test(S.cur.name) ? 'an ' : 'a ') + S.cur.name + ' near you — Wild Atlas';
   }
   render();
@@ -923,10 +923,10 @@ async function init() {
   const narrow = window.matchMedia('(max-width: 899px)').matches;
   S.view = narrow ? 'map' : 'list'; $('zf-main').dataset.view = S.view;
   $('zf-tab-list').setAttribute('aria-pressed', String(!narrow)); $('zf-tab-map').setAttribute('aria-pressed', String(narrow));
-  // which animal? a landing page (/animal-finder/<animal>/) sets data-animal; the old /animal-finder/?animal=<id> links redirect to the landing page
+  // which animal? a landing page (/finder/<animal>/) sets data-animal; the old /finder/?animal=<id> links redirect to the landing page
   const root = $('zf'), legacy = new URLSearchParams(location.search).get('animal');
   const fromPath = root.dataset.animal, fromLegacy = legacy && (ALIASES[legacy] || legacy.replace(/-/g, '_'));
-  if (!fromPath && fromLegacy && S.byId[fromLegacy]) { location.replace('/animal-finder/' + slugOf(fromLegacy) + '/'); return; }
+  if (!fromPath && fromLegacy && S.byId[fromLegacy]) { location.replace('/finder/' + slugOf(fromLegacy) + '/'); return; }
   if (fromPath && S.byId[fromPath]) { await selectAnimal(fromPath, 'landing'); const seo = $('zf-seo-list'); if (seo) seo.remove(); } else render();
   if (!saved) setTimeout(askOnArrival, 600);
 }
