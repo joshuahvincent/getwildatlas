@@ -197,7 +197,7 @@ tags: [product, packs]
   <div class="tldr-label">TL;DR</div>
 
 - **Super Spiders** is a new Wild Atlas pack with **18 spiders**, from the Goliath birdeater to the peacock spider.
-- Every animal page has narration in **six languages**, a baby photo, an in-action shot, and size and weight comparisons.
+- Every animal page has narration in **six languages**, a baby photo, an in-action shot, and size comparisons.
 - **$3.99**, one time, no subscription. Included with the Explorer Pass. *(confirm pass inclusion before publish)*
 - Spiders are a little spooky. That's the fun part. They are also some of the most interesting animals on Earth.
 
@@ -253,7 +253,7 @@ Just like every Wild Atlas pack, each spider gets the full treatment:
 
 There is also a little something that happens on the pack page itself, when a spider comes down on a thread of silk. We'll leave the rest as a surprise.
 
-*(Inline images with captions: baby spiderling, peacock spider in action, giant huntsman size comparison, Goliath birdeater weight comparison. Final picks come from the pack art folder.)*
+*(Inline images with captions: baby spiderling, peacock spider in action, giant huntsman size comparison. Final picks come from the pack art folder.)*
 
 <div class="image-pair">
   <figure>
