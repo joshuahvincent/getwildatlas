@@ -209,15 +209,11 @@ Let's get the spooky part out of the way. Spiders have eight legs. Most have eig
 
 Here at Wild Atlas, we love them anyway. Maybe *because* of that.
 
-Because here's the thing about the creepiest-looking animals: they are almost always the ones with the best stories. A spider that builds a diving bell out of silk. A spider that does a little dance with its colorful fan. A spider that casts a net over its dinner. Not one of these is in a scary movie. All of them are real.
-
 So this Halloween, we are skipping the costume and opening the door. Meet **Super Spiders**.
 
 ## What's in the pack
 
 Eighteen spiders, from rainforests, deserts, caves, ponds, and, yes, your backyard:
-
-Black Widow, Brazilian Wandering Spider, Brown Recluse, Cellar Spider, Cobalt Blue Tarantula, Darwin's Bark Spider, Diving Bell Spider, Giant Huntsman, Giant Wolf Spider, Golden Orb-weaver, Goliath Birdeater, Happy Face Spider, Mexican Redknee Tarantula, Net-casting Spider, Peacock Spider, Regal Jumping Spider, Spitting Spider, and Sydney Funnel-web.
 
 <div class="animal-grid">
   <div class="animal-card"><img src="/assets/blog/super-spiders-animal-black_widow_spider.jpg" alt="Black Widow"><div class="animal-card-name">Black Widow</div></div>
