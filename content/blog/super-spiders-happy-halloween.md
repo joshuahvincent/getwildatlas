@@ -248,7 +248,7 @@ Just like every Wild Atlas pack, each spider gets the full treatment:
 
 - A **baby photo**. Yes, spiderlings. Yes, they are small.
 - An **in-action shot**: hunting, spinning, leaping, or hiding.
-- **Size and weight comparisons**, so a Goliath birdeater stops being "a big spider" and becomes "about as heavy as an apple."
+- **Size comparisons**, so a Goliath birdeater stops being "a big spider" and becomes "about as heavy as an apple."
 - **Narration** in English, English (UK), German, Spanish, French, and Mandarin, so the page can be read aloud for you.
 
 There is also a little something that happens on the pack page itself, when a spider comes down on a thread of silk. We'll leave the rest as a surprise.
