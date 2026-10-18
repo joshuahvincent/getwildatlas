@@ -271,8 +271,6 @@ There is also a little something that happens on the pack page itself, when a sp
   <figcaption>Giant huntsman size comparison</figcaption>
 </figure>
 
-<div class="asset-todo"><strong>TODO(assets):</strong> Goliath birdeater weight comparison. No weight card exists in the app art yet (<code>GeneratedMeasurementImages/weight/</code> has none for spider_world). Captions above are label-only placeholders, not final copy.</div>
-
 <div class="did-you-know">
 
 ## Did you know?
