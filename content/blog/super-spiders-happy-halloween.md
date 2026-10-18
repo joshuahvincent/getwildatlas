@@ -300,8 +300,6 @@ In the app you can meet all eighteen from a safe distance: no bites, no webs in 
   <a class="cta-btn" href="https://apps.apple.com/us/app/wild-atlas/id6761081031">Get Super Spiders</a>
 </div>
 
-*(App Store button, same as Legends. TODO: confirm the link target; Legends uses the app page.)*
-
 Need the app first?
 
 <div class="cta-block">
