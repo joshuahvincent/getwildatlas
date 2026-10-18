@@ -5,10 +5,12 @@ title: "Happy Halloween from the Spiders: Super Spiders Is Here"
 # No `date` on purpose: set it only when Josh gives the explicit publish go.
 # Do not remove `status: draft` until the pack is live AND Josh approves.
 status: draft
+hideDate: true
 author: Wild Atlas
 excerpt: "Eight legs, eight eyes, and a bad reputation. 18 spiders step out of the shadows in Wild Atlas, just in time for Halloween."
 permalink: /blog/super-spiders-happy-halloween/
-# TODO(assets): coverImage + thumbImage (Halloween-lit pack hero; Vera / pack art folder)
+coverImage: /assets/blog/super-spiders-hero.jpg
+thumbImage: /assets/blog/thumbs/super-spiders-happy-halloween.jpg
 tags: [product, packs]
 ---
 
@@ -165,7 +167,31 @@ tags: [product, packs]
   /* DRAFT scaffolding: remove when real assets land */
   .asset-todo { background: repeating-linear-gradient(45deg,#fff3d6,#fff3d6 8px,#ffe9b8 8px,#ffe9b8 16px); border: 2px dashed #C25A2C; border-radius: 12px; padding: 0.75rem 1rem; margin: 1.25rem 0; font-size: 0.9rem; color: #5D4037; }
   .animal-card .asset-todo-tile { aspect-ratio: 1; border-radius: 14px; border: 2px dashed #C25A2C; background: #fff3d6; display: flex; align-items: center; justify-content: center; font-size: 0.65rem; color: #5D4037; margin: 0; }
+
+  /* ---- Halloween theme: this page only (re-skins the shared blog variables) ---- */
+  :root { --bg: #1b0d36; --ink: #f6eeff; --muted: #cdb9ea; --accent: #ff9b4e; --rule: rgba(255,255,255,0.16); }
+  body { background: radial-gradient(1200px 600px at 80% -10%, rgba(255,140,50,0.22), transparent 60%), linear-gradient(180deg, #1b0d36 0%, #2a1248 55%, #3a1550 100%) fixed; color: var(--ink); }
+  .blog-post-header h1, .blog-post-body h2 { color: #ffb36b; font-family: "Fredoka", system-ui, sans-serif; text-shadow: 0 0 22px rgba(255,140,50,0.35); }
+  .blog-post-body a, .blog-post-meta a { color: #ffb36b; }
+  .blog-post-body strong { color: #fff; }
+  .blog-post-body hr, .blog-post hr { border-color: rgba(255,255,255,0.14); }
+  .blog-post-body li::marker { color: #ff9b4e; }
+  .tldr { background: rgba(255,155,78,0.12); border-left-color: #ff9b4e; }
+  .did-you-know { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,155,78,0.35); box-shadow: 0 0 32px rgba(255,120,40,0.12); }
+  .did-you-know li strong { color: #ffb36b; }
+  .animal-card img { box-shadow: 0 0 0 2px rgba(255,155,78,0.45), 0 6px 18px rgba(0,0,0,0.45); }
+  .animal-card-name { color: var(--ink); }
+  .animal-image img, .image-pair figure img { box-shadow: 0 0 0 2px rgba(255,155,78,0.35), 0 8px 28px rgba(0,0,0,0.5); }
+  .cta-block { background: linear-gradient(135deg, #ff7a2b 0%, #b8369a 100%); box-shadow: 0 0 36px rgba(255,120,40,0.35); }
+  .cta-btn { color: #7a2a00; }
+  .blog-post-body > p:first-of-type::before, .spooky-hero { content: none; }
+  .asset-todo, .asset-todo strong, .asset-todo code { color: #5D4037; }
+  .spooky-hero { margin: 0 0 1.5rem; }
+  .spooky-hero img { width: 100%; border-radius: 18px; display: block; box-shadow: 0 0 0 2px rgba(255,155,78,0.4), 0 10px 40px rgba(0,0,0,0.55); }
+  .spooky-bats { text-align: center; letter-spacing: 0.6em; color: #ff9b4e; margin: 1.5rem 0; font-size: 1.1rem; opacity: 0.8; }
 </style>
+
+<figure class="spooky-hero"><img src="/assets/blog/super-spiders-hero.jpg" alt="The Super Spiders pack mascot, a round red spider with white spots, hanging on a silk thread under a full moon"></figure>
 
 <div class="tldr">
   <div class="tldr-label">TL;DR</div>
@@ -194,29 +220,25 @@ Eighteen spiders, from rainforests, deserts, caves, ponds, and, yes, your backya
 Black Widow, Brazilian Wandering Spider, Brown Recluse, Cellar Spider, Cobalt Blue Tarantula, Darwin's Bark Spider, Diving Bell Spider, Giant Huntsman, Giant Wolf Spider, Golden Orb-weaver, Goliath Birdeater, Happy Face Spider, Mexican Redknee Tarantula, Net-casting Spider, Peacock Spider, Regal Jumping Spider, Spitting Spider, and Sydney Funnel-web.
 
 <div class="animal-grid">
-  <div class="animal-card"><div class="asset-todo-tile">TODO image</div><div class="animal-card-name">Black Widow</div></div>
-  <div class="animal-card"><div class="asset-todo-tile">TODO image</div><div class="animal-card-name">Brazilian Wandering Spider</div></div>
-  <div class="animal-card"><div class="asset-todo-tile">TODO image</div><div class="animal-card-name">Brown Recluse</div></div>
-  <div class="animal-card"><div class="asset-todo-tile">TODO image</div><div class="animal-card-name">Cellar Spider</div></div>
-  <div class="animal-card"><div class="asset-todo-tile">TODO image</div><div class="animal-card-name">Cobalt Blue Tarantula</div></div>
-  <div class="animal-card"><div class="asset-todo-tile">TODO image</div><div class="animal-card-name">Darwin's Bark Spider</div></div>
-  <div class="animal-card"><div class="asset-todo-tile">TODO image</div><div class="animal-card-name">Diving Bell Spider</div></div>
-  <div class="animal-card"><div class="asset-todo-tile">TODO image</div><div class="animal-card-name">Giant Huntsman</div></div>
-  <div class="animal-card"><div class="asset-todo-tile">TODO image</div><div class="animal-card-name">Giant Wolf Spider</div></div>
-  <div class="animal-card"><div class="asset-todo-tile">TODO image</div><div class="animal-card-name">Golden Orb-weaver</div></div>
-  <div class="animal-card"><div class="asset-todo-tile">TODO image</div><div class="animal-card-name">Goliath Birdeater</div></div>
-  <div class="animal-card"><div class="asset-todo-tile">TODO image</div><div class="animal-card-name">Happy Face Spider</div></div>
-  <div class="animal-card"><div class="asset-todo-tile">TODO image</div><div class="animal-card-name">Mexican Redknee Tarantula</div></div>
-  <div class="animal-card"><div class="asset-todo-tile">TODO image</div><div class="animal-card-name">Net-casting Spider</div></div>
-  <div class="animal-card"><div class="asset-todo-tile">TODO image</div><div class="animal-card-name">Peacock Spider</div></div>
-  <div class="animal-card"><div class="asset-todo-tile">TODO image</div><div class="animal-card-name">Regal Jumping Spider</div></div>
-  <div class="animal-card"><div class="asset-todo-tile">TODO image</div><div class="animal-card-name">Spitting Spider</div></div>
-  <div class="animal-card"><div class="asset-todo-tile">TODO image</div><div class="animal-card-name">Sydney Funnel-web</div></div>
+  <div class="animal-card"><img src="/assets/blog/super-spiders-animal-black_widow_spider.jpg" alt="Black Widow"><div class="animal-card-name">Black Widow</div></div>
+  <div class="animal-card"><img src="/assets/blog/super-spiders-animal-brazilian_wandering_spider.jpg" alt="Brazilian Wandering Spider"><div class="animal-card-name">Brazilian Wandering Spider</div></div>
+  <div class="animal-card"><img src="/assets/blog/super-spiders-animal-brown_recluse_spider.jpg" alt="Brown Recluse"><div class="animal-card-name">Brown Recluse</div></div>
+  <div class="animal-card"><img src="/assets/blog/super-spiders-animal-cellar_spider.jpg" alt="Cellar Spider"><div class="animal-card-name">Cellar Spider</div></div>
+  <div class="animal-card"><img src="/assets/blog/super-spiders-animal-cobalt_blue_tarantula.jpg" alt="Cobalt Blue Tarantula"><div class="animal-card-name">Cobalt Blue Tarantula</div></div>
+  <div class="animal-card"><img src="/assets/blog/super-spiders-animal-darwins_bark_spider.jpg" alt="Darwin's Bark Spider"><div class="animal-card-name">Darwin's Bark Spider</div></div>
+  <div class="animal-card"><img src="/assets/blog/super-spiders-animal-diving_bell_spider.jpg" alt="Diving Bell Spider"><div class="animal-card-name">Diving Bell Spider</div></div>
+  <div class="animal-card"><img src="/assets/blog/super-spiders-animal-giant_huntsman_spider.jpg" alt="Giant Huntsman"><div class="animal-card-name">Giant Huntsman</div></div>
+  <div class="animal-card"><img src="/assets/blog/super-spiders-animal-giant_wolf_spider.jpg" alt="Giant Wolf Spider"><div class="animal-card-name">Giant Wolf Spider</div></div>
+  <div class="animal-card"><img src="/assets/blog/super-spiders-animal-golden_orb_weaver.jpg" alt="Golden Orb-weaver"><div class="animal-card-name">Golden Orb-weaver</div></div>
+  <div class="animal-card"><img src="/assets/blog/super-spiders-animal-goliath_birdeater.jpg" alt="Goliath Birdeater"><div class="animal-card-name">Goliath Birdeater</div></div>
+  <div class="animal-card"><img src="/assets/blog/super-spiders-animal-happy_face_spider.jpg" alt="Happy Face Spider"><div class="animal-card-name">Happy Face Spider</div></div>
+  <div class="animal-card"><img src="/assets/blog/super-spiders-animal-mexican_redknee_tarantula.jpg" alt="Mexican Redknee Tarantula"><div class="animal-card-name">Mexican Redknee Tarantula</div></div>
+  <div class="animal-card"><img src="/assets/blog/super-spiders-animal-net_casting_spider.jpg" alt="Net-casting Spider"><div class="animal-card-name">Net-casting Spider</div></div>
+  <div class="animal-card"><img src="/assets/blog/super-spiders-animal-peacock_spider.jpg" alt="Peacock Spider"><div class="animal-card-name">Peacock Spider</div></div>
+  <div class="animal-card"><img src="/assets/blog/super-spiders-animal-regal_jumping_spider.jpg" alt="Regal Jumping Spider"><div class="animal-card-name">Regal Jumping Spider</div></div>
+  <div class="animal-card"><img src="/assets/blog/super-spiders-animal-spitting_spider.jpg" alt="Spitting Spider"><div class="animal-card-name">Spitting Spider</div></div>
+  <div class="animal-card"><img src="/assets/blog/super-spiders-animal-sydney_funnel_web_spider.jpg" alt="Sydney Funnel-web"><div class="animal-card-name">Sydney Funnel-web</div></div>
 </div>
-
-<div class="asset-todo"><strong>TODO(assets):</strong> 18 face tiles needed (same layout as the Legends post). Tiles above are placeholders.</div>
-
-*(Image grid: the 18 face tiles, same layout as the Legends post.)*
 
 Some of these names might make you look over your shoulder. That's allowed. Every page tells you the real story: what the animal eats, how it lives, and how much it matters to the people standing near it. Most spiders are not dangerous to people at all. A few are, and the pack says so plainly, with a rule we repeat everywhere: **we never touch a wild spider.** We watch from far away, and we get to know them from the app.
 
@@ -233,7 +255,23 @@ There is also a little something that happens on the pack page itself, when a sp
 
 *(Inline images with captions: baby spiderling, peacock spider in action, giant huntsman size comparison, Goliath birdeater weight comparison. Final picks come from the pack art folder.)*
 
-<div class="asset-todo"><strong>TODO(assets):</strong> 4 inline images with captions: baby spiderling, peacock spider in action, giant huntsman size comparison, Goliath birdeater weight comparison. Final picks come from the pack art folder.</div>
+<div class="image-pair">
+  <figure>
+    <img src="/assets/blog/super-spiders-spiderling.jpg" alt="Baby spiderling">
+    <figcaption>Baby spiderling</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/blog/super-spiders-peacock-action.jpg" alt="Peacock spider in action">
+    <figcaption>Peacock spider in action</figcaption>
+  </figure>
+</div>
+
+<figure class="animal-image">
+  <img src="/assets/blog/super-spiders-huntsman-scale.jpg" alt="Giant huntsman size comparison">
+  <figcaption>Giant huntsman size comparison</figcaption>
+</figure>
+
+<div class="asset-todo"><strong>TODO(assets):</strong> Goliath birdeater weight comparison. No weight card exists in the app art yet (<code>GeneratedMeasurementImages/weight/</code> has none for spider_world). Captions above are label-only placeholders, not final copy.</div>
 
 <div class="did-you-know">
 
