@@ -125,7 +125,7 @@ We believe noticing comes before caring. A child who knows that a penguin parent
 
 <div class="app-shot">
   <img src="/assets/blog/conservation-sea-otter-page.png" alt="The Conservation Status screen in the Wild Atlas app, showing categories from Gone to At Risk">
-  <p>Every animal on today's trip lives in Wild Atlas's animal packs, along with more than 200 others, each with narrated facts to explore. <a href="https://apps.apple.com/us/app/wild-atlas/id6761081031?ct=world_animal_day_2026&utm_source=blog&utm_medium=owned&utm_campaign=world_animal_day_2026">Explore Wild Atlas →</a></p>
+  <p>Every animal on today's trip lives in Wild Atlas's animal packs, along with more than 250 others, each with narrated facts to explore. <a href="https://apps.apple.com/us/app/wild-atlas/id6761081031?ct=world_animal_day_2026&utm_source=blog&utm_medium=owned&utm_campaign=world_animal_day_2026">Explore Wild Atlas →</a></p>
 </div>
 
 *Learn more about World Animal Day and this year's theme at [worldanimalday.org](https://www.worldanimalday.org/?utm_source=wildatlas_blog&utm_medium=referral&utm_campaign=world_animal_day_2026).*

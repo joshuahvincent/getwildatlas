@@ -1,0 +1,853 @@
+/* =============================================
+   WILD ATLAS 2.0 — home hero + "Every page is a world"
+   Loaded by index.html after styles.css. Palette and type are the site's own
+   (cream canvas, warm-brown ink, Fredoka + Nunito); nothing here adds a colour
+   to the system except the scene colours used by the staged background options.
+   Background options A / B live at the bottom (html[data-bg="a|b"]); option C is
+   css/scenery.css, injected by js/world-bg.js only when selected.
+   ============================================= */
+
+/* ---------- HERO ---------- */
+.hero-v2 {
+  position: relative;
+  isolation: isolate;
+  padding: 112px 0 72px;
+  background: var(--creamy-coat);
+  overflow: hidden;
+}
+/* soft radial wash of the pack-page sky blue behind the device; no rings, no sparkles */
+.hero-v2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(ellipse 46% 62% at 72% 46%, rgba(162, 210, 255, 0.55) 0%, rgba(162, 210, 255, 0.22) 48%, rgba(162, 210, 255, 0) 72%);
+  pointer-events: none;
+}
+.hero-v2 .hero-content { align-items: center; gap: var(--space-2xl); }
+.hero-v2 .hero-text { flex: 1 1 50%; min-width: 0; }
+.hero-v2 .hero-subtitle {
+  margin-bottom: var(--space-lg);
+  max-width: 520px;
+  opacity: 1;
+}
+.hero-v2 .hero-sub-line { display: block; }
+.hero-v2 .hero-sub-line + .hero-sub-line { margin-top: 2px; }
+.hero-v2 .hero-badge-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.hero-v2 .hero-badge-row .app-store-badge-link { margin-top: 0; }
+.hero-whatsnew {
+  display: inline-block;
+  margin-top: var(--space-md);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--warm-bark);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+}
+.hero-whatsnew:hover, .hero-whatsnew:focus-visible { text-decoration-thickness: 3px; }
+.hero-whatsnew:focus-visible { outline: 3px solid var(--sky-tweeter); outline-offset: 4px; border-radius: 4px; }
+.hero-v2 .hero-platforms { opacity: 1; color: #6a5046; margin-top: var(--space-sm); }
+
+.hero-v2 .hero-visual {
+  flex: 1 1 50%;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ---------- HERO REEL (9:16 portrait player; the video is itself a phone, so no bezel around it) ---------- */
+.reel {
+  --rw: 292px;
+  position: relative;
+  width: var(--rw);
+}
+.reel-poster, .reel-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border-radius: 28px;
+  background: #5d4037;
+  box-shadow: 0 10px 28px rgba(93, 64, 55, 0.22), 0 0 0 3px rgba(255, 255, 255, 0.7);
+}
+.reel-video { position: absolute; top: 0; left: 0; z-index: 2; }
+.reel.is-playing .reel-poster { visibility: hidden; }
+.reel-play {
+  all: unset;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 76px;
+  height: 76px;
+  margin: -38px 0 0 -38px;
+  cursor: pointer;
+  z-index: 3;
+  filter: drop-shadow(0 4px 10px rgba(93, 64, 55, 0.35));
+  transition: transform 0.2s ease;
+}
+.reel-play[hidden] { display: none; }
+.reel-play svg { display: block; width: 100%; height: 100%; }
+.reel-play:hover { transform: scale(1.06); }
+.reel-play:focus-visible { outline: 3px solid #5d4037; outline-offset: 4px; border-radius: 50%; }
+.reel-transcript { margin-top: 10px; font-size: 0.85rem; color: #5d4037; }
+.reel-transcript summary { cursor: pointer; font-weight: 700; width: max-content; }
+.reel-transcript p { margin: 6px 0 0; }
+
+/* ---------- "EVERY PAGE IS A WORLD" ---------- */
+.worlds { background: var(--creamy-coat); padding: var(--space-2xl) 0 var(--space-2xl); position: relative; scroll-margin-top: 96px; }
+.worlds-stage { position: relative; isolation: isolate; padding: var(--space-lg) 0 var(--space-xl); }
+.worlds-band { display: none; }
+.worlds .section-title { margin-bottom: var(--space-xl); }
+.worlds-frames {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-lg);
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+.world-card {
+  margin: 0;
+  background: #fff;
+  border: 1.5px solid rgba(93, 64, 55, 0.14);
+  border-radius: var(--radius-md);
+  padding: 12px 12px 16px;
+  box-shadow: 0 4px 14px rgba(93, 64, 55, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.world-card-shot {
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 1320 / 2868;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1.5px solid rgba(93, 64, 55, 0.16);
+  background: var(--sky-wash);
+}
+.world-card-shot img { width: 100%; height: 100%; object-fit: cover; }
+.world-card figcaption {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--warm-bark);
+  text-align: center;
+  max-width: 24ch;
+}
+
+.packs-rail-wrap { max-width: 1080px; margin: var(--space-2xl) auto 0; }
+.packs-rail-line {
+  text-align: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.35rem;
+  margin-bottom: var(--space-md);
+}
+.packs-rail {
+  list-style: none;
+  display: flex;
+  gap: var(--space-md);
+  margin: 0;
+  padding: 6px var(--space-md) 14px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(93, 64, 55, 0.35) transparent;
+}
+.packs-rail:focus-visible { outline: 3px solid var(--peach-dark); outline-offset: 2px; border-radius: var(--radius-sm); }
+.packs-rail li {
+  flex: 0 0 112px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+.packs-rail img { width: 96px; height: 96px; object-fit: contain; }
+.packs-rail span {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.88rem;
+  line-height: 1.2;
+  color: var(--warm-bark);
+}
+
+/* ---------- PHONE ---------- */
+@media (max-width: 900px) {
+  .worlds-frames { gap: var(--space-md); }
+  .world-card figcaption { font-size: 0.92rem; }
+}
+@media (max-width: 768px) {
+  .hero-v2 { padding: 92px 0 36px; }
+  .hero-v2 .hero-content { flex-direction: column; text-align: center; gap: var(--space-md); }
+  .hero-v2 .hero-text { order: 2; flex: none; width: 100%; }
+  .hero-v2 .hero-visual { order: 1; flex: none; width: 100%; }
+  /* the poster shows its top part in a short window so the App Store badge stays on the first
+     screen of a 390px phone (844px tall); the play button sits inside that window. Once the video
+     plays, the window opens to the full portrait. */
+  .hero-v2 .hero-visual { height: 268px; overflow: hidden; -webkit-mask-image: linear-gradient(#000 78%, transparent); mask-image: linear-gradient(#000 78%, transparent); }
+  .hero-v2 .hero-visual:has(.reel.is-playing) { height: auto; overflow: visible; -webkit-mask-image: none; mask-image: none; }
+  .reel { --rw: 220px; }
+  .reel-play { top: 112px; }
+  .reel-transcript { display: none; }
+  .hero-v2::before { background: radial-gradient(ellipse 80% 38% at 50% 24%, rgba(162, 210, 255, 0.55) 0%, rgba(162, 210, 255, 0.2) 55%, rgba(162, 210, 255, 0) 80%); }
+  .hero-v2 .hero-sub-line { text-wrap: balance; }
+  .hero-v2 .hero-tagline { font-size: 2.2rem; }
+  .hero-v2 .hero-subtitle { margin-left: auto; margin-right: auto; font-size: 1.1rem; }
+  .hero-v2 .hero-badge-row { justify-content: center; }
+  .worlds-frames { grid-template-columns: 1fr; max-width: 320px; }
+  .world-card-shot { max-width: 220px; }
+  .world-card figcaption { font-size: 1rem; max-width: 26ch; }
+  .packs-rail li { flex-basis: 100px; }
+  .packs-rail img { width: 84px; height: 84px; }
+}
+
+/* ---------- REDUCED MOTION: the reel never autoplays, so only decoration changes here ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .reel-play { transition: none; }
+  .packs-rail { scroll-behavior: auto; }
+}
+
+/* =============================================
+   BACKGROUND TREATMENTS (staging comparison, js/world-bg.js sets html[data-bg])
+   A "Camp horizon" · B "Pack worlds band" · C "Scenery edges" (css/scenery.css)
+   ============================================= */
+
+/* ---- A: camp horizon (hero) ---- */
+.hero-sky, .hero-camp { display: none; }
+html[data-bg~="a"] .hero-v2 { padding-top: 84px; padding-bottom: 190px; }
+html[data-bg~="a"] .hero-v2::before { display: none; }
+html[data-bg~="a"] .hero-sky,
+html[data-bg~="a"] .hero-camp { display: block; }
+/* glass card, same recipe as the app's translucent tiles: warm cream wash, backdrop blur, light edge, timid warm shadow.
+   42% cream (20 points more see-through than before) still keeps ink above 4.5:1 over the sky and ground colours behind it. */
+html[data-bg~="a"] .hero-v2 .hero-text {
+  background: rgba(255, 248, 234, 0.42);
+  -webkit-backdrop-filter: blur(16px) saturate(1.25);
+  backdrop-filter: blur(16px) saturate(1.25);
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+  border-radius: 28px;
+  padding: var(--space-lg) var(--space-xl);
+  box-shadow: 0 8px 28px rgba(93, 64, 55, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+.hero-sky {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: linear-gradient(to bottom, var(--sky-top, #8ec9ff), var(--sky-bottom, #ddeeff));
+  transition: background 1.2s ease;
+  pointer-events: none;
+}
+html[data-sky="dawn"] { --sky-top: #b9d3f5; --sky-bottom: #ffd9b8; --disc: #fff0c2; }
+html[data-sky="day"]  { --sky-top: #8ec9ff; --sky-bottom: #ddeeff; --disc: #ffd97d; }
+html[data-sky="dusk"] { --sky-top: #6d7db8; --sky-bottom: #ffb38a; --disc: #ffe0a8; }
+html[data-sky="night"] { --sky-top: #1f2a55; --sky-bottom: #4a5588; --disc: #f3efdf; }
+.hero-disc {
+  position: absolute;
+  left: var(--disc-x, 20%);
+  top: var(--disc-y, 20%);
+  width: 64px;
+  height: 64px;
+  margin: -32px 0 0 -32px;
+  border-radius: 50%;
+  background: var(--disc, #ffd97d);
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.16), 0 0 46px 14px rgba(255, 244, 200, 0.55);
+}
+html[data-sky="night"] .hero-disc { box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.08), 0 0 34px 8px rgba(243, 239, 223, 0.35); }
+.hero-cloud, .hero-firefly { position: absolute; pointer-events: none; opacity: 0; }
+.hero-cloud {
+  top: 12%;
+  left: -260px;
+  width: 220px;
+  height: 100px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 100'%3E%3Cpath d='M38 88c-20 0-32-12-32-26 0-15 12-26 28-26 3-17 18-30 38-30 16 0 29 8 35 20 5-4 11-6 18-6 18 0 31 13 31 29v1c14 2 24 12 24 24 0 11-10 14-22 14z' fill='%23FFF8EA' stroke='%235D4037' stroke-opacity='.55' stroke-width='4' stroke-linejoin='round'/%3E%3Cpath d='M58 40c4-9 12-14 22-14' fill='none' stroke='%23fff' stroke-width='5' stroke-linecap='round' opacity='.9'/%3E%3C/svg%3E") center / contain no-repeat;
+  animation: wa-cloud 140s linear infinite;
+}
+html[data-sky="dawn"] .hero-cloud, html[data-sky="day"] .hero-cloud, html[data-sky="dusk"] .hero-cloud { opacity: 0.9; }
+.hero-firefly {
+  top: 52%;
+  left: 38%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff3a8;
+  box-shadow: 0 0 12px 5px rgba(255, 243, 168, 0.7);
+  animation: wa-firefly 7s ease-in-out infinite alternate;
+}
+html[data-sky="night"] .hero-firefly { opacity: 1; }
+@keyframes wa-cloud { from { transform: translateX(0); } to { transform: translateX(calc(100vw + 480px)); } }
+@keyframes wa-firefly { from { transform: translate(0, 0); } to { transform: translate(46px, -34px); } }
+
+.hero-camp {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 200px;
+  z-index: -1;
+  pointer-events: none;
+  will-change: transform;
+}
+.hero-camp .camp-base {
+  position: absolute; left: 0; right: 0; bottom: 0; height: 58px;
+  background: linear-gradient(#a9d27f, #8fbf68);
+}
+.hero-camp img { position: absolute; bottom: 14px; height: auto; }
+.hero-camp .glow { opacity: 0; transition: opacity 2s ease; }
+html[data-sky="dusk"] .hero-camp .glow, html[data-sky="night"] .hero-camp .glow { opacity: 1; }
+.hero-camp .fire-glow {
+  position: absolute; left: 47%; bottom: 40px; width: 150px; height: 150px; margin-left: -75px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 190, 90, 0.6), rgba(255, 190, 90, 0) 68%);
+}
+.hero-camp .lantern-glow {
+  position: absolute; bottom: 70px; width: 90px; height: 90px; margin-left: -45px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 224, 140, 0.65), rgba(255, 224, 140, 0) 68%);
+}
+.hero-camp .fire-img, .hero-camp .lane-lantern { opacity: 0; transition: opacity 2s ease; }
+html[data-sky="dusk"] .hero-camp .fire-img, html[data-sky="night"] .hero-camp .fire-img,
+html[data-sky="dusk"] .hero-camp .lane-lantern, html[data-sky="night"] .hero-camp .lane-lantern { opacity: 1; }
+@media (max-width: 768px) {
+  html[data-bg~="a"] .hero-v2 { padding-top: 84px; padding-bottom: 84px; }
+  html[data-bg~="a"] .hero-v2 .hero-text { padding: var(--space-md); }
+  .hero-camp { height: 120px; }
+  .hero-camp .camp-base { height: 40px; }
+  .hero-camp img { transform: scale(0.7); transform-origin: bottom center; }
+  .hero-disc { width: 44px; height: 44px; margin: -22px 0 0 -22px; }
+  .hero-cloud { transform: scale(0.7); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-cloud { animation: none; left: 62%; }
+  .hero-firefly { animation: none; }
+  .hero-sky, .hero-camp .glow, .hero-camp .fire-img, .hero-camp .lane-lantern { transition: none; }
+}
+
+/* ---- B: pack worlds band (section 2b) ---- */
+/* full-bleed: the band spans the viewport even though the stage sits inside the 1200px container */
+html[data-bg~="b"] .worlds-band { display: block; position: absolute; top: 0; bottom: 0; left: 50%; width: 100vw; transform: translateX(-50%); z-index: -1; pointer-events: none; overflow: hidden; }
+html[data-bg~="b"] .worlds .section-title {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px 26px;
+  background: rgba(255, 245, 225, 0.96);
+  border: 1.5px solid rgba(93, 64, 55, 0.12);
+  border-radius: var(--radius-full);
+}
+.worlds-band-half { position: absolute; top: 0; bottom: 0; width: 50%; }
+.worlds-band-half.is-left { left: 0; }
+.worlds-band-half.is-right { right: 0; }
+.worlds-band-half img {
+  position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: auto; max-height: 100%;
+  object-fit: cover; object-position: bottom center;
+  opacity: 0;
+  /* fade the top and bottom edges, and the edge that meets the other half, so the band melts into the cream */
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 45%, #000 80%, transparent 100%), linear-gradient(to right, #000 58%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to bottom, transparent 0, #000 45%, #000 80%, transparent 100%), linear-gradient(to right, #000 58%, transparent 100%);
+  mask-composite: intersect;
+  animation: wa-worldfade 36s linear infinite;
+}
+.worlds-band-half.is-right img {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 45%, #000 80%, transparent 100%), linear-gradient(to left, #000 58%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 45%, #000 80%, transparent 100%), linear-gradient(to left, #000 58%, transparent 100%);
+}
+/* two layers per half, 18 s apart; each holds ~6 s then cross-fades over 12 s */
+.worlds-band-half img:nth-child(2) { animation-delay: -18s; }
+.worlds-band-half.is-right img:nth-child(1) { animation-delay: -18s; }
+.worlds-band-half.is-right img:nth-child(2) { animation-delay: 0s; }
+@keyframes wa-worldfade {
+  0%, 16.7% { opacity: 1; }
+  50%, 66.7% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .worlds-band-half img { animation: none; }
+  .worlds-band-half img:nth-child(1) { opacity: 1; }
+  .worlds-band-half.is-right img:nth-child(1) { opacity: 0; }
+  .worlds-band-half.is-right img:nth-child(2) { opacity: 1; }
+}
+@media (max-width: 768px) {
+  .worlds-band-half { width: 100%; }
+  .worlds-band-half.is-right { display: none; }
+}
+
+/* anchor jumps ("See what's new in 2.0") don't glide for visitors who ask for less motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* ---- app-world scenery strips (map + packs sections): sit at the section foot, never behind text ---- */
+.has-scene { position: relative; overflow: hidden; padding-bottom: clamp(110px, 15vw, 190px); }
+.scene-strip { position: absolute; left: 0; right: 0; bottom: 0; height: clamp(100px, 14vw, 180px); pointer-events: none; z-index: 0; }
+.scene-strip img {
+  position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);
+  width: 100%; max-width: 1400px; height: 100%; object-fit: cover; object-position: top center;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 55%), linear-gradient(to right, transparent 0, #000 14%, #000 86%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to bottom, transparent 0, #000 55%), linear-gradient(to right, transparent 0, #000 14%, #000 86%, transparent 100%);
+  mask-composite: intersect;
+}
+.has-scene > .container { position: relative; z-index: 1; }
+
+/* ---- world backdrops: the app's own scenery behind whole sections (replaces the cream) ---- */
+.worlds-band { display: none !important; }
+.worlds.world-section,
+.features-grid-section.world-section {
+  background-color: #cfe6fb;
+  background-image: url("../assets/v2/scene/world-safari.webp"), linear-gradient(to bottom, #8ec9ff 0%, #cfe6fb 46%, #e6f1fb 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center top;
+  background-size: 100% auto, 100% 100%;
+}
+.features-grid-section.world-section {
+  background-image: url("../assets/v2/scene/world-dino.webp"), linear-gradient(to bottom, #a7d6f7 0%, #d4e9f8 50%, #e8f2f8 100%);
+}
+.world-section .section-title {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px 28px;
+  background: rgba(255, 248, 234, 0.62);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  backdrop-filter: blur(14px) saturate(1.2);
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+  border-radius: var(--radius-full);
+  box-shadow: 0 6px 20px rgba(93, 64, 55, 0.12);
+}
+.features-grid-section.world-section .feature-item {
+  background: rgba(255, 248, 234, 0.62);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  backdrop-filter: blur(14px) saturate(1.2);
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+  border-radius: 22px;
+  box-shadow: 0 6px 20px rgba(93, 64, 55, 0.1);
+}
+@media (max-width: 768px) {
+  .worlds.world-section, .features-grid-section.world-section { background-size: 260% auto, 100% 100%; }
+}
+.world-section .packs-rail-line {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4px 20px;
+  background: rgba(255, 248, 234, 0.62);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  backdrop-filter: blur(14px) saturate(1.2);
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+  border-radius: var(--radius-full);
+}
+
+/* ---- hero: hazy hills behind the camp, like the app's Home scene ---- */
+.hero-camp::before {
+  content: "";
+  position: absolute; left: 0; right: 0; bottom: 40px; height: 130px;
+  background:
+    radial-gradient(ellipse 38% 100% at 22% 100%, rgba(170, 200, 190, 0.55) 0, rgba(170, 200, 190, 0) 100%),
+    radial-gradient(ellipse 46% 100% at 70% 100%, rgba(176, 206, 200, 0.5) 0, rgba(176, 206, 200, 0) 100%);
+}
+
+/* ---- "Every page is a world": screenshot cards as glossy glass ---- */
+.world-section .world-card {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 248, 234, 0.22) 45%, rgba(255, 248, 234, 0.3) 100%);
+  -webkit-backdrop-filter: blur(14px) saturate(1.3);
+  backdrop-filter: blur(14px) saturate(1.3);
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 30px rgba(93, 64, 55, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+.world-section .world-card figcaption { color: #4a312a; font-weight: 700; }
+
+/* ---- white carousel (250+ animals), roomier on top ---- */
+.animal-strip-section { background: #fff; padding-top: 112px; }
+
+/* ---- explore the world: Safari Stars backdrop, text on glass ---- */
+.showcase-map.world-section {
+  padding: var(--space-3xl, 96px) 0 clamp(80px, 12vw, 160px);
+  background-image: url("../assets/v2/scene/world-safari.webp"), linear-gradient(to bottom, #8ec9ff 0%, #cfe6fb 46%, #e6f1fb 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center top;
+  background-size: 100% auto, 100% 100%;
+}
+.world-section .showcase-text {
+  background: rgba(255, 248, 234, 0.55);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  backdrop-filter: blur(14px) saturate(1.2);
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+  border-radius: 28px;
+  box-shadow: 0 8px 26px rgba(93, 64, 55, 0.12);
+  padding: var(--space-lg) var(--space-xl);
+}
+
+/* ---- games: night camp (indigo sky, stars, moon, the Home camp with its fire lit) ---- */
+.games-section.world-night {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: clamp(150px, 20vw, 240px);
+  background:
+    radial-gradient(ellipse 70% 30% at 50% 100%, rgba(255, 150, 120, 0.55) 0, rgba(255, 150, 120, 0) 100%),
+    linear-gradient(to bottom, #1b2554 0%, #3a3a86 48%, #7a4f92 78%, #2f5f55 78.2%, #24493f 100%);
+}
+.night-sky { position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  background-image:
+    radial-gradient(1.6px 1.6px at 8% 12%, #fff 98%, transparent), radial-gradient(1.2px 1.2px at 22% 30%, #fff 98%, transparent),
+    radial-gradient(1.8px 1.8px at 37% 9%, #fff6c8 98%, transparent), radial-gradient(1.2px 1.2px at 52% 22%, #fff 98%, transparent),
+    radial-gradient(1.6px 1.6px at 66% 8%, #fff 98%, transparent), radial-gradient(1.2px 1.2px at 78% 34%, #fff6c8 98%, transparent),
+    radial-gradient(1.8px 1.8px at 91% 16%, #fff 98%, transparent), radial-gradient(1.2px 1.2px at 15% 52%, #fff 98%, transparent),
+    radial-gradient(1.2px 1.2px at 60% 46%, #fff 98%, transparent), radial-gradient(1.6px 1.6px at 86% 54%, #fff6c8 98%, transparent); }
+.night-moon { position: absolute; right: 9%; top: 9%; width: 58px; height: 58px; border-radius: 50%;
+  background: #f6efd8; box-shadow: 0 0 0 9px rgba(246, 239, 216, 0.12), 0 0 44px 12px rgba(246, 239, 216, 0.35); }
+.games-section.world-night > .container { position: relative; z-index: 1; }
+.meadow-row { position: absolute; left: 0; right: 0; bottom: 0; height: clamp(150px, 20vw, 240px); pointer-events: none; z-index: 0; }
+.meadow-row img { position: absolute; bottom: 8px; height: auto; max-width: 22vw; }
+.night-fire-glow { position: absolute; left: 47%; bottom: 20px; width: 220px; height: 220px; margin-left: -62px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 190, 90, 0.55), rgba(255, 190, 90, 0) 68%); }
+.world-night .section-title { color: #fff8ea; background: rgba(255, 255, 255, 0.14); border-color: rgba(255, 255, 255, 0.35); }
+.world-night .section-subtitle { color: #fff8ea; }
+/* five games on one line, small and glossy */
+.world-night .games-grid { grid-template-columns: repeat(5, 1fr); gap: 14px; }
+.world-night .game-card {
+  padding: 18px 12px;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.16) 100%);
+  -webkit-backdrop-filter: blur(14px) saturate(1.3);
+  backdrop-filter: blur(14px) saturate(1.3);
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
+  border-radius: 22px;
+  box-shadow: 0 10px 28px rgba(10, 12, 40, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+.world-night .game-card img { width: 72px; height: 72px; margin-bottom: 10px; }
+.world-night .game-card h4 { color: #fff8ea; font-size: 1.02rem; }
+.world-night .game-card p { color: #fff8ea; opacity: 0.95; font-size: 0.84rem; line-height: 1.4; }
+@media (max-width: 960px) { .world-night .games-grid { grid-template-columns: repeat(2, 1fr); } .world-night .game-card img { width: 90px; height: 90px; } }
+@media (max-width: 768px) { .meadow-row img { transform: scale(0.6); transform-origin: bottom center; } .meadow-row img[style*="scaleX"] { transform: scaleX(-0.6) scaleY(0.6) !important; } }
+
+/* ---- packs grid: flipped Dino Roars jungle, full section so it actually shows ---- */
+.packs-section.world-dino-flip {
+  background-image: url("../assets/v2/scene/world-dino-flip.webp"), linear-gradient(to bottom, #a7d6f7 0%, #d4e9f8 50%, #e8f2f8 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center top;
+  background-size: 100% auto, 100% 100%;
+}
+@media (max-width: 768px) { .packs-section.world-dino-flip { background-size: 260% auto, 100% 100%; } }
+
+/* ---- loved by families: warm bloom (peach, pink, lavender) with flowers along the foot ---- */
+.home-testimonials.world-bloom {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: clamp(130px, 14vw, 190px);
+  background:
+    radial-gradient(ellipse 50% 40% at 85% 12%, rgba(255, 236, 160, 0.8) 0, rgba(255, 236, 160, 0) 100%),
+    linear-gradient(165deg, #ffd7b5 0%, #ffbfd4 46%, #d3c2ff 100%);
+}
+.bloom-row { position: absolute; left: 0; right: 0; bottom: 0; height: 170px; pointer-events: none; z-index: 0; background: linear-gradient(to top, #8fc779 0, #8fc779 22px, rgba(143, 199, 121, 0) 24px); }
+.bloom-row img { position: absolute; bottom: 0; height: auto; }
+.home-testimonials.world-bloom > .container { position: relative; z-index: 1; }
+.home-testimonials.world-bloom .home-testimonial-card {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 248, 234, 0.34) 100%);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  backdrop-filter: blur(14px) saturate(1.2);
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+  box-shadow: 0 8px 26px rgba(93, 64, 55, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+@media (max-width: 768px) { .bloom-row img { transform: scale(0.6); transform-origin: bottom center; } }
+.packs-section.world-dino-flip .section-subtitle {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 22px;
+  background: rgba(255, 248, 234, 0.7);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  backdrop-filter: blur(14px) saturate(1.2);
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+  border-radius: 22px;
+  color: #4a312a;
+}
+
+/* ---- hero camp = the app's own iPad Home/Game Den scene (trees, tents, fire, meadow) ---- */
+.hero-camp { height: 260px; }
+.hero-camp .camp-base { display: none; }
+.hero-camp::before { display: none; }
+.hero-camp img.camp-photo {
+  position: absolute; left: 0; bottom: 0; width: 100%; height: 100%; max-width: none;
+  object-fit: cover; object-position: center 3%;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 12%);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 12%);
+}
+.hero-camp .fire-glow { left: 50%; bottom: 90px; margin-left: -75px; }
+@media (max-width: 768px) { .hero-camp { height: 170px; } }
+
+/* ---- languages: glass container and glass tiles ---- */
+.showcase-languages .lang-flags {
+  background: rgba(255, 255, 255, 0.28);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  backdrop-filter: blur(14px) saturate(1.2);
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 30px rgba(93, 64, 55, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+.showcase-languages .lang-flag-item {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.62) 0%, rgba(255, 255, 255, 0.3) 100%);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 6px 18px rgba(93, 64, 55, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.hero-camp img.camp-tree { position: absolute; height: auto; max-width: none; }
+@media (max-width: 768px) { .hero-camp img.camp-tree { display: none; } }
+
+/* ---- hero background = the app's whole Home scene, filling the hero (hills, trees, tents, fire, meadow) ---- */
+.hero-camp { top: 0; height: 100%; }
+.hero-camp img.camp-photo {
+  object-fit: cover; object-position: center 22%;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 16%);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 16%);
+}
+html[data-bg~="a"] .hero-v2 { padding-bottom: 120px; }
+@media (max-width: 768px) { .hero-camp { height: 100%; } html[data-bg~="a"] .hero-v2 { padding-bottom: 90px; } }
+
+/* ---- layout round (Josh's arrange-page comments) ---- */
+[data-sec][hidden] { display: none !important; }
+
+/* trust strip: minimal, one row on small screens */
+@media (max-width: 900px) {
+  .trust-strip { padding: var(--space-md) 0 var(--space-lg); }
+  .trust-pillars { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+  .trust-pillar { padding: 8px 4px; gap: 4px; border-radius: 12px; }
+  .trust-pillar .trust-icon { width: 26px; height: 26px; }
+  .trust-label { font-size: 0.6rem; line-height: 1.15; }
+}
+
+/* every page is a world: three cards stay in one row on small screens */
+@media (max-width: 768px) {
+  .worlds-frames { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: none; gap: 6px; }
+  .world-section .world-card { padding: 6px 6px 8px; gap: 6px; border-radius: 14px; }
+  .world-card-shot { max-width: none; width: 100%; }
+  .world-card figcaption { font-size: 0.6rem; line-height: 1.2; max-width: none; }
+}
+
+/* what makes Wild Atlas special: compact cards that don't span the whole screen */
+@media (max-width: 1024px) {
+  .key-features { padding: 48px 0; }
+  .key-features-grid { grid-template-columns: 1fr; max-width: 440px; margin-left: auto; margin-right: auto; gap: var(--space-md); }
+  .key-feature-card { padding: var(--space-lg); }
+  .key-feature-icon { width: 52px; height: 52px; }
+  .key-feature-card h3 { font-size: 1.2rem; }
+  .key-feature-card p { font-size: 0.92rem; margin-bottom: var(--space-md); }
+}
+
+/* for parents: its own colour (soft lavender) instead of white */
+.parents-section { background: linear-gradient(160deg, #e8defb 0%, #f4e6ff 55%, #fde3f1 100%); }
+@media (max-width: 768px) {
+  .trust-pillar { flex-direction: column !important; justify-content: flex-start; text-align: center; }
+  .trust-label { font-size: 0.58rem; }
+  .world-section .section-title { font-size: 1.5rem; padding: 4px 18px; max-width: 100%; }
+  .world-section .packs-rail-line { font-size: 0.9rem; }
+}
+@media (max-width: 600px) {
+  .key-features { padding: 36px 0; }
+  .key-features-grid { gap: 10px; }
+  .key-feature-card { padding: 14px 16px; border-radius: 18px; }
+  .key-feature-icon-row { margin-bottom: 6px; }
+  .key-feature-icon { width: 38px; height: 38px; }
+  .key-feature-card h3 { font-size: 1.05rem; margin-bottom: 4px; }
+  .key-feature-card p { font-size: 0.84rem; line-height: 1.4; margin-bottom: 8px; }
+  .key-feature-card .badges-row { flex-direction: row; gap: 6px; }
+  .key-feature-card .badge-strip { height: 34px; width: auto; }
+  .key-feature-card .tts-mascot { width: 56px; height: auto; }
+}
+
+/* ---- pack cards: glossy, translucent glass with a soft tint per colour ---- */
+.packs-section .pack-card {
+  --tint: 255, 248, 234;
+  background:
+    linear-gradient(160deg, rgba(255, 255, 255, 0.34) 0%, rgba(255, 255, 255, 0) 55%),
+    linear-gradient(rgba(var(--tint), 0.5), rgba(var(--tint), 0.5)),
+    rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(12px) saturate(1.25);
+  backdrop-filter: blur(12px) saturate(1.25);
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 24px rgba(60, 50, 20, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+.packs-section .pack-card[data-color="peach"]  { --tint: 255, 214, 190; }
+.packs-section .pack-card[data-color="mint"]   { --tint: 190, 240, 215; }
+.packs-section .pack-card[data-color="yellow"] { --tint: 255, 238, 180; }
+.packs-section .pack-card[data-color="sky"]    { --tint: 190, 216, 255; }
+.packs-section .pack-card[data-color="purple"] { --tint: 218, 200, 255; }
+.packs-section .pack-card h4 { color: #4a312a; }
+
+/* ---- quick app walkthrough: a compact, centred portrait player ---- */
+.home-video .home-video-frame {
+  width: min(280px, calc(66vh * 0.461));
+  max-width: 100%;
+  margin: var(--space-lg) auto 0;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(93, 64, 55, 0.2), 0 0 0 3px rgba(255, 255, 255, 0.8);
+  background: #5d4037;
+}
+.home-video .home-video-frame video { display: block; width: 100%; height: auto; aspect-ratio: 590 / 1280; object-fit: cover; }
+
+/* ---- hero: the app's Home scene only, static (no sky gradient, sun/moon, cloud or fireflies) ---- */
+html[data-bg~="a"] .hero-sky { display: none !important; }
+html[data-bg~="a"] .hero-v2 { background: #a9c9c4; }
+.hero-camp img.camp-photo { object-position: center top; -webkit-mask-image: none; mask-image: none; }
+
+/* ---- designed for your family: centred, glass container ---- */
+.parents-section .parents-content { flex-direction: column; align-items: center; gap: var(--space-lg); text-align: center; }
+.parents-section .parents-text { flex: none; width: 100%; display: flex; flex-direction: column; align-items: center; }
+.parents-section .parents-text h2 {
+  margin-bottom: var(--space-lg);
+  padding: 6px 28px;
+  background: rgba(255, 248, 234, 0.55);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  backdrop-filter: blur(14px) saturate(1.2);
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+  border-radius: var(--radius-full);
+  box-shadow: 0 6px 20px rgba(93, 64, 55, 0.1);
+}
+.parents-section .parents-list {
+  width: 100%;
+  max-width: 760px;
+  gap: 0;
+  padding: 8px 10px;
+  text-align: left;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.28) 100%);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  backdrop-filter: blur(14px) saturate(1.2);
+  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  border-radius: 28px;
+  box-shadow: 0 10px 30px rgba(93, 64, 55, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+.parents-section .parents-list li { padding: 14px 16px; border-bottom: 1px solid rgba(93, 64, 55, 0.1); }
+.parents-section .parents-list li:last-child { border-bottom: 0; }
+.parents-section .parents-visual { order: -1; margin: 0; }
+.parents-section .parents-mascot { width: 120px; height: auto; display: block; margin: 0 auto; }
+.parents-section .parents-map-bg { opacity: 0.12; }
+
+/* ---- loved by families: plain white, tidy 2x2 of equal cards ---- */
+.home-testimonials.loved-white { background: #fff; padding: 72px 0; }
+.home-testimonials.loved-white .home-testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-lg);
+  max-width: 920px;
+  margin: var(--space-xl) auto 0;
+  align-items: stretch;
+}
+.home-testimonials.loved-white .home-testimonial-card {
+  margin: 0;
+  padding: var(--space-lg);
+  background: var(--creamy-coat);
+  border: 1.5px solid rgba(93, 64, 55, 0.1);
+  border-radius: 22px;
+  box-shadow: 0 6px 18px rgba(93, 64, 55, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+.home-testimonials.loved-white .home-testimonial-card cite { margin-top: auto; }
+@media (max-width: 700px) { .home-testimonials.loved-white .home-testimonial-grid { grid-template-columns: 1fr; } }
+.parents-section .parents-map-bg { display: none; }
+
+
+/* ================= round: Josh's arrange-page comments ================= */
+
+/* hero: the Home scene is the section's own background, so it always fills the full width */
+html[data-bg~="a"] .hero-v2 { background: #a9c9c4 url("../assets/v2/scene/ipad-home-bg.webp") center top / cover no-repeat; }
+html[data-bg~="a"] .hero-camp { display: none; }
+/* mid-size and scaled-down windows: video and text side by side (video on the left, shrunk), stacking only on phones */
+@media (min-width: 561px) and (max-width: 1000px) {
+  .hero-v2 .hero-content { flex-direction: row; text-align: left; align-items: center; gap: 18px; }
+  .hero-v2 .hero-visual { order: 1; flex: 0 0 38%; width: auto; height: auto; overflow: visible; -webkit-mask-image: none; mask-image: none; justify-content: center; }
+  .hero-v2 .hero-text { order: 2; flex: 1 1 0; width: auto; padding: var(--space-md); }
+  .reel { --rw: min(100%, 230px); }
+  .reel-play { top: 50%; }
+  .reel-transcript { display: none; }
+  .hero-v2 .hero-tagline { font-size: 2rem; }
+  .hero-v2 .hero-subtitle { margin-left: 0; margin-right: 0; font-size: 1rem; }
+  .hero-v2 .hero-badge-row { justify-content: flex-start; }
+}
+
+/* 14 animal worlds: plain background */
+.packs-section.packs-plain { background: var(--creamy-coat, #FFF5E1); }
+
+/* how big / how heavy: the footer's flowers-and-bushes strip as a liner along the foot of the section */
+.showcase-scale.has-liner { position: relative; overflow: hidden; padding-bottom: 96px; }
+.section-liner {
+  position: absolute; left: 0; right: 0; bottom: 0; height: 62px;
+  display: flex; align-items: flex-end; justify-content: space-around; overflow: hidden; pointer-events: none;
+  background: linear-gradient(to top, #7fae5c 0, #7fae5c 14px, rgba(127, 174, 92, 0) 15px);
+}
+.section-liner img { height: 56px; width: auto; flex: none; margin-bottom: -4px; }
+@media (max-width: 600px) { .showcase-scale.has-liner { padding-bottom: 80px; } .section-liner { height: 48px; } .section-liner img { height: 44px; } }
+
+/* six languages: tropical forest */
+.showcase-section.showcase-languages.world-jungle {
+  background-color: #cfe6fb;
+  background-image: url("../assets/v2/scene/world-dino.webp"), linear-gradient(to bottom, #a7d6f7 0%, #d4e9f8 50%, #e8f2f8 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center top;
+  background-size: 100% auto, 100% 100%;
+  border-top: 0;
+}
+@media (max-width: 768px) { .showcase-section.showcase-languages.world-jungle { background-size: 260% auto, 100% 100%; } }
+
+/* what we stand for: the meadow from Home */
+.brand-section.world-meadow2 {
+  background: #a9c9c4 url("../assets/v2/scene/ipad-home-bg.webp") center top / cover no-repeat;
+}
+.brand-section.world-meadow2 .brand-eyebrow, .brand-section.world-meadow2 .brand-title {
+  display: table; margin-left: auto; margin-right: auto; padding: 4px 22px;
+  background: rgba(255, 248, 234, 0.6);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2); backdrop-filter: blur(14px) saturate(1.2);
+  border: 1.5px solid rgba(255, 255, 255, 0.75); border-radius: var(--radius-full);
+}
+.brand-section.world-meadow2 .brand-title { margin-top: 8px; margin-bottom: var(--space-lg); }
+.brand-section.world-meadow2 .brand-pillar {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.62) 0%, rgba(255, 248, 234, 0.4) 100%);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2); backdrop-filter: blur(14px) saturate(1.2);
+  border: 1.5px solid rgba(255, 255, 255, 0.75); border-radius: 22px;
+  box-shadow: 0 8px 26px rgba(40, 60, 30, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* about / founder letter: garden */
+.about-section.world-garden {
+  position: relative; overflow: hidden; padding-bottom: 170px;
+  background:
+    radial-gradient(ellipse 40% 40% at 15% 10%, rgba(255, 236, 160, 0.7) 0, rgba(255, 236, 160, 0) 100%),
+    linear-gradient(to bottom, #bfe3ff 0%, #e4f3dc 62%, #b9dc9a 100%);
+}
+.garden-row { position: absolute; left: 0; right: 0; bottom: 0; height: 150px; pointer-events: none; z-index: 0;
+  background: linear-gradient(to top, #8fc779 0, #8fc779 30px, rgba(143, 199, 121, 0) 32px);
+  display: flex; align-items: flex-end; justify-content: space-around; }
+.garden-row img { height: 120px; width: auto; flex: none; margin-bottom: -6px; }
+.about-section.world-garden > .container { position: relative; z-index: 1; }
+.about-section.world-garden .about-content {
+  padding: var(--space-xl);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.62) 0%, rgba(255, 248, 234, 0.4) 100%);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2); backdrop-filter: blur(14px) saturate(1.2);
+  border: 1.5px solid rgba(255, 255, 255, 0.8); border-radius: 28px;
+  box-shadow: 0 10px 30px rgba(60, 80, 40, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+@media (max-width: 600px) { .garden-row img { height: 80px; } .garden-row { height: 110px; } .about-section.world-garden { padding-bottom: 130px; } }
+
+.packs-section.has-liner, .key-features.has-liner { position: relative; overflow: hidden; padding-bottom: 96px; }
+@media (max-width: 600px) { .packs-section.has-liner, .key-features.has-liner { padding-bottom: 80px; } }
+
+/* ---- pack mascots: the app's idle bob (DelightMotion IdleBobModifier: 4pt travel, ±1.2% scale, 2.8s ease-in-out, alternating) ---- */
+@keyframes wa-idle-bob {
+  from { transform: translateY(2px) scale(0.988); }
+  to   { transform: translateY(-2px) scale(1.012); }
+}
+.packs-section .pack-card img { animation: wa-idle-bob 2.8s ease-in-out infinite alternate; will-change: transform; }
+.packs-section .pack-card:nth-child(3n+1) img { animation-delay: -0.9s; }
+.packs-section .pack-card:nth-child(3n+2) img { animation-delay: -1.9s; }
+.packs-section .pack-card:nth-child(5n) img { animation-delay: -0.4s; }
+@media (prefers-reduced-motion: reduce) { .packs-section .pack-card img { animation: none; } }

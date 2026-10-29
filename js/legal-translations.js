@@ -921,8 +921,8 @@ Reading challenges, more complex quizzes, fuller animal facts. Designed for the 
 
 3. What you'll find in Wild Atlas
 
-- 200+ real animals with scientifically accurate facts, sourced from IUCN, Smithsonian Ocean, All About Birds, the American Kennel Club, AmphibiaWeb, and more
-- Narrated content in 5 languages: English, German, Spanish, French, and Simplified Chinese
+- 250+ real animals with scientifically accurate facts, sourced from IUCN, Smithsonian Ocean, All About Birds, the American Kennel Club, AmphibiaWeb, and more
+- Narrated content in 6 languages: English (US and UK), German, Spanish, French, and Simplified Chinese
 - Animal sounds, size comparisons, and habitat maps
 - Quizzes, four educational games, and an achievement system
 - A few hidden treasures kids will find by exploring
@@ -981,8 +981,8 @@ Leseaufgaben, komplexere Quizze, ausführlichere Tierfakten. Für das Kind, das 
 
 3. Was du in Wild Atlas findest
 
-- Über 200 echte Tiere mit wissenschaftlich korrekten Fakten aus Quellen wie IUCN, Smithsonian Ocean, All About Birds, dem American Kennel Club, AmphibiaWeb und mehr
-- Vertonte Inhalte in 5 Sprachen: Englisch, Deutsch, Spanisch, Französisch und vereinfachtes Chinesisch
+- Über 250 echte Tiere mit wissenschaftlich korrekten Fakten aus Quellen wie IUCN, Smithsonian Ocean, All About Birds, dem American Kennel Club, AmphibiaWeb und mehr
+- Vertonte Inhalte in 6 Sprachen: Englisch, Deutsch, Spanisch, Französisch und vereinfachtes Chinesisch
 - Tiergeräusche, Größenvergleiche und Lebensraumkarten
 - Quizze, vier Lernspiele und ein Erfolgssystem
 - Ein paar versteckte Überraschungen, die Kinder beim Erkunden finden
@@ -1042,7 +1042,7 @@ Desafíos de lectura, quizzes más complejos, datos de animales más completos. 
 3. Lo que encontrarás en Wild Atlas
 
 - Más de 200 animales reales con datos científicamente exactos, de fuentes como IUCN, Smithsonian Ocean, All About Birds, el American Kennel Club, AmphibiaWeb y más
-- Contenido narrado en 5 idiomas: inglés, alemán, español, francés y chino simplificado
+- Contenido narrado en 6 idiomas: inglés, alemán, español, francés y chino simplificado
 - Sonidos de animales, comparaciones de tamaño y mapas de hábitat
 - Quizzes, cuatro juegos educativos y un sistema de logros
 - Algunos tesoros escondidos que los niños encuentran al explorar
@@ -1102,7 +1102,7 @@ Défis de lecture, quiz plus complexes, faits animaliers plus complets. Conçu p
 3. Ce que tu trouveras dans Wild Atlas
 
 - Plus de 200 vrais animaux avec des faits scientifiquement exacts, issus de sources telles que IUCN, Smithsonian Ocean, All About Birds, l'American Kennel Club, AmphibiaWeb et d'autres
-- Contenu narré en 5 langues : anglais, allemand, espagnol, français et chinois simplifié
+- Contenu narré en 6 langues : anglais, allemand, espagnol, français et chinois simplifié
 - Sons d'animaux, comparaisons de taille et cartes d'habitats
 - Quiz, quatre jeux éducatifs et un système de succès
 - Quelques trésors cachés que les enfants trouvent en explorant
@@ -1161,8 +1161,8 @@ Si tu as une préoccupation au sujet du contenu, une question sur un pack partic
 
 3. 在野生地图集中你会发现
 
-- 200 多种真实动物的科学准确事实，来源包括 IUCN、Smithsonian Ocean、All About Birds、美国育犬协会、AmphibiaWeb 等
-- 5 种语言的语音内容：英语、德语、西班牙语、法语和简体中文
+- 250 多种真实动物的科学准确事实，来源包括 IUCN、Smithsonian Ocean、All About Birds、美国育犬协会、AmphibiaWeb 等
+- 6 种语言的语音内容：英语、德语、西班牙语、法语和简体中文
 - 动物声音、体型对比和栖息地地图
 - 测验、四款教育游戏和成就系统
 - 一些孩子探索时会发现的隐藏惊喜

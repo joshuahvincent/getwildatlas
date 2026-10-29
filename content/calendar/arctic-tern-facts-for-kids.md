@@ -52,8 +52,8 @@ animalDay:
     Starters: "If you could fly anywhere in the world twice a year, where would you go?" "How do you think a tiny bird finds its way across the whole planet without a map?" "What do you think it would feel like to see the sun almost all the time, like a tern does?"
 
     If your kid asks *does the tern ever get lost, or not make it home?* — this holds up: "Sometimes the trip is hard, and not every tern makes it every year — but Arctic terns are amazing at finding their way, and most make this same journey again and again, for up to 30 years."
-  appCta: "Arctic terns aren't in Wild Atlas yet, but Wild Atlas has more than 200 other animals to explore — including fellow seabirds like the Atlantic puffin and the albatross — with narrated facts and full scale comparisons against a 5-year-old."
-  appLinkText: Explore 200+ animals in Wild Atlas
+  appCta: "Arctic terns aren't in Wild Atlas yet, but Wild Atlas has more than 250 other animals to explore — including fellow seabirds like the Atlantic puffin and the albatross — with narrated facts and full scale comparisons against a 5-year-old."
+  appLinkText: Explore 250+ animals in Wild Atlas
   source:
     label: Egevang et al. 2010, Tracking of Arctic terns reveals longest animal migration (PNAS)
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2836663/

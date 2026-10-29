@@ -41,8 +41,8 @@ animalDay:
     Starters: "What do you think it would feel like to have fur warm enough for snowy mountains?" "If your family had lots of aunties helping take care of the babies, like a golden monkey troop, who would you want to help?"
 
     If your kid asks *are golden monkeys going to disappear?* — this holds up: "Golden snub-nosed monkeys are endangered because their mountain forests got smaller, but in one part of China people protected the forest and built green bridges of trees, and the monkey families grew from about 500 to more than 1,600."
-  appCta: "Wild Atlas doesn't have the golden snub-nosed monkey yet, but it's home to more than 200 other animals — narrated facts, scale comparisons against a 5-year-old, and close-up looks at how each one lives."
-  appLinkText: Explore 200+ animals in Wild Atlas
+  appCta: "Wild Atlas doesn't have the golden snub-nosed monkey yet, but it's home to more than 250 other animals — narrated facts, scale comparisons against a 5-year-old, and close-up looks at how each one lives."
+  appLinkText: Explore 250+ animals in Wild Atlas
   source:
     label: the Wisconsin Primate Info Net fact sheet
     url: https://primate.wisc.edu/primate-info-net/pin-factsheets/pin-factsheet-golden-snub-nosed-monkey/

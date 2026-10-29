@@ -57,7 +57,7 @@ animalDay:
     Starters: "If you could sing a song that traveled for miles underwater, what would you want other whales to know?" "What do you think it feels like to swim thousands of miles, with your mom right beside you the whole way?"
 
     If your kid asks *could a whale swallow me?* — this holds up: "No — a humpback has no teeth, and its throat is far too narrow to swallow a person. It eats tiny things like krill and small fish, strained through bristly plates in its mouth. You're much too big."
-  appCta: "The humpback whale isn't in Wild Atlas — but its giant cousin, the blue whale, the largest animal known to have ever lived, is in the Ocean Creatures pack, along with 200+ other animals across Wild Atlas, each with narrated facts to explore."
+  appCta: "The humpback whale isn't in Wild Atlas — but its giant cousin, the blue whale, the largest animal known to have ever lived, is in the Ocean Creatures pack, along with 250+ other animals across Wild Atlas, each with narrated facts to explore."
   appLinkText: Meet the blue whale in Wild Atlas
   source:
     label: NOAA Fisheries

@@ -10,8 +10,8 @@
   <link rel="canonical" href="https://www.wildatlasapp.com/press">
 
   <meta name="theme-color" content="#FFF5E1">
-  <link rel="icon" type="image/png" href="assets/app-icon.png">
-  <link rel="apple-touch-icon" href="assets/app-icon.png">
+  <link rel="icon" type="image/png" href="/assets/app-icon.png">
+  <link rel="apple-touch-icon" href="/assets/app-icon.png">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -23,7 +23,7 @@
   <link rel="preload" href="fonts/Fredoka-VariableFont_wdth,wght.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="fonts/Nunito-Regular.ttf" as="font" type="font/ttf" crossorigin>
 
-  <link rel="stylesheet" href="css/styles.css?v=30">
+  <link rel="stylesheet" href="/css/styles.css?v=30">
 
   <style>
     .press-page {
@@ -247,6 +247,7 @@
 
     /* Landscape shots are short and wide — match the portrait thumbnail height */
     .press-screens-grid img.is-landscape { width: 168px; }
+    .press-screens-grid img.is-ipad { width: 107px; }
 
     .press-screens-grid img:hover {
       transform: translateY(-2px);
@@ -281,7 +282,7 @@
 
     .lifestyle-grid img {
       width: 100%;
-      aspect-ratio: 3 / 4;
+      aspect-ratio: 1536 / 2752;
       object-fit: cover;
       border-radius: 16px;
       border: 1.5px solid rgba(93, 64, 55, 0.1);
@@ -518,7 +519,7 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-brand">
-        <img src="assets/mascot-logo.png" alt="Wild Atlas" class="nav-icon">
+        <img src="/assets/mascot-logo.png" alt="Wild Atlas" class="nav-icon">
         <span class="nav-title">Wild Atlas</span>
       </a>
       <ul class="nav-links" id="navLinks">
@@ -565,11 +566,11 @@
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="10" rx="1.5" stroke="currentColor" stroke-width="1.5"/><circle cx="5.5" cy="6.5" r="1" fill="currentColor"/><path d="M2 11l4-4 3 3 2-2 3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             App Screenshots
           </a>
-          <a href="assets/app-icon.png" class="press-asset-link" download>
+          <a href="/assets/press/app-icon-2.0-1024.png" class="press-asset-link" download>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="10" rx="1.5" stroke="currentColor" stroke-width="1.5"/><circle cx="5.5" cy="6.5" r="1" fill="currentColor"/><path d="M2 11l4-4 3 3 2-2 3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             App Icon (PNG)
           </a>
-          <a href="assets/mascot-logo.png" class="press-asset-link" download>
+          <a href="/assets/mascot-logo.png" class="press-asset-link" download>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="10" rx="1.5" stroke="currentColor" stroke-width="1.5"/><circle cx="5.5" cy="6.5" r="1" fill="currentColor"/><path d="M2 11l4-4 3 3 2-2 3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Logo (PNG)
           </a>
@@ -580,12 +581,14 @@
       <div class="press-screens">
         <h2>Screenshots</h2>
         <div class="press-screens-grid">
-          <img src="assets/press/ss-home.jpg" alt="Wild Atlas home screen" loading="lazy">
-          <img src="assets/press/ss-how-big-trex.jpg" alt="Size comparison — how big is a T. rex" class="is-landscape" loading="lazy">
-          <img src="assets/press/ss-dino-pack.jpg" alt="Dinosaur animal pack" loading="lazy">
-          <img src="assets/press/ss-orca.jpg" alt="Orca animal page" loading="lazy">
-          <img src="assets/press/ss-languages.jpg" alt="Available in six languages" loading="lazy">
-          <img src="assets/press/ss-quiz.jpg" alt="Animal quiz" loading="lazy">
+          <img src="/assets/press/ss-home.jpg" alt="Wild Atlas home screen: a camp with a real sky" loading="lazy">
+          <img src="/assets/press/ss-dino-pack.jpg" alt="Dino Roars pack page with its own scenery" loading="lazy">
+          <img src="/assets/press/ss-orca.jpg" alt="Orca animal page" loading="lazy">
+          <img src="/assets/press/ss-world-map.jpg" alt="Interactive world map with an elephant" loading="lazy">
+          <img src="/assets/press/ss-quiz.jpg" alt="Animal quiz" loading="lazy">
+          <img src="/assets/press/ss-game-den.jpg" alt="Game Den" loading="lazy">
+          <img src="/assets/press/ss-spiders.jpg" alt="Super Spiders pack page" loading="lazy">
+          <img src="/assets/press/ss-ipad-dino.jpg" alt="Dino Roars pack page on iPad" class="is-ipad" loading="lazy">
         </div>
       </div>
 
@@ -632,13 +635,13 @@
         <p class="lifestyle-sub">Wild Atlas on the road, in the air, and at home.</p>
         <div class="lifestyle-grid">
           <figure>
-            <img src="assets/press/lifestyle-car.jpg" alt="A child exploring a dinosaur on Wild Atlas during a car ride" loading="lazy">
+            <img src="/assets/press/lifestyle-car.jpg" alt="A child exploring a dinosaur on Wild Atlas during a car ride" loading="lazy">
           </figure>
           <figure>
-            <img src="assets/press/lifestyle-plane.jpg" alt="A child and parent reading animal facts on Wild Atlas on a flight" loading="lazy">
+            <img src="/assets/press/lifestyle-plane.jpg" alt="A child and parent reading animal facts on Wild Atlas on a flight" loading="lazy">
           </figure>
           <figure>
-            <img src="assets/press/lifestyle-home.jpg" alt="A child playing a Wild Atlas matching game at home" loading="lazy">
+            <img src="/assets/press/lifestyle-home.jpg" alt="A child playing a Wild Atlas matching game at home" loading="lazy">
           </figure>
         </div>
       </div>
@@ -649,13 +652,52 @@
       <div class="press-testimonials" style="margin-bottom: var(--space-2xl);">
         <h2>Watch the trailer</h2>
         <div style="max-width:340px;margin:0 auto;aspect-ratio:590/1280;border-radius:20px;overflow:hidden;box-shadow:0 12px 32px rgba(93,64,55,0.18);">
-          <video controls playsinline preload="metadata" poster="assets/trailer-poster.jpg"
+          <video controls playsinline preload="metadata" poster="/assets/trailer-poster.jpg"
             style="width:100%;height:100%;display:block;object-fit:cover;background:#000;">
-            <source src="assets/wild-atlas-trailer.mp4" type="video/mp4">
+            <source src="/assets/wild-atlas-trailer.mp4" type="video/mp4">
             Your browser doesn&rsquo;t support embedded video.
             <a href="https://www.youtube.com/watch?v=le3MLsSQk7U">Watch on YouTube</a>.
           </video>
         </div>
+      </div>
+
+      <hr class="press-divider">
+
+      <!-- PRESS RELEASE: WILD ATLAS 2.0 (newest first) -->
+      <div class="press-release" id="release-2-0">
+
+        <p class="press-release-kicker">For Immediate Release</p>
+
+        <h2>Wild Atlas 2.0 Turns Every Animal Page Into a Living World</h2>
+
+        <p class="deck">Raise the binoculars and the habitat sounds fade in. The children&rsquo;s animal-discovery app rebuilds pack and animal pages as scenes with their own scenery, motion, and animal visitors &mdash; and adds Super Spiders, a pack of eighteen hunters, dancers, and silk spinners.</p>
+
+        <p><strong>SEATTLE, WA &mdash; October 29, 2026</strong> &mdash; Wild Atlas, the offline, ad-free animal discovery app for children ages 3 to 9, today released version 2.0 for iPhone and iPad. The update is a redesign built around one idea: a page about an animal shouldn&rsquo;t just describe a place. It should be one.</p>
+
+        <p>Open a pack or an animal page now and it&rsquo;s a small world &mdash; its own scenery, its own motion, animals passing through in the background. Raise the binoculars and the habitat sounds fade in. Home has become a camp with a real sky overhead: a sun and moon that track the time of day, a moon that moves through its phases, sunrise and sunset glow, lanterns lighting after dark &mdash; all following the clock on your own phone.</p>
+
+        <p>The redesign runs through the whole app. Profile avatars have been redrawn in a warmer, storybook style. A profile switcher now shows the titles a child has picked up along the way &mdash; Trail Scout, then Wild Ranger &mdash; with a small celebration for each one. The Wild Watch slideshow has been rebuilt, every game now has a friendly guide hand walking a child through it, and the youngest explorers get easier versions built for them specifically. Pack mascots animate, dozens of animals move through the new scenes, and the iPad experience has been polished throughout, under a new app icon and a starfield launch screen.</p>
+
+        <p>Joining the roster at launch: Super Spiders, eighteen spiders &mdash; hunters, dancers, and silk spinners &mdash; rounding Wild Atlas out to fourteen packs and more than 250 animals in all, every one of them narrated in six languages: US and UK English, German, Spanish, French, and Simplified Chinese.</p>
+
+        <p>Wild Atlas remains three free packs forever (Happy Hounds, Cool Cats, Cozy Critters), plus one welcome-gift pack of the family&rsquo;s choice. Every other pack is $3.99, or $23.99 for the Explorer Pass that unlocks all of them. No subscription. No ads. No data harvesting. The whole app works offline &mdash; on a plane, in a car, anywhere.</p>
+
+        <blockquote>
+          <p>&ldquo;The first version was the encyclopedia we wanted, one our kids could drive on their own, at home or travelling, and they loved it. Wild Atlas 2.0 is the beauty we dreamed of on top of that: a living world scene for every animal, animation everywhere, and moments where you just sit back and watch, the way you do on safari.&rdquo;</p>
+          <cite>&mdash; Joshuah Vincent, founder</cite>
+        </blockquote>
+
+        <p>Wild Atlas is built independently by Joshuah Vincent, a Seattle-based father of two.</p>
+
+        <hr>
+
+        <h3>About Wild Atlas</h3>
+        <p>Wild Atlas is an animal discovery app for children ages 3 and up, built around your child&rsquo;s curiosity &mdash; narrated, documentary-style facts, child-led exploration, and living pack and animal worlds, across six languages. No subscription, no ads, no data harvesting. Works fully offline. Based in Seattle, Washington. <a href="https://www.wildatlasapp.com">wildatlasapp.com</a></p>
+
+        <h3>Press Contact</h3>
+        <p><a href="mailto:press@wildatlasapp.com">press@wildatlasapp.com</a></p>
+        <p style="font-size:0.85rem;color:#6a5046;margin-top:0.5rem;"><em>Prices shown in USD. Local pricing may vary by region and is set by the Apple App Store.</em></p>
+
       </div>
 
       <hr class="press-divider">
@@ -730,14 +772,14 @@
     <div class="container">
       <div class="footer-promo">
         <a class="footer-promo-bar" href="/#newsletter">
-          <img class="footer-promo-icon" src="assets/newsletter-gift.png" alt="" width="46" height="46">
+          <img class="footer-promo-icon" src="/assets/newsletter-gift.png" alt="" width="46" height="46">
           <span class="footer-promo-text">Get the <strong>Farm Friends</strong> pack <strong>free</strong> when you join our newsletter</span>
           <span class="footer-promo-arrow" aria-hidden="true">&rarr;</span>
         </a>
       </div>
       <div class="footer-content">
         <div class="footer-brand">
-          <img src="assets/mascot-sitting.png" alt="Wild Atlas" class="footer-mascot" loading="lazy">
+          <img src="/assets/mascot-sitting.png" alt="Wild Atlas" class="footer-mascot" loading="lazy">
           <span class="footer-title">Wild Atlas</span>
         </div>
         <div class="footer-links">
@@ -821,5 +863,6 @@
           data-server="https://api.foldback.co"
           data-project="2aadd1de-714c-437f-bb07-b242d4a6133b"
           data-key="fb_pub_production_2aadd1de_f200ab68f3e932cc30662cff"></script>
+  <script src="/js/world-bg.js?v=1" defer></script>
 </body>
 </html>

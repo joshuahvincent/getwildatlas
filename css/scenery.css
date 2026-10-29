@@ -1,0 +1,44 @@
+/* =============================================
+   Background option C, "Scenery edges" — site-wide, static, no motion.
+   Loaded on demand by js/world-bg.js (html[data-scenery="c"]); nothing here
+   lands under or beside body text:
+     - a thin strip of camp ground along the very bottom of the footer, below
+       the footer's own content (extra bottom padding keeps text clear of it)
+     - faint (13%) pack-scenery silhouettes in the outer page margins, only on
+       viewports wide enough that the 1200px content column leaves real margins
+   ============================================= */
+footer.has-scenery { position: relative; padding-bottom: 96px; overflow: hidden; }
+.scenery-footer {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 62px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  overflow: hidden;
+  pointer-events: none;
+  background: linear-gradient(to top, #7fae5c 0, #7fae5c 14px, rgba(127, 174, 92, 0) 15px);
+}
+.scenery-footer img { height: 56px; width: auto; flex: none; margin-bottom: -4px; }
+
+.scenery-edge { display: none; }
+@media (min-width: 1500px) {
+  .scenery-edge {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: calc((100vw - 1240px) / 2);
+    max-width: 260px;
+    opacity: 0.13;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .scenery-edge-l { left: 0; }
+  .scenery-edge-r { right: 0; }
+  .scenery-edge img { width: 100%; height: auto; display: block; }
+}
+@media (max-width: 600px) {
+  footer.has-scenery { padding-bottom: 80px; }
+  .scenery-footer { height: 48px; }
+  .scenery-footer img { height: 44px; }
+}

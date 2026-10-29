@@ -25,7 +25,7 @@ window.WILD_ATLAS_I18N = {
     en: {
       // Meta
       'meta.title': 'Wild Atlas \u2014 Raise Explorers, Not Scrollers',
-      'meta.description': 'Raise explorers, not scrollers. An animal learning app for kids 3\u20139. No ads, no algorithms, no reading required. 13 packs, 5 languages, 3 free to start.',
+      'meta.description': 'Raise explorers, not scrollers. An animal learning app for kids 3\u20139. No ads, no algorithms, no reading required. 14 packs, 6 languages, 3 free to start.',
       'meta.og.description': 'Finally, screen time you\u2019ll feel proud of. An interactive animal adventure for curious kids 3\u20139 \u2014 built for wonder, not engagement metrics.',
 
       // Gate
@@ -60,8 +60,8 @@ window.WILD_ATLAS_I18N = {
       'trust.privacy': 'Privacy-first & COPPA-compliant',
 
       // Languages section
-      'lang.title': 'Available in 5 Languages',
-      'lang.desc': 'Wild Atlas is fully localized in English, German, Spanish, French, and Simplified Chinese — including all text <em>and</em> audio narration. Every animal fact, fun word, and quiz is read aloud in your child’s language.',
+      'lang.title': 'Available in 6 Languages',
+      'lang.desc': 'Wild Atlas is fully localized in English (US and UK), German, Spanish, French, and Simplified Chinese — including all text <em>and</em> audio narration. Every animal fact, fun word, and quiz is read aloud in your child’s language.',
       'lang.point1': 'Full audio narration in every supported language',
       'lang.point2': 'All text, facts, and quizzes translated',
       'lang.point3': 'Perfect for bilingual families — or kids learning a new language',
@@ -108,14 +108,14 @@ window.WILD_ATLAS_I18N = {
       'games.habitat.desc': 'Hop animals home \u2014 savannah, arctic, forest, ocean. Geography through play.',
 
       // Packs
-      'packs.title': '13 Animal Worlds to Explore',
+      'packs.title': '14 Animal Worlds to Explore',
       'packs.subtitle': '3 always-free packs, plus one premium pack your child picks — free. Unlock more at $3.99 each, or get everything with the Explorer Pass at $23.99.',
       'packs.free': 'Free',
       'packs.new': 'New',
       'packs.more': 'More packs coming soon!',
 
       // Animals
-      'animals.title': '200+ Beautiful Animals',
+      'animals.title': '250+ Beautiful Animals',
 
       // Animal strip names (DRAFT — needs native review for non-EN)
       'showcase.scale.point1': 'Weight and size compared to kids they can relate to',
@@ -155,7 +155,7 @@ window.WILD_ATLAS_I18N = {
       'parents.point1': 'Tap-to-read narration means <strong>no reading skills needed</strong>',
       'parents.point2': 'Age-appropriate content for <strong>Little Explorers (3\u20134)</strong> and <strong>Young Explorers (5\u20139)</strong>',
       'parents.point3': 'Built so kids can <strong>explore safely on their own</strong>',
-      'parents.point4': '<strong>Available in 5 languages</strong> — learn in your child’s native language, or use it to reinforce a language they’re studying.',
+      'parents.point4': '<strong>Available in 6 languages</strong> — learn in your child’s native language, or use it to reinforce a language they’re studying.',
       'parents.point5': '<strong>No ads, no external links, no social features</strong>',
 
       // Signup
@@ -182,6 +182,20 @@ window.WILD_ATLAS_I18N = {
 
       // Hero platform line + brand pillars
       'hero.platforms': 'Available for iPhone and iPad',
+      // ── 2.0 (strings for de / es / fr / zh to be delivered by marketing; falls back to en until then) ──
+      'hero.sub1': 'An animal app built around your child\u2019s curiosity.',
+      'hero.sub2': 'Ages 3 to 9. Narrated. No ads.',
+      'hero.whatsnew': 'See what\u2019s new in 2.0',
+      'hero.reel.transcript': 'Video transcript',
+      'hero.reel.t1': 'A child in the back seat of a car opens Wild Atlas on a phone. The screen grows to fill the frame.',
+      'hero.reel.t2': 'Cards read: \u201cGet to know every animal.\u201d \u201cLearn about different types of animals.\u201d \u201c14 packs to choose from, in six languages.\u201d',
+      'hero.reel.t3': 'Between the cards: the Lion page, the Safari Stars pack, the Home screen, the Game Den and the Puppy Puzzle game. The video ends on the Wild Atlas logo and \u201cRaise explorers, not scrollers.\u201d',
+      'worlds.title': 'Every page is a world',
+      'worlds.cap1': 'Home is a camp with a real sky, day and night.',
+      'worlds.cap2': 'Pack pages have their own scenery and animal visitors.',
+      'worlds.cap3': 'Raise the binoculars and the habitat sounds fade in.',
+      'worlds.count': '14 packs, 250+ animals',
+      'packs.spider_world': 'Super Spiders',
       'brand.eyebrow': 'What we stand for',
       'brand.title': 'Built on beliefs, not features',
       'brand.pillar1.title': 'Wonder over dopamine',
@@ -231,7 +245,7 @@ window.WILD_ATLAS_I18N = {
     // ────────────────────────────────────────
     de: {
       'meta.title': 'Wild Atlas \u2014 Entdecker erziehen, keine Scroller',
-      'meta.description': 'Entdecker erziehen, keine Scroller. Eine Tier-Lern-App f\u00fcr Kinder von 3 bis 9. Keine Werbung, keine Algorithmen, kein Lesen n\u00f6tig. 13 Pakete, 5 Sprachen, 3 gratis.',
+      'meta.description': 'Entdecker erziehen, keine Scroller. Eine Tier-Lern-App f\u00fcr Kinder von 3 bis 9. Keine Werbung, keine Algorithmen, kein Lesen n\u00f6tig. 14 Pakete, 6 Sprachen, 3 gratis.',
       'meta.og.description': 'Endlich Bildschirmzeit, auf die du stolz sein kannst. Ein interaktives Tierabenteuer f\u00fcr neugierige Kinder von 3 bis 9 Jahren.',
 
       'gate.title': 'Wild Atlas',
@@ -263,7 +277,7 @@ window.WILD_ATLAS_I18N = {
       'trust.privacy': 'Datenschutz & COPPA-konform',
 
       // Languages section
-      'lang.title': 'In 5 Sprachen verfügbar',
+      'lang.title': 'In 6 Sprachen verfügbar',
       'lang.desc': 'Wild Atlas ist vollständig lokalisiert in Englisch, Deutsch, Spanisch, Französisch und vereinfachtem Chinesisch — einschließlich aller Texte <em>und</em> Tonaufnahmen. Jeder Tierfakt, jedes lustige Wort und jedes Quiz wird in der Sprache deines Kindes vorgelesen.',
       'lang.point1': 'Vollständige Vertonung in allen unterstützten Sprachen',
       'lang.point2': 'Alle Texte, Fakten und Quiz übersetzt',
@@ -308,13 +322,13 @@ window.WILD_ATLAS_I18N = {
       'games.habitat.title': 'Lebensraum-H\u00fcpfer',
       'games.habitat.desc': 'Bring Tiere nach Hause \u2014 Savanne, Arktis, Wald, Ozean. Geografie spielerisch lernen.',
 
-      'packs.title': '13 Tierwelten zum Entdecken',
+      'packs.title': '14 Tierwelten zum Entdecken',
       'packs.subtitle': '3 dauerhaft kostenlose Packs, plus ein Premium-Pack nach Wahl — kostenlos. Weitere für je 3,99 €, oder alles mit dem Explorer Pass.',
       'packs.free': 'Gratis',
       'packs.new': 'Neu',
       'packs.more': 'Weitere Pakete folgen bald!',
 
-      'animals.title': '\u00dcber 200 wundersch\u00f6ne Tiere',
+      'animals.title': '\u00dcber 250 wundersch\u00f6ne Tiere',
 
       // Animal strip names (DRAFT — needs native review for non-EN)
       'showcase.scale.point1': 'Gewicht und Größe verglichen mit Kindern, die sie kennen',
@@ -353,7 +367,7 @@ window.WILD_ATLAS_I18N = {
       'parents.point1': 'Vorlesefunktion bedeutet <strong>keine Lesekenntnisse n\u00f6tig</strong>',
       'parents.point2': 'Altersgerechte Inhalte f\u00fcr <strong>Kleine Entdecker (3\u20134)</strong> und <strong>Junge Entdecker (5\u20139)</strong>',
       'parents.point3': 'So gebaut, dass Kinder <strong>sicher alleine entdecken k\u00f6nnen</strong>',
-      'parents.point4': '<strong>In 5 Sprachen verf\u00fcgbar</strong> \u2014 lerne in der Muttersprache deines Kindes oder festige eine Sprache, die es gerade lernt.',
+      'parents.point4': '<strong>In 6 Sprachen verf\u00fcgbar</strong> \u2014 lerne in der Muttersprache deines Kindes oder festige eine Sprache, die es gerade lernt.',
       'parents.point5': '<strong>Keine Werbung, keine externen Links, keine sozialen Funktionen</strong>',
 
       'signup.title': 'Ein Angebot für frühe Entdecker',
@@ -426,7 +440,7 @@ window.WILD_ATLAS_I18N = {
     // ────────────────────────────────────────
     es: {
       'meta.title': 'Wild Atlas \u2014 Cr\u00eda Exploradores, No Scrollers',
-      'meta.description': 'Cr\u00eda exploradores, no scrollers. Una app de animales para ni\u00f1os de 3 a 9 a\u00f1os. Sin anuncios, sin algoritmos, sin necesidad de leer. 13 paquetes, 5 idiomas, 3 gratis.',
+      'meta.description': 'Cr\u00eda exploradores, no scrollers. Una app de animales para ni\u00f1os de 3 a 9 a\u00f1os. Sin anuncios, sin algoritmos, sin necesidad de leer. 14 paquetes, 6 idiomas, 3 gratis.',
       'meta.og.description': 'Por fin, tiempo de pantalla del que sentirte orgulloso. Una aventura animal interactiva para ni\u00f1os curiosos de 3 a 9 a\u00f1os \u2014 hecha para el asombro, no para m\u00e9tricas de engagement.',
 
       'gate.title': 'Wild Atlas',
@@ -458,7 +472,7 @@ window.WILD_ATLAS_I18N = {
       'trust.privacy': 'Privacidad garantizada (COPPA)',
 
       // Languages section
-      'lang.title': 'Disponible en 5 idiomas',
+      'lang.title': 'Disponible en 6 idiomas',
       'lang.desc': 'Wild Atlas está completamente localizado en inglés, alemán, español, francés y chino simplificado — incluyendo todos los textos <em>y</em> la narración de audio. Cada dato curioso, palabra divertida y quiz se lee en voz alta en el idioma de tu hijo.',
       'lang.point1': 'Narración de audio completa en todos los idiomas',
       'lang.point2': 'Todos los textos, datos y quiz traducidos',
@@ -503,13 +517,13 @@ window.WILD_ATLAS_I18N = {
       'games.habitat.title': 'Salto de H\u00e1bitat',
       'games.habitat.desc': 'Lleva a los animales a casa \u2014 sabana, \u00e1rtico, bosque, oc\u00e9ano. Geograf\u00eda a trav\u00e9s del juego.',
 
-      'packs.title': '13 Mundos Animales por Explorar',
+      'packs.title': '14 Mundos Animales por Explorar',
       'packs.subtitle': '3 packs siempre gratis, más un pack premium que tu hijo elige — gratis. Desbloquea más a 3,99 € cada uno, o consíguelo todo con el Explorer Pass.',
       'packs.free': 'Gratis',
       'packs.new': 'Nuevo',
       'packs.more': '\u00a1M\u00e1s paquetes pr\u00f3ximamente!',
 
-      'animals.title': 'M\u00e1s de 200 hermosos animales',
+      'animals.title': 'M\u00e1s de 250 hermosos animales',
 
       // Animal strip names (DRAFT — needs native review for non-EN)
       'showcase.scale.point1': 'Peso y tamaño comparados con niños que pueden entender',
@@ -548,7 +562,7 @@ window.WILD_ATLAS_I18N = {
       'parents.point1': 'La narraci\u00f3n en voz alta significa que <strong>no se necesita saber leer</strong>',
       'parents.point2': 'Contenido adecuado para <strong>Peque\u00f1os Exploradores (3\u20134)</strong> y <strong>J\u00f3venes Exploradores (5\u20139)</strong>',
       'parents.point3': 'Creado para que los ni\u00f1os puedan <strong>explorar de forma segura por su cuenta</strong>',
-      'parents.point4': '<strong>Disponible en 5 idiomas</strong> — aprende en el idioma materno de tu hijo, o úsalo para reforzar un idioma que esté estudiando.',
+      'parents.point4': '<strong>Disponible en 6 idiomas</strong> — aprende en el idioma materno de tu hijo, o úsalo para reforzar un idioma que esté estudiando.',
       'parents.point5': '<strong>Sin anuncios, sin enlaces externos, sin funciones sociales</strong>',
 
       'signup.title': 'Una oferta para exploradores tempranos',
@@ -621,7 +635,7 @@ window.WILD_ATLAS_I18N = {
     // ────────────────────────────────────────
     fr: {
       'meta.title': 'Wild Atlas \u2014 \u00c9l\u00e8ve des Explorateurs, Pas des Scrolleurs',
-      'meta.description': '\u00c9l\u00e8ve des explorateurs, pas des scrolleurs. Une app d\u2019animaux pour enfants de 3 \u00e0 9 ans. Sans publicit\u00e9, sans algorithmes, aucune lecture requise. 13 packs, 5 langues, 3 gratuits.',
+      'meta.description': '\u00c9l\u00e8ve des explorateurs, pas des scrolleurs. Une app d\u2019animaux pour enfants de 3 \u00e0 9 ans. Sans publicit\u00e9, sans algorithmes, aucune lecture requise. 14 packs, 6 langues, 3 gratuits.',
       'meta.og.description': 'Enfin du temps d\u2019\u00e9cran dont vous serez fier. Une aventure animale interactive pour les enfants curieux de 3 \u00e0 9 ans \u2014 con\u00e7ue pour l\u2019\u00e9merveillement, pas pour les m\u00e9triques d\u2019engagement.',
 
       'gate.title': 'Wild Atlas',
@@ -653,7 +667,7 @@ window.WILD_ATLAS_I18N = {
       'trust.privacy': 'Confidentialit\u00e9 garantie (COPPA)',
 
       // Languages section
-      'lang.title': 'Disponible en 5 langues',
+      'lang.title': 'Disponible en 6 langues',
       'lang.desc': 'Wild Atlas est enti\u00e8rement localis\u00e9 en anglais, allemand, espagnol, fran\u00e7ais et chinois simplifi\u00e9 \u2014 y compris tous les textes <em>et</em> la narration audio. Chaque anecdote, mot amusant et quiz est lu \u00e0 voix haute dans la langue de votre enfant.',
       'lang.point1': 'Narration audio compl\u00e8te dans toutes les langues',
       'lang.point2': 'Tous les textes, faits et quiz traduits',
@@ -698,13 +712,13 @@ window.WILD_ATLAS_I18N = {
       'games.habitat.title': 'Saut d\u2019Habitat',
       'games.habitat.desc': 'Ram\u00e8ne les animaux chez eux \u2014 savane, arctique, for\u00eat, oc\u00e9an. La g\u00e9ographie par le jeu.',
 
-      'packs.title': '13 Mondes Animaux \u00e0 Explorer',
+      'packs.title': '14 Mondes Animaux \u00e0 Explorer',
       'packs.subtitle': '3 packs toujours gratuits, plus un pack premium que votre enfant choisit — gratuit. Déverrouillez les autres à 3,99 € chacun, ou obtenez tout avec l’Explorer Pass.',
       'packs.free': 'Gratuit',
       'packs.new': 'Nouveau',
       'packs.more': 'Plus de packs bient\u00f4t\u00a0!',
 
-      'animals.title': 'Plus de 200 magnifiques animaux',
+      'animals.title': 'Plus de 250 magnifiques animaux',
 
       // Animal strip names (DRAFT — needs native review for non-EN)
       'showcase.scale.point1': 'Poids et taille comparés à des enfants auxquels ils peuvent se rapporter',
@@ -743,7 +757,7 @@ window.WILD_ATLAS_I18N = {
       'parents.point1': 'La lecture \u00e0 voix haute signifie <strong>aucune comp\u00e9tence en lecture n\u00e9cessaire</strong>',
       'parents.point2': 'Contenu adapt\u00e9 pour les <strong>Petits Explorateurs (3\u20134)</strong> et les <strong>Jeunes Explorateurs (5\u20139)</strong>',
       'parents.point3': 'Con\u00e7u pour que les enfants puissent <strong>explorer en toute s\u00e9curit\u00e9</strong>',
-      'parents.point4': '<strong>Disponible en 5 langues</strong> — apprenez dans la langue maternelle de votre enfant, ou utilisez-la pour renforcer une langue qu’il étudie.',
+      'parents.point4': '<strong>Disponible en 6 langues</strong> — apprenez dans la langue maternelle de votre enfant, ou utilisez-la pour renforcer une langue qu’il étudie.',
       'parents.point5': '<strong>Pas de publicit\u00e9s, pas de liens externes, pas de fonctions sociales</strong>',
 
       'signup.title': 'Une offre pour les premiers explorateurs',
@@ -820,7 +834,7 @@ window.WILD_ATLAS_I18N = {
     zh: {
       // Meta
       'meta.title': '\u91ce\u751f\u5730\u56fe\u96c6 \u2014 \u57f9\u517b\u63a2\u9669\u5bb6\uff0c\u800c\u975e\u4f4e\u5934\u65cf',
-      'meta.description': '\u57f9\u517b\u63a2\u9669\u5bb6\uff0c\u800c\u975e\u4f4e\u5934\u65cf\u3002\u4e13\u4e3a 3\u20139 \u5c81\u5b69\u5b50\u8bbe\u8ba1\u7684\u52a8\u7269\u5b66\u4e60 App\u3002\u65e0\u5e7f\u544a\u3001\u65e0\u7b97\u6cd5\u3001\u65e0\u9700\u8bc6\u5b57\u300213 \u4e2a\u52a8\u7269\u5305\u30015 \u79cd\u8bed\u8a00\u30013 \u4e2a\u514d\u8d39\u8d77\u6b65\u3002',
+      'meta.description': '\u57f9\u517b\u63a2\u9669\u5bb6\uff0c\u800c\u975e\u4f4e\u5934\u65cf\u3002\u4e13\u4e3a 3\u20139 \u5c81\u5b69\u5b50\u8bbe\u8ba1\u7684\u52a8\u7269\u5b66\u4e60 App\u3002\u65e0\u5e7f\u544a\u3001\u65e0\u7b97\u6cd5\u3001\u65e0\u9700\u8bc6\u5b57\u300214 \u4e2a\u52a8\u7269\u5305\u30016 \u79cd\u8bed\u8a00\u30013 \u4e2a\u514d\u8d39\u8d77\u6b65\u3002',
       'meta.og.description': '\u7ec8\u4e8e\u6709\u4e00\u6b3e\u8ba9\u4f60\u5f15\u4ee5\u4e3a\u8c6a\u7684\u5c4f\u5e55\u65f6\u95f4\u3002\u4e00\u573a\u4e92\u52a8\u52a8\u7269\u5192\u9669\uff0c\u4e13\u4e3a 3\u20139 \u5c81\u7684\u597d\u5947\u5b9d\u8d1d\u2014\u2014\u4e3a\u60ca\u5947\u800c\u751f\uff0c\u4e0d\u4e3a\u6d41\u91cf\u6570\u636e\u3002',
 
       // Gate
@@ -855,7 +869,7 @@ window.WILD_ATLAS_I18N = {
       'trust.privacy': '\u9690\u79c1\u4f18\u5148\uff0c\u7b26\u5408 COPPA',
 
       // Languages section
-      'lang.title': '\u652f\u6301 5 \u79cd\u8bed\u8a00',
+      'lang.title': '\u652f\u6301 6 \u79cd\u8bed\u8a00',
       'lang.desc': '\u91ce\u751f\u5730\u56fe\u96c6\u5b8c\u6574\u652f\u6301\u82f1\u8bed\u3001\u5fb7\u8bed\u3001\u897f\u73ed\u7259\u8bed\u3001\u6cd5\u8bed\u548c\u7b80\u4f53\u4e2d\u6587\u2014\u2014\u5305\u62ec\u6240\u6709\u6587\u672c<em>\u548c</em>\u97f3\u9891\u6717\u8bfb\u3002\u6bcf\u4e00\u6761\u52a8\u7269\u77e5\u8bc6\u3001\u8da3\u5473\u8bcd\u6c47\u548c\u6d4b\u9a8c\u90fd\u7528\u60a8\u5b69\u5b50\u7684\u8bed\u8a00\u6717\u8bfb\u51fa\u6765\u3002',
       'lang.point1': '\u6240\u6709\u652f\u6301\u8bed\u8a00\u5747\u63d0\u4f9b\u5b8c\u6574\u97f3\u9891\u6717\u8bfb',
       'lang.point2': '\u6240\u6709\u6587\u672c\u3001\u4e8b\u5b9e\u548c\u6d4b\u9a8c\u5747\u5df2\u7ffb\u8bd1',
@@ -903,14 +917,14 @@ window.WILD_ATLAS_I18N = {
       'games.habitat.desc': '\u628a\u52a8\u7269\u9001\u56de\u5bb6\u2014\u2014\u8349\u539f\u3001\u5317\u6781\u3001\u68ee\u6797\u3001\u6d77\u6d0b\u3002\u5728\u73a9\u4e2d\u5b66\u5730\u7406\u3002',
 
       // Packs
-      'packs.title': '13 \u4e2a\u52a8\u7269\u4e16\u754c\u7b49\u4f60\u63a2\u7d22',
+      'packs.title': '14 \u4e2a\u52a8\u7269\u4e16\u754c\u7b49\u4f60\u63a2\u7d22',
       'packs.subtitle': '3 个永久免费动物包，加上孩子自选一个付费包——免费赠送。其他每个¥28，或购买 Explorer Pass 解锁全部。',
       'packs.free': '\u514d\u8d39',
       'packs.new': '新',
       'packs.more': '\u66f4\u591a\u52a8\u7269\u5305\u5373\u5c06\u63a8\u51fa\uff01',
 
       // Animals
-      'animals.title': '200+ \u79cd\u7f8e\u4e3d\u7684\u52a8\u7269',
+      'animals.title': '250+ \u79cd\u7f8e\u4e3d\u7684\u52a8\u7269',
 
       // Animal strip names (DRAFT — needs native review for non-EN)
       'showcase.scale.point1': '用孩子能理解的方式比较体重和大小',
@@ -950,7 +964,7 @@ window.WILD_ATLAS_I18N = {
       'parents.point1': '\u8f7b\u89e6\u6717\u8bfb\uff0c<strong>\u65e0\u9700\u8bc6\u5b57</strong>',
       'parents.point2': '\u9002\u9f84\u5185\u5bb9\uff0c\u9488\u5bf9<strong>\u5c0f\u5c0f\u63a2\u7d22\u5bb6\uff085 \u5c81\u4ee5\u4e0b\uff09</strong>\u548c<strong>\u5e74\u8f7b\u63a2\u7d22\u5bb6\uff085 \u5c81\u53ca\u4ee5\u4e0a\uff09</strong>',
       'parents.point3': '\u5b69\u5b50\u53ef\u4ee5<strong>\u5b89\u5168\u72ec\u7acb\u5730\u63a2\u7d22</strong>',
-      'parents.point4': '<strong>支持 5 种语言</strong>——用您孩子的母语学习，或用来巩固他们正在学习的语言。',
+      'parents.point4': '<strong>支持 6 种语言</strong>——用您孩子的母语学习，或用来巩固他们正在学习的语言。',
       'parents.point5': '<strong>\u65e0\u5e7f\u544a\u3001\u65e0\u5916\u90e8\u94fe\u63a5\u3001\u65e0\u793e\u4ea4\u529f\u80fd</strong>',
 
       // Signup

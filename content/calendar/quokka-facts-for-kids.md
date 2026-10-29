@@ -53,8 +53,8 @@ animalDay:
     Starters: "If you could visit an island with no foxes or cats, what animal would you want to meet there?" "Quokkas look like they're smiling — what's your favorite animal face?"
 
     If your kid asks *did the fire hurt the quokkas?* — this holds up: "Yes, it was a hard time for them. But people worked for years to help, keeping them safe from foxes and counting them so they knew they were okay — and the quokkas started coming back."
-  appCta: "Wild Atlas doesn't have the quokka, but it's home to more than 200 other animals — narrated facts, scale comparisons against a 5-year-old, and close-up looks at how each one lives."
-  appLinkText: Explore 200+ animals in Wild Atlas
+  appCta: "Wild Atlas doesn't have the quokka, but it's home to more than 250 other animals — narrated facts, scale comparisons against a 5-year-old, and close-up looks at how each one lives."
+  appLinkText: Explore 250+ animals in Wild Atlas
   source:
     label: the Australian Museum
     url: https://australian.museum/learn/animals/mammals/quokka/
