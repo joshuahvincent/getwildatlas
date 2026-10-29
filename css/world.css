@@ -841,13 +841,10 @@ html[data-bg~="a"] .hero-camp { display: none; }
 .packs-section.has-liner, .key-features.has-liner { position: relative; overflow: hidden; padding-bottom: 96px; }
 @media (max-width: 600px) { .packs-section.has-liner, .key-features.has-liner { padding-bottom: 80px; } }
 
-/* ---- pack mascots: the app's idle bob (DelightMotion IdleBobModifier: 4pt travel, ±1.2% scale, 2.8s ease-in-out, alternating) ---- */
-@keyframes wa-idle-bob {
-  from { transform: translateY(2px) scale(0.988); }
-  to   { transform: translateY(-2px) scale(1.012); }
-}
-.packs-section .pack-card img { animation: wa-idle-bob 2.8s ease-in-out infinite alternate; will-change: transform; }
-.packs-section .pack-card:nth-child(3n+1) img { animation-delay: -0.9s; }
-.packs-section .pack-card:nth-child(3n+2) img { animation-delay: -1.9s; }
-.packs-section .pack-card:nth-child(5n) img { animation-delay: -0.4s; }
-@media (prefers-reduced-motion: reduce) { .packs-section .pack-card img { animation: none; } }
+/* ---- pack mascots: the app's own looping clips (transparent video), aligned over the still art; the still stays as poster / reduced-motion fallback ---- */
+.packs-section .pack-card .mascot-live { display: flex; align-items: center; justify-content: center; width: 100px; height: 100px; margin: 0 auto var(--space-sm); }
+.packs-section .pack-card .mascot-canvas { position: relative; display: block; }
+.packs-section .pack-card .mascot-canvas img { width: 100%; height: 100%; margin: 0; object-fit: contain; transition: opacity 0.2s ease; }
+.mascot-canvas.is-live img { opacity: 0; }
+.mascot-canvas video { position: absolute; height: auto; pointer-events: none; background: transparent; }
+@media (max-width: 768px) { .packs-section .pack-card .mascot-live { width: 80px; height: 80px; } }
