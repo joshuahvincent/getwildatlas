@@ -1,0 +1,245 @@
+---
+layout: layouts/blog-base.njk
+title: "Wild Atlas Newsletter #3: Every Page Is a World"
+permalink: /newsletter/issue-03/
+date: 2026-10-30
+excerpt: "Wild Atlas 2.0 is here: living worlds, a Home sky, and Super Spiders."
+tags: newsletter
+issueNumber: 3
+issueDate: "October 2026"
+---
+
+{#- Web archive of the emailed newsletter, same structure and styles as issue 1. Copy is exactly the sent issue. -#}
+
+<style>
+  .wa-issue {
+    --forest:    #1B2B1D;
+    --lichen:    #6B8C52;
+    --ember:     #C25A28;
+    --parchment: #F3EAD8;
+    --issue-ink: #2A2118;
+    --issue-muted: #6B5E4F;
+    --issue-rule: #E4D8BE;
+  }
+
+  .wa-issue { margin: 0 0 3rem; }
+
+  /* ── Masthead ── */
+  .wa-masthead {
+    background: var(--forest);
+    border-radius: 14px;
+    padding: 2rem 1.5rem 1.75rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .wa-masthead-eyebrow {
+    font-family: "Nunito", system-ui, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--lichen);
+    margin: 0 0 0.5rem;
+  }
+  .wa-masthead-logo {
+    font-family: "Fredoka", system-ui, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #F0EBE0;
+    line-height: 1;
+    margin: 0;
+  }
+  .wa-masthead-logo span { color: var(--lichen); }
+  .wa-masthead-meta {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #A8B89A;
+    margin: 1rem 0 0;
+  }
+
+  /* ── Section labels ── */
+  .wa-label {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-family: "Nunito", system-ui, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--lichen);
+    margin: 2.5rem 0 0.75rem;
+  }
+  .wa-label::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--issue-rule);
+  }
+
+  /* ── Founder note ── */
+  .wa-note {
+    border-left: 3px solid var(--lichen);
+    padding: 0.25rem 0 0.25rem 1.25rem;
+    margin: 0 0 1rem;
+  }
+  .wa-note p { margin: 0 0 1rem; }
+  .wa-note p:last-child { margin-bottom: 0; }
+  .wa-note-sig { color: var(--issue-muted); font-size: 0.95rem; }
+
+  /* ── Cards ── */
+  .wa-card {
+    background: var(--parchment);
+    border-radius: 12px;
+    padding: 1.5rem 1.5rem 1.25rem;
+    margin: 0 0 1.5rem;
+  }
+  .wa-card h3 { margin-top: 0; }
+  .wa-card > p:last-child { margin-bottom: 0; }
+
+  .wa-list { margin: 0; padding-left: 1.1rem; }
+  .wa-list li { margin-bottom: 0.75rem; }
+  .wa-list li:last-child { margin-bottom: 0; }
+
+  /* ── Gift / code block ── */
+  .wa-gift {
+    background: var(--forest);
+    border-radius: 12px;
+    padding: 1.75rem 1.5rem;
+    margin: 0 0 1.5rem;
+    color: #DCE4D4;
+  }
+  .wa-gift h3 {
+    color: #F0EBE0;
+    margin: 0 0 0.5rem;
+  }
+  .wa-gift p { margin: 0 0 1rem; font-size: 0.98rem; }
+  .wa-gift-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--lichen);
+    margin: 0 0 0.5rem;
+  }
+  .wa-code {
+    display: inline-block;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: #F0EBE0;
+    background: rgba(240, 235, 224, 0.1);
+    border: 1px dashed var(--lichen);
+    border-radius: 8px;
+    padding: 0.6rem 1.1rem;
+    margin: 0 0 1rem;
+  }
+
+  /* ── Buttons ── */
+  .wa-btn {
+    display: inline-block;
+    background: var(--ember);
+    color: #fff;
+    font-family: "Fredoka", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 8px;
+  }
+  .wa-btn:hover { opacity: 0.88; text-decoration: none; }
+  .wa-btn:focus-visible { outline: 2px solid var(--forest); outline-offset: 3px; }
+
+  .wa-divider {
+    border: none;
+    border-top: 1px solid var(--issue-rule);
+    margin: 2.5rem 0;
+  }
+
+  .wa-back {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 480px) {
+    .wa-masthead-logo { font-size: 1.6rem; }
+    .wa-gift, .wa-card { padding: 1.25rem 1.1rem; }
+  }
+
+  /* ── Issue 3 additions: cover banner, image strips, featured animal ── */
+  .wa-banner { margin: 0 0 2rem; }
+  .wa-banner img { display: block; width: 100%; height: auto; border-radius: 14px; }
+  .wa-strip { margin: 1.25rem 0 1rem; }
+  .wa-strip img { display: block; width: 100%; height: auto; }
+  .wa-feature img { display: block; width: 100%; max-width: 360px; height: auto; border-radius: 10px; margin: 0.75rem 0 1rem; }
+  .wa-social { color: var(--issue-muted); font-size: 0.95rem; }
+</style>
+
+<article class="wa-issue">
+
+  <p class="wa-banner"><img src="/assets/newsletter/issue-03/newsletter-banner-issue-03.jpg" width="1536" height="672" alt="The Wild Atlas puppy on its globe by a campfire at dusk, with the Stargazer owl holding a lantern and the Super Spiders mascot hanging from a tree, under a big moon with paper lanterns glowing"></p>
+
+  <header class="wa-masthead">
+    <p class="wa-masthead-eyebrow">From the team at</p>
+    <p class="wa-masthead-logo">Wild <span>Atlas</span></p>
+    <p class="wa-masthead-meta">Issue No. 3 &middot; October 2026</p>
+  </header>
+
+  <h1>Wild Atlas 2.0 Is Here</h1>
+
+  <div class="wa-note">
+    <p>Hey everyone,</p>
+    <p>I hope this finds you excited for Halloween and getting ready to take your kids trick-or-treating!</p>
+    <p>Two big announcements! 1/ We're excited to announce our spooky Halloween pack, Super Spiders. It's available right now, so go check it out. 2/ Wild Atlas 2.0 is in the App Store! It's a beautiful visual makeover: living worlds behind every animal, animations, and a "safari-style game viewing" experience when you hit the binoculars on every page.</p>
+    <p>I am personally very excited to share this with you and can't wait to hear your feedback. If you haven't shared or reviewed the app in the App Store yet, please do that. It would be a huge win for us.</p>
+    <p class="wa-note-sig">Warmly,<br>Josh</p>
+  </div>
+
+  <hr class="wa-divider">
+
+  <h2>Wild Atlas 2.0: Every Page Is a World</h2>
+  <p>Pack pages and animal pages now have their own scenery, animation and animal visitors. Raise the binoculars and the habitat sounds fade in. Home is a camp with a real sky: sun, moon and moon phases, a glow at sunrise and sunset, and a parade of lanterns after dark, all following your phone's time zone.</p>
+  <p class="wa-strip"><img src="/assets/newsletter/issue-03/strip-2-0-screens.png" width="1200" height="777" alt="Three Wild Atlas 2.0 screens side by side: the Dino Roars pack page, an orca animal page and the Safari page with the binoculars raised"></p>
+  <p><a class="wa-btn" href="/blog/wild-atlas-2-0/">Read about 2.0</a></p>
+
+  <h2>Super Spiders Is Here</h2>
+  <p>Eighteen spiders, from the Goliath birdeater to the peacock spider. Each one has a baby photo, an in-action shot, size comparisons and narration in six languages. A little spooky, which is part of the fun. Super Spiders is $3.99 once, and it's included with the Explorer Pass.</p>
+  <p class="wa-strip"><img src="/assets/newsletter/issue-03/strip-spiders.png" width="1200" height="381" alt="Left to right: the Super Spiders pack mascot hanging under a full moon, a Brazilian wandering spider on a rainforest tree trunk, and a male peacock spider with two legs raised showing its blue and red abdomen"></p>
+  <p>Brazilian wandering spider: its venom is strong for people, and a bite needs a doctor. It usually bites when it is squeezed, trapped, or scared. Look, learn, and never touch a wild spider. Peacock spider: a tiny male showing off.</p>
+  <p><a class="wa-btn" href="/blog/super-spiders-happy-halloween/">Meet Super Spiders</a></p>
+
+  <hr class="wa-divider">
+
+  <h2>How We Make Wild Atlas</h2>
+  <p>Recently we were on a field trip to the Vancouver Aquarium, which is amazing, by the way. One of the educators there asked us how we use AI to make Wild Atlas, and where we get our information from. So we wrote a blog that goes into detail on both, in layman's terms, if you're interested.</p>
+  <p><a class="wa-btn" href="/blog/how-we-make-wild-atlas/">Read how we make it</a></p>
+
+  <hr class="wa-divider">
+
+  <h2>Also New in 2.0</h2>
+  <p>New profile avatars drawn in a warm storybook style, a redesigned slideshow, a friendly guide hand in every game, and easier games for our youngest explorers. Update Wild Atlas on the App Store to get 2.0.</p>
+  <p><a class="wa-btn" href="https://apps.apple.com/us/app/wild-atlas/id6761081031">Update Wild Atlas</a></p>
+
+  <hr class="wa-divider">
+
+  <p class="wa-label">Featured animal of the newsletter</p>
+  <div class="wa-card wa-feature">
+    <h3><a href="https://wildatlasapp.com/calendar/world-lemur-day/">Ring-tailed lemur</a>: World Lemur Day, 30 October 2026.</h3>
+    <img src="/assets/animals/lemur/baby.jpg" alt="A baby ring-tailed lemur" loading="lazy">
+    <ul class="wa-list">
+      <li>Every sunny morning, ring-tailed lemurs sit up, spread their arms wide, and sunbathe &mdash; like they're doing yoga!</li>
+      <li>When a ring-tailed lemur sits up, it's less than half as tall as a 5-year-old!</li>
+      <li>It would take about seven lemurs on a scale to outweigh one five-year-old!</li>
+    </ul>
+    <p style="margin-top:1rem;"><a class="wa-btn" href="https://wildatlasapp.com/calendar/world-lemur-day/">Meet the ring-tailed lemur</a></p>
+  </div>
+
+  <p>Raise explorers, not scrollers.<br>Wild Atlas</p>
+  <p class="wa-social">Follow along: <a href="https://www.instagram.com/wildatlas.app">Instagram</a> | <a href="https://www.tiktok.com/@wildatlasapp">TikTok</a></p>
+
+  <p><a class="wa-back" href="/newsletter/">&larr; All issues</a></p>
+
+</article>
