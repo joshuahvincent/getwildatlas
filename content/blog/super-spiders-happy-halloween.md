@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: "Happy Halloween from the Spiders: Super Spiders Is Here"
 date: 2026-10-29
 author: Wild Atlas
-excerpt: "Eight legs, eight eyes, and a bad reputation. 18 spiders step out of the shadows in Wild Atlas, just in time for Halloween."
+excerpt: "Eight legs, up to eight eyes, and a bad reputation. 18 spiders step out of the shadows in Wild Atlas, just in time for Halloween."
 permalink: /blog/super-spiders-happy-halloween/
 coverImage: /assets/blog/super-spiders-hero.jpg
 thumbImage: /assets/blog/thumbs/super-spiders-happy-halloween.jpg
