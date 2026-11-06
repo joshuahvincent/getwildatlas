@@ -66,7 +66,7 @@ tags: [product, update]
 
 Parents want real conversations with their kids, and this gives you a way in. See which animals they're spending time with in the app, get conversation starters for those animals, and find places near you to see them in real life. They're called Kid insights and the Animal Finder, in the grown-ups area (the burger menu on Home), in the next update.
 
-A lot of you have asked how to explore Wild Atlas with your kid, and how to use what they're doing in the app to talk with them and see what they're interested in. This is us listening, with more coming.
+A lot of you have asked two things: how to explore Wild Atlas with your kid, and how to turn what they're doing in the app into conversation, and a sense of what they're interested in. This release is us listening, more on the way.
 
 <!-- Josh's iPad capture, 2026-11-05. BEFORE PUBLISH: this capture shows the Debug row at the bottom of the menu (debug build only). Replace with a capture that hides it, or retouch with Josh's OK. -->
 <div class="screen-row screen-row-pad">
