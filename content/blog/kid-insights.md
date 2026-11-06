@@ -57,6 +57,8 @@ tags: [product, update]
     padding: 1rem; font-size: 0.85rem; color: var(--muted);
   }
   .screen-row figcaption { text-align: center; font-size: 0.85rem; color: var(--muted); font-style: italic; margin-top: 0.5rem; }
+  .screen-row-pad figure { flex: 0 1 320px; }
+  .screen-row img { width: 100%; height: auto; display: block; margin: 0; }
 </style>
 
 You can see which animals your kids are spending time with in the app, get conversation starters to use with them (parents want real conversations, and this is a way in), and find places near you where you can see those animals in real life. It's called Kid insights, in the grown-ups area (the burger menu on Home), arriving in the next update.
@@ -95,15 +97,15 @@ It works in the car, at dinner, or at bedtime: ask the question on the card, the
 
 ## Find a Place to See the Animal IRL
 
-On an animal page, "Where to see this animal" opens Find a place: it lists zoos, aquariums, and other places with that animal, or a close relative, near a city you save once, each with a distance and buttons to open it in Maps, share it, or visit its website, behind a parent check. Animals can move and places can close, so check the website before you go.
+You can find where to see the animals your kids are into, near you, in real life. There are two ways in: the Animal Finder, in the grown-ups area, where you can search for an animal or a place, or tap one of "Animals your kids love"; or "Where to see this animal" on an animal page. Either way, Wild Atlas shows nearby zoos, aquariums, and other places, each behind a parent check to open in Maps, share, or visit the website. If none nearby has that exact animal, it shows places with a close relative. Check the website before you go to make sure the animal's there.
 
-<!-- SCREEN SLOTS: placeholders for captures from the final signed-off build (sample data). Replace each .screen-slot div with an <img>. -->
-<div class="screen-row">
-  <figure><div class="screen-slot">SCREEN TO COME<br>List from Where to see this animal.</div><figcaption>Find a place: places near a saved city</figcaption></figure>
-  <figure><div class="screen-slot">SCREEN TO COME<br>The place sheet (what you type goes to Apple).</div><figcaption>Save a city once</figcaption></figure>
+<!-- Josh's iPad captures, 2026-11-05 (new build). -->
+<div class="screen-row screen-row-pad">
+  <figure><img src="/assets/blog/kid-insights/animal-finder-ipad.png" alt="The Animal Finder screen on an iPad: a saved city, a search box for an animal or place, and a row of animals under the heading Animals your kids love." width="858" height="1112" loading="lazy"><figcaption>Animal Finder</figcaption></figure>
+  <figure><img src="/assets/blog/kid-insights/find-a-place-ipad.png" alt="The Find a place screen for the African Elephant near Seattle: a note to check the website before you go, distance filters, the closest zoo, and a zoo with a close relative." width="854" height="1110" loading="lazy"><figcaption>Find a place, for one animal</figcaption></figure>
 </div>
 
-What you type goes to Apple, not Wild Atlas, to turn it into a place; what's kept is a city-level place name and a point rounded to about a kilometer, on your phone, removable anytime. It also fetches a small public file for the animal from wildatlasapp.com, which is why it needs a connection; the rest of Wild Atlas doesn't. The same finder lives on the website too, at [wildatlasapp.com/finder](https://wildatlasapp.com/finder/), with a map, filters, and a form to suggest a missing place.
+What you type goes to Apple, not Wild Atlas, to turn it into a place; what's kept is a city-level place name and a point rounded to about a kilometer, on your phone, removable anytime. It also fetches a small public file for the animal from wildatlasapp.com, which is why it needs a connection; the rest of Wild Atlas doesn't. The same finder lives on the website too, at [wildatlasapp.com/finder](https://wildatlasapp.com/finder/).
 
 ## What stays on your phone, and what doesn't
 
