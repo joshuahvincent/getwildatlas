@@ -26,6 +26,17 @@ group_of = {m: k for k, g in groups.items() for m in g['members']}
 animals = q("select id, common_name, pack, wild_only, in_the_wild from animals where pack in ('safari_stars','ocean_creatures','rainforest_explorers','feathered_friends','reptile_world','wild_americas','planet_pioneers','dino_roars','farm_friends','calendar') order by pack, common_name")
 anim = {a['id']: a for a in animals}
 places = q("select id,name,type,town,region,country,lat,lng,url,accreditation,image_file,image_license,image_author,status,area_km2,unesco from places where status='open' and lat is not null and lng is not null order by country, name")
+# Index stability (getwildatlas#79): the app and js/zoos.js address places.json rows by array position, so a place
+# inserted or removed mid-array silently re-points every a/<animal>.json. Keep the published order, append new places at the end.
+_prev_file = os.path.join(OUT, 'places.json')
+if os.path.exists(_prev_file):
+    _prev_ids = [p['id'] for p in json.load(open(_prev_file))]
+    _by_id = {p['id']: p for p in places}
+    _lost = [i for i in _prev_ids if i not in _by_id]
+    if _lost:
+        sys.exit('places.json rows no longer exportable (%d, e.g. %s): dropping them would shift every later index. Keep the row, or ship with a schema bump (#79).' % (len(_lost), _lost[:3]))
+    _seen = set(_prev_ids)
+    places = [_by_id[i] for i in _prev_ids] + [p for p in places if p['id'] not in _seen]
 pidx = {p['id']: i for i, p in enumerate(places)}
 hold = q("select place_id,animal_id,match,species_seen,via,related_rationale,evidence_tier,check_status,display_until,source_url,confidence,obs_count from holdings where check_status!='gone' and animal_id in (select id from animals where pack in ('safari_stars','ocean_creatures','rainforest_explorers','feathered_friends','reptile_world','wild_americas','planet_pioneers','dino_roars','farm_friends','calendar'))")
 wild_ids = {p['id'] for p in places if p['type'] == 'sanctuary'}
