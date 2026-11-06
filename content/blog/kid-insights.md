@@ -91,7 +91,7 @@ Pick a child, from up to four, then Last 7 days or All time, and you'll see tota
 
 Tap an animal in the list, and you get things to talk about for it, right there.
 
-Once a week, a quiet reminder tells you which animals each of your kids has been into, and opens straight to that child's top animal in Kid insights. It's off until you turn it on, made on your phone, and you pick the day and time.
+You can set up a reminder once a week that will tell you which animals your kids have been into. You pick the day and time.
 
 <!-- PENDING-BUILD: starters + Words to learn; delete this section if the build slips -->
 ## Conversation Starters
