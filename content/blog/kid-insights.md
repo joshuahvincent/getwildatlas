@@ -96,7 +96,7 @@ You can set up a reminder once a week that will tell you which animals your kids
 <!-- PENDING-BUILD: starters + Words to learn; delete this section if the build slips -->
 ## Conversation Starters
 
-Parents want to have real conversations with their kids about what they're into, and it's hard to start one from nothing. On animal pages, this gives you a way in. The in-app label is "Things to talk about," and it pairs a question to ask out loud with a Did you know line and three quick facts about that animal, all built from facts already on the page. Right next to it, Fun Words to Learn shows four word chips from that animal; tap one and it shows you what it means.
+Parents want to have real conversations with their kids about what they're into, and it's hard to start one from nothing. In Kid insights, tap an animal your kids spent time with, and you get a way in. The in-app label is "Things to talk about," and it pairs a question to ask out loud with a Did you know line and three quick facts about that animal. Right next to it, Fun Words to Learn shows four word chips from that animal; tap one and it shows you what it means.
 
 <!-- Josh's captures, 2026-11-06 (new build, Dolphin). -->
 <div class="screen-row screen-row-crop">
@@ -109,7 +109,7 @@ It works in the car, at dinner, or at bedtime: ask the question on the card, the
 
 ## Find a Place to See the Animal IRL
 
-You can find where to see the animals your kids are into, near you, in real life. There are two ways in: the Animal Finder, in the grown-ups area, where you can search for an animal or a place, or tap one of "Animals your kids love"; or "Where to see this animal" on an animal page. Either way, Wild Atlas shows nearby zoos, aquariums, and other places, each behind a parent check to open in Maps, share, or visit the website. If none nearby has that exact animal, it shows places with a close relative. Check the website before you go to make sure the animal's there.
+You can find where to see the animals your kids are into, near you, in real life. There are two ways in: the Animal Finder, in the grown-ups area, where you can search for an animal or a place, or tap one of "Animals your kids love"; or "Where to see this animal" when you open an animal in Kid insights. Either way, Wild Atlas shows nearby zoos, aquariums, and other places, each behind a parent check to open in Maps, share, or visit the website. If none nearby has that exact animal, it shows places with a close relative. Check the website before you go to make sure the animal's there.
 
 <!-- Josh's iPad captures, 2026-11-05 (new build). -->
 <div class="screen-row screen-row-pad">
