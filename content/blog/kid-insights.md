@@ -3,8 +3,10 @@ layout: layouts/post.njk
 title: "New in Wild Atlas: Kid Insights and the Animal Finder"
 date: 2026-12-01
 author: Wild Atlas
-excerpt: "See which animals your kids are spending time with in the app, get conversation starters to use with them, and find places near you to see those animals in real life."
+excerpt: "Parents want real conversations with their kids, and Kid insights gives you a way in: see which animals they love, get conversation starters, and find places to see them in real life."
 permalink: /blog/kid-insights/
+coverImage: /assets/blog/kid-insights-cover.jpg
+thumbImage: /assets/blog/thumbs/kid-insights.jpg
 status: draft
 tags: [product, update]
 ---
@@ -58,10 +60,18 @@ tags: [product, update]
   }
   .screen-row figcaption { text-align: center; font-size: 0.85rem; color: var(--muted); font-style: italic; margin-top: 0.5rem; }
   .screen-row-pad figure { flex: 0 1 320px; }
+  .screen-row-wide figure { flex: 0 1 460px; }
   .screen-row img { width: 100%; height: auto; display: block; margin: 0; }
 </style>
 
-You can see which animals your kids are spending time with in the app, get conversation starters to use with them (parents want real conversations, and this is a way in), and find places near you where you can see those animals in real life. It's called Kid insights, in the grown-ups area (the burger menu on Home), arriving in the next update.
+Parents want real conversations with their kids, and this gives you a way in. See which animals they're spending time with in the app, get conversation starters for those animals, and find places near you to see them in real life. They're called Kid insights and the Animal Finder, in the grown-ups area (the burger menu on Home), in the next update.
+
+A lot of you have asked how to use what your kids are doing in the app to talk with them, and what to do together. This release is us listening and building it. There's more coming, but for now, it gives you a clear look at how your kids use the app, and things to talk about with them.
+
+<!-- Josh's iPad capture, 2026-11-05. BEFORE PUBLISH: this capture shows the Debug row at the bottom of the menu (debug build only). Replace with a capture that hides it, or retouch with Josh's OK. -->
+<div class="screen-row screen-row-pad">
+  <figure><img src="/assets/blog/kid-insights/grown-ups-menu-ipad.webp" alt="The Wild Atlas Home screen on an iPad with the menu open, listing Settings, Kid insights, Animal Finder, Shop and About." width="862" height="1120" loading="lazy"><figcaption>The grown-ups menu on Home</figcaption></figure>
+</div>
 
 <!-- VERSION: TBD -->
 
@@ -69,22 +79,21 @@ You can see which animals your kids are spending time with in the app, get conve
 
 ## Kid insights: what it shows
 
-Pick a child, from up to four, then Last 7 days or All time. Say it's Mia's, over one month: total time with animals, how many animals, how many visits, and a Top animals list with time and visits for each one.
+Pick a child, from up to four, then Last 7 days or All time, and you'll see total time with animals, how many animals and visits, and a Top animals list. In the screen below, Sam's week: 29 minutes across 7 animals, with the Panda on top.
 
-<!-- SCREEN SLOTS: placeholders for captures from the final signed-off build (sample data). Replace each .screen-slot div with an <img>. -->
-<div class="screen-row">
-  <figure><div class="screen-slot">SCREEN TO COME<br>Mia, one month. Kid insights home, All time, Top animals.</div><figcaption>Kid insights, All time (sample data)</figcaption></figure>
-  <figure><div class="screen-slot">SCREEN TO COME<br>The in-Kid-insights animal page.</div><figcaption>An animal opened from Top animals</figcaption></figure>
+<!-- Josh's iPad capture, 2026-11-05 (new build, sample child Sam). -->
+<div class="screen-row screen-row-wide">
+  <figure><img src="/assets/blog/kid-insights/kid-insights-ipad.webp" alt="Kid insights on an iPad. On the left, a child's last 7 days: 29 minutes across 7 animals, with a Top animals list led by the Panda. On the right, the Giraffe opened, with Things to talk about: a question to ask and a Did you know fact." width="866" height="1130" loading="lazy"><figcaption>Kid insights, with an animal opened beside the list</figcaption></figure>
 </div>
 
-<!-- FILL FROM THE FINAL CAPTURE: Mia's All time total, number of animals, visits, and her top animal with its time and visits. The copywriter's first draft invented numbers here; none are verified. --> Tap an animal in the list and it opens inside Kid insights, so the two of you can look again; that tap adds no new visit or time. A visit only counts after a page's open and in use for at least three seconds.
+Tap an animal in the list and it opens inside Kid insights, with things to talk about for it, so the two of you can look again. That tap adds no new visit or time. A visit only counts after a page's open and in use for at least three seconds.
 
-Once a week, without you having to remember to look, a quiet reminder tells you which animals each of your kids has been into, and opens straight to that child's top animal in Kid insights. It's off until you turn it on, made on your phone, and you pick the day and time.
+Once a week, a quiet reminder tells you which animals each of your kids has been into, and opens straight to that child's top animal in Kid insights. It's off until you turn it on, made on your phone, and you pick the day and time.
 
 <!-- PENDING-BUILD: starters + Words to learn; delete this section if the build slips -->
 ## Conversation Starters
 
-Parents want to have real conversations with their kids about what they're into, and it's hard to start one from nothing. On animal pages, this gives you a way in. The in-app label is "Things to talk about," and it pairs a question to ask out loud with a Did you know line and three quick facts about that animal, all built from facts already on the page. Right next to it, Words to learn shows four word chips from that animal; tap one and it shows you what it means.
+Parents want to have real conversations with their kids about what they're into, and it's hard to start one from nothing. On animal pages, this gives you a way in. The in-app label is "Things to talk about," and it pairs a question to ask out loud with a Did you know line and three quick facts about that animal, all built from facts already on the page. Right next to it, Fun Words to Learn shows four word chips from that animal; tap one and it shows you what it means.
 
 <!-- SCREEN SLOTS: placeholders for captures from the final signed-off build (sample data). Replace each .screen-slot div with an <img>. -->
 <div class="screen-row">
