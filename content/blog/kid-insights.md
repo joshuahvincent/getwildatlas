@@ -89,7 +89,7 @@ Pick a child, from up to four, then Last 7 days or All time, and you'll see tota
   <figure><img src="/assets/blog/kid-insights/kid-insights-ipad.webp" alt="Kid insights on an iPad. On the left, a child's last 7 days: 29 minutes across 7 animals, with a Top animals list led by the Panda. On the right, the Giraffe opened, with Things to talk about: a question to ask and a Did you know fact." width="866" height="1130" loading="lazy"><figcaption>Kid insights, with an animal opened beside the list</figcaption></figure>
 </div>
 
-Tap an animal in the list and it opens inside Kid insights, with things to talk about for it, so the two of you can look again. That tap adds no new visit or time. A visit only counts after a page's open and in use for at least three seconds.
+Tap an animal in the list, and you get things to talk about for it, right there.
 
 Once a week, a quiet reminder tells you which animals each of your kids has been into, and opens straight to that child's top animal in Kid insights. It's off until you turn it on, made on your phone, and you pick the day and time.
 
