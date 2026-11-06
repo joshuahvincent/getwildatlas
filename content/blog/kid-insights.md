@@ -61,6 +61,9 @@ tags: [product, update]
   .screen-row figcaption { text-align: center; font-size: 0.85rem; color: var(--muted); font-style: italic; margin-top: 0.5rem; }
   .screen-row-pad figure { flex: 0 1 320px; }
   .screen-row-wide figure { flex: 0 1 460px; }
+  .screen-row-crop { align-items: flex-start; }
+  .screen-row-crop figure { flex: 0 1 280px; }
+  .screen-row-crop img { border-radius: 16px; box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14); }
   .screen-row img { width: 100%; height: auto; display: block; margin: 0; }
 </style>
 
@@ -95,10 +98,10 @@ Once a week, a quiet reminder tells you which animals each of your kids has been
 
 Parents want to have real conversations with their kids about what they're into, and it's hard to start one from nothing. On animal pages, this gives you a way in. The in-app label is "Things to talk about," and it pairs a question to ask out loud with a Did you know line and three quick facts about that animal, all built from facts already on the page. Right next to it, Fun Words to Learn shows four word chips from that animal; tap one and it shows you what it means.
 
-<!-- SCREEN SLOTS: placeholders for captures from the final signed-off build (sample data). Replace each .screen-slot div with an <img>. -->
-<div class="screen-row">
-  <figure><div class="screen-slot">SCREEN TO COME<br>An animal page with the Things to talk about card open.</div><figcaption>Things to talk about</figcaption></figure>
-  <figure><div class="screen-slot">SCREEN TO COME<br>An animal page, Words to learn with a word open.</div><figcaption>Words to learn</figcaption></figure>
+<!-- Josh's captures, 2026-11-06 (new build, Dolphin). -->
+<div class="screen-row screen-row-crop">
+  <figure><img src="/assets/blog/kid-insights/things-to-talk-about.png" alt="Things to talk about for the Dolphin: an Ask card with a question about the sound the animal makes and its answer shown, and a Did you know card." width="354" height="526" loading="lazy"><figcaption>Things to talk about</figcaption></figure>
+  <figure><img src="/assets/blog/kid-insights/fun-words-to-learn.png" alt="Fun Words to Learn for the Dolphin: the words Pod, Blowhole, Echolocation and Flipper, with Echolocation opened to show what it means and an example sentence." width="348" height="328" loading="lazy"><figcaption>Fun Words to Learn</figcaption></figure>
 </div>
 
 It works in the car, at dinner, or at bedtime: ask the question on the card, then let your child tell you the rest.
