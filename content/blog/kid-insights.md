@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: "What Did You Two Discover Today?"
 date: 2026-12-01
 author: Wild Atlas
-excerpt: "Kid insights gives you something real to talk about with your child: which animals they spent time with, so you're not starting from a guess."
+excerpt: "See which animals your kids are spending time with in the app, get conversation starters to use with them, and find places near you to see those animals in real life."
 permalink: /blog/kid-insights/
 status: draft
 tags: [product, update]
@@ -59,16 +59,15 @@ tags: [product, update]
   .screen-row figcaption { text-align: center; font-size: 0.85rem; color: var(--muted); font-style: italic; margin-top: 0.5rem; }
 </style>
 
-You hand over the phone for ten minutes: in the back seat, in a waiting room, over breakfast while you get one more thing done. When you get it back, you ask the question every parent asks: "what did you look at?" <!-- VERSION: TBD --> Kid insights, coming to the Grown-ups Area in the next update, gives you something to look at together instead of a guess. Most days, without it, the honest answer is a shrug, or a name you half remember from a nature show.
+You can see which animals your kids are spending time with in the app, get conversation starters to use with them (parents want real conversations, and this is a way in), and find places near you where you can see those animals in real life. It's called Kid insights, in the grown-ups area (the burger menu on Home), arriving in the next update.
 
-<div class="tldr">
-  <div class="tldr-label">TL;DR</div>
-  <p>Kid insights is a new screen in the Grown-ups Area, opened from the menu on Home. Pick a child, then Last 7 days or All time, and see how long they spent with animals, how many animals, how many visits, and which animals took the most time. It works for up to four children. The history stays on your phone unless you choose to share it, and you can clear it anytime. A weekly reminder is optional and off by default.</p>
-</div>
+<!-- VERSION: TBD -->
 
-## What it shows: Mia, one month
+<!-- PENDING-BUILD NOTE: the opening, excerpt and TL;DR mention conversation starters; trim that mention if the starters section is cut. -->
 
-Say your family has three explorers on the phone, and you tap into Mia's. Kid insights opens on her, showing Last 7 days by default. Switch to All time and a month of her play opens up at once: the total time she's spent with animals, how many different animals she's looked at, how many visits that adds up to, and a Top animals list underneath, each one with its own time and visit count.
+## Kid insights: what it shows
+
+Pick a child, from up to four, then Last 7 days or All time. Say it's Mia's, over one month: total time with animals, how many animals, how many visits, and a Top animals list with time and visits for each one.
 
 <!-- SCREEN SLOTS: placeholders for captures from the final signed-off build (sample data). Replace each .screen-slot div with an <img>. -->
 <div class="screen-row">
@@ -76,26 +75,27 @@ Say your family has three explorers on the phone, and you tap into Mia's. Kid in
   <figure><div class="screen-slot">SCREEN TO COME<br>The in-Kid-insights animal page.</div><figcaption>An animal opened from Top animals</figcaption></figure>
 </div>
 
-The screens in this post show sample data, not a real child's history. <!-- FILL FROM THE FINAL CAPTURE: Mia's All time total, number of animals, visits, and her top animal with its time and visits. The copywriter's first draft invented numbers here; none are verified. --> Tap an animal in her Top animals list and it opens its own page inside Kid insights, so the two of you can pull it back up and look at it again. That tap doesn't count as a new visit or add to her time; it's just the two of you looking back.
+<!-- FILL FROM THE FINAL CAPTURE: Mia's All time total, number of animals, visits, and her top animal with its time and visits. The copywriter's first draft invented numbers here; none are verified. --> Tap an animal in the list and it opens inside Kid insights, so the two of you can look again; that tap adds no new visit or time. A visit only counts after a page's open and in use for at least three seconds.
 
-## How a visit gets counted
-
-Kid insights only counts a visit once an animal's page has been open and actually in use for at least three seconds. A quick tap that bounces straight back out doesn't count, and time only adds up while that page is open and in use, not while she's somewhere else in the app. There's a "How this is counted" explainer inside the app itself, so you don't have to take our word for it secondhand.
+Once a week, without you having to remember to look, a quiet reminder tells you which animals each of your kids has been into, and opens straight to that child's top animal in Kid insights. It's off until you turn it on, made on your phone, and you pick the day and time.
 
 <!-- PENDING-BUILD: starters + Words to learn; delete this section if the build slips -->
-## Things to talk about, and words to learn
+## Conversation Starters
 
-On animal pages, a block called Things to talk about pulls together a question to ask out loud, a Did you know line, and three quick facts, all built from the same facts already on that animal's page. Right below it, Words to learn shows four word chips from that animal; tap one and it tells you what the word means. Mythical and extinct animals get fewer cards, since there's less to draw from, but the idea is the same: something ready-made to read aloud, ask about, or just look at together, instead of starting from nothing.
+Parents want to have real conversations with their kids about what they're into, and it's hard to start one from nothing. On animal pages, this gives you a way in. The in-app label is "Things to talk about," and it pairs a question to ask out loud with a Did you know line and three quick facts about that animal, all built from facts already on the page. Right next to it, Words to learn shows four word chips from that animal; tap one and it shows you what it means.
+
 <!-- SCREEN SLOTS: placeholders for captures from the final signed-off build (sample data). Replace each .screen-slot div with an <img>. -->
 <div class="screen-row">
   <figure><div class="screen-slot">SCREEN TO COME<br>An animal page with the Things to talk about card open.</div><figcaption>Things to talk about</figcaption></figure>
   <figure><div class="screen-slot">SCREEN TO COME<br>An animal page, Words to learn with a word open.</div><figcaption>Words to learn</figcaption></figure>
 </div>
+
+It works in the car, at dinner, or at bedtime: ask the question on the card, then let your child tell you the rest.
 <!-- /PENDING-BUILD -->
 
-## Find a place
+## Find a Place to See the Animal IRL
 
-Animal pages already tell your child where an animal lives in the wild. The next update adds a way to find it closer to home. Open "Where to see this animal" on an animal page and it opens Find a place: save a city, postcode, or address once, and Wild Atlas lists zoos, aquariums, and other places with that animal, or a close relative, near it, each with a distance, "Accredited" noted where it applies, and buttons to open it in Maps, share it, or visit its website. All three sit behind a parent check. There's a plain notice, too: check the website before you go, since animals can move and places can close.
+On an animal page, "Where to see this animal" opens Find a place: it lists zoos, aquariums, and other places with that animal, or a close relative, near a city you save once, each with a distance and buttons to open it in Maps, share it, or visit its website, behind a parent check. Animals can move and places can close, so check the website before you go.
 
 <!-- SCREEN SLOTS: placeholders for captures from the final signed-off build (sample data). Replace each .screen-slot div with an <img>. -->
 <div class="screen-row">
@@ -103,37 +103,18 @@ Animal pages already tell your child where an animal lives in the wild. The next
   <figure><div class="screen-slot">SCREEN TO COME<br>The place sheet (what you type goes to Apple).</div><figcaption>Save a city once</figcaption></figure>
 </div>
 
-Here's what actually happens with what you type: it goes to Apple, to turn an address into a place, not to Wild Atlas. What gets saved is a city-level label and a point rounded to about a kilometer, kept on your phone, and you can remove it anytime. To build the list of nearby places, the app also fetches a small public file for the animal you're looking at from wildatlasapp.com. That request carries no search text, no child, and no saved place, just a request for that one animal's file, so our host can see that a file for a given animal was asked for, along with an IP address, the way any website can see that much about any visit. Find a place needs a connection to work. The rest of Wild Atlas doesn't.
-
-The same finder also lives on the website, at [wildatlasapp.com/finder](https://wildatlasapp.com/finder/), in case you'd rather look something up from a laptop. It adds a map view next to the list, filters for distance and type of place, works in any browser with no app required, and has a form to suggest a place we're missing. One thing worth being plain about, on the app or the website: a badge on a place (AZA, CAZA, EAZA, BIAZA, ZAA) means it belongs to that zoo association, not a rating from us; a place with no badge may be accredited by a different body, or not at all, so it's worth checking yourself. Every place listed, badge or not, is independent of Wild Atlas, and being listed doesn't mean it works with us.
-
-## The weekly reminder
-
-If you'd like a nudge to check in, there's an optional weekly reminder, off until you turn it on. It's one reminder per phone, not per child, and you pick the day and time. It's set up entirely on your phone, with nothing about your explorers sent anywhere to make it happen. A "show names and animals" switch decides whether the reminder text names the child and their top animal, or stays generic, and it's worth knowing that anyone who can see your lock screen can read whatever it says, unless you've hidden notification previews. Tap the reminder and it opens Kid insights, straight to that child's top animal. If you turn notifications off for Wild Atlas in iPhone Settings, everything else in the app, including Kid insights itself, still works exactly the same.
-
-<!-- SCREEN SLOTS: placeholders for captures from the final signed-off build (sample data). Replace each .screen-slot div with an <img>. -->
-<div class="screen-row">
-  <figure><div class="screen-slot">SCREEN TO COME<br>The setup sheet with day, time and the names switch.</div><figcaption>Weekly reminder setup</figcaption></figure>
-  <figure><div class="screen-slot">SCREEN TO COME<br>The notification text, names on.</div><figcaption>The reminder on the lock screen (sample)</figcaption></figure>
-</div>
+What you type goes to Apple, not Wild Atlas, to turn it into a place; what's kept is a city-level place name and a point rounded to about a kilometer, on your phone, removable anytime. It also fetches a small public file for the animal from wildatlasapp.com, which is why it needs a connection; the rest of Wild Atlas doesn't. The same finder lives on the website too, at [wildatlasapp.com/finder](https://wildatlasapp.com/finder/), with a map, filters, and a form to suggest a missing place.
 
 ## What stays on your phone, and what doesn't
 
-A plain list, because this is the part worth being plain about:
+- Your child's play history stays on this device unless you share it, and you can clear it anytime.
+- The weekly reminder is made on your phone; nothing about your explorers is sent to set it up. It shows your kids' names and top animals unless you switch that off, and anyone who can see your lock screen can read it.
+- Find a place sends what you type to Apple, not to Wild Atlas, and fetches a small public file for the animal from wildatlasapp.com, which is why it needs a connection.
 
-- There is nothing to switch on: Wild Atlas keeps each child's play history on the phone automatically as they explore, and you can clear it anytime.
-- The play history shown in Kid insights stays on your phone unless you choose to share it. In the app's own words: "The play history shown here stays on this device unless you share it."
-- You can clear a child's history anytime. It asks you to confirm, then asks for a parent check. Their collection and progress aren't touched.
-- Sharing a summary as text, through the system share sheet, sits behind that same parent check, and the text names the child.
-- The weekly reminder, if you turn it on, is made on your phone with nothing about your explorers sent to set it up.
-- Find a place sends what you type to Apple, never to Wild Atlas, and saves only a rounded, city-level location on your phone.
-- The website's Finder offers "Use my location" to sort nearby places by distance; by the page's own words, that location "stays in your browser" and is never sent anywhere, and you can clear it with "Forget my location." That's different from the app: Find a place in Wild Atlas never uses your location, only a city you type yourself.
-- Anonymous usage statistics, if your family has them on, "count animals and visit lengths in total, never an individual child" (the app's own words). Inside Kid insights specifically, what gets counted is narrower still: things like the screen being opened, or 7 days being switched to All time. No child, animal, or duration is attached to any of it.
-
-Wild Atlas doesn't receive what stays on your phone. There are no ads in Wild Atlas and no accounts to sign into, and Kid insights doesn't change that.
+No ads, no accounts, in Kid insights or anywhere else in Wild Atlas.
 
 ## Where to find it
 
-Kid insights will live in the Grown-ups Area, opened from the menu on Home, in the next update. Nothing to set up first: pick a child, and it's there.
+Kid insights lands in the grown-ups area in the next update.
 
 *Raise explorers, not scrollers.*
