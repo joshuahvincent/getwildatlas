@@ -1,7 +1,8 @@
 """Export the wildatlas-places D1 database -> static JSON served from /assets/zoos/ (places.json, animals.json, a/<animal>.json).
 The database is the source of truth; this regenerates what the page reads. Needs wrangler logged in to the Wild Atlas Cloudflare account.
 Usage (from the website repo root):  python3 scripts/zoos/export_site_data.py <path to wrangler binary>"""
-import json, os, subprocess, sys, datetime
+import json, os, subprocess, sys, datetime, hashlib
+SCHEMA = 1   # bump only for a breaking change (key rename/removal, tuple reorder or meaning change); coordinate with an app release. See docs/zoo-data-contract.md
 # a row is shown as 'unconfirmed' if its evidence is weak OR the monthly liveness check flagged it (needs_review / changed / unchecked)
 WEAK_STATUS = {'needs_review', 'changed'}
 def weak(h): return h['evidence_tier'] != 'strong' or h['check_status'] in WEAK_STATUS
@@ -58,7 +59,10 @@ for p in places:
     P.append({'id': p['id'], 'n': p['name'], 't': 'wild' if wildp else p['type'], 'la': round(p['lat'], 4), 'lo': round(p['lng'], 4), 'ci': p.get('town') or '', 'rg': p.get('region') or '', 'cc': p.get('country') or '',
               'u': p.get('url') or '', 'ac': p.get('accreditation') or '', 'ph': photo_ext(p), 'cr': cr, 'wf': p['image_file'] if p.get('image_file') else '', **({'un': 1} if p.get('unesco') else {})})
 os.makedirs(os.path.join(OUT, 'a'), exist_ok=True)
-json.dump([{k: v for k, v in p.items() if k != 'wf'} for p in P], open(os.path.join(OUT, 'places.json'), 'w'), separators=(',', ':'), ensure_ascii=False)
+places_bytes = json.dumps([{k: v for k, v in p.items() if k != 'wf'} for p in P], separators=(',', ':'), ensure_ascii=False).encode('utf-8')
+open(os.path.join(OUT, 'places.json'), 'wb').write(places_bytes)
+# one revision token per generation of places.json: every animal file carries it, so a client can tell when a cached a/<id>.json no longer matches its places.json
+PLACES_REV = hashlib.sha256(places_bytes).hexdigest()[:12]
 json.dump({p['id']: p['wf'] for p in P if p['wf']}, open(os.path.join(ROOT, 'scripts', 'zoos', 'photo_files.json'), 'w'), indent=0)
 farm_idx = [pidx[p['id']] for p in places if p['type'] == 'farm']
 cover = []
@@ -81,9 +85,10 @@ for aid, a in anim.items():
             have = sorted(by_place_animals.get(p['id'], set()) & mem)
             if have and pidx[p['id']] not in taken and p['type'] != 'farm':
                 g.append([pidx[p['id']], ','.join(have[:3])])
-    doc = {'id': aid, 'name': a['common_name'], 'kind': kind, 'wild_only': bool(a['wild_only']), 'e': e, 'r': r, 'g': g, 'w': w}
+    doc = {'schema': SCHEMA, 'places_rev': PLACES_REV, 'id': aid, 'name': a['common_name'], 'kind': kind, 'wild_only': bool(a['wild_only']), 'e': e, 'r': r, 'g': g, 'w': w}
     if gk: doc['group'] = {'key': gk, 'label': groups[gk]['label']}
     json.dump(doc, open(os.path.join(OUT, 'a', aid + '.json'), 'w'), separators=(',', ':'), ensure_ascii=False)
     cover.append({'id': aid, 'n': a['common_name'], 'pack': a['pack'], 'k': kind, 'e': len(e), 'r': len(r), 'g': len(g), 'w': len(w)})
-json.dump({'generated': TODAY, 'animals': cover, 'groups': {k: {'label': v['label'], 'members': v['members']} for k, v in groups.items()}}, open(os.path.join(OUT, 'animals.json'), 'w'), separators=(',', ':'), ensure_ascii=False)
+json.dump({'schema': SCHEMA, 'places_rev': PLACES_REV, 'generated': TODAY, 'animals': cover, 'groups': {k: {'label': v['label'], 'members': v['members']} for k, v in groups.items()}}, open(os.path.join(OUT, 'animals.json'), 'w'), separators=(',', ':'), ensure_ascii=False)
+json.dump({'schema': SCHEMA, 'places_rev': PLACES_REV, 'generated': TODAY, 'places': len(P), 'animals': len(cover)}, open(os.path.join(OUT, 'manifest.json'), 'w'), separators=(',', ':'))
 print('places', len(P), 'animals', len(cover), 'holdings used', sum(len(v) for v in by_animal.values()))
