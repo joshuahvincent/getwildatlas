@@ -117,8 +117,6 @@ You can find where to see the animals your kids are into, near you, in real life
   <figure><img src="/assets/blog/kid-insights/find-a-place-ipad.png" alt="The Find a place screen for the African Elephant near Seattle: a note to check the website before you go, distance filters, the closest zoo, and a zoo with a close relative." width="854" height="1110" loading="lazy"><figcaption>Find a place, for one animal</figcaption></figure>
 </div>
 
-What you type goes to Apple, not Wild Atlas, to turn it into a place; what's kept is a city-level place name and a point rounded to about a kilometer, on your phone, removable anytime. It also fetches a small public file for the animal from wildatlasapp.com, which is why it needs a connection; the rest of Wild Atlas doesn't. The same finder lives on the website too, at [wildatlasapp.com/finder](https://wildatlasapp.com/finder/).
-
 ## What stays on your phone, and what doesn't
 
 - Your child's play history stays on this device unless you share it, and you can clear it anytime.
