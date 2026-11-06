@@ -10,7 +10,7 @@ Routing rules: see `docs/content-strategy.md` in the wildatlas repo.
 | Title | URL | Status | Notes |
 |---|---|---|---|
 | Why I Built This | /blog/why-i-built-this/ | ✅ Live | Founder story. Launch post. |
-| What Did You Two Discover Today? (Kid insights) | /blog/kid-insights/ | 🟡 Draft, not scheduled | Brand voice, author Wild Atlas, `status: draft` (never built). Advisor gates run 2026-11-05 (Child Psychology, Chief Naturalist; no animal claims). Needs: final-build screenshots (sample data, Josh sees first), Mia's real numbers, starters block build check, version number. Publishes only after the app version ships and Josh approves. |
+| New in Wild Atlas: Kid Insights and the Animal Finder | /blog/kid-insights/ | 🟡 Draft, not scheduled | Brand voice, author Wild Atlas, `status: draft` (never built). Advisor gates run 2026-11-05 (Child Psychology, Chief Naturalist; no animal claims). Needs: final-build screenshots (sample data, Josh sees first), Mia's real numbers, starters block build check, version number. Publishes only after the app version ships and Josh approves. |
 
 ---
 

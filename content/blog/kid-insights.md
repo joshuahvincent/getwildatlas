@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: "What Did You Two Discover Today?"
+title: "New in Wild Atlas: Kid Insights and the Animal Finder"
 date: 2026-12-01
 author: Wild Atlas
 excerpt: "See which animals your kids are spending time with in the app, get conversation starters to use with them, and find places near you to see those animals in real life."
