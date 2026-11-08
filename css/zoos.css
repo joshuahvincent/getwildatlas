@@ -330,3 +330,10 @@ main:has(> .zf), main:has(.zf) { padding-top: .5rem; }
 /* the locate button is just the symbol; the words stay for screen readers */
 .zf-locate .zf-locate-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
 @media (min-width: 641px) { .zf-locate { padding: 0; width: 44px; min-width: 44px; min-height: 44px; display: grid; place-items: center; } }
+
+/* not found: a plain card with a red alert mark, then the nearest accredited zoos */
+.zf-notfound { display: flex; gap: .8rem; align-items: flex-start; background: #fff; border: 2px solid #C62828; border-radius: 14px; padding: .9rem 1rem; margin: 0 0 .9rem; }
+.zf-nf-mark { flex: none; width: 2rem; height: 2rem; border-radius: 50%; background: #C62828; color: #fff; font: 800 1.25rem/2rem inherit; font-family: inherit; text-align: center; }
+.zf-nf-title { font-size: 1.05rem; margin: 0 0 .25rem; line-height: 1.25; }
+.zf-nf-text p { margin: 0; font-size: .95rem; }
+.zf-nf-more { margin: .8rem 0 0; }

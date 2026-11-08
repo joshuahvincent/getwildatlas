@@ -24,6 +24,7 @@ const START_VIEW = OC.includes(HOME_CC) ? [[108, -48], [180, -9]] : EU.includes(
 const TIER_NAME = ['exact', 'unconfirmed', 'relative', 'relative', 'similar', 'wild'];
 function track(name, params) { try { if (typeof window.gtag === 'function') window.gtag('event', name, params || {}); } catch (e) { /* analytics must never break the page */ } }
 let lastEmpty = '';
+const THREATENED = new Set((() => { try { return JSON.parse(document.getElementById('zf-threatened').textContent); } catch (e) { return []; } })());
 
 const $ = (id) => document.getElementById(id);
 const TYPE_GROUPS = [['zoo', 'Zoos'], ['aquarium', 'Aquariums'], ['museum', 'Museums'], ['farm', 'Farms and petting zoos'], ['wild', 'National parks and reserves']];
@@ -200,14 +201,34 @@ function render() {
   if (wildFirst && wildSec) box.append(wildSec);
   if (exact.length) box.append(section(noun + d.name, '(' + exact.length + ')', exact));
   if (rel.length) box.append(section('Places with a close relative', '(' + rel.length + ')', rel));
-  if (grp.length) {
+  // Not found: no place lists this animal or a close relative, and no park has recorded it. Say so plainly, then show the nearest accredited zoos that may have animals like it.
+  const notFound = !d.wild_only && d.kind !== 'farm' && !d.e.length && !d.r.length && !(d.w || []).length;
+  if (notFound) {
+    const NOUN = { 'hoofed animals': 'hoofed animals', 'monkeys, apes and lemurs': 'primates' };   // the app's group nouns; every other group reads "animals like this one"
+    const noun = (d.group && NOUN[d.group.label]) || 'animals like this one';
+    const ACC = /^(AZA|CAZA|EAZA|BIAZA|ZAA|JAZA|WAZA)\b/;
+    let near = grp.filter((c) => c.p.t !== 'wild' && c.p.ac && c.p.ac.split(',').some((a) => ACC.test(a.trim())));
+    if (!near.length) near = sortCands(allCandidates()).filter(visible).filter((c) => c.p.t !== 'wild' && c.p.t !== 'farm' && c.p.t !== 'museum' && c.p.ac && c.p.ac.split(',').some((a) => ACC.test(a.trim()))).slice(0, 30);
+    const rare = THREATENED.has(d.id);   // threatened animal: the "at risk in the wild" card (no zoo list); everything else gets the nearest accredited zoos
+    const mark = el('span', { class: 'zf-nf-mark', 'aria-hidden': 'true', text: '!' });
+    const card = rare
+      ? el('div', { class: 'zf-notfound', role: 'status' }, mark, el('div', { class: 'zf-nf-text' },
+          el('h2', { class: 'zf-nf-title', text: "We couldn't find a place for this animal" }),
+          el('p', { text: "Our list may be missing a place, and this animal is at risk in the wild. Check a zoo's website to be sure." })))
+      : el('div', { class: 'zf-notfound', role: 'status' }, mark, el('div', { class: 'zf-nf-text' },
+          el('h2', { class: 'zf-nf-title', text: "We don't know of a place for this animal yet" }),
+          el('p', { text: 'Our list may be missing some places. These nearby accredited zoos may have ' + noun + '.' })));
+    box.append(card);
+    if (!rare && near.length) box.append(cardList(near));
+    box.append(el('p', { class: 'zf-nf-more' }, el('button', { type: 'button', class: 'zf-btn zf-btn-quiet', id: 'zf-another', text: 'Pick another animal' })));
+  } else if (grp.length) {
     const label = d.kind === 'farm' ? 'Farms and petting zoos' : 'More places with ' + (d.group ? d.group.label : 'similar animals') + ' (this animal may not be there)';
     const body = cardList(grp);
     if (exact.length || rel.length) box.append(el('details', { class: 'zf-more' }, el('summary', { text: label + ' (' + grp.length + ')' }), body));
     else box.append(el('section', { class: 'zf-sec' }, el('h2', {}, label, el('small', { text: ' (' + grp.length + ')' })), body));
   }
   if (wildSec && !wildFirst) box.append(wildSec);
-  if (!all.length) {
+  if (!all.length && !notFound) {
     const total = d.e.length + d.r.length + d.g.length + (d.w || []).length;
     const e = el('div', { class: 'zf-empty' }, el('p', { text: filtered() && total ? 'No places match these filters.' : total ? 'Nothing within that distance.' : 'We have not found a place for this one yet. We are still checking.' }));
     if (total && Number.isFinite(S.maxKm)) e.append(el('button', { type: 'button', class: 'zf-btn', id: 'zf-widen', text: 'Search any distance' }));
@@ -230,7 +251,7 @@ function render() {
   }
   $('zf-status').textContent = msg;
   const near2 = [...primary.slice(0, 1), ...wild.slice(0, 1)].sort((a, b) => (a.km || 0) - (b.km || 0))[0] || all[0];
-  const emptyReason = !all.length ? ((d.e.length + d.r.length + d.g.length + (d.w || []).length) ? 'none_in_range' : 'no_data') : (S.origin && near2 && near2.km > FAR_KM ? 'far' : '');
+  const emptyReason = notFound ? 'not_found' : !all.length ? ((d.e.length + d.r.length + d.g.length + (d.w || []).length) ? 'none_in_range' : 'no_data') : (S.origin && near2 && near2.km > FAR_KM ? 'far' : '');
   const sig = emptyReason ? d.id + '|' + emptyReason : '';
   if (sig && sig !== lastEmpty) track('zoo_empty_state', { animal_id: d.id, reason: emptyReason });
   lastEmpty = sig;

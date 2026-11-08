@@ -67,5 +67,8 @@ module.exports = () => {
   });
   const kinds = [["wild", "Wild animals"], ["dino", "Dinosaurs"], ["farm", "Farm animals"]];
   const directory = kinds.map(([k, label]) => ({ label, animals: animals.filter((a) => a.kind === k).sort((x, y) => x.name.localeCompare(y.name)).map((a) => ({ slug: a.slug, name: a.name })) }));
-  return { generated: meta.generated, animals, directory };
+  // threatened animals (IUCN VU/EN/CR in the app catalog): the not-found state uses the "at risk in the wild" card for these
+  const appCat = require("./appAnimals.json").animals || {};
+  const threatened = animals.filter((a) => appCat[a.id] && ["VU", "EN", "CR"].includes(appCat[a.id].iucn)).map((a) => a.id);
+  return { generated: meta.generated, animals, directory, threatened };
 };
