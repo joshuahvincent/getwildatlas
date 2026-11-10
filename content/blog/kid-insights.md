@@ -76,6 +76,12 @@ A lot of you have asked two things: how to explore Wild Atlas with your kid, and
   <figure><img src="/assets/blog/kid-insights/grown-ups-menu-ipad.webp" alt="The Wild Atlas Home screen on an iPad with the menu open, listing Settings, Kid insights, Animal Finder, Shop and About." width="862" height="1120" loading="lazy"><figcaption>The grown-ups menu on Home</figcaption></figure>
 </div>
 
+## See it in motion
+
+<video controls playsinline preload="metadata" poster="/assets/blog/kid-insights-new-features-poster.jpg" style="width:100%;max-width:360px;display:block;margin:0 auto;border-radius:12px"><source src="/assets/blog/kid-insights-new-features.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+
+*A short look at Kid insights: a child's week and top animals, the weekly reminder screen, Things to talk about, Fun Words to Learn, and a search in the Animal Finder, from typing the name to the zoos nearby.*
+
 <!-- VERSION: TBD -->
 
 <!-- PENDING-BUILD NOTE: the opening, excerpt and TL;DR mention conversation starters; trim that mention if the starters section is cut. -->
