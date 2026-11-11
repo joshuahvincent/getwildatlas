@@ -67,7 +67,7 @@ tags: [product, update]
   .screen-row img { width: 100%; height: auto; display: block; margin: 0; }
 </style>
 
-A lot of you asked how to explore Wild Atlas with your kid, and turn app time into conversation. In the next update, Kid insights and the Animal Finder, in the grown-ups area (the burger menu on Home), show which animals your kids spend time with, give conversation starters, and find places nearby in real life. This release is us listening, more on the way.
+A lot of you asked how to explore Wild Atlas with your kid, and turn app time into conversation. In the next update, Kid insights and the Animal Finder, in the grown-ups area (the burger menu on Home), show which animals your kids spend time with, give conversation starters, and find places nearby in real life. This release is for you.
 
 ## See it in motion
 
