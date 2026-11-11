@@ -69,7 +69,7 @@ tags: [product, update]
 
 A lot of you asked how to explore Wild Atlas with your kid, and turn app time into conversation. In the next update, Kid insights and the Animal Finder, in the grown-ups area (the burger menu on Home), show which animals your kids spend time with, give conversation starters, and find places nearby in real life. This release is for you.
 
-## See it in motion
+## Wild Atlas 2.1 Walkthrough
 
 <video controls playsinline preload="metadata" poster="/assets/blog/kid-insights-new-features-poster.jpg" aria-label="Walkthrough video of Kid insights and the Animal Finder, with narration" style="width:100%;max-width:420px;height:auto;aspect-ratio:9/16;display:block;margin:0 auto;border-radius:12px;background:#fff8ec"><source src="/assets/blog/kid-insights-new-features.mp4" type="video/mp4">Your browser does not support the video tag. <a href="/assets/blog/kid-insights-new-features.mp4">Download the walkthrough video (MP4)</a>.</video>
 
