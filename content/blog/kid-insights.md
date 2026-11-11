@@ -1,17 +1,14 @@
 ---
 layout: layouts/post.njk
 title: "New in Wild Atlas: Kid Insights and the Animal Finder"
-date: 2026-12-01
+date: 2026-11-11
 author: Wild Atlas
 excerpt: "Parents want real conversations with their kids, and Kid insights gives you a way in: see which animals they love, get conversation starters, and find places to see them in real life."
 permalink: /blog/kid-insights/
 coverImage: /assets/blog/kid-insights-cover.jpg
 thumbImage: /assets/blog/thumbs/kid-insights.jpg
-status: draft
 tags: [product, update]
 ---
-
-<!-- VERSION: TBD. The post says "the next update" everywhere; fill in the version Roger ships. Needs the final-build screenshots, the sample numbers, and the starters build check (see PENDING-BUILD) before it can leave draft. -->
 
 <style>
   .tldr {
@@ -71,24 +68,19 @@ tags: [product, update]
   .screen-row img { width: 100%; height: auto; display: block; margin: 0; }
 </style>
 
-A lot of you asked how to explore Wild Atlas with your kid, and turn app time into conversation. In the next update, Kid insights and the Animal Finder, in the grown-ups area (the burger menu on Home), show which animals your kids spend time with, give conversation starters, and find places nearby in real life. This release is for you.
+A lot of you asked how to explore Wild Atlas with your kid, and turn app time into conversation. In Wild Atlas 2.1, Kid insights and the Animal Finder, in the grown-ups area (the burger menu on Home), show which animals your kids spend time with, give conversation starters, and find places nearby in real life. This release is for you.
 
 ## Wild Atlas 2.1 Walkthrough
 
 <video controls playsinline preload="metadata" poster="/assets/blog/kid-insights-new-features-poster.jpg" aria-label="Walkthrough video of Kid insights and the Animal Finder, with narration" style="width:100%;max-width:420px;height:auto;aspect-ratio:9/16;display:block;margin:0 auto;border-radius:12px;background:#fff8ec"><source src="/assets/blog/kid-insights-new-features.mp4" type="video/mp4">Your browser does not support the video tag. <a href="/assets/blog/kid-insights-new-features.mp4">Download the walkthrough video (MP4)</a>.</video>
-
-<!-- VERSION: TBD -->
-
-<!-- PENDING-BUILD NOTE: the opening, excerpt and TL;DR mention conversation starters; trim that mention if the starters section is cut. -->
 
 ## Kid insights: what it shows
 
 Pick a child, from up to four, then Last 7 days or All time, and you'll see total time with animals, how many animals and visits, and a Top animals list. In the screen below, Sam's week: 29 minutes across 7 animals, with the Panda on top.
 
 <!-- Josh's iPad capture, 2026-11-05 (new build, sample child Sam). -->
-<!-- Josh's iPad capture, 2026-11-05. BEFORE PUBLISH: this capture shows the Debug row at the bottom of the menu (debug build only). Replace with a capture that hides it, or retouch with Josh's OK. -->
 <div class="screen-row screen-row-wide screen-row-menu-kid">
-  <figure><img src="/assets/blog/kid-insights/grown-ups-menu-ipad.webp" alt="The Wild Atlas Home screen on an iPad with the menu open, listing Settings, Kid insights, Animal Finder, Shop and About." width="862" height="1120" loading="lazy"><figcaption>The grown-ups menu on Home</figcaption></figure>
+  <figure><img src="/assets/blog/kid-insights/grown-ups-menu-ipad.webp" alt="The Wild Atlas Home screen on an iPad with the menu open, listing Settings, Kid insights, Animal Finder, Shop and About." width="862" height="497" loading="lazy"><figcaption>The grown-ups menu on Home</figcaption></figure>
   <figure><img src="/assets/blog/kid-insights/kid-insights-ipad.webp" alt="Kid insights on an iPad. On the left, a child's last 7 days: 29 minutes across 7 animals, with a Top animals list led by the Panda. On the right, the Giraffe opened, with Things to talk about: a question to ask and a Did you know fact." width="866" height="1130" loading="lazy"><figcaption>Kid insights, with an animal opened beside the list</figcaption></figure>
 </div>
 
@@ -96,7 +88,6 @@ Tap an animal in the list, and you get things to talk about for it, right there.
 
 You can set up a reminder once a week that will tell you which animals your kids have been into. You pick the day and time.
 
-<!-- PENDING-BUILD: starters + Words to learn; delete this section if the build slips -->
 ## Conversation Starters
 
 In Kid insights, tap an animal your kids spent time with, and you'll have something to talk about. The in-app label is "Things to talk about," and it pairs a question to ask out loud with a Did you know line and three quick facts about that animal. Right next to it, Fun Words to Learn shows four word chips from that animal; tap one and it shows you what it means.
@@ -108,7 +99,6 @@ In Kid insights, tap an animal your kids spent time with, and you'll have someth
 </div>
 
 It works in the car, at dinner, or at bedtime: ask the question on the card, then let your child tell you the rest.
-<!-- /PENDING-BUILD -->
 
 ## Find a Place to See the Animal IRL
 
@@ -130,6 +120,6 @@ No ads, no accounts, anywhere in Wild Atlas.
 
 ## Where to find it
 
-Kid insights lands in the grown-ups area in the next update.
+Kid insights and the Animal Finder are in the grown-ups area of Wild Atlas 2.1. Update in the [App Store](https://apps.apple.com/us/app/wild-atlas/id6761081031) to get them.
 
 *Raise explorers, not scrollers.*
