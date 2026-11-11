@@ -33,3 +33,4 @@ Test a day end-to-end: `FORCE_SLUG=world-okapi-day npx wrangler dev --test-sched
 - X media upload uses the v1.1 endpoint per the spec; not yet exercised live (X has been migrating media upload to v2 — verify in the dry run).
 - Email was dropped (Cloudflare Email Sending needs Workers Paid; Resend needs a domain DNS change). Add later via `notify()` in `src/email.ts` if wanted.
 - Video path (IG first-item, X video-only) is implemented but untested until `assets/calendar-videos/<appId>.mp4` exists.
+- One-off video posts: `POST /post` accepts `"video": "https://…/x.mp4"` (and `"videos": {"x": "…"}` per-platform overrides). FB posts it via `/{page}/videos` (`file_url`), X as a video-only tweet, IG as a Reel (or first carousel item if images are also given). Each URL is HEAD-checked for 200 + `video/mp4`, on dry runs too. Not yet exercised live; run `&dry=1` first.
