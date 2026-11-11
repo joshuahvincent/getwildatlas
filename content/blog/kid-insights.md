@@ -67,20 +67,18 @@ tags: [product, update]
   .screen-row img { width: 100%; height: auto; display: block; margin: 0; }
 </style>
 
-Parents want real conversations with their kids, and this gives you a way in. See which animals they're spending time with in the app, get conversation starters for those animals, and find places near you to see them in real life. They're called Kid insights and the Animal Finder, in the grown-ups area (the burger menu on Home), in the next update.
-
-A lot of you have asked two things: how to explore Wild Atlas with your kid, and how to turn what they're doing in the app into conversation, and a sense of what they're interested in. This release is us listening, more on the way.
-
-<!-- Josh's iPad capture, 2026-11-05. BEFORE PUBLISH: this capture shows the Debug row at the bottom of the menu (debug build only). Replace with a capture that hides it, or retouch with Josh's OK. -->
-<div class="screen-row screen-row-pad">
-  <figure><img src="/assets/blog/kid-insights/grown-ups-menu-ipad.webp" alt="The Wild Atlas Home screen on an iPad with the menu open, listing Settings, Kid insights, Animal Finder, Shop and About." width="862" height="1120" loading="lazy"><figcaption>The grown-ups menu on Home</figcaption></figure>
-</div>
+A lot of you asked how to explore Wild Atlas with your kid, and turn app time into conversation. In the next update, Kid insights and the Animal Finder, in the grown-ups area (the burger menu on Home), show which animals your kids spend time with, give conversation starters, and find places nearby in real life. This release is us listening, more on the way.
 
 ## See it in motion
 
 <video controls playsinline preload="metadata" poster="/assets/blog/kid-insights-new-features-poster.jpg" aria-label="Walkthrough video of Kid insights and the Animal Finder, with narration" style="width:100%;max-width:360px;height:auto;aspect-ratio:540/1170;display:block;margin:0 auto;border-radius:12px;background:#000"><source src="/assets/blog/kid-insights-new-features.mp4" type="video/mp4">Your browser does not support the video tag. <a href="/assets/blog/kid-insights-new-features.mp4">Download the walkthrough video (MP4)</a>.</video>
 
 *A short look at Kid insights: a child's week and top animals, the weekly reminder screen, Things to talk about, Fun Words to Learn, and a search in the Animal Finder, from typing the name to the zoos nearby.*
+
+<!-- Josh's iPad capture, 2026-11-05. BEFORE PUBLISH: this capture shows the Debug row at the bottom of the menu (debug build only). Replace with a capture that hides it, or retouch with Josh's OK. -->
+<div class="screen-row screen-row-pad">
+  <figure><img src="/assets/blog/kid-insights/grown-ups-menu-ipad.webp" alt="The Wild Atlas Home screen on an iPad with the menu open, listing Settings, Kid insights, Animal Finder, Shop and About." width="862" height="1120" loading="lazy"><figcaption>The grown-ups menu on Home</figcaption></figure>
+</div>
 
 <!-- VERSION: TBD -->
 
