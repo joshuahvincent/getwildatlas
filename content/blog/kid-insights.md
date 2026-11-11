@@ -122,11 +122,11 @@ There are two ways in: the Animal Finder, in the grown-ups area, where you can s
 
 ## What stays on your phone, and what doesn't
 
-- Your child's play history stays on this device unless you share it, and you can clear it anytime.
-- The weekly reminder is made on your phone; nothing about your explorers is sent to set it up. It shows your kids' names and top animals unless you switch that off, and anyone who can see your lock screen can read it.
-- Find a place sends what you type to Apple, not to Wild Atlas, and fetches a small public file for the animal from wildatlasapp.com, which is why it needs a connection.
+- Play history stays on your phone unless you share it; you can clear it anytime.
+- The reminder is made on your phone, with nothing sent to set it up, and shows names and top animals, readable from your lock screen unless you switch that off.
+- Find a place sends what you type to Apple, not us, and needs a connection to get each animal's file from wildatlasapp.com.
 
-No ads, no accounts, in Kid insights or anywhere else in Wild Atlas.
+No ads, no accounts, anywhere in Wild Atlas.
 
 ## Where to find it
 
