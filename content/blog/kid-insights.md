@@ -61,6 +61,10 @@ tags: [product, update]
   .screen-row figcaption { text-align: center; font-size: 0.85rem; color: var(--muted); font-style: italic; margin-top: 0.5rem; }
   .screen-row-pad figure { flex: 0 1 320px; }
   .screen-row-wide figure { flex: 0 1 460px; }
+  .screen-row-menu-kid { align-items: flex-start; flex-wrap: nowrap; gap: 0.75rem; }
+  .screen-row-menu-kid figure:first-child { flex: 0 0 26%; }
+  .screen-row-menu-kid figure:last-child { flex: 1 1 0; min-width: 0; }
+  .screen-row-menu-kid figcaption { font-size: 0.75rem; }
   .screen-row-crop { align-items: flex-start; }
   .screen-row-crop figure { flex: 0 1 280px; }
   .screen-row-crop img { border-radius: 16px; box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14); }
@@ -73,11 +77,6 @@ A lot of you asked how to explore Wild Atlas with your kid, and turn app time in
 
 <video controls playsinline preload="metadata" poster="/assets/blog/kid-insights-new-features-poster.jpg" aria-label="Walkthrough video of Kid insights and the Animal Finder, with narration" style="width:100%;max-width:420px;height:auto;aspect-ratio:9/16;display:block;margin:0 auto;border-radius:12px;background:#fff8ec"><source src="/assets/blog/kid-insights-new-features.mp4" type="video/mp4">Your browser does not support the video tag. <a href="/assets/blog/kid-insights-new-features.mp4">Download the walkthrough video (MP4)</a>.</video>
 
-<!-- Josh's iPad capture, 2026-11-05. BEFORE PUBLISH: this capture shows the Debug row at the bottom of the menu (debug build only). Replace with a capture that hides it, or retouch with Josh's OK. -->
-<div class="screen-row screen-row-pad">
-  <figure><img src="/assets/blog/kid-insights/grown-ups-menu-ipad.webp" alt="The Wild Atlas Home screen on an iPad with the menu open, listing Settings, Kid insights, Animal Finder, Shop and About." width="862" height="1120" loading="lazy"><figcaption>The grown-ups menu on Home</figcaption></figure>
-</div>
-
 <!-- VERSION: TBD -->
 
 <!-- PENDING-BUILD NOTE: the opening, excerpt and TL;DR mention conversation starters; trim that mention if the starters section is cut. -->
@@ -87,7 +86,9 @@ A lot of you asked how to explore Wild Atlas with your kid, and turn app time in
 Pick a child, from up to four, then Last 7 days or All time, and you'll see total time with animals, how many animals and visits, and a Top animals list. In the screen below, Sam's week: 29 minutes across 7 animals, with the Panda on top.
 
 <!-- Josh's iPad capture, 2026-11-05 (new build, sample child Sam). -->
-<div class="screen-row screen-row-wide">
+<!-- Josh's iPad capture, 2026-11-05. BEFORE PUBLISH: this capture shows the Debug row at the bottom of the menu (debug build only). Replace with a capture that hides it, or retouch with Josh's OK. -->
+<div class="screen-row screen-row-wide screen-row-menu-kid">
+  <figure><img src="/assets/blog/kid-insights/grown-ups-menu-ipad.webp" alt="The Wild Atlas Home screen on an iPad with the menu open, listing Settings, Kid insights, Animal Finder, Shop and About." width="862" height="1120" loading="lazy"><figcaption>The grown-ups menu on Home</figcaption></figure>
   <figure><img src="/assets/blog/kid-insights/kid-insights-ipad.webp" alt="Kid insights on an iPad. On the left, a child's last 7 days: 29 minutes across 7 animals, with a Top animals list led by the Panda. On the right, the Giraffe opened, with Things to talk about: a question to ask and a Did you know fact." width="866" height="1130" loading="lazy"><figcaption>Kid insights, with an animal opened beside the list</figcaption></figure>
 </div>
 
