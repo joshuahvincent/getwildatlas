@@ -20,8 +20,12 @@ async function graph(env: Env, path: string, params: Record<string, string>, met
   return json;
 }
 
-/** v1: photos only (the API can't mix video + photos in one FB post). */
+/** Photos as one feed post; a video posts alone (the API can't mix video + photos in one FB post). */
 export async function postFacebook(env: Env, s: Social, caption: string): Promise<Result> {
+  if (s.video) {
+    const v = await graph(env, `${env.META_PAGE_ID}/videos`, { file_url: s.video, description: caption });
+    return { platform: "fb", ok: true, id: v.id, url: `https://www.facebook.com/watch/?v=${v.id}` };
+  }
   const ids: string[] = [];
   for (const img of s.images.slice(0, 10)) {
     const r = await graph(env, `${env.META_PAGE_ID}/photos`, { url: img.src, published: "false", alt_text_custom: img.alt });

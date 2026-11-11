@@ -96,7 +96,7 @@ workers/calendar-social/
 
 **Meta API calls:**
 - FB multi-photo post: `POST /{page-id}/photos` per image with `published=false` → ids; `POST /{page-id}/feed` with `message` + `attached_media=[{media_fbid}…]`.
-- FB video: `POST /{page-id}/videos` with `file_url` (video can't be in the same post as photos on FB via API either; post video as a separate post 30 min later, or skip video on FB in v1). **v1: FB = photos only.**
+- FB video: `POST /{page-id}/videos` with `file_url` (video can't be in the same post as photos on FB via API either; post video as a separate post 30 min later, or skip video on FB in v1). **v1: FB calendar posts = photos only.** One-off `/post` requests may carry a `video`, which FB posts alone via `/{page-id}/videos`.
 - IG carousel: `POST /{ig-user-id}/media` per item (`image_url` or `video_url` + `media_type=VIDEO`, `is_carousel_item=true`) → `POST /{ig-user-id}/media` with `media_type=CAROUSEL`, `children=[…]`, `caption` → poll container `status_code` until `FINISHED` → `POST /{ig-user-id}/media_publish`. Media must be at a public URL — it is.
 - Long-lived Page token doesn't expire; still catch `code 190` and email Josh.
 

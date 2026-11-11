@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
+import { buildAdhocSocial, isMp4Url } from "../src/adhoc";
 import { buildCaption, checkText, xLength } from "../src/caption";
 import { pacificNow, todaysSocial } from "../src/index";
 import { oauthHeader } from "../src/x";
@@ -127,4 +128,29 @@ test("gate: a not-featured day posts only with a lite social.json", async () => 
     assert.ok((await todaysSocial(env, "2026-10-17")).social);
     assert.ok((await todaysSocial(env, "2026-10-18")).skip);
   });
+});
+
+test("one-off video posts: FB and X carry the video alone, IG puts it first", () => {
+  const body = { platforms: ["fb", "ig", "x"] as ("fb" | "ig" | "x")[], captions: {}, alt: "a", video: "https://wildatlasapp.com/assets/social/v.mp4",
+    images: { fb: ["https://wildatlasapp.com/a.jpg"], ig: ["https://wildatlasapp.com/a.jpg"], x: ["https://wildatlasapp.com/a.jpg"] } };
+  assert.deepEqual(buildAdhocSocial("fb", body).social?.images, []);
+  assert.deepEqual(buildAdhocSocial("x", body).social?.images, []);
+  assert.equal(buildAdhocSocial("ig", body).social?.images.length, 1);
+  for (const p of ["fb", "ig", "x"] as const) assert.equal(buildAdhocSocial(p, body).social?.video, body.video);
+});
+
+test("one-off video posts: images are optional with a video, required without; per-platform override wins", () => {
+  const v = "https://wildatlasapp.com/assets/social/v.mp4";
+  assert.ok(buildAdhocSocial("ig", { platforms: ["ig"], captions: {}, video: v }).social);
+  assert.equal(buildAdhocSocial("ig", { platforms: ["ig"], captions: {} }).error, "missing text or image");
+  const o = buildAdhocSocial("x", { platforms: ["x"], captions: {}, video: v, videos: { x: "https://wildatlasapp.com/assets/social/x.mp4" } });
+  assert.equal(o.social?.video, "https://wildatlasapp.com/assets/social/x.mp4");
+  assert.equal(buildAdhocSocial("fb", { platforms: ["fb"], captions: {}, images: { fb: ["https://wildatlasapp.com/a.jpg"] } }).social?.video, null);
+});
+
+test("video URLs must be public https .mp4", () => {
+  assert.ok(isMp4Url("https://wildatlasapp.com/assets/social/v.mp4"));
+  for (const bad of ["http://wildatlasapp.com/v.mp4", "https://wildatlasapp.com/v.mov", "file:///v.mp4", "not a url", "", 5, null])
+    assert.ok(!isMp4Url(bad), String(bad));
+  assert.match(buildAdhocSocial("fb", { platforms: ["fb"], captions: {}, video: "http://x.com/v.mp4" }).error ?? "", /https URL ending in \.mp4/);
 });

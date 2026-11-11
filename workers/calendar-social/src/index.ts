@@ -1,3 +1,4 @@
+import { buildAdhocSocial, type AdhocBody } from "./adhoc";
 import { buildCaption, checkText, X_LIMIT, xLength } from "./caption";
 import { notify, previewHtml, resultsHtml } from "./email";
 import { MetaTokenError, postFacebook, postInstagram } from "./meta";
@@ -11,6 +12,16 @@ export function pacificNow(d = new Date()) {
       year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" })
       .formatToParts(d).map((x) => [x.type, x.value]));
   return { date: `${p.year}-${p.month}-${p.day}`, hour: Number(p.hour), minute: Number(p.minute) };
+}
+
+/** Fail closed before posting: the video must be reachable and served as video/mp4. */
+async function checkVideoUrl(url: string): Promise<string | null> {
+  try {
+    const r = await fetch(url, { method: "HEAD" });
+    if (!r.ok) return `video URL returned ${r.status}`;
+    const type = r.headers.get("content-type") ?? "";
+    return type.startsWith("video/mp4") ? null : `video URL is ${type || "an unknown type"}, not video/mp4`;
+  } catch (e) { return `video URL unreachable: ${(e as Error).message}`; }
 }
 
 async function getJson<T>(url: string): Promise<T | null> {
@@ -123,21 +134,25 @@ export default {
       await log(env, `${date} skip requested`);
       return new Response(`Skipped ${date}. Nothing will post.`, { status: 200 });
     }
-    // One-off posts (newsletters etc.): POST /post?key=…[&dry=1]
+    // One-off posts (newsletters, announcements): POST /post?key=…[&dry=1]
     // body: {"platforms":["fb","ig","x"],"captions":{"fb":"…","ig":"…","x":"…"},"images":{"fb":["https://…"],"ig":[…],"x":[…]},"alt":"…"}
+    // Video: add "video":"https://…/x.mp4" (all platforms) and/or "videos":{"x":"https://…"} (per-platform override).
+    //   FB and X post the video alone; IG posts it first (a lone video becomes a Reel). `images` is then optional.
     // Same pre-flight (banned vocab, X length, no URLs on IG) and platform code as calendar posts.
+    // Every video URL is HEAD-checked (200, video/mp4) on dry runs and live runs alike.
     if (u.pathname === "/post" && req.method === "POST") {
       if (u.searchParams.get("key") !== env.KILL_KEY) return new Response("forbidden", { status: 403 });
-      const b = (await req.json()) as { platforms: Platform[]; captions: Partial<Record<Platform, string>>; images: Partial<Record<Platform, string[]>>; alt?: string };
+      const b = (await req.json()) as AdhocBody;
       const dry = env.DRY_RUN === "1" || u.searchParams.get("dry") === "1";
       const results: Result[] = [];
       for (const p of (["fb", "ig", "x"] as Platform[]).filter((x) => b.platforms?.includes(x))) {
         const text = b.captions?.[p] ?? "";
-        const imgs = b.images?.[p] ?? [];
-        const bad = checkText(text) ?? (p === "x" && xLength(text) > X_LIMIT ? `x: ${xLength(text)} > ${X_LIMIT}` : null) ?? (!text || !imgs.length ? "missing text or image" : null);
-        if (bad) { results.push({ platform: p, ok: false, error: bad }); continue; }
+        const built = buildAdhocSocial(p, b);
+        const bad = checkText(text) ?? (p === "x" && xLength(text) > X_LIMIT ? `x: ${xLength(text)} > ${X_LIMIT}` : null)
+          ?? (!text ? "missing text or image" : null) ?? built.error ?? (built.social?.video ? await checkVideoUrl(built.social.video) : null);
+        if (bad || !built.social) { results.push({ platform: p, ok: false, error: bad ?? "bad request" }); continue; }
         if (dry) { results.push({ platform: p, ok: true, id: "dry-run" }); continue; }
-        const social = { images: imgs.map((src) => ({ src, alt: b.alt ?? "" })), video: null } as unknown as Social;
+        const social = built.social;
         try {
           results.push(await (p === "fb" ? postFacebook : p === "ig" ? postInstagram : postX)(env, social, text));
         } catch (e) { results.push({ platform: p, ok: false, error: String((e as Error).message) }); }
