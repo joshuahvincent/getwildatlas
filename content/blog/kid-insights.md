@@ -99,7 +99,7 @@ You can set up a reminder once a week that will tell you which animals your kids
 <!-- PENDING-BUILD: starters + Words to learn; delete this section if the build slips -->
 ## Conversation Starters
 
-Parents want to have real conversations with their kids about what they're into, and it's hard to start one from nothing. In Kid insights, tap an animal your kids spent time with, and you get a way in. The in-app label is "Things to talk about," and it pairs a question to ask out loud with a Did you know line and three quick facts about that animal. Right next to it, Fun Words to Learn shows four word chips from that animal; tap one and it shows you what it means.
+In Kid insights, tap an animal your kids spent time with, and you'll have something to talk about. The in-app label is "Things to talk about," and it pairs a question to ask out loud with a Did you know line and three quick facts about that animal. Right next to it, Fun Words to Learn shows four word chips from that animal; tap one and it shows you what it means.
 
 <!-- Josh's captures, 2026-11-06 (new build, Dolphin). -->
 <div class="screen-row screen-row-crop">
