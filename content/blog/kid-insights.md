@@ -73,8 +73,6 @@ A lot of you asked how to explore Wild Atlas with your kid, and turn app time in
 
 <video controls playsinline preload="metadata" poster="/assets/blog/kid-insights-new-features-poster.jpg" aria-label="Walkthrough video of Kid insights and the Animal Finder, with narration" style="width:100%;max-width:420px;height:auto;aspect-ratio:9/16;display:block;margin:0 auto;border-radius:12px;background:#fff8ec"><source src="/assets/blog/kid-insights-new-features.mp4" type="video/mp4">Your browser does not support the video tag. <a href="/assets/blog/kid-insights-new-features.mp4">Download the walkthrough video (MP4)</a>.</video>
 
-*A short look at Kid insights: a child's week and top animals, the weekly reminder screen, Things to talk about, Fun Words to Learn, and a search in the Animal Finder, from typing the name to the zoos nearby.*
-
 <!-- Josh's iPad capture, 2026-11-05. BEFORE PUBLISH: this capture shows the Debug row at the bottom of the menu (debug build only). Replace with a capture that hides it, or retouch with Josh's OK. -->
 <div class="screen-row screen-row-pad">
   <figure><img src="/assets/blog/kid-insights/grown-ups-menu-ipad.webp" alt="The Wild Atlas Home screen on an iPad with the menu open, listing Settings, Kid insights, Animal Finder, Shop and About." width="862" height="1120" loading="lazy"><figcaption>The grown-ups menu on Home</figcaption></figure>
