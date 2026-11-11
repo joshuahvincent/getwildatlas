@@ -112,7 +112,7 @@ It works in the car, at dinner, or at bedtime: ask the question on the card, the
 
 ## Find a Place to See the Animal IRL
 
-You can find where to see the animals your kids are into, near you, in real life. There are two ways in: the Animal Finder, in the grown-ups area, where you can search for an animal or a place, or tap one of "Animals your kids love"; or "Where to see this animal" when you open an animal in Kid insights. Either way, Wild Atlas shows nearby zoos, aquariums, and other places, each behind a parent check to open in Maps, share, or visit the website. If none nearby has that exact animal, it shows places with a close relative. Check the website before you go to make sure the animal's there.
+There are two ways in: the Animal Finder, in the grown-ups area, where you can search for an animal or a place, or tap one of "Animals your kids love"; or "Where to see this animal" when you open an animal in Kid insights. Either way, Wild Atlas shows nearby zoos, aquariums, and other places, each behind a parent check to open in Maps, share, or visit the website. If none nearby has that exact animal, it shows places with a close relative. Check the website before you go to make sure the animal's there.
 
 <!-- Josh's iPad captures, 2026-11-05 (new build). -->
 <div class="screen-row screen-row-pad">
