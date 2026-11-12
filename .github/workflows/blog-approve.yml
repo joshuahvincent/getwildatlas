@@ -15,10 +15,11 @@ permissions:
 
 jobs:
   approve:
+    # startsWith() is already case-insensitive ("Approve" works); toLower() isn't an Actions function.
     if: >-
       contains(github.event.issue.labels.*.name, 'blog-review') &&
       github.event.comment.user.login == 'joshuahvincent' &&
-      startsWith(toLower(github.event.comment.body), 'approve')
+      startsWith(github.event.comment.body, 'approve')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
